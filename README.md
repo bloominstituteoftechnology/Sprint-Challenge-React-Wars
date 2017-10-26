@@ -20,6 +20,7 @@
 #### Open up your chrome `React Dev Tools` to peek at the data set on `state` of your `App` component. 
 * You should see something like this:
 
-![Star Wars state data]('starwars_data.png')
+![Star Wars state data](starwars_data.png)
 
-* Your goal here is to build an app that displays the data
+* Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields who's values are URL's. You'll figure out what to do with data like that later on in the course. 
+* For now, just build a react app that displays this fun Star Wars data. Build a card for each object and style it to make it nice and fancy. 
