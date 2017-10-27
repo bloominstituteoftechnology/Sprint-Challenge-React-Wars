@@ -1,0 +1,9 @@
+.StarWarsList {
+    text-align: center;
+    display: inline-block;
+}
+
+.Details {
+    display: flex;
+    flex-direction: row;
+}
