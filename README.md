@@ -3,7 +3,7 @@
 * Answers to your written questions will be recorded in *Answers.md* 
 * This is to be worked on alone but you can use outside resources. You can *reference* any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something. 
 * Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation. 
-
+## Start by forking and cloning this repository.
 ## Questions
 1. What is React JS? How does it differ from other JavaScript Frameworks?
 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
