@@ -1,8 +1,109 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:  100%;
+  width:  100%;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+.App::after {
+  	content:  "";
+  	position:  fixed;
+  	top:  0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-image: url('./sw-bg.jpg');
+  	background-size: cover;
+}
+
+.header {
+  position: fixed;
+  top:  0;
+  left:  0;
+  width:  100%;
+  background: #4BAEF4;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  z-index: 20;
+}
+.chars {
+	margin-top:  100px;
+	margin-bottom:  100px;
+	max-width:  1200px;
+	z-index: 10;
+	perspective: 1500px;
+	transition-duration: 0.5s;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.chars-show {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.chars,
+.chars>div {
+	width:  100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap:  wrap;
+}
+
+.char {
+	width: 100%;
+	max-width:  300px;
+	height:  auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:  #fff;
+	margin:  20px;
+	border-radius:  5px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transform:  scale(0);
+	opacity:  0;
+	transition-duration:  0.3s;
+}
+
+.char-show{
+	transform:  scale(1);
+	opacity:  1;
+}
+
+.char>div {
+	width:  90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	pointer-events: none;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	width:  90%;
+	pointer-events: none;
+}
+
+.char h1 {
+	font-weight:  100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:  #4BAEF4;
+	width:  100%;
+}
+.char h2 {
+	font-size:  1em;
+	color:  #727B80;
 }
 /* write your parent styles in here for your App.js */

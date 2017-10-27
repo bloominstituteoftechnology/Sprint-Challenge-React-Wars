@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Header from './header/Header';
+import Character from './character/Character';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      classes: "chars"
     };
   }
   componentDidMount() {
@@ -18,15 +21,35 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        setTimeout(() => { this.setState({ classes: "chars chars-show" })}, 500);
       })
       .catch(err => {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Header />
+        <section className={this.state.classes}>
+          <div>
+            {
+              this.state.starwarsChars.map((char, i) => {
+                return (
+                  <Character
+                    index={i}
+                    key={i}
+                    name={char.name}
+                    height={char.height}
+                    mass={char.mass}
+                    hair_color={char.hair_color}
+                    skin_color={char.skin_color} />
+                );
+              })
+            }
+          </div>
+        </section>
       </div>
     );
   }
