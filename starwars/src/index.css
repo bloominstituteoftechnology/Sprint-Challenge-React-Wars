@@ -2,6 +2,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-image: url('./dat/img/vader-bg.gif');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-attachment: fixed;  
+  background-position: center;
+  background-color: rgb(42, 71, 75);
+  background-blend-mode: hard-light;
+
+}
+
+@font-face {
+  font-family: StarWars;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./dat/fnt/DISTGRG_.ttf'); /* IE9 Compat Modes */
+  src: local('Star Wars'), local('SW_jedi'),
+       url('./dat/fnt/DISTGRG_.ttf') format('embedded-truetype'), /* IE6-IE8 */
+       url('./dat/fnt/DISTGRG_.ttf') format('ttf'), /* Super Modern Browsers */
+       url('./dat/fnt/DISTGRG_.ttf') format('ttf'), /* Modern Browsers */
+       url('./dat/fnt/DISTGRG_.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./dat/fnt/DISTGRG_.ttf#Star Wars') format('svg'); /* Legacy iOS */
+
+}
+body {
+  font-family: 'Star Wars';
 }

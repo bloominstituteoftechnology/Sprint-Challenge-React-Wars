@@ -4,5 +4,8 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-family: StarWars;
+  font-size: 2.3em;
+  opacity: 0.55;
 }
 /* write your parent styles in here for your App.js */
