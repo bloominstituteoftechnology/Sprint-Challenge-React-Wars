@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+//import PostContainer from './components/PostContainer';
+
 class App extends Component {
   constructor() {
     super();
