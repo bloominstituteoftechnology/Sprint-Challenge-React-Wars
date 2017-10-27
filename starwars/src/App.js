@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './Characters';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
   componentDidMount() {
@@ -18,6 +20,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log("state", this.state.starwarsChars);
       })
       .catch(err => {
         throw new Error(err);
@@ -27,6 +30,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          <div>
+            <h4>{this.state.starwarsChars}</h4>
+            <h4>blahblahblah</h4>
+            <Character />
+          </div>
       </div>
     );
   }
