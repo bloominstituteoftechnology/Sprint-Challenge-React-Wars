@@ -2,7 +2,7 @@ Questions
 
 What is React JS? How does it differ from other JavaScript Frameworks?
 
-React JS isn't yet a full fledged framework. It's a library with many plugins that give it nearly the same functionality of a framework, and a whole lot of power. React is specifically designed to work with user interfaces, and is responsible for handling user interactions. It records the changes made on a page, and by way of Synthetic events and a virtual DOM, allow a speedy response to user input. By leveraging these aspects, you can avoid the time and processor cost of rewriting the DOM every time a user makes a change, and instead only post the changes after a user submits/commits an action.
+React JS is a library with many plugins that give it nearly the same functionality of a framework, and a whole lot of power. React is specifically designed to work with user interfaces, and is responsible for handling user interactions. It records the changes made on a page, and by way of Synthetic events and a virtual DOM, allow a speedy response to user input. By leveraging these aspects, you can avoid the time and processor cost of rewriting the DOM every time a user makes a change, and instead only post the changes after a user submits/commits an action.
 
 
 
