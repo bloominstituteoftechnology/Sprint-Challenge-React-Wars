@@ -1,0 +1,22 @@
+.StarWarsList {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 35%;
+}
+
+.StarWarsList__Chars {
+    margin-bottom: 100px;    
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+}
+
+.Details {
+    display: inline-block;
+    width: 50%;
+}
+
+.Details li {
+    list-style-type: none;
+    text-align: left;
+}
