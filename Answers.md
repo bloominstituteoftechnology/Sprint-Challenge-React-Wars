@@ -8,7 +8,7 @@ On a very micro-level, React differs from other libraries because it allows deve
 
 **Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.**
 
-
+*The React Component Lifecycle is complicated and kind of difficult. To my understanding: things are instantiated inside the constructor, you set this.state and whatever other information you need in there. Afterwards, componentWillMount() can be used to call setState() and change props. Then we tend to use render(), ie actually show things on the screen. componentDidMount() gets called once in the lifecycle after rendering, and now code can be executed that requires the component to already be on the DOM.*
 
 **Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.**
 
