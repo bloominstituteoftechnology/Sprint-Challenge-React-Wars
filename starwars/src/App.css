@@ -1,3 +1,7 @@
+/* so the App.css styles the pieces of DOM that
+we make in App.js */
+
+
 .App {
   text-align: center;
 }

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// so we make an App
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
     };
+    
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -24,12 +27,17 @@ class App extends Component {
       });
   }
   render() {
+    this.stateItems = this.state.starwarsChars.map((item, i) =>
+      <div key={i}>{item.name}</div>
+    );
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div>{this.stateItems}</div>
       </div>
     );
   }
 }
 
+// and we then export the App
 export default App;
