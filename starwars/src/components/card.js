@@ -12,7 +12,8 @@ export default ({ character }) => {
     gender,
     films,
     starships,
-    vehicles
+    vehicles,
+    homeworld
   } = character;
   return (
     <div className="character-card">
@@ -26,9 +27,11 @@ export default ({ character }) => {
             <li><span>Skin Color</span>{skin_color}</li>
             <li><span>Height</span>{height}</li>
             <li><span>Mass</span>{mass}</li>
+            { homeworld.name ? <li><span>Homeworld</span>{homeworld.name}</li> : null}
             { starships.length ? <li><span>Starships</span>{starships.length}</li> : null }
             { vehicles.length ? <li><span>Vehicles</span>{vehicles.length}</li> : null }
             { films.length ? <li><span>Films</span>{films.length}</li> : null }
+
         </ul>
       </section>
     </div>

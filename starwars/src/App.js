@@ -18,7 +18,18 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results }, async () => {
+          const chars = await Promise.all(this.state.starwarsChars.map(async (character) => {
+            let res = await fetch(character.homeworld);
+            res = await res.json();
+            character.homeworld = res;
+            return character;
+          }));
+          this.setState({
+            starwarsChars: chars
+          })
+        });
+       
       })
       .catch(err => {
         throw new Error(err);
