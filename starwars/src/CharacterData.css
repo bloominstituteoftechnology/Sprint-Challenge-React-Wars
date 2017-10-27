@@ -1,0 +1,18 @@
+.characters {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.character {
+  flex: 0 1 21%;
+  margin: 1%;
+  padding: 1%;
+  background: #65594f;
+  border-radius: 2%;
+  color: bisque;
+  box-shadow: 0.25em 0.25em black;
+}
+
+.character h3 {
+  text-shadow: 0.1em 0.1em black;
+}
