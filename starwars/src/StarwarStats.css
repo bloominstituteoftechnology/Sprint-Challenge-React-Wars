@@ -1,0 +1,11 @@
+.CharacterCard {
+    text-align: center;
+}
+
+.Character {
+    margin: 70px;
+    border: solid;
+    border-color: rgb(201, 95, 14);
+    background: rgb(118, 152, 177);
+    color: rgb(242, 235, 235);
+}
