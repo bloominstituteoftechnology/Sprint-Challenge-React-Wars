@@ -1,0 +1,9 @@
+* 1. ReactJS is a library for front end devlopment that abstracts away the DOM and lets you compose applications from individual components, each which can accept props passed down from parent as well as manage their own state. React uses a virtual DOM to perform operations in memory before diffing the browser dom and efficiently applying updates to the DOM. Any time state or props change for a component it will trigger a rerender which will diff the browser dom again.
+
+* 2. The React Component Lifecycle is a series of event based functions which are called during different stages of a react 
+components execution. These lifecycle functions execute during 4 different stages, when the react component is `mounting`, `updating`, `unmounting` and when `errors` occur during render. One of the methods that executes during `mounting` is `componentDidMount` which allows you to run code against the component once the DOM is completely ready to be manipulated. During the `updating` lifecycle, one method that runs is `shouldComponentUpdate()` which you can use to determine whether the specific component will rerender during that update cycle. `componentWillUnmount()` is a method called during unmounting, and will be used to run code when an element will be removed from the dom, you will use this to perform any necessity clean up that is necessary. 
+
+* 3. A `class/stateful` component is a component that manages it's own state and methods. A stateful component is usually responsible for data retrieval and distribution. A `functional/presentional` component is a component that is merely a render function and hold no state of it's own, rather relies on it's parent to pass in props which will trigger a rerender of the functional component is the props change.
+
+* 4. `React.createElement()` takes in the element name you want to create, props and childern that will be passed in.
+
