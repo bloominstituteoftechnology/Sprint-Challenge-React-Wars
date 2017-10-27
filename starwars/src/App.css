@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  color: #95A7D9;
+  text-decoration: bold;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #f5c154;
+  text-shadow: 5px 5px 10px #6046A8;
 }
 /* write your parent styles in here for your App.js */
+/* 6046A8 */
