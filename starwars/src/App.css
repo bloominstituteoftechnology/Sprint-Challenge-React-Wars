@@ -6,3 +6,42 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.PostList__post {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: block;
+  border: 1px rgb(180, 180, 180) solid;
+  width: 60%;
+  background-color: rgb(158, 126, 100);
+}
+
+.PostList__post-title {
+  margin: 5px 0 0 5px;
+  font-weight: 600;
+  display: inline-block;
+  color: lightcoral;
+}
+
+.PostList__container {
+color: lightseagreen
+}
+
+.PostList__stamp {
+  color: rgb(151, 146, 146);
+  font-size: 11px;
+  margin: 0 0 5px 5px;
+}
+
+.PostList__top {
+  margin-top: 15px;
+  padding-left: 1%;
+}
+
+.PostList__top-name {
+ font-weight: 600;
+ text-align: left;
+ margin: 10px;
+ color: skyblue;
+}
