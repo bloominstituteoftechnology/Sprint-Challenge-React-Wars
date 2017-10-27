@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.starWars {
+  align-content: center;
+  width: 300px;
+  background-color: rgb(185, 197, 173);
+}
+
+p {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+ 
+  
+}
