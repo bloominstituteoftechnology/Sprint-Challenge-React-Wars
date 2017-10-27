@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharContainer from './CharContainer';
 
 class App extends Component {
   constructor() {
@@ -23,10 +24,13 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <header><h1 className="Header">React Wars</h1></header>
+
+        <CharContainer chars={this.state.starwarsChars} />
       </div>
     );
   }
