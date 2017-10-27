@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import SwCard from  './components/SwCard'
 
 class App extends Component {
   constructor() {
@@ -17,16 +18,24 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results }, () =>  {})//console.log('sw:',this.state.starwarsChars[0]));
       })
       .catch(err => {
         throw new Error(err);
       });
   }
   render() {
+    const cards = (this.state.starwarsChars.map(c => {
+      return (
+        <li key={c.name}><SwCard character={c} /></li>
+      )
+    }))
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ul>
+          {cards}
+        </ul>
       </div>
     );
   }
