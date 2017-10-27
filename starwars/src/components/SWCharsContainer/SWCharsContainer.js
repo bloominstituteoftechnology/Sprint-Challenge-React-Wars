@@ -4,7 +4,7 @@ import './SWCharsContainer.css';
 function SWCharsContainer(props) {
   const character = props.char;
   return (
-    <div>   {/* main div for return */}
+    <div className="container">   {/* main div for return */}
       <div>
         <h2><a href={character.url} target={'_blank'}>{character.name}</a></h2>
         <h4>Appeared in films: {character.films.map((film, i) => {
@@ -14,9 +14,9 @@ function SWCharsContainer(props) {
         })}</h4>
         <h4>&nbsp;--- Origin ---</h4>
         <h4>Born in {character.birth_year}</h4>
-        <h4>View <a href={character.species[0]} target={'_blank'}>species info</a> and <a href={character.homeworld} target={'_blank'}>homeworld info</a></h4>
+        <h4>View <a href={character.species[0]} target={'_blank'}>species</a> and <a href={character.homeworld} target={'_blank'}>homeworld</a> information.</h4>
         <h4>&nbsp;--- Attributes ---</h4>
-        <h4>Character is {character.gender} with {character.skin_color} complexion.</h4>
+        <h4>Character is {character.gender === 'n/a' ? 'characterized as male' : character.gender} with a {character.skin_color} complexion.</h4>
         <h4>{character.gender === 'female' ? 'She' : 'He'} has {character.eye_color} eyes
           and {character.hair_color != 'n/a' ? character.hair_color : 'no'} hair.</h4>
         <h4>{character.gender === 'female' ? 'She' : 'He'} is {character.height} cm tall and weighs {character.mass} kg.</h4>
