@@ -1,0 +1,15 @@
+.container {
+  background-image: url('../../sw-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 1%;
+  padding: 20px 20px 0 20px;
+  min-width: 1185px;
+}
+
+.div-spacing {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  
+}
