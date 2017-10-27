@@ -3,6 +3,63 @@
 }
 .Header {
   color: #443e3e;
+  font-family: fantasy;
+  font-size: 3em;
+  text-decoration: underline;
   text-shadow: 1px 1px 5px #fff;
 }
+.CharacterCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.CharCard {
+  margin: 0.5em;
+  padding: 1.5em;
+  background: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  font-family: serif;
+}
 /* write your parent styles in here for your App.js */
+
+.CharName {
+  font-family: fantasy;
+  font-size: 1.5em;
+}
+
+.SubSection {
+  display: flex;
+  border: 1px solid black;
+  width: 95%;
+  flex-direction: column;
+  align-self: center;
+  margin: 0.5em;
+}
+
+.SubSectionTitle {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.SubSectionLink {
+  margin: 0.5em;
+}
+
+.Spec_Items {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.Spec {
+  margin: 0.3em 1em 0.3em 1em;
+}
