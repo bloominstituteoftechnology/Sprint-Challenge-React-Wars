@@ -4,14 +4,16 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+.Starwars-cards{
+    margin: 10px;
+    width: 350px;
+    border: black solid 2px;
+}
 .Starwars-element {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
 }
-.Starwars-cards{
-    width: 200px;
-}
-.Starwars-element {
-    margin:15px;
-    width: 1000px;
+.Starwars-name {
+    font-size: 23px;
+    font-weight: bolder;
 }

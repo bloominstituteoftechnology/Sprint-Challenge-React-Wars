@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const StarwarsCard = (props) => {
     return (
@@ -6,8 +6,8 @@ const StarwarsCard = (props) => {
         {props.card.map((cards) => {
             return(
                 <div  className = "Starwars-cards"> 
-                    <div className = "Starwars-element">
-                        <h1 className = "Starwars-element"> {cards.name}</h1>
+                    <div className = "Starwars-name">
+                        <p1 className = "Starwars-name"> {cards.name}</p1>
                         </div>
                         <div >
                         <p1 className = "Starwars-element"> Height: {cards.height} </p1>
