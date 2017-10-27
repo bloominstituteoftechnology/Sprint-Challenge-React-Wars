@@ -5,4 +5,43 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.starwarsChars {
+  margin: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.starwarsChars:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.text-bold {
+  font-weight: 600;
+}
+.starwarsCharsAdditionalData-text {
+  line-height: 35px;
+}
+hr {
+  width: 20%;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  width: 20%;
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
 /* write your parent styles in here for your App.js */
