@@ -68,7 +68,9 @@ export default class SwCard extends Component {
       birth_year: this.props.character.birth_year,
       eye_color: this.props.character.eye_color,
       hair_color: this.props.character.hair_color,
-      height: this.props.character.height
+      height: this.props.character.height,
+      mass: this.props.character.mass,
+      skin_color: this.props.character.skin_color
     });
   }
   covertHeight(h) {
@@ -101,7 +103,7 @@ export default class SwCard extends Component {
       color: hairColor.color,
       backgroundColor: hairColor.bg === undefined ? 'white' : hairColor.bg
     }
-    //console.log('hair color:', this.state.hair_color);
+    //console.log('mass:', this.state.mass);
     return (
       <div className='card'>
         <h2>{this.state.name}</h2>
@@ -110,6 +112,8 @@ export default class SwCard extends Component {
           <div className="card__inline" style={eye_styles}>Eye Color: {this.state.eye_color}</div>
           <div className="card__inline" style={hair_styles}>Hair Color: {this.state.hair_color}</div>
           <div className="card__inline">Height {this.covertHeight(this.state.height)}</div>
+          <div className="card__inline">Weight {Math.round(this.state.mass * 2.20462)}lbs</div>
+          <div className="card__inline">Skin Color {this.state.skin_color}</div>
         </div>
       </div>
     );
