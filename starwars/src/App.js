@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Characters from './Characters.js';
+
 class App extends Component {
   constructor() {
     super();
@@ -24,9 +26,12 @@ class App extends Component {
       });
   }
   render() {
+    const Chara = this.state.starwarsChars;
+    console.log(Chara);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Characters starwarscChars={Chara} />
       </div>
     );
   }
