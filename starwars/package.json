@@ -2,15 +2,20 @@
   "name": "starwars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vibe.github.io/Sprint-Challenge---React",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
+    "deploy" : "npm run build&&gh-pages -d build",    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }

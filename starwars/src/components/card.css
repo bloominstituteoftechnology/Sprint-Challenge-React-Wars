@@ -1,0 +1,41 @@
+.characters {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.character-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    min-width: 25%;
+    max-width: 490px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.character-card ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.character-card li {
+    padding: 10px;
+    text-align: center;
+}
+.character-card span {
+    padding: 5px 10px;
+    display: block;
+    background: rgba(0,0,0,0.8); 
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.films li {
+    background: rgba(0, 0, 0, .8);
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+}
