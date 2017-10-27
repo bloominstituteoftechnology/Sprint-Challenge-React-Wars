@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import Vehicles from './components/vehicles.js';
+import Starships from './components/starships.js';
+import Films from './components/films.js';
+
 
 class App extends Component {
   constructor() {
@@ -33,8 +37,8 @@ class App extends Component {
               <div key={char.name + i} className="CharCard">
                 <div className="CharName" >{char.name}</div>
                 <div>Homeworld: <a href={char.homeworld}>Homeworld</a></div>
-                <div className="Specs">
-                  <div className="Specs_title">Identifyers</div>
+                <div className="SubSection">
+                  <div className="SubSectionTitle">Identifyers</div>
                   <div className="Spec_Items">
                     <div className="Spec">Species: <a href={char.species}>Species Info</a></div>
                     <div className="Spec">Gender: {char.gender}</div>
@@ -46,9 +50,9 @@ class App extends Component {
                     <div className="Spec">Birth Year: {char.birth_year}</div>
                   </div>
                 </div>
-                <div>Vehicles: {char.vehicles}</div>
-                <div>Starships: {char.starships}</div>
-                <div>Films: {char.films}</div>
+                <div className="SubSection"><Vehicles  vehicles={char.vehicles}/></div>
+                <div className="SubSection"><Starships starships={char.starships}/></div>
+                <div className="SubSection"><Films films={char.films}/></div>
               </div>
             )
           })}

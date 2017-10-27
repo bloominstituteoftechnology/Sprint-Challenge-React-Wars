@@ -4,16 +4,22 @@
 .Header {
   color: #443e3e;
   font-family: fantasy;
-  font-size: 4em;
+  font-size: 3em;
   text-decoration: underline;
   text-shadow: 1px 1px 5px #fff;
 }
+.CharacterCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .CharCard {
-  margin: 2em;
+  margin: 0.5em;
   padding: 1.5em;
   background: white;
-  width: 70%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -24,21 +30,25 @@
 
 .CharName {
   font-family: fantasy;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-.Specs {
+.SubSection {
   display: flex;
   border: 1px solid black;
-  width: 80%;
+  width: 95%;
   flex-direction: column;
   align-self: center;
-  margin: 1em;
+  margin: 0.5em;
 }
 
-.Specs_title {
-  font-size: 1.4em;
+.SubSectionTitle {
+  font-size: 1.2em;
   text-decoration: underline;
+}
+
+.SubSectionLink {
+  margin: 0.5em;
 }
 
 .Spec_Items {
