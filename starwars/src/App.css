@@ -6,6 +6,25 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.nav-Header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #e5e5e5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.nav-Header > button {
+  margin: 0 15px;
+  font-size: 1.1em;
+  background-color: transparent;
+  width: 100px;
+  border: none;
+}
+.nav-Header > button:hover {
+  background-color: lightgray;
+}
 content {
   display: flex;
   flex-direction: row;
