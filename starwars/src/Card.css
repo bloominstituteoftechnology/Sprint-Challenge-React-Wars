@@ -1,0 +1,10 @@
+.card {
+  width: 75%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 20px;
+  padding: 0px;
+  border-radius: 10px;  
+  text-align: left;
+  background-color: rgb(17, 98, 128);
+}
