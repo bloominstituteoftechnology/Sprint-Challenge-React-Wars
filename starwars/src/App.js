@@ -8,6 +8,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -27,6 +28,29 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="flexContainer">
+          {this.state.starwarsChars.map(data => {
+            return (
+              <div className="flexContainer__card">
+                <div className="flexContainer__card--header">{data.name}</div>
+                <div className="flexContainer__card--body">
+                  <ul>
+                    <li>Birth Year: {data.birth_year}</li>
+                    <li>Eye Color: {data.eye_color}</li>
+                    <li>Gender: {data.gender}</li>
+                    <li>Hair Color: {data.hair_color}</li>
+                    <li>Height: {data.height}</li>
+                    <li>Mass: {data.mass}</li>
+                    <li>Skin Color: {data.skin_color}</li>
+                    <li>
+                      URL: <a href={data.url}>Click!</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
