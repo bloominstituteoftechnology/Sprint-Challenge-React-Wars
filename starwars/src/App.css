@@ -14,12 +14,7 @@
   display: block;
   border: 1px rgb(180, 180, 180) solid;
   width: 60%;
-  background-color: rgb(138, 104, 78);
-}
-
-.PostList__comment {
-  color: red;
-  margin-left: 5px;
+  background-color: rgb(158, 126, 100);
 }
 
 .PostList__post-title {
@@ -30,7 +25,7 @@
 }
 
 .PostList__container {
-color: lightseagreen;
+color: lightseagreen
 }
 
 .PostList__stamp {
@@ -49,19 +44,4 @@ color: lightseagreen;
  text-align: left;
  margin: 10px;
  color: skyblue;
-}
-.PostList__top-thumb {
-  width: 5%;
-  height: auto;
-}
-
-.PostList__comment-box {
-  border-top: 1px grey solid;
-}
-
-.PostList__comment-input {
-  padding: 15px;
-  height: 60%;
-  width: 100%;
-  border: none;
 }
