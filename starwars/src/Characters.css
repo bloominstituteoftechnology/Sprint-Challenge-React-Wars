@@ -1,0 +1,27 @@
+.CharacterList {
+    height: 150px;
+    width: 240px;
+    text-align: left;
+    color: white;
+    background-color: black;
+    margin: 10px 250px;
+    border: 25px solid rgb(20, 20, 70);
+}
+
+.Header{
+    margin-top: -20px;
+    margin-left: -15px;
+}
+
+.Profile {
+    color: yellow;
+    margin: 10px;
+    float: left;
+    margin-top: -15px;
+}
+
+.Prof {
+    width: auto;
+    height: auto;
+    color: grey;
+}
