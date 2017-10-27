@@ -1,0 +1,12 @@
+.Card {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+}
+
+.Card-container {
+    background-color: #DAD4D4;
+    opacity: .8;
+    display: inline-block;
+    border: 5px solid black;  
+}
