@@ -1,0 +1,45 @@
+.thumbnail {
+    width: 320px;
+    height: 400px;
+    background-color: #9f793b;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #e6e4be;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+    opacity: 0.7;
+    position: relative;
+}
+
+
+.thumbnail-container {
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    -webkit-clip-path: polygon(0.56% 80.67%,17.78% 99.16%,99.56% 99.82%,99.78% 20.00%,80.56% 0.51%,0.44% 0.18%);
+    clip-path: polygon(0.56% 80.67%,17.78% 99.16%,99.56% 99.82%,99.78% 20.00%,80.56% 0.51%,0.44% 0.18%);
+}
+
+.thumbnail-logo {
+    width: 45px;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+}
+
+.thumbnail-logo-text {
+    width: 55px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.thumbnail h3 span {
+    color: #9f793b;
+}
