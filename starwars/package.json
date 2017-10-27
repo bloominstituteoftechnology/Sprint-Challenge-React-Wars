@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jshint": "^2.9.5",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
