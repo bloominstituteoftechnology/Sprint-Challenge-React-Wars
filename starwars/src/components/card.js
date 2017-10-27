@@ -13,7 +13,8 @@ export default ({ character }) => {
     films,
     starships,
     vehicles,
-    homeworld
+    homeworld,
+    species
   } = character;
   return (
     <div className="character-card">
@@ -28,11 +29,24 @@ export default ({ character }) => {
             <li><span>Height</span>{height}</li>
             <li><span>Mass</span>{mass}</li>
             { homeworld.name ? <li><span>Homeworld</span>{homeworld.name}</li> : null}
+            { species.name ? <li><span>Species</span>{species.name}</li> : null}            
             { starships.length ? <li><span>Starships</span>{starships.length}</li> : null }
             { vehicles.length ? <li><span>Vehicles</span>{vehicles.length}</li> : null }
-            { films.length ? <li><span>Films</span>{films.length}</li> : null }
-
         </ul>
+        { films.length && films[0].title ?
+            
+            <div className="films">
+                <header>Films</header>
+                <ul>
+                { films.map((film, i) => (
+                    <li>{film.title}</li>
+                )) }
+                </ul>
+            </div>
+            
+            : null }
+        
+        
       </section>
     </div>
   );

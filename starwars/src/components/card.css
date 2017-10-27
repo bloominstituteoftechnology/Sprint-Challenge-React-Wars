@@ -32,3 +32,10 @@
     color: #ffffff;
     margin-bottom: 5px;
 }
+
+.films li {
+    background: rgba(0, 0, 0, .8);
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+}

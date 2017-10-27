@@ -20,9 +20,21 @@ class App extends Component {
       .then(data => {
         this.setState({ starwarsChars: data.results }, async () => {
           const chars = await Promise.all(this.state.starwarsChars.map(async (character) => {
-            let res = await fetch(character.homeworld);
-            res = await res.json();
-            character.homeworld = res;
+            let homeworld = await fetch(character.homeworld);
+            homeworld = await homeworld.json();
+            character.homeworld = homeworld;
+            let species = await fetch(character.species);
+            species = await species.json();
+            character.species = species;
+
+            let films = await Promise.all(character.films.map(async url => {
+              let film = await fetch(url);
+              film = film.json();
+              return film;
+            }));
+
+            character.films = films;
+
             return character;
           }));
           this.setState({
