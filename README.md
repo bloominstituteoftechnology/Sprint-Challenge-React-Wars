@@ -16,7 +16,7 @@
 2. Once you have installed all the _node_modules_ you should be able to run `npm start` to get your server up and running.
 3. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beuty.
 
-### If you notice inside of `App.js` we're calling an open sourced **API** from withing `componentDidMount()` and saving the results of that API on state. 
+### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state. 
 #### Open up your chrome `React Dev Tools` to peek at the data set on `state` of your `App` component. 
 * You should see something like this:
 
