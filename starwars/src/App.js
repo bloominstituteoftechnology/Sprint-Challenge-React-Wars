@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import './Starwars.css';
+import StarwarsCard from './StarwarsCard';
 
 class App extends Component {
   constructor() {
@@ -25,9 +27,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div>
         <h1 className="Header">React Wars</h1>
+        <div>
+        <StarwarsCard card = {this.state.starwarsChars}/>
+        </div>
       </div>
+
     );
   }
 }
