@@ -7,7 +7,9 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      page: 1,
+      prev: null,
+      next: null,
+      page: 'https://swapi.co/api/people',
     };
     this.goToNextPage = this.goToNextPage.bind(this);
     this.goToPreviousPage = this.goToPreviousPage.bind(this);
@@ -16,32 +18,44 @@ class App extends Component {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
-    fetch(`https://swapi.co/api/people?page=${this.state.page}`)
+    fetch( this.state.page )
       .then(res => {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          prev: data.previous,
+          next: data.next,
+        });
+        return Promise.all(data.results.map(async (info, i) => {
+          data.results[i].homeworld = await fetch( info.homeworld )
+            .then(res => res.json())
+            .then(home => home.name );
+          return data.results[i];
+        }));
+      })
+      .then(data => {
+        this.setState({
+          starwarsChars: data,
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   }
   goToNextPage() {
-    this.setState({ page: ++this.state.page, });
-    this.componentDidMount();
+    this.setState({ page: this.state.next, }, () => { this.componentDidMount() });
   }
   goToPreviousPage() {
-    this.setState({ page: --this.state.page, });
-    this.componentDidMount();
+    this.setState({ page: this.state.prev, }, () => { this.componentDidMount() });
   }
   render() {
     return (
       <div className="App">
         <nav className='nav-Header'>
-          <button onClick={ this.goToNextPage }>next</button>
+          <button onClick={ this.goToPreviousPage } disabled={ !(this.state.prev) }>previous</button>
           <h1 className="Header">React Wars</h1>
-          <button onClick={ this.goToPreviousPage } disabled={ !(this.state.page > 1) }>previous</button>
+          <button onClick={ this.goToNextPage } disabled={ !(this.state.next) }>next</button>
         </nav>
         <content>
           {this.state.starwarsChars.map(char => {

@@ -3,6 +3,7 @@ import './Card.css';
 
 const Card = (props) => {
   const char = props.char;
+
   return (
     <div className='char_card'>
       <h4>{ char.name }</h4>
