@@ -1,11 +1,15 @@
 .Starwars-container{
     display:flex;
     flex-wrap: wrap; 
-   
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Starwars-element {
+    font-size: 20px;
+    font-weight: bolder;
 }
 .Starwars-cards{
-    flex-direction: column;
-    border: 1px black solid;
+    width: 200px;
 }
 .Starwars-element {
     margin:15px;
