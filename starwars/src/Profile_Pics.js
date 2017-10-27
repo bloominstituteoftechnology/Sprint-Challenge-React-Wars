@@ -1,14 +1,24 @@
 const ProfilePics = {
-  'Luke Skywalker': './assets/luke_skywalker.png',
-  'C-3PO': './assets/luke_skywalker.png',
-  'R2-D2': './assets/r2_d2.png',
-  'Darth Vader': './assets/darth_vader.png',
-  'Leia Organa': './assets/leia_organa.png',
-  'Owen Lars': './assets/owen_lars.png',
-  'Beru Whitesun lars': './assets/beru_lars.png',
-  'R5-D4': './assets/r5_d4.png',
-  'Biggs Darklighter': './assets/biggs_darklighter.png',
-  'Obi-Wan Kenobi': './assets/obi_wan_kenobi.png'
+  'Luke Skywalker':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/luke_skywalker.png',
+  'C-3PO':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/c_3po.png',
+  'R2-D2':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/r2_d2.png',
+  'Darth Vader':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/darth_vader.png',
+  'Leia Organa':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/leia_organa.png',
+  'Owen Lars':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/owen_lars.png',
+  'Beru Whitesun lars':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/beru_lars.png',
+  'R5-D4':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/r5_d4.png',
+  'Biggs Darklighter':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/biggs_darklighter.png',
+  'Obi-Wan Kenobi':
+    'https://raw.githubusercontent.com/davdaarn/Sprint-Challenge---React/master/starwars/src/assets/obi_wan_kenobi.png'
 };
 
 export default ProfilePics;

@@ -6,6 +6,8 @@
   margin: auto;
   justify-content: space-around;
 }
+.char_box_title {
+}
 .char_box {
   display: flex;
   flex-direction: row;
