@@ -5,7 +5,7 @@ export const Starwars = props => {
   return (
     <div className={'big_starwars'}>
       {props.chars.map(char => {
-        console.log(pics[char.name]);
+        console.log(char);
         return (
           <div key={char.name}>
             <h2 className={'char_box_title'}>{char.name}</h2>
