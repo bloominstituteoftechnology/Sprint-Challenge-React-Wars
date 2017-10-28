@@ -2,6 +2,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  /*background-image: url('./sw-bg.jpg');
+  background-size: cover; */
+}
+.card {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-width: 3px 6px 3px 6px;
+  color: green;
+}
+ul {
+  list-style-type: none;
+}
+ul li:last-child {
+  border-bottom-style: solid;
+  border-width: 0 0 3px 0;
+}
+ul li:first-child {
+  border-top-style: solid;
+  border-width: 3px 0 0 0
+}
+.card__inline {
+  display: inline;
+  padding-left: 20px;
+  color: blue;
 }
