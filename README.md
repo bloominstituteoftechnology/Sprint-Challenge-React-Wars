@@ -11,10 +11,10 @@
 4. Name the three arguments that are passed into the `React.createElement()` function?
 
 ## Project
-* You're going to be building an applicatoin *starwars* that consumes live data that we're retrieving across the world wide web!
-1. **cd into starwars** run `npm install` to retrieve all the dependancies. 
+* You're going to be building an application *starwars* that consumes live data that we're retrieving across the world wide web!
+1. **cd into starwars** and run `npm install` to retrieve all the needed dependancies. 
 2. Once you have installed all the _node_modules_ you should be able to run `npm start` to get your server up and running.
-3. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beuty.
+3. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state. 
 #### Open up your chrome `React Dev Tools` to peek at the data set on `state` of your `App` component. 
@@ -22,5 +22,5 @@
 
 ![Star Wars state data](starwars_data.png)
 
-* Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields who's values are URL's. You'll figure out what to do with data like that later on in the course. 
+* Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course. 
 * For now, just build a react app that displays this fun Star Wars data. Build a card for each object and style it to make it nice and fancy. 
