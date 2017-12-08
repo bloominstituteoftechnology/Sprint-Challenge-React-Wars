@@ -6,7 +6,6 @@
   padding: 10px 0px;
 }
 .Property:not(:last-child) {
-  /* margin-bottom: 10px; */
   border-bottom: 1px dashed #e5e5e5;
 }
 .Property__name {
