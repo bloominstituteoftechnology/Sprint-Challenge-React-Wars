@@ -17,7 +17,7 @@ class FilmsSection extends Component {
             <div className="films" key={i}>
             <div className="film-list">
             <p> Appears in : </p>
-            <ul>{film.films}</ul></div>
+            <ul><li>{film.films}</li></ul></div>
             </div>)
          ) : null}
             </div>
