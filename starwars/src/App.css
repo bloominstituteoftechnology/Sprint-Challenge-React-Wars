@@ -6,3 +6,86 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+.CharacterSlide {
+  display: flex;
+  margin: 0.25em;
+  padding: 0.75em;
+  
+}
+
+.CharacterSlideShelf{  
+  min-width: 294px;
+  box-shadow: 0.15em 0.15em 0.15em darkblue;
+  width:100%;
+}
+
+.CharacterCard{
+  margin: 0.75em;
+}
+
+.CharacterCard--female {
+  box-shadow: 0.15em 0.15em 0.15em pink;
+}
+
+.CharacterCard--male {
+  box-shadow: 0.15em 0.15em 0.15em darkslateblue;
+}
+
+
+.CharacterCard--other {
+  box-shadow: 0.15em 0.15em 0.15em steelblue;
+}
+
+.CharacterCard__TopBanner{
+  display: inline-flex;
+  width:100%;
+}
+
+.CharacterCard__TopBanner div{
+  padding: 0.85em;
+}
+
+.CharacterCard__TopBanner div:first-child{
+  font-size: larger;
+  font-weight: 700;
+  width:75%;
+}
+
+.CharacterCard__StatsSection{
+  box-sizing: border-box;
+}
+
+.StatsSection{
+  box-sizing: border-box;
+  margin:0.75em;
+}
+
+.StatsSection_Row {
+  display: flex;
+}
+
+.StatsSection_Row div {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.StatsSection__Footer{
+  
+}
+
+.StatsSection_Row div:first-child {
+  font-weight: 700;
+  width:30%;
+}
+
+.StatsSection_Row div:not(:first-child) {
+  justify-content: center;
+  width:70%;
+}
+
+.StatsSection__Footer div{
+  display: inline-flex;
+  margin:0.35em;
+}
