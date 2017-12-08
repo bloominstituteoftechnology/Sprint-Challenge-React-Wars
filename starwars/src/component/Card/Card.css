@@ -1,12 +1,8 @@
-.card {
+.card--item {
     min-height: 15em;
-    width: 40%;
-    margin: 1em auto;
-    background-color: white;
-    opacity: .25;
+    min-width: 15em;
+    margin: 2em 2em;
 }
 .card__name {
     font-size: 2em;
-    color: black;
-    font-weight: 500;
 }

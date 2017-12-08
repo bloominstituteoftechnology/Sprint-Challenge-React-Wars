@@ -21,12 +21,14 @@ class Card extends Component {
     }
     render() {
         return (
-            <div className="card">
-                <div className="card__name"><b>{this.state.name}</b></div>
-                <div>born {this.state.birthyear}</div>
-                <div>{this.state.height}cm tall</div>
-                <div>Has appeared in {this.state.numFilms} Star Wars {this.state.numFilms === 1 ? "film" : "films"} so far</div>
-            </div>
+                <div className = "card">
+                    <div className = "card--item">
+                        <div className = "card__name"><b>{this.state.name}</b></div>
+                        <div>born {this.state.birthyear}</div>
+                        <div>{this.state.height}cm tall</div>
+                        <div>Has appeared in {this.state.numFilms} Star Wars {this.state.numFilms === 1 ? "film" : "films"} so far</div>
+                    </div>
+                </div>
         );
     }
 }

@@ -1,0 +1,32 @@
+.star-wars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    perspective: 400px;
+    color: #ff6;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+
+
+}
+.crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: slide 40s linear;
+}
+@keyframes slide {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
