@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-
+//import Parent from './components/Parent';
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      data : {
+        results
+      }
     };
   }
   componentDidMount() {
@@ -27,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.map((data, i) => <Child key={i} postData={data.results} />)}
       </div>
     );
   }
