@@ -3,7 +3,7 @@
 Answer: React JS is a Javascript Framework used for building User Interfaces.
 
 ### 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
-Answer: 
+Answer:  
 React Component Lifecycle can be called process timeline.
 Every component in React has its own lifecyles methods.  
 These Lifecycle methods allows us to execute/run codes at specific time in its process.
