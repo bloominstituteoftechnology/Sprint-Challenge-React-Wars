@@ -1,0 +1,32 @@
+.CardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.Card {
+  flex-basis: 40%;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 35px;
+  margin: 0px 0px 50px 0px;
+  background-color: #fff;
+}
+
+.Card > .CharacterName {
+  color: #0d52d1;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+
+  .Card {
+    flex-basis: 75%;
+  }
+
+}
