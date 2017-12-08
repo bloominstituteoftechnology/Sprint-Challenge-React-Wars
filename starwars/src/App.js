@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharacterProfile from './components/CharacterProfile/CharacterProfile';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((datum, i) => (
+          <CharacterProfile key={i} data={datum} />
+        ))}
       </div>
     );
   }
