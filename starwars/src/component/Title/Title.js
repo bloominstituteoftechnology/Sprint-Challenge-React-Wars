@@ -2,8 +2,8 @@ import React from 'react';
 import "./Title.css";
 
 const Title = () => (
-    <div className = "star-wars">
-        <div className = "crawl">React Wars</div>
+    <div>
+        <div className = "title">React Wars</div>
     </div>
 )
 
