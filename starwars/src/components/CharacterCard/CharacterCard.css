@@ -1,0 +1,32 @@
+.Character {
+  float:left;
+  width: 50%;
+  padding-bottom: 10px;
+  outline: 1px solid black; 
+  background-color: #00BCD4;
+  font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+}
+
+.Character__name {
+  color: #fff;
+  text-align: left;
+  padding: 10px 0;
+  background-color:#009688;
+}
+
+.Character__section-header {
+  text-align: left;
+  background-color: #4DD0E1;
+}
+
+.Character__section-caption {
+  float: left;
+  text-align: left;
+  width: 40%;
+}
+
+.Character__section-stat {
+  float: center;
+  text-align: center;
+  width: 60%;
+}
