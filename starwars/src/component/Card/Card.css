@@ -4,6 +4,10 @@
     margin: 2em 2em;
     animation: fadeIn 8s ease-in;
 }
+.card--item:hover {
+    height: 100%;
+    width: 100%;
+}
 .card__name {
     font-size: 2em;
 }
