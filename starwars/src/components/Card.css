@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Changa One', cursive, 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800');
+}
+
+body {
+    margin: 0 160px;
+}
+
+.card {
+    height: 200px;
+    width: 250px;
+    float: left;
+    border-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color: #5c544a
+}
+
+.card__content {
+   text-align: left;
+   padding: 8px 0;
+}
+
+.card__item {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.card__inner {
+    float: none;
+    text-align: left;
+}
+
+.info {
+    display: inline-block;
+    width: 100%;
+    padding: 0 -20%;
+    line-height: 20px;
+    font-family: 'Changa One';
+    color: rgb(234, 254, 255);
+}
+
+.name {
+    color: #d8bb7f;
+    font-family: 'Changa One', cursive;
+    font-size: 1.4em;
+}
