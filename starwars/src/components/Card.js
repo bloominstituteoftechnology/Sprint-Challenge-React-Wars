@@ -15,17 +15,22 @@ const Card = (props) => {
 	return (
 		<div className="card">
 			<div className="card__content">
-				<strong className="card__item">{props.name} <br/></strong>
-				<strong className="card__item">Birth Year: {props.birth_year} <br/></strong>
-				<strong className="card__item">Height: {props.height} inches <br/></strong>
-				<strong className="card__item">Sex: {props.gender} <br/></strong>
-				<strong className="card__item">Eye Color: {props.eye_color} <br/></strong>
-				<strong className="card__item">Hair Color: {props.hair_color} <br/></strong>
-				<strong className="card__item">Mass: {props.mass}kg <br/></strong>
+				{/* When I have the time want to make this DRY. Most likely
+				Need to put these into an object with this data passed in */}
+				<strong className="card__item name">{props.name}<br/></strong>
+				<div className="card__inner">
+					<span className="card__item info">Birth Year: {props.birth_year} <br/></span>
+					<span className="card__item info">Height: {props.height} inches <br/></span>
+					<span className="card__item info">Sex: {props.gender} <br/></span>
+					<span className="card__item info">Eye Color: {props.eye_color} <br/></span>
+					<span className="card__item info">Hair Color: {props.hair_color} <br/></span>
+					<span className="card__item info">Mass: {props.mass}kg <br/></span>
+				</div>
 			</div>
 		</div>
 	)
 }
+
 
 	
 
