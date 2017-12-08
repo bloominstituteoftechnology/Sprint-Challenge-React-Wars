@@ -1,5 +1,5 @@
 import React from 'react';
-import './StarWarItem.css';
+import './starWarItem.css';
 
 const StarWarItem = ({ postData }) => (
     <div className="StarWarItem-container">

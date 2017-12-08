@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import StarWarItem from './components/StarWarItem';
+import StarWarItem from './components/starWarItem';
 
 class App extends Component {
   constructor() {
