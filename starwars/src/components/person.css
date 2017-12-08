@@ -4,12 +4,17 @@
 }
 
 .characterCard{
+    display: inline-block;    
+    border-color: yellow;
+    border-top: 1em solid #fef501;
+    border-bottom: 1em solid #fef501;
+    border-radius: -0.5em;
+    margin : 2em;
+    padding: 1em;
     width: 40%;
     height: 30%;
-    margin : 2em;
-    display: inline-block;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .attributeList{
