@@ -6,9 +6,15 @@
 ## Start by forking and cloning this repository.
 ## Questions
 1. What is React JS? How does it differ from other JavaScript Frameworks?
+    - React allows for declarative, stateful components that function similar to HTML elements.
 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+    - The React component lifecycle defines what should be done between the mounting and unmounting of components. Three examples of lifecycle methods are componentDidMount (defines what should be done with the component as soon as it is ready), componentWillReceiveProps (defines what to do when the element receives new props), and componentWillUnmount (defines what to do before a component is removed from the DOM) 
 3. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
+    - Class components have access to lifecycle methods while functional components do not.
+    - Class components can have state while functional components are stateless.
+    - Functional components don't require the use the `this` keyword.
 4. Name the three arguments that are passed into the `React.createElement()` function?
+    - type (element), props, children
 
 ## Project
 * You're going to be building an application *starwars* that consumes live data that we're retrieving across the world wide web!
