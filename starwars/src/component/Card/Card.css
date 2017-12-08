@@ -1,0 +1,17 @@
+.card--item {
+    min-height: 15em;
+    min-width: 15em;
+    margin: 2em 2em;
+    animation: fadeIn 8s ease-in;
+}
+.card--item:hover {
+    height: 100%;
+    width: 100%;
+}
+.card__name {
+    font-size: 2em;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
