@@ -1,8 +1,14 @@
 .App {
+  max-width: 1100px;
+  font-family: 'Roboto', Sans-serif;
   text-align: center;
+  margin: 0px auto;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #0d1519;
+  font-size: 60px;
+  text-shadow: 0px 0px 25px #fff;
+  padding: 75px 0px;
+  margin: 0px;
 }
 /* write your parent styles in here for your App.js */
