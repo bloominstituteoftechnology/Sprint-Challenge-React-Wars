@@ -1,0 +1,40 @@
+.image img {
+    height: 25em;
+}
+
+.thumbnail img {
+    height: 5em;
+}
+
+.Frame {
+    margin: auto auto 10px auto;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(163, 121, 59)
+}
+
+.Line {
+    padding: 4px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+}
+
+.desc {
+    width: 120px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.val {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
