@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Star-Wars;
+    src: url(starwars.ttf);
+}
+
+.characterCard{
+    display: inline-block;    
+    border-color: yellow;
+    border-top: 1em solid #fef501;
+    border-bottom: 1em solid #fef501;
+    border-radius: -0.5em;
+    margin : 2em;
+    padding: 1em;
+    width: 40%;
+    height: 30%;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.attributeList{
+    list-style-type: none;
+}
+
+.name{
+    font: 2em black;
+    font-family: Star-Wars;
+}
+
+.eye_color{
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.blue-gray{
+    background-color: #7575a3;
+}
