@@ -1,7 +1,9 @@
-### 1. What is React JS? How does it differ from other JavaScript Frameworks?
+### 1. What is React JS? 
+### How does it differ from other JavaScript Frameworks?
 Answer: React JS is a Javascript Framework used for building User Interfaces.
 
-### 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+### 2. Explain briefly the React Component Lifecycle. 
+###Name three of the methods that are a part of the lifecycle and what they do.
 Answer: 
 1. componentWillMount()
 2. componentDidMount()
