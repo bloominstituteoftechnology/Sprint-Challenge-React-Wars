@@ -10,8 +10,12 @@ Answer:
 3. render()
 
 ### 3. Briefly describe some of the differences between a __Class/Stateful component__ and a __Functional/Presentational component__.
-Answer: **Class/Statefull component** is used when we have an indention to modify ``props``, 
+Answer: 
+**Class/Statefull component** is used when we have an indention to modify ``props``,  
 otherwise **Function/Presentational component** can be used.
 
 ### 4. Name the three arguments that are passed into the __React.createElement()__ function?
-Answer: **Component/Type**, **Props**, **Child**
+Answer: 
+1. Component/Type
+2. Props
+3. Child
