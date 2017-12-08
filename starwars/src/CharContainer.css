@@ -1,0 +1,6 @@
+.char-container {
+display: -webkit-flex
+}
+.char-info {
+text-align: center
+}
