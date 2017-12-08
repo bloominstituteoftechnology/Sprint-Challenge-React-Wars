@@ -1,0 +1,19 @@
+.Property {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 10px 0px;
+}
+.Property:not(:last-child) {
+  /* margin-bottom: 10px; */
+  border-bottom: 1px dashed #e5e5e5;
+}
+.Property__name {
+  font-weight: 300;
+  text-align: left;
+}
+.Property__value {
+  font-weight: 500;
+  text-align: right;
+}
