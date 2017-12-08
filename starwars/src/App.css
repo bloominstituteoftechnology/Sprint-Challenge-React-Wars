@@ -1,5 +1,15 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: Roboto, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  margin: 0px;
+  color:#443e3e;
+  font-size: 20px;
 }
 .Header {
   color: #443e3e;
