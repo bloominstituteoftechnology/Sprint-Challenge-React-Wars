@@ -4,19 +4,18 @@ import './starWarItem.css';
 const StarWarItem = ({ postData }) => (
     <div className="StarWarItem-container">
         <div className="thumbnail">
-            <img src={postData.thumbnailUrl} />
-            <span><b>{postData.username}</b></span>
+
         </div>
         <div className="image">
-            <img src={postData.imageUrl} />
+          
         </div>
         <div>
-        {postData? postData.map((StarWarItem, i) => (
-                    <div className="comment" key={i}>
-                        <div className="comment-user"><b>{StarWarItem.birth_year}</b></div>
-                    </div>)
-                ) : null}
-        </div>
+        {postData? Object.values(postData).map((values, i) => (
+            <div className="comment" key={i}>
+            <div className="comment-user"><b>{values}</b></div>
+          </div>)
+          ) : null}
+      </div>
 
     </div>
 );
