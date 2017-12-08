@@ -1,0 +1,12 @@
+.card {
+    height: 200px;
+    width: 250px;
+    border: 1px solid #8f7878;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card__content {
+   text-align: left;
+   padding: 8px 0;
+}

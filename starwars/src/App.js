@@ -30,7 +30,9 @@ class App extends Component {
       <h1 className = "Header">React Wars</h1>
         {this.state.starwarsChars.map((character, index) => {
           return( 
-          <div className="character-info" key={index}> 
+          <div className="character-info" key={index}>
+           {/* Clever JSX spread attribute props of object passed 
+           into component props. Will utilize this more frequently*/}
           <Card {...character} />
           </div>
           )

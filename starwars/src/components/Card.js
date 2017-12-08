@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react';
+import './Card.css'
 
 // class Card extends Component {
 // 	constructor(props) {
@@ -13,8 +14,15 @@ import React, { Component } from 'react'
 const Card = (props) => {
 	return (
 		<div className="card">
-			<strong>{props.name}: </strong>
-			<strong>{props.height} inches</strong>
+			<div className="card__content">
+				<strong className="card__item">{props.name} <br/></strong>
+				<strong className="card__item">Birth Year: {props.birth_year} <br/></strong>
+				<strong className="card__item">Height: {props.height} inches <br/></strong>
+				<strong className="card__item">Sex: {props.gender} <br/></strong>
+				<strong className="card__item">Eye Color: {props.eye_color} <br/></strong>
+				<strong className="card__item">Hair Color: {props.hair_color} <br/></strong>
+				<strong className="card__item">Mass: {props.mass}kg <br/></strong>
+			</div>
 		</div>
 	)
 }
