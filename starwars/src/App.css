@@ -4,7 +4,7 @@
 .Header svg {
   width: 30rem;
   height: auto;
-  padding: 5rem;
+  padding: 4rem;
 }
 /* write your parent styles in here for your App.js */
 .People__container {
@@ -12,5 +12,4 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
