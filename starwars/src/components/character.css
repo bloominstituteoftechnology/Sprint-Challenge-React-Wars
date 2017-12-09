@@ -1,0 +1,29 @@
+.person {
+    +    font-size: 18px;
+    +    color: white;
+    +    font-weight: bold;
+    +}
+    +
+    +.birth {
+    +    color: blue;
+    +    font-family: Verdana, Geneva, Tahoma, sans-serif
+    +}
+    +
+    +.height {
+    +    color: blue;
+    +    font-family: Verdana, Geneva, Tahoma, sans-serif
+    +}
+    +
+    +.container {
+    +    margin-top: 15px;
+    +    display: flex;
+    +    justify-content: center;
+    +    padding: 1.5%;
+    +    
+    +}
+    +
+    +.card {
+    +    border: 3px solid white;
+    +    width: 30%;
+    +    border-radius: 80%;
+    +} 
