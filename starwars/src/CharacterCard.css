@@ -1,0 +1,24 @@
+.card-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  box-sizing: border-box;
+}
+
+.names {
+  font-weight: bold;
+  color: white;
+  font-size: 36px;
+  padding: 5px;
+  text-align: center;
+}
+
+.facts {
+  color: white;
+  font-style:italic;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
