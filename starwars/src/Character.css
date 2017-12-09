@@ -1,0 +1,16 @@
+.Char {
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail {
+  display: flex;
+  flex: 1;
+  
+}
+
+.prop {
+  flex: 1;
+
+
+}

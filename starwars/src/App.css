@@ -1,4 +1,5 @@
 .App {
+  display: flex;
   text-align: center;
 }
 .Header {
