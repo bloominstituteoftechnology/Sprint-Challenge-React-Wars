@@ -25,11 +25,14 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+   <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
-    );
-  }
+      this.state.starwars.map{( starwarsChar, i) => {
+      <div>
+        <div> name: {starwarsChar.name} </div>
+        <div> birth year: {starwarsChar.birth_year} </div>
+        <div> height: {starwarsChar.height} </div>
+    });
+    </div>
+    };
 }
-
-export default App;

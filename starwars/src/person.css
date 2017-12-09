@@ -1,0 +1,8 @@
+.Person {
+    +  width: 40rem;
+    +  height: 40rem;
+    +  border: 1px solid #fff;
+    +  margin: 3rem;
+    +  background: url("../../star_wars-1.jpg");
+    +  color: #fff;
+    +} 
