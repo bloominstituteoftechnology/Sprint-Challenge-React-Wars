@@ -5,4 +5,23 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+div .starwarsCharacters {
+  display: inline-grid;
+  background-color: grey;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white),blueogre y);
+  background-image: -webkit-linear-gradient(top, white, grey);
+  background-image: -moz-linear-gradient(top, white, grey);
+  background-image: linear-gradient(to bottom, white, grey);
+  opacity: .7;
+  margin: 3em;
+}
+
+.starwarsCharacters {
+  height: 10em;
+  width: 25em;
+}
+
+
 /* write your parent styles in here for your App.js */
+
