@@ -1,0 +1,21 @@
+.Character {
+  box-sizing: border-box;
+  width: 500px;
+  margin: 10px auto;
+  border: 1px solid slategray;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: left;
+  color: lightgray;
+  background-color: rgba(155, 80, 9, 0.788);
+}
+
+.charName {
+  padding-left: 5px;
+  font-size: 1.5em;
+}
+
+.charData {
+  padding-left: 15px;
+  font-size: 1em;
+}
