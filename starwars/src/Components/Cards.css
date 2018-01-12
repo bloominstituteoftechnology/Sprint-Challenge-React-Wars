@@ -1,13 +1,14 @@
 * {
     font-weight: bold;
 }
+
 table {
     border-collapse: collapse;
     margin: 20px;
 }
 
 table, td {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 td {
