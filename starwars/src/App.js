@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Cards from './Components/Cards'
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="Cards">
+          {this.state.starwarsChars.map((character, index) => {
+            return <Cards charac={character} key={index}/>
+          })}
+        </div>
       </div>
     );
   }

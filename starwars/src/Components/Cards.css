@@ -1,0 +1,18 @@
+* {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+}
+caption {
+    padding: 5px;
+}
