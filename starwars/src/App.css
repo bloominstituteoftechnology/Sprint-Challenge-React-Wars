@@ -1,8 +1,26 @@
 .App {
-  text-align: center;
+	display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
+
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px #ffe34d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* write your parent styles in here for your App.js */
+
+.Header p {
+	color: white;
+}
+
+.Players {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	width: 50%;
+}

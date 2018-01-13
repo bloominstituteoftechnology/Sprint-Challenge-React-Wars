@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Player from './Player/Player';
 import './App.css';
 
 class App extends Component {
@@ -23,10 +24,25 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
+    console.log(this.state.starwarsChars)
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">
+          <p>React Wars</p>
+        </h1>
+        <div className="Players">
+          {this.state.starwarsChars.map((playerData, i) => {
+            return (
+              <Player
+                key={i}
+                id={i}
+                player={playerData}
+              />
+            )
+          })}
+        </div>
       </div>
     );
   }

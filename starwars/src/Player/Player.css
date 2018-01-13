@@ -1,0 +1,60 @@
+.PlayerCard {
+	background-color: white;
+
+	width: 200px;
+	/*height: 500px;*/
+
+	margin: 25px;
+
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+}
+
+.PlayerCard-Header {
+	margin: 10px;
+	align-self: center;
+}
+
+.PlayerInfo {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/*align-items: center;*/
+}
+
+.PlayerInfo__descriptions {
+	margin-left: 7px;
+	width: 70px;
+
+}
+
+.PlayerInfo__boxR {
+	height: 17px;
+	margin-right: 4px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end
+}
+
+.PlayerInfo__values {
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.PlayerInfo__boxL {
+	height: 17px;
+
+	display: flex;
+	align-items: center;
+}
+
+.PlayerInfo__boxL-color {
+	display: inline-block;
+}
+
+.PlayerCard-Footer {
+	margin: 10px;
+}
