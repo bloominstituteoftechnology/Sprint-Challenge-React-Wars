@@ -1,0 +1,22 @@
+.sw-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sw-card {
+    margin: 10px;
+    width: 350px;
+    border: black solid 2px;
+}
+
+.sw-element {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.sw-name {
+    font-size: 23px;
+    font-weight: bolder;
+}
