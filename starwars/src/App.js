@@ -4,7 +4,7 @@ import './App.css';
 
 import { CharacterData } from './components/CharacterData.js';
 
-import DataTitles from './components/DataTitles.js';
+// import DataTitles from './components/DataTitles.js';
 
 // import titleData from './components/Titles.js';
 

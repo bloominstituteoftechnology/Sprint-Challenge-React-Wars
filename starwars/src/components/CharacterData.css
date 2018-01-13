@@ -21,15 +21,17 @@
 
 .Chars {
   font-family: 'STARWARS';
-  border: 2px solid black;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.2);
+  /* border: 2px solid black; */
+  box-shadow: 2px 4px 10px black, inset 3px 4px 6px black;
   text-align: left;
   height: 320px;
+  color: white;
+  text-shadow: 2px 4px 3px black;
 }
 
 .Char-Name {
   padding: 20px;
+  
 }
 
 .Char-Height {
