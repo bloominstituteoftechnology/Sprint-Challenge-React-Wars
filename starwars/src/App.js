@@ -6,13 +6,14 @@ import { CharacterData } from './components/CharacterData.js';
 
 import DataTitles from './components/DataTitles.js';
 
-import titleData from './components/Titles.js';
+// import titleData from './components/Titles.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      
 
     };
   }
@@ -36,8 +37,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          {/* <div className="CharTitles">
           <DataTitles titles={titleData} />
-          <CharacterData people={this.state.starwarsChars} />
+          </div> */}
+          <div className="CharCards">
+            {this.state.starwarsChars.map((chars) => {
+              return <CharacterData chars={chars}/>
+            })}
+          </div>
       </div>
     );
   }

@@ -1,31 +1,28 @@
 import React from 'react';
 import './CharacterData.css'
 
-export const CharacterData = (props) => {
+export function CharacterData(props) {
+  const chars = props.chars;
   return (
     <div className="CharBox">
-      {props.people.map(starwarsChars => {
-        return (
-          <div className="Chars">
+      <div className="Chars">
             
-            <div className="Char-Name">{starwarsChars.name}</div>
+        <div className="Char-Name">Name: {chars.name}</div>
             
             
-            <div className="Char-Height">{starwarsChars.height}</div>
+        <div className="Char-Height">Height: {chars.height}</div>
             
             
-            <div className="Char-Weight">{starwarsChars.mass}</div>
+        <div className="Char-Weight">Weight: {chars.mass}</div>
             
             
-            <div className="Char-BirthYear">{starwarsChars.birth_year}</div>
+        <div className="Char-BirthYear">Birth Year: {chars.birth_year}</div>
             
             
-            <div className="Char-Gender">{starwarsChars.gender}</div>
+        <div className="Char-Gender">Gender: {chars.gender}</div>
 
-    </div>
-
-        )
-      })}
+      </div>
+    
     </div>
   )
 }

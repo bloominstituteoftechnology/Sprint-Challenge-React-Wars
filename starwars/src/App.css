@@ -21,3 +21,9 @@
   font-family: 'STARWARS';
 }
 
+.CharCards {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -13,24 +13,19 @@
 }
 
 .CharBox {
-  max-width: 200px;
-  padding: 100px;
-  margin: auto;
+  height: 300px;
+  width: 250px;
+  line-height: 20px;
+  padding: 40px;
 }
 
 .Chars {
-  display: flex;
-  flex-direction: column;
-  flex: row;
   font-family: 'STARWARS';
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px;
-}
-
-.Chars-Headers {
+  background: rgba(255, 255, 255, 0.2);
   text-align: left;
+  height: 320px;
 }
 
 .Char-Name {
