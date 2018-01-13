@@ -8,22 +8,24 @@ const CharacterCard = (props) => {
     <div>
       <ul className="characterList">
 
+        <div className="container">
 
-        <h1 className="info">{character.name}</h1>
-        <img className="photo" src= {require(`./character_images/${character_photo}`)} />
+          <h1 className="characterName">{character.name}</h1>
+          <img className="photo" src= {require(`./character_images/${character_photo}`)} />
 
-        <div className="info">
+          <div className="info">
 
-          <li>Gender: {character.gender}</li>
-          <li>Hair color: {character.hair_color}</li>
-          <li>Eye color: {character.eye_color}</li>
-          <li>Skin tone: {character.skin_color}</li>
-          <li>Height: {character.height}</li>
-          <li>Mass: {character.mass}</li>
+            <li>Gender: {character.gender}</li>
+            <li>Hair color: {character.hair_color}</li>
+            <li>Eye color: {character.eye_color}</li>
+            <li>Skin tone: {character.skin_color}</li>
+            <li>Height: {character.height}</li>
+            <li>Mass: {character.mass}</li>
+          </div>
+
         </div>
 
       </ul>
-      <hr />
     </div>
   );
 }
