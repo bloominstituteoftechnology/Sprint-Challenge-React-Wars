@@ -1,5 +1,5 @@
 ### Questions
-####1.What is React JS? How does it differ from other JavaScript Frameworks?
+1.What is React JS? How does it differ from other JavaScript Frameworks?
 
 * React JS if a front-end framework that builds UI's. It differs from other JS Frameworks like Angular that are end-to-end frameworks that handle the back-end as well as the front-end.
 
