@@ -13,27 +13,42 @@
 }
 
 .CharBox {
-  border: 20px solid white;
+  max-width: 200px;
+  padding: 100px;
+  margin: auto;
 }
 
 .Chars {
   display: flex;
   flex-direction: column;
+  flex: row;
   font-family: 'STARWARS';
   border: 2px solid white;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
+.Chars-Headers {
+  text-align: left;
 }
 
 .Char-Name {
+  padding: 20px;
 }
 
 .Char-Height {
+  padding: 20px;
 }
 
 .Char-Weight {
+  padding: 20px;
 }
 
 .Char-BirthYear {
+  padding: 20px;
 }
 
 .Char-Gender {
+  padding: 20px;
 }

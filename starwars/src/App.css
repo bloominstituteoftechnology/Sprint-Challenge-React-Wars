@@ -1,8 +1,23 @@
+@font-face {
+  font-family:'STARWARS';
+  src:url('./components/fonts/STARWARS.eot?') 
+  format('eot'),
+  url('./components/fonts/STARWARS.woff') 
+  format('woff'),
+  url('./components/fonts/STARWARS.TTF') 
+  format('truetype'),
+  url('./components/fonts/STARWARS.svg#STARWARS') 
+  format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: black;
   text-shadow: 1px 1px 5px #fff;
+  font-family: 'STARWARS';
 }
-/* write your parent styles in here for your App.js */
+
