@@ -1,0 +1,35 @@
+.Character {
+  box-sizing: border-box;
+  width: 600px;
+  margin: 10px auto;
+  border: 1px solid slategray;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  color: lightgray;
+  background-color: rgba(136, 67, 3, 0.788);
+}
+
+.charName {
+  padding-left: 5px;
+  font-size: 1.5em;
+}
+
+.charData {
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+.link {
+  color: lightgray;
+  font-style: italic;
+  /* padding-right: 5px; */
+}
+
+.link-list {
+  padding-right: 10px;
+}
+
+span {
+  font-weight: bold;
+}
