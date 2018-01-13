@@ -1,0 +1,33 @@
+.characterList {
+  /*display: grid;*/
+  /*display: flex;*/
+  /*align-self: center;*/
+  /*align-items: center;*/
+  list-style-type: none;
+}
+
+.photo {
+  align-self: center;
+  /*padding-left: 100px;*/
+  /*float: left;*/
+}
+
+.info {
+  display: grid;
+  align-content: center;
+  padding: 15px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 200%;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 100%;
+  text-shadow: 1px 1px 2px black;
+  /*padding-left: 100px;*/
+  /*float: right;*/
+}
+
+.characterName {
+
+}
+

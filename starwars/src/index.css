@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  /*background-image: url('./sw-bg.jpg');*/
+  background-image: url('https://wallpapercave.com/wp/bV3WiYh.jpg');
+  /*background-image: linear-gradient(0deg, transparent, black 75%);*/
+  /*background-size: cover;*/
 }
