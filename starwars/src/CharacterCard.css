@@ -1,0 +1,50 @@
+.body {
+  margin: auto;
+}
+
+.container {
+  justify-content: space-around;
+  list-style-type: none;
+  border-style: solid;
+  border-width: thin;
+  border-color: blue;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+.characterList {
+  margin: 0;
+  padding: 0;
+  /*display: flex;*/
+  /*align-self: center;*/
+  /*align-items: center;*/
+  list-style-type: none;
+}
+
+.photo {
+  width: 50%;
+}
+
+.info {
+  display: grid;
+  align-content: center;
+  padding: 15px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 125%;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 100%;
+  text-shadow: 1px 1px 2px black;
+}
+
+.characterName {
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 200%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 100%;
+  text-shadow: 1px 1px 2px black;
+}
+
