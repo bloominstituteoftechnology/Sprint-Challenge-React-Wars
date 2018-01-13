@@ -1,13 +1,13 @@
 .Character {
   box-sizing: border-box;
-  width: 500px;
+  width: 600px;
   margin: 10px auto;
   border: 1px solid slategray;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   text-align: left;
   color: lightgray;
-  background-color: rgba(155, 80, 9, 0.788);
+  background-color: rgba(136, 67, 3, 0.788);
 }
 
 .charName {
@@ -20,4 +20,16 @@
   font-size: 1em;
 }
 
-/* that thing for making all tags in a certain part use the same style... */
+.link {
+  color: lightgray;
+  font-style: italic;
+  /* padding-right: 5px; */
+}
+
+.link-list {
+  padding-right: 10px;
+}
+
+span {
+  font-weight: bold;
+}
