@@ -13,8 +13,8 @@ const Character = (props) => {
             <a className='link link-list' href={film} target='_blank'>Movie{index + 1}</a>
           )})}
         </div>
-        <div><span>Born:</span> {data.birth_year} on <a href={data.homeworld} className='link' target='_blank' >homeworld</a></div>
-        <div><span>Gender:</span> {data.gender}; <span>Species:</span> <a href={data.species[0]} className='link' target='blank'>Click</a></div>
+        <div><span>Born:</span> {data.birth_year} on <span>Homeworld:</span> <a href={data.homeworld} className='link' target='_blank' >Click</a></div>
+        <div><span>Gender:</span> {data.gender} of <span>Species:</span> <a href={data.species[0]} className='link' target='blank'>Click</a></div>
         <div><span>Height:</span> {data.height}; <span>Mass:</span> {data.mass}</div>
         <div><span>Eyes:</span> {data.eye_color}; <span>Hair:</span> {data.hair_color};<span>Skin:</span> {data.skin_color}</div>
         <div><span>Starships:</span> {data.starships.map((ship, index) => {
