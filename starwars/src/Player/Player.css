@@ -1,7 +1,7 @@
 .PlayerCard {
 	background-color: white;
 
-	width: 200px;
+	width: 350px;
 	/*height: 500px;*/
 
 	margin: 25px;
@@ -16,6 +16,14 @@
 	align-self: center;
 }
 
+.PlayerCard-body {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .PlayerInfo {
 
 	display: flex;
@@ -25,7 +33,7 @@
 }
 
 .PlayerInfo__descriptions {
-	margin-left: 7px;
+	margin-left: 35px;
 	width: 70px;
 
 }
@@ -53,6 +61,59 @@
 
 .PlayerInfo__boxL-color {
 	display: inline-block;
+}
+
+.PlayerPicture {
+	display: flex;
+	/*align-items: center;*/
+	/*justify-content: center;*/
+}
+
+.PlayerPicture img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	margin-left: 15px;
+}
+
+.PlayerInfo--detailed {
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Vehicle--header {
+	margin-bottom: 4px;
+}
+
+.PlayerVehicles {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.PlayerInfo--detailed-item {
+	/*margin: 10px;*/
+	/*width: 150px;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.VehicleText {
+	width: 100px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.VehiclePicture {
+	margin-left: 10px;
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
 }
 
 .PlayerCard-Footer {
