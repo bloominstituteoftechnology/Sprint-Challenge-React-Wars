@@ -6,3 +6,33 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+@media(max-width:768px){
+  .user-list{
+    flex-flow:column;
+    width:700px;
+    margin:5px;
+  }
+}
+
+.user-list{
+  display:flex;
+  flex-flow: row wrap;
+  width:100%;
+  justify-content:center;
+}
+
+.page{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  background: blueviolet;
+  border: ghostwhite solid 1px;
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin:15px;
+  padding:5px;
+}
+.page:hover{
+  color:#FFD700;
+}
