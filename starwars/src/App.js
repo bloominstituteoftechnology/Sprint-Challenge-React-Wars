@@ -31,7 +31,7 @@ class App extends Component {
         <div className="App InfoCardSection">
           {this.state.starwarsChars.map((character, index) => {
             return (
-              <div key={index}>
+              <div className="App InfoCardSection InfoCardContainer" key={index}>
                 <InfoCard 
                 character={character}
                 />

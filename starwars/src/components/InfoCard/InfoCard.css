@@ -2,18 +2,23 @@
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
   justify-content: flex-start;
   align-items: flex-start;
-  background: rgba(79, 61, 47, 0.8);
   color: lightblue;
-  text-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border: 1px solid lightblue;
-  box-shadow: 3px 3px rgba(0,0,0,0.5);
-  margin: 3px;
-  padding: 5px;
-  width: 300px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
 }
 
-.InfoCard:hover {
-  background: rgb(38, 63, 63);
+.InfoCard .Name {
+  border-bottom: 1px solid lightblue;
+  width: 95%;
+  align-self: center;
+  align-items: flex-end;
+  box-shadow: none;
+  background: transparent;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: bold;
 }
