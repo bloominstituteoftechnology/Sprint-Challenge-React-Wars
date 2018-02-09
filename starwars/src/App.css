@@ -7,15 +7,16 @@
 }
 .Header {
   color: #0072a7;
-  font-size: 2rem;
-  text-shadow: 1px 1px 5px rgb(66, 73, 184);
+  font-size: 4rem;
+  text-shadow: 0px 4px 0px rgb(255, 0, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .filterBar {
   display: inline-flex;
   width: 100%;
   justify-content: space-around;
-  border-style: groove;
   margin: 5px;
   padding: 5px;
 }
@@ -51,22 +52,23 @@ button:hover{
 .cardDisplay {
   margin-left: 10px;
   border-style: solid;
-  border-color: yellow;
+  border-color: #f806af;
   display: inline-flex;
   flex-flow: wrap;
   width: 100%;
+  justify-content: space-around;
+  border-radius: 2.5%;
 }
 
 .charCard {
   display: flex;
-  width: 48%;
-  height: 500px;
+  width: 46%;
   justify-content: space-between;
   border-style: groove;
   margin: 5px;
   padding:5px;
-  font-size: 1rem;
   border-color: purple;
+  border-radius: 10%;
 }
 
 .characteristics {
@@ -77,7 +79,8 @@ button:hover{
   margin: 1%;
   padding: 1%;
   border-color:chocolate;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  border-radius: 15%;
 }
 
 .otherInfo{
@@ -87,7 +90,8 @@ button:hover{
   padding: 1%;
   color: #0084bf;
   border-color: chocolate;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  border-radius: 15%;
 }
 
 a{
@@ -96,7 +100,9 @@ a{
 }
 
 h2{
-  font-size: 1rem;
+  font-size: 2rem;
+  border-style: solid;
+  border-radius: 50%;
 }
 
 /* write your parent styles in here for your App.js */
