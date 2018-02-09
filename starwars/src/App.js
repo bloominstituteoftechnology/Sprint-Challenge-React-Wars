@@ -28,8 +28,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className="profiles">
-          <ul className="profile-list">
+        <div className="main_content">
+          <ul className="profiles">
             {
               this.state.starwarsChars.map((profile) => {
                 return <Profile key={profile.name} profile={profile} />
