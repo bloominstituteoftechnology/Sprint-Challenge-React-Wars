@@ -1,0 +1,3 @@
+1. I believe React is different because of its components based approach & it's not as fully featured
+2. Component Lifecycle is about controlling when/how/where a component shows up or goes away. Beyond that, don't have a great understanding of it, yet.
+3. Not sure if we went over this, but if this is the difference between props & states, then props is where you access data & states is where you can ingest and manipulate the data.
