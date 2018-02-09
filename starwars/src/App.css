@@ -5,4 +5,29 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.CharacterData {
+  list-style: none;
+  height: 200px;
+  width: 200px;
+  background-color: #443e3e;
+  color: white;
+  padding: 20px;
+}
+
+.CharacterList {
+  border: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+}
+
+.Img {
+  height: 75px;
+  width: 50px;
+}
+
+.Text {
+  color: white;
+}
 /* write your parent styles in here for your App.js */
