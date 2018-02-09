@@ -22,3 +22,17 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+.InfoCard .Container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.InfoCard .Container .FieldTitles {
+  width: 30%;
+  font-weight: bold;
+}
+
+.InfoCard .Container .Fields {
+  width: auto;
+}

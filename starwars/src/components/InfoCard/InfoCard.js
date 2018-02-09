@@ -9,14 +9,28 @@ const InfoCard = props => {
       <div className="InfoCard Name">
         {character.name}
       </div>
-      SPECIES: {character.species} <br />
-      GENDER: {character.gender} <br />
-      SKIN COLOR: {character.skin_color} <br />
-      EYE COLOR: {character.eye_color} <br />
-      HAIR COLOR: {character.hair_color} <br />
-      HEIGHT: {character.height} <br />
-      MASS: {character.mass} <br />
-      BIRTH YEAR: {character.birth_year} <br /> 
+      <div className="InfoCard Container">
+        <div className="InfoCard Container FieldTitles">
+          SPECIES: <br />
+          GENDER: <br />
+          SKIN COLOR: <br />
+          EYE COLOR: <br />
+          HAIR COLOR: <br />
+          HEIGHT: <br />
+          MASS: <br />
+          BIRTH YEAR: <br />
+        </div>
+        <div className="InfoCard Container Fields">
+          {character.species} <br />
+          {character.gender} <br />
+          {character.skin_color} <br />
+          {character.eye_color} <br />
+          {character.hair_color} <br />
+          {character.height} <br />
+          {character.mass} <br />
+          {character.birth_year} <br /> 
+        </div>
+      </div>
     </div>
   )
 }
