@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import Characters from './Characters';
+import CharacterCard from './Characters';
 
 class App extends Component {
-  state = {
+  constructor() {
+    super();
+    this.state = {
       starwarsChars: []
-  }
+  };
+}
   
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -15,6 +18,7 @@ class App extends Component {
       .then(res => {
         return res.json();
       })
+
       .then(data => {
         this.setState({ starwarsChars: data.results });
       })
@@ -26,7 +30,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Characters />
+        {this.state.starwarsChars.map((character, i) => {
+          return (
+            <div key={i}>
+              <CharacterCard character ={character}/>
+            </div>
+          );
+        })
+        }
       </div>
     );
   }
