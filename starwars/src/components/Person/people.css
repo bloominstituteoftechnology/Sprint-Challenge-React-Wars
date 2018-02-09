@@ -1,0 +1,19 @@
+.Person {
+  width: 35rem;
+  height: 35rem;
+  border: 3px solid rgb(255, 197, 0);
+  margin: 1rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.Features {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Features div {
+  padding: 0.5rem;
+}
