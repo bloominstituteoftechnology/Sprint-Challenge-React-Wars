@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import People from './People';
+import Characters from './Characters';
 import './App.css';
 
 const containerStyle = {
@@ -36,7 +36,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className="character-container" style={containerStyle}>
-          {this.state.starwarsChars.map((character, i) => <People key={i} character={character}/>)}
+          {this.state.starwarsChars.map((character, i) => <Characters key={i} character={character}/>)}
         </div>
       </div>
     );
