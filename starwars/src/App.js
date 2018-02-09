@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
+import Cards from "./components/cards.js";
 
 class App extends Component {
   constructor() {
@@ -26,7 +27,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <img id="logo" src="https://fontmeme.com/temporary/3fc74d86a5441775b53387fc5dcca95a.png" />
+        <Cards chars={this.state.starWarsChars}/>
       </div>
     );
   }
