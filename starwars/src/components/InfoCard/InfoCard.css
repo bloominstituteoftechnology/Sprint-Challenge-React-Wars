@@ -1,0 +1,38 @@
+.InfoCard {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: lightblue;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+.InfoCard .Name {
+  border-bottom: 1px solid lightblue;
+  width: 95%;
+  align-self: center;
+  align-items: flex-end;
+  box-shadow: none;
+  background: transparent;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.InfoCard .Container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.InfoCard .Container .FieldTitles {
+  width: 40%;
+  font-weight: bold;
+}
+
+.InfoCard .Container .Fields {
+  width: auto;
+}

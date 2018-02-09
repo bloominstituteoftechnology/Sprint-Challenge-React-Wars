@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InfoCard from "./components/InfoCard/InfoCard.js";
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,17 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="App InfoCardSection">
+          {this.state.starwarsChars.map((character, index) => {
+            return (
+              <div className="App InfoCardSection InfoCardContainer" key={index}>
+                <InfoCard 
+                character={character}
+                />
+              </div>
+            )
+          })}
+        </div>
       </div>
     );
   }

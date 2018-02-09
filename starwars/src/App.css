@@ -1,8 +1,33 @@
 .App {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.App .InfoCardSection {
+  display: flex;
+  flex-flow: row wrap;
+  background: transparent;
+  width: 1000px;
+  max-width: 100%;
+  cursor: default;
+}
+
+.App .InfoCardSection .InfoCardContainer {
+  background: rgba(79, 61, 47, 0.8);
+  border: 1px solid lightblue;
+  box-shadow: 3px 3px rgba(0,0,0,0.5);
+  margin: 2px;
+  padding: 5px;
+  width: 300px;
+}
+
+.App .InfoCardSection .InfoCardContainer:hover {
+  background: rgb(38, 63, 63);
+}
