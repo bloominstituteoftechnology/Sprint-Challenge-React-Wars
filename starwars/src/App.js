@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Page from './components/page.js';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,22 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="page">
+          <ul className="user-list">
+            {
+              this.state.starwarsChars.map((page) => {
+                return <Page ley={page.name} page={page} />
+              })
+            }
+          </ul>
+        </div>
+
+
+
+
+
+
+
       </div>
     );
   }
