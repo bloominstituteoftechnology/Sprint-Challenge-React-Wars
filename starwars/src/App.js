@@ -5,6 +5,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
+    this.nextKey = 1;
     this.nextId = 1;
     this.state = {
       starwarsChars: []
@@ -26,6 +27,10 @@ class App extends Component {
       });
   }
 
+getNextKey = () => {
+  return this.nextKey++;
+}
+
 getNextId = () => {
   return this.nextId++;
 }
@@ -37,8 +42,9 @@ getNextId = () => {
         <div className="App InfoCardSection">
           {this.state.starwarsChars.map((character, index) => {
             return (
-              <div className="App InfoCardSection InfoCardContainer" key={this.getNextId()}>
-                <InfoCard 
+              <div className="App InfoCardSection InfoCardContainer" key={this.getNextKey()}>
+                <InfoCard
+                id={this.getNextId()}
                 character={character}
                 />
               </div>
