@@ -27,12 +27,17 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map((starwarsChar, i) => {
-          return (
-            <div className="App-posts">
-              <li>{starwarsChar.name} : {starwarsChar.eye_color}</li>
-            </div>);
-          })}
+        <div className="flex-card-container">
+          {this.state.starwarsChars.map((starwarsChar, i) => {
+            return (
+              <div className="App-posts">
+                <div className="card-container">
+                <div className="name">{starwarsChar.name}</div>
+                </div>
+              </div>
+            );
+            })}
+          </div>
       </div>
     );
   }
