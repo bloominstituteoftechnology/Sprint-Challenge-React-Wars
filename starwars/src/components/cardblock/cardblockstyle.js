@@ -11,7 +11,7 @@ const CardBlockStyle = styled.div`
   color: #443e3e;      
 
   img {
-    width: 300px;
+    width: 250px;
     margin: 10px auto;
   }
 
