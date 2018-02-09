@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  background: rgba(255, 255, 255, 0.7);
+  border: gray solid 1px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 5px;
+  height: 250px;
+  width: 25%;
+  min-width: 200px;
+  padding: 15px;
+}
+
+.profile:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 400px) {
+  .profile {
+    width: 100%;
+  }
+}
