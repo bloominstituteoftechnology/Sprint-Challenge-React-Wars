@@ -37,17 +37,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
         <CharContainerStyles>
           {this.state.starwarsChars.map((char, i) => {
             return (
               <CharCard 
-                key={i}
-                char={char}
+              key={i}
+              char={char}
               />
             )
           })}
         </CharContainerStyles>
+          <div className="Header">REACT WARS</div>
       </div>
     );
   }

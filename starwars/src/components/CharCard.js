@@ -5,15 +5,20 @@ const CharStyles = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  width: 20%;
+  width: 18%;
   height: 200px;
   padding: 15px;
   font-size: 0.8rem;
-  background: rgba(176, 138, 49, 0.5);
+  background: rgba(176, 138, 49, 0.6);
   border-radius: 2%;
 
   div {
     margin: 5px;
+    /* text-shadow: 0px 1px #000; */
+  }
+
+  .name {
+    text-shadow: 1px 1px #443e3e;
   }
 `;
 
@@ -30,7 +35,7 @@ class CharCard extends Component {
         {/* <div className="edited">{this.props.char.edited}</div> */}
         <div className="eye_color">Eye Color: {this.props.char.eye_color}</div>
         {/* {this.props.char.films} */}
-        <div className="homeworld">Homeworld: {this.props.char.homeworld}</div>
+        {/* <div className="homeworld">Homeworld: {this.props.char.homeworld}</div> */}
         <div className="mass">Mass: {this.props.char.mass}kg</div>
         <div className="skin_color">Skin Color: {this.props.char.skin_color}</div>
         {/* {this.props.char.species} */}
