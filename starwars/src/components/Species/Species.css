@@ -1,0 +1,18 @@
+Race {
+  margin: 1rem;
+  width: auto;
+  height: auto;
+  border: 1.5px solid rgb(255, 197, 0);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.Race__features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Race__features div {
+  padding: 0.5rem;
+} 
