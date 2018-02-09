@@ -20,24 +20,6 @@ const CardBlockStyle = styled.div`
     font-size: 14px;
     text-align: center;
   }
-
-  button {
-    width: 90px;
-    margin: 10px auto 0;
-    padding: 3px 0 5px;
-    border: 1px solid #5299cb;
-    border-radius: 3px;
-    color: #5299cb;
-    font-weight: 700;
-    font-size: 13px;
-    &:focus {
-      outline: none;
-    }
-    &:hover {
-      background-color: #c2dfff;
-      border: 2px solid #5299cb;      
-    }
-  }
 `;
 
 export default CardBlockStyle;
