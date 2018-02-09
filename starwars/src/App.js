@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharCards from './Components/CharCards';
+import { Name , Height , Mass, HairColor, SkinColor , EyeColor , BirthYear , Gender , Homeworld } from './Components/FilterBar';
 class App extends Component {
   constructor() {
     super();
@@ -29,12 +30,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className='filterBar'> List of all characteristics</div>
+        <div className='filterBar'><Name /><Height /><Mass /><HairColor /><SkinColor /><EyeColor /><BirthYear /><Gender /></div> 
+        <div className='cardDisplay'>
         <CharCards results={this.state.starwarsChars} />
+        </div>
       </div>
     );
   }
 }
+
+// Next steps after displaying data. Create filter functions to filter display based on characteristics chosen.
 
 export default App;
 

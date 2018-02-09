@@ -1,8 +1,100 @@
 .App {
   text-align: center;
+  font-size: 62.5%;
+  padding: 10px;
+  margin: 20px;
+  max-width: 1400px;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #0072a7;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgb(66, 73, 184);
 }
+
+.filterBar {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  border-style: groove;
+  margin: 5px;
+  padding: 5px;
+}
+
+button{
+  background-color: transparent;
+	color: #0084bf;
+	border: 0;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-weight: 600;
+	height: 24px;
+	width: 100px;
+	outline-width: 2px;
+	padding: 0 16px;
+	position: relative;
+	transition-duration: 167ms;
+	transition-property: background-color,box-shadow,color;
+	transition-timing-function: cubic-bezier(0,0,.2,1);
+	vertical-align: middle;
+	z-index: 0;
+	box-shadow: inset 0 0 0 1px #0084bf, inset 0 0 0 2px transparent, inset 0 0 0 3px transparent;
+	margin-top: 0px;
+	align-self: center;
+}
+
+button:hover{
+  background-color: rgba(0,115,177,.25);
+	color: #0073b1;
+	box-shadow: inset 0 0 0 1px #0084bf, inset 0 0 0 2px #0073b1, inset 0 0 0 3px transparent;
+}
+
+.cardDisplay {
+  margin-left: 10px;
+  border-style: solid;
+  border-color: yellow;
+  display: inline-flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.charCard {
+  display: flex;
+  width: 48%;
+  height: 500px;
+  justify-content: space-between;
+  border-style: groove;
+  margin: 5px;
+  padding:5px;
+  font-size: 1rem;
+  border-color: purple;
+}
+
+.characteristics {
+  width: 48%;
+  border-style: groove;
+  color: #0084bf;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+  border-color:chocolate
+}
+
+.otherInfo{
+  border-style: groove;
+  width: 44%;
+  margin: 1%;
+  padding: 1%;
+  color: #0084bf;
+  border-color: chocolate;
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 1rem;
+}
+
 /* write your parent styles in here for your App.js */
