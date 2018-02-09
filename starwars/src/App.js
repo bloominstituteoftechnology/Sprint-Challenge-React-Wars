@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Post from './postContainer/post.js'
+import Post from './postContainer/post.js'
 
 class App extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       starwarsChars: []
@@ -28,13 +28,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      {/* <div>
+      <div>
         {this.state.starwarsChars.map((post, index) => {
           return (
-            <App key={index} data={post}/>
+            <Post key={index} data={post}/>
           )
         })}
-      </div> */}
+      </div>
       </div>
     );
   }
