@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import InfoCardContainer from "./components/InfoCardContainer/InfoCardContainer.js";
+import InfoCard from "./components/InfoCard/InfoCard.js";
 import './App.css';
 
 class App extends Component {
