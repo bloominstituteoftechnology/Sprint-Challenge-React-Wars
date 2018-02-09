@@ -33,11 +33,11 @@ class App extends Component {
           <p className="skin_color"><strong>Skin Color: </strong>{character.skin_color}</p>
           <p className="birth"><strong>Date of Birth: </strong>{character.birth_year}</p>
           <p className="gender"><strong>Gender: </strong>{character.gender}</p>
-          <p className="homeworld"><strong>Homeworld: </strong>{character.homeworld}</p>
-          <p className="films"><strong>Films: </strong>{character.films}</p>
-          <p className="species"><strong>Species: </strong>{character.species}</p>
-          <p className="vehicles"><strong>Vehicles: </strong>{character.vehicles}</p>
-          <p className="starships"><strong>Starships: </strong>{character.starships}</p>
+          {/* <p className="homeworld"><strong>Homeworld: </strong>{character.homeworld}</p> */}
+          {/* <p className="films"><strong>Films: </strong>{character.films}</p> */}
+          {/* <p className="species"><strong>Species: </strong>{character.species}</p> */}
+          {/* <p className="vehicles"><strong>Vehicles: </strong>{character.vehicles}</p> */}
+          {/* <p className="starships"><strong>Starships: </strong>{character.starships}</p> */}
           </div> 
         </div>
         )
