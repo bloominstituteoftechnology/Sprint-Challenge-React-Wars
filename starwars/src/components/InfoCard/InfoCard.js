@@ -11,7 +11,6 @@ const InfoCard = props => {
       </div>
       <div className="InfoCard Container">
         <div className="InfoCard Container FieldTitles">
-          SPECIES: <br />
           GENDER: <br />
           SKIN COLOR: <br />
           EYE COLOR: <br />
@@ -21,7 +20,6 @@ const InfoCard = props => {
           BIRTH YEAR: <br />
         </div>
         <div className="InfoCard Container Fields">
-          {character.species} <br />
           {character.gender} <br />
           {character.skin_color} <br />
           {character.eye_color} <br />
