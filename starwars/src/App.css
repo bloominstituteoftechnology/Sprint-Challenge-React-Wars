@@ -4,7 +4,11 @@
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 3px 1px 5px #fff;
+}
+
+.Header:hover {
+  color: #f7a325;
 }
 /* write your parent styles in here for your App.js */
 p {
@@ -35,6 +39,10 @@ p {
   margin: 1.66%;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.character_card:hover {
+  color: white;
 }
 
 .name {
