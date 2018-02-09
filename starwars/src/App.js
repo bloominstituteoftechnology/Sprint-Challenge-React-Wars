@@ -24,6 +24,7 @@ class App extends Component {
         throw new Error(err);
       });
   }
+  
   render() {
     return (
       <div className="App">
@@ -33,6 +34,7 @@ class App extends Component {
             return <Card 
             key={index} 
             character={character}
+            index={index}
             />;
           })}
         </div>

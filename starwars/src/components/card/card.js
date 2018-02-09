@@ -1,9 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './card.css'
 
 function Card(props) {
+    const side = props.index;
+    
     return (
-        <div className="Card">
+        <div className="Card" style={side === 3 ? {background:'darkred', color:'white'} : {background:'lightblue', color:'black'}}>
             <h1>{props.character.name}</h1>
             <div className="Card-Info-Block">
                 <div className="Card-Info-Item">Gender: {props.character.gender}</div>
@@ -14,18 +16,10 @@ function Card(props) {
                 <div>Hair Color: {props.character.hair_color}</div>
                 <br /><br />
                 <div className="Card-Info-Item">Height: {props.character.height}</div>
-                <div className="Card-Info-Item">Weight: {props.character.mass}</div>
+                <div className="Card-Info-Item">Mass: {props.character.mass}</div>
             </div>
         </div>
     );
 }
 
 export default Card;
-
-/*
-
-films:Array[5]
-species:Array[1]
-starships:Array[2]
-vehicles:Array[2]
-*/

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
 }
 .Header {
   color: #443e3e;
@@ -9,4 +12,5 @@
 .Cards {
   display:flex;
   flex-flow: wrap;
+  width: 90%;
 }
