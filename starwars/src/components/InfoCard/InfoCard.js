@@ -6,12 +6,14 @@ const InfoCard = props => {
 
   return (
     <div className="InfoCard">
-      Name: {character.name} <br />
-      Gender: {character.gender} <br />
-      Skin Color: {character.skin_color} <br />
-      Eye Color: {character.eye_color} <br />
-      Hair Color: {character.hair_color} <br />
-      Birth Year: {character.birth_year} <br /> 
+      NAME: {character.name} <br />
+      GENDER: {character.gender} <br />
+      SKIN COLOR: {character.skin_color} <br />
+      EYE COLOR: {character.eye_color} <br />
+      HAIR COLOR: {character.hair_color} <br />
+      HEIGHT: {character.height} <br />
+      MASS: {character.mass} <br />
+      BIRTH YEAR: {character.birth_year} <br /> 
     </div>
   )
 }
