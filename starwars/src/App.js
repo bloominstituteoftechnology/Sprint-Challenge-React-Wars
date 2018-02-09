@@ -24,16 +24,23 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div>
+        <div className="character-container" style={containerStyle}>
           {this.state.starwarsChars.map((character, i) => <People key={i} character={character}/>)}
         </div>
       </div>
     );
   }
+}
+
+const containerStyle = {
+  display: 'flex', 
+  flexWrap:'wrap', 
+  justifyContent:'center'
 }
 
 export default App;
