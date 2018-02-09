@@ -1,0 +1,22 @@
+table {
+  margin: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+table, td {
+  border: 10px solid black;
+}
+
+td {
+  padding: 40px;
+  background-color: purple;
+}
+
+.card__Maintable {
+  padding: 5px;
+}
+
+.card {
+  display: block;
+}
