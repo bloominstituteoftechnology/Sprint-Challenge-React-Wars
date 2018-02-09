@@ -1,11 +1,14 @@
+//React = require('react') //ES5
 import React, { Component } from 'react';
 import './App.css';
+import { Card } from './components/Card.js';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars :[],
     };
   }
   componentDidMount() {
@@ -27,6 +30,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="card-container">
+          {this.state.starwarsChars.map(item => {
+            return <Card item={item}/>
+          })}
+        </div>
       </div>
     );
   }
