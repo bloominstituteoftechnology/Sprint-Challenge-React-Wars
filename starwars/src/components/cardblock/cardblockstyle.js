@@ -16,6 +16,7 @@ const CardBlockStyle = styled.div`
   }
 
   p {
+    margin: 5px 0 0;
     font-size: 14px;
     text-align: center;
   }
