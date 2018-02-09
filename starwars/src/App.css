@@ -52,6 +52,7 @@ button:hover{
 .cardDisplay {
   margin-left: 10px;
   border-style: solid;
+  border-width: 3px;
   border-color: #ff00aa;
   display: inline-flex;
   flex-flow: wrap;
@@ -64,16 +65,16 @@ button:hover{
   display: flex;
   width: 46%;
   justify-content: space-between;
-  border-style: groove;
   margin: 5px;
   padding:5px;
   border-color: rgb(24, 179, 24);
   border-radius: 10%;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .characteristics {
   width: 48%;
-  border-style: groove;
   color: #0084bf;
   float: left;
   margin: 1%;
@@ -81,10 +82,11 @@ button:hover{
   border-color:rgb(255, 0, 0);
   font-size: 1.5rem;
   border-radius: 15%;
+  border-style: solid;
+  border-width: 3px;
 }
 
 .otherInfo{
-  border-style: groove;
   width: 44%;
   margin: 1%;
   padding: 1%;
@@ -92,6 +94,8 @@ button:hover{
   border-color: rgb(255, 0, 0);
   font-size: 1.25rem;
   border-radius: 15%;
+  border-style: solid;
+  border-width: 3px;
 }
 
 a{
@@ -103,6 +107,7 @@ h2{
   font-size: 2rem;
   border-style: solid;
   border-radius: 50%;
+  border-width: 1px;
 }
 
 /* write your parent styles in here for your App.js */
