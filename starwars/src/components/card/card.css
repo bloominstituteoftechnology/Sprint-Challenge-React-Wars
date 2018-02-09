@@ -1,0 +1,26 @@
+.Card {
+    box-sizing: border-box;
+    border: 2px solid black;
+    background: white;
+    width: 50%;
+    opacity: .5;
+    padding: 10px;
+}
+
+.Card:hover {
+    opacity: 1;
+    border: 0;
+    background: black;
+    color: white;
+}
+
+.Card-Info-Block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Card-Info-Item {
+    width: 50%;
+}
+
