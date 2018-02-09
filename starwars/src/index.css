@@ -5,6 +5,4 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
-  box-sizing: border-box;
-  font-size: 62.5%;
 }
