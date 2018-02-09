@@ -1,22 +1,24 @@
 import React from 'react';
 
-const styles = {
+const styledCharacter = {
   display: 'flex',
   textAlign:'center',
   width: '33%',
   maxWidth: '350px',
   flexDirection: 'column',
   flexWrap:'wrap',
-  border: '1px solid black',
+  border: '1.5px solid black',
+  borderRadius: '20px',
   margin: '20px',
   padding:'15px 0',
   background: '#C3C3C3',
+  opacity: '0.9',
   lineHeight: '150%',
 }
 
 function People ({character}) {
   return (
-    <div className="character" style={styles}>
+    <div className="character" style={styledCharacter}>
       <div className="name">
         <strong>Name:</strong> {character.name}
       </div>
