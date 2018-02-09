@@ -27,9 +27,26 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+         <div>{this.state.starwarsChars.name}</div>
+
+         <dl>
+         {this.state.starwarsChars.map(character => {
+             return ( <div key={character.name}>
+                 <h1>{character.name}</h1>
+                
+                </div>
+               )
+             })
+         }
+      </dl>
+
+
+
       </div>
     );
   }
 }
+
+
 
 export default App;
