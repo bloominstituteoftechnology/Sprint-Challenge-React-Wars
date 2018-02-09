@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.characters {
+  font-size: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  justify-content: space-around;
+  
+}
+
+
+.allChars {
+  padding: 20px;
+  margin: 30px;
+  border: solid skyblue 3px;
+}
