@@ -9,7 +9,8 @@ const CharContainerStyles = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 1300px;
-  min-width: 1000px;
+  min-width: 700px;
+  margin-top: 10px;
 `
 
 class App extends Component {

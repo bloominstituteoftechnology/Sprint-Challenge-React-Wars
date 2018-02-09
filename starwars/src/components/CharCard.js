@@ -11,6 +11,7 @@ const CharStyles = styled.div`
   font-size: 0.8rem;
   background: rgba(176, 138, 49, 0.6);
   border-radius: 2%;
+  margin: 2px;
 
   div {
     margin: 5px;
