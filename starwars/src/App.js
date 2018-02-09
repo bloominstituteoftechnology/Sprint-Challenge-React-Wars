@@ -24,23 +24,27 @@ class App extends Component {
       });
   }
   render() {
+    const data =this.state.starwarsChars.map(character =>  
+        <div className="character_card">
+          <h1 className="name">{character.name}</h1>
+          <h2 className="height">{character.height}</h2>
+          <p className="hair_color">{character.hair_color}</p>
+          <p className="skin_color">{character.skin_color}</p>
+          <p className="birth">{character.birth_year}</p>
+          <p className="gender">{character.gender}</p>
+          <p className="homeworld">{character.homeworld}</p>
+          <p className="films">{character.films}</p>
+          <p className="gender">{character.gender}</p>
+          <p className="species">{character.species}</p>
+          <p className="vehicles">{character.vehicles}</p>
+          <p className="starships">{character.starships}</p>
+          </div> 
+        )
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-         <div>{this.state.starwarsChars.name}</div>
-
-         <dl>
-         {this.state.starwarsChars.map(character => {
-             return ( <div key={character.name}>
-                 <h1>{character.name}</h1>
-                
-                </div>
-               )
-             })
-         }
-      </dl>
-
-
+        {data}
 
       </div>
     );
