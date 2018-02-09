@@ -1,8 +1,43 @@
 .App {
+  display: flex;
+  box-sizing: border-box;
   text-align: center;
+  flex-direction: column;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.Body {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.CharacterCards {
+  border: solid 2px rgba(255, 255, 255, 0.4);
+  width: 500px;
+  margin: 0px 20px 30px 20px;
+  background: rgba(0, 0, 0, 0.356);
+  color: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.CharacterName {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 1px #443e3e;
+  margin: 10px 20px 10px 20px;
+  padding-bottom: 7px;
+}
+
+.CharacterDetails {
+  padding-left: 20px;
+}
