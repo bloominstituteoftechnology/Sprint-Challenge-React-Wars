@@ -1,0 +1,11 @@
+.container {
+    text-align: left;
+    margin: 20px;
+    width: calc(25% - 40px);
+}
+h2 {
+    color: red;
+}
+div {
+    white-space: pre;
+}
