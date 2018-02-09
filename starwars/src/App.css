@@ -52,7 +52,7 @@ button:hover{
 .cardDisplay {
   margin-left: 10px;
   border-style: solid;
-  border-color: #f806af;
+  border-color: #ff00aa;
   display: inline-flex;
   flex-flow: wrap;
   width: 100%;
@@ -67,7 +67,7 @@ button:hover{
   border-style: groove;
   margin: 5px;
   padding:5px;
-  border-color: purple;
+  border-color: rgb(24, 179, 24);
   border-radius: 10%;
 }
 
@@ -78,7 +78,7 @@ button:hover{
   float: left;
   margin: 1%;
   padding: 1%;
-  border-color:chocolate;
+  border-color:rgb(255, 0, 0);
   font-size: 1.5rem;
   border-radius: 15%;
 }
@@ -89,7 +89,7 @@ button:hover{
   margin: 1%;
   padding: 1%;
   color: #0084bf;
-  border-color: chocolate;
+  border-color: rgb(255, 0, 0);
   font-size: 1.25rem;
   border-radius: 15%;
 }
