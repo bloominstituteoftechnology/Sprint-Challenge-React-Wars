@@ -1,0 +1,51 @@
+@font-face {
+  font-family:'STARWARS';
+  src:url('./fonts/STARWARS.eot?') 
+  format('eot'),
+  url('./fonts/STARWARS.woff') 
+  format('woff'),
+  url('./fonts/STARWARS.TTF') 
+  format('truetype'),
+  url('./fonts/STARWARS.svg#STARWARS') 
+  format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.CharBox {
+  height: 300px;
+  width: 250px;
+  line-height: 20px;
+  padding: 40px;
+}
+
+.Chars {
+  font-family: 'STARWARS';
+  /* border: 2px solid black; */
+  box-shadow: 2px 4px 10px black, inset 3px 4px 6px black;
+  text-align: left;
+  height: 320px;
+  color: white;
+  text-shadow: 2px 4px 3px black;
+}
+
+.Char-Name {
+  padding: 20px;
+  
+}
+
+.Char-Height {
+  padding: 20px;
+}
+
+.Char-Weight {
+  padding: 20px;
+}
+
+.Char-BirthYear {
+  padding: 20px;
+}
+
+.Char-Gender {
+  padding: 20px;
+}
