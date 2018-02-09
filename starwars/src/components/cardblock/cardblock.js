@@ -9,7 +9,7 @@ class CardBlock extends Component {
   render() {
     return (
       <CardBlockStyle>
-        <h1>CARD</h1>
+        <h2>{this.props.data.name}</h2>
       </CardBlockStyle>
     );
   }
