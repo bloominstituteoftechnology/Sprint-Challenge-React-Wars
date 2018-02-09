@@ -4,21 +4,20 @@ const CardBlockStyle = styled.div`
   display: inline-block;
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 500px;
-  background-color: #ffffff;
-  border: 1px solid #cdcfd2;
+  width: 300px;
+  height: 400px;
+  background-color: #c2c5ca;
+  border: 2px solid #443e3e;
+  color: #443e3e;      
 
   img {
     width: 300px;
-    margin: 10px auto 0;
+    margin: 10px auto;
   }
 
   p {
-    font-size: 11px;
-    margin: 10px 5px 0 5px;
+    font-size: 14px;
     text-align: center;
-    color: #989898
   }
 
   button {
