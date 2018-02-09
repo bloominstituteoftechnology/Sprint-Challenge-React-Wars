@@ -5,7 +5,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
   componentDidMount() {
@@ -27,6 +27,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(SWChar => {
+          return (
+            <div key={SWChar.created}>
+              <div>{SWChar.birth_year}</div>
+            </div>
+          );
+        })}
       </div>
     );
   }
