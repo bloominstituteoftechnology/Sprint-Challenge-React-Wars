@@ -76,7 +76,8 @@ button:hover{
   float: left;
   margin: 1%;
   padding: 1%;
-  border-color:chocolate
+  border-color:chocolate;
+  font-size: 1rem;
 }
 
 .otherInfo{
@@ -86,6 +87,7 @@ button:hover{
   padding: 1%;
   color: #0084bf;
   border-color: chocolate;
+  font-size: 1rem;
 }
 
 a{
