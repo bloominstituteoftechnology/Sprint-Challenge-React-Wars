@@ -25,12 +25,12 @@ class App extends Component {
       });
   }
 
-  updateColor = (event) => {
+  updateCard = (event) => {
     event.preventDefault();
     const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
     const starwarsChars = this.state.starwarsChars;
     for (let i = 0; i < starwarsChars.length; i++){
-      starwarsChars[i].name = "JAR JAR BINKS";
+      starwarsChars[i].name = "eye color: " + starwarsChars[i].eye_color;
     }
     this.setState({
       starwarsChars: starwarsChars
@@ -47,8 +47,8 @@ class App extends Component {
           {this.state.starwarsChars.map((starwarsChar, i) => {
             return (
               <div className="App-posts">
-                <div className="card-container">
-                <div className="name" id={`new-card-${i}`} onMouseOver={this.updateColor}>{starwarsChar.name}</div>
+                <div className="card-container" onMouseOver={this.updateCard}>
+                <div className="name" id={`new-card-${i}`}>{starwarsChar.name}</div>
                 </div>
               </div>
             );
