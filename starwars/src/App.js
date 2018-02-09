@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import NavBar from './NavBar';
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          <ul>
+          {this.state.starwarsChars.map(obj => {
+            return <NavBar key={this.state.birth_year} obj={obj} />
+          })}
+          </ul>
       </div>
     );
   }

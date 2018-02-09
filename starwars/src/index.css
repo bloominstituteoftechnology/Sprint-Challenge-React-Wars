@@ -5,3 +5,11 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+.Header {
+     
+}
+ul {
+    
+   display: flex;
+    width: 100%
+}
