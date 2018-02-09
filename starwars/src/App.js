@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import People from './People';
 import './App.css';
 
+const containerStyle = {
+  display: 'flex', 
+  flexWrap:'wrap', 
+  justifyContent:'center'
+}
+
 class App extends Component {
   constructor() {
     super();
@@ -35,12 +41,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-const containerStyle = {
-  display: 'flex', 
-  flexWrap:'wrap', 
-  justifyContent:'center'
 }
 
 export default App;
