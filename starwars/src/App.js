@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './components/card/card.js'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
   componentDidMount() {
@@ -23,10 +24,20 @@ class App extends Component {
         throw new Error(err);
       });
   }
+  
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="Cards">
+          {this.state.starwarsChars.map((character, index) => {
+            return <Card 
+            key={index} 
+            character={character}
+            index={index}
+            />;
+          })}
+        </div>
       </div>
     );
   }

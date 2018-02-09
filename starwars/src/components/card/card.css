@@ -1,0 +1,40 @@
+.Card {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 50%;
+    opacity: .5;
+    padding: 10px;
+}
+
+.Card:hover {
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.Card-Info-Block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Card-Info-Item-Double {
+    box-sizing: border-box;
+    width: 45%;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.Card-Info-Item-Triple {
+    box-sizing: border-box;
+    width: 30%;
+    border: .5px solid black;
+    padding: 2px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
