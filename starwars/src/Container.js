@@ -1,5 +1,6 @@
 import React from 'react';
 import './Container.css';
+import pictures from './pictures';
 
 function Container(props) {
   return(
@@ -9,7 +10,7 @@ function Container(props) {
         <div>Character License</div>
       </div>
       <div className="container__middleRow">        {/* middle row */}
-        <div></div>
+        <img src={pictures[props.index].picture} alt={props.charInfo.name} />
         <div>          {/* center start */}
           <div>Name: {props.charInfo.name}</div>
           <div>YOB: {props.charInfo.birth_year}</div>
@@ -18,7 +19,7 @@ function Container(props) {
             <div>Eye Color: {props.charInfo.eye_color}</div>
             <div>Hair Color: {props.charInfo.hair_color}</div>
             <div>Skin: {props.charInfo.skin_color}</div>
-            <div>Height:{props.charInfo.height}</div>
+            <div>Height: {props.charInfo.height}</div>
             <div>Mass :{props.charInfo.mass}</div>
           </div>
         </div>          {/* center end */}

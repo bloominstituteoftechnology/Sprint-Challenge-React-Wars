@@ -15,10 +15,12 @@
 }
 
 .container__middleRow {
+  display: flex;
   flex: 1;
 }
 
 .container__bottomRow {
   display:flex;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
