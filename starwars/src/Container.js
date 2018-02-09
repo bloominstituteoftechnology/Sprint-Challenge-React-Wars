@@ -23,9 +23,8 @@ function Container(props) {
         </div>          {/* center end */}
       </div>
       <div className="container__bottomRow">        {/* bottom row */}
-        <div>created: {props.charInfo.created}</div>
-        <div></div>
-        <div>edited: {props.charInfo.edited}</div>
+        <div><b>created:</b> {props.charInfo.created}</div>
+        <div><b>edited:</b> {props.charInfo.edited}</div>
       </div>
     </div>
   );
