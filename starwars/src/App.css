@@ -6,3 +6,31 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.main_content {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.profiles {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 400px) {
+  .main_content {
+    flex-flow: column nowrap;
+    width: 400px;
+    margin: 0px;
+  }
+  .profiles {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+}
