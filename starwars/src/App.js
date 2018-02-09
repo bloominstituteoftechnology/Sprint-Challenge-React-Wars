@@ -28,12 +28,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-          <ul>
+        <ul>
           {this.state.starwarsChars.map(obj => {
             return <NavBar key={this.state.birth_year} obj={obj} />
           })}
-          </ul>
+        </ul>
       </div>
+
     );
   }
 }
