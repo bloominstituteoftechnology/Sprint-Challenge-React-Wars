@@ -5,7 +5,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      newCardColor: '',
     };
   }
   componentDidMount() {
@@ -23,6 +24,21 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
+  updateColor = (event) => {
+    event.preventDefault();
+    const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
+    const starwarsChars = this.state.starwarsChars;
+    for (let i = 0; i < starwarsChars.length; i++){
+      starwarsChars[i].name = "JAR JAR BINKS";
+    }
+    this.setState({
+      starwarsChars: starwarsChars
+    });
+};
+
+
+
   render() {
     return (
       <div className="App">
@@ -32,7 +48,7 @@ class App extends Component {
             return (
               <div className="App-posts">
                 <div className="card-container">
-                <div className="name">{starwarsChar.name}</div>
+                <div className="name" id={`new-card-${i}`} onMouseOver={this.updateColor}>{starwarsChar.name}</div>
                 </div>
               </div>
             );
