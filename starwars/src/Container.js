@@ -11,19 +11,16 @@ function Container(props) {
       </div>
       <div className="container__middleRow">        {/* middle row */}
         <img src={pictures[props.index].picture} alt={props.charInfo.name} />
-        <div>          {/* center start */}
-          <div>Name: {props.charInfo.name}</div>
-          <div>YOB: {props.charInfo.birth_year}</div>
-          <div>
-            <div>Gender: {props.charInfo.gender}</div>
-            <div>Eye Color: {props.charInfo.eye_color}</div>
-            <div>Hair Color: {props.charInfo.hair_color}</div>
-            <div>Skin: {props.charInfo.skin_color}</div>
-            <div>Height: {props.charInfo.height}</div>
-            <div>Mass :{props.charInfo.mass}</div>
-          </div>
+        <div className="container__middleRow-right">          {/* center start */}
+          <div><b>Name:</b> {props.charInfo.name}</div>
+          <div><b>YOB:</b> {props.charInfo.birth_year}</div>
+          <div><b>Gender:</b> {props.charInfo.gender}</div>
+          <div><b>Eye Color:</b> {props.charInfo.eye_color}</div>
+          <div><b>Hair Color:</b> {props.charInfo.hair_color}</div>
+          <div><b>Skin:</b> {props.charInfo.skin_color}</div>
+          <div><b>Height:</b> {props.charInfo.height}</div>
+          <div><b>Mass:</b> {props.charInfo.mass}</div>
         </div>          {/* center end */}
-        <div></div>
       </div>
       <div className="container__bottomRow">        {/* bottom row */}
         <div>created: {props.charInfo.created}</div>
