@@ -20,6 +20,10 @@ const CharStyles = styled.div`
   .name {
     text-shadow: 1px 1px #443e3e;
   }
+
+  &:hover {
+    background: rgba(176, 138, 49, 0.9); 
+  }
 `;
 
 class CharCard extends Component {
