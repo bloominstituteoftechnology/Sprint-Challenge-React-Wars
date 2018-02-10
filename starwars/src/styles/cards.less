@@ -1,16 +1,27 @@
 .cards {
+  display: flex;
+  justify-content: center;
+
   .cards__container {
     border: 2px solid rgb(138, 138, 137);
     width: 40%;
     height: auto;
+    margin-top: 50px;
+    background-color: rgba(121, 121, 121, 0.4);
+
+    .cards__containers {
+      text-align: center;
+    }
 
     .cards__container__name {
       font-size: 1.4rem;
       font-weight: bold;
+      text-align: center;
     }
 
     .cards__container__text {
       font-size: 1rem;
+      color: black;
     }
   }
 }
