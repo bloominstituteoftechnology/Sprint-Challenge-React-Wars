@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^16.0.0",
+    "react-coverflow": "^0.2.3",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-slick": "^0.18.0",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

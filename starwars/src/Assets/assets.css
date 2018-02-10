@@ -1,0 +1,12 @@
+.assets {
+	width: 970px;
+	height: 200px;
+	border: 3px solid #96ccff;
+	box-shadow: 0 0 25px #96ccff;
+	margin: 60px auto;
+}
+/*.char .char-img img{
+	height: 300px;
+	width: 435px;
+	object-fit: cover;
+}*/
