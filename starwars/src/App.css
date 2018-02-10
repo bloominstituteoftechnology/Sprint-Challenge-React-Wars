@@ -30,3 +30,7 @@
   background: white;
   opacity: 0.7;
 }
+
+.hide {
+  background-color: red;
+}

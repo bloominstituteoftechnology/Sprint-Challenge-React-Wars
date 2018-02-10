@@ -6,7 +6,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      newCardColor: '',
+      isHovered: false
     };
   }
   componentDidMount() {
@@ -25,21 +25,27 @@ class App extends Component {
       });
   }
 
-  updateCard = (event) => {
+  handleHover = (event) => {
     event.preventDefault();
     const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
     const starwarsChars = this.state.starwarsChars;
-    for (let i = 0; i < starwarsChars.length; i++){
-      starwarsChars[i].name = "eye color: " + starwarsChars[i].eye_color;
-    }
+
     this.setState({
-      starwarsChars: starwarsChars
+      isHovered: !this.state.isHovered,
     });
-};
+
+    if (!this.state.isHovered) {
+      document.getElementById(`new-card-${index}`).innerHTML = starwarsChars[index].eye_color;
+    } else {
+      document.getElementById(`new-card-${index}`).innerHTML = starwarsChars[index].name;
+    }
+
+  };
 
 
 
   render() {
+    const starwarsChars = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
@@ -47,8 +53,8 @@ class App extends Component {
           {this.state.starwarsChars.map((starwarsChar, i) => {
             return (
               <div className="App-posts">
-                <div className="card-container" onMouseOver={this.updateCard}>
-                <div className="name" id={`new-card-${i}`}>{starwarsChar.name}</div>
+                <div className="card-container" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+                <div id={`new-card-${i}`} className="name">{starwarsChar.name}</div>
                 </div>
               </div>
             );
