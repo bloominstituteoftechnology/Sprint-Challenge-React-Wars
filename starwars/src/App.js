@@ -26,7 +26,6 @@ class App extends Component {
   }
 
   handleHover = (event) => {
-    event.preventDefault();
     const index = Array.from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
     const starwarsChars = this.state.starwarsChars;
 
@@ -35,14 +34,12 @@ class App extends Component {
     });
 
     if (!this.state.isHovered) {
-      document.getElementById(`new-card-${index}`).innerHTML = starwarsChars[index].eye_color;
+      document.getElementById(`new-card-${index}`).innerHTML = '<div className="eye_color">' + starwarsChars[index].eye_color + '</div>';
     } else {
-      document.getElementById(`new-card-${index}`).innerHTML = starwarsChars[index].name;
+      document.getElementById(`new-card-${index}`).innerHTML = '<div className="name">' + starwarsChars[index].name + '</div>';
     }
 
   };
-
-
 
   render() {
     const starwarsChars = this.state.starwarsChars;
@@ -53,8 +50,8 @@ class App extends Component {
           {this.state.starwarsChars.map((starwarsChar, i) => {
             return (
               <div className="App-posts">
-                <div className="card-container" onClick={this.handleHover}>
-                <div id={`new-card-${i}`} className="name">{starwarsChar.name}</div>
+                <div id={`new-card-${i}`} className="card-container" onClick={this.handleHover}>
+                <div className="name">{starwarsChar.name}</div>
                 </div>
               </div>
             );
