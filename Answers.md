@@ -1,0 +1,9 @@
+## Questions
+1. What is React JS? How does it differ from other JavaScript Frameworks?
+  - ReactJS is a framework that allows you to blend JS and HTML combining the languages for very powerful and dynamic framework. One main difference is that through the use of the virtual DOM ReactJS is able to efficiently render your app as you develope it in "realtime". React allows your to use JSX which is an syntax extension of JS that blends JS and HTML. ReactJS is also built around component first programing where apps are built by piecing together components. ReactJS also has a cool a logo.
+2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+  - The component lifecycles are phases at which we can manage our components behavior to achieve desired outcomes.
+    - componentDidMount -- This is the lifecycle that lets you know you component has mounted and is ready to be used. This is typically the best lifecycle to grab data from external sources as it guarantees that your component is mount thus prepared to recieve data upon the resolution of the AJAX request. (Which if your component is not mounted and that AJAX request is handled faster then our mounting our app will fail and React will be sad).
+    - componentWillReceiveProps -- This lifecycle is one that allows for a the passing of props that we do know yet.  Upon the recieving of the props they are properly dealt with. This lifecycle can call setState and is typically used to trigger state transitions.
+3. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
+  - Class components are typically the components that will hold your data and functional components are ones that will either render it or manipulate it. Class components have a state, functional components do not. However functional components recieve info through inputs and props.
