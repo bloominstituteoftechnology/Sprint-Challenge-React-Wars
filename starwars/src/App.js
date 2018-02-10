@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharCards from './Components/CharCards';
-import { Name , Height , Mass, HairColor, SkinColor , EyeColor , BirthYear , Gender , Homeworld } from './Components/FilterBar';
+import { Name , Height , Mass, HairColor, SkinColor , EyeColor , BirthYear , Gender } from './Components/FilterBar';
 class App extends Component {
   constructor() {
     super();
@@ -42,4 +42,3 @@ class App extends Component {
 // Next steps after displaying data. Create filter functions to filter display based on characteristics chosen.
 
 export default App;
-

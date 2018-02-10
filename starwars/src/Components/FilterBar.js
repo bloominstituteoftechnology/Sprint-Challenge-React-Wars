@@ -31,3 +31,11 @@ export function BirthYear(props) {
 export function Gender(props) {
   return <button>Gender</button>;
 }
+
+export function FindPlanet(props) {
+  props.planets.map(planet => {
+    if (planet === props.home) return <button key={props.home}>{planet}</button>;
+    return <button> NOHOME!</button>;
+  });
+  
+}
