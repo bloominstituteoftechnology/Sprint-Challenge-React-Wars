@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.item-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(233, 217, 217);
+  list-style-type: none;
+  border: 0;
+  border-radius: 2px;
+  width: 30%;
+  margin: 5px .5rem;
+  padding: .25rem;
+}
