@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AppStyled from './AppStyled';
 import Character from './Character';
+import CharDetails from './CharDetails';
 
 class App extends Component {
   constructor() {
@@ -36,6 +37,11 @@ class App extends Component {
               return <Character character={character} />
             })
           }
+          <ul className="char-grid">
+            {this.state.starwarsChars.map((char) => {
+              return <CharDetails char={char} />;
+            })}
+          </ul>
         </div>
       </AppStyled>
     );
