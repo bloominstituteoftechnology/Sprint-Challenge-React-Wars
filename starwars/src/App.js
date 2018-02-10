@@ -48,12 +48,12 @@ class App extends Component {
     const starwarsChars = this.state.starwarsChars;
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Click the cards to cycle through information</h1>
         <div className="flex-card-container">
           {this.state.starwarsChars.map((starwarsChar, i) => {
             return (
               <div className="App-posts">
-                <div className="card-container" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+                <div className="card-container" onClick={this.handleHover}>
                 <div id={`new-card-${i}`} className="name">{starwarsChar.name}</div>
                 </div>
               </div>
