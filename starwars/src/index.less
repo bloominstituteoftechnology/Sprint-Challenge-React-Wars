@@ -1,0 +1,42 @@
+@import "reset.less";
+
+body {
+    font-family: sans-serif;
+    background-image: url('./sw-bg.jpg');
+    background-size: cover;
+}
+.App {
+    text-align: center;
+    max-width: 1180px;
+    width: 100%;  
+    .Header {
+      color: #443e3e;
+      text-shadow: 1px 1px 5px #fff;
+      width: 100%;
+    }
+}
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 25px;
+    justify-content: center;
+    .cc {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        border: solid 1px #763F24;
+        height: 250px;
+        width: 200px;
+        padding: 8px;
+        color: #462516;
+        background: #CECBC6;
+        opacity: 50%;
+        box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.4);
+        margin: 24px 15px;
+        border-radius: 5px;
+        &:hover {
+            background: white;
+        }
+    }
+}
