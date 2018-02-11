@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './CardComp';
 import styled  from 'styled-components';
-import {Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 const CardsContainer = styled.div`
     border:none;
