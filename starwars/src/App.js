@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Card from './components/card';
+
 class App extends Component {
   constructor() {
     super();
@@ -27,6 +29,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="Cards">
+          {this.state.starwarsChars.map((card, index) => {
+            return (
+              <Card key={index} card={card} />
+            )
+          })}
+        </div>
       </div>
     );
   }

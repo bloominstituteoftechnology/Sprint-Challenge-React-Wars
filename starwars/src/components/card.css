@@ -1,0 +1,14 @@
+.Card {
+    width: 500px;
+    height: 150px;
+    background: rgb(63, 63, 66);
+    color: white;
+    /* padding: 0.5px; */
+    /* position: relative; */
+}
+
+.CardTable {
+    width: 100%;
+    border: 0.5px;
+    border-color: black;
+}
