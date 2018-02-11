@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import styled  from 'styled-components';
 
 const CardWrapper = styled.div`
@@ -82,7 +82,7 @@ const CardWrapper = styled.div`
 
 `;
 
-class Card extends React.Component {
+class Card extends Component {
 
     handleTouchStart = () => {
         console.log('handleTouchStart');
