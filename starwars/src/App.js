@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
+import Characters from './Characters';
 import './App.css';
+
+const containerStyle = {
+  display: 'flex', 
+  flexWrap:'wrap', 
+  justifyContent:'center'
+}
 
 class App extends Component {
   constructor() {
@@ -23,10 +30,14 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="character-container" style={containerStyle}>
+          {this.state.starwarsChars.map((character, i) => <Characters key={i} character={character}/>)}
+        </div>
       </div>
     );
   }

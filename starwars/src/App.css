@@ -1,8 +1,15 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.character-container {
+  padding-top: 102px;
 }
 /* write your parent styles in here for your App.js */
