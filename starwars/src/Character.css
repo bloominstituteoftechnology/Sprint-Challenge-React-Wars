@@ -1,16 +1,14 @@
-.Char {
+.Characters {
   display: flex;
-  flex-direction: row;
+  
+  color: blue;
 }
 
-.thumbnail {
-  display: flex;
-  flex: 1;
+.Character {
+  
   
 }
 
 .prop {
-  flex: 1;
-
 
 }
