@@ -1,6 +1,7 @@
 import React from 'react';
 import StarCard from './StarCard';
-//import './StarCharsList.css';
+import './StarCharsList.css';
+
 const StarCharsList = props => {
     return (
         <div className="PeopleListContainer">
