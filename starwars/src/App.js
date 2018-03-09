@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StarwarsComp from '.components/StarwarsComp/StarwarsComp'
+import StarwarsComp from './components/StarwarsComp/StarwarsComp'
 
 import './App.css';
 
@@ -26,17 +26,18 @@ class App extends Component {
       });
   }
   render() {
-    const key = this.state.starwarsChars.created;
+    
     
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div>{this.state.starwarsChars.map(chars => {
-          return (
-            <StarwarsComp key={key} characters={chars} />
-
-          );
-        })} </div>
+        <div className="container">
+          {this.state.starwarsChars.map(chars => {
+            return (
+              <StarwarsComp key={chars.created} characters={chars} />
+            );
+          })}
+        </div>
 
 
       </div>

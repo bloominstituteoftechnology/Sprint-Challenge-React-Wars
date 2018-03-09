@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
+import './StarwarsComp.css'
 
-class StarwarsComp extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {props.speci} 
-  };
+const StarwarsComp = (props) => {
   
-  
-  
-  render() {
     return (
-      
+      <div className="characters">
+        <div>Name: {props.characters.name}</div>
+        <div>Birth date: {props.characters.birth_year}</div>
+        <div>Gender: {props.characters.gender}</div>
+        <div>Weight: {props.characters.mass}</div>
+        <div>Height: {props.characters.height}</div>
+        <div>Skin color: {props.characters.skin_color}</div>
+        <div>Eyes: {props.characters.eye_color}</div>
+      </div>
     );
-  }
-  
 }
-
 
 
 export default StarwarsComp;
