@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, CardHeader, CardFooter, CardBody,
-  CardTitle, CardText } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import './CharacterCard.css';
+import PropTypes from 'prop-types';
 
 const CharacterCard = (props) => {
   
@@ -20,5 +20,14 @@ const CharacterCard = (props) => {
     
   );
 };
+
+CharacterCard.propTypes = {
+  name: PropTypes.string,
+  birth_year: PropTypes.string,
+  gender: PropTypes.string,
+  height: PropTypes.string,
+  mass: PropTypes.string,
+  species: PropTypes.arrayOf(PropTypes.string)
+}
 
 export default CharacterCard;
