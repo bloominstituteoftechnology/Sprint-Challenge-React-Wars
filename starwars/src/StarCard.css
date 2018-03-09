@@ -1,0 +1,12 @@
+.StarCard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 200px;
+    margin: 0 0 10px 0;
+    border: 2px solid indianred;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px slategray;
+}

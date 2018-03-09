@@ -1,0 +1,8 @@
+.PeopleListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 0 0 20px;
+    /* border: 1px solid white; */
+}
