@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./CharacterCard.css";
 import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from 'reactstrap';
+    CardTitle, CardSubtitle, CardHeader,Button } from 'reactstrap';
 
 
 
 const CharCard = props => {
   return (
     <Card className="character grid-item">
+    <CardHeader tag="h5"className="name"> {props.char.name} </CardHeader>
     <CardBody>
-      <CardTitle className="name"> {props.char.name} </CardTitle>
       <CardSubtitle className="height"> Height: {props.char.height} </CardSubtitle>
       <CardSubtitle className="mass"> Weight: {props.char.mass} </CardSubtitle>
       <CardSubtitle className="hair"> Hair Color: {props.char.hair_color} </CardSubtitle>

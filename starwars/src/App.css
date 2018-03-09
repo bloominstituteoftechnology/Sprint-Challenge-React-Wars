@@ -12,12 +12,15 @@
 }
 .grid-sizer, .grid-item {
   width:190px;
-  
 }
 .grid-item {
+  background-color:rgba(161, 152, 152, 0.692);
   float:left;
-  
 }
 .grid-item--width2 {
   width: 45%;
+}
+
+.card-subtitle {
+  padding:2px 0 2px 0;
 }
