@@ -1,6 +1,14 @@
+div.charCards.card {
+  background-color: rgba(0, 0, 0, 0);
+}
 .card-body {
-  background: tan;
+  background: rgba(192, 147, 89, 0.7);
 }
 button.btn {
   background: brown;
+}
+.card-title {
+  font-family: "Monoton", cursive;
+  font-size: 30px;
+  color: white;
 }

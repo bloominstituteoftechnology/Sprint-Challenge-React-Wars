@@ -8,7 +8,8 @@ import {
   CardTitle,
   CardBody,
   CardText,
-  Col
+  Col,
+  Row
 } from "reactstrap";
 
 import "./CharacterComponents.css";
@@ -53,21 +54,28 @@ class CharacterComponent extends Component {
             <CardTitle>{this.props.char.name}</CardTitle>
 
             <Collapse isOpen={this.state.collapse}>
-              <CardText>Birth Year: {this.props.char.birth_year}</CardText>
-              <CardText>Height: {this.props.char.height}</CardText>
-              <CardText>Mass: {this.props.char.mass}</CardText>
-              <CardText>Hair Color: {this.props.char.hair_color}</CardText>
-              <CardText>Skin Color: {this.props.char.skin_color}</CardText>
-              <CardText>Eye Color: {this.props.char.eye_color}</CardText>
-              <CardText>Gender: {this.props.char.gender}</CardText>
-              <CardText>Home World: {this.state.planet.name}</CardText>
-              <CardText>
-                Films:{" "}
-                {this.props.char.films.map(film => {
-                  return <FilmComponent key={film} film={film} />;
-                })}
-              </CardText>
-              <CardText>Species: {this.state.species.name}</CardText>
+              <Row>
+                <Col sm={6}>
+                  <CardText>Birth Year: {this.props.char.birth_year}</CardText>
+                  <CardText>Height: {this.props.char.height}</CardText>
+                  <CardText>Mass: {this.props.char.mass}</CardText>
+                  <CardText>Hair Color: {this.props.char.hair_color}</CardText>
+
+                  <CardText>Skin Color: {this.props.char.skin_color}</CardText>
+                  <CardText>Eye Color: {this.props.char.eye_color}</CardText>
+                  <CardText>Gender: {this.props.char.gender}</CardText>
+                </Col>
+                <Col sm={6}>
+                  <CardText>Home World: {this.state.planet.name}</CardText>
+                  <CardText>
+                    Films:{" "}
+                    {this.props.char.films.map(film => {
+                      return <FilmComponent key={film} film={film} />;
+                    })}
+                  </CardText>
+                  <CardText>Species: {this.state.species.name}</CardText>
+                </Col>
+              </Row>
             </Collapse>
           </CardBody>
           <CardBody>
