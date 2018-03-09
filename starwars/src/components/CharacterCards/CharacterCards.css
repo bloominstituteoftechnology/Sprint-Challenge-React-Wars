@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Rye');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+.CharacterCard {
+  background-image: url("https://screenrant.com/wp-content/uploads/millennium-falcon-space.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 100%;
+  display: inline-flex;
+  flex-direction: column;
+  border: solid rgb(139, 0, 0) 2px;
+  margin: 10px;
+}
+
+.CharacterCard__title {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.2px rgba(133, 0, 0, 0.692);
+  font-family: 'Rye';
+}
+
+.CharacterCard__body {
+  color: rgb(0, 0, 0);
+  /* -webkit-text-stroke: 0.05px rgb(255, 255, 255); */
+  text-shadow: 1px 1px white;
+  font-family: 'Signika';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.CharacterCard__body li {
+  list-style-type: none;
+  padding: 25px;
+}
+
+.CharacterCard__info {
+  padding: 0;
+}
+
+.CharacterCard ul span li {
+  background-color: rgba(255, 255, 255, 0.288);
+  background-position: left;
+}
+
+.CharacterCard_films, .CharacterCard__vehicles {
+  text-shadow: none;
+  font-size: 20px;
+  padding-top: 5px;
+}
