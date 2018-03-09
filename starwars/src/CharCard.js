@@ -11,9 +11,7 @@ const CharCard = (props) => {
           <CardTitle>
             {props.card.name}
           </CardTitle>
-          <CardText>
-            {props}
-          </CardText>
+          <div>{props.card.gender}</div>
         </CardBody>
       </Card>
     </div>
