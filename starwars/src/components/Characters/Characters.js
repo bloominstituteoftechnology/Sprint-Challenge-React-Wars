@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Characters.css';
 import Homeworlds from "../Homeworlds/Homeworlds";
-import { Card, CardImg, CardText, CardBody, CardLink, CardHeader, CardFooter, CardTitle, CardSubtitle, Row, Col, Container } from 'reactstrap';
+import { Card, CardText, CardBody, CardHeader, CardFooter, CardTitle, } from 'reactstrap';
 import Moment from 'react-moment';
 import PropTypes from 'prop-types'
 
@@ -47,11 +47,11 @@ class Characters extends Component {
   }
 
   
-}
+};
 
 Characters.propTypes = {
   starwarsChars: PropTypes.shape({
-    name: PropTypes.string,
+    name: PropTypes.number.isRequired,
     height: PropTypes.string,
     mass: PropTypes.string,
     hair_color: PropTypes.string,
@@ -59,7 +59,7 @@ Characters.propTypes = {
     eye_color: PropTypes.string,
     gender: PropTypes.string
   })
-}
+};
 
 
 
