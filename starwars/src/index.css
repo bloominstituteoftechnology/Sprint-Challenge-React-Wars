@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  background-size: 100%;
 }
 
 .Header {
@@ -19,7 +19,9 @@ p, li, a {
   opacity: 0.9;
   font-weight: bold;
   font-family: 'VT323', monospace;
+  color: white;
   box-shadow: -3px -3px 6px gray;
+  background: #303032;
 }
 
 .charHead {
