@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const StarCard = props => {
+const starwarsChars = props => {
   return <div>{props.star.name}</div>;
 };
 
-StarCard.propTypes = {
+starwarsChars.propTypes = {
   star: PropTypes.shape ({
     name: PropTypes.string,
     height: PropTypes.string,
@@ -15,4 +15,4 @@ StarCard.propTypes = {
   })
 };
 
-export default StarCard;
+export default starwarsChars;
