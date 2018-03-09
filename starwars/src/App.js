@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+//import StarWarCharacter from './StarWarCharacter'; //stateful/class component import
+import { StarWarCharacter } from './StarWarCharacter'; //stateless/functional/presentational component import
+import {Container} from 'reactstrap';
 import './App.css';
 
 class App extends Component {
@@ -25,9 +28,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <Container className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
+        {this.state.starwarsChars.map((character, index) => <StarWarCharacter key={index} character={character}/>)}
+      </Container>
     );
   }
 }
