@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CharCard from "./CharacterCard/CharacterCard";
 import './App.css';
+import Masonry from 'masonry-layout';
 
 class App extends Component {
   constructor() {
@@ -26,7 +27,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="App grid" >
+        <div className="grid-sizer" />
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map(char => {
           return <CharCard key={char.name} char={char} />;
@@ -35,5 +37,12 @@ class App extends Component {
     );
   }
 }
+
+var msnry = new Masonry( '.grid', {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
 
 export default App;

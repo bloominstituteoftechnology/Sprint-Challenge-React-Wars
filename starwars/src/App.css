@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.grid {
+  
+  max-width: 1200px;
+}
+.grid-sizer, .grid-item {
+  width:190px;
+  
+}
+.grid-item {
+  float:left;
+  
+}
+.grid-item--width2 {
+  width: 45%;
+}
