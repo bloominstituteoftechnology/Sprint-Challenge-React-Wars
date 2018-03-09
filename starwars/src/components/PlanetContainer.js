@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardBody, Button, CardTitle, CardText, CardImg, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import starwarsLogo from './starwars.jpg';
 
 
 class PlanetContainer extends Component {
@@ -25,10 +26,13 @@ class PlanetContainer extends Component {
               return (
                 <div className="planets" key={planet.created}>
                   <Card className="planetCard">
+                  
+                  <CardImg top width="100%" src={starwarsLogo} alt="Card image cap" />
                     <CardBody>
                       <CardTitle><span className="boldedText">NAME:</span> {planet.name}</CardTitle>
                       <Button color="secondary" onClick={this.toggle}>Attributes</Button>
                         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                        <CardImg top width="100%" src={starwarsLogo} alt="Card image cap" />
                           <ModalBody> 
                             <CardText><span className="boldedText">ROTATION PERIOD:</span> {planet.rotation_period}</CardText>
                             <CardText><span className="boldedText">ORBITAL PERIOD:</span> {planet.orbital_period}</CardText>

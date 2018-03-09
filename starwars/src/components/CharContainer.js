@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardBody, Button, CardTitle, CardText, CardImg, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import starwarsLogo from './starwars.jpg';
 
 
 class CharContainer extends Component {
@@ -26,10 +27,13 @@ class CharContainer extends Component {
           return (
             <div className="characters" key={character.created}>
             <Card className="characterCard">
+            <CardImg top width="100%" src={starwarsLogo} alt="Card image cap" />
               <CardBody>
                 <CardTitle><span className="boldedText">NAME:</span> {character.name}</CardTitle>
+                
                 <Button color="secondary" onClick={this.toggle}>Attributes</Button>
                   <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                  <CardImg top width="100%" src={starwarsLogo} alt="Card image cap" />
                     <ModalBody>
                       <CardText><span className="boldedText">BIRTH YEAR:</span> {character.birth_year}</CardText>
                       <CardText><span className="boldedText">GENDER:</span> {character.gender}</CardText>

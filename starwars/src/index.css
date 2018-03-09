@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@ h3 {
 .characters {
   
   opacity: 0.7;
-  border: 2px solid goldenrod;
+  border: 3px solid goldenrod;
   box-shadow: 5px 10px 8px #888888;
   margin: 20px;
   
@@ -48,7 +48,7 @@ h3 {
 
 .planets {
   opacity: 0.7;
-  border: 2px solid #488214;
+  border: 3px solid #488214;
   box-shadow: 5px 10px 8px #888888;
   margin: 10px;
 }
