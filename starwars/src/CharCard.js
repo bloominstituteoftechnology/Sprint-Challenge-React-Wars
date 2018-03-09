@@ -1,9 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 
-const CharCard = props => {
-    return <div>{props.starwarsChars.name}</div>;
+// const CharCard = props => {
+//   return <div>{props.starwarsChars.name}</div>;
+//   };
+  
+export class CharCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      starwarsChars: []
+    }
   };
+
+//Have trouble getting props on the obj.
+//CharCard has the object starwarsChars (?) how to access data, finding difficulty 
+ 
+
+}
+
 
   export default CharCard
 
