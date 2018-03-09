@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar/Navbar';
+// import CarouselComponent from './components/CarouselComponent/CarouselComponent';
+import CardComponent from './components/CardComponent/CardComponent';
 import './App.css';
 
 class App extends Component {
@@ -26,7 +29,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Navbar />
+        {/* <CarouselComponent swChars={this.state.starwarsChars} /> */}
+        {this.state.starwarsChars.map((char, index) => {
+          return (
+            <div key={index}>
+              <CardComponent char={char} />;
+            </div>
+          );
+        })}
       </div>
     );
   }

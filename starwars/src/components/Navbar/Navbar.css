@@ -1,0 +1,22 @@
+.swTitleSpan {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2em;
+}
+
+.navbarBrandDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.navbarSearchBar {
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbarSearchBarSpan {
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+}
