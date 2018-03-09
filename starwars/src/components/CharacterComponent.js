@@ -16,15 +16,28 @@ class CharacterComponent extends Component {
   constructor() {
     super();
     this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false };
+    this.state = {
+      collapse: false,
+      planet: []
+    };
   }
   toggle() {
     this.setState({ collapse: !this.state.collapse });
   }
+  componentDidMount() {
+    console.log(this.props.char.homeworld);
+    fetch(this.props.char.homeworld)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ planet: data });
+      });
+  }
 
   render() {
     return (
-      <Col sm={4}>
+      <Col sm={9}>
         <Card className="charCards m-3">
           <CardBody>
             <CardTitle>{this.props.char.name}</CardTitle>
@@ -37,10 +50,12 @@ class CharacterComponent extends Component {
               <CardText>Skin Color: {this.props.char.skin_color}</CardText>
               <CardText>Eye Color: {this.props.char.eye_color}</CardText>
               <CardText>Gender: {this.props.char.gender}</CardText>
-              <CardText>Home World: {this.props.char.homeworld}</CardText>
+              <CardText>Home World: {this.state.planet.name}</CardText>
               <CardText>Films: {this.props.char.films}</CardText>
               <CardText>Species: {this.props.char.species}</CardText>
             </Collapse>
+          </CardBody>
+          <CardBody>
             <Button className="" onClick={this.toggle}>
               Read More
             </Button>
