@@ -1,24 +1,26 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import './StarWarsCard.css'
 import PropTypes from 'prop-types';
+import img from './images/luke_skywalker.jpeg'
 
 const StarWarsCard = (props) => {
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
+      <CardImg top width="100%" src={img} alt="Card image cap" />
         <CardBody>
           <CardTitle className="CharName">{props.char.name}</CardTitle>
           <CardSubtitle className="VitalsData">Vital Data:</CardSubtitle>
 
           <div className="CardBioContent">
-          <CardText>Birth Year: {props.char.birth_year}</CardText>
-          <CardText>Gender: {props.char.gender}</CardText>
-          <CardText>Height: {props.char.height} cm</CardText>
-          <CardText>Mass: {props.char.mass} kg</CardText>
-          <CardText>Skin Color: {props.char.skin_color}</CardText>
-          <CardText>Hair Color: {props.char.hair_color}</CardText>
-          <CardText>Eye Color: {props.char.eye_color}</CardText>
+          <CardText><span>Birth Year:</span> {props.char.birth_year}</CardText>
+          <CardText><span>Gender</span> {props.char.gender}</CardText>
+          <CardText><span>Height:</span> {props.char.height} cm</CardText>
+          <CardText><span>Mass:</span> {props.char.mass} kg</CardText>
+          <CardText><span>Skin Color:</span> {props.char.skin_color}</CardText>
+          <CardText><span>Hair Color:</span> {props.char.hair_color}</CardText>
+          <CardText><span>Eye Color:</span> {props.char.eye_color}</CardText>
           </div>
           <Button className="btn-card">Learn More</Button>
         </CardBody>
