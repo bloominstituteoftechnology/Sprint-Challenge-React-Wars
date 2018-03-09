@@ -47,7 +47,8 @@ CharacterCard.propTypes = {
         eye_color: PropTypes.string,
         height: PropTypes.string,
         mass: PropTypes.string,
-        skin_color: PropTypes.string
+        skin_color: PropTypes.string,
+        films: PropTypes.arrayOf(PropTypes.string)
     })
 };
 
