@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "./Card.css";
 import {Jumbotron} from 'react-bootstrap';
 
 
@@ -15,7 +16,7 @@ export class Card extends Component{
 
   render(){
     return (
-    <Jumbotron>
+    <Jumbotron className="Card">
       <p>Name: {this.state.name}</p>
       <p>Gender: {this.state.gender}</p>
       <p>Hair Color: {this.state.hairColor}</p>
