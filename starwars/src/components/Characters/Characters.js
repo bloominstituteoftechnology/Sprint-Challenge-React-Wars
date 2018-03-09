@@ -51,7 +51,7 @@ class Characters extends Component {
 
 Characters.propTypes = {
   starwarsChars: PropTypes.shape({
-    name: PropTypes.number.isRequired,
+    name: PropTypes.string,
     height: PropTypes.string,
     mass: PropTypes.string,
     hair_color: PropTypes.string,
