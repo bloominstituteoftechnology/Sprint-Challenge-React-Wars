@@ -7,7 +7,7 @@ The difference between React JS and JS framework is in React JS we use both html
 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
 componentWillMount() this happens right before the component did mount, 
 
-componentDidMount() called right after component is mounted, which will enable us the update DOM using setState()
+componentDidMount() called right after component is mounted, which will enable us the update state using setState()
 
 render() here the JSX reside and whatever change the setState() has done the render function will update and render to the DOM.
 
