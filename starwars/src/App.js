@@ -29,6 +29,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {/* This line here is the only line that I added.  It takes the data that componentDidMount put into this.state using this.setState
+        and sends it down to StarWarsCharacters as a prop. */}
         <StarWarsCharacters charList={this.state.starwarsChars} />
       </div>
     );
