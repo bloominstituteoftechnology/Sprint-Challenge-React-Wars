@@ -81,6 +81,8 @@ class CharacterComponent extends Component {
   }
 }
 
-CharacterComponent.propTypes = {};
+CharacterComponent.propTypes = {
+  planet: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default CharacterComponent;
