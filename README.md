@@ -6,8 +6,9 @@
 ## Start by forking and cloning this repository.
 ## Questions
 1. What is React JS? How does it differ from other JavaScript frameworks?
-2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
-3. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
+1. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
+1. Briefly describe PropTypes and what we use them for when building react applications.
 
 ## Project
 * You're going to be building an application *starwars* that consumes live data that we're retrieving across the world wide web!
