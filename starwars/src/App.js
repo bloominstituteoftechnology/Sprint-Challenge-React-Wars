@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      starwarsPlanets: []
     };
   }
   componentDidMount() {
@@ -23,12 +24,23 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+      fetch('https://swapi.co/api/planets')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsPlanets: data.results });
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
   }
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardContainer characters={this.state.starwarsChars} />
+        <CardContainer characters={this.state.starwarsChars} planets={this.state.starwarsPlanets} />
       </div>
     );
   }
