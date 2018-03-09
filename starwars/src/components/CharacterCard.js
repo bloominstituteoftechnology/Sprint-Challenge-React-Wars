@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {Card,
         CardBody,
-        CardTitle,
-        CardSubtitle,
+        CardHeader,
         CardText} from 'reactstrap';
 import './CharacterCard.css';
 
@@ -21,18 +20,37 @@ class CharacterCard extends Component {
 
     render() {
         return (
-            <Card className='card'>
+            <Card className='card' style={{display: 'flex', flexDirection: 'column'}}>
+                <CardHeader style={{marginBottom: 20}}>{this.state.characterCard.name}</CardHeader>
                 <CardBody>
-                <CardTitle>{this.state.characterCard.name}</CardTitle>
-                <CardSubtitle>
-                    <CardText>gender: {this.state.characterCard.gender}</CardText>
-                    <CardText>hair color: {this.state.characterCard.hair_color}</CardText>
-                    <CardText>birth year: {this.state.characterCard.birth_year}</CardText>
-                    <CardText>eye_color: {this.state.characterCard.eye_color}</CardText>
-                    <CardText>height: {this.state.characterCard.height}</CardText>
-                    <CardText>mass: {this.state.characterCard.mass}</CardText>
-                    <CardText>skin color:{this.state.characterCard.skin_color}</CardText>
-                </CardSubtitle>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>gender:</div>
+                        <div>{this.state.characterCard.gender}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>hair color:</div>
+                        <div>{this.state.characterCard.hair_color}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>birth year:</div>
+                        <div>{this.state.characterCard.birth_year}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>eye_color:</div>
+                        <div>{this.state.characterCard.eye_color}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>height:</div>
+                        <div>{this.state.characterCard.height}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>mass:</div>
+                        <div>{this.state.characterCard.mass}</div>
+                    </CardText>
+                    <CardText className='cardStats'>
+                        <div style={{fontWeight: 'bold'}}>skin color:</div>
+                        <div>{this.state.characterCard.skin_color}</div>
+                    </CardText>
                 </CardBody>
             </Card>
         );
