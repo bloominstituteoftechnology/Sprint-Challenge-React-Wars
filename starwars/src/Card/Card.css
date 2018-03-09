@@ -1,0 +1,42 @@
+.Card__Init{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.Card__Section{
+    font-size: 120%;
+    width: 25%;
+    margin: 10px 4%;
+    border: 1px gold solid;
+    font-family: 'Press Start 2p', cursive;
+    color: yellow;
+    background:  rgba(0, 0, 0, 0.575);
+}
+
+.Basic__AttrList{
+    list-style: none;
+    text-align: left;
+    margin: 16px 5%;
+}
+
+.Basic__AttrList li{
+    margin: 5%;
+}
+
+.Basic__PhysicalList{
+    list-style: none;
+    border-top: 1px dashed gold;
+    padding-top: 15px;
+    padding-left: 17%;
+    text-align: left;
+}
+
+.Basic__PhysicalList li{
+    margin: 10px 0;
+}
+
+
