@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharCard from './CharCard.js';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 class App extends Component {
   constructor() {
@@ -22,11 +25,19 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+      console.log('CDM:', this.state.starwarsChars)
   }
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          <div className="card-container">
+            {this.state.starwarsChars.map((char, index) => {
+
+                return <CharCard card={char} key={index} />;
+
+            })}
+          </div>
       </div>
     );
   }
