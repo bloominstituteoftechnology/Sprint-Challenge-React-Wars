@@ -1,8 +1,25 @@
 .App {
-  text-align: center;
+  margin: 80px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+.Collapsible { 
+  color: green;
+  margin: 5px; 
+  padding: 5px; 
+} 
+
+.Collapsible__trigger { 
+  cursor: pointer; 
+} 
+.Collapsible__contentInner{ 
+  background-color: black; 
+  color: yellow; 
+  opacity: 0.5;
+  border: 2px solid grey; 
+  padding: 20px; 
+  margin-top: 5px; 
 }
 /* write your parent styles in here for your App.js */

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Collapsible from 'react-collapsible';
 import './App.css';
 
 class App extends Component {
@@ -22,11 +23,31 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-  }
+  };
+
   render() {
+    const {
+      starwarsChars
+    } = this.state
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ol>
+          {starwarsChars.map(character => (
+            <Collapsible trigger={character.name}>
+              <ul>
+                <li>Birth year: {character.birth_year}</li>
+                <li>Gender: {character.gender}</li>
+                <li>Hair Color: {character.hair_color}</li>
+                <li>Eye Color: {character.eye_color}</li>
+                <li>Height: {character.height}</li>
+
+
+              </ul>
+            </Collapsible>
+          ))}
+        </ol>
       </div>
     );
   }
