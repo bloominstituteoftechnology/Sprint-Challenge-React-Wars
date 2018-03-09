@@ -15,9 +15,10 @@ class Characters extends Component {
   componentDidMount() {
     this.setState({
       character: this.props.character,
-      homeworld: this.props.character.homeworld
+      homeworld: this.props.character.homeworld,
     });
   }
+
 
   render() {
     return (
@@ -29,8 +30,8 @@ class Characters extends Component {
                             </CardTitle>
                         </CardHeader>
                         <CardBody className="CharacterCard__body">
-                            <CardText><span>Height:</span> {this.state.character.height}</CardText>
-                            <CardText><span>Mass:</span> {this.state.character.mass}</CardText>
+                            <CardText><span>Height:</span> {this.state.character.height}cm</CardText>
+                            <CardText><span>Mass:</span> {this.state.character.mass}kg</CardText>
                             <CardText><span>Hair Color:</span> {this.state.character.hair_color}</CardText>
                             <CardText><span>Skin Color:</span> {this.state.character.skin_color}</CardText>
                             <CardText><span>Eye Color:</span> {this.state.character.eye_color}</CardText>
