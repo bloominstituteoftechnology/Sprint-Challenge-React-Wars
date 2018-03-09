@@ -10,8 +10,4 @@ import CharCard from "./CharCard";
 // );
 // };
 
-
-
-
-
 export default CharList;
