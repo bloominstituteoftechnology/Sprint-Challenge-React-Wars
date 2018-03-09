@@ -1,9 +1,11 @@
-import react, {Componenent} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const CharCard = props => {
     return <div>{props.starwarsChars.name}</div>;
   };
+
+  export default CharCard
 
 //name": 'Str'
 //"height": 'Str'
