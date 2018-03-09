@@ -8,8 +8,8 @@ const PersonCard = props => {
   return (
 
     <div className="col-4 boxes">
-      <Card>
-        <CardHeader>{props.person.name}</CardHeader>
+      <Card color="">
+        <CardHeader><h2>{props.person.name}</h2></CardHeader>
         <CardBody>
           <CardTitle>Special Title Treatment</CardTitle>
           <CardText>DOB: {props.person.birth_year}</CardText>
