@@ -1,0 +1,11 @@
+.card {
+    max-width: 300px;
+    width: 100%;
+    margin: 1%;
+    box-shadow: 3px 4px 20px;
+    border: 1px solid #6f645c;
+}
+
+.card:hover {
+    opacity: 0.5;
+}
