@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "./Card.css";
 import {Jumbotron} from 'react-bootstrap';
-
+import PropTypes from 'prop-types';
 
 export class Card extends Component{
   constructor(props){
@@ -13,8 +13,7 @@ export class Card extends Component{
       hairColor:this.props.hairColor
     }
   }
-
-  render(){
+    render(){
     return (
     <Jumbotron className="Card">
       <p>Name: {this.state.name}</p>
@@ -25,3 +24,9 @@ export class Card extends Component{
   }
 };
 
+Card.propTypes = {
+    name:PropTypes.string,
+    gender:PropTypes.string,
+    birthYear:PropTypes.string,
+    hairColor:PropTypes.string
+};
