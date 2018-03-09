@@ -1,0 +1,16 @@
+.gender {
+    margin-bottom: 15px;
+}
+
+.border {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 110px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
