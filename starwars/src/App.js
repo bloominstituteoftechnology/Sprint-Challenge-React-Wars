@@ -40,13 +40,13 @@ class App extends Component {
           <CardGroup>
               {/* <Col sm = "8"> */}
                 <Card body>
-                  <CardTitle>{starwarchar.name}</CardTitle>
-                    <span> {starwarchar.birth_year}</span>
-                    <p> {starwarchar.created}</p>
-                    <p> {starwarchar.eyecolor} </p>
-                    <p> {starwarchar.gender} </p>
-                    <p> {starwarchar.hair_color} </p>
-                    <p> {starwarchar.skin_color} </p>
+                  <CardTitle> {starwarchar.name}</CardTitle>
+                    <CardText> {starwarchar.birth_year}</CardText>
+                    <CardText> {starwarchar.created}</CardText>
+                    <CardText> {starwarchar.eyecolor} </CardText>
+                    <CardText> {starwarchar.gender} </CardText>
+                    <CardText> {starwarchar.hair_color} </CardText>
+                    <CardText> {starwarchar.skin_color} </CardText>
               </Card>
             {/* </Col> */}
         </CardGroup>    
