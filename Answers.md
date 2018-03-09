@@ -11,3 +11,6 @@
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
   * *Functional/Presentational* components are limited compared to Class/Stateful components. They accept a `props` object but do not include a `state` therefore `props` is read-only in this type of component. They simply `render()` data passed to them.  
   *  Class/Stateful components utilize `Class` and subsequently `constructor()`, inherited from React's `Component` for which it extends. These components maintain a `state` object that takes and holds component data, via `props`, throughout its lifecycle. Changes to data can be made and rendered dynamically.  This allows fo functionality and presentation.
+
+  4. Briefly describe PropTypes and what we use them for when building react applications.
+  * PropTypes check incoming data to ensure it matches expected type. This is to prevent instances such as an application expecting and attempting to render a string but being fed a boolean or an array. 

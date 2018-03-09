@@ -3,6 +3,7 @@ import './Characters.css';
 import Homeworlds from "../Homeworlds/Homeworlds";
 import { Card, CardImg, CardText, CardBody, CardLink, CardHeader, CardFooter, CardTitle, CardSubtitle, Row, Col, Container } from 'reactstrap';
 import Moment from 'react-moment';
+import PropTypes from 'prop-types'
 
 class Characters extends Component {
   constructor() {
@@ -44,6 +45,22 @@ class Characters extends Component {
       </div>
     );
   }
+
+  
 }
+
+Characters.propTypes = {
+  starwarsChars: PropTypes.shape({
+    name: PropTypes.string,
+    height: PropTypes.string,
+    mass: PropTypes.string,
+    hair_color: PropTypes.string,
+    skin_color: PropTypes.string,
+    eye_color: PropTypes.string,
+    gender: PropTypes.string
+  })
+}
+
+
 
 export default Characters;
