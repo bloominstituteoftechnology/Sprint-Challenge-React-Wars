@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {Card,
         CardBody,
         CardTitle,
@@ -37,5 +38,17 @@ class CharacterCard extends Component {
         );
     }
 }
+
+CharacterCard.propTypes = {
+    character: PropTypes.shape({
+        gender: PropTypes.string,
+        hair_color: PropTypes.string,
+        birth_year: PropTypes.string,
+        eye_color: PropTypes.string,
+        height: PropTypes.string,
+        mass: PropTypes.string,
+        skin_color: PropTypes.string
+    })
+};
 
 export default CharacterCard;
