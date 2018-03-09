@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Card} from './components/Card/Card.js';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      logo:"https://vignette.wikia.nocookie.net/starwars/images/2/2e/Imperial_Emblem.svg/revision/latest/scale-to-width-down/480?cb=20080220004323"
     };
   }
   componentDidMount() {
@@ -18,6 +21,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(this.state.starwarsChars);
       })
       .catch(err => {
         throw new Error(err);
@@ -26,7 +30,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div>
+          <Grid>
+            <Row className="show-grid">
+              <Col xs={4}md={4}lg={4}>
+                <img src={this.state.logo} alt="logo" />
+              </Col>
+              <Col xs={8}md={8}lg={8}>
+                <h1 className="Header">Imperial Database</h1>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
+
+        {this.state.starwarsChars.map( (e,i) =>{
+          return <Card birthYear={e.birth_year}gender={e.gender}hairColor={e.hair_color}key={i} name={e.name} />;
+        })
+        }
       </div>
     );
   }
