@@ -14,13 +14,15 @@
   width:190px;
 }
 .grid-item {
-  background-color:rgba(161, 152, 152, 0.692);
+  background-color:rgba(162, 162, 221, 0.705);
   float:left;
 }
 .grid-item--width2 {
   width: 45%;
 }
-
+.card-header {
+  background-color:rgba(228, 95, 95, 0.397);
+}
 .card-subtitle {
   padding:3px 0 3px 0;
 }
