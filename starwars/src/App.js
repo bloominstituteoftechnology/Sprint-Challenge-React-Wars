@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center"
+};
+
 class App extends Component {
   constructor() {
     super();
@@ -26,7 +32,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">React Wars: Omoniyi's Version II</h1>
+        <h2 className="Header">This is my take on a Star Wars Character List </h2>
+    
       </div>
     );
   }
