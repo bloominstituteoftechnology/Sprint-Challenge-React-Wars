@@ -14,3 +14,4 @@ componentWillUpdate is called JUST before rendering, but only if the componentSh
 componentWillUnmount is the last method in the lifecycle and is executed lastly before a component gets removed from DOM.
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+Functional/Presentational components take in props, Class/Stateful components can take in state, but can exist without it as well. While the constructor is also optional, it's not recommended to go without it and super() for Class/Stateful components.
