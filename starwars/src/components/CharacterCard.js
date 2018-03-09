@@ -8,8 +8,18 @@ class CharacterCard extends Component {
     super(props)
       this.state = {
         species: {},
-        movies: []
+        movies: [],
+        listOfMovies: ''
       }
+  }
+  listOfFilms = () => {
+    
+    const list = this.state.movies.map(movie => {
+      console.log('title', movie.title)
+      return movie.title;
+    }).join(', ');
+    return list;
+    // this.setState({ listOfMovies: list })
   }
   
   componentDidMount() {
@@ -36,14 +46,14 @@ class CharacterCard extends Component {
         })
         .then(data => {
           filmsArr.push(data)
-          
+          this.setState({ movies: filmsArr });
         })
         .catch(err => {
           throw new Error(err);
         });        
       })
       console.log('films', filmsArr)
-      this.setState({ movies: filmsArr });
+      this.listOfFilms();
       
   }
   
@@ -58,6 +68,7 @@ class CharacterCard extends Component {
             <CardText>Height: {this.props.character.height}cm</CardText>
             <CardText>Weight: {this.props.character.mass}kg</CardText>
             <CardText>Species: {this.state.species.name}</CardText>
+            <CardText>Film Titles: {this.listOfFilms()}</CardText>
           </CardBody>
           
         </Card>
