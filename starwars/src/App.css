@@ -5,4 +5,44 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.reactwars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.charCards {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px rgb (0, 0, 0);
+  background-color: antiquewhite;
+  margin: 4px 4px 4px 4px;
+  width: 300px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.charCards:hover {
+  box-shadow: 2px 2px 2px 2px cadetblue;
+}
+
+.charCards__name {
+  color: black;
+  text-shadow: 2px 2px 4px burlywood;
+  font-family: 'Helvetica';
+  font-size: 1.5rem;
+}
+
+.charCards__text {
+  color: light brown;
+}
+
+
+
+
 /* write your parent styles in here for your App.js */
