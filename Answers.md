@@ -12,4 +12,8 @@ The React Component lifecycle consists of Mounting, Updating, and Unmounting. Mo
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-Functional components within React are essentially 'functional' in that they simply render or present the data. Additionally, they do not have a state although they can access props. They are the UI of the App, and not the behavior and they can not use lifecycle methods. Unlike this, Class or Stateful components are the behavior of the App in that they make use of the lifecycle methods and are written with ES6 class syntax. 
+Functional components within React are essentially 'functional' in that they simply render or present the data. Additionally, they do not have a state although they can access props. They are the UI of the App, and not the behavior and they can not use lifecycle methods. Unlike this, Class or Stateful components are the behavior of the App in that they make use of the lifecycle methods and are written with ES6 class syntax.
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+
+React proptypes checks the runtime and validates the data of props and objects within React. It essentially ensures the correct and expected props are passed to their intended components. 
