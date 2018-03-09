@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharCard from "./CharCard";
+import {
+    Card,
+    Container,
+    Row,
+    Col,
+    Button
+} from 'reactstrap';
 
 class App extends Component {
   constructor() {
@@ -28,11 +35,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div> {this.state.starwarsChars.map(char => {
+        <Card> {this.state.starwarsChars.map(char => {
     return <CharCard default={char.name} key={char.name} char={char} />;
 
   })}
-</div>
+</Card>
       </div>
     );
   }
