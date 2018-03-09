@@ -1,27 +1,28 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
 import './Card.css'
 import PropTypes from "prop-types";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const CardImgs = (props) => {
   const post = props.wars;
   return (
-    <div className="starWars">
-      <Card body inverse style={{ backgroundColor: '#3498db', padding: '30px', alignItems: 'center', borderColor: '#fff' }}>       
-          <CardTitle>Name: {post.name}</CardTitle>
-          <CardSubtitle>Birth Year: {post.birth_year}</CardSubtitle>
-          <CardSubtitle>Height: {post.height}</CardSubtitle>
-          <CardSubtitle>Gender: {post.gender}</CardSubtitle>
-          <CardSubtitle>Eye Color: {post.eye_color}</CardSubtitle>
-          <CardSubtitle>Skin Color: {post.skin_color}</CardSubtitle>               
-      </Card>
+    <div>
+      <div className="starWars">
+        <div>       
+            <div>Name: <strong>{post.name}</strong></div>
+            <div>Birth Year: {post.birth_year}</div>
+            <div>Height: {post.height}</div>
+            <div>Gender: {post.gender}</div>
+            <div>Eye Color: {post.eye_color}</div>
+            <div>Skin Color: {post.skin_color}</div>               
+        </div>
+      </div>
     </div>
   );
 };
 
 CardImgs.defaultProps = {
-  cardImg: PropTypes.shape({
+  cardImgs: PropTypes.shape({
     name: "Luke"
   })
 };
