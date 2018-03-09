@@ -18,7 +18,7 @@ class CharacterCard extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data);
+        
         this.setState({ species: data });
       })
       .catch(err => {
