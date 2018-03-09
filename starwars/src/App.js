@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarCard from './StarCard';
+
 
 class App extends Component {
   constructor() {
