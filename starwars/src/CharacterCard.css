@@ -1,0 +1,10 @@
+.testStyle {
+    border: 1px solid cyan;
+    width: 50%;
+    justify-content: right;
+    margin: 20px auto;
+}
+
+.characterName {
+    background: lightcyan;
+}

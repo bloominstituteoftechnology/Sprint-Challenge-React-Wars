@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import CharacterList from './CharacterList.js';
 
 class App extends Component {
   state = {
@@ -9,7 +8,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("CDM called: ", this.state.starwarsChars);
     fetch('https://swapi.co/api/people')
       .then(res => {
         return res.json();
@@ -23,20 +21,10 @@ class App extends Component {
   }
 
   render() {
-    console.log("Render called: ", this.state.starwarsChars);
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <div>
-          <Card>
-            <CardBody>
-              <CardText>Name: {this.state.starwarsChars.map((character, index) => {
-                return <Card key={index} character={character} />;
-                })}
-              </CardText>
-            </CardBody>
-          </Card>
-        </div>
+      <div className="App container">
+        <div><h1 className="Header">React Wars</h1></div>
+        <div> <CharacterList people={this.state.starwarsChars} /> </div>
       </div>
     );
   }
