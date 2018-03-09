@@ -24,6 +24,7 @@ class App extends Component {
         throw new Error(err);
       });
   }
+  
   render() {
     return (
       <div className="App">
