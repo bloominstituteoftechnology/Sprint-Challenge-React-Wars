@@ -5,3 +5,22 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.card-box {
+  display: inline-block;
+  margin: 10px 1%;
+  width: 25%;
+  height: 250px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: .75;
+}
+
+.card {
+  height: 100%;
+}
