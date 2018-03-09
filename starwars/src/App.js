@@ -29,8 +29,9 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map(starwarchar => {
-          return(
-          <div>
+          return( 
+
+          <div key={starwarchar.name}>
               <h3> {starwarchar.name}</h3> 
               <p> {starwarchar.birth_year}</p>
               <p> {starwarchar.created}</p>
@@ -38,6 +39,9 @@ class App extends Component {
               {/* <p> {starwarchar.films} </p> */}
               <p> {starwarchar.gender} </p>
               <p> {starwarchar.hair_color} </p>
+              <p> {starwarchar.skin_color} </p>
+
+
 
           </div>
         );})};
