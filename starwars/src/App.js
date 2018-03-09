@@ -1,5 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
 class App extends Component {
   constructor() {
@@ -12,7 +21,7 @@ class App extends Component {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
-    fetch('https://swapi.co/api/people')
+    fetch("https://swapi.co/api/people")
       .then(res => {
         return res.json();
       })
@@ -27,6 +36,24 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((char, i) => (
+          <div className="char">
+            <div className="charText">
+              <strong>Name</strong>: {char.name}
+            </div>
+            <div className="charText">
+              <strong>Birth Year:</strong> {char.birth_year}
+            </div>
+            <div className="charText">
+              <strong>Height: </strong>
+              {char.height}
+            </div>
+            <div className="charText">
+              <strong>Mass: </strong>
+              {char.mass}
+            </div>
+          </div>
+        ))}
       </div>
     );
   }
