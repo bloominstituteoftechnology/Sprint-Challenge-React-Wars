@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.CardContainer {
+  border: 2px solid gray;
+}
+
+.StarWarsCard {
+  width: 250px;
+  margin: 30px;
+}
+
+.VitalsData {
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+.CardBioContent {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.btn-card {
+  background-color: palegoldenrod;
+  color:  black;
+}
