@@ -11,9 +11,10 @@ const CharCard = props => {
     <Card className="character grid-item">
     <CardHeader tag="h5"className="name"> {props.char.name} </CardHeader>
     <CardBody>
-      <CardSubtitle className="height"> Height: {props.char.height} </CardSubtitle>
-      <CardSubtitle className="mass"> Weight: {props.char.mass} </CardSubtitle>
-      <CardSubtitle className="hair"> Hair Color: {props.char.hair_color} </CardSubtitle>
+    <CardSubtitle > Born: {props.char.birth_year} </CardSubtitle>
+      <CardSubtitle > Height: {props.char.height} </CardSubtitle>
+      <CardSubtitle > Mass: {props.char.mass} </CardSubtitle>
+      <CardSubtitle > Hair Color: {props.char.hair_color} </CardSubtitle>
       </CardBody>
     </Card>
   );
