@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Card, CardTitle, CardText } from 'reactstrap';
-//import CardStyle from ./cardStyle.css;
+import CardStyles from './cardStyles.js';
 
 class CardComp extends Component {
     constructor(props) {
@@ -9,18 +9,16 @@ class CardComp extends Component {
 
     render() {
         return (
-            <div>
-            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-              <CardTitle>{this.props.data.name}</CardTitle>
-                <CardText>
-                    <p><strong>Gender:</strong>{this.props.data.gender}</p>
-                    <p><strong>Height:</strong>{this.props.data.Height}</p>
-                    <p><strong>Weight:</strong>{this.props.data.Weight}</p>
-                    <p><strong>Hair Color:</strong>{this.props.data.hair_color}</p>
-                    <p><strong>Skin Color:</strong>{this.props.data.skin_color}</p>
-                </CardText>
+            <CardStyles>
+            <Card >
+                <CardTitle>{this.props.data.name}</CardTitle>
+                <CardText><strong>Gender:</strong>{this.props.data.gender}</CardText>
+                <CardText><strong>Height:</strong>{this.props.data.height}</CardText>
+                <CardText><strong>Weight:</strong>{this.props.data.mass}</CardText>
+                <CardText><strong>Hair Color:</strong>{this.props.data.hair_color}</CardText>
+                <CardText><strong>Skin Color:</strong>{this.props.data.skin_color}</CardText>
             </Card>
-            </div>
+            </CardStyles>
         );
     };
 }

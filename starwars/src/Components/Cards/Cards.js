@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardComp from '..//Card/Card.js';
-//import CardsStyle from '.cardsStyles.css';
+import CardsStyles from './CardsStyles.js';
 
 class Cards extends Component {
     constructor(props) {
@@ -10,7 +10,9 @@ class Cards extends Component {
     render () {
         return (
             <div>
+                <CardsStyles>
                 {this.props.data.map((value, index) => <CardComp key={index} data ={value}/>)}
+                </CardsStyles>
             </div>
         );
     };
