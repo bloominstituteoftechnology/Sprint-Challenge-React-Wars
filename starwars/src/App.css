@@ -1,7 +1,12 @@
 .App {
+  max-width: 1000px;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .Header {
+  width: 100%;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
