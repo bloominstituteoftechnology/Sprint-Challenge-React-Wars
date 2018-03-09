@@ -1,0 +1,11 @@
+.topCard{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 15px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.cardTitle{
+    font-weight: bold;
+}
