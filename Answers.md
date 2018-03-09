@@ -1,4 +1,4 @@
-# Answers
+# Answers - Joshua Goode
 
 1. What is React JS? How does it differ from other JavaScript frameworks?
 
