@@ -1,18 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {
+    Card,
+    CardTitle,
+    CardText,
+    Container,
+    Row,
+    Col,
+    Button
+} from 'reactstrap';
 
 const CharCard = props => {
   return (
-    <div>
-  <p>{props.char.name}</p>
-  <p> height: {props.char.height}</p>
-  <p> mass: {props.char.mass}</p>
-  <p> hair_color: {props.char.hair_color}</p>
-  <p> skin_color: {props.char.skin_color}</p>
-  <p> eye_color: {props.char.eye_color}</p>
-  <p> birth_year: {props.char.birth_year}</p>
-  <p> gender: {props.char.gender}</p>
-  </div>
+    <Card>
+  <CardTitle>{props.char.name}</CardTitle>
+  <CardText> height: {props.char.height}</CardText>
+  <CardText> mass: {props.char.mass}</CardText>
+  <CardText> hair_color: {props.char.hair_color}</CardText>
+  <CardText> skin_color: {props.char.skin_color}</CardText>
+  <CardText> eye_color: {props.char.eye_color}</CardText>
+  <CardText> birth_year: {props.char.birth_year}</CardText>
+  <CardText> gender: {props.char.gender}</CardText>
+  </Card>
 );
 };
 
