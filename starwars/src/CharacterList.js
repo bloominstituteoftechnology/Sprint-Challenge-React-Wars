@@ -4,7 +4,7 @@ import './CharacterList.css';
 
 const CharacterList = props => {
   return (
-    <div className="CharacterListContainer">
+    <div className="CharacterListContainer row flex-wrap space-around">
     {props.characters.map(character => {
       return <CharacterCard key={character.name} character={character} />;
     })}
