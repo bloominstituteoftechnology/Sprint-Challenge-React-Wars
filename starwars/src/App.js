@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import HeaderComps from './components/HeaderComps.js';
+import CardComps from './components/CardComps.js';
 
 class App extends Component {
   constructor() {
