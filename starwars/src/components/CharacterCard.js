@@ -7,7 +7,8 @@ class CharacterCard extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        species: {}
+        species: {},
+        movies: []
       }
   }
   
@@ -24,6 +25,25 @@ class CharacterCard extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+      let filmsArr = [];
+
+      this.props.character.films.forEach(film => {
+        fetch(film)
+        .then(res => {
+  
+          return res.json();
+        })
+        .then(data => {
+          filmsArr.push(data)
+          
+        })
+        .catch(err => {
+          throw new Error(err);
+        });        
+      })
+      console.log('films', filmsArr)
+      this.setState({ movies: filmsArr });
       
   }
   
