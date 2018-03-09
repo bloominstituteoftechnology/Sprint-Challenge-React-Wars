@@ -64,7 +64,7 @@ class CharacterComponent extends Component {
               <CardText>
                 Films:{" "}
                 {this.props.char.films.map(film => {
-                  return <FilmComponent film={film} />;
+                  return <FilmComponent key={film} film={film} />;
                 })}
               </CardText>
               <CardText>Species: {this.state.species.name}</CardText>

@@ -25,14 +25,6 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-
-    fetch("https://swapi.co/api/planets")
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        this.setState({ starwarsPlanets: data.results });
-      });
   }
   render() {
     return (
@@ -45,7 +37,7 @@ class App extends Component {
           </Row>
           <Row className="d-flex justify-content-center">
             {this.state.starwarsChars.map(char => {
-              return <CharacterComponent key={char.count} char={char} />;
+              return <CharacterComponent key={char.name} char={char} />;
             })};
           </Row>
         </Container>
