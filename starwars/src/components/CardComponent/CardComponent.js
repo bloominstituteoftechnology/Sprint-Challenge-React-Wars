@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './CardComponent.css';
 import {
   Card,
@@ -12,8 +13,8 @@ import {
 const CardComponent = props => {
   return (
     <div className="cardDiv">
-      <Card className="cardCard">
-        <CardBody>
+      <Card color="black" className="cardCard">
+        <CardBody className="cardBody">
           <CardTitle>{props.char.name}</CardTitle>
           <CardSubtitle>Birth Year: {props.char.birth_year}</CardSubtitle>
           <hr />
@@ -28,6 +29,18 @@ const CardComponent = props => {
       </Card>
     </div>
   );
+};
+
+CardComponent.propTypes = {
+  starwarsChars: PropTypes.shape({
+    name: PropTypes.string,
+    height: PropTypes.string,
+    mass: PropTypes.string,
+    hair_color: PropTypes.string,
+    skin_color: PropTypes.string,
+    eye_color: PropTypes.string,
+    gender: PropTypes.string
+  })
 };
 
 export default CardComponent;

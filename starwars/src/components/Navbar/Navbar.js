@@ -33,10 +33,14 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="faded" light expand="md">
-          <NavbarBrand className="swTitle" href="/">
-            React Wars
-          </NavbarBrand>
-          <Input className="SearchBar__Input" placeholder="&#128269; Search" />
+          <div>
+            <NavbarBrand className="swTitle" href="/">
+              <span className="swTitleSpan">React Wars</span>
+            </NavbarBrand>
+          </div>
+          <span className="navbarSearchBarSpan">
+            <Input className="navbarSearchBar" placeholder="&#128269; Search" />
+          </span>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -45,7 +49,7 @@ export default class Example extends React.Component {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Learn More
+                  Knowledge
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem>The Force</DropdownItem>
