@@ -1,3 +1,9 @@
-.Card {
-    background: white;
+.outerLimits {    
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    color: #27ae60;
+    
 }

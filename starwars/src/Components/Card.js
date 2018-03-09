@@ -1,20 +1,19 @@
 import React from 'react';
-import { CardText, CardBody,
-  CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardTitle, CardText, CardSubtitle } from 'reactstrap';
 
 const CardImgs = (props) => {
   const post = props.wars;
   return (
-    <div>
-      <div className="outerLimits">        
-        <CardBody>
-          <CardTitle>{post.name}</CardTitle>
-          <CardSubtitle>{post.birth_year}</CardSubtitle>
-          <CardText>{post.height}</CardText>          
-        </CardBody>
+    <div>   
+      <div>        
+        <Card body inverse style={{ borderColor: '#333' }}>
+          <CardTitle>Known As: {post.name}</CardTitle>
+          <CardSubtitle>Birth Year: {post.birth_year}</CardSubtitle>
+          <CardText>Height: {post.height}</CardText>          
+        </Card>
       </div>
-    </div>
-  );
-};
+    </div>    
+  )
+}
 
 export default CardImgs;

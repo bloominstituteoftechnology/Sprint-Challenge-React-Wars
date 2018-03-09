@@ -35,7 +35,7 @@ class App extends Component {
             <CardImgs wars={post} /> 
             </div>
           );
-        })};              
+        })}              
       </div>      
     );
   }
