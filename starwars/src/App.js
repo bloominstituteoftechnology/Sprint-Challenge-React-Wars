@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
-    };
+  state = {
+    starwarsChars: []
   }
+
   componentDidMount() {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
+    console.log("CDM called: ", this.state.starwarsChars);
     fetch('https://swapi.co/api/people')
       .then(res => {
         return res.json();
@@ -23,10 +21,22 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
+    console.log("Render called: ", this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div>
+          <Card>
+            <CardBody>
+              <CardText>Name: {this.state.starwarsChars.map((character, index) => {
+                return <Card key={index} character={character} />;
+                })}
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
       </div>
     );
   }
