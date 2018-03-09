@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharacterList from './CharacterList';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList characters={this.state.starwarsChars}/>
       </div>
     );
   }
