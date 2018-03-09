@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Warobjects from './components/warObjects/Warobjects';
 class App extends Component {
   constructor() {
     super();
@@ -23,10 +23,14 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Star Wars Charecters</h1>
+        {this.state.starwarsChars.map(object =><Warobjects key = {object.created} object = {object}
+         />
+        )}
       </div>
     );
   }
