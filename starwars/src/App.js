@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+// import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button } from 'reactstrap';
+// import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Card, Button, CardImg, CardTitle, CardText, CardGroup,CardSubtitle, CardBody } from 'reactstrap';
+ 
 
 class App extends Component {
   constructor() {
@@ -30,17 +34,23 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map(starwarchar => {
           return( 
-
+            
           <div key={starwarchar.name}>
-              <h3> {starwarchar.name}</h3> 
-              <p> {starwarchar.birth_year}</p>
-              <p> {starwarchar.created}</p>
-              <p> {starwarchar.eyecolor} </p>
-              {/* <p> {starwarchar.films} </p> */}
-              <p> {starwarchar.gender} </p>
-              <p> {starwarchar.hair_color} </p>
-              <p> {starwarchar.skin_color} </p>
-
+          <div className = "stylesforContent">
+          <CardGroup>
+              {/* <Col sm = "8"> */}
+                <Card body>
+                  <CardTitle>{starwarchar.name}</CardTitle>
+                    <span> {starwarchar.birth_year}</span>
+                    <p> {starwarchar.created}</p>
+                    <p> {starwarchar.eyecolor} </p>
+                    <p> {starwarchar.gender} </p>
+                    <p> {starwarchar.hair_color} </p>
+                    <p> {starwarchar.skin_color} </p>
+              </Card>
+            {/* </Col> */}
+        </CardGroup>    
+            </div>
 
 
           </div>
