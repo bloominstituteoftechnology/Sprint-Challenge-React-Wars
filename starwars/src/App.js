@@ -26,12 +26,15 @@ class App extends Component {
   }
   render() {
     return (
+      <div className="container d-flex justify-content-center">
+        <div className="App d-flex flex-wrap">
 
-      <div className="App container">
-        <div><h1 className="Header">React Wars</h1></div>
-        <div> <PeopleList people={this.state.starwarsChars} /> </div>
+          <div className="headDiv"><h1 className="Header">React Wars</h1></div>
+
+          <div className="displayApp"> <PeopleList people={this.state.starwarsChars} /> </div>
+
+        </div>
       </div>
-
 
     );
   }

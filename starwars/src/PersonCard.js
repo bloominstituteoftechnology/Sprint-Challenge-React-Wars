@@ -4,10 +4,10 @@ import {
   Card, CardHeader, CardFooter, CardBody,
   CardTitle, CardText
 } from 'reactstrap';
-
 const PersonCard = props => {
   return (
-    <div>
+
+    <div className="col-4 boxes">
       <Card>
         <CardHeader>{props.person.name}</CardHeader>
         <CardBody>
