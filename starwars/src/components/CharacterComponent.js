@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FilmComponent from "./FilmComponent.js";
 import PropTypes from "prop-types";
 import {
   Collapse,
@@ -18,7 +19,8 @@ class CharacterComponent extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       collapse: false,
-      planet: []
+      planet: [],
+      species: []
     };
   }
   toggle() {
@@ -32,6 +34,14 @@ class CharacterComponent extends Component {
       })
       .then(data => {
         this.setState({ planet: data });
+      });
+
+    fetch(this.props.char.species)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ species: data });
       });
   }
 
@@ -51,8 +61,13 @@ class CharacterComponent extends Component {
               <CardText>Eye Color: {this.props.char.eye_color}</CardText>
               <CardText>Gender: {this.props.char.gender}</CardText>
               <CardText>Home World: {this.state.planet.name}</CardText>
-              <CardText>Films: {this.props.char.films}</CardText>
-              <CardText>Species: {this.props.char.species}</CardText>
+              <CardText>
+                Films:{" "}
+                {this.props.char.films.map(film => {
+                  return <FilmComponent film={film} />;
+                })}
+              </CardText>
+              <CardText>Species: {this.state.species.name}</CardText>
             </Collapse>
           </CardBody>
           <CardBody>
