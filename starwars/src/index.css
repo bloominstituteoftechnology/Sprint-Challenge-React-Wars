@@ -5,3 +5,23 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.Header {
+  font-family: 'VT323', monospace;
+  font-size: 80px;
+}
+
+p, li, a {
+  font-size: 24px;
+}
+
+.charCard {
+  opacity: 0.9;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+  box-shadow: -3px -3px 6px gray;
+}
+
+.charHead {
+  font-size: 36px;
+}
