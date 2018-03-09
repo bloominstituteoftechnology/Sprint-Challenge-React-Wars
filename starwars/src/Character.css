@@ -1,0 +1,18 @@
+.Character {
+
+    background: rgb(255, 187, 0);
+    border-radius: 5%;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+
+    
+}
+
+@media (min-width: 768px) {
+    .Character {
+        width: 45%;
+    }
+
+}

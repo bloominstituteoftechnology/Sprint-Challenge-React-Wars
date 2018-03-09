@@ -1,0 +1,13 @@
+.StarWarsCharacters {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .StarWarsCharacters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
