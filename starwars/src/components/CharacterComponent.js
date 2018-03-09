@@ -56,24 +56,51 @@ class CharacterComponent extends Component {
             <Collapse isOpen={this.state.collapse}>
               <Row>
                 <Col sm={6}>
-                  <CardText>Birth Year: {this.props.char.birth_year}</CardText>
-                  <CardText>Height: {this.props.char.height}</CardText>
-                  <CardText>Mass: {this.props.char.mass}</CardText>
-                  <CardText>Hair Color: {this.props.char.hair_color}</CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Birth Year:</span>{" "}
+                    {this.props.char.birth_year}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Height:</span>{" "}
+                    {this.props.char.height}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Mass:</span>{" "}
+                    {this.props.char.mass}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Hair Color:</span>{" "}
+                    {this.props.char.hair_color}
+                  </CardText>
 
-                  <CardText>Skin Color: {this.props.char.skin_color}</CardText>
-                  <CardText>Eye Color: {this.props.char.eye_color}</CardText>
-                  <CardText>Gender: {this.props.char.gender}</CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Skin Color:</span>{" "}
+                    {this.props.char.skin_color}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Eye Color:</span>{" "}
+                    {this.props.char.eye_color}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Gender:</span>{" "}
+                    {this.props.char.gender}
+                  </CardText>
                 </Col>
                 <Col sm={6}>
-                  <CardText>Home World: {this.state.planet.name}</CardText>
                   <CardText>
-                    Films:{" "}
+                    <span className="font-weight-bold">Home World: </span>{" "}
+                    {this.state.planet.name}
+                  </CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Films:</span>{" "}
                     {this.props.char.films.map(film => {
                       return <FilmComponent key={film} film={film} />;
                     })}
                   </CardText>
-                  <CardText>Species: {this.state.species.name}</CardText>
+                  <CardText>
+                    <span className="font-weight-bold">Species:</span>{" "}
+                    {this.state.species.name}
+                  </CardText>
                 </Col>
               </Row>
             </Collapse>
