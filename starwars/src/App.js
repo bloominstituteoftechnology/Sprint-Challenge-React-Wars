@@ -27,6 +27,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ul classNane="List">
+        {this.state.starwarsChars.map(char => {
+          return <li>{char.name}</li>;
+        })}
+        
+        </ul>
       </div>
     );
   }
