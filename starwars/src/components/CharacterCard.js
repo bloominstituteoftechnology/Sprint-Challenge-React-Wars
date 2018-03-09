@@ -1,24 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import './CharacterCard.css';
 import PropTypes from 'prop-types';
 
-const CharacterCard = (props) => {
+class CharacterCard extends Component {
+  constructor(props) {
+    super(props)
+      this.state = {
+        species: {}
+      }
+  }
   
-  return (
-    
-      <Card>
-        <CardBody>
-          <CardTitle>{props.character.name}</CardTitle>
-          <CardText>Was born: {props.character.birth_year}</CardText>
-          <CardText>Gender: {props.character.gender}</CardText>
-          <CardText>Height: {props.character.height}cm</CardText>
-          <CardText>Weight: {props.character.mass}kg</CardText>
-        </CardBody>
-        
-      </Card>
-    
-  );
+  componentDidMount() {
+    fetch(this.props.character.species[0])
+      .then(res => {
+
+        return res.json();
+      })
+      .then(data => {
+        console.log(data);
+        this.setState({ species: data });
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+      
+  }
+  
+  render() {
+    return (
+      
+        <Card>
+          <CardBody>
+            <CardTitle>{this.props.character.name}</CardTitle>
+            <CardText>Was born: {this.props.character.birth_year}</CardText>
+            <CardText>Gender: {this.props.character.gender}</CardText>
+            <CardText>Height: {this.props.character.height}cm</CardText>
+            <CardText>Weight: {this.props.character.mass}kg</CardText>
+            <CardText>Species: {this.state.species.name}</CardText>
+          </CardBody>
+          
+        </Card>
+      
+    );
+  }
 };
 
 CharacterCard.propTypes = {
