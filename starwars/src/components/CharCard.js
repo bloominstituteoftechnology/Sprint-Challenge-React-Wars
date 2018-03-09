@@ -5,10 +5,10 @@ import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 
 const CharCard = (props) => {
     return (
-        <div>
-            <Card>
+        <div className>
+            <Card className= "Body">
                 <CardBody>
-                <CardTitle>{props.char.name}</CardTitle>
+                <CardTitle className = "Name">{props.char.name}</CardTitle>
                 <CardText>Born: {props.char.birth_year}</CardText>
                 <CardText>Gender: {props.char.gender}</CardText>
                 <CardText>Hair Color: {props.char.hair_color}</CardText>

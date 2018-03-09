@@ -8,10 +8,11 @@
 /* write your parent styles in here for your App.js */
 
 .cards {
-  width: 95%;
-  max-width: 50%;
+  width: 52%;
+  max-width: 52%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 25%;
+  margin-left: 24%;
+  margin-top: 5%;
 }

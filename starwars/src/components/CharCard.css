@@ -1,3 +1,8 @@
 .card {
     border: 1px solid black;
+    background: linear-gradient(orange, yellow);
+    height: 95%;
+}
+.Name {
+    text-decoration: underline;
 }
