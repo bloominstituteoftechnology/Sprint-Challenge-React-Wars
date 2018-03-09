@@ -35,11 +35,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card> {this.state.starwarsChars.map(char => {
-    return <CharCard default={char.name} key={char.name} char={char} />;
+        <div> {this.state.starwarsChars.map(char => {
+    return <CharCard key={char.id} char={char} />;
 
   })}
-</Card>
+</div>
       </div>
     );
   }
