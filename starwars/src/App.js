@@ -28,12 +28,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map(item => {
-          return(
-            <CharacterCard key={item.name + item.height} character={item} />
-          )
-        })}
-         
+        <div className="cardHolder">
+          {this.state.starwarsChars.map(item => {
+            return(
+              <CharacterCard key={item.name + item.height} character={item} />
+            )
+          })}
+        </div>
       </div>
     );
   }

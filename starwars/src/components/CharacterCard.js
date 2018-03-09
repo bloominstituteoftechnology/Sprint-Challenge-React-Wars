@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, CardHeader, CardFooter, CardBody,
   CardTitle, CardText } from 'reactstrap';
+import './CharacterCard.css';
 
 const CharacterCard = (props) => {
+  
   return (
-    <div className="container">
+    
       <Card>
         <CardBody>
           <CardTitle>{props.character.name}</CardTitle>
@@ -15,7 +17,7 @@ const CharacterCard = (props) => {
         </CardBody>
         
       </Card>
-    </div>
+    
   );
 };
 
