@@ -12,9 +12,13 @@
   border: 1px dashed rgb(92, 69, 69);
   opacity: 1;
   margin: 20px 30px;
-  color: rgb(82, 10, 78);
+  color: rgb(236, 226, 167);
 }
 
 .CharInfo {
   margin: 10px;
+}
+
+span {
+  font-weight: bold;
 }
