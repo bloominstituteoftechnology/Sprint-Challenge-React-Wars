@@ -5,4 +5,17 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.char {
+  display: inline-block;
+  background-color: skyblue;
+  border: 2px solid goldenrod;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 20%;
+}
+
+.charText {
+  font-size: 1.1rem;
+  color: black;
+}
