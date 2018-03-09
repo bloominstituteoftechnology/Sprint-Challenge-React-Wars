@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import CharacterComponent from "./components/CharacterComponent";
 
 class App extends Component {
@@ -28,12 +28,18 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Container>
-          <h1 className="Header">React Wars</h1>
-          {this.state.starwarsChars.map(char => {
-            return <CharacterComponent key={char.count} char={char} />;
-          })};
+      <div className="app-wrapper">
+        <Container className="app-content">
+          <Row>
+            <Col sm={12} className="text-center">
+              <h1 className="Header">React Wars</h1>
+            </Col>
+          </Row>
+          <Row>
+            {this.state.starwarsChars.map(char => {
+              return <CharacterComponent key={char.count} char={char} />;
+            })};
+          </Row>
         </Container>
       </div>
     );
