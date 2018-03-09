@@ -1,6 +1,11 @@
+import react, {Componenent} from 'react';
+import PropTypes from 'prop-types';
 
+const CharCard = props => {
+    return <div>{props.starwarsChars.name}</div>;
+  };
 
-//name": 
+//name": 'Str'
 //"height": 'Str'
 //"mass": 'Str'
 //"hair_color": 'Str'
