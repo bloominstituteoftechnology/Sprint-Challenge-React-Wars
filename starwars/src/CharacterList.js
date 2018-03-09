@@ -1,6 +1,6 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
-//import './CharacterList.css';
+import './CharacterList.css';
 
 const CharacterList = props => {
   return (
