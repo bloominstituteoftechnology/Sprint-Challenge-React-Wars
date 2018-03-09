@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
 class App extends Component {
   constructor() {
@@ -22,6 +31,11 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+      return (
+        <div className="App">
+        <h1 className="char">
+        <div className="charText">
+      )
   }
   render() {
     return (
