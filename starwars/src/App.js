@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
+import Charcard from './Components/Charcard/Charcard';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      idx: 0,
     };
   }
+  right = () => {
+    let newState = this.state.idx;
+    if (newState < 9) newState++;
+    else newState = 0;
+    this.setState( {idx: newState})
+}
+
+left = () => {
+    let newState = this.state.idx;
+    if (newState > 0) newState--;
+    else newState = 9;
+    this.setState( {idx: newState})
+}
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -27,6 +42,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(((char, index) => {
+          return <Charcard chars={char} right={this.right} left={this.left} key={`${char}${index}`}/>
+        }))}
       </div>
     );
   }
