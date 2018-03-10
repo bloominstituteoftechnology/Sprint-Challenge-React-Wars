@@ -1,0 +1,15 @@
+.cardDiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cardCard {
+    font-family: 'Russo One';
+ width: 20%;
+  color:black;
+  }
+  
+  .cardBody {
+    background-color:rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+  }

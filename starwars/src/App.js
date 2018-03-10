@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import NavBar from './components/NavBar/NavBar';
+import CardList from './components/CardList/CardList';
 import './App.css';
-import { PeopleList } from './PeopleList';
 
 class App extends Component {
   constructor() {
@@ -27,8 +28,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-
+        <NavBar />
+        {this.state.starwarsChars.map((char, index) => {
+          return (
+            <div key={index}>
+              <CardList char={char} />;
+            </div>
+          );
+        })}
       </div>
     );
   }
