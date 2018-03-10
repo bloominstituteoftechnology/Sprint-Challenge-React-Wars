@@ -3,17 +3,17 @@ import './App.css';
 import StarWarsCard from './components/StarWarsCard/StarWarsCard'
 
 const images = [ 
-  './components/StarWarsCard/images/luke_skywalker.jpeg',
-  './components/StarWarsCard/images/C-3PO.jpeg',
-  './components/StarWarsCard/images/R2-D2.jpeg',
-  './components/StarWarsCard/images/darth_vader.jpeg',
-  './components/StarWarsCard/images/darth_vader.jpeg',
-  './components/StarWarsCard/images/leio_organa.jpeg',
-  './components/StarWarsCard/images/owen_lars.jpeg',
-  './components/StarWarsCard/images/beru_lars.jpeg',
-  './components/StarWarsCard/images/R5-D4.jpeg',
-  './components/StarWarsCard/images/biggs_darklighter.jpeg',
-  './components/StarWarsCard/images/obi-wan_kenobi.jpeg',
+  './images/luke_skywalker.jpeg',
+  './images/C-3PO.jpeg',
+  './images/R2-D2.jpeg',
+  './images/darth_vader.jpeg',
+  './images/darth_vader.jpeg',
+  './images/leio_organa.jpeg',
+  './images/owen_lars.jpeg',
+  './images/beru_lars.jpeg',
+  './images/R5-D4.jpeg',
+  './images/biggs_darklighter.jpeg',
+  './images/obi-wan_kenobi.jpeg',
 ]
 
 class App extends Component {
@@ -41,6 +41,7 @@ class App extends Component {
         starwarsChars.map( (obj, index) => {
           return obj.image = images[index];
         })
+        this.setState({ starwarsChars: starwarsChars });
       })
       .catch(err => {
         throw new Error(err);
