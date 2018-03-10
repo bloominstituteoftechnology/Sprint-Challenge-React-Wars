@@ -23,3 +23,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.cardSeparator {
+    border-top: 1px solid #61533b;
+}

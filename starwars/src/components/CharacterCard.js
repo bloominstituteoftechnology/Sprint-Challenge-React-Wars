@@ -25,8 +25,8 @@ class CharacterCard extends Component {
 
     render() {
         return (
-            <Card className='card' style={{display: 'flex', flexDirection: 'column'}}>
-                <CardHeader style={{marginBottom: 20}}>{this.state.characterCard.name}</CardHeader>
+            <Card className='card' style={{display: 'flex', flexDirection: 'column', backgroundColor: '#dccfbf'}}>
+                <CardHeader style={{marginBottom: 20, borderBottom: '1px solid #776b5d', backgroundColor: '#c7b49c'}}>{this.state.characterCard.name}</CardHeader>
                 <CardBody className='cardBody'>
                     <CardSubtitle className='cardStats'>
                         <p style={{fontWeight: 'bold'}}>gender:</p>
