@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import {
     Card,
     CardBody,
+    CardGroup,
+    CardDeck,
+    CardImg,
+    CardImgOverlay,
     CardTitle,
     CardText,
     Container,
@@ -13,10 +17,10 @@ import {
 
 const CharCard = props => {
   return (
-    <div>
-    <Col sm="12">
-    <Card>
-    <CardBody>
+    <div style={{padding: '20px'}}>
+    <Row>
+     <Col sm="4">
+    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#fff', opacity: '.4'}}>
     <CardTitle>{props.char.name}</CardTitle>
     <CardText> height: {props.char.height}</CardText>
     <CardText> mass: {props.char.mass}</CardText>
@@ -25,9 +29,10 @@ const CharCard = props => {
     <CardText> eye_color: {props.char.eye_color}</CardText>
     <CardText> birth_year: {props.char.birth_year}</CardText>
     <CardText> gender: {props.char.gender}</CardText>
-    </CardBody>
+
     </Card>
     </Col>
+    </Row>
     </div>
 
 );
