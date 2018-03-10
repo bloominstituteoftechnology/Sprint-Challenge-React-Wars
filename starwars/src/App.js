@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import PeopleList from './PeopleList';
 
 class App extends Component {
   constructor() {
@@ -25,9 +26,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="container d-flex justify-content-center">
+        <div className="App d-flex flex-wrap">
+
+          <div className="headDiv"><h1 className="Header">React Wars</h1></div>
+
+          <div className="displayApp"> <PeopleList people={this.state.starwarsChars} /> </div>
+
+        </div>
       </div>
+
     );
   }
 }
