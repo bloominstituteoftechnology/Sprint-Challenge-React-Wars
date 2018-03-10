@@ -12,7 +12,10 @@ class SearchBar extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Search input: ', this.state.searchInput);
+        // Added Feature: Need to find a way to take the input and check it against the 'name' property value on each of 
+        // the objects so that if you want to search through the list to find a specific character, then you can just type
+        // in the name.
+        console.log('Search input: ', this.props.charList);
         this.setState({ searchInput: '' });
     }
 
