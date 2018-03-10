@@ -12,6 +12,7 @@ const StarWarsCard = (props) => {
     <div className="StarWarsCard">
       <Card className="CardContainer" >
       <CardImg top width="100%" src={require('./images/luke_skywalker.jpeg')} alt="Card image cap" />
+      {/* <CardImg top width="100%" src={require(`${props.char.image}`)} alt="Card image cap" /> */}
         <CardBody>
           <CardTitle className="CharName">{props.char.name}</CardTitle>
           <CardSubtitle className="BioStats">Bio Stats</CardSubtitle>
@@ -42,6 +43,7 @@ StarWarsCard.propTypes = {
     skin_color: PropTypes.string,
     hair_color: PropTypes.string,
     eye_color: PropTypes.string,
+    image: PropTypes.string,
   })
 };
 
