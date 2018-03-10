@@ -1,0 +1,14 @@
+.CharacterCard {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.CharacterCard_Body span {
+    font-weight: 600;
+}
+
+.CharacterCard_footer-text {
+    font-size: 0.65rem;
+}
