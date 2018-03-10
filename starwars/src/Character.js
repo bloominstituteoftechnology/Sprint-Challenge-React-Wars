@@ -4,8 +4,8 @@ import CharacterList from './CharacterList';
 
 
 export default class Character extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       character: [],
 
@@ -15,14 +15,20 @@ export default class Character extends Component {
   componentDidMount() {
     this.setState({
       character: this.props.character,
+      characterList: this.props.character.characterList
     });
   }
 
   render() {
     return (
       <div>
-        {this.state.character.name}
-        {this.state.characterList}
+        <div>{this.state.character.name}</div>
+        <div>{this.state.character.height}</div>
+        <div>{this.state.character.mass}</div>
+        <div>{this.state.character.hair_color}</div>
+        <div>{this.state.character.gender}</div>
+        <div>{this.state.character.skin_color}</div>
+        <div>{this.state.character.eye_color}</div>
       </div>
     )
   }
@@ -34,6 +40,9 @@ Character.propTypes = {
     height: PropTypes.string,
     mass: PropTypes.string,
     hair_color: PropTypes.string,
-    films: PropTypes.arrayOf(PropTypes.string)
+    gender: PropTypes.string,
+    skin_color: PropTypes.string,
+    eye_color: PropTypes.string,
+
   })
 };

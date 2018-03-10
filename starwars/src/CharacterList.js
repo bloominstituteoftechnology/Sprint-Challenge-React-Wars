@@ -3,7 +3,7 @@ import Character from './Character';
 import PropTypes from 'prop-types';
 
 export const CharacterList = (props) => {
-  const {characters} = props;
+  const {charactersList} = props;
   return (
     <div>
       {props.characterList.map((characters, index) => {

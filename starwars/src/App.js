@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Character from './Character';
-import CharacterList from './CharacterList';
+
 
 
 class App extends Component {
