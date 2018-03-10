@@ -1,0 +1,13 @@
+.CharacterCard {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 0 10px 10px;
+}
+
+.CharacterCard__body span {
+    font-weight: 600;
+}
+
+.CharacterCard__footer-text {
+    font-size: 0.65rem;
+}
