@@ -1,4 +1,17 @@
 .characters {
+  flex-grow: 1;
   margin: 20px;
+  padding: 20px;
   color: white;
+  line-height: 160%
 }
+
+
+.myButton {
+  
+  display: inline;
+  width: 60%;
+  color: #96F3F7;
+  cursor: pointer;
+}
+
