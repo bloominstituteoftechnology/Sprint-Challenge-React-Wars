@@ -7,19 +7,18 @@ const StarWarsCard = (props) => {
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
-      <CardImg top width="100%" src={props.image} alt="Card image cap" />
+        <CardImg top width="100%" src={props.image} alt="starwars card" />
         <CardBody>
           <CardTitle className="CharName">{props.char.name}</CardTitle>
           <CardSubtitle className="BioStats">Bio Stats</CardSubtitle>
-
           <div className="CardBioContent">
-          <CardText><span className="BioData">Birth Year: &nbsp;</span>{props.char.birth_year}</CardText>
-          <CardText><span className="BioData">Gender: &nbsp;</span>{props.char.gender}</CardText>
-          <CardText><span className="BioData">Height: &nbsp;</span>{props.char.height} <span>cm</span></CardText>
-          <CardText><span className="BioData">Mass: &nbsp;</span>{props.char.mass} <span>kg</span></CardText>
-          <CardText><span className="BioData">Skin Color: &nbsp;</span>{props.char.skin_color}</CardText>
-          <CardText><span className="BioData">Hair Color: &nbsp;</span>{props.char.hair_color}</CardText>
-          <CardText><span className="BioData">Eye Color: &nbsp;</span>{props.char.eye_color}</CardText>
+            <CardText><span className="BioData">Birth Year: &nbsp;</span>{props.char.birth_year}</CardText>
+            <CardText><span className="BioData">Gender: &nbsp;</span>{props.char.gender}</CardText>
+            <CardText><span className="BioData">Height: &nbsp;</span>{props.char.height} <span>cm</span></CardText>
+            <CardText><span className="BioData">Mass: &nbsp;</span>{props.char.mass} <span>kg</span></CardText>
+            <CardText><span className="BioData">Skin Color: &nbsp;</span>{props.char.skin_color}</CardText>
+            <CardText><span className="BioData">Hair Color: &nbsp;</span>{props.char.hair_color}</CardText>
+            <CardText><span className="BioData">Eye Color: &nbsp;</span>{props.char.eye_color}</CardText>
           </div>
           <Button className="btn-card">Learn More</Button>
         </CardBody>
