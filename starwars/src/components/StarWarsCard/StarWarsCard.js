@@ -2,14 +2,12 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import './StarWarsCard.css'
 import PropTypes from 'prop-types';
-import luke from './images/luke_skywalker.jpeg'
 
 const StarWarsCard = (props) => {
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
       <CardImg top width="100%" src={props.image} alt="Card image cap" />
-      {/* <img style={{width: "100%"}} src={require(`${props.char.image}`)} alt="Card image cap" /> */}
         <CardBody>
           <CardTitle className="CharName">{props.char.name}</CardTitle>
           <CardSubtitle className="BioStats">Bio Stats</CardSubtitle>
