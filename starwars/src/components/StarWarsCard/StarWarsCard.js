@@ -7,12 +7,12 @@ import luke from './images/luke_skywalker.jpeg'
 const StarWarsCard = (props) => {
   // src=require('./images/luke_skywalker.jpeg')
   console.log(props.char.name);
-  console.log(props.char.image);
+  // console.log(props.char.image);
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
-      <CardImg top width="100%" src={require('./images/luke_skywalker.jpeg')} alt="Card image cap" />
-      {/* <CardImg top width="100%" src={require(`${props.char.image}`)} alt="Card image cap" /> */}
+      <CardImg top width="100%" src={props.image} alt="Card image cap" />
+      {/* <img style={{width: "100%"}} src={require(`${props.char.image}`)} alt="Card image cap" /> */}
         <CardBody>
           <CardTitle className="CharName">{props.char.name}</CardTitle>
           <CardSubtitle className="BioStats">Bio Stats</CardSubtitle>
