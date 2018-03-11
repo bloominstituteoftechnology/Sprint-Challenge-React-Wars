@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 import luke from './images/luke_skywalker.jpeg'
 
 const StarWarsCard = (props) => {
-  // src=require('./images/luke_skywalker.jpeg')
-  console.log(props.char.name);
-  // console.log(props.char.image);
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
@@ -43,7 +40,6 @@ StarWarsCard.propTypes = {
     skin_color: PropTypes.string,
     hair_color: PropTypes.string,
     eye_color: PropTypes.string,
-    image: PropTypes.string,
   })
 };
 
