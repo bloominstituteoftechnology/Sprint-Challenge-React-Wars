@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Card } from 'reactstrap';
 
 export const CharList = ({ chars }) => {
     return (
       <div>
         {chars.map((person => {
           return (
-            <div key={person.count}>
+            <Card key={person.count}>
               <p>Name: {person.name}</p>
               <p>Height: {person.height}</p>
               <p>Hair Color: {person.hair_color}</p>
@@ -52,7 +53,7 @@ export const CharList = ({ chars }) => {
               <p>created: {person.created}</p>
               <p>edited: {person.edited}</p>
               <p>url: {person.url}</p>
-            </div>
+            </Card>
           )
         }))}
       </div>
