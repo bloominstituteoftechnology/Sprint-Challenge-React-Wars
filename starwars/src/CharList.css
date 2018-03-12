@@ -1,0 +1,8 @@
+.CharCard {
+  max-width: 400px;
+  min-width: 200px;
+  margin: 10px 0;
+}
+.CharDetails {
+  flex-wrap: wrap;
+}

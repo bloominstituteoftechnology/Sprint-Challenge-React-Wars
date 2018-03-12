@@ -1,20 +1,40 @@
-import React from 'react';
-import { Card, CardBody, CardTitle, CardText } from 'react';
+import React, { Component } from 'react';
+import { Card, CardBody, CardTitle, CardText, CardDeck } from 'reactstrap';
+import './CharList.css';
 
-const CharList = (props) => {
-  return (
-    <div className='CharList'>
-      {props.starwarsChars.map(character => {
-        return (
-          <Card className='CharList_character' key={ character.id }>
-            <CardBody >
-              <CardTitle>{ character.name }</CardTitle>
-              <CardText>DOB: { character.birth_year } | Gender: { character.gender }</CardText>
-            </CardBody>
-          </Card>
-        )
-      })}
-    </div>
-  )
+class CharList extends Component {
+  constructor() {
+    super();
+    this.state = {
+      character: []
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      character: this.props.character
+    });
+  }
+
+  render() {
+    const { name, birth_year, eye_color, gender, height, skin_color } = this.props.character;
+    return (
+      <CardDeck className="CharCard">
+        <Card>
+          <CardTitle>
+            <h2>{ name }</h2>
+          </CardTitle>
+          <CardBody>
+            <CardText>Birthday: { birth_year }</CardText>
+            <CardText>Eye Color: { eye_color }</CardText>
+            <CardText>Gender: { gender }</CardText>
+            <CardText>Height: { height }</CardText>
+            <CardText>Skin Color: { skin_color }</CardText>
+          </CardBody>
+        </Card> 
+      </CardDeck>
+    );
+  }
 }
+
 export default CharList;
