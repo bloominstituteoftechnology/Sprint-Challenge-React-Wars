@@ -1,0 +1,18 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background: gray;
+  opacity: 50%;
+  border: 2px solid black;
+  color: white;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.box__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

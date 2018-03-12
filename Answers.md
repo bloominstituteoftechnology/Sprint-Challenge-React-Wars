@@ -10,3 +10,4 @@
     Render: renders to the webpage what has been specified.
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+    A stateful component has a state attribute which can be changes during its life cycle whereas a presentational component is stateless and thus simply just renders some HTML.
