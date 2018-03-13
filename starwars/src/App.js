@@ -29,9 +29,9 @@ class App extends Component {
     return (
       <div className="app-container">
         <Container className="app-content">
-          <Row>
+          <Row className="pt-3 xs-2">
             <Col xs="12"> 
-              <h1 className="Header">React Wars</h1>
+              <h1 className="Header d-flex justify-content-center">React Wars</h1>
             </Col>
           </Row>
           <Row className="CharDetails">
