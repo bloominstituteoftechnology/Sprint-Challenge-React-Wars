@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './CharList.js';
+import { Row, Col, Container } from 'reactstrap';
 
 class App extends Component {
   constructor() {
@@ -25,8 +27,17 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="app-container">
+        <Container className="app-content">
+          <Row className="pt-3 xs-2">
+            <Col xs="12"> 
+              <h1 className="Header d-flex justify-content-center">React Wars</h1>
+            </Col>
+          </Row>
+          <Row className="CharDetails">
+            {this.state.starwarsChars.map((character, index) => <CharList character={ character } key={ index } />)}
+          </Row>
+        </Container>
       </div>
     );
   }

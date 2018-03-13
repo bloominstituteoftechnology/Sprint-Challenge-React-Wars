@@ -1,0 +1,12 @@
+.CharCard {
+  max-width: 375px;
+  min-width: 200px;
+  /* margin: 10px 10px; */
+}
+.CharDetails {
+  flex-wrap: wrap;
+}
+/* .card {
+  color: rgb(80.4%, 73.6%, 5.6%);
+  
+} */
