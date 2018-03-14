@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Broadway';
+    src: local('Broadway'), url(/fonts/Broadway.ttf) format('ttf');
+  }
+
+.main-container {
+    width: 20%;
+    height: 20%;
+    background: #ff71ce;
+    opacity: .72;
+    border-radius: 35%;
+    display: block;
+    grid-gap: 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+}
+
+.toon-name {
+    font-weight: bold;
+    color: #05ffa1;
+    font-size: 25px;
+    font-family: Broadway;
+}
+.cardinfo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
