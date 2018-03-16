@@ -5,9 +5,9 @@
 * Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation. 
 ## Start by forking and cloning this repository.
 ## Questions
-1. What is React JS? How does it differ from other JavaScript frameworks?
+1. What is React JS? How does it differ from other JavaScript frameworks? React is a JavaScript framework. It differs from JavaScript, because it uses the virtual DOM (DOM is a copy of the HTML on your server). React will only update the Components (parts).
 1. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
-1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
+1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`. State = data; Stateless = functional/presentational component = no data
 1. Briefly describe PropTypes and what we use them for when building react applications.
 
 ## Project

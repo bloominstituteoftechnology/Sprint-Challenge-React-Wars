@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button
-} from "reactstrap";
+import {Card} from './Card/Card.js'
 
 class App extends Component {
   constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
-    };
+    
+    return (
+      <div className="App">
+      <h1 className="Header">React Wars</h1>
+
+      <div>
+        <Card chars={this.state.starwarsChars} />;
+        </div>
+        </div>
+    );
   }
+  
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
