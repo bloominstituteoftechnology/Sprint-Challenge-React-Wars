@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Card.css';
+import {Card} from './Card.js'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
-    };
+  constructor(props) {
+   super(props); 
+    return (
+      <div className="App">
+      <h1 className="Header">React Wars</h1>
+
+      <div>
+        <Card chars = {this.state.starwarsChars} />;
+        </div>
+        </div>
+    );
   }
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -22,6 +30,14 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+      return (
+        <div className="App">
+        <h1 className="char">
+        <div className="charText">
+        </div>
+        </h1>
+        </div>
+      )
   }
   render() {
     return (
