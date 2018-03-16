@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^16.0.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-player": "^1.2.1",
+    "react-scripts": "1.0.14",
+    "react-sound": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

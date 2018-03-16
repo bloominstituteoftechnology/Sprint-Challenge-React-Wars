@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import ToonCard from './ToonCard';
+import SoundPlayer from './Sound';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -23,10 +25,18 @@ class App extends Component {
         throw new Error(err);
       });
   }
+  //<Scrollbars renderThumbVertical={({ style, ...props }) =>
+   //<div {...props} style={{ ...style, backgroundColor: '#000, width: '4px', opacity: '0.5'}}/>
+  //}>
+  
   render() {
     return (
+      
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">ReactWars</h1>
+        <h2 className="Japense">v a p o r w a v e ク 押 ニ む み 臆</h2>
+        {this.state.starwarsChars.map((tooninfo, i) => <ToonCard key={i} tooninfo={tooninfo}/>)}
+        <h3 className="m-player"><SoundPlayer/></h3>
       </div>
     );
   }
