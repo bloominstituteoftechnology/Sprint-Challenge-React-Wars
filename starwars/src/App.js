@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map((person, index) => {
           return(
           <div key={person.name + person.height} className="Charcard">
