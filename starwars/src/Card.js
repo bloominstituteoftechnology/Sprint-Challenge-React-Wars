@@ -4,10 +4,8 @@ import './Card.css';
 const Card = props => {
   const { chars } = props;
   return(
-    <div className="Card__Init"
-    return(
-      <div ClassName="Card__Init">
-      {chars.map(char => {
+    <div className="Card__Init">
+    {chars.map(char=> {
         return (
           <div className="Card__Section">
           <ul className="Basic__AttrList">
@@ -19,14 +17,17 @@ const Card = props => {
           <ul className="Basic__PhysicalList">
           <li>Hair Color: {char.hair_color}</li>
           <li>Eye Color: {char.eye_color}</li>
+          <li>Height: {char.height}</li>
           <li>Mass: {char.mass}</li>
-          </li>Skin Color: {char.skin_color}</li>
+          <li>Skin Color: {char.skin_color}</li>
           <li>Gender: {char.gender}</li>
           </ul>
-          </div>
+        )
+        </div>
         )
       })}
     </div>
-    )
-}
-/* write your parent styles in here for your App.js */
+  ) 
+    }
+
+export {Card};
