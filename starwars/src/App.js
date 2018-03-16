@@ -28,13 +28,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        
         {this.state.starwarsChars.map((person, index) => {
           return(
           <div key={person.name + person.height} className="Charcard">
             <h4>{person.name}</h4> 
             <p>{person.height} increments</p>
-            <p>{person.hair_color} eyes</p>
+            <p>{person.eye_color} eyes</p>
+            <p>{person.hair_color} hair</p>
             <p>Born in {person.birth_year}</p>
             <p>sex: {person.gender}</p>
             </div>  
