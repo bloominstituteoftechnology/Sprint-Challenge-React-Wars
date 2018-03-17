@@ -5,4 +5,17 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.CharaCard {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #ff944d;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+.CardImages {
+  height: 250px; 
+  width:50%; 
+  display: flex;
+}
 /* write your parent styles in here for your App.js */

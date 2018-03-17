@@ -24,3 +24,10 @@
 
 * Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course. 
 * For now, just build a react app that displays this fun Star Wars data. Build a card for each object and style it to make it nice and fancy. 
+* Feel free to integrate Bootstrap with whichever `Bootstrap React Component Library` you're comfortable with.
+
+## Stretch Problems
+1. Ensure that all data coming into your child component is validated using the `prop-types` library.
+1. Build another app from scratch that looks very similiar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
+  - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
+  - Your data coming back from Dogs should be formatted in JSON format.
