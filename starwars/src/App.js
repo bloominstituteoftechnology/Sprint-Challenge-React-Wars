@@ -5,7 +5,22 @@ import PeopleList from './Components/PeoplesList/PeoplesList';
 class App extends Component {
   constructor() {
     super();
+    this.state ={
+      starwarsChars: []
+    };
 
+  }
+  componentDidMount() {
+    fetch('https://swapi.co/api/people')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      this.setState({ starwarsChars: data.results });
+    })
+    .catch(err => {
+      throw new Error(err);
+    });
   }
   render() {
     return (
