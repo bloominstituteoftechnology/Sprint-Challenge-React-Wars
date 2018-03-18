@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import './Card.css';
-import {Card} from './Card.js'
+import Card from './Card.js'
 
 class App extends Component {
   constructor(props) {
    super(props); 
-    return (
-      <div className="App">
-      <h1 className="Header">React Wars</h1>
-
-      <div>
-        <Card chars = {this.state.starwarsChars} />;
-        </div>
-        </div>
-    );
+    this.state = { 
+      starwarsChars : [] 
+    }
   }
 
   componentDidMount() {
@@ -43,7 +37,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
+       <Card chars = {this.state.starwarsChars} />
+       </div>
     );
   }
 }
