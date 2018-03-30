@@ -5,15 +5,15 @@
 * Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation. 
 ## Start by forking and cloning this repository.
 ## Questions
-1. What is React JS? How does it differ from other JavaScript frameworks?
-1. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+1. What is React JS? What types of problems does it solve?
+1. Explain briefly the React Component Life-cycle. Name three of the methods that are a part of the life-cycle and what they do.
 1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
 1. Briefly describe PropTypes and what we use them for when building react applications.
 
 ## Project
 * You're going to be building an application *starwars* that consumes live data that we're retrieving across the world wide web!
-1. **cd into starwars** and run `npm install` to retrieve all the needed dependancies. 
-2. Once you have installed all the _node_modules_ you should be able to run `npm start` to get your server up and running.
+1. **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies. 
+2. Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
 3. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state. 
@@ -28,6 +28,6 @@
 
 ## Stretch Problems
 1. Ensure that all data coming into your child component is validated using the `prop-types` library.
-1. Build another app from scratch that looks very similiar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
+1. Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
   - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
   - Your data coming back from Dogs should be formatted in JSON format.
