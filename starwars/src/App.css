@@ -1,8 +1,23 @@
 .App {
+  margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.Container {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.Portraits {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 100%;
 }
 /* write your parent styles in here for your App.js */
