@@ -1,0 +1,12 @@
+.card {
+    border: 2px solid rgba(248,249,250,.5);
+    background: none;
+    margin-bottom: 5px;
+
+}
+.char-name {
+    font-weight: 666;
+}
+.description {
+    font-weight: 333;
+}
