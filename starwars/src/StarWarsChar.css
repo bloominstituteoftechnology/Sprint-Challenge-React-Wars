@@ -1,0 +1,8 @@
+.CardBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.CardText {
+    align-self: flex-start
+}
