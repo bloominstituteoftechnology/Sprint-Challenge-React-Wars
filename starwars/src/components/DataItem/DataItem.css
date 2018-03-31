@@ -1,0 +1,8 @@
+.Item {
+    display: flex;
+}
+
+.Item__title {
+    font-weight: bold;
+    margin-right: 10px;
+}

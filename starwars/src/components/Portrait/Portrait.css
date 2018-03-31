@@ -1,0 +1,12 @@
+.Portrait {
+    list-style-type: none;
+    width: 300px;
+    margin: 25px 25px;
+}
+
+.Portrait__data {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
