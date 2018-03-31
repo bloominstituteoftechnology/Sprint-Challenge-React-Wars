@@ -15,7 +15,7 @@ const SWCards = props => {
                         <div>Was Born in the year: {props.birth_year}</div>
                         <div>Gender: {props.gender}</div>
                         <div>Height: {props.height}</div>
-                        <div>Skin-Color: {props.eye_color}</div>
+                        <div>Eye-Color: {props.eye_color}</div>
                     </CardText>
                 </CardBody>
         </Card>
