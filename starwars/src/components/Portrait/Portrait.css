@@ -10,3 +10,8 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.Portrait__image {
+    height: 280px;
+    width: 100%;
+}

@@ -10,13 +10,14 @@ const Portrait = (props) => {
     let acceptedValues = ['height', 'mass', 'hair_color', 'skin-_color', 'eye_color', 'birth_year']
     return acceptedValues.includes(key);
   }
-
+  console.log(props.pictures)
   return (
     <li className="Portrait">
       <Card>
-        <CardImg 
+        <CardImg
+          className="Portrait__image"
           top width="100%" 
-          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" 
+          src={props.pictures[props.character.name]}
           alt="Card image cap" 
         />
         <CardBody>
@@ -40,7 +41,5 @@ const Portrait = (props) => {
     </li>
   );
 }
-
-
 
 export default Portrait;
