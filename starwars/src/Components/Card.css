@@ -1,12 +1,15 @@
 .container {
+    border-radius: 5%;
     height: 100%;
     min-height: 100px;
-    background: grey;
-    border: 1px solid darkcyan;
+    background: #b8b7b7;
+    border: 3px solid #ad7d37;
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
+    padding: 1%;
 }
 
 .first {
+    color: #2e557c;
     font-weight: bolder;
 }
