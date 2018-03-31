@@ -1,0 +1,12 @@
+.container {
+    height: 100%;
+    min-height: 100px;
+    background: grey;
+    border: 1px solid darkcyan;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.first {
+    font-weight: bolder;
+}
