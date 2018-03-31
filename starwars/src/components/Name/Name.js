@@ -1,8 +1,9 @@
 import React from 'react';
+import './Name.css';
 
 const Name = (props) => {
   return (
-    <h3>{props.name}</h3>
+    <h3 className="Name">{props.name}</h3>
   );
 }
 

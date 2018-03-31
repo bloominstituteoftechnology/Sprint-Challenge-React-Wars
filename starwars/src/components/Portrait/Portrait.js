@@ -10,7 +10,7 @@ const Portrait = (props) => {
     let acceptedValues = ['height', 'mass', 'hair_color', 'skin-_color', 'eye_color', 'birth_year']
     return acceptedValues.includes(key);
   }
-  console.log(props.pictures)
+  
   return (
     <li className="Portrait">
       <Card>

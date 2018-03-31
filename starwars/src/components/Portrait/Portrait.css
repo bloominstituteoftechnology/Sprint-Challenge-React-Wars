@@ -2,6 +2,7 @@
     list-style-type: none;
     width: 300px;
     margin: 25px 25px;
+    border: 2px solid black;
 }
 
 .Portrait__data {
@@ -14,4 +15,5 @@
 .Portrait__image {
     height: 280px;
     width: 100%;
+    border-bottom: 2px solid black;
 }
