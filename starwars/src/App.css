@@ -5,4 +5,12 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.holdCharCards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /* write your parent styles in here for your App.js */
