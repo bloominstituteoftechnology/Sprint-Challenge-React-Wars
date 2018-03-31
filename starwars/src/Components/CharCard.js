@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody } from 'reactstrap';
 import './CharCard.css';
 
 
@@ -13,8 +13,8 @@ class CharCard extends Component {
 
 
     componentDidMount() {
-        fetch(this.props.species[0])
-        .then(result => {
+        fetch(this.props.species)
+            .then(result => {
             return result.json();
         })
         .then(data => {
