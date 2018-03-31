@@ -7,15 +7,15 @@ const Card = (props) => {
         <div>
             {props.starwarsChars.map((starwarsChar, index) => {
                 return (
-                    <div key={index} className = 'container'>  
-                        <div className = 'first'> NAME: { starwarsChar.name}</div>
-                        <div className = 'gender'>HEIGHT: {starwarsChar.height}
+                    <div key={index} className = 'container'>
+                        <div className = 'first'> { starwarsChar.name}</div>
+                        <div className = 'gender'>height: {starwarsChar.height} cm
                         </div>
-                        <div className = 'gender'>HAIR: {starwarsChar.hair_color}
+                        <div className = 'gender'>hair: {starwarsChar.hair_color}
                         </div>
-                        <div className = 'species'>EYE: {starwarsChar.eye_color}
+                        <div className = 'species'>eyes: {starwarsChar.eye_color}
                         </div>
-                        <div className = 'species'>WEIGHT: {starwarsChar.mass}
+                        <div className = 'species'>mass: {starwarsChar.mass} kg
                         </div>
                     </div>
                 )
