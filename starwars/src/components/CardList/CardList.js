@@ -1,14 +1,15 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardLink,
   CardTitle, CardSubtitle } from 'reactstrap';
+// import {results} from 'src/App.js';
 
-const Example = (props) => {
+const CardList = (props) => {
   return (
     <div>
       <Card>
         <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardTitle>Title</CardTitle> 
+          <CardSubtitle>Subtitle</CardSubtitle>
         </CardBody>
         <img width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
         <CardBody>
@@ -21,4 +22,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default CardList;
