@@ -1,0 +1,20 @@
+.container {
+    border-radius: 10%;
+    height: 100%;
+    min-height: 100px;
+    background: #b8b7b7;
+    border: 3px solid #ad7d37;
+    width: 40%;
+    max-width: 300px;
+    margin: 30px 10px;
+    padding: 1%;
+    display: inline-block;
+    box-shadow: 10px 5px 5px black;
+}
+
+.first {
+    text-decoration: underline;
+    color: #2e557c;
+    font-weight: bolder;
+    font-size: 20px;
+}
