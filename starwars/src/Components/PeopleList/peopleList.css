@@ -1,0 +1,16 @@
+
+
+.card {
+    width: 50%;
+    margin: 20px auto;
+    opacity: 0.9;
+}
+
+.card-title {
+    font-family: 'Chicle', cursive;
+    font-size: 40px; 
+}
+
+.card-text {
+    font-family: 'Crimson Text', cursive; 
+}
