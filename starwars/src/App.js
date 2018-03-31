@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SWContainer from './Components/SWContainer/SWContainer';
+
 import './App.css';
 
 class App extends Component {
@@ -27,6 +29,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="element--wrapper">
+          {this.state.starwarsChars.map ((content, i) => {
+            return <SWContainer key={i} content={content} />
+          })} 
+        </div>
       </div>
     );
   }
