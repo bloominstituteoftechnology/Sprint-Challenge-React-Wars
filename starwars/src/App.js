@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import Cards from './Cards';
+import { Card, CardTitle } from 'reactstrap';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -23,10 +26,21 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
+    const {starwarsChars} = this.state;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+            {starwarsChars.map(char =>  
+            <Card className='charCard'>
+              <CardTitle>
+                <div className={char.name}>{char.name}</div>
+              </CardTitle>
+            </Card>
+          )};
+          
       </div>
     );
   }
