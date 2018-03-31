@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Container, Row } from 'reactstrap';
 import './App.css';
+import Character from './components/Character';
+
 
 class App extends Component {
   constructor() {
@@ -25,9 +28,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <Container>
         <h1 className="Header">React Wars</h1>
-      </div>
+        <Row>
+        { this.state.starwarsChars.map((char, index) => {
+          return (
+            <Character char={ char } key={index} />
+          )
+        })}
+        </Row>
+      </Container>
     );
   }
 }
