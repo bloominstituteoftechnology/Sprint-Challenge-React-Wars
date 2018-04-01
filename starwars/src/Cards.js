@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Cards.css';
-import { Card, CardTitle } from 'reactstrap';
+import App from './App';
+import { Card, CardTitle, CardBody, CardSubtitle, CardText,CardLink } from 'reactstrap';
 
+const Cards = (props) => {
+    
+  };
 
-export default Card;
+export default Cards;

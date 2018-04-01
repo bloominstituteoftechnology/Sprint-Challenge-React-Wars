@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Cards from './Cards';
-import { Card, CardTitle } from 'reactstrap';
+import { Card, CardTitle, CardBody, Col } from 'reactstrap';
 
 class App extends Component {
   constructor() {
@@ -32,15 +32,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-
-            {starwarsChars.map(char =>  
-            <Card className='charCard'>
-              <CardTitle>
-                <div className={char.name}>{char.name}</div>
-              </CardTitle>
-            </Card>
-          )};
-          
+        <Col md="4">
+          {starwarsChars.map(char => <Card><CardTitle className={char.name}>{char.name}</CardTitle></Card>)}
+        </Col>       
       </div>
     );
   }
