@@ -1,8 +1,14 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.CardBod {
+  border: tomato;
+  border-width: 3px;
+}
+
 /* write your parent styles in here for your App.js */
