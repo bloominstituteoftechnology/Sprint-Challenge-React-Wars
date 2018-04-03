@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Profile from './Profile'
+
 class App extends Component {
   constructor() {
     super();
@@ -27,9 +29,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Profile props={this.state.starwarsChars} />
       </div>
     );
   }
+
 }
 
 export default App;
