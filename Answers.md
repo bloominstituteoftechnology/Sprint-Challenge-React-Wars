@@ -12,8 +12,8 @@
 
 #3. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
 
-##
+## The biggest difference between `functional components` and `class components` is the extent to which one can be customized. The former is simply a function with a singular optional input that we call `props`. The latter is more customizable and can have a `state`. Typically, when we want something to remain the same, we'd simply assign a component to const and make it a stateless function. If we want our component behave differently at different points in the interaction with the UI, we'd assign our component to a class which allows us to control the various states of the interaction (tapping into some lifecycle processes here).
 
 #4. Briefly describe PropTypes and what we use them for when building react applications.
 
-##
+## 
