@@ -14,7 +14,9 @@ const Cards = props => {
             {props.gender}
            <div>
             {props.height}
-            </div>
+            </div> <div>
+            {props.mass}
+                    </div>
             </div>
         </div>
     </div>
