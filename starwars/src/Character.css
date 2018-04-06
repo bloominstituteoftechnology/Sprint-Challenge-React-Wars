@@ -1,0 +1,9 @@
+.characters {
+    margin: auto;
+    width: 50%;
+    border: 3px solid blue;    
+}
+
+.characters [3] {
+    border: 3px solid red;
+}
