@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.data {
+    border: 1px black solid;
+    width: 20%;
+    margin: 10px auto;
+}
