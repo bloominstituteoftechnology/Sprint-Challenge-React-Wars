@@ -1,8 +1,21 @@
-.App {
-  text-align: center;
-}
 .Header {
-  color: #443e3e;
+  color: #960a0a;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 5rem;
+  font-family: "Monoton", cursive;
 }
+.app-content {
+  background-image: url("./sw-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+}
+.app-wrapper {
+  background-color: black;
+  height: auto;
+}
+
 /* write your parent styles in here for your App.js */
