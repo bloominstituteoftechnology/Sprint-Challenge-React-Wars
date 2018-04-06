@@ -63,7 +63,17 @@ class Character extends React.Component {
 										<ListGroupItem>Edited: {char.edited}</ListGroupItem>
 									</ListGroup>
 								</TabPane>
-							</TabContent>
+					
+				      	<TabPane tabId="2">
+									<ListGroup>
+										<ListGroupItem>Eye Color: {char.eye_color}</ListGroupItem>
+										<ListGroupItem>Gender: {char.gender}</ListGroupItem>
+										<ListGroupItem>Hair-Color: {char.hair_color}</ListGroupItem>
+										<ListGroupItem>Mass: {char.mass}</ListGroupItem>
+										<ListGroupItem>Skin-Color: {char.skin_color}</ListGroupItem>
+									</ListGroup>
+								</TabPane>
+							</TabContent>	
 
 						</CardBody>
 					</Card>
