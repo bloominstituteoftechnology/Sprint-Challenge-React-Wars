@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.list {
+  align-self: center;
 }
 .Header {
   color: #443e3e;
