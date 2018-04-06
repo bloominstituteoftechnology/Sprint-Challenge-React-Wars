@@ -23,7 +23,6 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-
   }
   render() {
     return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/profile.css';
+import PropTypes from 'prop-types';
 
 export const Profile = (props) => {
   return (
@@ -22,3 +23,13 @@ export const Profile = (props) => {
     </React.Fragment>
   );
 }
+
+Profile.propTypes = {
+  starwarsChars: PropTypes.arrayOf(function(propValue, key) {
+    if (typeof propValue[key].name !== 'string') {
+      return new Error(
+        'Invalid prop at array index ' + key
+      );
+    }
+  })
+};
