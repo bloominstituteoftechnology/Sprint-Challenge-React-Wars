@@ -23,7 +23,7 @@ const Characters = props => {
                                 <h4>Eye Color: </h4><p>{charSheet.eye_color}</p>
                             </div>
                             <div className="Char__Attr Char__BirthYear">
-                                <h4>Birth Year: </h4><p>{charSheet.birth_year} kg</p>
+                                <h4>Birth Year: </h4><p>{charSheet.birth_year}</p>
                             </div>
                             <div className="Char__Attr Char__Gender">
                                 <h4>Gender: </h4><p>{charSheet.gender}</p>
