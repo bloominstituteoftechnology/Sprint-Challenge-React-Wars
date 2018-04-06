@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from "prop-types";
 
 class MainObject extends Component{
 
@@ -48,5 +48,19 @@ return(<React.Fragment>
 
 
     }
+}
+MainObject.propTypes ={
+    starwarsChars: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string,
+        gender: PropTypes.string,
+        birth_year: PropTypes.string,
+        height: PropTypes.string,
+        mass: PropTypes.string,
+        hair_color: PropTypes.string,
+        eye_color:  PropTypes.string,
+        skin_color:  PropTypes.string,
+
+    }))
+
 }
 export default MainObject
