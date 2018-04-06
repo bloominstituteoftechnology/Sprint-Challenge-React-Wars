@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharBios from './Components/CharBios.js';
+import CharList from './Components/CharList'; 
+import { Button, Jumbotron } from 'reactstrap';
 
 class App extends Component {
   constructor() {
@@ -7,6 +10,8 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+
+      this.componentDidMount = this.componentDidMount.bind(this);
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -23,10 +28,15 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
+    const {starwarsChars} = this.state;
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <Jumbotron className="jumbotron">
+        <h1 className="Header"></h1>
+        </Jumbotron>
+        <CharList starwarsChars={starwarsChars} />
       </div>
     );
   }
