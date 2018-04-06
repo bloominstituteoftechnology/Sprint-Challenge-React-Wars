@@ -4,4 +4,5 @@ body {
   font-family: sans-serif;
   background: url('./sw-bg.jpg') no-repeat center center fixed;
   background-size: cover;
+  box-sizing: border-box;
 }
