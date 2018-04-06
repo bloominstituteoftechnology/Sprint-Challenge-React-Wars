@@ -17,3 +17,4 @@ const Nom = (props) => {
 }
 
 export default Nom;
+// I included all the normal stuff barring the things in film stuff which only returned urls. I will learn that magic.
