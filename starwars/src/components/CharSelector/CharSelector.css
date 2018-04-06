@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__card {
+    margin: 20px 0;
+    border: 1px solid black;
+    width: 70%;
+    opacity: .75;
+    background: #e3e3e3;
+    background-blend-mode: color-burn;
+    box-shadow: 5px 5px 20px black;
+}
+
+.container__card:hover {
+    opacity: 1;
+}
