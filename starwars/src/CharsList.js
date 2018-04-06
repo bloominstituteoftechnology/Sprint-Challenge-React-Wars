@@ -7,7 +7,7 @@ const CharsList = props => {
     return (
     <div>{props.starwarsChars.map(character => (
         <div key={character.mass}>
-            <ul><h3>{`${character.name}`}</h3></ul>
+            <div><h3>{`${character.name}`}</h3></div>
             <ul>{`Height: ${character.height}`}</ul>
             <ul>{`Mass: ${character.mass}`}</ul>
             <ul>{`Hair_Color: ${character.hair_color}`}</ul>
