@@ -1,9 +1,32 @@
 .Card--container {
-  max-width: 600px;
+  width: 100%;
   display: grid;
-
   grid-template-areas:
-    '. . name . . '
-    'films films . birth height'
-    'films films . gender species';
+    ". . name . . "
+    "films films . birth height"
+    "films films . gender species";
+}
+
+.Card--name {
+  grid-area: name;
+}
+
+.Card--films {
+  grid-area: films;
+}
+
+.Card--birth {
+  grid-area: birth;
+}
+
+.Card--height {
+  grid-area: height;
+}
+
+.Card--gender {
+  grid-area: gender;
+}
+
+.Card--species {
+  grid-area: species;
 }

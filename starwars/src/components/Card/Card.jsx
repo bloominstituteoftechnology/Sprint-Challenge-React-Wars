@@ -1,5 +1,5 @@
-import React from 'react'
-import './Card.css'
+import React from "react"
+import "./Card.css"
 
 // birth_year: "19BBY"
 // created: "2014-12-09T13:50:51.644000Z"
@@ -18,6 +18,15 @@ import './Card.css'
 // url: "https://swapi.co/api/people/1/"
 // vehicles: Array[2]
 
-const Card = props => <div className="Card--container">{props.name}</div>
+const Card = props => (
+  <div className="Card--container">
+    <h3 className="Card--name">{props.name}</h3>
+    <div className="Card--films">{props.films[0]}</div>
+    <p className="Card--birth">{props.birth_year}</p>
+    <p className="Card--height">{props.height}</p>
+    <p className="Card--gender">{props.gender}</p>
+    <p className="Card--species">{props.species}</p>
+  </div>
+)
 
 export { Card }
