@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import MainObject from './components/MainObject.js'
+import './components/MainObject.css'
 
 class App extends Component {
   constructor() {
@@ -25,9 +27,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+     <MainObject {...this.state} />
     );
   }
 }
