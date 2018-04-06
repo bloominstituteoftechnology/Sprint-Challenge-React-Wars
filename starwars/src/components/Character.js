@@ -4,9 +4,26 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import classnames from 'classnames';
 
+class Character extends React.Component = (props) => {
+	constructor(props) {
+		super(props);
+		this.toggle = this.toggle.bind(this);
+		this.state = {
+			activeTab: '1'
+		};
+	}
 
-const Character = (props) => {
+	// toggle functionality
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+    }
+  }
+
 	// receives star wars api data from Apps
 	// console.log(props.chars);
 	return (
