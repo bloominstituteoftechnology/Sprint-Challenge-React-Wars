@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import CardContainer from "./components/CardContainer/CardContainer";
+import CharDetails from "./components/CharDetails/CharDetails";
 
 class App extends Component {
   constructor() {
@@ -23,14 +23,14 @@ class App extends Component {
       })
       .catch(err => {
         throw new Error(err);
-      });
+      });   
   }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardContainer chars={this.state.starwarsChars} />
+        <CharDetails chars={this.state.starwarsChars} />
       </div>
     );
   }
