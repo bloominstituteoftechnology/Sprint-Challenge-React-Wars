@@ -5,4 +5,29 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.palText{
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  display: inline-flex;
+  border: solid white 1px;
+  max-width: auto;
+  align-content: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  font-size: 20px;
+  color: red;
+  background-image: url("https://pa1.narvii.com/6523/0a81a9a7b2246de4aea6c2b664001f67dccb90a3_128.gif");
+  text-align: center;
+  text-shadow:
+  -1px -1px 0 #FFFFFF,
+  1px -1px 0 #FFFFFF,
+  -1px 1px 0 #FFFFFF,
+  1px 1px 0 #FFFFFF;
+}
+.more{
+  padding: 20px 0;
+}
+
 /* write your parent styles in here for your App.js */
