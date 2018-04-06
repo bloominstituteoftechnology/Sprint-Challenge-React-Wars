@@ -10,21 +10,13 @@ const Cards = props => {
                 <div className = 'data1'>
                 <p> {props.name.toUpperCase()} </p>
                 </div>
-                <div className = 'data2'>
-                    <div className = 'data21'>
-                    <p> BIRTH YEAR: {props.birth_year} </p>
-                    <p> GENDER: {props.gender.toUpperCase()} </p>
-                    </div>
-                    <div className = 'data22'>
-                    <p> HEIGHT: {props.height} </p>
-                    <p> WEIGHT: {props.mass} </p>
-                    </div>
-                </div>
-                <div classname = 'data3'>
-                    <p> EYE COLOR: {props.eye_color.toUpperCase()} </p>
-                    <p> HAIR COLOR: {props.hair_color.toUpperCase()} </p>
-                    <p> SKIN COLOR: {props.skin_color.toUpperCase()} </p>
-                </div>
+                    <p style = {{color: 'black'}}> BIRTH YEAR: {props.birth_year} </p>
+                    <p style = {{color: 'blue'}}> GENDER: {props.gender.toUpperCase()} </p>
+                    <p style = {{color: 'lightblue'}}> HEIGHT: {props.height} </p>
+                    <p style = {{color: 'green'}}> WEIGHT: {props.mass} </p>
+                    <p style = {{color: 'yellowgreen'}}> EYE COLOR: {props.eye_color.toUpperCase()} </p>
+                    <p style = {{color: 'purple'}}> HAIR COLOR: {props.hair_color.toUpperCase()} </p>
+                    <p style = {{color: 'red'}}> SKIN COLOR: {props.skin_color.toUpperCase()} </p>
             </div>
         </div>
     )

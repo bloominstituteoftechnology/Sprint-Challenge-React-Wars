@@ -6,29 +6,15 @@
 }
 
 .data {
-    border: 1px black solid;
+    border: 4px black solid;
     width: 20%;
     background: gray;
     opacity: 0.8;
 }
 
 .data1 {
-    color: white;
-    border-bottom: 1px solid black;
+    color: silver;
+    border-bottom: 3px solid black;
 }
 
-.data2 {
-    display: flex;
-    flex-flow: column wrap;
-    border-bottom: 1px solid black;
-}
 
-.data21 { 
-    color: red;
-    border-bottom: 1px solid black;
-}
-
-.data22 { 
-    color: blue;
-    border-bottom: 1px solid black;
-}
