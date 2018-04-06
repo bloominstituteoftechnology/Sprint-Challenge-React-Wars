@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Display from "./components/Display/Display";
-import Reactstrap from "reactstrap";
 import "./App.css";
 
 class App extends Component {
@@ -37,7 +36,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className="Container">
-          <ul className="itemWrap">
+          <div className="itemWrap">
             {this.state.starwarsChars.map((char, index) => {
               return (
                 <Display
@@ -47,7 +46,7 @@ class App extends Component {
                 />
               );
             })}
-          </ul>
+          </div>
         </div>
       </div>
     );

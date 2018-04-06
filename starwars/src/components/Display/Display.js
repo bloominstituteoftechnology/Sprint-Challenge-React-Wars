@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  Button,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  CardImg
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, CardImg } from "reactstrap";
 import DisplayItem from "../DisplayItem/DisplayItem";
 import "./Display.css";
 
@@ -35,7 +27,7 @@ const Display = props => {
   //   skin_color
   // } = props.character;
   return (
-    <li className="display">
+    <div className="display">
       <Card>
         <CardImg
           className="profile__image"
@@ -43,7 +35,9 @@ const Display = props => {
           alt="Person Image"
         />
         <CardBody>
-          <CardTitle>{props.character.name}</CardTitle>
+          <CardTitle>
+            <span className="profile_name">{props.character.name}</span>
+          </CardTitle>
           <CardText>
             <ul className="display_data">
               {Object.keys(props.character).map((key, index) => {
@@ -57,7 +51,7 @@ const Display = props => {
           </CardText>
         </CardBody>
       </Card>
-    </li>
+    </div>
   );
 };
 

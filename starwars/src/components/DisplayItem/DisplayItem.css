@@ -1,0 +1,11 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  font-weight: bold;
+  color: goldenrod;
+  text-decoration: underline;
+  margin-right: 10px;
+}
