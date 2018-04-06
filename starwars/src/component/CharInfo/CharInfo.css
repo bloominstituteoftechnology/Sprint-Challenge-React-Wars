@@ -1,0 +1,17 @@
+.characterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0 10% 20px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
