@@ -7,7 +7,7 @@ const StarWarsCard = (props) => {
   return (
     <div className="StarWarsCard">
       <Card className="CardContainer" >
-        <CardImg width="100%" src={props.image} alt="starwars card" />
+        <CardImg width="80%" src={props.image} alt="starwars card" />
         <CardBody className="Card">
           <CardTitle className="Char">{props.char.name}</CardTitle>
           <CardSubtitle className="BioStats">Bio</CardSubtitle>
