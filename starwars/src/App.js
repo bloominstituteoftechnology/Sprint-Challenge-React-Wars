@@ -29,9 +29,11 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div>
+          <ui>
             {this.state.starwarsChars.map((person, index) =>
-                <Character key={index} character={person}/>
+                <li> <Character key={index} character={person}/></li>
             )}
+          </ui>
         </div>
       </div>
     );

@@ -1,0 +1,7 @@
+.CharCard {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
