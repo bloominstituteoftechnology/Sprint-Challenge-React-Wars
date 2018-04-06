@@ -1,0 +1,18 @@
+.CardSW-Wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    width: 600px;
+    flex-wrap: wrap;
+}
+.card .card-body {
+    min-width: 250px;
+    margin: 0;
+    background: #BBA89A;
+    box-shadow: 5px 10px 18px #888888;
+}
+.card {
+    margin-bottom: 20px;
+    border: 1px solid grey !important;
+}
