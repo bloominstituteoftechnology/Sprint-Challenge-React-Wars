@@ -1,0 +1,25 @@
+.overall-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.stat-container {
+  display: flex;
+  background: #a58370;
+  border: 2px solid white;
+  color: white;
+}
+
+.stat-group {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
