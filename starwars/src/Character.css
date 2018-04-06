@@ -1,9 +1,6 @@
 .characters {
     margin: auto;
-    width: 50%;
-    border: 3px solid blue;    
+    width:11%;
+    border: 3px solid silver;         
 }
 
-.characters [3] {
-    border: 3px solid red;
-}

@@ -10,7 +10,7 @@ export default class extends React.Component {
     } = this.props;
     return (
       <div className = "characters mt-3">
-      <Card className="character-container">
+      <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className="character-container">
         <CardTitle class="Char-name">{name}</CardTitle>
         <Entry class="Char-eye-color" label="Eyes" text={eye_color} />
         <Entry class="Char-hair-color" label="Hair" text={hair_color} />
