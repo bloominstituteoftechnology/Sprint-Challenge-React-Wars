@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardText, CardImg } from "reactstrap";
 import DisplayItem from "../DisplayItem/DisplayItem";
+import PropTypes from "prop-types";
 import "./Display.css";
 
 const Display = props => {
@@ -43,7 +44,11 @@ const Display = props => {
               {Object.keys(props.character).map((key, index) => {
                 if (filterData(key)) {
                   return (
-                    <DisplayItem data={props.character[key]} title={key} />
+                    <DisplayItem
+                      data={props.character[key]}
+                      title={key}
+                      key={`disp${index + 1}`}
+                    />
                   );
                 }
               })}
@@ -53,6 +58,18 @@ const Display = props => {
       </Card>
     </div>
   );
+};
+
+Display.propTypes = {
+  character: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    gender: PropTypes.string,
+    height: PropTypes.string,
+    mass: PropTypes.string,
+    eye_color: PropTypes.string,
+    hair_color: PropTypes.string,
+    skin_color: PropTypes.string
+  })
 };
 
 export default Display;
