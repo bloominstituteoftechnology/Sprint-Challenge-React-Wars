@@ -19,3 +19,7 @@ componentWillUnmount - Cleans up any processes being done by the component to ea
 The functional component is a component that returns JS and then displays it's values on the browser, which is basically a normal JS function.
  Classes however, is uses React's various features such as state and being part of the component lifecycle. 
 
+4. Briefly describe PropTypes and what we use them for when building react applications.
+
+PropTypes are used for testing in the production code, to check if the proper values are being sent. It's typically used as a tool for
+debugging. 
