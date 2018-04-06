@@ -4,4 +4,13 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  z-index: -1; 
+  position: absolute;
+  opacity: 0.5;
+}
+
+
+#id {
+  margin: 0 auto;
+  border: 5px solid red;
 }
