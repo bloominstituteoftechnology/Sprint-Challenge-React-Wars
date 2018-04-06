@@ -12,6 +12,8 @@ The React Component lifecycle is essentially what happens to a component as it i
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+Class componenets extend the React Component class and are best suited to carry state within them. Functional componenets are primarily used to render a componenet to the screen while having state(or the effects of state) trickle down to it through props.
+
 
 4. Briefly describe PropTypes and what we use them for when building react applications.
 
