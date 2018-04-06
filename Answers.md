@@ -12,3 +12,6 @@ componentWillReceiveProps this is not useful the first time it renders, but it's
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 A Class/Stateful component has logic included, while a presentational component only renders JSX. Because a presentational component doesn't need state, it's much better to only use a function syntax component, as opposed to a class. A stateful component needs to keep track of changes, and will often include some logic to get the result, while a presentational component only renders JSX, which is essentially what displays on the screen (nothing intensive).
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+PropTypes are created by the developer, and it's useful only to developers to keep track props. If the developer looses track of props and passes the wrong props, then the console.log will let the developer know that something went wrong.
