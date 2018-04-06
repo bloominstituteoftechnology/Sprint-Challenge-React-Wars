@@ -4,17 +4,17 @@ const CardContainer = (props) => {
 
     return(
         <div className = "post__Container">
-        {props.data.map(post => {
+        {props.data.map((post, index) => {
             return(
-                <div className="post">
-                    <h2>{post.name}</h2>
-                    <div>Height: {post.height}</div>
-                    <div>Mass: {post.mass}</div>
-                    <div>Birth year: {post.birth_year}</div>
-                    <div>Gender: {post.gender}</div>
-                    <div>Hair Color: {post.hair_color}</div>
-                    <div>Eye color: {post.eye_color}</div>
-                    <div>Skin Color: {post.skin_color}</div>
+                <div key={index} className="post">
+                    <h2 key={post.name}>{post.name}</h2>
+                    <div key={post.height}>Height:{post.height}</div>
+                    <div key={post.mass}>>Mass: {post.mass}</div>
+                    <div key={post.birth_year}>Birth year: {post.birth_year}</div>
+                    <div key={post.gender}>Gender: {post.gender}</div>
+                    <div key={post.hair}>Hair Color: {post.hair_color}</div>
+                    <div key={post.eye_color}>Eye color: {post.eye_color}</div>
+                    <div key={post.skin_color}>Skin Color: {post.skin_color}</div>
                 </div>
             )
         })}
