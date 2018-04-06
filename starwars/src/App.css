@@ -8,12 +8,10 @@
 /* write your parent styles in here for your App.js */
 
 .char-container {
-  width: 40%;
+  width: 60%;
   font-size: .85rem;
   margin: 2em auto;
   border: 1.5px solid grey;
-  display: flex;
-  flex-flow: column wrap-reverse;
 }
 
 .char-name {
