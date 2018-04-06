@@ -3,7 +3,7 @@ import './Character.css';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
 class Character extends React.Component {
@@ -29,10 +29,32 @@ class Character extends React.Component {
 	render() {
 		return (
 			<div className="cardContainer">
-				{props.chars.map((char, index) => 
+				{this.props.chars.map((char, index) => 
 					<Card>
 						<CardBody>
 							<h2>{char.name}</h2>
+
+								<div>
+						      <Nav tabs>
+					          <NavItem>
+					            <NavLink
+					              className={classnames({ active: this.state.activeTab === '1' })}
+					              onClick={() => { this.toggle('1'); }}
+					            >
+					              Tab1
+					            </NavLink>
+					          </NavItem>
+					          <NavItem>
+					            <NavLink
+					              className={classnames({ active: this.state.activeTab === '2' })}
+					              onClick={() => { this.toggle('2'); }}
+					            >
+					              Moar Tabs
+					            </NavLink>
+					          </NavItem>
+					        </Nav>
+					      </div>
+
 							<CardTitle>Quick Facts</CardTitle>
 							<ListGroup>
 								<ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
@@ -45,6 +67,7 @@ class Character extends React.Component {
 					</Card>
 				)}
 			</div>
+
 		);
 	}
 }
