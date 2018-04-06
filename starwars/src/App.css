@@ -2,9 +2,14 @@
   text-align: center;
 }
 .Header {
-  color: forestgreen;
+  color: black;
   text-shadow: 1px 1px 5px #0cbbda;
   font-weight: bold;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  background-color: pink;
+  width: 35%;
 }
 .palText{
   font-weight: bold;
@@ -15,9 +20,9 @@
   max-width: auto;
   align-content: center;
   justify-content: center;
-  width: 400px;
-  height: 300px;
-  font-size: 20px;
+  width: 35%;
+  height: 20%;
+  font-size: 1.5rem;
   color: red;
   background-image: url("https://pa1.narvii.com/6523/0a81a9a7b2246de4aea6c2b664001f67dccb90a3_128.gif");
   text-align: center;
