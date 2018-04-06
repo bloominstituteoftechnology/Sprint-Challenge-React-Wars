@@ -1,7 +1,5 @@
 import React from 'react';
-import { FilmsList } from './FilmsList';
-import { VehiclesList } from './VehiclesList';
-import { StarshipsList } from './StarshipsList';
+import './CharsList.css';
 
 const CharsList = props => {
     return (
