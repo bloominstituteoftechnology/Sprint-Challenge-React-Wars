@@ -34,35 +34,37 @@ class Character extends React.Component {
 						<CardBody>
 							<h2>{char.name}</h2>
 
-								<div>
-						      <Nav tabs>
-					          <NavItem>
-					            <NavLink
-					              className={classnames({ active: this.state.activeTab === '1' })}
-					              onClick={() => { this.toggle('1'); }}
-					            >
-					              Tab1
-					            </NavLink>
-					          </NavItem>
-					          <NavItem>
-					            <NavLink
-					              className={classnames({ active: this.state.activeTab === '2' })}
-					              onClick={() => { this.toggle('2'); }}
-					            >
-					              Moar Tabs
-					            </NavLink>
-					          </NavItem>
-					        </Nav>
-					      </div>
+							<div>
+					      <Nav tabs>
+				          <NavItem>
+				            <NavLink
+				              className={classnames({ active: this.state.activeTab === '1' })}
+				              onClick={() => { this.toggle('1'); }}
+				          	>
+				              Quick Facts
+				            </NavLink>
+				          </NavItem>
+				          <NavItem>
+				            <NavLink
+				              className={classnames({ active: this.state.activeTab === '2' })}
+				              onClick={() => { this.toggle('2'); }}
+				            >
+				              Physical
+				            </NavLink>
+				          </NavItem>
+				        </Nav>
+				      </div>
 
-							<CardTitle>Quick Facts</CardTitle>
-							<ListGroup>
-								<ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
-								<ListGroupItem>Created: {char.created}</ListGroupItem>
-								<ListGroupItem>Edited: {char.edited}</ListGroupItem>
+				      <TabContent activeTab={this.state.activeTab}>
+				      	<TabPane tabId="1">
+									<ListGroup>
+										<ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
+										<ListGroupItem>Created: {char.created}</ListGroupItem>
+										<ListGroupItem>Edited: {char.edited}</ListGroupItem>
+									</ListGroup>
+								</TabPane>
+							</TabContent>
 
-
-							</ListGroup>
 						</CardBody>
 					</Card>
 				)}
