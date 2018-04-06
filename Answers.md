@@ -10,4 +10,7 @@
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-    
+    <p>Class components are written in ES6 syntax and required a constructor() and render(). They can take advantage of 'this', store data in the form of a state object, and pass data to other components as props. Another feature unique to class components is the ability to use React life cycle methods.</p>
+
+    <p> Functional components are written as JS functions and are concerned with UI only. They are pure functions that do not store or load data. These components instead receive data in the form of props from other components.
+    </p>
