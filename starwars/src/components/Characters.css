@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+.Char {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 2%;
+}
+.Char__Sheet {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 25px 0 0 5%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    background-blend-mode: darken;
+    background-image: linear-gradient(to right,darkblue 50%,darkred 100%), url("https://avatarfiles.alphacoders.com/943/94392.jpg");
+    background-repeat: round;
+}
+
+.Char__Name {
+    margin: 0;
+    background-color: black;
+}
+
+.Char__Attributes {
+    display: flex;
+    flex-direction: column;
+}
+
+.Char__Attr {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: none;
+    border-bottom: 2px dotted #525252;
+}
