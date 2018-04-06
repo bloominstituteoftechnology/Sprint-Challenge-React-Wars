@@ -19,11 +19,11 @@ export default class Character extends React.Component {
                 </div>
                 <div className='CharCard__two'>
                     <div>
-                        <h4>Sex:</h4>
+                        <h4>Sex</h4>
                         {this.props.character.gender}
                     </div>
                     <div>
-                        <h4>DOB:</h4>
+                        <h4>DOB</h4>
                         {this.props.character.birth_year}
                     </div>
                     <div>
