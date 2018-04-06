@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 
 const Character = (props) => {
 	// receives star wars api data from Apps
-	return ();
+	// console.log(props.chars);
+	return (
+		
+	);
 }
 
 export default Character;

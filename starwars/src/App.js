@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Button } from 'reactstrap';
+import Character from './components/Character';
 
 class App extends Component {
   constructor() {
@@ -25,10 +26,12 @@ class App extends Component {
       });
   }
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div><Button color="danger">Danger!</Button></div>
+        <Character chars={this.state.starwarsChars} />
       </div>
     );
   }
