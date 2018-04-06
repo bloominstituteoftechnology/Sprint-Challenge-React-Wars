@@ -1,0 +1,11 @@
+.card {
+  position: relative;
+  margin: 30px auto;
+  width: 300px;
+  height: 500px;
+  border: 2px solid rgb(163, 149, 123);
+  border-radius: 15px;
+  background: url('./sw-id-bg.jpeg') no-repeat center;
+  background-size: cover;
+}
+
