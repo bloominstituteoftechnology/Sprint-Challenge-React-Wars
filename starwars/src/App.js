@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Button } from 'reactstrap';
+import StarCard from './StarCard.js';
+import Films from './Films.js'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starChars: []
     };
   }
   componentDidMount() {
@@ -17,7 +20,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
@@ -26,7 +29,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <img className='header-logo' src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326" />
+        <h1 className="Header">The Tinder Awakens</h1>
+        <StarCard {...this.state}/>
       </div>
     );
   }

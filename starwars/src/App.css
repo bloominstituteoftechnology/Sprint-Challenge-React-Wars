@@ -4,5 +4,102 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 40px;
+}
+.header-logo {
+  width: 40%;
+}
+.starcards {
+  width: 700px;
+  margin: auto;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.cardinner {
+  height: 110px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+}
+.greensaber {
+  margin-top:-25px;
+  margin-bottom: -15px;
+  width: 680px;
+  height: 50px;
+}
+
+.redsaber {
+  width: 850px;
+  height: 50px;
+  margin-top: -25px;
+}
+
+.char-name {
+  font-size: 45px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(0, 0, 0); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  font-family: fantasy;
+}
+.table {
+  width: 100%;
+  margin: auto;
+}
+.cardbottom {
+  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+}
+
+.toprow {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(0, 0, 0); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  font-family: fantasy;
+}
+
+.rowtwo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttonone {
+  margin: 10px;
+
+}
+.button-one {
+
+  width: 80px;
+  height: 80px;
+}
+
+.button-two {
+  margin-left: 0px;
+  width: 80px;
+  height: 80px;
+}
+
+.button-text-one {
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(5, 146, 1); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  font-family: fantasy;
+}
+
+.button-text-two {
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(180, 0, 30); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  font-family: fantasy;
 }
 /* write your parent styles in here for your App.js */
