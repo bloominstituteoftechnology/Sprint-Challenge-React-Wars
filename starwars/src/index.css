@@ -4,4 +4,8 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
 }

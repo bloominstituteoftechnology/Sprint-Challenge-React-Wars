@@ -1,0 +1,29 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 80%;  
+    padding: 0 20px 0 20px; 
+    margin: 20px;
+
+
+}
+span {
+    font-weight: bold;
+    color:blue;
+
+}
+.CardHeader{
+    width: 350px;
+    background: lightblue;
+    color: green;
+    font-weight: bold;
+    font-size: 30px
+}
+.CardFooter{
+    width: 350px;
+    
+    color: green;
+    font-weight: bold;
+    font-size: 30px
+}
