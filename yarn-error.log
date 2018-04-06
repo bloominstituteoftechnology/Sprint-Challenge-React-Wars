@@ -1,0 +1,32 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\mmnik\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Users\mmnik\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mmnik\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs;C:\Users\mmnik\AppData\Local\Microsoft\WindowsApps;C:\Users\mmnik\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\mmnik\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "C:\\Users\\mmnik\\LambdaSchool\\Sprint-Challenge---React"
+      at new MessageError (C:\Users\mmnik\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at C:\Users\mmnik\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (C:\Users\mmnik\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\mmnik\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
