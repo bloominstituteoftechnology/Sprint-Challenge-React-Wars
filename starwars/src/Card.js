@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = props => {
   return (
-    <div>
+    <div className="cards_container">
       {props.chars.map((char, index) => (
         <div className="card">
           <div className="card_personInfo">
@@ -12,7 +12,7 @@ const Card = props => {
             <div className="personInfo_mass"><strong>Mass:</strong> {char.mass}</div>
             <div className="personInfo_hairColor"><strong>Hair Color:</strong> {char.hair_color}</div>
             <div className="personInfo_eyeColor"><strong>Eye Color:</strong> {char.eye_color}</div>
-            <div className="personInfo_homeworld"><strong>Homeworld:</strong> {props.fetchData(char.homeworld)}</div>
+            <div className="personInfo_homeworld"><strong>Homeworld:</strong> {}</div>
           </div>
           <div className="card_personPic"></div>
         </div>

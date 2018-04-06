@@ -22,34 +22,6 @@ class App extends Component {
         throw new Error(err);
       });
   }
-  fetchData(url) {
-    fetch(url)
-      .then(res => {
-        return res.json();
-      }).then(data => {
-        console.log( data.results );
-      }).catch(err => {
-        throw new Error(err);
-      });
-    // // Expose second layer urls
-    // this.state.startwarsChars.forEach((char) => {
-    //   char.map((prop) => {
-    //   if (typeof(prop) === 'string' && prop.slice(0, 5) === 'https') {
-    //       fetch(prop)
-    //       .then(res => {
-    //         return res.json();
-    //       })
-    //       .then(data => {
-    //         console.log(data.results);
-    //         //this.setState({ char: data.results });
-    //       })
-    //       .catch(err => {
-    //         throw new Error(err);
-    //       });
-    //     }
-    //   })
-    // });
-  }
   render() {
     return (
       <div className="App">

@@ -1,3 +1,8 @@
+.cards_container {
+  display: flex;
+  flex-flow: wrap;
+}
+
 .card {
   position: relative;
   margin: 30px auto;
