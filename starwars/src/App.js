@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import PostContainer from './components/PostContainer/postcontainer.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      
     };
   }
   componentDidMount() {
@@ -25,8 +27,17 @@ class App extends Component {
   }
   render() {
     return (
+      
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {
+         //console.log(this.state.starwarsChars)
+          //     this.state.starwarsChars.map((data) =>{
+          // //     return
+          //   return( <div> {data}</div>)
+          //   })
+          this.state.starwarsChars
+        }
       </div>
     );
   }
