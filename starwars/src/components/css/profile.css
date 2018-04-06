@@ -1,0 +1,22 @@
+.Container {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Cormorant Garamond', serif;
+}
+.Container__Info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.Container__DataHeader {
+  font-size: 22px;
+  font-weight: bold;
+}
