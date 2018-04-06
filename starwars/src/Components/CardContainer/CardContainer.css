@@ -1,4 +1,11 @@
+.post__Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .post {
     background-color: gainsboro;
-    margin-top: 1%;
+    width: 40%;
+    margin:1% 1% 0 1%;
 }
