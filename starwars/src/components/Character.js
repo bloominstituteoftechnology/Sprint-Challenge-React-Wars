@@ -27,14 +27,12 @@ export default class Character extends React.Component {
                         {this.props.character.birth_year}
                     </div>
                     <div>
-                        <h4>
-                            Heigth
-                        </h4>
+                        <h4>Heigth</h4>
                         {this.props.character.height}
                     </div>
                     <div>
-                        <h4>Weight</h4>
-                        {this.props.character.weight}
+                        <h4>Mass</h4>
+                        {this.props.character.mass}
                     </div>
                     <div>
                         <h4>Skin Color</h4>
