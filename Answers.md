@@ -16,4 +16,4 @@
 
 #4. Briefly describe PropTypes and what we use them for when building react applications.
 
-## 
+## PropTypes are allow us to check that we're sending the right data between components. We don't have to use PropTypes when we're creating apps with React, but it helps to ensure that we're not passing the wrong data into certain components so we have a consistent and seamless user interface. It could also be seen as a way of labeling and compartmentalizing the data that we're passing around.
