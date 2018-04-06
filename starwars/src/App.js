@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <img className='header-logo' src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326" />
-        <h1 className="Header">The Tinder Awakens</h1>
+        <h1 className="Header">The Empire Swipes Back</h1>
         <StarCard {...this.state}/>
       </div>
     );
