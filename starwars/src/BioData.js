@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
 
-
-class BioData extends Component {
-    constructor(props) {
-        super(props);
-        this.state ={
-            starwarsChars: []
-        }
-    }
-    render() {
-        return (
-            <div></div>
-        )
-    }
+const BioData = props => {
+    return (
+        <div>{props.charList.map((c) => (
+            <div>{c.birth_year}</div>
+        ))}</div>
+    )
 }
-
-
 
 
 export default BioData;
