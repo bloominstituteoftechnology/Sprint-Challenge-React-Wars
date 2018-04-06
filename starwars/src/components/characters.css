@@ -1,7 +1,22 @@
 .CharCard {
+    background-color: aqua;
+    width: 700px;
+    height: 200px;
+}
+.CharCard__name {
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.CharCard__two {
     display: flex;
     flex-direction: row;
-    background-color: aqua;
-    width: 400px;
-    height: 400px;
+    align-items: start;
+    justify-items: center;
+    justify-content: space-evenly;
 }

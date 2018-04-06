@@ -1,36 +1,54 @@
 import React from 'react'
-import { Card, CardText, CardBody,
-    CardTitle, Button, Row, Col } from 'reactstrap';
+import {
+    Card, CardText, CardBody,
+    CardTitle, Row, Col, Container
+} from 'reactstrap';
 import './characters.css'
-export default class Character extends React.Component{
+
+export default class Character extends React.Component {
     constructor(props) {
         super(props);
         console.log('Props: ', props)
     }
-    render() {
-        return(
-            <div>
-                <Card className='CharCard'>
-                    <CardBody>
-                        <CardTitle>{this.props.character.name}</CardTitle>
-                        <CardText>
-                            <Row>
-                                <Col>
-                                <h3>Sex:</h3>
-                                <div>{this.props.character.gender}</div>
-                                <h3>BOD:</h3>
-                                <div>{this.props.character.birth_year}</div>
-                                </Col>
-                            </Row>
 
-                            <div>{this.props.character.height}</div>
-                            <div>{this.props.character.weight}</div>
-                            <div>{this.props.character.skin_color}</div>
-                            <div>{this.props.character.eye_color}</div>
-                            <div>{this.props.character.hair_color}</div>
-                        </CardText>
-                    </CardBody>
-                </Card>
+    render() {
+        return (
+            <div className='CharCard'>
+                <div className='CharCard__name'>
+                    {this.props.character.name}
+                </div>
+                <div className='CharCard__two'>
+                    <div>
+                        <h4>Sex:</h4>
+                        {this.props.character.gender}
+                    </div>
+                    <div>
+                        <h4>DOB:</h4>
+                        {this.props.character.birth_year}
+                    </div>
+                    <div>
+                        <h4>
+                            Heigth
+                        </h4>
+                        {this.props.character.height}
+                    </div>
+                    <div>
+                        <h4>Weight</h4>
+                        {this.props.character.weight}
+                    </div>
+                    <div>
+                        <h4>Skin Color</h4>
+                        {this.props.character.skin_color}
+                    </div>
+                    <div>
+                        <h4>Eye Color</h4>
+                        {this.props.character.eye_color}
+                    </div>
+                    <div>
+                        <h4>Hair Color</h4>
+                        {this.props.character.hair_color}
+                    </div>
+                </div>
             </div>
         );
     }
