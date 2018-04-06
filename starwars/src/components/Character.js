@@ -1,9 +1,8 @@
 import React from 'react';
 import './Character.css';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardBody } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
 class Character extends React.Component {

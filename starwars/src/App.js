@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Button } from 'reactstrap';
 import { Jumbotron } from 'reactstrap';
 import Character from './components/Character';
 
