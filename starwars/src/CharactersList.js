@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardSubtitle, CardBody } from 'reactstrap';
+import { Card, CardTitle, CardSubtitle, CardText, CardBody } from 'reactstrap';
 
 const CharactersList = props => {
     return (
@@ -9,6 +9,7 @@ const CharactersList = props => {
                     <CardBody key={starwarsChar.id}>
                         <CardTitle>{starwarsChar.name}</CardTitle>
                         <CardSubtitle>Birth year: {starwarsChar.birth_year}</CardSubtitle>
+                        <CardText>Gender:{starwarsChar.gender}</CardText>
                     </CardBody>
                 </Card>
             })}
