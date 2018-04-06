@@ -1,7 +1,14 @@
+@import "./Components/Card/Card.css";
+
 body {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-image: url("./sw-bg.jpg");
   background-size: cover;
 }
