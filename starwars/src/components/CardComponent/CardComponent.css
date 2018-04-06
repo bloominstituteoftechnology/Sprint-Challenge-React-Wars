@@ -1,0 +1,9 @@
+.cardDiv {
+    display: flex;
+    justify-content: center;
+}
+  
+.cardCard {
+    width: 300px;
+    color: gray;
+}
