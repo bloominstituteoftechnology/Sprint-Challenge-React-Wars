@@ -8,8 +8,8 @@ const CardContainer = (props) => {
             return(
                 <div key={index} className="post">
                     <h2 key={post.name}>{post.name}</h2>
-                    <div key={post.height}>Height:{post.height}</div>
-                    <div key={post.mass}>>Mass: {post.mass}</div>
+                    <div key={post.height}>Height: {post.height}</div>
+                    <div key={post.mass}>Mass: {post.mass}</div>
                     <div key={post.birth_year}>Birth year: {post.birth_year}</div>
                     <div key={post.gender}>Gender: {post.gender}</div>
                     <div key={post.hair}>Hair Color: {post.hair_color}</div>

@@ -5,7 +5,14 @@
 }
 
 .post {
-    background-color: gainsboro;
+    background-color: rgb(66, 63, 66);
     width: 40%;
-    margin:1% 1% 0 1%;
+    margin:2% 1% 0 1%;
+    color: rgb(216, 206, 206);
+    font-size: 1.1rem;
+}
+
+.post h2 {
+    color: rgb(86, 183, 228);
+    margin-bottom: 6%;
 }
