@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Nom from './Components/NameBirth.js'
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Nom nbd={this.state.starwarsChars}/>
+        
       </div>
     );
   }

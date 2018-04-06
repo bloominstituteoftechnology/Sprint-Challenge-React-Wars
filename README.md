@@ -5,10 +5,10 @@
 * Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation. 
 ## Start by forking and cloning this repository.
 ## Questions
-1. What is React JS? What types of problems does it solve?
-1. Explain briefly the React Component Life-cycle. Name three of the methods that are a part of the life-cycle and what they do.
-1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.
-1. Briefly describe PropTypes and what we use them for when building react applications.
+1. What is React JS? What types of problems does it solve? React JS is a open-source Javascript library made by Facebook. It focuses on performance and intuitive design. It allows reuse of code and has an easy to understand import structure. It is also fully component based unlike many others.
+1. Explain briefly the React Component Life-cycle. Name three of the methods that are a part of the life-cycle and what they do. componentWillMount is called before render is executed it also pulls a component. componentDidMount is called when the render is executed. render basically returns the component and what you would want on the app/page.
+1. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`.Class uses es6 style classes and is useful if it needs access to this or lifecycle methods. Functional is closer to es5 and uses props instead of this. Functional is overall more readable and easier to test but lacks some utility that can be found in Class components. 
+1. Briefly describe PropTypes and what we use them for when building react applications. Proptypes are used to validate data. We use them in typechecking like whether its a boolean, array, function, etc...
 
 ## Project
 * You're going to be building an application *starwars* that consumes live data that we're retrieving across the world wide web!
