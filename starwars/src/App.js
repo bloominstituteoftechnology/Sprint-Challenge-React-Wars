@@ -30,7 +30,6 @@ class App extends Component {
     // console.log(this.state.starwarsChars);
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
         <Character chars={this.state.starwarsChars} />
       </div>
     );
