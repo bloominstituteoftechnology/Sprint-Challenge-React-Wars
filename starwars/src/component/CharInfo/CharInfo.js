@@ -1,7 +1,8 @@
 import React from 'react';
-import './CharInfo.css'
+import './CharInfo.css';
+
 const CharInfo = props => {
-    console.log("homeworld prop", props.starwarsData.homeworld); // check if homeworld is getting called
+    // console.log("homeworld prop", props.starwarsData.homeworld); // check if homeworld is getting called
     
     return (
         <div className="characterContainer">
@@ -43,7 +44,7 @@ const CharInfo = props => {
             </div>
 
             <div className="films">
-                Films: {props.starwarsData.films}
+                {/* Films: {props.starwarsData.films} */}
             </div>
 
             <div className="species">
@@ -71,6 +72,6 @@ const CharInfo = props => {
             </div>
         </div> // characterContainer
     )
-}
+};
 
 export default CharInfo;
