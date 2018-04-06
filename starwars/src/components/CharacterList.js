@@ -17,12 +17,12 @@ const CharacterList = props => {
 }
 
 CharacterList.propTypes = {
-  characters: PropTypes.arrayOf(PropTypes.shape({
+  characters: PropTypes.shape({
     name: PropTypes.string,
     gender: PropTypes.string,
     birth_year: PropTypes.string,
     height: PropTypes.string
-  }))
+  })
 };
 
 export default CharacterList;
