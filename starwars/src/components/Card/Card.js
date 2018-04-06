@@ -8,15 +8,15 @@ const Cards = props => {
         <div className='cardData'>
         <div>
             {props.name}
-                </div> <div>
+            </div> <div>
             {props.birth_year}
-                </div> 
+            </div> <div>
             {props.gender}
-           <div>
+            </div> <div>
             {props.height}
             </div> <div>
             {props.mass}
-                    </div>
+                </div>
             </div>
         </div>
     </div>
