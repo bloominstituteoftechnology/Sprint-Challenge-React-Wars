@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.cardContainer{
+  margin: 40px 20%;
+  background-color: rgba(255, 252, 252, 0.611);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: rebeccapurple 1px dashed;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.name {
+  color: slategray;
+  font-size: 29px;
+}
+
+.gender {
+  color: darkgoldenrod;
+}
+
+.physical {
+  color: grey;
 }
 /* write your parent styles in here for your App.js */
