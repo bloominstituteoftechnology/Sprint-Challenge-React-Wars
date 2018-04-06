@@ -6,7 +6,11 @@ const StarWarsChars = props => {
         <Card key={props.char.name}>
             <CardBody>
                 <CardTitle>{props.char.name}</CardTitle>
-                <CardText>{props.char.birth_year}</CardText>
+                <CardText>Birthdate: {props.char.birth_year}</CardText>
+                <CardText>Height: {props.char.height}</CardText>
+                <CardText>Mass: {props.char.mass}</CardText>
+                <CardText>Species: {props.char.species}</CardText>
+                <CardText>Home: {props.char.homeworld}</CardText>
             </CardBody>
         </Card>
     );
