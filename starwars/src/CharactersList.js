@@ -9,7 +9,7 @@ const CharactersList = props => {
                     <CardBody key={starwarsChar.id}>
                         <CardTitle>{starwarsChar.name}</CardTitle>
                         <CardSubtitle>Birth year: {starwarsChar.birth_year}</CardSubtitle>
-                        <CardText>Gender:{starwarsChar.gender}</CardText>
+                        <CardText>Gender: {starwarsChar.gender}</CardText>
                     </CardBody>
                 </Card>
             })}
