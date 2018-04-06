@@ -1,0 +1,37 @@
+.StarWarsCharacters {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px
+}
+
+.Name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: 2px 3px 3px #fff;
+}
+
+.Stats {
+	width: 90%;
+	background-color: rgba(192,192,192,0.8);
+	border-radius: 5px;
+}
+
+.TopStats {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.BtmStats {
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+ 	font-weight: bold;
+}
+
