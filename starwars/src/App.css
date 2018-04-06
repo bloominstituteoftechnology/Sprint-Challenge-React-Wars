@@ -6,3 +6,9 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.Card {
+  display: inline-block;
+  border: solid 1p grey;
+  background-color: white;
+  border-radius: 5px;
+}
