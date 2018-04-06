@@ -17,12 +17,12 @@ const PeopleList = props => {
           <h1><Badge color="primary">{`${person.name}`}</Badge></h1>
             {/* <CardTitle>{`${person.name}`}</CardTitle> */}
             <CardSubtitle>{person.birth_year}</CardSubtitle>
-            <CardText className = "stats">{person.height}
-            {person.mass}
-            {person.hair_color}
-            {person.eye_color}
-            {person.skin_color}
-            {person.gender}
+            <CardText className = "stats">{person.height}<br/>
+            {person.mass}<br/>
+            {person.hair_color}<br/>
+            {person.eye_color}<br/>
+            {person.skin_color}<br/>
+            {person.gender}<br/>
             </CardText>
           </CardBody>
           </CardImgOverlay>
