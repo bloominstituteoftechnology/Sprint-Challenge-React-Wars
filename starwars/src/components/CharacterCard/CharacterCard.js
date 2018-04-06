@@ -19,7 +19,7 @@ class CharacterCard extends React.Component {
 
     render() {
         return (
-            <div classname="CardContainer">
+            <div className="CardContainer">
                 <h2>{this.state.details.name}</h2>
                 <p>Birth Year: {this.state.details.birth_year}</p>
                 <p>Height: {this.state.details.height}</p>
@@ -37,3 +37,5 @@ class CharacterCard extends React.Component {
         );
     }
 }
+
+export default CharacterCard;
