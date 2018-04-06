@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Panel from './Components/Panel/Panel.js';
+import Character from './Components/Character/Character.js';
+import Age from './Components/Age/Age.js';
+
 
 
 class App extends Component {
@@ -26,10 +28,15 @@ class App extends Component {
       });
   }
   render() {
+
+    const characters = this.state.starwarsChars.map((c, key) => {
+      return <Character info={c} key={key}/>
+    }) 
+
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <Panel stuff={this.state.starwarsChars} />
+        <h1 className="Header">Star Wars Characters </h1>
+        {characters}
       </div>
     );
   }
