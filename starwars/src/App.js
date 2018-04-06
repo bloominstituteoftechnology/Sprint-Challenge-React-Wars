@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import{ Character } from './Character';
+import SearchBar from './SearchBar';
 
 class App extends Component {
   constructor() {
@@ -18,6 +20,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+
       })
       .catch(err => {
         throw new Error(err);
@@ -26,7 +29,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className ="sticky-top">
+        <SearchBar charList={this.state.starwarsChars}/>
+        </div>
         <h1 className="Header">React Wars</h1>
+        {/* Refactored HERE so that StarWarsChars could be deleted, as it was not necessary. */}
+        <div className="Characters">
+          {this.state.starwarsChars.map((item => {
+            return <Character key={item.id} character={item} />
+          }))}
+        </div>
       </div>
     );
   }
