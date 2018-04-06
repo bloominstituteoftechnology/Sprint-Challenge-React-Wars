@@ -1,18 +1,18 @@
 import React from 'react';
 import { Card, CardTitle, CardSubtitle, CardText, CardBody } from 'reactstrap';
+import './CharacterList.css';
 
 const CharactersList = props => {
     return (
-        <div className="Character-Wrapper">
-            {props.starwarsChars.map((starwarsChar, index) => {
-                <Card>
-                    <CardBody key={starwarsChar.id}>
-                        <CardTitle>{starwarsChar.name}</CardTitle>
-                        <CardSubtitle>Birth year: {starwarsChar.birth_year}</CardSubtitle>
-                        <CardText>Gender: {starwarsChar.gender}</CardText>
-                    </CardBody>
-                </Card>
-            })}
+        <div key={props.char.name} className="Character-Wrapper">
+            <Card>
+                <CardBody>
+                    <CardTitle className="name">{props.char.name}</CardTitle>
+                    <CardSubtitle className="name">Birth year: {props.char.birth_year}</CardSubtitle>
+                    <CardText className="name">Gender: {props.char.gender}</CardText>
+                    <CardText>Eye-Color: {props.char.eye_color}</CardText>
+                </CardBody>
+            </Card>
         </div>
     );
 };
