@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardTitle, CardText } from 'reactstrap';
+import PropTypes from 'prop-types';
 import './CharacterList.css';
 
 const CharacterList = props => {
@@ -14,5 +15,14 @@ const CharacterList = props => {
     </div>
   )
 }
+
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    gender: PropTypes.string,
+    birth_year: PropTypes.string,
+    height: PropTypes.string
+  }))
+};
 
 export default CharacterList;
