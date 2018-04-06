@@ -17,3 +17,4 @@ Class componenets extend the React Component class and are best suited to carry 
 
 4. Briefly describe PropTypes and what we use them for when building react applications.
 
+PropTypes are mainly used for developmental purposes. They ensure that the data types being input are those that are expected. You can also set required props. All of this helps when reusing componenets, ensuring that they are used properly.
