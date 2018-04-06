@@ -2,13 +2,15 @@ import React from 'react';
 import './CharsList.css';
 import { Card, CardTitle, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
 
+//CharacterList and ListGroup
+
 const CharsList = props => {
     return (
     <div className="Char-Wrap">
         {props.starwarsChars.map(character => (
            <Card className="cardBox"> 
             <CardBody className="cardBack" key={character.mass}>
-                <CardTitle>{`${character.name}`}</CardTitle>
+                <CardTitle>{`${character.name}`}</CardTitle>                
                     <ListGroup> 
                     <ListGroupItem>{`Height: ${character.height}`}</ListGroupItem>
                     <ListGroupItem>{`Mass: ${character.mass}`}</ListGroupItem>

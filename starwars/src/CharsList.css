@@ -2,11 +2,8 @@
     width: 100%;
 }
 
+/*card-style*/
 .cardBack {
     background-color: black;
     color: yellow;
-}
-
-.List {
-    background-color: darkmagenta;
 }
