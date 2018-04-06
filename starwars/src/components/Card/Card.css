@@ -1,0 +1,15 @@
+.cardData {
+    font-size: 1rem;
+}
+
+.cardContainer {
+    border: 5px solid gray;
+    background: white;
+    width: 30%;
+    margin: 2%;
+}
+
+.cardBox {
+    display: flex;
+    justify-content: center;
+}
