@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Charcards from './Characters/Charcards';
+import Reactstrap from "reactstrap";
 import './App.css';
-import '/Characters/CharCards';
 
 class App extends Component {
   constructor() {
@@ -28,7 +29,19 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharCards />
+        <div className="Container">
+          <div className="itemWrap">
+            {this.state.starwarsChars.map((char, index) => {
+              return (
+                <Charcards
+                  character={char}
+                  key={index}
+                  picture={this.state.profilePicture}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   }
