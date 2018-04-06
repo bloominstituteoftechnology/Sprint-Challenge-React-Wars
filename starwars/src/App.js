@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PostContainer from './components/PostContainer/postcontainer.js';
+import PostContainer from './components/PostContainer/PostContainer.js';
 
 class App extends Component {
   constructor() {
@@ -30,14 +30,16 @@ class App extends Component {
       
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {
+        {this.state.starwarsChars.map(char => 
+          <PostContainer  char={char}/>
+        )}
+        {/* {
          //console.log(this.state.starwarsChars)
-          //     this.state.starwarsChars.map((data) =>{
-          // //     return
-          //   return( <div> {data}</div>)
-          //   })
-          this.state.starwarsChars
-        }
+              this.state.starwarsChars.map((data) =>{
+          //     return
+            return( <PostContainer  chars = {this.state.starwarsChars}/>)
+            })
+        } */}
       </div>
     );
   }
