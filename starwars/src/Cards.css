@@ -1,11 +1,34 @@
 .container {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex; 
+    flex-flow: column wrap;
     align-items: center;
+    border: 1px black solid;
 }
 
 .data {
     border: 1px black solid;
     width: 20%;
-    margin: 10px auto;
+    background: gray;
+    opacity: 0.8;
+}
+
+.data1 {
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.data2 {
+    display: flex;
+    flex-flow: column wrap;
+    border-bottom: 1px solid black;
+}
+
+.data21 { 
+    color: red;
+    border-bottom: 1px solid black;
+}
+
+.data22 { 
+    color: blue;
+    border-bottom: 1px solid black;
 }

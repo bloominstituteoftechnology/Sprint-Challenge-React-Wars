@@ -7,14 +7,24 @@ const Cards = props => {
     return (
         <div className = 'container'> 
             <div className = 'data'>
-                <p> Name: {props.name} </p>
-                <p> Birth Year:{props.birth_year} </p>
-                <p> Gender: {props.gender} </p>
-                <p> Height: {props.height} </p>
-                <p> Weight: {props.mass} </p>
-                <p> Eye Color: {props.eye_color} </p>
-                <p> Hair Color: {props.hair_color} </p>
-                <p> Skin Color: {props.skin_color} </p>
+                <div className = 'data1'>
+                <p> {props.name.toUpperCase()} </p>
+                </div>
+                <div className = 'data2'>
+                    <div className = 'data21'>
+                    <p> BIRTH YEAR: {props.birth_year} </p>
+                    <p> GENDER: {props.gender.toUpperCase()} </p>
+                    </div>
+                    <div className = 'data22'>
+                    <p> HEIGHT: {props.height} </p>
+                    <p> WEIGHT: {props.mass} </p>
+                    </div>
+                </div>
+                <div classname = 'data3'>
+                    <p> EYE COLOR: {props.eye_color.toUpperCase()} </p>
+                    <p> HAIR COLOR: {props.hair_color.toUpperCase()} </p>
+                    <p> SKIN COLOR: {props.skin_color.toUpperCase()} </p>
+                </div>
             </div>
         </div>
     )
