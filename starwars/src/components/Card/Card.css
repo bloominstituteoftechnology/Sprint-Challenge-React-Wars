@@ -3,5 +3,12 @@
 }
 
 .cardContainer {
-    border: 5px solid black;
+    border: 5px solid gray;
+    background: white;
+    width: 30%;
+}
+
+.cardBox {
+    display: flex;
+    justify-content: center;
 }
