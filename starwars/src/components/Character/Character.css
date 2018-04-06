@@ -1,0 +1,62 @@
+.Character {
+  display: grid;
+  grid-template: "name   name"
+                 "birth  gender"
+                 "height mass"
+                 "eye    hair"
+                 "skin   .";
+  width: 400px;
+  background-color: peachpuff;
+  padding: 0 20px 20px;
+  margin-bottom: 30px;
+  grid-gap: 20px 50px;
+}
+
+.Character__entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Character__entry span {
+  font-weight: bold;
+}
+
+#Character__name {
+  grid-area: name;
+  font-weight: bold;
+  font-size: 130%;
+  margin-bottom: 10px;
+  background-color: orange;
+  color: white;
+  padding: 20px 0;
+  margin: 0 -20px 0;
+}
+
+
+#Character__birth-year {
+  grid-area: birth;
+}
+
+#Character__gender {
+  grid-area: gender;
+}
+
+#Character__height {
+  grid-area: height;
+}
+
+#Character__mass {
+  grid-area: mass;
+}
+
+#Character__eye-color {
+  grid-area: eye;
+}
+
+#Character__hair-color {
+  grid-area: hair;
+}
+
+#Character__skin-color {
+  grid-area: skin;
+}
