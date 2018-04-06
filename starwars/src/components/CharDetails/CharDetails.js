@@ -7,7 +7,9 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  Button
+  Button,
+  ListGroup,
+  ListGroupItem
 } from "reactstrap";
 
 const CharDetails = props => {
@@ -23,15 +25,19 @@ const CharDetails = props => {
                 <div>{char.name}</div>
               </CardTitle>
               <CardText>
-                <div>Birth Year: {char.birth_year}</div>
-                <div>Gender: {char.gender}</div>
-                <div>Height: {char.height}</div>
-                <div>Mass: {char.mass}</div>
-                <div>Hair Color: {char.hair_color}</div>
-                <div>Eye Color: {char.eye_color}</div>
-                <div>Skin Color: {char.skin_color}</div>
+                <ListGroup>
+                  <ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
+                  <ListGroupItem color="secondary">Gender: {char.gender}</ListGroupItem>
+                  <ListGroupItem>Height: {char.height}</ListGroupItem>
+                  <ListGroupItem color="secondary">Mass: {char.mass}</ListGroupItem>
+                  <ListGroupItem>Hair Color: {char.hair_color}</ListGroupItem>
+                  <ListGroupItem color="secondary">Eye Color: {char.eye_color}</ListGroupItem>
+                  <ListGroupItem>Skin Color: {char.skin_color}</ListGroupItem>
+                </ListGroup>
               </CardText>
-              <Button>Button</Button>
+              <Button href="http://starwars.wikia.com/wiki/The_Essential_Guide_to_Characters">
+                Learn More
+              </Button>
             </CardBody>
           </Card>
         </div>
