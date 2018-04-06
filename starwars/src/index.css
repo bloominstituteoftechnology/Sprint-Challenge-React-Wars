@@ -4,4 +4,6 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  z-index: -1; 
+  opacity: 0.6;
 }
