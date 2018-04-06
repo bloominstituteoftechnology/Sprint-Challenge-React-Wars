@@ -1,6 +1,7 @@
 import React from 'react';
 import './CharsList.css';
 import { Card, CardTitle, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 //CharacterList and ListGroup
 
@@ -31,5 +32,12 @@ const CharsList = props => {
     </div>
     );
 };
+
+//PropTypes
+//CharsList.propTypes = {
+//     charsProp: PropTypes.arrayOf(PropTypes.shape({
+//         height: number,
+//     }))
+// };
 
 export default CharsList
