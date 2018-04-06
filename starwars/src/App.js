@@ -34,7 +34,7 @@ class App extends Component {
             {this.state.starwarsChars.map((char, i) => (
               <CharacterList
                 key={`${char.name}'s info`}
-                characters={char}
+                characters={char} sm="12"
                 md="6"
               />
             ))}
