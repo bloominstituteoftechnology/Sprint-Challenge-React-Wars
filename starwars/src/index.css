@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  position: sticky;
-  /* background-size: cover; */
+  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

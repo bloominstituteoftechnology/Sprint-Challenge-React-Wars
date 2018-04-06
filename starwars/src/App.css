@@ -1,19 +1,35 @@
 .App {
   text-align: center;
+  /* background-color: rgb(98, 98, 98); */
 }
 .Header {
-  color: #4e4949;
-  text-shadow: 1px 1px 5px rgb(255, 255, 255);
-  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgb(10, 10, 10);
+  margin-bottom: 50px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
 }
+
 .header-logo {
   width: 40%;
+}
+.headstar {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .starcards {
   width: 700px;
   margin: auto;
   background-color: black;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 25px 10px #00ff0dc2;
+  border: 0px;
 }
 
 .cardinner {
@@ -22,29 +38,33 @@
   flex-flow: column;
   align-items: center;
   background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+  /* background-color: rgb(252, 252, 252); */
   margin: auto;
   padding: 0px;
   width: 100%;
+  margin-top: px;
 }
 .greensaber {
-  margin-top:-25px;
-  margin-bottom: -15px;
-  width: 680px;
+  margin-top:-39px;
+  margin-bottom: 10px;
+  width: 870px;
   height: 50px;
 }
 
 .redsaber {
-  width: 850px;
+  width: 880px;
   height: 50px;
-  margin-top: -25px;
+  margin-top: -15px;
 }
 
 .char-name {
+  margin-top: -10px;
+  font-weight: bolder;
   font-size: 45px;
-  color: rgb(0, 0, 0);
+  color: rgba(251, 255, 0, 0);
   -webkit-text-fill-color: rgb(0, 0, 0); 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(247, 222, 2);
   font-family: fantasy;
 }
 .table {
@@ -52,15 +72,16 @@
   margin: auto;
 }
 .cardbottom {
-  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+  /* background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg"); */
+  background-color: rgba(71, 61, 61, 0.986);
 }
 
 .toprow {
   font-size: 25px;
   color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(0, 0, 0); 
+  -webkit-text-fill-color: rgb(245, 222, 21); 
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-color: rgb(3, 3, 3);
   font-family: fantasy;
 }
 
@@ -71,35 +92,46 @@
 
 .buttonone {
   margin: 10px;
-
 }
-.button-one {
 
+.buttontwo {
+  margin-top: -18px;
+}
+
+.button-one {
   width: 80px;
   height: 80px;
+  margin-bottom: 5px;
 }
 
 .button-two {
-  margin-left: 0px;
-  width: 80px;
-  height: 80px;
+  margin-bottom: 5px;
+  width: 70px;
+  height: 70px;
+  margin-top: 27px;
 }
 
 .button-text-one {
   font-size: 21px;
   color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(5, 146, 1); 
+  -webkit-text-fill-color: rgb(255, 255, 255); 
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-color: rgb(39, 39, 39);;
   font-family: fantasy;
+  border-radius: 8px;
+  border-top: 2px solid rgb(0, 250, 0);
+  border-bottom: 2px solid rgb(44, 253, 8);
 }
 
 .button-text-two {
   font-size: 21px;
   color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(180, 0, 30); 
+  -webkit-text-fill-color: rgb(255, 255, 255); 
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-color: rgb(0, 0, 0);;
   font-family: fantasy;
+  border-radius: 8px;
+  border-top: 2px solid rgb(245, 59, 59);
+  border-bottom: 2px solid rgb(255, 47, 47);
 }
 /* write your parent styles in here for your App.js */
