@@ -1,0 +1,9 @@
+.Card--container {
+  max-width: 600px;
+  display: grid;
+
+  grid-template-areas:
+    '. . name . . '
+    'films films . birth height'
+    'films films . gender species';
+}
