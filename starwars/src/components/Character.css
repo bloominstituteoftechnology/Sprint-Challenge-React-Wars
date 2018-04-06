@@ -1,5 +1,4 @@
 .cardContainer {
-	border: 1px solid blue;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -7,6 +6,16 @@
 }
 
 .card {
+	color: white;
 	width: 70%;
 	margin: 20px 0;
+	background-color: #778899;
+}
+
+.Navtabs {
+	background-color: #778899;
+}
+
+.listData {
+	color: black;
 }

@@ -1,9 +1,8 @@
 .App {
-  border: 1px solid red;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .Header {
   color: #443e3e;
@@ -12,8 +11,11 @@
 /* write your parent styles in here for your App.js */
 .jumbotron {
 	color: white;
+	text-align: center;
 	background-image: url('./sw-bg.jpg');
 	background-size: cover;
-	height: 600px;
+    background-repeat: no-repeat;
+	height: 700px;
 	margin-top: 20px;
+	margin-bottom: 0;
 }

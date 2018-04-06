@@ -35,7 +35,7 @@ class Character extends React.Component {
 							<h2>{char.name}</h2>
 
 							<div>
-					      <Nav tabs>
+					      <Nav tabs className="Navtabs">
 				          <NavItem>
 				            <NavLink
 				              className={classnames({ active: this.state.activeTab === '1' })}
@@ -57,7 +57,7 @@ class Character extends React.Component {
 
 				      <TabContent activeTab={this.state.activeTab}>
 				      	<TabPane tabId="1">
-									<ListGroup>
+									<ListGroup className="listData">
 										<ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
 										<ListGroupItem>Created: {char.created}</ListGroupItem>
 										<ListGroupItem>Edited: {char.edited}</ListGroupItem>
@@ -65,7 +65,7 @@ class Character extends React.Component {
 								</TabPane>
 					
 				      	<TabPane tabId="2">
-									<ListGroup>
+									<ListGroup className="listData">
 										<ListGroupItem>Eye Color: {char.eye_color}</ListGroupItem>
 										<ListGroupItem>Gender: {char.gender}</ListGroupItem>
 										<ListGroupItem>Hair-Color: {char.hair_color}</ListGroupItem>
