@@ -21,5 +21,9 @@ The React Component Life-cycle is a collection of methods that aide in the forma
 
 3. Briefly describe some of the differences between a `Class/Stateful component` and a `Functional/Presentational component`
 
+The difference between these two components is that Functional component just returns simple JSX and then it is rendered out to the browser. The Class component is used to tap into the Component Lifecycle methods, it'd allow for setting up data objects and allows for greater dynamic functionality in the UI.
+
 
 4. Briefly describe PropTypes and what we use them for when building react applications.
+
+PropTypes is a tool for developers to catch bugs in the code based on assuring that data being passed around is an expected type. This will help assure that props being passed to a child component remains as the intended type. 
