@@ -11,3 +11,4 @@
 //     </div>
 // }
 // export default Flo;
+//All this did in the end was link to the url :(
