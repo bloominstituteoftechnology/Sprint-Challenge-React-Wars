@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './Card.js'
 
 class App extends Component {
   constructor() {
@@ -22,11 +23,13 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+      console.log(this.state);
   }
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Star Wars Character Bios</h1>
+        <Card {...this.state}/>
       </div>
     );
   }
