@@ -1,5 +1,4 @@
 import React from 'react';
-import Char from '../Char/Char';
 import Species from '../Species/Species';
 import Starships from '../Starships/Starships';
 import Vehicles from '../Vehicles/Vehicles';
@@ -21,7 +20,7 @@ const CharSelector = props => {
                     <Vehicles vehicles={char.vehicles}/>
                     <Films films={char.films} />
                     <a href={char.url}>Website</a>
-                    <p>HomePlanet: <img src={char.homeworld}/></p>
+                    <p>HomePlanet: <img src={char.homeworld} alt='home planet'/></p>
 
                     {/* <Char /> */}
                 </div>

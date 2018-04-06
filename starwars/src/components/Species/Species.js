@@ -4,9 +4,9 @@ const Species = props => {
     return (
         <div>
             Species
-            {props.species.map(specie => (
-                <div>
-                    <img src={specie} />
+            {props.species.map((specie, index) => (
+                <div key={specie + index}>
+                    <img src={specie} alt='species'/>
                 </div>
             ))}
         </div>

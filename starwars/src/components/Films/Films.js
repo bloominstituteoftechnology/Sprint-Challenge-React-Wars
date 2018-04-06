@@ -4,9 +4,9 @@ const Films = props => {
     return (
         <div>
             {props.films.length > 0 ? 'Films:'  : 'No Films'}
-            {props.films.map(film => (
-                <div>
-                    <img src={film}/>
+            {props.films.map((film, index) => (
+                <div key={film + index}>
+                    <img src={film} alt='Film'/>
                 </div>
             ))}
         </div>

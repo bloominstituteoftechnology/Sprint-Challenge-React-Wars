@@ -4,9 +4,9 @@ const Starships = props => {
     return (
         <div>
             {props.starships.length > 0 ? 'starships:'  : 'No starships'}
-            {props.starships.map(starship => (
-                <div>
-                    <img src={starship}/>
+            {props.starships.map((starship, index) => (
+                <div key={starship + index}>
+                    <img src={starship} alt='starship'/>
                 </div>
             ))}
         </div>
