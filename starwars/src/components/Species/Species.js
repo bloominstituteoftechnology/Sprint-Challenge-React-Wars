@@ -1,7 +1,7 @@
 import React from 'react';
 import './Species.css'
 
-class Species extends Component {
+class Species extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

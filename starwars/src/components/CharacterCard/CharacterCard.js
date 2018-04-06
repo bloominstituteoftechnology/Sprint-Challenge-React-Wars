@@ -3,7 +3,7 @@ import Species from '../Species/Species';
 import { Button } from 'reactstrap';
 
 
-class CharacterCard extends React.component {
+class CharacterCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
