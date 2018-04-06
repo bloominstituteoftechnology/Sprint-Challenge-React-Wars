@@ -1,7 +1,10 @@
-body {
+html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  background-image: url('./starwars-wallpaper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  height: 100%;
 }
