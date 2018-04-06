@@ -1,0 +1,31 @@
+.CardContainer {
+    display: flex;
+    width: 50%;
+    margin-bottom: 20px;
+    background-image: url(https://ak2.picdn.net/shutterstock/videos/1775912/thumb/1.jpg);
+    border: 3px dashed#b600ce;
+}
+
+.name {
+    color: white;
+    font-family: Audiowide;
+    font-size: 30px;
+}
+
+p {
+    color: yellow;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.Links--link {
+    margin: 12px;
+}
+
+Button {
+    margin: 8px;
+}
+
+a {
+    color: blue;
+}
