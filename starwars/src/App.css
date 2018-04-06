@@ -7,6 +7,12 @@
 }
 /* write your parent styles in here for your App.js */
 
-.names {
-  font-style: bold;
+.card__container {
+  
+  border: 2px dashed orange;
+  align-content: center;
+}
+
+.card__container-names {
+  font-style: italic;
 }

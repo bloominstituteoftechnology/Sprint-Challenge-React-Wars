@@ -4,13 +4,14 @@ import './App.css';
 const List = props => {
   console.log("props", props.data)
   return( <div>{props.data.map((u, index) =>
-  <div><h1 key={u + index}>{u.name}</h1>
+  <div className='card__container'><h1 key={u + index} className='card__container-names'>{u.name}</h1>
   
   <ul>  
     <li>Born {u.birth_year}</li>
     <li>Eyes {u.eye_color}</li>
     <li>Gender {u.gender}</li>
     <li>Skin Tone {u.skin_color}</li>
+    <li>HomeWorld {u.homeworld}</li>
   </ul>
   </div>
   )}</div> )
