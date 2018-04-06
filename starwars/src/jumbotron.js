@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
 
-const jumbotron = () =>{
+const Tron = () =>{
 
   return (<Jumbotron>
        <h1 className="display-3">Hello, world!</h1>
@@ -13,4 +13,4 @@ const jumbotron = () =>{
        </p>
      </Jumbotron>);
    }
-export default jumbotron;
+export default Tron;
