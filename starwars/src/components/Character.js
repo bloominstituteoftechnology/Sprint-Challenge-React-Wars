@@ -16,7 +16,9 @@ const Character = (props) => {
 						<h2>{char.name}</h2>
 						<CardTitle>Quick Facts</CardTitle>
 						<ListGroup>
-							<ListGroupItem>Cras justo odio</ListGroupItem>
+							<ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
+							<ListGroupItem>Created: {char.created}</ListGroupItem>
+							<ListGroupItem>Edited: {char.edited}</ListGroupItem>
 
 
 						</ListGroup>
