@@ -2,6 +2,8 @@ import React from 'react';
 import './Character.css';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { ListGroup, ListGroupItem } from 'reactstrap';
+
 
 const Character = (props) => {
 	// receives star wars api data from Apps
@@ -11,10 +13,13 @@ const Character = (props) => {
 			{props.chars.map((char, index) => 
 				<Card>
 					<CardBody>
-						<CardTitle>{char.name}</CardTitle>
-						<CardTitle>{char.birth_year}</CardTitle>
-						<CardTitle>{char.created}</CardTitle>
-						<CardTitle>{char.homeworld}</CardTitle>
+						<h2>{char.name}</h2>
+						<CardTitle>Quick Facts</CardTitle>
+						<ListGroup>
+							<ListGroupItem>Cras justo odio</ListGroupItem>
+
+
+						</ListGroup>
 					</CardBody>
 				</Card>
 			)}

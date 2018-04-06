@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Button } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import Character from './components/Character';
 
 class App extends Component {
@@ -30,7 +31,6 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div><Button color="danger">Danger!</Button></div>
         <Character chars={this.state.starwarsChars} />
       </div>
     );

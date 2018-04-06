@@ -1,9 +1,11 @@
 .cardContainer {
+	border: 1px solid blue;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+
 }
 
 .card {
-	width: 500px;
+	width: 50%;
 }
