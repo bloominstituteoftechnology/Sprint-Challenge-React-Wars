@@ -1,3 +1,7 @@
+@import './App.css';
+@import './Component/Characters.css';
+
+
 body {
   margin: 0;
   padding: 0;

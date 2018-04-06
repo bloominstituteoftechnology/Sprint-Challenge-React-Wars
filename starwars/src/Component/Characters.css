@@ -1,0 +1,19 @@
+.container{
+    width: 50%;
+}
+.card {
+    border: 2px solid rgba(248,249,250,0.5);
+    background-color: rgba(51, 102, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.card-title {
+    color: greenyellow;
+}
+
+.card-subtitle {
+    text-align: left;
+    padding: 10px;
+    color:white;
+    font-weight:bold;
+}
