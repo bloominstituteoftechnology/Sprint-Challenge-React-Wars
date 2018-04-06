@@ -1,18 +1,25 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Display from "./components/Display/Display";
+import Reactstrap from "reactstrap";
+import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      profilePicture: ""
     };
   }
   componentDidMount() {
+    let image = {
+      default:
+        "http://semperavanti.org/pl/wp-content/uploads/2014/01/empty-avatar.png"
+    };
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
-    fetch('https://swapi.co/api/people')
+    fetch("https://swapi.co/api/people")
       .then(res => {
         return res.json();
       })
@@ -22,11 +29,26 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+    this.setState({ profilePicture: image });
   }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="Container">
+          <ul className="itemWrap">
+            {this.state.starwarsChars.map((char, index) => {
+              return (
+                <Display
+                  character={char}
+                  key={index}
+                  picture={this.state.profilePicture}
+                />
+              );
+            })}
+          </ul>
+        </div>
       </div>
     );
   }
