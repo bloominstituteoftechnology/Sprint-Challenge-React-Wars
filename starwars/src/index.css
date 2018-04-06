@@ -5,3 +5,13 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.stats {
+  display: flex;
+  text-align: center;
+
+}
+
+/* .People-Wrapper {
+width: 75%;
+} */
