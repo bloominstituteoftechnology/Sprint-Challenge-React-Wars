@@ -3,9 +3,11 @@ import { render } from 'react-dom';
 import './App.css';
 import PeopleList from './peoplelist.js'
 import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
-import  Tron  from './jumbotron.js'
+import Tron  from './jumbotron.js'
 
-
+const styles = {
+  backgroundColor: ' white',
+}
 class App extends Component {
   constructor() {
     super();
@@ -29,7 +31,7 @@ class App extends Component {
   }
   render() {
     return (
-      <Container className="App">
+      <Container className="App" style={styles}>
 
         <h1 className="Header">React Wars</h1>
         <Tron />
