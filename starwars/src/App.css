@@ -8,6 +8,15 @@
 /* write your parent styles in here for your App.js */
 
 .char-container {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  font-size: .85rem;
+  margin: 2em auto;
+  border: 1.5px solid grey;
+  display: flex;
+  flex-flow: column wrap-reverse;
+}
+
+.char-name {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

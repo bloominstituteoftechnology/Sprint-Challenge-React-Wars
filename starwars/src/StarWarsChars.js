@@ -5,7 +5,7 @@ const StarWarsChars = props => {
     return (
         <Card key={props.char.name}>
             <CardBody>
-                <CardTitle>{props.char.name}</CardTitle>
+                <CardTitle className="char-name">{props.char.name}</CardTitle>
                 <CardText>Birthdate: {props.char.birth_year}</CardText>
                 <CardText>Height: {props.char.height}</CardText>
                 <CardText>Mass: {props.char.mass}</CardText>
