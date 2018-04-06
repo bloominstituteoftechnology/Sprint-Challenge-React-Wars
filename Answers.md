@@ -1,9 +1,17 @@
 # Answers
 
 1. What is React JS? How does it differ from other JavaScript frameworks?
-
+React JS works by a javascript library, and it differs from other javascript frameworks because it tries to be as efficient as possible by keeping memory of a state, and when the state changes, only the affected components are rendered, not all components will render like it would with other javascript frameworks. Both controlled and uncontrolled components can have a state, and components that only render JSX don't need to have a state. For example, a component that has an <input> will need to have a state and it will need to setState onChange, which will call a method (on that component) that call the component (other component) that has the method to make the final change method (which will setState of the component that controls all other component). Initially, the main component (which control other components) has a state that's initialized (either fixed data, or through an api, even empty value), and based on that initialized state, it can pass that state as props to other components. The other controlled components will receive those props, and use it to keep their own state. So, the main component, such as App, will have many other components that do many different things, but the initial value for all the different components (if the components have a state, somthing to track for change) will usually be through App. It's also possible for a component that's not the main component (App) to pass props to another component, so a different component passes its props to another component. Anyway, React works with state (attached to that component) and props (passed from another component), and components which state changes will cause all the components affected to render.
 
 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+There is a mounting, updating, and unmounting lifecycle. 
+componentWillMount is not very useful, as it doesn't display anything to the DOM, as nothing has been mounted, nothing can be manipulated.
+componentDidMount is very useful as the state can be set here, and it's very useful to setState here, as the user wouldn't notice a difference from setting state here from the defaul state. It's very useful when using apis, where the initial state is empty, and it's populated by the api in componentDidMount.
+componentWillReceiveProps this is not useful the first time it renders, but it's a bit useful after the first render, as the component will be able to receive nextprops, if you're comparing current props to the next props.
 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+A Class/Stateful component has logic included, while a presentational component only renders JSX. Because a presentational component doesn't need state, it's much better to only use a function syntax component, as opposed to a class. A stateful component needs to keep track of changes, and will often include some logic to get the result, while a presentational component only renders JSX, which is essentially what displays on the screen (nothing intensive).
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+PropTypes are created by the developer, and it's useful only to developers to keep track props. If the developer looses track of props and passes the wrong props, then the console.log will let the developer know that something went wrong.
