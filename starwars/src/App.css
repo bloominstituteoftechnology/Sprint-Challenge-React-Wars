@@ -1,8 +1,39 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
 }
+
+.element---wrapper {
+  width: 50%;
+  margin: 20px;
+}
+
 /* write your parent styles in here for your App.js */
+.jumbotron {
+  color: white;
+  margin: 10px 100px 100px;
+  background-image: url('./reactwarsheader.png');
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.user-details {
+  background-color: purple;
+  /* text-align: center; */
+  border: 10px black solid;
+  border-radius: 10px;
+}
+
+.user-details ul li {
+  /* text-align: center; */
+  align-content: center;
+}
+
+/* .p {
+  text-align: center;
+} */
