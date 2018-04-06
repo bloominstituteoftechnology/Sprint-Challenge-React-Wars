@@ -1,24 +1,30 @@
 import React from 'react';
 import './CharsList.css';
+import { Card, CardTitle, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
 
 const CharsList = props => {
     return (
-    <div>{props.starwarsChars.map(character => (
-        <div key={character.mass}>
-            <div><h3>{`${character.name}`}</h3></div>
-            <ul>{`Height: ${character.height}`}</ul>
-            <ul>{`Mass: ${character.mass}`}</ul>
-            <ul>{`Hair_Color: ${character.hair_color}`}</ul>
-            <ul>{`Skin_Color: ${character.skin_color}`}</ul>
-            <ul>{`Eye_Color: ${character.eye_color}`}</ul>
-            <ul>{`Birth_Year: ${character.birth_year}`}</ul>
-            <ul>{`Gender: ${character.gender}`}</ul>
-            <ul>{`Homeworld: ${character.homeworld}`}</ul>
-            <ul>{`Species: ${character.species}`}</ul>
-            <ul>{`Created: ${character.created}`}</ul>
-            <ul>{`Edited: ${character.edited}`}</ul>
-            <ul>{`URL: ${character.url}`}</ul>
-            </div>
+    <div className="Char-Wrap">
+        {props.starwarsChars.map(character => (
+           <Card className="cardBox"> 
+            <CardBody className="cardBack" key={character.mass}>
+                <CardTitle>{`${character.name}`}</CardTitle>
+                    <ListGroup> 
+                    <ListGroupItem>{`Height: ${character.height}`}</ListGroupItem>
+                    <ListGroupItem>{`Mass: ${character.mass}`}</ListGroupItem>
+                    <ListGroupItem>{`Hair_Color: ${character.hair_color}`}</ListGroupItem>
+                    <ListGroupItem>{`Skin_Color: ${character.skin_color}`}</ListGroupItem>
+                    <ListGroupItem>{`Eye_Color: ${character.eye_color}`}</ListGroupItem>
+                    <ListGroupItem>{`Birth_Year: ${character.birth_year}`}</ListGroupItem>
+                    <ListGroupItem>{`Gender: ${character.gender}`}</ListGroupItem>
+                    <ListGroupItem>{`Homeworld: ${character.homeworld}`}</ListGroupItem>
+                    <ListGroupItem>{`Species: ${character.species}`}</ListGroupItem>
+                    <ListGroupItem>{`Created: ${character.created}`}</ListGroupItem>
+                    <ListGroupItem>{`Edited: ${character.edited}`}</ListGroupItem>
+                    <ListGroupItem>{`URL: ${character.url}`}</ListGroupItem>
+                    </ListGroup>
+            </CardBody>
+          </Card>  
     ))}
     </div>
     );
