@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Row, Col, Card, CardHeader, CardFooter, CardTitle, CardSubtitle, CardBody, CardText } from 'reactstrap';
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,24 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Row>
+          {this.state.starwarsChars.map((character, index) =>
+            <Col key={index}>
+              <Card>
+                <CardHeader>{character.name}</CardHeader>
+                <CardBody className="text-left">
+                  <CardText>Born: {character.birth_year}</CardText>
+                  <CardText>Gender: {character.gender}</CardText>
+                  <CardText>Height: {character.height}</CardText>
+                  <CardText>Mass: {character.mass}</CardText>
+                  <CardText>Hair color: {character.hair_color}</CardText>
+                  <CardText>Eye color: {character.eye_color}</CardText>
+                  <CardText>Skin color: {character.skin_color}</CardText>
+                </CardBody>
+              </Card>
+            </Col>
+          )};
+        </Row>
       </div>
     );
   }
