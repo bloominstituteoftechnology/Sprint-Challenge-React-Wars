@@ -30,6 +30,10 @@ class App extends Component {
     // console.log(this.state.starwarsChars);
     return (
       <div className="App">
+        <Jumbotron className="jumbotron">
+          <h1 className="display-3">React Wars</h1>
+        </Jumbotron>
+
         <Character chars={this.state.starwarsChars} />
       </div>
     );
