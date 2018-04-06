@@ -1,103 +1,33 @@
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
-import classnames from 'classnames';
+import Char from '../Char/Char';
+import Species from '../Species/Species';
+import Starships from '../Starships/Starships';
+import Vehicles from '../Vehicles/Vehicles';
+import Films from '../Films/Films';
 
-class CharSelector extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dropdownOpen: false,
-    };
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-    }
-  }
-  render() {
+const CharSelector = props => {
     return (
-      <div>
-        <Nav tabs>
-            {this.props.swChars.map((char, index) => (
-                <div key={char.created + index}>     
-                <NavItem>
-                    <NavLink
-                    className={classnames({ active: this.state.activeTab === `${index}` })}
-                    onClick={() => { this.toggle(`${index}`); }}
-                    >
-                        {char.name}
-                    </NavLink>
-                </NavItem>
+        <div>
+            {props.swChars.map((char, index) => (
+                <div key={char.created + index}>
+                    <h2>{char.name}</h2>
+                    <h4>{`Born: ${char.birth_year}`}</h4>
+                    <h5>{`Gender: ${char.gender}`}</h5>
+                    <h5>{`height: ${char.height}, mass: ${char.mass} `}</h5>
+                    <h5>Skin Color: {char.skin_color}</h5>
+                    <h5>Eye Color: {char.eye_color}</h5>
+                    <Species species={char.species}/>
+                    <Starships starships={char.starships}/>
+                    <Vehicles vehicles={char.vehicles}/>
+                    <Films films={char.films} />
+                    <a href={char.url}>Website</a>
+                    <p>HomePlanet: <img src={char.homeworld}/></p>
+
+                    {/* <Char /> */}
                 </div>
             ))}
-        </Nav>
-        <TabContent activeTab={this.state.activeTab}>
-
-            {this.props.swChars.map((char, index) => (
-                <div className="tab-pane">
-                <TabPane tabId={index}>                        
-                    <Row>
-                        <Col sm="12">
-                            <h4>Hello from {char.name} </h4>
-                            <img src={char.homeworld} />
-                        </Col>
-                    </Row>
-                </TabPane>
-                </div>
-            ))}
-
-          <TabPane tabId="1">
-            <Row>
-              <Col sm="12">
-                <h4>Tab 1 Contents</h4>
-              </Col>
-            </Row>
-          </TabPane>
-          <TabPane tabId="4">
-            <Row>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
-                </Card>
-              </Col>
-              <Col sm="6">
-                <Card body>
-                  <CardTitle>Special Title Treatment</CardTitle>
-                  <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                  <Button>Go somewhere</Button>
-                </Card>
-              </Col>
-            </Row>
-          </TabPane>
-        </TabContent>
-      </div>
+        </div>
     );
-  }
-
-//   render() {
-//     return (
-//       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-//         <DropdownToggle caret>
-//           Pick Character
-//         </DropdownToggle>
-//         <DropdownMenu>
-//             <DropdownItem header> Character List</DropdownItem>
-//                 {this.props.swChars.map((char, index) => (
-//                     <div key={char.created + index}>
-//                         <DropdownItem divider />
-//                         <DropdownItem>{char.name}</DropdownItem>
-//                     </div>
-//                 ))}
-          
-//         </DropdownMenu>
-//       </Dropdown>
-//     );
-//   }
-}
+};
 
 export default CharSelector;
