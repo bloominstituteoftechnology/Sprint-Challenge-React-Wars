@@ -300,7 +300,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.characterData.map(char => <CharacterData char={char} />)}
+        {this.state.characterData.map(char => (
+        <CharacterData key={char.name} char={char} />
+        ))}
       </div>
     );
   }
