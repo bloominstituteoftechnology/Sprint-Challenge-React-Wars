@@ -6,7 +6,7 @@ const SWCard = props => {
     return (
         <div className="col-4 boxes"> 
             <Card color="">
-                <CardHeader><h2>{props.person.name}</h2></CardHeader>
+                <CardHeader><h2 className="SWPerson">{props.person.name}</h2></CardHeader>
                 <CardBody>
                     <CardTitle>StarWars Data</CardTitle>
                     <CardText><h6>DOB:</h6> {props.person.birth_year}</CardText>

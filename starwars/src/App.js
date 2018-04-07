@@ -29,7 +29,7 @@ class App extends Component {
       <div className="container">
         <div className="App">
           <div className="headDiv"><h1 className="Header">React Wars by K-Fly</h1></div>
-          <div className="subDiv"><h3>"Do, Or Do Not. There is no try." - Master Yoda</h3></div>
+          <div className="subDiv"><p>"Do, Or Do Not. There is no try." - Master Yoda</p></div>
           <div className="displayApp"> <SWPeopleList people={this.state.starwarsChars} /></div>
         </div>
       </div>

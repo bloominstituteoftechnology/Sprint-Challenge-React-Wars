@@ -7,7 +7,9 @@
   text-shadow: 3px 3px 6px #00BFFF;
   padding: 35px;
   font-size: 56px;
+  font-family: 'Rubik Mono One', sans-serif;
   font-weight: bold;
+  /* font-family: 'Faster One', cursive; */
 }
 /* write your parent styles in here for your App.js */
 
@@ -18,4 +20,6 @@
 .subDiv {
   text-shadow: 1px 1px 5px #7CFC00;
   font-style: italic;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 55px;
 }
