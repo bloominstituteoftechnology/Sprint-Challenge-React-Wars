@@ -1,0 +1,5 @@
+.peepCont {
+    display: flex;
+    flex-direction: row;
+    border: thin solid black;
+}
