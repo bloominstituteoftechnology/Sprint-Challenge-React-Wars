@@ -6,8 +6,8 @@ class Character extends React.Component {
     return (
         <div className='container'>
            <h1>{this.props.info.name}</h1>
-           <p>{this.props.info.mass}</p>
-           <p>{this.props.info.height}</p>
+           <p className='mass'>{this.props.info.name}'s mass is: {this.props.info.mass}</p>
+           <p className='height'>{this.props.info.name}'s height is: {this.props.info.height}</p>
         </div>
     )};
 }
