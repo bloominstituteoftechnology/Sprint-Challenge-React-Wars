@@ -8,19 +8,13 @@ class Films extends Component{
       this.state ={
 
       }
-
   }
 render(){
-
-
-
 return (
 <div>  
    {this.props.filmsProps}  
 </div>
-
 )
-
 }
 }
  export default Films;
