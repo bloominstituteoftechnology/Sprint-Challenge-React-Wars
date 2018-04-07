@@ -3,9 +3,10 @@ import React from 'react';
 const Card = props => {
   return (
     <div className="cards_container">
-      {props.state.starwarsChars.map((char, index) => (
+      {props.chars.map((char, index) => (
         <div className="card" key={`${char.name}${index}`}>
-          {props.fetchHomeworldData(char.homeworld, char)}
+          {/********** Fetch call in question **********/}
+          {props.fetchHomeworldData(char.homeworld, char, index)}
           <div className="card_personInfo">
             <div className="personInfo_name">
               <strong>Name:</strong> {char.name}
@@ -26,10 +27,19 @@ const Card = props => {
               <strong>Eye Color:</strong> {char.eye_color}
             </div>
             <div className="personInfo_homeworld">
-              <strong>Homeworld:</strong> 
-              {console.log(this)} 
-              {console.log(char.homeworldJSON)}
-              {console.log(char)}
+              <strong>Homeworld:</strong>
+              {/********** EXPECTED  **********/}
+                {/* {console.log(this)}  */}
+                  {/* Returns Card functional component */}
+                {/* {console.log(props.chars[index])} */}
+                  {/* Returns character object with homeworldJSON property */}
+              {/********** UNEXPECTED  **********/}
+                {/* {console.log(props.chars[index].hasOwnProperty('homeworldJSON'))} */}
+                  {/* Returns false for each character */}
+                {/* {console.log(Object.keys(props.chars[index]))} */}
+                  {/* Returns character object keys without homeworldJSON present-*/}
+                {/* {console.log(char.homeworldJSON)} */}
+                  {/* Returns undefined for each character */}
             </div>
           </div>
           <div className="card_personPic"></div>

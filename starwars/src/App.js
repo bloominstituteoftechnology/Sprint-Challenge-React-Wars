@@ -6,23 +6,29 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
-  fetchHomeworldData(url, char) {
+  /********** Fetch call in question **********/
+  // url = this.state.starwarsCharacters.homeplanet =
+    // https://swapi.co/api/planets/{planet-index}/
+  // char = this.state.starwarsCharacters.{someChatacter}
+  // index = index of char
+  fetchHomeworldData(url, char, index) {
     fetch(url)
       .then(res => {
         return res.json();
       }).then(data => {
+        // Tried to set up a new property in each character object
         char.homeworldJSON = data;
       }).catch(err => {
         throw new Error(err);
       });
   }
+  // Funniest thing is that it shows up in state when checking react dev tools
+  // But I cannot access through standard dot syntax
+  /********************************************/
   componentDidMount() {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch('https://swapi.co/api/people/')
       .then(res => {
         return res.json();
@@ -32,11 +38,12 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card state={this.state} fetchHomeworldData={this.fetchHomeworldData}/>
+        <Card chars={this.state.starwarsChars} fetchHomeworldData={this.fetchHomeworldData}/>
       </div>
     );
   }
