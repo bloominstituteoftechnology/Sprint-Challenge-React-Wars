@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import profilePictures from './profilePictures.js';
-import { MainDisplay } from './MainDisplay/MainDisplay.js';
 import './App.css';
+import CardFactory from "./CardFactory/CardFactory";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: [],
-      charactersWithImg: []
+      starwarsChars: []
     };
   }
 
@@ -28,16 +26,13 @@ class App extends Component {
   }
 
   render() {
-    let copy = {...this.state};
-    const pics = [...profilePictures];
+    const copy = [...this.state.starwarsChars]
     return (
       <div className="App">
-        {/* this.state.starwarsChars returns an array where each element is a character */}
+        {console.log(copy)}
         <h1 className="Header">React Wars</h1>
-        <div className="row container">
-          {copy.starwarsChars.map((character, index) => (
-            <MainDisplay key={index} characterObject={character} img={pics[index]} />
-          ))}
+        <div className="characterContainer">
+          {copy.map((character, index) => (<CardFactory character={character} key={index} />))}
         </div>
       </div>
     );
