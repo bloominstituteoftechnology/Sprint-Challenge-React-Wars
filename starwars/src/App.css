@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .App {
   text-align: center;
   /* background-color: rgb(98, 98, 98); */
 }
 .Header {
   color: #ffffff;
-  text-shadow: 1px 1px 5px rgb(10, 10, 10);
+  text-shadow: 0px 10px 5px rgb(10, 10, 10);
   margin-bottom: 50px;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+  border-radius: 9px;
+  border-top: 15px solid rgb(150, 150, 150);
+  border-bottom: 15px solid rgb(149, 149, 149);
   width: 50%;
   margin: auto;
   margin-top: 10px;
@@ -23,12 +25,12 @@
   margin-right: 60px;
 }
 .starcards {
-  width: 700px;
+  width: 70%;
   margin: auto;
   background-color: black;
   margin-bottom: 60px;
   margin-top: 40px;
-  box-shadow: 5px 5px 25px 10px #00ff0dc2;
+  box-shadow: 1px 1px 35px 10px #00ff0dc2;
   border: 0px;
 }
 
@@ -37,57 +39,57 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  /* background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg"); */
-  background-color: rgb(238, 238, 238);
+  background-image: url("https://blog.digilentinc.com/wp-content/uploads/2015/12/330ef4f39e88d016531b5381a8ab19f5.jpg");
+  background-color: rgba(200, 200, 200, 0.733);
   margin: auto;
   padding: 0px;
   width: 100%;
   margin-top: px;
 }
 .greensaber {
-  margin-top:-39px;
-  margin-bottom: 10px;
-  width: 870px;
+  margin-top: -20px;
+  margin-bottom: -15px;
+  width: 130%;
   height: 50px;
 }
 
 .redsaber {
-  width: 880px;
+  width: 130%;
   height: 50px;
-  margin-top: -15px;
+  margin-top: -40px;
 }
 
 .char-name {
   margin-top: -10px;
-  font-weight: bolder;
-  font-size: 45px;
-  color: rgba(251, 255, 0, 0);
-  -webkit-text-fill-color: rgb(0, 0, 0); 
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(247, 222, 2);
-  font-family: fantasy;
+  font-size: 55px;
+  -webkit-text-fill-color: rgb(255, 201, 24); 
+  text-shadow: 3px 3px 6px rgb(0, 0, 0);
+  font-family: anton;
 }
 .table {
-  width: 100%;
-  margin: auto;
+  margin-top: -20px;
+  margin-left: 0px;
+  border: 1px solid white;  
 }
 .cardbottom {
   background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
   background-color: rgba(83, 70, 70, 0.986);
 }
-
+.info {
+  border-right: 1px solid gray;
+}
 .toprow {
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(245, 222, 21); 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(3, 3, 3);
-  font-family: fantasy;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-text-fill-color: rgb(240, 240, 240); 
 }
 
 .rowtwo {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 27px;
+  color: rgba(255, 196, 0, 0.795);
+  text-shadow: 1px 2px 2px rgb(68, 64, 64);
 }
 
 .buttonone {
@@ -118,15 +120,11 @@
   border-radius: 5px;
 }
 .button-text-one {
-  font-size: 21px;
-  color: rgb(0, 0, 0);
+  font-size: 26px;
   -webkit-text-fill-color: rgb(255, 255, 255); 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(39, 39, 39);;
-  font-family: fantasy;
-  border-radius: 8px;
-  border-top: 2px solid rgb(0, 250, 0);
-  border-bottom: 2px solid rgb(44, 253, 8);
+  border-radius: 6px;
+  border-top: 4px solid rgb(0, 250, 0);
+  border-bottom: 4px solid rgb(44, 253, 8);
 }
 .button-text-one:hover {
   text-shadow: 2px 2px 15px rgb(0, 255, 13);
@@ -134,18 +132,14 @@
   text-decoration-color: snow;
 }
 .button-text-two {
-  font-size: 21px;
-  color: rgb(0, 0, 0);
+  font-size: 26px;
   -webkit-text-fill-color: rgb(255, 255, 255); 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);;
-  font-family: fantasy;
-  border-radius: 8px;
-  border-top: 2px solid rgb(245, 59, 59);
-  border-bottom: 2px solid rgb(255, 47, 47);
+  border-radius: 6px;
+  border-top: 5px solid rgb(245, 59, 59);
+  border-bottom: 5px solid rgb(255, 47, 47);
 }
 .button-text-two:hover {
-  text-shadow: 2px 2px 15px rgb(255, 30, 0);
+  text-shadow: 5px 3px 15px rgb(255, 30, 0);
   text-decoration-line: underline;
   text-decoration-color: rgb(255, 0, 0);
 }

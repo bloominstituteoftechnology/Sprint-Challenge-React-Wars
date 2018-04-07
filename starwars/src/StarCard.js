@@ -18,29 +18,29 @@ import { Button } from 'reactstrap';
           </CardBody>
           
           <CardBody className='cardbottom'>
-          <Table className='table' dark>
+          <Table className='table'>
         <thead>
           <tr className='toprow'>
-            <th>Gender</th>
-            <th>Birth Year</th>
-            <th>Skin Color</th>
-            <th>Height</th>
+            <th className='info'>Gender</th>
+            <th className='info'>Birth Year</th>
+            <th className='info'>Skin Color</th>
+            <th className='info'>Height</th>
             <th>Eye Color</th>
           </tr>
         </thead>
         <tbody>
           <tr className='rowtwo'>
-            <th scope="row">{starChar.gender}</th>
-            <td>{starChar.birth_year}</td>
-            <td>{starChar.skin_color}</td>
-            <td>{starChar.height} cm</td>
+            <td className='info'>{starChar.gender}</td>
+            <td className='info'>{starChar.birth_year}</td>
+            <td className='info'>{starChar.skin_color}</td>
+            <td className='info'>{starChar.height} cm</td>
             <td>{starChar.eye_color}</td>
           </tr>
 
         </tbody>
       </Table> 
       <Button className='buttontwo' color="link"><img className='button-two' src="https://vignette.wikia.nocookie.net/emoticon/images/f/f5/Jar-Jar-Binks-1.png/revision/latest?cb=20150704200134" /><p className='button-text-two'>This Is Not The Droid You Are Looking For</p> </Button>
-      <Button className='buttonone' color="link"><img className='button-one' src="http://files.softicons.com/download/tv-movie-icons/star-wars-characters-icons-by-jonathan-rey/png/256x256/Han%20Solo%20-%2002.png" /><p className='button-text-one'>May The Force Be With You!</p></Button>
+      <Button className='buttonone' color="link"><img className='button-one' src="http://files.softicons.com/download/tv-movie-icons/star-wars-characters-icons-by-jonathan-rey/png/256x256/Han%20Solo%20-%2002.png" /><p className='button-text-one'>May The Force Be With You</p></Button>
           </CardBody>
         </Card>
           ))};
