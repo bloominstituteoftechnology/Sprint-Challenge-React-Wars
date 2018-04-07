@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .App {
+  margin: auto;
   text-align: center;
+  max-width: 1300px;
   /* background-color: rgb(98, 98, 98); */
 }
 .Header {
@@ -25,12 +27,12 @@
   margin-right: 60px;
 }
 .starcards {
-  width: 70%;
+  width: 65%;
   margin: auto;
   background-color: black;
   margin-bottom: 60px;
   margin-top: 40px;
-  box-shadow: 1px 1px 35px 10px #00ff0dc2;
+  box-shadow: 1px 1px 35px 10px #00ffffc2;
   border: 0px;
 }
 
@@ -39,16 +41,16 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-image: url("https://blog.digilentinc.com/wp-content/uploads/2015/12/330ef4f39e88d016531b5381a8ab19f5.jpg");
-  background-color: rgba(200, 200, 200, 0.733);
+  /* background-image: url("https://blog.digilentinc.com/wp-content/uploads/2015/12/330ef4f39e88d016531b5381a8ab19f5.jpg"); */
+  background-color: rgba(126, 126, 126, 0.733);
   margin: auto;
   padding: 0px;
   width: 100%;
   margin-top: px;
 }
 .greensaber {
-  margin-top: -20px;
-  margin-bottom: -15px;
+  margin-top: -35px;
+  margin-bottom: -5px;
   width: 130%;
   height: 50px;
 }
@@ -56,24 +58,24 @@
 .redsaber {
   width: 130%;
   height: 50px;
-  margin-top: -40px;
+  margin-top: -19px;
 }
 
 .char-name {
   margin-top: -10px;
   font-size: 55px;
   -webkit-text-fill-color: rgb(255, 201, 24); 
-  text-shadow: 3px 3px 6px rgb(0, 0, 0);
+  text-shadow: 1px 3px 18px rgb(0, 0, 0);
   font-family: anton;
 }
 .table {
   margin-top: -20px;
   margin-left: 0px;
-  border: 1px solid white;  
+  border: 3px solid rgb(190, 190, 190);  
 }
 .cardbottom {
-  background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
-  background-color: rgba(83, 70, 70, 0.986);
+  /* background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg"); */
+  background-color: rgba(100, 72, 72, 0.986);
 }
 .info {
   border-right: 1px solid gray;
@@ -82,21 +84,24 @@
   text-decoration: underline;
   font-weight: bold;
   font-size: 30px;
-  -webkit-text-fill-color: rgb(240, 240, 240); 
+  -webkit-text-fill-color: rgb(216, 205, 205); 
+  text-shadow: 1px 1px 16px rgb(0, 192, 251);
 }
 
 .rowtwo {
   font-weight: bold;
   font-size: 27px;
-  color: rgba(255, 196, 0, 0.795);
-  text-shadow: 1px 2px 2px rgb(68, 64, 64);
+  color: rgb(250, 212, 0);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
 }
 
 .buttonone {
   margin: 10px;
+  width: 30%;
 }
 
 .buttontwo {
+  width: 30%;
   margin-top: -18px;
 }
 
@@ -121,7 +126,7 @@
 }
 .button-text-one {
   font-size: 26px;
-  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-fill-color: rgb(231, 231, 231); 
   border-radius: 6px;
   border-top: 4px solid rgb(0, 250, 0);
   border-bottom: 4px solid rgb(44, 253, 8);
