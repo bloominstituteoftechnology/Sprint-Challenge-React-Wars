@@ -18,7 +18,7 @@
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state. 
 #### Open up your chrome `React Dev Tools` to peek at the data set on `state` of your `App` component. 
-* You should see something like this:
+* You should see something like this: 
 
 ![Star Wars state data](starwars_data.png)
 
