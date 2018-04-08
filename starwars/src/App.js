@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './App.css';
 import Character from './Character/Character';
-
+import CharacterCard from './CharacterCard/CharacterCard';
 
 class App extends Component {
   constructor() {
@@ -30,10 +30,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <div>
-        <h2>TEXT SHOULD BE HERE</h2></div>
-        {/* <Character /> */}
+        <h1 className="Header">REACT WARS</h1>
+        <div><h2>Characters from Science-Fiction and Super Hero Films</h2></div>
+        <Character />
+        <CharacterCard />
+        
         {/* PASTE LS-NOTES DIVS BELOW */}
         {/* {this.state.movies.map(movie => (
           <CharacterCard key={movie.id} movie={movie} />

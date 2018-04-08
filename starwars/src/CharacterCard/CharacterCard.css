@@ -58,17 +58,3 @@
   padding: 20px;
   color: white;
 }
-
-.TestTextYellow {
-  background-color: rgb(182, 90, 90);
-  /* height: 14px;
-  padding: 20px; */
-  color: yellow;
-}
-
-.TestTextYellowGreen {
-  background-color: rgb(182, 90, 90);
-  /* height: 14px;
-  padding: 2px; */
-  color: yellowgreen;
-}
