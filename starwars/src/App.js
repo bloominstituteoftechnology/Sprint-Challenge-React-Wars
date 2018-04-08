@@ -24,7 +24,7 @@ const List = props => {
   </div>
   <div className='list-box'>
   <ul>  
-    <LinkDisplay />
+    <LinkDisplay planet={u.homeworld[u.homeworld.length - 2]} />
   </ul>
   </div>
   </div>
