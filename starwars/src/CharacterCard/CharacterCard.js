@@ -2,7 +2,9 @@ import React from 'react';
 //  import { Link } from 'react-router-dom';
  
  const characterCard = () => {
-   return <div className="TestTextYellow"><p>CharacterCard Module SEZ: I'm a character!</p> </div> 
+   return <div className="TestTextYellow"><p>CharacterCard Module SEZ: I'm a character!</p> 
+           {/* <div>{this.state.name}</div> */}
+           </div> 
 }
 
  export default characterCard;// <div>

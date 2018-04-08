@@ -29,11 +29,13 @@ class App extends Component {
   
   render() {
     return (
+      
       <div className="App">
         <h1 className="Header">REACT WARS</h1>
         <div><h2>Characters from Science-Fiction and Super Hero Films</h2></div>
         <Character />
         <CharacterCard />
+
         
         {/* PASTE LS-NOTES DIVS BELOW */}
         {/* {this.state.movies.map(movie => (
