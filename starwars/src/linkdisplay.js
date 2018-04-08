@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import './linkdisplay.css';
 
 const Linking = props => {
-    console.log('linking props', props)
+    console.log('linking props', props.data[props.planet - 1])
 return( 
     
 <div><li>Pop Quiz</li>
+<li className='display-none'>{props.planet - 1}</li>
 <li>where is my homeworld?</li>
-{props.data.map((u, index) => <li key={u + index}>{u.name}</li>)}</div> )
+{props.data.map((u, index) => <div><li key={u + index} 
+className='display-default'>{u.name}</li>
+<li className='display-none'>{u.name + index}</li></div>)}</div> )
 }
 
 
@@ -34,7 +38,7 @@ class LinkDisplay extends Component {
       render() {
         return (
           <div className="innerlink">
-            <Linking data={this.state.links} />
+            <Linking data={this.state.links} planet={this.props.planet}/>
             
             
           </div>
