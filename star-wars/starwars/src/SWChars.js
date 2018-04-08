@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardBody } from 'reactstrap';
+import { Card, CardTitle, CardText, CardBody } from 'reactstrap';
 
 
 // const SWChars = props => {
@@ -17,10 +17,16 @@ import { Card, CardTitle, CardBody } from 'reactstrap';
 //       </div >
 //     );
 //     };
-// const SWChars = props => {
-//     console.log("Props", props);
-//     // map over staeWarsChars return a dom elment for each name in list
-//     return <div >{props.starwarsChars.map(p => <div>{p.name}:   {p.species}</div>)}</div>;
-//   };
+const SWChars = props => {
+    //     console.log("Props", props);
+    //     // map over staeWarsChars return a dom elment for each name in list
+    //     return <div >{props.starwarsChars.map(p => <div>{p.name}:   {p.species}</div>)}</div>;
+    return (<Card height='' color='secondary' key={props.char.name}>
+        <CardBody >
+        <CardTitle >{props.char.name}</CardTitle>
+        <CardText>{props.char.birth_year}</CardText>
+        </CardBody>
+        </Card>)
+};
 
-// export default SWChars; 
+export default SWChars; 
