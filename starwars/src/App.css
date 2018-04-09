@@ -22,9 +22,55 @@
   text-align: center;
 }
 .Char-container {
-  width: 50%;
+  display: inline-block;
+  width: 30%;
   margin: 0 auto;
+  text-align: left;
+  background: lightcyan;
+    /* 
+	margin: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0 2px 2px #ccc;
+	width: 150px;
+  padding: 10px 20px 10px 20px;
+  background: lightcyan;
+  color: black;*/
 }
+
+.Card-row {
+  display: inline-flex;
+  justify-content: flex-start;
+	margin: 10px;
+	/* border: 1px solid #eee;
+	box-shadow: 0 2px 2px #ccc; */
+	/* width: 70%; */
+	/* padding: 20px; */
+}
+
+.Card-item {
+  display: inline-block;
+	margin: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0 2px 2px #ccc;
+	width: 150px;
+  padding: 10px 20px 10px 20px;
+  background: lightcyan;
+  color: black;
+}
+.Card-body{
+  background-color: rgba(81, 187, 236, 0.329);
+  height: 150px;
+  width: 175px;
+  margin: 0px 10px 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  font-size: 11pt;
+  color: black;
+  text-align: center;
+}
+
+
+/* EXTRAS */
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;

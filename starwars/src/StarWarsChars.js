@@ -16,6 +16,7 @@ return (
       <CardSubtitle>Demographics</CardSubtitle>
       <CardText>Created: {props.char.created}</CardText>
       <CardText>Birth Year: {props.char.birth_year}</CardText>
+      {/* TRY FETCH to grab values from https://swapi.co/api/planets/1/  store in variables */}
       <CardText>Homeworld: {props.char.homeworld}</CardText>
       <CardText>Starships: {props.char.starships}</CardText>
       <CardText>Vehicles: {props.char.vehicles}</CardText>
