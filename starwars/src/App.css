@@ -6,3 +6,15 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.char-container {
+  width: 60%;
+  font-size: .85rem;
+  margin: 2em auto;
+  border: 1.5px solid grey;
+}
+
+.char-name {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
