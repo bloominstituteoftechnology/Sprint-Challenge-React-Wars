@@ -1,8 +1,10 @@
 /* DEV STYLES */
 .TestTextYellow {
-  background-color: rgb(182, 90, 90);
+  /* background-color: rgb(182, 90, 90); */
   /* height: 14px;
   padding: 20px; */
+  width: 30%;
+  margin: 3 auto;
   color: yellow;
 }
 
@@ -10,12 +12,18 @@
   background-color: rgba(59, 88, 112, 0.76);
   /* height: 14px;
   padding: 2px; */
+  width: 30%;
+  margin: 3 auto;
   color: yellowgreen;
 }
 
 /* RUNTIME STYLES */
 .App {
   text-align: center;
+}
+.Char-container {
+  width: 50%;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;

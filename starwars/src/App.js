@@ -33,12 +33,14 @@ class App extends Component {
     return (
       
       <div className="App">
-        <h1 className="Header">REACT WARS</h1>
+        <h1 className="Header">REACTORS</h1>
         <div><h2>Characters from Science-Fiction and Super Hero Films</h2></div>
+        
+        <div className="Char-container">
+          {this.state.starwarsChars.map(char => <StarWarsChars key={char.name} char={char} />)}
+        </div>
         <Character />
         <CharacterCard />
-        {this.state.starwarsChars.map(char => <StarWarsChars char={char} />)}
-
         
         // {/* PASTE LS-NOTES DIVS BELOW */}
         // {/* {this.state.movies.map(movie => (
