@@ -1,0 +1,37 @@
+.characterContainer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: auto;
+}
+
+.Card {
+  margin: 33px 1%;
+  padding: 0;
+  border: 0;
+}
+
+.Card--hover {
+  opacity: 0.1;
+}
+
+.Card__img {
+  z-index: 0;
+  opacity: 0.3;
+  filter: blur(4px);
+}
+
+.characterName {
+  font-variant-caps: unicase;
+  text-emphasis-color: teal;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+}
+
+.characterBio {
+  color: black;
+  font-weight: 600;
+  font-family: 'Stylish', sans-serif;
+  z-index: 3;
+}

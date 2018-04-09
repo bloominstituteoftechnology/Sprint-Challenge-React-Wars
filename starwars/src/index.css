@@ -1,7 +1,25 @@
+@import './CharacterStats/CharacterStats.css';
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-image: url('http://www.whatsonyourwall.com/abstract-art-5/abstract-yellow-blue-strokes-size-colour-16434-29869_medium.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  display: block;
+}
+
+.background {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:url("./sw-bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: -3;
+  opacity: 0.85;
 }
