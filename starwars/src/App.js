@@ -4,6 +4,8 @@ import './App.css';
 import Character from './Character/Character';
 import CharacterCard from './CharacterCard/CharacterCard';
 
+import StarWarsChars from './StarWarsChars';
+
 class App extends Component {
   constructor() {
     super();
@@ -35,13 +37,14 @@ class App extends Component {
         <div><h2>Characters from Science-Fiction and Super Hero Films</h2></div>
         <Character />
         <CharacterCard />
+        {this.state.starwarsChars.map(char => <StarWarsChars char={char} />)}
 
         
-        {/* PASTE LS-NOTES DIVS BELOW */}
-        {/* {this.state.movies.map(movie => (
-          <CharacterCard key={movie.id} movie={movie} />
-        ))} */}
-        {/* END OF LS-NOTES DIVS */}
+        // {/* PASTE LS-NOTES DIVS BELOW */}
+        // {/* {this.state.movies.map(movie => (
+        //   <CharacterCard key={movie.id} movie={movie} />
+        // ))} */}
+        // {/* END OF LS-NOTES DIVS */}
       </div>
     // return React.createElement('div', null, {className: App} 
     );

@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-router-dom": "^4.2.2"
+    "bootstrap": "^4.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-strap": "0.0.1"
   }
 }
