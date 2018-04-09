@@ -1,8 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .App {
+  margin: auto;
   text-align: center;
+  max-width: 1300px;
+  /* background-color: rgb(98, 98, 98); */
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #ffffff;
+  text-shadow: 0px 10px 5px rgb(10, 10, 10);
+  margin-bottom: 50px;
+  border-radius: 9px;
+  border-top: 15px solid rgb(150, 150, 150);
+  border-bottom: 15px solid rgb(149, 149, 149);
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.header-logo {
+  width: 40%;
+}
+.headstar {
+  width: 100px;
+  height: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.starcards {
+  width: 65%;
+  margin: auto;
+  background-color: black;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 35px 10px #00ffffc2;
+  border: 0px;
+}
+
+.cardinner {
+  height: 110px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* background-image: url("https://blog.digilentinc.com/wp-content/uploads/2015/12/330ef4f39e88d016531b5381a8ab19f5.jpg"); */
+  background-color: rgba(126, 126, 126, 0.733);
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  margin-top: px;
+}
+.greensaber {
+  margin-top: -35px;
+  margin-bottom: -5px;
+  width: 130%;
+  height: 50px;
+}
+
+.redsaber {
+  width: 130%;
+  height: 50px;
+  margin-top: -19px;
+}
+
+.char-name {
+  margin-top: -10px;
+  font-size: 55px;
+  -webkit-text-fill-color: rgb(255, 201, 24); 
+  text-shadow: 1px 3px 18px rgb(0, 0, 0);
+  font-family: anton;
+}
+.table {
+  margin-top: -20px;
+  margin-left: 0px;
+  border: 3px solid rgb(190, 190, 190);  
+}
+.cardbottom {
+  /* background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg"); */
+  background-color: rgba(100, 72, 72, 0.986);
+}
+.info {
+  border-right: 1px solid gray;
+}
+.toprow {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-text-fill-color: rgb(216, 205, 205); 
+  text-shadow: 1px 1px 16px rgb(0, 192, 251);
+}
+
+.rowtwo {
+  font-weight: bold;
+  font-size: 27px;
+  color: rgb(250, 212, 0);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.buttonone {
+  margin: 10px;
+  width: 30%;
+}
+
+.buttontwo {
+  width: 30%;
+  margin-top: -18px;
+}
+
+.button-one {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+.button-one:hover {
+  box-shadow: 2px 2px 15px rgb(0, 255, 13);
+  border-radius: 50px;
+}
+.button-two {
+  margin-bottom: 5px;
+  width: 70px;
+  height: 70px;
+  margin-top: 27px;
+}
+.button-two:hover {
+  box-shadow: 2px 2px 15px rgb(255, 0, 0);
+  border-radius: 5px;
+}
+.button-text-one {
+  font-size: 26px;
+  -webkit-text-fill-color: rgb(231, 231, 231); 
+  border-radius: 6px;
+  border-top: 4px solid rgb(0, 250, 0);
+  border-bottom: 4px solid rgb(44, 253, 8);
+}
+.button-text-one:hover {
+  text-shadow: 2px 2px 15px rgb(0, 255, 13);
+  text-decoration-line: underline;
+  text-decoration-color: snow;
+}
+.button-text-two {
+  font-size: 26px;
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  border-radius: 6px;
+  border-top: 5px solid rgb(245, 59, 59);
+  border-bottom: 5px solid rgb(255, 47, 47);
+}
+.button-text-two:hover {
+  text-shadow: 5px 3px 15px rgb(255, 30, 0);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 0, 0);
 }
 /* write your parent styles in here for your App.js */
