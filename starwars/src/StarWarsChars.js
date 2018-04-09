@@ -13,15 +13,16 @@ return (
       <CardSubtitle>Physical Characteristics</CardSubtitle>
       <CardText>Height: {props.char.height} | Mass: {props.char.mass}</CardText>
       <CardText>Skin: {props.char.skin_color} | Eyes: {props.char.eye_color} | Hair: {props.char.hair_color}</CardText>
-      <CardSubtitle>Demographic</CardSubtitle>
+      <CardSubtitle>Demographics</CardSubtitle>
       <CardText>Created: {props.char.created}</CardText>
       <CardText>Birth Year: {props.char.birth_year}</CardText>
       <CardText>Homeworld: {props.char.homeworld}</CardText>
       <CardText>Starships: {props.char.starships}</CardText>
       <CardText>Vehicles: {props.char.vehicles}</CardText>
       <CardText>Url: {props.char.url}</CardText>
+      <Button className="btn-NavButton">View Full Bio</Button>
+      <Button>Play Demo Reel</Button>
     </CardBody>
-  
   </Card>
   ); 
 };
