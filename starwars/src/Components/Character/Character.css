@@ -1,0 +1,21 @@
+
+.container {
+    width: 40%;
+    margin: 2rem;
+    display: inline-block;
+    color: blue;
+    background-color: grey;
+}
+
+h1 {
+    color: green;
+}
+
+.mass {
+    color: red;
+}
+
+.height {
+    color: purple;
+}
+
