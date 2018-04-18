@@ -40,7 +40,6 @@ class LinkDisplay extends Component {
           <div className="innerlink">
             <Linking data={this.state.links} planet={this.props.planet}/>
             
-            
           </div>
         );
       }
