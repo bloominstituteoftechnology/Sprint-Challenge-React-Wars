@@ -5,4 +5,59 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+.root {
+  padding: 0 20%;
+}
+.char-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.char-list .char-img-div{
+  width: 25%;
+  overflow: hidden;
+}
+
+.char-list .char-img-div img {
+  width: 150%;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card .card-img-div {
+  width: 50%;  
+}
+
+.card .card-img-div img {
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 20px;
+}
+
+.card-content .name {
+  font-size: 1.2em;
+}
+
+.char-info .extra-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.char-info .extra-info div {
+  /* width: 25%; */
+  text-align: center;
+}
