@@ -21,10 +21,7 @@ class Post extends Component {
                 </CardBody>
                 <CardImg src={"http://www.unleashthefanboy.com/wp-content/uploads/2012/10/star-wars-banner.jpg"} alt="" />
                 <CardBody>
-                    <CardTitle className="Post-label">
-                        Data
-                    </CardTitle>
-                    <Table>
+                    <Table striped> 
                         <tbody>
                             <tr>
                                 <th scope="row">Birth Year</th>
