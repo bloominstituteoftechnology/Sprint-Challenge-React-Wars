@@ -27,9 +27,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <CharacterCard />
+      <h1 className="Header">React Wars</h1>
+      <div className="row">
+        {this.state.starwarsChars.map(char => {
+          return <div key={char.created} className="col-md-12 col-lg-6">
+          <CharacterCard chars={char} /></div>
+        })}
       </div>
+    </div>
     );
   }
 }
