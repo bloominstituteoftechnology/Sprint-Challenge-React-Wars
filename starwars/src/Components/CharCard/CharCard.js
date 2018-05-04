@@ -9,13 +9,29 @@ class CharCard extends Component {
     this.state = {
       character: props.character,
       characterSpec: {},
-      characterFilms: []
+      characterFilms: [],
+      characterPic: ""
     }
 
   }
 
 
+
+
+
   componentDidMount() {
+
+
+    fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyC7HYHOThjjEoQQrPu-0kbpGgIvSAlI384&q=${this.state.character.name}&num=1&cx=008551943941247460673:_5itqloqun8&searchType=image`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ characterPic: data.items[0].link});
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
 
     fetch(this.state.character.species[0])
       .then(res => {
@@ -30,27 +46,27 @@ class CharCard extends Component {
 
 
 
-        this.state.character.films.map((film, index) => {
-          fetch(this.state.character.films[index])
-            .then(res => {
-              return res.json();
-            })
-            .then(data => {
-              let characterFilms = this.state.characterFilms;
-              characterFilms.push(data);
-              this.setState({ characterFilms: characterFilms});
-            })
-            .catch(err => {
-              throw new Error(err);
-            });
-        });
+      this.state.character.films.map((film, index) => {
+        fetch(this.state.character.films[index])
+          .then(res => {
+            return res.json();
+          })
+          .then(data => {
+            let characterFilms = this.state.characterFilms;
+            characterFilms.push(data);
+            this.setState({ characterFilms: characterFilms});
+          })
+          .catch(err => {
+            throw new Error(err);
+          });
+      });
   }
 
   render() {
     return (
       <div>
         <Card>
-          <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <CardImg top width="100%" src={this.state.characterPic} alt="Card image cap" />
           <CardBody>
             <CardTitle>{this.state.character.name}</CardTitle>
             <CardText>Birth Year: {this.state.character.birth_year} </CardText>
@@ -61,11 +77,7 @@ class CharCard extends Component {
             <CardText>Mass: {this.state.character.mass}kg </CardText>
             <CardText>Skin Color: {this.state.character.skin_color} </CardText>
             <CardText>Species: {this.state.characterSpec.name} </CardText>
-
-
-
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
+            <CardText>Films: {this.state.characterFilms.map((film, index) => <li key={index}>{film.title}</li>)}</CardText>
           </CardBody>
         </Card>
       </div>
