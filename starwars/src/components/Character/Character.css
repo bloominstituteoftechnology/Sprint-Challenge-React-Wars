@@ -1,0 +1,27 @@
+.character {
+    width: 25%;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.char-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 30%;
+}
+
+.char-info{
+    padding: 0px 20px 15px 20px;
+}
+
+.char-name {
+    font-size: 2em;
+    margin-bottom: -10px;
+}
+
+.stats {
+    font-size: 1em;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}

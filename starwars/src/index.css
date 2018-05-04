@@ -1,7 +1,14 @@
+@import './components/CharsContainer/CharsContainer.css';
+@import './components/Character/Character.css';
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
 }
