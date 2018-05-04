@@ -9,8 +9,6 @@ class CharacterList extends React.Component {
   }
 
   render() {
-    console.log(this.props.list[0]);
-    console.log(this.props);
     return (
       <div className ="container char-list">
         <div className = "row">
@@ -63,6 +61,13 @@ class CharacterList extends React.Component {
                       <span>{char.birth_year}</span>
                     </div>
                    </CardText>
+                   <CardText>
+                    <div className="attr gender">
+                      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/531288-200.png" />
+                      <span>Gender:</span>
+                      <span>{char.gender}</span>
+                    </div>
+                   </CardText>
                 </CardBody>
               </Card>
             </div>
@@ -73,6 +78,8 @@ class CharacterList extends React.Component {
     )
   }
 }
+
+
 
 export default CharacterList;
 
