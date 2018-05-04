@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardContainer from './Components/CardContainer/CardContainer'
+import { Container, Row, Col} from 'reactstrap';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +28,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.starwarsChars.map((item,index) => <CardContainer key = {index} character = {item} />)}
+        <Container>
+              <Row>
+                <Col sm >  
+                  {this.state.starwarsChars.map((item,index) => <CardContainer key = {index} character = {item} />)}
+                </Col>  
+              </Row>
+        </Container>
       </div>
     );
   }

@@ -4,17 +4,15 @@ import './CardContainer.css';
 const CardContainer = props =>{
     return(
         <div>
-            <Container>
-                <Row>
-                    <Col className = "cardc">
-                        <Card>
-                            <CardTitle>{props.character.name}</CardTitle>
-                            <CardText>{props.character.height}</CardText>
-                            <CardText>{props.character.mass}</CardText>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
+            <Card>
+                <CardBody>
+                    <CardTitle>{props.character.name}</CardTitle>
+                </CardBody>
+                <CardBody>
+                    <CardText>{props.character.height}</CardText>
+                    <CardText>{props.character.mass}</CardText>
+                </CardBody>
+            </Card>
         </div>
     )
 }
