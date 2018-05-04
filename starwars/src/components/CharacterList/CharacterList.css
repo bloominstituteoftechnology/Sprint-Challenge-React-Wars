@@ -1,0 +1,20 @@
+.char-list {
+  margin-top: 40px;
+}
+.attr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.attr img {
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  background-color: #ccf7ff;
+  border: 1px solid black;
+  padding: 5px;
+  padding-top: 10px;
+}
