@@ -1,32 +1,36 @@
 import React, { Component } from 'react';
 
-const CharInfo = ({ char, imgUrl }) => 
+const CharInfo = ({ char, imgUrl, handleBack }) => 
   <div className="char-info">
-    <img src={`${imgUrl}`} />
+    <button onClick={() => handleBack()}>Back</button>
     <div className="card">
-      <div>{char.name}</div>
-      <div>{char.height}</div>
-      <div>{char.gener}</div>
-      <div>{char.height}</div>
-      <div>{char.eye_color}</div>
-      <div>{char.skin_color}</div>
+      <div className="card-img-div">
+        <img src={`${imgUrl}`} />
+      </div>
+      <div className="card-content">
+        <div className="name">{char.name}</div>
+        <div className="height">{char.height}</div>
+        <div className="gender">{char.gender === "n/a"? "":char.gender}</div>
+        <div className="eye-color">{char.eye_color}</div>
+        <div className="skin-color">{char.skin_color}</div>
+      </div>
     </div>
     <div className="extra-info">
       <div>
-        <div>Appearance</div>
-        <div>{char[0].films}</div>
+        <h4>Appearance</h4>
+        <div></div>
       </div>
       <div>
-        <div>Homeworld</div>
-        <div>{char[0].homeworld}</div>
+        <h4>Homeworld</h4>
+        <div></div>
       </div>
       <div>
-        <div>Starships</div>
-        <div>{char[0].starships}</div>
+        <h4>Starships</h4>
+        <div></div>
       </div>
       <div>
-        <div>Vehicles</div>
-        <div>{char[0].vehicles}</div>
+        <h4>Vehicles</h4>
+        <div></div>
       </div>
     </div>
   </div>

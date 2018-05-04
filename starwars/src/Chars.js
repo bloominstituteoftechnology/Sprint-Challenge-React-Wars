@@ -8,7 +8,7 @@ class Chars extends Component {
     super();
     this.state = {
       selected: false, 
-      selectedChar: [{so:"so"}],
+      selectedChar: [],
       charImage: []
     };
   }
@@ -17,22 +17,32 @@ class Chars extends Component {
       charImage: CharImage,
     })
   }
+  handleOpen = (selectedCharName) => {
+    let selectedChar = this.props.chars.filter((char) => char.name === selectedCharName)
+    this.setState({
+      selected:true,
+      selectedChar
+    })
+  }
+  handleBlack = () => {
+    this.setState({
+      selected:false,
+      selectedChar: []
+    })
+  }
   render() {
     const { chars } = this.props
     const { selected, selectedChar, charImage } = this.state
-    let selectedCharImageUrl = selected? charImage.filter((char) => char.name === selectedChar.name).imgUrl : ""
+    let selectedCharImageUrl = selected? charImage.filter((obj) => obj.name === selectedChar[0].name)[0].imgUrl : ""
     return (
-      <div>
+      <div className="root">
         {
           selected ?
-          <div>
-            <button>Back</button>
-            <CharInfo char={selectedChar} imgUrl={selectedCharImageUrl}/>
-          </div>
+            <CharInfo char={selectedChar[0]} imgUrl={selectedCharImageUrl} handleBack={this.handleBlack}/>
           :
-          <div>
-            {chars.map(char => 
-              <Char key={char.name} char={char} charImage={charImage}/>
+          <div className="char-list">
+            {chars.map((char,index) => 
+              <Char key={char.name} char={char} charImageObj={charImage[index]} handleOpen={this.handleOpen}/>
             )}
           </div>
         }
