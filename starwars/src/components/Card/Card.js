@@ -40,7 +40,7 @@ const Card = ({character}) => {
           <Pic />
           <h1 className="display-3">{character.name}</h1>
           <hr className="my-2" />
-          <Details />
+          <Details details={character}/>
           <hr className="my-2" />
           <ToggleContent />
           <ToggleContent />
@@ -66,6 +66,6 @@ Card.propTypes = {
     starships: PropTypes.arrayOf(PropTypes.string),  // (2) ["https://swapi.co/api/starships/12/", "https://swapi.co/api/starships/22/"]
     url: PropTypes.string,  // "https://swapi.co/api/people/1/"
     vehicles: PropTypes.arrayOf(PropTypes.string)  // (2
-  };
+};
 
 export default Card;

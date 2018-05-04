@@ -4,14 +4,19 @@ import { ListGroup,
     ListGroupItem,
     Badge } from 'reactstrap';
 
-const Details = () => {
+const Details = ({details}) => {
     return (
         <div>
             <ListGroup>
-                <ListGroupItem><Badge color="secondary">BIRTH DAY</Badge> : Birth day</ListGroupItem>
-                <ListGroupItem><Badge color="secondary">New</Badge> : Birth day</ListGroupItem>
-                <ListGroupItem><Badge color="secondary">New</Badge> : Birth day</ListGroupItem>
-                <ListGroupItem><Badge color="secondary">New</Badge> : Birth day</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">BORN</Badge> : {details.birth_year}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">GENDER</Badge> : {details.gender}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">EYE COLOR</Badge> : {details.eye_color}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">HAIR COLOR</Badge> : {details.hair_color}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">HEIGHT</Badge> : {details.height}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">WEIGHT</Badge> : {details.mass}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">HOME</Badge> : {details.homeworld}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">SKIN COLOR</Badge> : {details.skin_color}</ListGroupItem>
+                <ListGroupItem><Badge color="secondary">SPECIES</Badge> : {details.species}</ListGroupItem>
                 
             </ListGroup>
         </div>
