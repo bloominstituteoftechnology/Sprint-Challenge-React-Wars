@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 
 const Films = props => {
-    return (   
-            <select>
-                <option> Films </option>         
+    return (
+        <div className="container fierce">
+            <div className="row">
+            <select className="mw-100 mein-issues">
+                <option>Films</option>         
             {props.films.map(film => {
                 return <option key={film}> {film} </option>
             })}   
             </select>
+            </div>
+            </div>
     )
 }
 

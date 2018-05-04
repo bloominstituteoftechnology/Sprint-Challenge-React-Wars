@@ -1,8 +1,16 @@
-.App {
+.fierce {
+  font-size: 1rem;
   text-align: center;
+  background-color: whitesmoke;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+.mein-issues {
+  width: 30rem;
 }
-/* write your parent styles in here for your App.js */
+
+.mein-cards {
+  margin-left: 15rem;
+  margin-right: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}

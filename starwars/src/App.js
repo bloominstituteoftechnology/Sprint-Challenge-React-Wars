@@ -31,11 +31,11 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="container-fluid">
+        <div className="row">
         {this.state.starwarsChars.map(characters => {
           return (
-          <div>
+          <div className="mein-cards">
             <BaseStats 
                 name={characters.name}
                 height={characters.height}
@@ -45,18 +45,19 @@ class App extends Component {
                 eye_color={characters.eye_color}
                 birth_year={characters.birth_year}
                 gender={characters.gender}
-                homeworld={characters.homeworld} />
+                homeworld={characters.homeworld} 
+                url={characters.url}/>
           <Species 
               species={characters.species} />
-          <Vehicles
+          <Vehicles 
               vehicles={characters.vehicles} />
-          <Starships
+          <Starships 
               starships={characters.starships} />
           <Films 
               films={characters.films} />
           </div>
           )})}
-        
+        </div>
       </div>
     );
   }
