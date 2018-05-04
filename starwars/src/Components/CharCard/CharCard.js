@@ -17,14 +17,14 @@ class CharCard extends Component {
 
 
   componentWillReceiveProps(props) {
-    this.setState(Object.assign({}, {character: props.character}, this.fetchStuff()));
+    this.setState(this.fetchStuff(props.character));
   }
 
   componentDidMount() {
-    this.setState(this.fetchStuff());
+    this.setState(this.fetchStuff(this.state.character));
   }
 
-  fetchStuff() {
+  fetchStuff(character) {
     //The following section of code fetches the first google image search result for a character's name.  Unfortunately, this has a limit of 100 queries per day for the free version, so after only a few times reloading the page it started throwing error 403's.  I'm not paying for more, but if you're looking at this on another day feel free to uncomment it and see it work.  It worked as of the last time I was able to test it.
 
     //OH NO! I refactored some stuff around this, and now it's very broken.
@@ -49,7 +49,7 @@ class CharCard extends Component {
 
 
 
-        if (this.state.character.species.length >=1) fetch(this.state.character.species[0])
+        if (character.species.length >=1) fetch(character.species[0])
           .then(res => {
             return res.json();
           })
@@ -63,8 +63,8 @@ class CharCard extends Component {
 
 
 
-        this.state.character.films.forEach((film, index) => {
-          fetch(this.state.character.films[index])
+        character.films.forEach((film, index) => {
+          fetch(character.films[index])
             .then(res => {
               return res.json();
             })
@@ -76,7 +76,7 @@ class CharCard extends Component {
             });
         });
 
-        return {characterPic: characterPic, characterFilms: characterFilms, CharacterSpec: characterSpec};
+        return {characterPic: characterPic, characterFilms: characterFilms, CharacterSpec: characterSpec, character: character};
   }
 
   render() {
