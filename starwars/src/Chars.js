@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Chars = ({ chars }) => {
+const Chars = ({ character }) => {
     return (
         <div >
-            <p>{chars.name} {chars.created}</p>
+            <p>{character.name}</p>
         </div>
     )
 }
