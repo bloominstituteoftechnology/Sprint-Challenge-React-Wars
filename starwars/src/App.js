@@ -6,7 +6,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: []
-    };
+    }; 
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -27,6 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        
       </div>
     );
   }
