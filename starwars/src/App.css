@@ -29,9 +29,13 @@
   border-radius: 5px;
   height: 300px;
   margin: 0 auto 3rem;
-  overflow-y: auto;
+  overflow: hidden;
   padding: 1px 0 10px;
   width: 300px;
+}
+
+.char-card-container__char-card:hover {
+  overflow: auto;
 }
 
 .char-card__char-info-label {
