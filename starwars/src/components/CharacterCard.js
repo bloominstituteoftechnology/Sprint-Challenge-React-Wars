@@ -24,23 +24,36 @@ class CharacterCard extends React.Component {
                         <CardTitle>{`${this.props.char.name}, born in ${this.props.char.birth_year}`}</CardTitle>
                         <CardSubtitle className="subtitle">{`Created: ${this.props.char.created}`}</CardSubtitle>
                         <CardSubtitle className="subtitle">{`Edited: ${this.props.char.edited}`}</CardSubtitle>
-                        <CardText>Click Below for More!</CardText>
-                        <Button>Profile</Button>
+                        <CardText>Click Below for More Details!</CardText>
+                        <Button onClick={this.toggle} style={{ marginBottom: '1rem' }}>Profile</Button>
                     </CardBody>
                 </Card>
-                <div>
-        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-        <Collapse isOpen={this.state.collapse}>
-          <Card>
-            <CardBody>
-            Anim pariatur cliche reprehenderit,
-             enim eiusmod high life accusamus terry richardson ad squid. Nihil
-             anim keffiyeh helvetica, craft beer labore wes anderson cred
-             nesciunt sapiente ea proident.
-            </CardBody>
-          </Card>
-        </Collapse>
-      </div>
+                 <div>
+                    <Collapse isOpen={this.state.collapse}>
+                    <Card>
+                        <CardBody>
+                        <p>
+                        {`Eye Color: ${this.props.char.eye_color}`}
+                        </p>
+                        <p>
+                        {`Gender ${this.props.char.gender}`}
+                        </p>
+                        <p>
+                        {`Hair Color: ${this.props.char.hair_color}`}
+                        </p>
+                        <p>
+                        {`Height: ${this.props.char.height}`}
+                        </p>
+                        <p>
+                        {`Mass: ${this.props.char.mass}`}
+                        </p>
+                        <p>
+                        {`Skin Color: ${this.props.char.skin_color}`}
+                        </p>
+                        </CardBody>
+                    </Card>
+                    </Collapse>
+                 </div>
     
             </div>
         )
