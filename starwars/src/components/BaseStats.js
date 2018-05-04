@@ -6,18 +6,25 @@ const BaseStats = props => {
     <div className="container fierce">
         <div className="row">
         <Card>
-            <CardTitle key={props.name}> {props.name} </CardTitle>
+            <CardTitle className="font-weight-bold" key={props.name}> {props.name} </CardTitle>
             <select className="mw-100 mein-issues">
                 <option> Home planet </option>  
                 <option key={props.homeworld}> {props.homeworld } </option>
             </select>
-            <CardText key={props.mass}> {props.mass} </CardText>
-            <CardText key={props.hair_color}> {props.hair_color} </CardText>
-            <CardText key={props.gender}> {props.gender} </CardText>
-            <CardText key={props.eye_color}> {props.eye_color} </CardText>
-            <CardText key={props.skin_color}> {props.skin_color} </CardText>
-            <CardText key={props.birth_year}> {props.birth_year} </CardText>
-            <CardText key={props.height}> {props.height} </CardText>
+            <CardText className="font-weight-bold" key={props.mass}> Mass: </CardText>
+            <CardText> {props.mass} </CardText>
+            <CardText className="font-weight-bold" key={props.hair_color}> Hair color: </CardText>
+            <CardText> {props.hair_color} </CardText>
+            <CardText className="font-weight-bold" key={props.gender}> Gender: </CardText>
+            <CardText> {props.gender} </CardText>
+            <CardText className="font-weight-bold" key={props.eye_color}> Eye color: </CardText>
+            <CardText> {props.eye_color} </CardText>
+            <CardText className="font-weight-bold" key={props.skin_color}> Skin color: </CardText>
+            <CardText> {props.skin_color} </CardText>
+            <CardText className="font-weight-bold" key={props.birth_year}> Birth year: </CardText>
+            <CardText> {props.birth_year} </CardText>
+            <CardText className="font-weight-bold" key={props.height}> Height: </CardText>
+            <CardText> {props.height} </CardText>
         </Card>
         </div>
         </div>

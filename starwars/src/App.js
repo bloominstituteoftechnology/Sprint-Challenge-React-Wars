@@ -32,6 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
+        <h1 className="titleReactWars"> React Strap </h1>
         <div className="row">
         {this.state.starwarsChars.map(characters => {
           return (
