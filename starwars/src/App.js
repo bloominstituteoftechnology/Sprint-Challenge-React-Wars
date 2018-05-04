@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharCard from './Components/CharCard/CharCard.js';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -23,13 +25,16 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharCard />
       </div>
     );
   }
+
 }
 
 export default App;
