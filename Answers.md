@@ -18,3 +18,8 @@
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
         A Class/Stateful component stores information on itself under a State Object, which is comprised of key value pairs. It uses constructor and super methods to create this State. A Functional/Presentational component does not use state nor the methods, but rather props as a variable in order to render DOM elements. These components do not store information in the State Object, and therefore only inherent information from its parent component.
+
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+
+        PropTypes is an additional React node package that allows for the checking of type of properties in a component. PropTypes is useful for components that import data and store that data on its State Object, in order to avoid type coercion or other mistakes from extracting incorrect data.
