@@ -1,12 +1,22 @@
-.People-Wrapper {
+/* .People-Wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
     margin: auto;
-}
+} */
   
-.Friend-Card {
+.Card-Body {
     border: 1px solid grey;
+    min-width: 200px;
+    margin: 0.4rem;
+    padding: 2px;
+}
+
+.Card-Title {
+    color: solid red;
+}
+
+.Card-Body {
     min-width: 200px;
     margin: 0.4rem;
     padding: 2px;
