@@ -7,11 +7,25 @@ class CharCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      character: props.character
+      character: props.character,
+      characterSpec: []
     }
 
   }
 
+
+  componentDidMount() {
+    fetch(this.state.character.species[0])
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ characterSpec: data});
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  }
 
   render() {
     return (
@@ -27,7 +41,7 @@ class CharCard extends Component {
             <CardText>Height: {this.state.character.height}cm </CardText>
             <CardText>Mass: {this.state.character.mass}kg </CardText>
             <CardText>Skin Color: {this.state.character.skin_color} </CardText>
-            <CardText>Species:  </CardText>
+            <CardText>Species: {this.state.characterSpec.name} </CardText>
 
 
 
