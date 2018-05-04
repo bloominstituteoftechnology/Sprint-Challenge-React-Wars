@@ -15,23 +15,19 @@ const Chars = props => {
       {props.starwarsChars.map((char, index) => (
         <Card key={char.created}>
           <CardBody>
-            <CardTitle>{char.name}</CardTitle>
+            <CardTitle>NAME : {char.name}</CardTitle>
             <CardSubtitle>{char.gender}</CardSubtitle>
-            <h6>WANTED</h6>
+            <h6>WANTED WAR CRIMINALS</h6>
           </CardBody>
-          <img
-            width="40%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-            alt="Card image cap"
-          />
+          <img width="40%" src={props.src} alt="Card image cap" />
           <CardBody>
             <h5>Descriptions</h5>
             <CardText>Created : {char.created}</CardText>
-            <CardText>{char.eye_color}</CardText>
-            <CardText>{char.hair_color}</CardText>
-            <CardText>{char.skin_color}</CardText>
-            <CardText>{char.height}</CardText>
-            <CardText>{char.mass}</CardText>
+            <CardText>Eye Color : {char.eye_color}</CardText>
+            <CardText>Hair Color : {char.hair_color}</CardText>
+            <CardText>Skin Color : {char.skin_color}</CardText>
+            <CardText>Height : {char.height}</CardText>
+            <CardText>Mass : {char.mass}</CardText>
             {/* <CardLink href="#">Card Link</CardLink>
             <CardLink href="#">Another Link</CardLink> */}
           </CardBody>

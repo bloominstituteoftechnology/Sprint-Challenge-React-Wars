@@ -29,7 +29,10 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="Chars">
-          <Chars starwarsChars={this.state.starwarsChars} />
+          <Chars
+            starwarsChars={this.state.starwarsChars}
+            src="https://i1.wp.com/www.tor.com/wp-content/uploads/2018/01/tlj-luke-skywalker4.jpg?resize=740%2C502&type=vertical&ssl=1"
+          />
         </div>
       </div>
     )
