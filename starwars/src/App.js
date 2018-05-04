@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Data from './List.js'
+
 class App extends Component {
   constructor() {
     super();
@@ -25,8 +27,15 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className='App'>
+        <h1 className='Header'>React Wars</h1>
+        <div className='Character__data'>
+          {this.state.starwarsChars.map((char, index) => {
+            return (
+              <Data char={char} key={index} />
+            )
+          })}
+        </div>
       </div>
     );
   }
