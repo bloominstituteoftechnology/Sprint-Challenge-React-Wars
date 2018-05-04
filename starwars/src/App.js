@@ -49,10 +49,9 @@ class App extends Component {
         <h1 className="Header col-12">React Wars</h1>
         </div>
         <div className="row d-flex">
-          <Card />
           {
             this.state.starwarsChars.map(
-              (sw, i) => { return (<Card key={i} character={sw} />) }
+              (character, i) => { return (<Card key={i} character={character} />) }
             )
           }
         </div>
