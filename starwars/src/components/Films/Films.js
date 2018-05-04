@@ -9,7 +9,6 @@ export default class Example extends React.Component {
         this.toggle = this.toggle.bind(this);
         this.state = {
             dropdownOpen: false,
-            data: []
         };
     }
 
@@ -17,9 +16,6 @@ export default class Example extends React.Component {
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
         }));
-    }
-    componentWillReceiveProps(nextProps) {
-        this.setState({data: nextProps.data})
     }
 
     render() {
@@ -29,9 +25,9 @@ export default class Example extends React.Component {
                     Films
         </DropdownToggle>
                 <DropdownMenu>
-                    {this.state.data.map(i => {
+                    {this.props.data.map(i => {
                         return (
-                            <DropdownItem key={i.films}>{i}</DropdownItem>
+                            <DropdownItem key={i.films}>{i.films}</DropdownItem>
                         );
                     })}
                 </DropdownMenu>
