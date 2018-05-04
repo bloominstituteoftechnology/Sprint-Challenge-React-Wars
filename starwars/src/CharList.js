@@ -6,8 +6,9 @@ import Chars from './Chars';
 const CharList = props => {
     return (
         <div>
-            {props.charList.map(character, index => {
-                return <Chars key={character.id} character={character} />
+            {props.starwarsChar.map(character => {
+                console.log(character);
+                return <Chars key={character.id} />
             })}
         </div>
     )
