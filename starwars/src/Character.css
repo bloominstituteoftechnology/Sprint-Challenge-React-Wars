@@ -1,0 +1,11 @@
+.card {
+    border: 1px solid black;
+    width: 33%;
+    display: block;
+    margin: auto;
+    background-color: #e6d8c6;
+}
+
+.lgi {
+    text-align: left;
+}

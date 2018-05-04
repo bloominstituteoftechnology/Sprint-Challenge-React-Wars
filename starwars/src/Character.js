@@ -1,35 +1,30 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem } from "reactstrap";
+import { Card, CardTitle, CardText, ListGroup, ListGroupItem } from "reactstrap";
+import "./Character.css";
 
 const Character = (props) => {
   return (
     <div>
-      <Card>
-        <CardBody>
-	  <CardTitle>
+      <Card className="card">
+          <CardTitle>
 	    <h2>{props.name}</h2>
 	  </CardTitle>	
 	  <CardText>
-              <ListGroup>
-		  <ListGroupItem>Height:{props.height}</ListGroupItem>
-		  <ListGroupItem>Mass:{props.mass}</ListGroupItem>
-	          <ListGroupItem>Hair Color: {props.hair_color}</ListGroupItem>
-		  <ListGroupItem>Skin Color: {props.skin_color}</ListGroupItem>
-		  <ListGroupItem>Eye Color: {props.eye_color}</ListGroupItem>
-		  <ListGroupItem>Birth Year: {props.birth_year}</ListGroupItem>
-	          <ListGroupItem>Gender: {props.gender}</ListGroupItem>
-		  <ListGroupItem>Homeworld: {props.homeworld}</ListGroupItem>
-		  <ListGroupItem>Species: {props.species}</ListGroupItem>
-		  <ListGroupItem>Created: {props.created}</ListGroupItem>
-	          <ListGroupItem>Edited: {props.edited}</ListGroupItem>
-		  <ListGroupItem>url: {props.url}</ListGroupItem>	      
+            <ListGroup className>
+		  <ListGroupItem className="lgi">Height:{props.height}</ListGroupItem>
+		  <ListGroupItem className="lgi">Mass:{props.mass}</ListGroupItem>
+	          <ListGroupItem className="lgi">Hair Color: {props.hair_color}</ListGroupItem>
+		  <ListGroupItem className="lgi">Skin Color: {props.skin_color}</ListGroupItem>
+		  <ListGroupItem className="lgi">Eye Color: {props.eye_color}</ListGroupItem>
+		  <ListGroupItem className="lgi">Birth Year: {props.birth_year}</ListGroupItem>
+	          <ListGroupItem className="lgi">Gender: {props.gender}</ListGroupItem>
+		  <ListGroupItem className="lgi">Created: {props.created}</ListGroupItem>
+	          <ListGroupItem className="lgi">Edited: {props.edited}</ListGroupItem>	      
 		</ListGroup>
 	  </CardText>
-	 </CardBody>
-        </Card>
-     </div>
-
+      </Card>
+    </div>
   );
-}
+};
 
 export default Character;
