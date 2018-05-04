@@ -42,7 +42,7 @@ class CharCard extends Component {
 
 
 
-        let characterPic = `https://picsum.photos/800/1000/?image=${Math.floor(Math.random() * 85)}`;
+        let characterPic = `https://picsum.photos/800/400/?image=${Math.floor(Math.random() * 85)}`;
         let characterSpec = this.state.characterSpec;
         let characterFilms = [];
 
