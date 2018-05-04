@@ -7,3 +7,11 @@
 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+
+
+
+
+
+
+<!-- I just woke up sorry ill have to finish up everything during the weekend -->
