@@ -1,11 +1,15 @@
 import React from 'react';
-import {Card, Cardimg, Cardtext, Cardbody} from 'reactstrap';
+import { Card, CardText, CardBody } from 'reactstrap';
 
 const Chars = ({ CharacterData }) => {
     return (
         <div >
-            <p>{CharacterData.name}</p>
-            <p>{CharacterData.height}</p>
+            <Card>
+                <CardBody>
+                    <CardText>{CharacterData.name}</CardText>
+                    <CardText>{CharacterData.height}</CardText>
+                </CardBody>
+            </Card>
         </div>
     )
 }
