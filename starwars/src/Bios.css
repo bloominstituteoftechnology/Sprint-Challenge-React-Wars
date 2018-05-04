@@ -2,8 +2,9 @@
     border: 1px solid white;
     background: lightgray;    
     margin: 10px;
+    color: black;
     opacity: 0.5;
     min-width: 200px;
-    padding: 2px;
-
+    padding: 4px;
+    border-radius: 10px;
 }

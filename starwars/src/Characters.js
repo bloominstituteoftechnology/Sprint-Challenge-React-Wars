@@ -6,7 +6,7 @@ const Characters = props => {
     return (
         <div className="Chars-wrapper">
    {props.starwarsChars.map(actor =>{
-    return <Bio key={actor.id} actor={actor}/>;
+    return <Bio key={actor.url} actor={actor}/>;
    })}        
     </div>);
 };
