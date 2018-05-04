@@ -10,8 +10,8 @@ const Character = (props) => {
 	    <h2>{props.name}</h2>
 	  </CardTitle>	
 	  <CardText>
-            <ListGroup className>
-		  <ListGroupItem className="lgi">Height:{props.height}</ListGroupItem>
+            <ListGroup>
+	          <ListGroupItem className="lgi">Height:{props.height}</ListGroupItem>
 		  <ListGroupItem className="lgi">Mass:{props.mass}</ListGroupItem>
 	          <ListGroupItem className="lgi">Hair Color: {props.hair_color}</ListGroupItem>
 		  <ListGroupItem className="lgi">Skin Color: {props.skin_color}</ListGroupItem>
