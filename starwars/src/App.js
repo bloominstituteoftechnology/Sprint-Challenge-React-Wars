@@ -9,6 +9,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
+      starwarsCharsPic: [],
       charPic: {
         'Luke Skywalker': 'http://www.facetheforce.today/luke',
         'C-3PO': 'http://www.facetheforce.today/c3po-alt',
@@ -38,6 +39,8 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+
   }
   render() {
     return (
@@ -45,8 +48,13 @@ class App extends Component {
         <div className="row">
         <h1 className="Header col-12">React Wars</h1>
         </div>
-        <div className="row">
+        <div className="row d-flex">
           <Card />
+          {
+            this.state.starwarsChars.map(
+              (sw, i) => { return (<Card key={i} character={sw} />) }
+            )
+          }
         </div>
       </div>
     );
