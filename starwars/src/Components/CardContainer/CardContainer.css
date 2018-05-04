@@ -1,10 +1,10 @@
 div{
-    display: flex;
+    
     border: 1px solid black;
     
 }
 
-.People-Wrapper {
+.card-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;

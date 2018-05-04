@@ -7,11 +7,9 @@ const CardContainer = props =>{
         <div>
             <Container>
                 <Row>
-                    
                         {
                             props.character.map((item, index) => <CardChar key = {index} char = {item}/>)
                         }
-                    
                 </Row>
             </Container>
         </div>
