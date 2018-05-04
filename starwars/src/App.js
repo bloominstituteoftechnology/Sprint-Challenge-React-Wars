@@ -28,13 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container>
-              <Row>
-                <Col sm >  
-                  {this.state.starwarsChars.map((item,index) => <CardContainer key = {index} character = {item} />)}
-                </Col>  
-              </Row>
-        </Container>
+        <CardContainer character = {this.state.starwarsChars} />
       </div>
     );
   }
