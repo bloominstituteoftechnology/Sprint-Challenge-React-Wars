@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 const CharData = props => {
   return (
     <React.Fragment>
-
       {
         props.charData.map((char, ind) => {
           return (
@@ -84,7 +83,6 @@ const CharData = props => {
           );
         })
       }
-
     </React.Fragment>
   );
 }
