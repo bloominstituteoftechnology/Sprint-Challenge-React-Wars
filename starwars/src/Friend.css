@@ -7,9 +7,13 @@
   
 .Card-Body {
     border: 1px solid grey;
-    min-width: 200px;
+    width: 200px;
     margin: 0.4rem;
     padding: 2px;
+}
+
+.Friend-Card {
+    width: 200px;
 }
 
 .Card-Title {
