@@ -1,5 +1,7 @@
 import React from 'react';
 import './CharsList.css';
+import PropTypes from 'prop-types';
+
 
 const CharsList = props => {
     return (
@@ -8,8 +10,8 @@ const CharsList = props => {
                 return (
 
                     <div class="row justify-content-sm-center mt-sm-5">
-                            <div class="col-sm-5">
-                                <div class="card">
+                        <div class="col-sm-5">
+                            <div class="card bg-light char-card hovereffect">
                                     <div class="card-body">
                                         <h5 class="card-title">Name: {char.name}</h5>
                                         <p class="card-text">Birth Year: {char.birth_year}</p>
