@@ -32,7 +32,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
 
         {/* Char Container */}
-        <CharContainer />
+        <CharContainer charData={ this.state.starwarsChars } />
       </div>
     );
   }
