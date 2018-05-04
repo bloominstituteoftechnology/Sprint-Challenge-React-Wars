@@ -14,14 +14,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     this.getCharsFromNet(this.state.urlString);
   }
 
   getCharsFromNet(urlString) {
-
     fetch(urlString)
       .then(res => {
         return res.json();
@@ -32,7 +28,6 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-
   }
 
   changeUrlString(urlString) {
@@ -40,10 +35,8 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div className="App">
-
         <h1 className="Header">React Wars</h1>
         {console.log()}
         <NavButtons next={this.state.mainObject.next} previous={this.state.mainObject.previous} changeFunc={this.changeUrlString.bind(this)}/>
@@ -51,7 +44,6 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
 export default App;

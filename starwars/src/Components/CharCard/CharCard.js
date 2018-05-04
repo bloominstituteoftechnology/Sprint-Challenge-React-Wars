@@ -12,7 +12,6 @@ class CharCard extends Component {
       characterFilms: [],
       characterPic: ""
     }
-
   }
 
 
@@ -22,14 +21,14 @@ class CharCard extends Component {
   }
 
   componentDidMount() {
-
-
     this.setState(this.fetchStuff());
-    console.log("HEY");
   }
 
   fetchStuff() {
     //The following section of code fetches the first google image search result for a character's name.  Unfortunately, this has a limit of 100 queries per day for the free version, so after only a few times reloading the page it started throwing error 403's.  I'm not paying for more, but if you're looking at this on another day feel free to uncomment it and see it work.  It worked as of the last time I was able to test it.
+
+    //OH NO! I refactored some stuff around this, and now it's very broken.
+    //If it's to work, it will need to set the value of characterPic (local variable) rather than invoking setState.
         // fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyC7HYHOThjjEoQQrPu-0kbpGgIvSAlI384&q=${this.state.character.name}&num=1&cx=008551943941247460673:_5itqloqun8&searchType=image`)
         //   .then(res => {
         //     return res.json();
@@ -60,28 +59,27 @@ class CharCard extends Component {
           .catch(err => {
             throw new Error(err);
           });
-          else characterSpec = "unknown";
+        else characterSpec = "unknown";
 
 
 
-          this.state.character.films.forEach((film, index) => {
-            fetch(this.state.character.films[index])
-              .then(res => {
-                return res.json();
-              })
-              .then(data => {
-                characterFilms.push(data);
-              })
-              .catch(err => {
-                throw new Error(err);
-              });
-          });
+        this.state.character.films.forEach((film, index) => {
+          fetch(this.state.character.films[index])
+            .then(res => {
+              return res.json();
+            })
+            .then(data => {
+              characterFilms.push(data);
+            })
+            .catch(err => {
+              throw new Error(err);
+            });
+        });
 
-          return {characterPic: characterPic, characterFilms: characterFilms, CharacterSpec: characterSpec};
+        return {characterPic: characterPic, characterFilms: characterFilms, CharacterSpec: characterSpec};
   }
 
   render() {
-    console.log("YO");
     return (
       <div className="char-card">
         <Card>
