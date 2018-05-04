@@ -1,0 +1,20 @@
+.container {
+    display: flex; 
+    flex-flow: column wrap;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.data {
+    border: 4px black solid;
+    width: 20%;
+    background: gray;
+    opacity: 0.8;
+}
+
+.data1 {
+    color: silver;
+    border-bottom: 3px solid black;
+}
+
+
