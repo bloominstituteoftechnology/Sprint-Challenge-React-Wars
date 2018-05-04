@@ -17,12 +17,9 @@ const CharsList = props => {
                                         <p class="card-text">Birth Year: {char.birth_year}</p>
                                         <p class="card-text">Gender: {char.gender}</p>
                                         <p class="card-text">Eye Color: {char.eye_color}</p>
-                                    <p class="card-text">Hair Color:{char.hair_color}</p>
-                                    <p class="card-text">Height: {char.height}</p>
-                                    <p class="card-text">Skin Color: {char.skin_color}</p>
-                                            
-                                        
-                                        {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                                        <p class="card-text">Hair Color:{char.hair_color}</p>
+                                        <p class="card-text">Height: {char.height}</p>
+                                        <p class="card-text">Skin Color: {char.skin_color}</p>
                                     </div>
                                 </div>
                             </div>
@@ -32,9 +29,20 @@ const CharsList = props => {
 
                 )
             })}
-            {/* {console.log(props.chars)} */}
         </div>
     )
 }
+
+CharsList.propTypes = {
+    friend: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        birth_year: PropTypes.number.isRequired,
+        gender: PropTypes.string.isRequired,
+        eye_color: PropTypes.string.isRequired,
+        hair_color: PropTypes.string.isRequired,
+        height: PropTypes.string.isRequired,
+        skin_color: PropTypes.string.isRequired,
+    })
+};
 
 export default CharsList;
