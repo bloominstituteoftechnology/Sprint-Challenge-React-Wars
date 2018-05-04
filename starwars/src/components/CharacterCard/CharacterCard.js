@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
+import MovieList from '../MovieList/MovieList';
 import './CharacterCard.css';
 
 class CharacterCard extends Component {
@@ -10,6 +11,7 @@ class CharacterCard extends Component {
       swWorld: {},
     };
   }
+  
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -26,6 +28,12 @@ class CharacterCard extends Component {
         throw new Error(err);
       });
   }
+
+  genderRestatement = () => {
+    if (this.props.char.gender === "male") return `man`;
+    if (this.props.char.gender === "female") return `woman`;
+    return `robot`;
+  }
   render() {
     return (
       <div>
@@ -34,7 +42,9 @@ class CharacterCard extends Component {
           <CardBody>
             <CardTitle>{this.props.char.name}</CardTitle>
             <CardSubtitle className="world">From {this.state.swWorld.name}</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <br />
+            <CardText>{this.props.char.name} is a {this.genderRestatement()} from the world of {this.state.swWorld.name}.</CardText>
+            {/* <MovieList films={this.props.char.films} /> */}
           </CardBody>
         </Card>
       </div>

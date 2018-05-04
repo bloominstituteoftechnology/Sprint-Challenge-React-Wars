@@ -1,5 +1,8 @@
 .card {
   width: 18rem;
+  margin: 1rem 0;
+  background-color: #bdb8ae;
+
 }
 
 .world {

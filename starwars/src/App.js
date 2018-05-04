@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-            <div className="char-list">
+            <div className="d-flex flex-wrap justify-content-around char-list">
             {
               this.state.starwarsChars.map(character => <CharacterCard key={character.created} char={character} />)
             }
