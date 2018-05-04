@@ -8,9 +8,9 @@ ReactJS is a JS library that let splitting a web page into components allowing h
 
 React components go through certain phases such as "Render Phase", "Pre-Commit Phase", and "Commit Phase". Each of these phases includes methods that invoked in particular order. These methods are involved in the process called the React Component Lifecycle. 
 Those Methods are: 
-Mounting which includes constructor that can extends React. Updating state with props, setStates. 
-Rendering JSX to the Virtual DOM. componentDidMount
-ComponentWillUnmount - finush cycle
+Mounting which can have constructor (setting inheritance, setStates). 
+Render is always there for extending base class. After render gets called DOM references are going to be updated.
+ComponentDidMount - if setState is called here it calls render again.
 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
