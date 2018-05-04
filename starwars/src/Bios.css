@@ -1,0 +1,9 @@
+.Bios-Card {
+    border: 1px solid grey;
+    background: lightgray;    
+    margin: 10px;
+    opacity: 0.5;
+    min-width: 200px;
+    padding: 2px;
+
+}
