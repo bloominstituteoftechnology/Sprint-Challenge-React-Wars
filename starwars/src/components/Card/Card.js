@@ -12,42 +12,87 @@ import {
     ListGroupItem } from 'reactstrap';
 
 
-// class Card extends React.Component {
-//     constructor(props) {
-//         super(props);
-//     }
-//     render() {
-//         return (
-//             <div>
-//             <Jumbotron className="custom-card col-10 col-sm-5 col-ms-4">
-//                 <Pic />
-//                 <h1 className="display-3">{this.props.character.name}</h1>
-//                 <hr className="my-2" />
-//                 <Details />
-//                 <hr className="my-2" />
-//                 <ToggleContent />
-//                 <ToggleContent />
-//                 </Jumbotron>                
-//             </div>
-//         );
-//     }
-// }
+class Card extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            films: [],
+            starships: []
+        }
+    }
+    componentDidMount() {
+        console.log(this.props.character.films)
+        this.props.character.films.forEach( film => {
+            fetch(film)
+              .then(res => {
+                return res.json();
+              })
+              .then(data => {
+                // console.log(data)
+                this.state.films.push(data.title);
+                const filmsCopy = this.state.films;
+                this.setState({ films: filmsCopy });
+                // console.log(this.state);
+              })
+              .catch(err => {
+                // throw new Error(err);
+                console.log(`Error fetching URL: ${film}`);
+              });
+        });
 
-const Card = ({character}) => {
-  return (
-    <div className="col-12 col-md-6" >
-      <Jumbotron className="custom-card ">
-          <Pic />
-          <h1 className="display-6">{character.name}</h1>
-          <hr className="my-2" />
-          <Details details={character}/>
-          <hr className="my-2" />
-          <ToggleContent toDisplay={character.films} display="Films"/>
-          <ToggleContent toDisplay={character.starships} display="Straships" />
-      </Jumbotron>
-    </div>
-  );
-};
+        this.props.character.starships.forEach( ship => {
+            fetch(ship)
+            .then(res => {
+                // console.log(res);
+                return res.json();
+            })
+            .then(data => {
+                // console.log(data);
+                this.state.starships.push(data.model);
+                const starshipsCopy = this.state.starships;
+                this.setState({ starships: starshipsCopy });
+                console.log(this.state.starships);
+            })
+            .catch(e => {
+                console.log(`Error fetching Startship: ${ship}`)
+            })
+        });
+    }
+    render() {
+        const {character} = this.props;
+        const {films, starships} = this.state;
+        return (
+            <div className="col-12 col-md-6" >
+                <Jumbotron className="custom-card ">
+                    <Pic />
+                    <h1 className="display-6">{character.name}</h1>
+                    <hr className="my-2" />
+                    <Details details={character}/>
+                    <hr className="my-2" />
+                    <ToggleContent toDisplay={films} display="Films"/>
+                    <ToggleContent toDisplay={starships} display="Straships" />
+                </Jumbotron>
+            </div>
+            
+        );
+    }
+}
+
+// const Card = ({character}) => {
+//   return (
+//     <div className="col-12 col-md-6" >
+//       <Jumbotron className="custom-card ">
+//           <Pic />
+//           <h1 className="display-6">{character.name}</h1>
+//           <hr className="my-2" />
+//           <Details details={character}/>
+//           <hr className="my-2" />
+//           <ToggleContent toDisplay={character.films} display="Films"/>
+//           <ToggleContent toDisplay={character.starships} display="Straships" />
+//       </Jumbotron>
+//     </div>
+//   );
+// };
 
 Card.propTypes = {
     birth_year: PropTypes.number,  // "19BBY"
@@ -60,7 +105,7 @@ Card.propTypes = {
     height: PropTypes.number,  // "172"
     homeworld: PropTypes.string,  // "https://swapi.co/api/planets/1/"
     mass: PropTypes.number,  // "77"
-    name: PropTypes.string.isRequired,  // "Luke Skywalker"
+    name: PropTypes.string,  // "Luke Skywalker"
     skin_color: PropTypes.string,  // "fair"
     species: PropTypes.arrayOf(PropTypes.string),  //  ["https://swapi.co/api/species/1/"]
     starships: PropTypes.arrayOf(PropTypes.string),  // (2) ["https://swapi.co/api/starships/12/", "https://swapi.co/api/starships/22/"]
