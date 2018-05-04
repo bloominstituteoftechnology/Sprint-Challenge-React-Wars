@@ -1,12 +1,14 @@
 .App {
   text-align: center;
   flex-wrap: wrap;
-  border: 1px solid blue;
-  width: 100%;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .card-container {
