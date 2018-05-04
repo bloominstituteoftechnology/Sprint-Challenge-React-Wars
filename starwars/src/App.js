@@ -18,6 +18,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // console.log(data)
         this.setState({ starwarsChars: data.results});
       })
       .catch(err => {
@@ -25,7 +26,6 @@ class App extends Component {
       });
   }
   render() {
-    console.log(this.state)
     
     return (
       <div className="App">

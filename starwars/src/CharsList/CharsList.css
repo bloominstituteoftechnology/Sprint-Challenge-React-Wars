@@ -13,18 +13,7 @@
     cursor:default;
 }
 
-.hovereffect .overlay {
-    width:100%;
-    height:100%;
-    position:absolute;
-    overflow:hidden;
-    top:0;
-    left:0;
-    opacity:0;
-    background-color:rgba(0,0,0,0.5);
-    -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out
-}
+
 
 .hovereffect .card-body {
     display:block;
@@ -34,9 +23,7 @@
 }
 
 
-.hovereffect a.info:hover {
-box-shadow:0 0 5px #fff;
-}
+
 
 .hovereffect:hover .card-body {
     -ms-transform:scale(0.9);
@@ -44,3 +31,7 @@ box-shadow:0 0 5px #fff;
     transform:scale(0.9);
 }
 
+.starwars-cont {
+    display:flex;
+    justify-content: 
+}
