@@ -31,3 +31,19 @@
 1. Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
   - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
   - Your data coming back from Dogs should be formatted in JSON format.
+
+  ## React Sprint Challenge
+
+- [ ] Answer Questions in `Answers.md`
+
+### Project
+- [ ] Install dependencies and start your server
+- [ ] Build a card to display each object
+- [ ] Style your cards
+- [ ] Display the list of cards for each character object
+
+### Stretch Goals
+- [ ] Ensure that the data in your child component is validated
+- [ ] Build another app from scratch that looks like this, using the `dog-api`
+
+
