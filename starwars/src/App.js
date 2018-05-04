@@ -31,8 +31,13 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
 
-        {/* Char Container */}
-        <CharContainer charData={ this.state.starwarsChars } />
+        {/* Char Container */
+        (this.state.starwarsChars.length > 0)
+          ?
+            <CharContainer charData={ this.state.starwarsChars } />
+          :
+            <h2>Fetching Character Information...</h2>
+        }
       </div>
     );
   }
