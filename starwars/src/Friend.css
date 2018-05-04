@@ -1,0 +1,13 @@
+.People-Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: auto;
+}
+  
+.Friend-Card {
+    border: 1px solid grey;
+    min-width: 200px;
+    margin: 0.4rem;
+    padding: 2px;
+}
