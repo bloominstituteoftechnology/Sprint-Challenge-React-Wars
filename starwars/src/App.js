@@ -27,6 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h1 className="Header">STAR WARS PHONEBOOK</h1>
         <CardContainer data={this.state.starwarsChars}/>
       </div>
     );

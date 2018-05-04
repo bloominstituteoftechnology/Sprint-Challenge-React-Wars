@@ -29,7 +29,7 @@ export default class Example extends React.Component {
                     Films
         </DropdownToggle>
                 <DropdownMenu>
-                    {this.data.map(i => {
+                    {this.state.data.map(i => {
                         return (
                             <DropdownItem key={i.films}>{i}</DropdownItem>
                         );

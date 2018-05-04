@@ -1,1 +1,13 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70vh;
+    max-width: 1400px;
+}
 
+.card {
+    width: 88%;
+    max-width: 220px;
+    margin: 20px;
+}
