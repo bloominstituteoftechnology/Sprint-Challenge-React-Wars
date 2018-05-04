@@ -37,9 +37,25 @@ class App extends Component {
         throw new Error(err);
       });
   }
-  toggle() {
-    alert("BOOOOH!")
+  toggle(x) {
+    let film = '';
+    film = this.state.starwarsChars[x].films.map((element) => {
+      fetch(element)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          return data.title
+        })
+        .catch(err => {
+          throw new Error(err);
+        })
+      return (
+        film
+      );
+    })
   }
+
   render() {
     console.log(this.state)
     return (

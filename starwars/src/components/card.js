@@ -20,8 +20,11 @@ const CardMain = props => {
                                 <p>Gender: {element.gender}</p>
                                 <p>Height: {element.height}</p>
                                 <p>Eye Color: {element.eye_color}</p>
+
+                                Films:
+                                
                             </CardText>
-                            <Button onClick={props.toggle}>Films?!</Button>
+                            <Button onClick={props.toggle(index)}>Films?!</Button>
                         </CardBody>
                     </Card>
                 );
