@@ -6,8 +6,12 @@
 }
 
 .card {
-  background-color: lightskyblue;
-  opacity: 50%;
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 20px; 
+  background-color: lightgray;  
+  opacity: .7;
+
 }
 
 .cardBody {
@@ -19,9 +23,10 @@
 
 .cardTitle {
   font-weight: 500px;
+  opacity: 1;
   color: darkmagenta;
 }
 
 .button {
-  background-color: pink;
+  background-color: lightsalmon;
 }

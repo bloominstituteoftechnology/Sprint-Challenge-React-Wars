@@ -29,11 +29,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">        
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">React Star Wars!</h1>
         <PeopleList results={this.state.starwarsChars} />
       </div>
     );
   }
 }
+
+//Ryan's solution: 
+  // render() {
+    //   const { starwarsChars } = this.state; 
+  //   return (
+  //     <div className="App">        
+  //       <h1 className="Header">React Star Wars!</h1>
+  //       <characterList chars={starwarsChars} />
+  //     </div>
+  //   );
+  // }
+
+
 
 export default App;
