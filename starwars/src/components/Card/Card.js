@@ -35,7 +35,7 @@ import {
 
 const Card = ({character}) => {
   return (
-    <div className="col-12 col-md-4" >
+    <div className="col-12 col-md-6" >
       <Jumbotron className="custom-card ">
           <Pic />
           <h1 className="display-6">{character.name}</h1>

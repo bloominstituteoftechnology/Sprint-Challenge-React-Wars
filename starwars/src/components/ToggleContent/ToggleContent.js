@@ -29,7 +29,7 @@ class ToggleContent extends Component {
                 <ListGroup>
                 {
                     this.props.toDisplay.map(
-                    (data, i) => { return (<ListGroupItem>{data}</ListGroupItem>) }
+                    (data, i) => { return (<ListGroupItem><a href={data}>{data}</a></ListGroupItem>) }
                     )
                 }
                 </ListGroup>
