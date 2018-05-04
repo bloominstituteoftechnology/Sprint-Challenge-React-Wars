@@ -8,6 +8,14 @@ class App extends Component {
       starwarsChars: []
     };
   }
+
+  // const CharList = props => {
+  //   console.lof("Props: ", props );
+  //   return (
+  //     <div>
+  //       </div>
+  //   )
+  // }
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
