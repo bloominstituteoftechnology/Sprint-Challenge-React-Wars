@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
-import MovieList from '../MovieList/MovieList';
+  CardTitle, CardSubtitle } from 'reactstrap';
+import PropTypes from 'prop-types';
 import './CharacterCard.css';
 
 class CharacterCard extends Component {
@@ -11,7 +11,7 @@ class CharacterCard extends Component {
       swWorld: {},
     };
   }
-  
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -50,6 +50,13 @@ class CharacterCard extends Component {
       </div>
     );
   }
+}
+
+CharacterCard.propTypes = {
+  char: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    gender: PropTypes.string.isRequired,
+  })
 }
 
 export default CharacterCard;
