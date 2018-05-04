@@ -7,10 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: [],
-      modal: false,
+      starwarsChars: []
     };
-    this.toggle = this.toggle.bind(this);
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -26,34 +24,16 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-    fetch('https://swapi.co/api/films')
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        this.setState({ starwarsFilms: data.results });
-      })
-      .catch(err => {
-        throw new Error(err);
-      });
-  }
-  toggle(x) {
-    let film = '';
-    film = this.state.starwarsChars[x].films.map((element) => {
-      fetch(element)
-        .then(res => {
-          return res.json();
-        })
-        .then(data => {
-          return data.title
-        })
-        .catch(err => {
-          throw new Error(err);
-        })
-      return (
-        film
-      );
-    })
+    // fetch('https://swapi.co/api/films')
+    //   .then(res => {
+    //     return res.json();
+    //   })
+    //   .then(data => {
+    //     this.setState({ starwarsFilms: data.results });
+    //   })
+    //   .catch(err => {
+    //     throw new Error(err);
+    //   });
   }
 
   render() {
@@ -62,7 +42,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className="container">
-          <CardMain data={this.state} toggle={this.toggle} />
+          <CardMain data={this.state} />
         </div>
       </div>
     );

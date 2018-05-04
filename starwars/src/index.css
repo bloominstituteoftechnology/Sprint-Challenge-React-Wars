@@ -5,3 +5,15 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.movielist {
+  font-weight: bold;
+}
+
+.desc {
+  font-weight: bold;
+}
+
+.card-text {
+  margin-top: 20px;
+}

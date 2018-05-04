@@ -1,9 +1,10 @@
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    Card, CardText, CardBody,
+    CardTitle, CardSubtitle
 } from 'reactstrap';
 import './card.css'
+import Movielist from './movielist'
 
 const CardMain = props => {
     console.log("PROPS", props)
@@ -16,15 +17,12 @@ const CardMain = props => {
                             <CardTitle>{element.name}</CardTitle>
                             <CardSubtitle>{element.birth_year}</CardSubtitle>
                             <CardText>
-                                Details:
-                                <p>Gender: {element.gender}</p>
-                                <p>Height: {element.height}</p>
-                                <p>Eye Color: {element.eye_color}</p>
+                                <p><span className="desc">Gender:</span> {element.gender}</p>
+                                <p><span className="desc">Height:</span> {element.height}</p>
+                                <p><span className="desc">Eye Color:</span> {element.eye_color}</p>
 
-                                Films:
-                                
+                                <Movielist films={element.films} />
                             </CardText>
-                            <Button onClick={props.toggle(index)}>Films?!</Button>
                         </CardBody>
                     </Card>
                 );
