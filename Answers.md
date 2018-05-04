@@ -7,3 +7,6 @@
 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
