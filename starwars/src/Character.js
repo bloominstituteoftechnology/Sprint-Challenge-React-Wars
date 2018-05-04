@@ -1,43 +1,35 @@
 import React from "react";
-import { Card, CardBody, ListGroup, ListGroupItem, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, ListGroup, ListGroupItem } from "reactstrap";
 
-class Character extends React.Component {
-  constructor(props) {
-    super(props);
-  };
-}
-
-//receive api data from Apps
-
-render() {
+const Character = (props) => {
   return (
-    <div>{this.props.chars.map((char,index) =>
-       <Card>
-	   <CardBody>
-			       <h2>{char.name}<h2>}
-	  </div>
-
-
-	  <div>
-	      <ListGroup>
-		  <ListGroupItem>Height:{char.height}</ListGroupItem>
-		  <ListGroupItem>Mass:{char.mass}</ListGroupItem>
-	          <ListGroupItem>Hair Color: {char.hair_color}</ListGroupItem>
-		  <ListGroupItem>Skin Color: {char.skin_color}</ListGroupItem>
-		  <ListGroupItem>Eye Color: {char.eye_color}</ListGroupItem>
-		  <ListGroupItem>Birth Year: {char.birth_year}</ListGroupItem>
-	          <ListGroupItem>Gender: {char.gender}</ListGroupItem>
-		  <ListGroupItem>Homeworld: {char.homeworld}</ListGroupItem>
-		  <ListGroupItem>Species: {char.species}</ListGroupItem>
-		  <ListGroupItem>Created: {char.created}</ListGroupItem>
-	          <ListGroupItem>Edited: {char.edited}</ListGroupItem>
-		  <ListGroupItem>url: {char.url}</ListGroupItem>	      
+    <div>
+      <Card>
+        <CardBody>
+	  <CardTitle>
+	    <h2>{props.name}</h2>
+	  </CardTitle>	
+	  <CardText>
+              <ListGroup>
+		  <ListGroupItem>Height:{props.height}</ListGroupItem>
+		  <ListGroupItem>Mass:{props.mass}</ListGroupItem>
+	          <ListGroupItem>Hair Color: {props.hair_color}</ListGroupItem>
+		  <ListGroupItem>Skin Color: {props.skin_color}</ListGroupItem>
+		  <ListGroupItem>Eye Color: {props.eye_color}</ListGroupItem>
+		  <ListGroupItem>Birth Year: {props.birth_year}</ListGroupItem>
+	          <ListGroupItem>Gender: {props.gender}</ListGroupItem>
+		  <ListGroupItem>Homeworld: {props.homeworld}</ListGroupItem>
+		  <ListGroupItem>Species: {props.species}</ListGroupItem>
+		  <ListGroupItem>Created: {props.created}</ListGroupItem>
+	          <ListGroupItem>Edited: {props.edited}</ListGroupItem>
+		  <ListGroupItem>url: {props.url}</ListGroupItem>	      
 		</ListGroup>
-	  </CardBody>
+	  </CardText>
+	 </CardBody>
         </Card>
      </div>
-	  
-	  
-  )
+
+  );
 }
-    
+
+export default Character;
