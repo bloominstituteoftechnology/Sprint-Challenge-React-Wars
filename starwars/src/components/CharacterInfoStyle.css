@@ -1,0 +1,22 @@
+.character {
+    margin: 120px 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 80px;
+}
+
+.born {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.info {
+    margin-top: 0;
+}
