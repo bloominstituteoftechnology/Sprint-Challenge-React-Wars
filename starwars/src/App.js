@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
-
+import React, { Component } from 'react'
+import './App.css'
+import Header from '../src/components/Header'
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       starwarsChars: []
-    };
+    }
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -14,22 +14,22 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch('https://swapi.co/api/people/')
       .then(res => {
-        return res.json();
+        return res.json()
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results })
       })
       .catch(err => {
-        throw new Error(err);
-      });
+        throw new Error(err)
+      })
   }
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Header />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
