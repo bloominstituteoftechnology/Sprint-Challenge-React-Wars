@@ -55,7 +55,7 @@ class App extends Component {
         <div className="row">
           {
             this.state.starwarsChars.map(
-              (character, i) => { return (<Card key={i} character={character} />) }
+              (character, i) => { return (<Card id={i} key={i} character={character} />) }
             )
           }
         </div>

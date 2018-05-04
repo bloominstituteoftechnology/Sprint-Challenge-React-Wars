@@ -17,10 +17,15 @@ class Card extends React.Component {
         super(props);
         this.state = {
             films: [],
-            starships: []
+            starships: [],
+            img: ''
         }
     }
     componentDidMount() {
+        // this.setState({ img: `https://loremflickr.com/600/600/starwars,chewaka,skywalker?random=${this.props.id}` });
+        this.setState({ img: `https://source.unsplash.com/9${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}x9${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}/?starwars,milkyway` });
+        console.log(this.state.img);
+
         console.log(this.props.character.films)
         this.props.character.films.forEach( film => {
             fetch(film)
@@ -51,7 +56,7 @@ class Card extends React.Component {
                 this.state.starships.push(data.model);
                 const starshipsCopy = this.state.starships;
                 this.setState({ starships: starshipsCopy });
-                console.log(this.state.starships);
+                // console.log(this.state.starships);
             })
             .catch(e => {
                 console.log(`Error fetching Startship: ${ship}`)
@@ -60,11 +65,11 @@ class Card extends React.Component {
     }
     render() {
         const {character} = this.props;
-        const {films, starships} = this.state;
+        const {films, starships, img } = this.state;
         return (
             <div className="col-12 col-md-6" >
                 <Jumbotron className="custom-card ">
-                    <Pic />
+                    <Pic img={img} />
                     <h1 className="display-6">{character.name}</h1>
                     <hr className="my-2" />
                     <Details details={character}/>
