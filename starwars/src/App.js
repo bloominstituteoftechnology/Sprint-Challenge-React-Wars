@@ -7,7 +7,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      charPic = {
+        'Luke Skywalker': 'http://www.facetheforce.today/luke',
+        'C-3PO': 'http://www.facetheforce.today/c3po-alt',
+        'R2-D2': 'http://www.facetheforce.today/r2d2',
+        'Darth Vader': 'http://www.facetheforce.today/darthvader',
+        'Leia Organa': 'http://www.facetheforce.today/leia/',
+        'Owen Lars': '',
+        'Beru Whitesun lars': '',
+        'R5-D4': '',
+        'Biggs Darklighter': '',
+        'Obi-Wan Kenobi': 'http://www.facetheforce.today/obiwan'
+      }
     };
   }
   componentDidMount() {
@@ -53,5 +65,16 @@ App.propTypes = {
   url: PropTypes.string,  // "https://swapi.co/api/people/1/"
   vehicles: PropTypes.arrayOf(PropTypes.string)  // (2
 };
+
+/*
+{
+  'Luke Skywalker': http://www.facetheforce.today/luke,
+  'C-3PO': http://www.facetheforce.today/c3po-alt,
+  'R2-D2': http://www.facetheforce.today/r2d2,
+  'Darth Vader': http://www.facetheforce.today/darthvader,
+  'Leia Organa': http://www.facetheforce.today/leia/
+
+}
+*/
 
 export default App;
