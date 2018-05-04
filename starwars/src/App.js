@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Characters from './components/Characters/Characters.js'
-import CharList from './components/CharList/CharList.js'
-
+import CharList from './components/CharList/CharList';
+import { Button } from 'reactstrap'; 
 
 
 class App extends Component {
@@ -30,13 +29,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <header className="Header">
         <h1 className="App-title">React Wars!</h1>
         </header>
 
         <div>  
-        <CharList/>
-      </div>
+        <CharList starwarsChars={this.state.starwarsChars} />
+       </div>
 
       </div>
     );

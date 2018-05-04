@@ -1,20 +1,46 @@
 import React from 'react';
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 const CharList  = (props) => {
 
     return (
+
+
         <div className="character-wrapper ">
-            <h2>{props.name}</h2>
-            <p>Height: {props.height}</p>
-            <p>Mass: {props.mass}</p>
-            <p>Eye Color: {props.eye_color}</p>
-            <p>Birth Year: {props.birth_year}</p>
-            <p>Hair Color: {props.hair_color}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Skin Color: {props.skin_color}</p>
+
+        <div className="row"> 
+
+            { props.starwarsChars.map((char) => {
+               return (
+             
+            <div className="col-12 col-sm-6 col-md-4" key={char.url}>   
+
+               <Card>
+
+                    <CardTitle>Name: {char.name}</CardTitle>
+                    <CardText>{char.birth_year}</CardText>
+                    <CardText>{char.eye_color}</CardText>
+                    <CardText>{char.gender}</CardText>
+                    <CardText>{char.hair_color}</CardText>
+                    <CardText>{char.height}</CardText>
+                    <CardText>{char.mass}</CardText>
+                    <CardText>{char.skin_color}</CardText>
+
+            </Card>
+
+           </div> 
+    
+            )
+
+            })
+
+            }
+          </div>  
         </div>
     )
 
 }
 
-export default Charlist ; 
+export default CharList ; 
+
