@@ -35,10 +35,10 @@ import {
 
 const Card = ({character}) => {
   return (
-    <div>
-      <Jumbotron className="custom-card col-12">
+    <div className="col-12 col-md-4" >
+      <Jumbotron className="custom-card ">
           <Pic />
-          <h1 className="display-3">{character.name}</h1>
+          <h1 className="display-6">{character.name}</h1>
           <hr className="my-2" />
           <Details details={character}/>
           <hr className="my-2" />
@@ -60,7 +60,7 @@ Card.propTypes = {
     height: PropTypes.number,  // "172"
     homeworld: PropTypes.string,  // "https://swapi.co/api/planets/1/"
     mass: PropTypes.number,  // "77"
-    name: PropTypes.string,  // "Luke Skywalker"
+    name: PropTypes.string.isRequired,  // "Luke Skywalker"
     skin_color: PropTypes.string,  // "fair"
     species: PropTypes.arrayOf(PropTypes.string),  //  ["https://swapi.co/api/species/1/"]
     starships: PropTypes.arrayOf(PropTypes.string),  // (2) ["https://swapi.co/api/starships/12/", "https://swapi.co/api/starships/22/"]

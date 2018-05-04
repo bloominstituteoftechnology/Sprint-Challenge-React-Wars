@@ -46,9 +46,9 @@ class App extends Component {
     return (
       <div className="App container">
         <div className="row">
-        <h1 className="Header col-12">React Wars</h1>
+        <h1 className="Header display-1 col-12">React Wars</h1>
         </div>
-        <div className="row d-flex">
+        <div className="row">
           {
             this.state.starwarsChars.map(
               (character, i) => { return (<Card key={i} character={character} />) }
