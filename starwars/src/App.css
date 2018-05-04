@@ -22,11 +22,15 @@
 }
 
 .mein-issues {
-  width: 30rem;
+  width: 40rem;
+  text-indent: 38%;
+}
+.mein-issues-2 {
+  text-indent: 41%;
 }
 
 .mein-cards {
-  margin: 4rem 5rem 2rem 15rem;
+  margin: 4rem 3rem 2rem 10rem;
 }
 
 .titleReactWars {

@@ -4,7 +4,7 @@ const Films = props => {
     return (
         <div className="container fierce">
             <div className="row">
-            <select className="mw-100 mein-issues">
+            <select className="mw-100 mein-issues mein-issues-2">
                 <option>Films</option>         
             {props.films.map(film => {
                 return <option key={film}> {film} </option>

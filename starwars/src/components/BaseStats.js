@@ -9,7 +9,7 @@ const BaseStats = props => {
             <CardTitle className="font-weight-bold mein-card boldest-card" key={props.name}> {props.name} </CardTitle>
             <select className="mw-100 mein-issues">
                 <option> Home planet </option>  
-                <option key={props.homeworld}> {props.homeworld} </option>
+                <option key={props.homeworld}>{props.homeworld} </option>
             </select>
             <CardText className="font-weight-bold mein-card bold-card" key={props.mass + props.name}> Mass: </CardText>
             <CardText> {props.mass} </CardText>
