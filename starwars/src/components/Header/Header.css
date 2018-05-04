@@ -4,11 +4,16 @@
   
   .nav-logo-name {
     border-left: 1px solid black;
+    height: 20px;
     margin-left: 20px;
     padding-left: 20px;
   }
   
   .nav-img {
     margin: auto 20px;
+  }
+  
+  .nav-logo-img {
+    height: 100px;
   }
   
