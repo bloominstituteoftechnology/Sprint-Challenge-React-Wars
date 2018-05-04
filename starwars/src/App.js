@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Jumbotron } from 'reactstrap';
+import CharList from './CharList';
 
 class App extends Component {
   constructor() {
@@ -25,9 +27,14 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+      [
+        <Jumbotron className="jumbotron">
+            <h1 className="display-3">React Wars</h1>
+        </Jumbotron>,
+        <div className="App">
+          <CharList chars={this.state.starwarsChars} />
+        </div>
+      ]
     );
   }
 }
