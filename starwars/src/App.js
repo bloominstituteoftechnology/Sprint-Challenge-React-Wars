@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header/Header.js'
+// import Characters from './components/Characters/Characters.js'
+import CharList from './components/CharList/CharList.js'
+
 
 
 class App extends Component {
@@ -28,7 +30,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header starwarsChars ={this.state.starwarsChars} />
+        <header className="Header">
+        <h1 className="App-title">React Wars!</h1>
+        </header>
+
+        <div>  
+        <CharList/>
+      </div>
+
       </div>
     );
   }
