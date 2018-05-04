@@ -15,3 +15,7 @@ React.Component is the base class that lets us use methods that the React team h
 
 Functional components are just JS functions, they take optional inputs called props. Do not have state.
 Class components have state but can exist without state as well. Class components always call the base constructor with props.
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+
+PropTypes is used to type check specific data that may be passed down from parent to child components. This becomes useful if we have multiple data types and passing down incorrect data types could produce bugs. 
