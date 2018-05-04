@@ -30,6 +30,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+       { console.log(this.state.starwarsChars)}
+
         <PostContainer starwarsChars={this.state.starwarsChars}/>
       </div>
     );

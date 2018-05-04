@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Row, InputGroup, Input, InputGroupAddon, InputGroupText} from "reactstrap";
-// import CommentSection from '../CommentSection/CommentSection';
+import { Card, CardImg, CardBody, CardTitle, Row, Table} from "reactstrap";
 
 
 class Post extends Component {
@@ -16,24 +15,55 @@ class Post extends Component {
           <Card className="Post">
                 <CardBody>
                     <Row>
-                        <img className="Post-userimg" src={"https://upload.wikimedia.org/wikipedia/commons/7/7b/May_the_4th_be_with_you_%28Star_Wars_Day%29.gif"} alt=""/>
+                        <img className="Post-userimg" src={"https://i.pinimg.com/564x/13/84/c0/1384c00e983ed79ac86237b490a3389c.jpg"} alt=""/>
                         <CardTitle className="Post-username"> {this.props.post.name} </CardTitle>
                     </Row>
                 </CardBody>
                 <CardImg src={"http://www.unleashthefanboy.com/wp-content/uploads/2012/10/star-wars-banner.jpg"} alt="" />
                 <CardBody>
                     <CardTitle className="Post-label">
-                        Gender
+                        Data
                     </CardTitle>
-                    <CardText className="Post-data">
-                        {this.props.post.gender}
-                    </CardText>
-                    <InputGroup>
-                        <Input placeholder="Add a comment"/>
-                            <InputGroupAddon addonType="append">
-                            <InputGroupText>...</InputGroupText>
-                            </InputGroupAddon>
-                    </InputGroup>
+                    <Table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Birth Year</th>
+                                <td>{this.props.post.birth_year}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Created</th>
+                                <td>{this.props.post.created}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Edited</th>
+                                <td>{this.props.post.edited}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Eye Color</th>
+                                <td>{this.props.post.eye_color}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>{this.props.post.gender}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hair Color</th>
+                                <td>{this.props.post.hair_color}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Height</th>
+                                <td>{this.props.post.height}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mass</th>
+                                <td>{this.props.post.mass}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Skin Color</th>
+                                <td>{this.props.post.skin_color}</td>
+                            </tr>
+                        </tbody>
+                    </Table>
                 </CardBody>
           </Card>
         );
