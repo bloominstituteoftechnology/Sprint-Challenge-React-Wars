@@ -7,3 +7,6 @@
 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component. -- We only need Class components when we want to hold a state or when we want to use React Lifestyle components. Functional components are much simpler and only use one render method, but they can not hold a state or Lifestyle components.
+
+
+4. Briefly describe PropTypes and what we use them for when building react applications. -- PropTypes are a form of data validation for the developer to make sure that we don't render things that don't exist. We can use PropTypes in functional components when we map through a object with specific key: value pairs. If we try to display a key that doesn't exist in the object, or give an existing key an invalid value, PropTypes will catch it.
