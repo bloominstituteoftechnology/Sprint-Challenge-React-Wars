@@ -36,7 +36,7 @@ class CharCard extends Component {
 
 // Since the api that gave me actual character images cut me off, I'll just get a cat image instead
 
-    this.setState({characterPic: "http://thecatapi.com/api/images/get?format=src&type=gif"});
+    this.setState({characterPic: `http://thecatapi.com/api/images/get?format=src&type=gif`});
 
 
 
@@ -72,7 +72,7 @@ class CharCard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="char-card">
         <Card>
           <CardImg top width="100%" src={this.state.characterPic} alt="Card image cap" />
           <CardBody>
