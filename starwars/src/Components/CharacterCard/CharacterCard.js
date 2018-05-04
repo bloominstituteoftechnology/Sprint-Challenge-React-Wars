@@ -5,7 +5,7 @@ const CharacterCard = (props) =>{
     const x = props.chars
     return(
         <div className="starCards">      
-      <Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }} className="cardContainer">
+      <Card inverse style={{ backgroundColor: '#444', borderColor: '#333' }} className="cardContainer">
         <CardBody>
           <CardTitle>{x.name}</CardTitle>
           <div className="row">
