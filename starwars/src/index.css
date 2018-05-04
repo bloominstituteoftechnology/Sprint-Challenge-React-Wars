@@ -10,8 +10,13 @@ html{
 }
 
 body {
+  height: 1vw;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: url('./sw-bg.jpg') no-repeat center center fixed;
+  /* background-image: url('./sw-bg.jpg');
+  background-repeat: repeat-x;*/
+  background-size: cover; 
   
 }

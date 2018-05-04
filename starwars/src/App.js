@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
+import Card from './components/Card/Card'
 
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      charPic = {
+      charPic: {
         'Luke Skywalker': 'http://www.facetheforce.today/luke',
         'C-3PO': 'http://www.facetheforce.today/c3po-alt',
         'R2-D2': 'http://www.facetheforce.today/r2d2',
@@ -40,8 +41,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="App container">
+        <div className="row">
+        <h1 className="Header col-12">React Wars</h1>
+        </div>
+        <div className="row">
+          <Card />
+        </div>
       </div>
     );
   }
@@ -68,12 +74,16 @@ App.propTypes = {
 
 /*
 {
-  'Luke Skywalker': http://www.facetheforce.today/luke,
-  'C-3PO': http://www.facetheforce.today/c3po-alt,
-  'R2-D2': http://www.facetheforce.today/r2d2,
-  'Darth Vader': http://www.facetheforce.today/darthvader,
-  'Leia Organa': http://www.facetheforce.today/leia/
-
+  'Luke Skywalker': 'http://www.facetheforce.today/luke',
+  'C-3PO': 'http://www.facetheforce.today/c3po-alt',
+  'R2-D2': 'http://www.facetheforce.today/r2d2',
+  'Darth Vader': 'http://www.facetheforce.today/darthvader',
+  'Leia Organa': 'http://www.facetheforce.today/leia/',
+  'Owen Lars': '',
+  'Beru Whitesun lars': '',
+  'R5-D4': '',
+  'Biggs Darklighter': '',
+  'Obi-Wan Kenobi': 'http://www.facetheforce.today/obiwan'
 }
 */
 
