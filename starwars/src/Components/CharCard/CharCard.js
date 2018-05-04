@@ -36,7 +36,7 @@ class CharCard extends Component {
 
 // Since the api that gave me actual character images cut me off, I'll just get a random image instead.  Comment this if you uncomment the above.
 
-    this.setState({characterPic: `https://picsum.photos/800/1000/?image=${Math.floor(Math.random() * 100)}`});
+    this.setState({characterPic: `https://picsum.photos/800/1000/?image=${Math.floor(Math.random() * 85)}`});
 
 
 
