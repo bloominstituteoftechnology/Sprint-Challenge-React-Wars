@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharCard from './Components/CharCard/CharCard.js';
+import NavButtons from './Components/NavButtons/NavButtons.js';
 import './App.css';
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <NavButtons />
         {this.state.starwarsChars.map((character, index) => <CharCard key={index} character={character} />)}
       </div>
     );
