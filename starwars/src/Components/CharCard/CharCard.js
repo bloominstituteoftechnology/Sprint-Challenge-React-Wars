@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CharCard.css';
 import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+  CardTitle } from 'reactstrap';
 
 class CharCard extends Component {
   constructor(props) {
@@ -53,7 +53,7 @@ class CharCard extends Component {
 
 
 
-      this.state.character.films.map((film, index) => {
+      this.state.character.films.forEach((film, index) => {
         fetch(this.state.character.films[index])
           .then(res => {
             return res.json();
