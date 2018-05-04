@@ -1,3 +1,6 @@
+@import './components/CharsContainer/CharsContainer.css';
+@import './components/Character/Character.css';
+
 body {
   margin: 0;
   padding: 0;
