@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const CharData = props => {
   return (
     <React.Fragment>
-      {
-        props.charData.map((char, ind) => {
-          return (
             <div className='char-card-container__char-card-wrapper'>
-              <div key={ind + Date.now()} className="char-card-container__char-card">
+              <div className="char-card-container__char-card">
 
-                <h2 className='mt-2'>{char.name}</h2>
-                <p className='mt-2'><span className='char-card__char-info-label'>Gender:</span> {char.gender}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Birth Year:</span> {char.birth_year}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Eye Color:</span> {char.eye_color}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Hair Color:</span> {char.hair_color}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Height:</span> {char.height}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Weight:</span> {char.mass}</p>
-                <p className='mt-2'><span className='char-card__char-info-label'>Skin Color:</span> {char.skin_color}</p>
+                <h2 className='mt-2'>{props.name}</h2>
+                <p className='mt-2'><span className='char-card__char-info-label'>Gender:</span> {props.gender}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Birth Year:</span> {props.birthYear}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Eye Color:</span> {props.eyeColor}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Hair Color:</span> {props.hairColor}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Height:</span> {props.height}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Weight:</span> {props.mass}</p>
+                <p className='mt-2'><span className='char-card__char-info-label'>Skin Color:</span> {props.skinColor}</p>
 
-                <div className='mt-2'>
+                {/*<div className='mt-2'>
                   <div>
                     <p className='char-card__char-info-label'>Films</p>
                   </div>
@@ -76,13 +73,10 @@ const CharData = props => {
                       })
                     }
                   </div>
-                </div>
+                </div>*/}
 
               </div>
             </div>
-          );
-        })
-      }
     </React.Fragment>
   );
 }
