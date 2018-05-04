@@ -6,12 +6,11 @@ import Chars from './Chars';
 const CharList = props => {
     return (
         <div>
-            {props.starwarsChar.map(character => {
-                console.log(character);
-                return <Chars key={character.id} />
+            {props.starwarsChars.map(CharacterData =>{
+                return <Chars key={CharacterData.reuslts} CharacterData={CharacterData} />
             })}
         </div>
-    )
-}
+    );
+};
 
 export default CharList;

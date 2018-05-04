@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Chars = ({ character }) => {
+const Chars = ({ CharacterData }) => {
     return (
         <div >
-            <p>{character.name}</p>
-            <p>{character.height}</p>
+            <p>{CharacterData.name}</p>
+            <p>{CharacterData.height}</p>
         </div>
     )
 }
