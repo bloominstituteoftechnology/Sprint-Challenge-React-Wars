@@ -1,7 +1,7 @@
 # Answers
 
 1. What is React JS? How does it differ from other JavaScript frameworks?
-React JS is a javascript library for creating interactive web apps.  It maintains a virtual DOM and updates the actual DOM from it.  It's able to keep content up to date in real time due to its life cycle.  
+React JS is a javascript library for creating interactive web apps.  It maintains a virtual DOM and updates the actual DOM from it.  It's able to keep content up to date in real time due to its life cycle.  It also makes it easy for us to create reusable, modular components for our interactive apps.  It also provides interpolation to let us write HTML inside javascipt and vice versa.  
 
 2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
 The react lifecycle is what makes it reactive.  It allows us to write methods that will be invoked at given points in the lifecycle.  There are a bunch of lifecycle methods, but the ones I'm most familiar with so far are:
