@@ -1,0 +1,27 @@
+.People-Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+  margin: auto;
+}
+
+.card {
+  background-color: lightskyblue;
+  opacity: 50%;
+}
+
+.cardBody {
+  border: 1px solid blue;  
+  min-width: 200px;   
+  margin: 0.4rem;
+  padding: 2px;
+}
+
+.cardTitle {
+  font-weight: 500px;
+  color: darkmagenta;
+}
+
+.button {
+  background-color: pink;
+}
