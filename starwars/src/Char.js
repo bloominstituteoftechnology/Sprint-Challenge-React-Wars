@@ -10,12 +10,12 @@ const Char = ({ char }) => {
             <CardTitle className="cardTitle">
               {char.name}
             </CardTitle>            
-            <CardText>{char.height}</CardText>
-            <CardText>{char.mass}</CardText>
-            <CardText>{char.hair_color}</CardText>
-            <CardText>{char.eye_color}</CardText>
-            <CardText>{char.birth_year}</CardText>
-            <CardText>{char.gender}</CardText>            
+            <CardText>Height: {char.height}</CardText>
+            <CardText>Mass: {char.mass}</CardText>
+            <CardText>Hair Color: {char.hair_color}</CardText>
+            <CardText>Eye Color: {char.eye_color}</CardText>
+            <CardText>Birth Year: {char.birth_year}</CardText>
+            <CardText>Gender: {char.gender}</CardText>            
             <Button className="button">Know More!</Button>
           </CardBody>
         </Card>
