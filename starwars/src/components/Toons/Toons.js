@@ -1,10 +1,10 @@
 import React from 'react';
-import Luke from '../Luke/Luke.js';
+import ToonName from '../ToonName/ToonName.js';
 import './Toons.css';
 
 const Toons = props => {
     return (
-        <Luke lukesStuff={props.toonData}/>
+        <ToonName toonName={props.toonData}/>
     )
 }
 
