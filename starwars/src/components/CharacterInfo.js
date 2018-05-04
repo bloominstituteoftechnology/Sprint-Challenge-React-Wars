@@ -32,7 +32,7 @@ export const CharacterInfo = (props) => {
 // eye_color: "blue" V
 // gender: "male" V
 // hair_color: "blond" V
-// height: "172"
-// mass: "77"
+// height: "172" V
+// mass: "77" V
 // name: "Luke Skywalker" V
 // skin_color: "fair" V

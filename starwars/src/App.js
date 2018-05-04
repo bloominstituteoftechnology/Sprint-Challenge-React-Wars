@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { CharacterInfo } from './components/CharacterInfo.js';
+import starwarts from './starwarts.mp3';
 
 class App extends Component {
   constructor() {
@@ -28,6 +29,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <audio controls>
+          <source src={starwarts} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+
         <div id="titles"><div id="titlecontent">
 
           <h3>Week V</h3>
