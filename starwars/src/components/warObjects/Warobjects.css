@@ -1,0 +1,24 @@
+.war-object{
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 2%;
+    margin-bottom: 2%;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    padding: 3% 0;
+    box-shadow: 5px 5px 4px black;
+    font-size: 1.4rem;
+}
+
+.names{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(231, 10, 231);
+    margin-bottom: 3%;
+}
+
+.titles{
+    font-weight: bold;
+    color: red;
+}
