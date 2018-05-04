@@ -27,7 +27,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results, mainObject: data  });
+        this.setState({ starwarsChars: data.results, mainObject: data, urlString: urlString });
       })
       .catch(err => {
         throw new Error(err);
@@ -37,11 +37,10 @@ class App extends Component {
 
   changeUrlString(urlString) {
     this.getCharsFromNet(urlString);
-    this.setState({ urlString: urlString });
   }
 
   render() {
-    
+
     return (
       <div className="App">
 
