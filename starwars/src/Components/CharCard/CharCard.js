@@ -8,13 +8,15 @@ class CharCard extends Component {
     super(props);
     this.state = {
       character: props.character,
-      characterSpec: []
+      characterSpec: {},
+      characterFilms: []
     }
 
   }
 
 
   componentDidMount() {
+
     fetch(this.state.character.species[0])
       .then(res => {
         return res.json();
@@ -25,6 +27,23 @@ class CharCard extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+
+
+        this.state.character.films.map((film, index) => {
+          fetch(this.state.character.films[index])
+            .then(res => {
+              return res.json();
+            })
+            .then(data => {
+              let characterFilms = this.state.characterFilms;
+              characterFilms.push(data);
+              this.setState({ characterFilms: characterFilms});
+            })
+            .catch(err => {
+              throw new Error(err);
+            });
+        });
   }
 
   render() {
