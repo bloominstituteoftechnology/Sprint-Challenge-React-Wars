@@ -12,3 +12,7 @@ setState differs from the prior two in that it's built in rather than developer 
 
 3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 A class/stateful component is implemented as a javascript class which extends the react Component class.  It stores its state as a child object, and has at the very least a constructor and a render method, and possibly other methods.  A Functional/Presentational component is basically just a bare render method.  It does not have a state or methods of its own, but it can be passed props.  The capabilities of functional components are a subset of those of classical components, but if a classical component is not needed a functional one is much more succinct.  
+
+
+4. Briefly describe PropTypes and what we use them for when building react applications.
+Since javascript classes are just syntactic sugar over prototype manipulation, class/stateful components are exactly that.  Prototypes are what allow objects to inherit methods.  Every javascript array has access to the methods on the array prototype.  And if I write a custom Constructor, every object created by new Constructor will have access to whatever I put on Constructor.prototype.  
