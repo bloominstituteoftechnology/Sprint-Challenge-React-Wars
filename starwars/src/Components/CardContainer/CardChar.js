@@ -3,8 +3,8 @@ import { Card, CardBody, CardImg, Container, Row,Col, CardSubtitle, CardText,Car
 import './CardContainer.css';
 const CardChar = props =>{
     return(
-        <div className="card-wrapper">
-                <Col>
+        <div >
+                <Col  sm="6">
                     <Card>
                         <CardBody>
                             <CardTitle> {props.char.name}</CardTitle>
