@@ -1,10 +1,17 @@
 import React from 'react';
 import ToonName from '../ToonName/ToonName.js';
+import ToonHeight from '../ToonHeight/ToonHeight.js';
+// import ToonMass from '../ToonMass/ToonMass.js';
 import './Toons.css';
 
 const Toons = props => {
     return (
-        <ToonName toonName={props.toonData}/>
+        <div>
+            <ToonName toonName={props.toonData} />
+            <ToonHeight toonHeight={props.toonData} />
+            {/* <ToonMass toonMass={props.toondata} /> */}
+            {/* <ToonHairColor toon_hair_color={props.toonData} /> */}
+        </div>
     )
 }
 

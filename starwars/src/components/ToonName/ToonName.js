@@ -8,4 +8,5 @@ const ToonName = props => {
         </div>
     )
 }
+
 export default ToonName;
