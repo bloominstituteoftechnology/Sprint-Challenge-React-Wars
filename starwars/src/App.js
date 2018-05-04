@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 import CharacterCard from './components/CharacterCard';
 
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [], 
+   
     };
   }
+
+
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
