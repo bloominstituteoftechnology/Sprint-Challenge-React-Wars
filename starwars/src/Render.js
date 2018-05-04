@@ -2,32 +2,32 @@ import React from 'react';
 
 import {
   Card,
-  CardImg,
   CardText,
   CardBody,
   CardSubtitle,
   Row
 } from 'reactstrap';
+import './Render.css';
 
 const Render = props => {
         return (
         <Card>
          <CardBody>
             <Row>
-              <CardSubtitle className="cardSubtitle">
-                <div>{props.render.name}</div>
+              <CardSubtitle>
+                {props.char.name}
               </CardSubtitle>
             </Row>
           </CardBody>
-            {props.render.hair_color}
+            {props.char.hair_color}
           <CardBody>
             <CardText>
-              <div>{props.render.eye_color} likes</div>
+              <div>{props.char.eye_color}</div>
             </CardText>
             <CardText>
             </CardText>
           <CardText>
-              <div>{props.render.birth_year}</div>
+              <div>{props.char.birth_year}</div>
             </CardText>
           </CardBody>
         </Card>

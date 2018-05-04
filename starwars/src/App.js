@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div>{starwarsChars.map(char => <Render char={char} />)}</div>;
+        {starwarsChars.map(char => <Render char={char} />)}
         <Render />
       </div>
     );
