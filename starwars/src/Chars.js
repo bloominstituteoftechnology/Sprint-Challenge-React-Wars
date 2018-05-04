@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Char from './Char';
 import CharInfo from './CharInfo';
 import CharImage from './CharImage';
@@ -49,6 +50,18 @@ class Chars extends Component {
       </div>
     );
   }
+}
+
+Chars.propTypes = {
+  chars: PropTypes.arrayOf(
+    PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        height: PropTypes.string.isRequired,
+        gender: PropTypes.string.isRequired,
+        eye_color: PropTypes.string.isRequired,
+        skin_color: PropTypes.string.isRequired,
+    })
+  )
 }
 
 export default Chars;

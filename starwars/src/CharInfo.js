@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const CharInfo = ({ char, imgUrl, handleBack }) => 
   <div className="char-info">
@@ -34,5 +35,10 @@ const CharInfo = ({ char, imgUrl, handleBack }) =>
       </div>
     </div>
   </div>
+
+CharInfo.propTypes = {
+  imgUrl: PropTypes.string.isRequired, 
+  handleBack: PropTypes.func.isRequired
+}
 
 export default CharInfo;
