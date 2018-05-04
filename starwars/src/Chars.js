@@ -1,16 +1,18 @@
 import React from 'react';
-import { Card, CardText, CardBody } from 'reactstrap';
+import { Card, CardText, CardBody, Row, Col } from 'reactstrap';
 
 const Chars = ({ CharacterData }) => {
     return (
-        <div >
-            <Card>
-                <CardBody>
-                    <CardText>{CharacterData.name}</CardText>
-                    <CardText>{CharacterData.height}</CardText>
-                </CardBody>
-            </Card>
-        </div>
+        <Row>
+            <Col sm="6">
+                <Card>
+                    <Card body>
+                        <CardText>{CharacterData.name}</CardText>
+                        <CardText>{CharacterData.height}</CardText>
+                    </Card>
+                </Card>
+            </Col>
+        </Row>
     )
 }
 
