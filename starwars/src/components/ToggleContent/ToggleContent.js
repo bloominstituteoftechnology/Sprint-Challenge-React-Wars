@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import Details from '../Details/Details'
+import { Collapse,
+    Button,
+    CardBody,
+    Card,
+    CardText,
+    ListGroup,
+    ListGroupItem } from 'reactstrap';
 
 class ToggleContent extends Component {
   constructor(props) {
@@ -15,14 +22,17 @@ class ToggleContent extends Component {
   render() {
     return (
       <div>
-        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Button color="secondary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>{this.props.display}</Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody>
-            Anim pariatur cliche reprehenderit,
-             enim eiusmod high life accusamus terry richardson ad squid. Nihil
-             anim keffiyeh helvetica, craft beer labore wes anderson cred
-             nesciunt sapiente ea proident.
+                <ListGroup>
+                {
+                    this.props.toDisplay.map(
+                    (data, i) => { return (<ListGroupItem>{data}</ListGroupItem>) }
+                    )
+                }
+                </ListGroup>
             </CardBody>
           </Card>
         </Collapse>

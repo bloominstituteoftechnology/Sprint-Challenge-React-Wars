@@ -36,14 +36,14 @@ import {
 const Card = ({character}) => {
   return (
     <div>
-      <Jumbotron className="custom-card col-10 col-sm-5 col-ms-4">
+      <Jumbotron className="custom-card col-12">
           <Pic />
           <h1 className="display-3">{character.name}</h1>
           <hr className="my-2" />
           <Details details={character}/>
           <hr className="my-2" />
-          <ToggleContent />
-          <ToggleContent />
+          <ToggleContent toDisplay={character.films} display="Films"/>
+          <ToggleContent toDisplay={character.starships} display="Straships" />
       </Jumbotron>
     </div>
   );
