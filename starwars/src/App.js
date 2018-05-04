@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardMain from './components/card';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      modal: false,
     };
+    this.toggle = this.toggle.bind(this);
   }
   componentDidMount() {
     // feel free to research what this code is doing.
@@ -22,11 +26,28 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+    fetch('https://swapi.co/api/films')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsFilms: data.results });
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  }
+  toggle() {
+    alert("BOOOOH!")
   }
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="container">
+          <CardMain data={this.state} toggle={this.toggle} />
+        </div>
       </div>
     );
   }

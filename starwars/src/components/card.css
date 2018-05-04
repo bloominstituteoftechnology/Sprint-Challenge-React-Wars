@@ -1,0 +1,21 @@
+.card {
+    margin: 10px 10px 0 10px;
+    border: 0.5px solid gray;
+}
+
+button {
+    margin: 10px 30% 0 30%;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 0;
+}
