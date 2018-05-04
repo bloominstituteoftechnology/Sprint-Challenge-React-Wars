@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 // tried creating a reactstrap card but my CDN is not working for some reason
 const Cards = (props) => {
