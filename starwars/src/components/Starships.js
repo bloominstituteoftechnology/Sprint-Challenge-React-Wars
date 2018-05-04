@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Card, CardTitle } from 'reactstrap'
 
 const Starships = props => {
     return (
-        <Card>
-        {props.starships.map(starship => {
-            return <CardTitle key={starship}> {starship} </CardTitle>
+        <select>
+            <option> Starships </option>
+                {props.starships.map(starship => {
+                    return <option key={starship}> {starship} </option>
         })}
-        </Card>
+        </select>
     )
 }
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Card, CardTitle } from 'reactstrap'
 
 const Species = props => {
     return (
-        <Card>
+        <select>
+        <option>Species</option>
         {props.species.map(species => {
-            return <CardTitle key={species}> {species} </CardTitle>
+            return <option key={species}> {species} </option>
         })}
-        </Card>
+        </select>
     )
 }
 
