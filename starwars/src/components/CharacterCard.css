@@ -6,6 +6,12 @@
     height: 300px;
 }
 
+.card:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
 .card-title {
     font-weight: bold;
     color: black;
