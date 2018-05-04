@@ -1,11 +1,11 @@
 import React from "react";
 import './StarwarsChars.css'
-import { Card, CardBody,
-  CardTitle,} from 'reactstrap';
+import { Card, CardBody, CardTitle,} from 'reactstrap';
+import PropTypes from 'prop-types';
 
 const StarwarsChars = props => {
-  console.log(props.chars);
-  console.log(props.chars.birth_year);
+  // console.log(props.chars);
+  // console.log(props.chars.birth_year);
   const n = props.chars
   return (
     <div className="starCards">      
@@ -30,6 +30,18 @@ const StarwarsChars = props => {
 }
 
 
+//This isn't working.  I'll need to do more research on how to get this to work 
+StarwarsChars.propTypes = {
+  props: PropTypes.shape({
+    chars: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.number.isRequired,
+      })
+    )
+
+  })
+
+};
 
 
 export default StarwarsChars
