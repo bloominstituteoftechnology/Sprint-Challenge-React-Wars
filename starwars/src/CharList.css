@@ -1,5 +1,23 @@
 .cards{
     display: flex;
     justify-content: center;
-    min-width: 500px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card-content{
+    width: 300px;
+    margin: 20px;
+}
+
+.name{
+    border-bottom: 2px solid black;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
 }
