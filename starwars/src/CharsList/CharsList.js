@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 const CharsList = props => {
     return (
-        <div class='container d-sm-flex flex-sm-column'>
+        <div class='container'>
             {props.chars.map(char => {
                 return (
 
-                    <div class="row justify-content-sm-center mt-sm-5">
+                    <div class="row justify-content-sm-center mt-sm-4">
                         <div class="col-sm-5">
                             <div class="card bg-light char-card hovereffect">
                                     <div class="card-body">
@@ -25,8 +25,6 @@ const CharsList = props => {
                             </div>
                             
                         </div>
-
-
                 )
             })}
         </div>

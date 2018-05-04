@@ -18,14 +18,14 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results});
       })
       .catch(err => {
         throw new Error(err);
       });
   }
   render() {
-    console.log(this.state.starwarsChars)
+    console.log(this.state)
     
     return (
       <div className="App">
