@@ -36,7 +36,7 @@ class App extends Component {
         <div className="row">
         {this.state.starwarsChars.map(characters => {
           return (
-          <div className="mein-cards">
+          <div key={characters.url} className="mein-cards">
             <BaseStats 
                 name={characters.name}
                 height={characters.height}
