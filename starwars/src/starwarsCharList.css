@@ -1,5 +1,10 @@
 .cards {
     width: 30%;
-    margin: 0 auto;
+    margin: 3% auto;
+    padding: 0 0 3%;
     border: 1px solid gray;
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    background-color: rgba(4, 4, 61, 0.933);
+    color: white;
 }

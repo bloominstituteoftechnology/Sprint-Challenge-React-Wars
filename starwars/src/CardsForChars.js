@@ -5,25 +5,25 @@ import { Card, CardText, CardBody,
 
 const CharinCard=({charinCard}) => {
     return (
-        <Card  class="cards">
+        <Card  className="cards">
             <CardBody>
                 <CardTitle>
                    <h3> {charinCard.name} </h3>
                 </CardTitle>
                 <CardBody>
-                    {charinCard.gender}
+                <b>    Gender:</b> {charinCard.gender}
                 </CardBody>
                 <CardBody>
-                    Birth Year:  {charinCard.birth_year}
+                    <b>Birth Year:</b>  {charinCard.birth_year}
                 </CardBody>
                 <CardBody>
-                    Created:  {charinCard.created}
+                 <b>   Created:</b>  {charinCard.created}
                 </CardBody>
                 <CardBody>
-                    Homeworld: {charinCard.homeworld}
+                   <b> Homeworld:</b> {charinCard.homeworld}
                 </CardBody>
                 <CardBody>
-                    Starships:  {charinCard.vehicles.map(starship =>{
+                   <b> Starships:</b>  {charinCard.vehicles.map(starship =>{
                         return (
                             <div key={starship.length}>
                                 {starship}
@@ -32,7 +32,7 @@ const CharinCard=({charinCard}) => {
                     })}
                 </CardBody>
                 <CardBody>
-                    Height: {charinCard.height}
+                <b>    Height:</b> {charinCard.height}
                 </CardBody>
             </CardBody>
         </Card>
