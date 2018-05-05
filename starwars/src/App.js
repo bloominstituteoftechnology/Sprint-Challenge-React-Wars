@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SrarwarsCharList from './SrarwarsCharList';
 import './App.css';
 
 class App extends Component {
@@ -32,9 +33,11 @@ class App extends Component {
       });
   }
   render() {
+    console.log("State startwarsChars: ", this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <SrarwarsCharList newstarData = {this.state.starwarsChars} />
       </div>
     );
   }
