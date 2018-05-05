@@ -18,3 +18,11 @@
   padding: 5px;
   padding-top: 10px;
 }
+
+h5.card-title {
+  font-size: 1.5rem;
+}
+
+.card-body h5.card-title {
+  font-size: 1.1rem;
+}
