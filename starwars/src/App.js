@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Films from './components/Films.js'
-import Species from './components/Species.js'
-import Vehicles from './components/Vehicles.js'
-import Starships from './components/Starships.js'
 import BaseStats from './components/BaseStats.js'
-
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      starwarsPlanets: [],
+      starwarsFilms: [],
+      starwarsSpecies: [],
+      starwarsVehicles: [],
+      starwarsStarships: []
     };
   }
   componentDidMount() {
@@ -25,39 +25,75 @@ class App extends Component {
       .then(data => {
         this.setState({ starwarsChars: data.results });
       })
+      fetch('https://swapi.co/api/planets/')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsPlanets: data.results });
+      })
+      fetch('https://swapi.co/api/films/')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsFilms: data.results });
+      })
+      fetch('https://swapi.co/api/species/')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsSpecies: data.results });
+      })
+      fetch('https://swapi.co/api/vehicles')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsVehicles: data.results });
+      })      
+      fetch('https://swapi.co/api/starships')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsStarships: data.results });
+      })
       .catch(err => {
         throw new Error(err);
       });
   }
+  
   render() {
     return (
       <div className="container-fluid">
         <h1 className="titleReactWars"> React Strap </h1>
         <div className="row">
         {this.state.starwarsChars.map(characters => {
-          return (
-          <div key={characters.url} className="mein-cards">
-            <BaseStats 
-                name={characters.name}
-                height={characters.height}
-                mass={characters.mass}
-                hair_color={characters.hair_color}
-                skin_color={characters.skin_color}
-                eye_color={characters.eye_color}
-                birth_year={characters.birth_year}
-                gender={characters.gender}
-                homeworld={characters.homeworld} 
-                url={characters.url}/>
-          <Species 
-              species={characters.species} />
-          <Vehicles 
-              vehicles={characters.vehicles} />
-          <Starships 
-              starships={characters.starships} />
-          <Films 
-              films={characters.films} />
-          </div>
-          )})}
+            this.state.starwarsSpecies.map(species => {
+                if (characters.species === species.url) {
+                return <BaseStats key={species.url} species={species.name} />
+                }})
+            this.state.starwarsPlanets.map(planets => {
+              if (characters.url === planets.url) {
+                return <BaseStats key={planets.url} homeworld={planets.name} />
+              }})
+            this.state.starwarsFilms.map(film => {
+              if (characters.films === film.url) {
+            return <BaseStats key={film.url} films={film.title} />
+              }})
+            this.state.starwarsStarships.map(starship => {
+              if (characters.starships === starship.url) {
+              return <BaseStats key={starship.url} starship={starship.name} />
+            }})
+            console.log(this.state.starwarsVehicles.map(vehicles => {
+              if (characters.vehicles === vehicles.url) {
+              return <BaseStats key={vehicles.url} vehicle={vehicles.name} />
+              
+            }}))
+          return null
+        })}   
         </div>
       </div>
     );
