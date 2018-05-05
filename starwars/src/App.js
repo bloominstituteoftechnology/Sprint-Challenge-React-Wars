@@ -28,10 +28,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">React Wars</h1>
-          <h2 className="App-subTitle">May the 4th be with you!</h2>
+      <div className="app-div">
+        <header className="app-header">
+          <h1 className="app-title">React Wars</h1>
+          <h2 className="app-subTitle">May the 4th be with you!</h2>
         </header>
         <PeopleList results={this.state.starwarsChars} />
       </div>

@@ -1,9 +1,9 @@
-/* .People-Wrapper {
+.People-Wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
     margin: auto;
-} */
+}
   
 .Card-Body {
     border: 1px solid grey;
