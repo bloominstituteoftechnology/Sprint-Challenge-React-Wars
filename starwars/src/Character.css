@@ -1,4 +1,22 @@
-.People-Wrapper {
+.man-div {
+    margin: auto;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+    width: 20%;
+    height: 20%;
+    border: 1px solid red;
+}
+
+.card-body {
+    text-align: center;
+    width: 100%;
+}
+
+/* .Character-Wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
@@ -25,4 +43,4 @@
     min-width: 200px;
     margin: 0.4rem;
     padding: 2px;
-}
+} */
