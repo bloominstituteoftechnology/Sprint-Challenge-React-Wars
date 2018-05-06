@@ -6,3 +6,24 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  display: flex;
+  color: rgb(15, 14, 14);
+}
+
+.wrapper {
+  border: 1px solid red; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
+.cardRow {
+  border: 1px solid red;
+  background-color: rgba(238, 243, 235, 0.425);
+  max-width: 50%;
+  justify-content: center;
+}
