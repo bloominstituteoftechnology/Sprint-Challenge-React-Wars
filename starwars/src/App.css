@@ -1,9 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;  
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .Header {
   color: #443e3e;
@@ -22,13 +18,16 @@
   flex-wrap: wrap;
   padding: 10px;
   width: 100%;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 10px;
+  width: 30%;
 }
 
 .cardRow {
   background-color: rgba(238, 243, 235, 0.425);
-  max-width: 50%;
+  max-width: 100%;
+  display: flex;
   justify-content: center;
-  border-radius: 10px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+
 }
