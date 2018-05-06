@@ -9,7 +9,7 @@ const CharsList = props => {
         <div class='container'>
             <div class="row justify-content-sm-center mt-sm-4">
             
-            {props.chars.map(char => {
+            {props.chars.map((char,ind) => {
                 return (
 
                     <div class="col-sm-5 mt-sm-4">
@@ -22,18 +22,13 @@ const CharsList = props => {
                                         <p class="card-text">Hair Color:{char.hair_color}</p>
                                         <p class="card-text">Height: {char.height}</p>
                                         <p class="card-text">Skin Color: {char.skin_color}</p>
-                                        <div>
-                                            {char.films.map(film => {
-                                                return <Films filmsData={film}/> 
-                                            })}
-                                        </div>
-                                        
+                                        <p><b>Films</b></p>
+                                        {char.films.map(film => {
+                                                        return <Films filmsData={film} />
+                                        })}
                                     </div>
                                 </div>
                             </div>
-                                            
-                            
-                        
                 )
             })}
             </div>

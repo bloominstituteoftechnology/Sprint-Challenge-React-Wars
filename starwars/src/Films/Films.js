@@ -12,8 +12,6 @@ class Films extends Component {
     }
 
     componentDidMount() {     
-        // let arr = [];
-            // // console.log(typeof filmData)
             fetch(this.props.filmsData)
                 .then(res => {
                     return res.json();
@@ -24,18 +22,7 @@ class Films extends Component {
                 .catch(err => {
                     throw new Error(err);
                 });
-            
-        
-        // console.log(arr)
-        // this.setState({ fetchResult: arr })
-        
     }
-
-    
-
-    // loopFilms() {
-    //     this.state.films.forEach(film => this.handleFetch(film))
-    // }
 
     render() {
         return (
