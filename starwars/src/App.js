@@ -32,10 +32,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="cardFlow">
         { this.state.starwarsChars.map((item, index) => {
   return <Card hereIAm={item} key={index} />
 })}
-      </div >
+        </div >
+      </div>  
        
     );
   }
