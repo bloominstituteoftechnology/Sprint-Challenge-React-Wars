@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from "./Components/card";
 
 class App extends Component {
   constructor() {
@@ -24,12 +25,22 @@ class App extends Component {
       });
   }
   render() {
+    console.log("this is me:", this.state.starwarsChars);
+    // let cards = this.state.starwarsChars.map((item, index) => {
+    //   return <Card hereIAm={item} key={index} />
+    //   console.log("this is me:", this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
+        { this.state.starwarsChars.map((item, index) => {
+  return <Card hereIAm={item} key={index} />
+})}
+      </div >
+       
     );
   }
 }
 
 export default App;
+
+
