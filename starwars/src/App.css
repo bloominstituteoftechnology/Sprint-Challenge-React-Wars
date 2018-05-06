@@ -1,32 +1,17 @@
 @keyframes rave {
     0% {background-color:   red;} 
-    14% {background-color: orange;}
-    28% {background-color: yellow;}
-    42% {background-color: green;}
     56% {background-color: blue;}
     70% {background-color: indigo;}
     84% {background-color: violet;}
   0% {color:  violet;} 
   14% {color: indigo;}
   28% {color: blue;}
-  42% {color: green;}
-  56% {color: yellow;}
-  70% {color: orange;}
   84% {color: red;}
 }
 
-.fierce {
-  font-size: 1.2rem;
-  text-align: center;
-
-}
-
 .mein-issues {
-  width: 40rem;
+  max-width: 70rem;
   text-indent: 38%;
-}
-.mein-issues-2 {
-  text-indent: 41%;
 }
 
 .mein-cards {
@@ -53,6 +38,9 @@ option {
   background-color: rgba(52, 52, 52, 0);
   color: white;
   text-shadow: 1px 0 1px white, 0 0 50px black, 0 0 50px gray;
+  max-width: 70rem;
+  text-align: center;
+  display: block;
 }
 
 .bold-card {
@@ -61,7 +49,7 @@ option {
 
 .boldest-card {
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 7rem;
   animation-name: rave;
   animation-duration: 1s;
   animation-direction: alternate;

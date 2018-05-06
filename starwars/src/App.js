@@ -66,8 +66,10 @@ class App extends Component {
   }
   
   render() {
+    
     return (
-    <div>
+<div>
+  <h1 className="titleReactWars"> React Strap </h1>
       {this.state.starwarsChars.map(character => {
         return (
         <Character 
@@ -83,18 +85,12 @@ class App extends Component {
         films={this.state.starwarsFilms.filter(film => {
           return character.films.includes(film.url)
         }).map(film => {return film.title})}
-        vehicles={this.state.starwarsVehicles.filter((vehicle) => {
-          return character.vehicles.includes(vehicle.url)
-        }).map(vehicle => {return vehicle.name})}
-        starships={this.state.starwarsStarships.filter((starship => {
-          return character.starships.includes(starship.url)
-        })).map(starship => {return starship.name})}
-        species={this.state.starwarsSpecies.filter(species => {
-          return character.species.includes(species.url)
-        }).map(species => {return species.name})} />
+        vehicles={character.vehicles}
+        starships={character.starships}
+        species={character.species} />
         )})}
       </div>
-    )
+      )
   }
 }
 
