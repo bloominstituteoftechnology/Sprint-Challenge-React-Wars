@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import BaseStats from './components/BaseStats.js'
+import Character from './components/Character.js'
 
 class App extends Component {
   constructor(props) {
@@ -67,36 +67,34 @@ class App extends Component {
   
   render() {
     return (
-      <div className="container-fluid">
-        <h1 className="titleReactWars"> React Strap </h1>
-        <div className="row">
-        {this.state.starwarsChars.map(characters => {
-            this.state.starwarsSpecies.map(species => {
-                if (characters.species === species.url) {
-                return <BaseStats key={species.url} species={species.name} />
-                }})
-            this.state.starwarsPlanets.map(planets => {
-              if (characters.url === planets.url) {
-                return <BaseStats key={planets.url} homeworld={planets.name} />
-              }})
-            this.state.starwarsFilms.map(film => {
-              if (characters.films === film.url) {
-            return <BaseStats key={film.url} films={film.title} />
-              }})
-            this.state.starwarsStarships.map(starship => {
-              if (characters.starships === starship.url) {
-              return <BaseStats key={starship.url} starship={starship.name} />
-            }})
-            console.log(this.state.starwarsVehicles.map(vehicles => {
-              if (characters.vehicles === vehicles.url) {
-              return <BaseStats key={vehicles.url} vehicle={vehicles.name} />
-              
-            }}))
-          return null
-        })}   
-        </div>
+    <div>
+      {this.state.starwarsChars.map(character => {
+        return (
+        <Character 
+        key={character.url}
+        name={character.name}
+        height={character.height}
+        mass={character.mass}
+        hair_color={character.hair_color}
+        skin_color={character.skin_color}
+        eye_color={character.eye_color}
+        birth_year={character.birth_year}
+        gender={character.gender}
+        films={this.state.starwarsFilms.filter(film => {
+          return character.films.includes(film.url)
+        }).map(film => {return film.title})}
+        vehicles={this.state.starwarsVehicles.filter((vehicle) => {
+          return character.vehicles.includes(vehicle.url)
+        }).map(vehicle => {return vehicle.name})}
+        starships={this.state.starwarsStarships.filter((starship => {
+          return character.starships.includes(starship.url)
+        })).map(starship => {return starship.name})}
+        species={this.state.starwarsSpecies.filter(species => {
+          return character.species.includes(species.url)
+        }).map(species => {return species.name})} />
+        )})}
       </div>
-    );
+    )
   }
 }
 
