@@ -1,14 +1,7 @@
-/* /* .Character-Card {
-    border: 1px solid grey;
-    min-width: 200px;
-    margin: 0.4rem;
-    padding: 2px;
-  } */
-/* 
-  .Character-Wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 95vw;
-    padding: 2px;
-    margin: 100px;
-  }  */
+
+
+#card-container{
+    max-width: 300px;
+    /* display: flex; */
+    justify-content: center;
+}

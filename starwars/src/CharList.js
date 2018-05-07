@@ -6,7 +6,7 @@ import './CharList.css';
 //map method to iterate starwarChars list 
 const CharList = props => {
     return (
-        <div className="Character-Wrapper">
+        <div className="character-Wrapper">
             {props.starwarsChars.map(CharacterData =>{
                 return <Chars key={CharacterData.url} CharacterData={CharacterData} />
             })}

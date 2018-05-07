@@ -4,10 +4,9 @@ import './CharList.css';
 
 const Chars = ({ CharacterData }) => {
     return (
-        <container>
-            <div className="Character-Card">
-                <Row >
-                    <Col lg="6">
+        <container id="card-container">
+            <div className="character-Card">
+                    <Col md="6">
                         <Card>
                             <Card body outline color="secondary">
                                 <CardTitle>{CharacterData.name}</CardTitle>
@@ -18,7 +17,6 @@ const Chars = ({ CharacterData }) => {
                             </Card>
                         </Card>
                      </Col>
-                </Row>
             </div> 
         </container>
                
