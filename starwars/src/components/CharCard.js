@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
+import {Card, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 
 const CharCard = props => {
     return (
@@ -7,11 +7,12 @@ const CharCard = props => {
             <Card>
                 <CardBody>
                     <CardTitle>{props.char.name}</CardTitle>
-                    <CardSubtitle>{props.char.birth_year}</CardSubtitle>
+                    <CardSubtitle>Birthdate: {props.char.birth_year}</CardSubtitle>
+                    <Button >Expand</Button>
                 </CardBody>
             </Card>
         </div>
-    );
+    ); 
 }
-
+ 
 export default CharCard;
