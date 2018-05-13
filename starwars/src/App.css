@@ -24,10 +24,6 @@
   color: white;
   font-size: 10rem;
   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
-  animation-name: rave;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
 
 }
 option {
@@ -38,7 +34,7 @@ option {
   background-color: rgba(52, 52, 52, 0);
   color: white;
   text-shadow: 1px 0 1px white, 0 0 50px black, 0 0 50px gray;
-  max-width: 70rem;
+  max-width: 100rem;
   text-align: center;
   display: block;
 }
@@ -54,6 +50,25 @@ option {
   animation-duration: 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
 
-  
+.subtitle {
+  text-align: center;
+  margin-top: 5rem;
+  color: black;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px red, 0 0 25px black, 0 0 5px darkred;
+}
+
+.loadhint {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+}
+
+.mein-nav {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
 }

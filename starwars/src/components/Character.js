@@ -2,10 +2,8 @@ import React from 'react'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap'
 
 const Character = props => {
-
-    
     return (
-        <div className="container-fluid mein-cards">
+        <div className="container-fluid">
             <Card className="mein-card"> 
                 <CardBody className="row">
                     <CardTitle className="font-weight-bold boldest-card mein-card col-12"> {props.name} </CardTitle>

@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, NavLink, Switch } from 'react-router-dom'
 import Character from './components/Character.js'
+import Home from './components/Home'
+import Characters from './components/Characters'
+import Planets from './components/Planets'
+import Planet from './components/Planet'
+import Species from './components/Species'
+import Navigation from './components/Navigation'
+import UniqueSpecies from './components/UniqueSpecies'
 const axios = require('axios')
 
 class App extends Component {
@@ -16,162 +23,96 @@ class App extends Component {
       starwarsStarships: [],
     };
   }
-  getAllCharacters = () => {
-    const fetchCharacters = () => {
-      return axios.get('https://swapi.co/api/people')
-    }
-    const fetchCharacters2 = () => {
-      return axios.get('https://swapi.co/api/people/?page=2')
-    }
-    const fetchCharacters3 = () => {
-      return axios.get('https://swapi.co/api/people/?page=3')
-    }
-    const fetchCharacters4 = () => {
-      return axios.get('https://swapi.co/api/people/?page=4')
-    }
-    const fetchCharacters5 = () => {
-      return axios.get('https://swapi.co/api/people/?page=5')
-    }
-    const fetchCharacters6 = () => {
-      return axios.get('https://swapi.co/api/people/?page=6')
-    }
-    const fetchCharacters7 = () => {
-      return axios.get('https://swapi.co/api/people/?page=7')
-    }
-    const fetchCharacters8 = () => {
-      return axios.get('https://swapi.co/api/people/?page=8')
-    }
-    const fetchCharacters9 = () => {
-      return axios.get('https://swapi.co/api/people/?page=9')
-    }
-    Promise.all([fetchCharacters(), fetchCharacters2(), fetchCharacters3(), fetchCharacters4(), fetchCharacters5(), fetchCharacters6(), fetchCharacters7(), fetchCharacters8(), fetchCharacters9()])
+  getAllCharacters = (page = 1) => {
+    let result = []
+      axios.get(`https://swapi.co/api/people/?page=${page}`)
       .then(response => {
-        let characters = response.map(array => {
-          return array.data.results
-        })
-        let allCharacters = characters[0].concat(characters[1], characters[2], characters[3], characters[4], characters[5], characters[6], characters[7], characters[8])
-        this.setState({ starwarsChars: allCharacters })
-      })
-  }
-  getAllSpecies = () => {
-    const getSpecies = () => {
-      return axios.get('https://swapi.co/api/species/')
-    }
-    const getSpecies2 = () => {
-      return axios.get('https://swapi.co/api/species/?page=2')
-    }
-    const getSpecies3 = () => {
-      return axios.get('https://swapi.co/api/species/?page=3')
-    }
-    const getSpecies4 = () => {
-      return axios.get('https://swapi.co/api/species/?page=4')
-    }
-    axios.all([getSpecies(), getSpecies2(), getSpecies3(), getSpecies4()])
-      .then(response => {
-        let species = response.map(array => {
-          return array.data.results
-        })
-        let allSpecies = species[0].concat(species[1], species[2], species[3])
-        this.setState({ starwarsSpecies: allSpecies })
-      })
-      .catch(error => {
-        console.log('That did not go as well as originally planned', error)
-      })
-  }
-  fetchFilms = () => {
-    axios
-      .get('https://swapi.co/api/films/')
-      .then(res => {
-        let films = res.data.results;
-        this.setState({ starwarsFilms: films })
-      })
-      .catch(err => {
-        console.log('I have made a terrible mistake in fetching films', err)
-      })
-  }
-  getAllPlanets = () => {
-    const getPlanets = () => {
-      return axios.get('https://swapi.co/api/planets/')
-    }
-    const getPlanets2 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=2')
-    }
-    const getPlanets3 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=3')
-    }
-    const getPlanets4 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=4')
-    }
-    const getPlanets5 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=5')
-    }
-    const getPlanets6 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=6')
-    }
-    const getPlanets7 = () => {
-      return axios.get('https://swapi.co/api/planets/?page=7')
-    } 
-
-    Promise.all([getPlanets(), getPlanets2(), getPlanets3(), getPlanets4(), getPlanets5(), getPlanets6(), getPlanets7()])
-      .then(response => {
-        let planets = response.map(array => {
-          return array.data.results
-        })
-        let allPlanets = planets[0].concat(planets[1], planets[2], planets[3], planets[4], planets[5], planets[6])
-        this.setState({ starwarsPlanets: allPlanets })
-      })
-  }
-  getAllStarships = () => {
-    const getStarships = () => {
-      return axios.get('https://swapi.co/api/starships/')
-    }
-    const getStarships2 = () => {
-      return axios.get('https://swapi.co/api/starships/?page=2')
-    }
-    const getStarships3 = () => {
-      return axios.get('https://swapi.co/api/starships/?page=3')
-    }
-    const getStarships4 = () => {
-      return axios.get('https://swapi.co/api/starships/?page=4')
-    }
-    Promise.all([getStarships(), getStarships2(), getStarships3(), getStarships4()])
-      .then(response => {
-        let starships = response.map(array => {
-          return array.data.results
-        })
-        let allStarships = starships[0].concat(starships[1], starships[2], starships[3])
-        this.setState({ starwarsStarships: allStarships })
-      })
-      .catch(error => {
-        console.log('Oops!', error)
-      })
-  }
-  getAllVehicles = () => {
-    const getVehicles = () => {
-      return axios.get('https://swapi.co/api/vehicles/')
-    }
-    const getVehicles2 = () => {
-      return axios.get('https://swapi.co/api/vehicles/?page=2')
-    }
-    const getVehicles3 = () => {
-      return axios.get('https://swapi.co/api/vehicles/?page=3')
-    }
-    const getVehicles4 = () => {
-      return axios.get('https://swapi.co/api/vehicles/?page=4')
-    }
-    Promise.all([getVehicles(), getVehicles2(), getVehicles3(), getVehicles4()])
-      .then(response => {
-        let vehicles = response.map(array => {
-          return array.data.results
-        })
-        let allVehicles = vehicles[0].concat(vehicles[1], vehicles[2], vehicles[3])
-        this.setState({ starwarsVehicles: allVehicles })
-      })
-      .catch(err => {
-        console.log('well, that was a fail', err)
+        console.log('Response after then - People', response)
+        result = this.state.starwarsChars;
+        response.data.results.forEach(people => result.push(people));
+        this.setState({ starwarsChars: result })
+        console.log('Result after push - People', result)
+        if (response.data.next !== null) {
+          page++
+          this.getAllCharacters(page)
+        } 
       });
-
-  }
+    } // Expect 87 count (as of 5/13/18)
+  getAllSpecies = (page = 1) => {
+  let result = []
+    axios.get(`https://swapi.co/api/species/?page=${page}`)
+    .then(response => {
+      console.log('Response after then', response)
+      result = this.state.starwarsSpecies;
+      response.data.results.forEach(species => result.push(species));
+      this.setState({ starwarsSpecies: result })
+      console.log('Result after push', result)
+      if (response.data.next !== null) {
+        page++
+        this.getAllSpecies(page)
+      } 
+    });
+  } // Expect 37 count (as of 5/13/18)
+  fetchFilms = (page = 1) => {
+    let result = []
+      axios.get(`https://swapi.co/api/films/?page=${page}`)
+      .then(response => {
+        console.log('Response after then - Films', response)
+        result = this.state.starwarsFilms;
+        response.data.results.forEach(film => result.push(film));
+        this.setState({ starwarsFilms: result })
+        console.log('Result after push - Films', result)
+        if (response.data.next !== null) {
+          page++
+          this.fetchFilms(page)
+        } 
+      });
+    } // Expect 7 count (as of 5/13/18)
+    getAllPlanets = (page = 1) => {
+      let result = []
+        axios.get(`https://swapi.co/api/planets/?page=${page}`)
+        .then(response => {
+          console.log('Response after then - Planets', response)
+          result = this.state.starwarsPlanets;
+          response.data.results.forEach(planet => result.push(planet));
+          this.setState({ starwarsPlanets: result })
+          console.log('Result after push - Planets', result)
+          if (response.data.next !== null) {
+            page++
+            this.getAllPlanets(page)
+          } 
+        });
+      } // Expect 61 count (as of 5/13/18)
+  getAllStarships = (page = 1) => {
+  let result = []
+    axios.get(`https://swapi.co/api/starships/?page=${page}`)
+    .then(response => {
+      console.log('Response after then - Starships', response)
+      result = this.state.starwarsStarships;
+      response.data.results.forEach(starship => result.push(starship));
+      this.setState({ starwarsStarships: result })
+      console.log('Result after push - Starships', result)
+      if (response.data.next !== null) {
+        page++
+        this.getAllStarships(page)
+      } 
+    });
+  } // Expect 37 count (as of 5/13/18)
+  getAllVehicles = (page = 1) => {
+    let result = []
+      axios.get(`https://swapi.co/api/vehicles/?page=${page}`)
+      .then(response => {
+        console.log('Response after then - Vehicles', response)
+        result = this.state.starwarsVehicles;
+        response.data.results.forEach(vehicle => result.push(vehicle));
+        this.setState({ starwarsVehicles: result })
+        console.log('Result after push - Vehicles', result)
+        if (response.data.next !== null) {
+          page++
+          this.getAllVehicles(page)
+        } 
+      });
+    } // Expect 39 count (as of 5/13/18)
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -185,19 +126,60 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container-fluid mx-auto">
+        <Navigation />
         <h1 className="titleReactWars"> React Strap </h1>
+        <h1 className="loadhint mx-auto col-12"> Please Wait Until The Page Has Fully Loaded for Best Results </h1>   
+        <Switch>
+          <Route exact path="/" component={Home}/>
+            <Route exact path="/species" render={(props) => <Species {...props} species={this.state.starwarsSpecies}/>}/>
+            {this.state.starwarsSpecies.map(species => {
+              return (
+                <Route path={`/species/${species.name}`} key={species.name} 
+                render={(props) =>
+                <UniqueSpecies 
+                {...props} 
+                name={species.name}
+                classification={species.classification}
+                designation={species.designation}
+                average_height={species.average_height}
+                skin_colors={species.skin_colors}
+                hair_colors={species.hair_colors}
+                eye_colors={species.eye_colors}
+                average_lifespan={species.average_lifespan}
+                homeworld={species.homeworld}
+                language={species.language}
+                people={this.state.starwarsChars.filter(character => {
+                return species.people.includes(character.url)
+              }).map(character => { return character.name })}/>}/>
+              )
+            })}
+            <Route exact path="/planets" render={(props) => <Planets {...props} planets={this.state.starwarsPlanets}/>}/>
+            {this.state.starwarsPlanets.map(planet => {
+              return (
+              <Route path={`/planets/${planet.name}`} key={planet.name} render={(props) => 
+              <Planet 
+              {...props} 
+              name={planet.name}
+              rotation_period={planet.rotation_period}
+              orbital_period={planet.orbital_period}
+              diameter={planet.diameter}
+              climate={planet.climate}
+              gravity={planet.gravity}
+              terrain={planet.terrain}
+              surface_water={planet.surface_water}
+              population={planet.population}
+              residents={this.state.starwarsChars.filter(character => {
+                return planet.residents.includes(character.url)
+              }).map(character => { return character.name })}/>}/>)})}
+            <Route exact path="/characters" render={(props) => 
+            <Characters {...props} characters={this.state.starwarsChars}/>}/>
         {this.state.starwarsChars.map(character => {
           return (
-            <div key={character.mass + character.url}>
-        <Switch>
-          <Route exact path="/" render={(props) => 
-          <div className="container">
-            <NavLink to={`/${character.name.toLowerCase()}`} className="col-12"> {character.name} </NavLink> </div>}/>
-            <Route
-            path={`/${character.name.toLowerCase()}`} 
-            render={(props) =>
             <div key={character.url + character.name}>
+            <Route
+            path={`/characters/${character.name}`} 
+            render={(props) =>
             <Character
               {...props}
               key={character.url}
@@ -224,12 +206,10 @@ class App extends Component {
               homeworld={this.state.starwarsPlanets.filter(planet => {
                 return character.homeworld.includes(planet.url)
               }).map(planet => { return planet.name })}/>
-              </div>
-            }/>
-      </Switch>
-            </div>
+              }/></div>
           )
-        })}
+        })}  
+        </Switch>
       </div>
     )
   }
