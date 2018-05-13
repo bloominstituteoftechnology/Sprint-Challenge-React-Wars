@@ -2,6 +2,8 @@ import React from 'react'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap'
 
 const Character = props => {
+
+    
     return (
         <div className="container-fluid mein-cards">
             <Card className="mein-card"> 
@@ -10,35 +12,27 @@ const Character = props => {
                     <CardSubtitle className="mein-card bold-card col-12"> Birth year: </CardSubtitle>
                     <CardSubtitle className="mt-5 col-12"> {props.birth_year} </CardSubtitle>
                     <CardText className="bold-card mein-card col-12"> Eye color: </CardText>
-                    <CardText className="col-12"> {props.eye_color} </CardText>
+                    <CardText className="col-12 mt-5"> {props.eye_color} </CardText>
                     <CardText className="bold-card mein-card col-12"> Hair color: </CardText>
-                    <CardText className="col-12"> {props.hair_color} </CardText>
+                    <CardText className="col-12 mt-5"> {props.hair_color} </CardText>
                     <CardText className="font-weight-bold bold-card col-12"> Height: </CardText>
                     <CardText className="col-12"> {props.height} </CardText>
                     <CardText className="font-weight-bold bold-card col-12"> Mass: </CardText>
-                    <CardText className="col-12"> {props.mass} </CardText>
-                    <select className="mein-issues col-12"> <option className="font-weight-bold bold-card mein-card"> Homeworld Link: </option>
-                    <option className="col-12"> {props.homeworld} </option> </select>
+                    <CardText className="col-12 mt-5"> {props.mass} </CardText>
+                    <CardText className="font-weight-bold bold-card mein-card col-12"> Homeworld: </CardText>
+                    <CardText className="col-12 mt-5"> {props.homeworld} </CardText>
                     <CardText className="font-weight-bold bold-card mein-card col-12"> Films: </CardText>
-                    <CardText className="mx-5 col-12"> {props.films} </CardText>
-                    <select className="mein-issues col-12"> 
-                        <option className="font-weight-bold bold-card mein-card"> Species Link: </option>
-                            {props.species.map(species => {
-                            return <option key={species}> {species} </option> 
+                    <CardText className="mt-5 col-12"> {props.films} </CardText>
+                    <CardText className="col-12 font-weight-bold bold-card mein-card"> Species: </CardText>
+                    <CardText key={props.species} className="col-12 mt-5"> {props.species} </CardText> 
+                    <CardText className="font-weight=bold mein-card bold-card col-12"> Vehicles(s): </CardText>
+                    {props.vehicles.map(vehicles => {
+                        return <CardText key={vehicles} className="col-12 mt-5"> {vehicles} </CardText>
                     })}
-                    </select>
-                    <select className="mein-issues col-12"> 
-                        <option className="font-weight=bold mein-card"> Vehicles Link(s) </option>
-                            {props.vehicles.map(vehicles => {
-                            return <option key={vehicles}> {vehicles} </option>
-                    })}
-                    </select>
-                    <select className="mein-issues col-12"> 
-                        <option className="font-weight-bold mein-card"> Starships Link(s) </option>
+                    <CardText className="font-weight-bold mein-card bold-card col-12"> Starships(s): </CardText>
                             {props.starships.map(starship => {
-                            return <option key={starship}> {starship} </option> 
+                            return <CardText key={starship} className="mt-5 col-12"> {starship} </CardText> 
                     })}
-                    </select>
                 </CardBody>
             </Card>
         </div>
