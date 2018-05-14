@@ -8,8 +8,8 @@ const Species = props => {
         <h3 className="subtitle"> Click to Learn More About A Species </h3>
         {props.species.map(species => {
             return (
-                <div className="row">
-                    <NavLink to={`/species/${species.name.toLowerCase()}`} key={species.url} className="col-12"> <CardTitle className="mt-5 mein-card bold-card">{species.name}</CardTitle></NavLink>
+                <div className="row" key={species.url}>
+                    <NavLink to={`/species/${species.name.toLowerCase().split(' ').join('')}`} className="col-12"> <CardTitle className="mt-5 mein-card bold-card">{species.name}</CardTitle></NavLink>
                 </div>
         )})}
     </div>

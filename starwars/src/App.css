@@ -1,33 +1,12 @@
-@keyframes rave {
-    0% {background-color:   red;} 
-    56% {background-color: blue;}
-    70% {background-color: indigo;}
-    84% {background-color: violet;}
-  0% {color:  violet;} 
-  14% {color: indigo;}
-  28% {color: blue;}
-  84% {color: red;}
-}
-
-.mein-issues {
-  max-width: 70rem;
-  text-indent: 38%;
-}
-
-.mein-cards {
-  margin: 4rem 3rem 2rem 10rem;
-}
-
 .titleReactWars {
   text-align: center;
-  margin-top: 5rem;
   color: white;
-  font-size: 10rem;
+  font-size: 8rem;
   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  background: darkred;
+  border: black 1px solid;
+  max-width: 100%;
 
-}
-option {
-  padding: 0;
 }
 
 .mein-card {
@@ -46,17 +25,14 @@ option {
 .boldest-card {
   margin-top: 2rem;
   font-size: 7rem;
-  animation-name: rave;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
 }
 
 .subtitle {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 1px 1px 2px red, 0 0 25px black, 0 0 5px darkred;
 }
 
@@ -65,10 +41,76 @@ option {
   font-size: 2rem;
   text-align: center;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkred;
+  padding-bottom: 2rem;
 }
 
 .mein-nav {
   color: white;
   font-size: 2rem;
   text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  background-color: black;
+  border: 1px solid red;
+  top: 0;
+}
+
+.container-fluid, container {
+  margin: auto;
+  padding: auto;
+  background-color: black;
+}
+
+.mein-home {
+  bottom: 0;
+  background: black;
+
+}
+body {
+  background-size: cover;
+}
+
+.board {
+  z-index: 10;
+  background-color: black;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(10deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -47rem;;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 100vh;
+  width: 100vw;
+  bottom: -50rem;
+  left: 50%;
+}
+
+.board:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.content {
+  animation: scroll 100s linear 16;
+  animation-fill-mode: both;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+}
+
+.second-title, title {
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
 }

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { CardTitle } from 'reactstrap'
-import { NavLink, Route } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const Planets = props => {
@@ -10,7 +10,7 @@ const Planets = props => {
         {props.planets.map(planet => {
             return (
             <div className="row" key={planet.name}>
-                <NavLink to={`/planets/${planet.name.toLowerCase()}`} key={planet.url} className="col-12"> <CardTitle className="mein-card bold-card mt-5"> {planet.name} </CardTitle></NavLink>
+                <NavLink to={`/planets/${planet.name.toLowerCase().split(' ').join('')}`} key={planet.url} className="col-12"> <CardTitle className="mein-card bold-card mt-5"> {planet.name} </CardTitle></NavLink>
             </div>
             )
         })}

@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, NavLink, Switch } from 'react-router-dom'
-import Character from './components/Character.js'
-import Home from './components/Home'
-import Characters from './components/Characters'
-import Planets from './components/Planets'
-import Planet from './components/Planet'
-import Species from './components/Species'
-import Navigation from './components/Navigation'
-import UniqueSpecies from './components/UniqueSpecies'
+import { Route, Switch } from 'react-router-dom'
+import { Character, Characters, Film, Films, Home, Navigation, Planet, Planets, Species, Starship, Starships, UniqueSpecies, Vehicle, Vehicles } from './components'
 const axios = require('axios')
 
 class App extends Component {
@@ -126,16 +119,82 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="container-fluid mx-auto">
+      <div className="container-fluid mx-0 px-0">
         <Navigation />
-        <h1 className="titleReactWars"> React Strap </h1>
-        <h1 className="loadhint mx-auto col-12"> Please Wait Until The Page Has Fully Loaded for Best Results </h1>   
+        <div className="titleReactWars mx-0 px-0"> React Strap
+        <h1 className="loadhint col-12"> Please Wait Until The Page Has Fully Loaded for Best Results </h1></div>
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route exact path="/films" render={(props) => <Films {...props} films={this.state.starwarsFilms}/>}/>
+            {this.state.starwarsFilms.map(film => {
+              return (
+              <Route path={`/films/${film.title.toLowerCase().split(' ').join('')}`} key={film.title} render={(props) => 
+              <Film 
+              {...props} 
+              title={film.title}
+              episode_id={film.episode_id}
+              opening_crawl={film.opening_crawl}
+              director={film.director}
+              producer={film.producer}
+              release_date={film.release_date}
+              characters={this.state.starwarsChars.filter(character => {
+                return film.characters.includes(character.url)
+              }).map(character => { return character.name })}
+              planets={this.state.starwarsPlanets.filter(planet => {
+                return film.planets.includes(planet.url)
+              }).map(planet=> { return planet.name })}
+              starships={this.state.starwarsStarships.filter(starship => {
+                return film.starships.includes(starship.url)
+              }).map(starship => { return starship.name })}
+              vehicles={this.state.starwarsSpecies.filter(species => {
+                return film.species.includes(species.url)
+              }).map(species => { return species.name })}/>}/>)})}
+          <Route exact path="/starships" render={(props) => <Starships {...props} starships={this.state.starwarsStarships}/>}/>
+            {this.state.starwarsStarships.map(starship => {
+              return (
+              <Route path={`/starships/${starship.name.toLowerCase().split(' ').join('')}`} key={starship.name} render={(props) => 
+              <Starship 
+              {...props} 
+              name={starship.name}
+              model={starship.model}
+              manufacturer={starship.manufacturer}
+              cost_in_credits={starship.cost_in_credits}
+              length={starship.length}
+              max_atmosphering_speed={starship.max_atmosphering_speed}
+              crew={starship.crew}
+              passengers={starship.passengers}
+              cargo_capacity={starship.cargo_capacity}
+              consumables={starship.consumables}
+              hyperdrive_rating={starship.hyperdrive_rating}
+              MGLT={starship.MGLT}
+              starship_class={starship.starship_class}
+              pilots={this.state.starwarsChars.filter(character => {
+                return starship.pilots.includes(character.url)
+              }).map(character => { return character.name })}/>}/>)})}
+          <Route exact path="/vehicles" render={(props) => <Vehicles {...props} vehicles={this.state.starwarsVehicles}/>}/>
+            {this.state.starwarsVehicles.map(vehicle => {
+              return (
+              <Route path={`/vehicles/${vehicle.name.toLowerCase().split(' ').join('')}`} key={vehicle.name} render={(props) => 
+              <Vehicle 
+              {...props} 
+              name={vehicle.name}
+              model={vehicle.model}
+              manufacturer={vehicle.manufacturer}
+              cost_in_credits={vehicle.cost_in_credits}
+              length={vehicle.length}
+              max_atmosphering_speed={vehicle.max_atmosphering_speed}
+              crew={vehicle.crew}
+              passengers={vehicle.passengers}
+              cargo_capacity={vehicle.cargo_capacity}
+              consumables={vehicle.consumables}
+              vehicle_class={vehicle.vehicle_class}
+              pilots={this.state.starwarsChars.filter(character => {
+                return vehicle.pilots.includes(character.url)
+              }).map(character => { return character.name })}/>}/>)})}
             <Route exact path="/species" render={(props) => <Species {...props} species={this.state.starwarsSpecies}/>}/>
             {this.state.starwarsSpecies.map(species => {
               return (
-                <Route path={`/species/${species.name}`} key={species.name} 
+                <Route path={`/species/${species.name.toLowerCase().split(' ').join('')}`} key={species.name} 
                 render={(props) =>
                 <UniqueSpecies 
                 {...props} 
@@ -157,7 +216,7 @@ class App extends Component {
             <Route exact path="/planets" render={(props) => <Planets {...props} planets={this.state.starwarsPlanets}/>}/>
             {this.state.starwarsPlanets.map(planet => {
               return (
-              <Route path={`/planets/${planet.name}`} key={planet.name} render={(props) => 
+              <Route path={`/planets/${planet.name.toLowerCase().split(' ').join('')}`} key={planet.name} render={(props) => 
               <Planet 
               {...props} 
               name={planet.name}
@@ -176,9 +235,8 @@ class App extends Component {
             <Characters {...props} characters={this.state.starwarsChars}/>}/>
         {this.state.starwarsChars.map(character => {
           return (
-            <div key={character.url + character.name}>
             <Route
-            path={`/characters/${character.name}`} 
+            path={`/characters/${character.name.toLowerCase().split(' ').join('')}`} key={character.url}
             render={(props) =>
             <Character
               {...props}
@@ -206,7 +264,7 @@ class App extends Component {
               homeworld={this.state.starwarsPlanets.filter(planet => {
                 return character.homeworld.includes(planet.url)
               }).map(planet => { return planet.name })}/>
-              }/></div>
+              }/>
           )
         })}  
         </Switch>
