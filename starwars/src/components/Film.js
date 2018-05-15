@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 const Film = props => {
     return (
@@ -17,18 +18,18 @@ const Film = props => {
                     <CardText className="col-12 mt-2"> {props.release_date} </CardText>
                     <CardText className="font-weight-bold bold-card mein-card col-12"> Characters: </CardText>
                     {props.characters.map(people => {
-                        return <CardText className="col-12 mt-2" key={people}> {people} </CardText>
+                        return <NavLink to={`/characters/${people.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={people}> {people} </CardText></NavLink>
                     })}
                     <CardText className="font-weight-bold bold-card mein-card col-12"> Planets: </CardText>
                     {props.planets.map(planet => {
-                        return <CardText className="col-12 mt-2" key={planet}> {planet} </CardText>
+                        return <NavLink to={`/planets/${planet.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={planet}> {planet} </CardText></NavLink>
                     })}
                     <CardText className="col-12 font-weight-bold bold-card mein-card"> Starships: </CardText>
                     {props.starships.map(starship => {
-                         return <CardText key={starship} className="col-12 mt-2"> {starship}</CardText>})}
+                         return <NavLink to={`/starships/${starship.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={starship}> {starship}</CardText></NavLink>})}
                     <CardText className="col-12 font-weight-bold bold-card mein-card"> Vehicles: </CardText>
                     {props.vehicles.map(vehicle => {
-                         return <CardText key={vehicle} className="col-12 mt-2"> {vehicle}</CardText>})}
+                         return <NavLink to={`/vehicles/${vehicle.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={vehicle}> {vehicle}</CardText></NavLink>})}
                          </div>
                 </CardBody>
             </Card>

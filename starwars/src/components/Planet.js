@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 
 const Planet = props => {
     console.log('Planet props', props)
@@ -25,7 +26,7 @@ const Planet = props => {
                     <CardText className="mt-2 col-12"> {props.population} </CardText>
                     <CardText className="col-12 font-weight-bold bold-card mein-card"> Residents: </CardText>
                     {props.residents.map(resident => {
-                        return <CardText key={resident} className="col-12 mt-2"> {resident}</CardText>})}
+                        return <NavLink to={`/characters/${resident.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={resident}> {resident}</CardText></NavLink>})}
                 </CardBody>
             </Card>
         </div>

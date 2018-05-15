@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 
 const Character = props => {
     return (
@@ -21,17 +22,17 @@ const Character = props => {
                     <CardText className="col-12 mt-2"> {props.homeworld} </CardText>
                     <CardText className="font-weight-bold bold-card mein-card col-12"> Films: </CardText>
                     {props.films.map(film => {
-                        return <CardText className="mt-2 col-12"> {film} </CardText>
+                        return <NavLink to={`/films/${film.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText> {film} </CardText></NavLink>
                     })}
                     <CardText className="col-12 font-weight-bold bold-card mein-card"> Species: </CardText>
                     <CardText key={props.species} className="col-12 mt-2"> {props.species} </CardText> 
                     <CardText className="font-weight=bold mein-card bold-card col-12"> Vehicles(s): </CardText>
                     {props.vehicles.map(vehicles => {
-                        return <CardText key={vehicles} className="col-12 mt-2"> {vehicles} </CardText>
+                        return <NavLink to={`/vehicles/${vehicles.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={vehicles}> {vehicles} </CardText></NavLink>
                     })}
                     <CardText className="font-weight-bold mein-card bold-card col-12"> Starships(s): </CardText>
                             {props.starships.map(starship => {
-                            return <CardText key={starship} className="mt-2 col-12"> {starship} </CardText> 
+                            return <NavLink to={`/starships/${starship.toLowerCase().split(' ').join('')}`} className="col-12 mt-2"><CardText key={starship}> {starship} </CardText></NavLink> 
                     })}
                 </CardBody>
             </Card>
