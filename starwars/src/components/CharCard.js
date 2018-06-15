@@ -29,8 +29,13 @@ function CharCard(props) {
     );
   });
 
+  let classList = "char-card";
+  if (props.char.hidden) {
+      classList = classList + " hidden";
+  }
+
   return (
-    <div className="char-card">
+    <div className={classList}>
       <div className="name">
         <h1>{props.char.name}</h1>
       </div>
