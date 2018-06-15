@@ -7,9 +7,9 @@
     color: rgb(28, 25, 20);
     border-radius: 10px;
 /* card hover */
+    height: 300px; 
     perspective: 150rem;
     position: relative;
-    height: 300px;
     cursor: pointer;
 }
 .card:hover .card__back{
@@ -19,31 +19,32 @@
     transform: rotateY(-180deg);    
 }
 .card__front{
-    height: 300px;
-    transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 300px;
+    transition: all .8s ease;
+    overflow: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.35);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.34);
     /* border: 1px solid blue; */
     background-image: radial-gradient(rgb(213, 210, 208), #b1aaa1);
 }
 .card__back{
     height: 300px;
-    transition: all .8s ease;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.35);    
+    transform: rotateY(180deg);
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.35);    
-    transform: rotateY(180deg);
+    transition: all .8s ease;
+   
     background-image: radial-gradient(rgb(213, 210, 208), #b1aaa1);
     /* background-color: rgb(236, 87, 0); */
 }
