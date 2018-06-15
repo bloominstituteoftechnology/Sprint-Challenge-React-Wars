@@ -17,5 +17,11 @@
     margin: 0 10px;
     padding: 10px;
     cursor: pointer;
+    border-radius: 6px;
+}
+
+.starwars-buttons button:hover {
+    background: white;
+    color: black;
 }
 
