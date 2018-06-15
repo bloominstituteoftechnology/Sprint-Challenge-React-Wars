@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
+import Char from './components/Char';
+import Button from './components/Button';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextURL: '',
+      prevURL: '',
     };
   }
 
@@ -22,17 +27,41 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results, nextURL: data.next, prevURL: data.previous
+        });
+        // console.log('data: ', data);
+        // console.log('data: ', data.next);
+        console.log('data: ', data.previous);
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handleClick = (url) => {
+    url = this.state.nextURL
+    if (url == null) {
+      return null;
+    }
+    this.getCharacters(url)
+  }
+  handlePrevClick = (url) => {
+
+    url = this.state.prevURL
+    if (url == null) {
+      return null;
+    }
+    this.getCharacters(url)
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <input id="myInput" type="text" placeholder="Search..." />
+        <Char passedPropToChar={this.state.starwarsChars} />
+        <Button onclickProp={this.handleClick} onclickPropPrev={this.handlePrevClick} />
       </div>
     );
   }

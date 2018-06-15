@@ -1,8 +1,44 @@
 .App {
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
 /* write your parent styles in here for your App.js */
+
+.card {
+  width: 200px;
+  border: 1px solid gray;
+  margin: 1rem 0;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(23, 23, 101, 1) 71%);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.card:hover {
+  background: linear-gradient(90deg, rgba(12, 7, 99, 1) 0%, rgba(55, 55, 144, 1) 71%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subtl {
+  margin: 0 1rem;
+}
+
+.buttonsArea {
+  margin-bottom: 5rem;
+}
+#myInput {
+  margin-bottom: 3rem;
+}
