@@ -7,6 +7,7 @@ const Content = styled.div`
 	text-shadow: ${props => props.display ? '1px 1px 5px #000': '1px 1px 5px #fff'};
 	display: flex;
 	flex-direction: column;
+	width: 30%;
 `
 
 export default Content;

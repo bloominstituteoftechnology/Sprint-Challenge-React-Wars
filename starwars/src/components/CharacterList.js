@@ -3,10 +3,11 @@ import React from 'react';
 import CharacterItem from './CharacterItem'
 
 import Content from '../elements/Content'
+import ListContainer from '../elements/ListContainer'
 
 const CharacterList = (props) => {
 	return (
-		<Content >
+		<ListContainer >
 			{
 				props.list.map(character=>{
 					return (
@@ -14,7 +15,7 @@ const CharacterList = (props) => {
 					)
 				})
 			}
-		</Content>
+		</ListContainer>
 	);
 };
 

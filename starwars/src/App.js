@@ -48,10 +48,12 @@ class App extends Component {
 
   render() {
     return (
-      <Container app>
+      <div>
         <h1 className="Header">React Wars</h1>
-        <CharacterList handler={this.addRenderProp} list={this.state.starwarsChars}/>
-      </Container>
+        <Container app>
+          <CharacterList handler={this.addRenderProp} list={this.state.starwarsChars}/>
+        </Container>
+      </div>
     );
   }
 }
