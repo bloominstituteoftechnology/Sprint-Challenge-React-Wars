@@ -17,4 +17,9 @@
 .char .info ul {
   list-style-type: none;
   margin-right: 50px;
+  font-size: 18px;
+}
+
+.info ul img {
+  border-radius: 5px;
 }
