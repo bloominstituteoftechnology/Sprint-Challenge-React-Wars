@@ -4,7 +4,7 @@ import './StarWars.css'
 
 const StarWarsList = (props) => {
     return (
-        <div className ="app-Wrapper">
+        <div className ="d-flex flex-wrap">
             {props.starwarsChars.map((starwars , index ) => {
                 return <StarWars starWars ={starwars} key ={index} />
             })}
