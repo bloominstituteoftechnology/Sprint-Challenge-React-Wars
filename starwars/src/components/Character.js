@@ -1,23 +1,26 @@
 import React from 'react';
 
-const handleClick = character => {
-  alert(character.name);
-};
+class Character extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  handleClick = character => {
+    alert(character.name);
+  };
 
-const handleMouseEnter = character => {
-  console.log(character.name);
-};
-
-const Character = props => (
-  <div>
-    <img
-      src={`${window.location.origin}/img/${props.img}.jpg`}
-      alt={props.character.name}
-      onClick={() => handleClick(props.character)}
-      onMouseEnter={() => handleMouseEnter(props.character)}
-      title={props.character.name}
-    />
-  </div>
-);
+  render() {
+    return (
+      <div>
+        <img
+          src={`${window.location.origin}/img/${this.props.img}.jpg`}
+          alt={this.props.character.name}
+          onClick={() => this.handleClick(this.props.character)}
+          title={this.props.character.name}
+        />
+      </div>
+    );
+  }
+}
 
 export default Character;
