@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Data = props => {
+    console.log(props.char);
     return (
         <div className='data-list'>
-            {props.data}
+            {props.char}
         </div>
     )
 }

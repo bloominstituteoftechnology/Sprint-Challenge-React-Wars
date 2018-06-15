@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Title = props => {
+    console.log(props.char);
     return (
         <div className='title'>
         <h1>{props.name}</h1>
