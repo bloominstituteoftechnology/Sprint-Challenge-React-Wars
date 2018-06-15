@@ -16,9 +16,10 @@
 
 }
 .custom-card {
-  background: gray;
+  background: skyblue;
   border: 1px solid black;
   border-radius: 10%;
   margin: 5%;
   padding: 0 5%;
+  opacity: .7;
 }
