@@ -8,8 +8,10 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      currentPage: 1,
-      charsPerPage: 4
+      // currentPage: 1,
+      // charsPerPage: 4,
+      nextURL: '',
+      previousURL: ''
     };
   }
 
@@ -26,40 +28,46 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, nextURL:data.next, previousURL: data.previous });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
-handleClick = event => {
-  this.setState({
-    currentPage: Number(event.target.id)
-  });
+handlePreviousClick = () => {
+  this.getCharacters(this.state.previousURL);
+}
+
+handleNextClick = () => {
+  this.getCharacters(this.state.nextURL);
 }
 
   render() {
-    const indexOfLastCharacter = this.state.currentPage * this.state.charsPerPage;
-    const indexOfFirstCharacter = indexOfLastCharacter - this.state.charsPerPage;
-    const currentChars = this.state.starwarsChars.slice(indexOfFirstCharacter, indexOfLastCharacter);
-    //Logic for displaying page numbers
-    const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(this.state.starwarsChars.length / this.state.charsPerPage); i++) {
-      pageNumbers.push(i);
-    }
+  // REMNANTS OF AN ALTERNATIVE STYLE FOR PAGINATION
+  //   const indexOfLastCharacter = this.state.currentPage * this.state.charsPerPage;
+  //   const indexOfFirstCharacter = indexOfLastCharacter - this.state.charsPerPage;
+  //   const currentChars = this.state.starwarsChars.slice(indexOfFirstCharacter, indexOfLastCharacter);
+  //   //Logic for displaying page numbers
+  //   const pageNumbers = [];
+  //   for (let i = 1; i <= Math.ceil(this.state.starwarsChars.length / this.state.charsPerPage); i++) {
+  //     pageNumbers.push(i);
+  //   }
+  //
+  //   const renderPageNumbers = pageNumbers.map(number => {
+  //     return (
+  //     <li key={number} id={number} onClick={this.handleClick}>{number}</li>
+  //   );
+  // });
 
-    const renderPageNumbers = pageNumbers.map(number => {
-      return (
-      <li key={number} id={number} onClick={this.handleClick}>{number}</li>
-    );
-  });
+  // <ul className="page-numbers">{renderPageNumbers}</ul>
 
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <ul className="page-numbers">{renderPageNumbers}</ul>
-        <CharacterList listItems={currentChars}  />
+        <button onClick={this.handlePreviousClick}>Prev</button>
+        <button onClick={this.handleNextClick}>Next</button>
+        <CharacterList listItems={this.state.starwarsChars}  />
 
       </div>
     );

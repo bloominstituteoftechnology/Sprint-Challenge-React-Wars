@@ -12,7 +12,7 @@
   margin: auto;
   width: 200px;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 40px;
   background-color: gray;
   color: white;
