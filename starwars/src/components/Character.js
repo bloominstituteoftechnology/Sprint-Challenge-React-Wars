@@ -1,25 +1,17 @@
 import React from 'react';
 
-class Character extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const handleClick = character => {
+  alert(character.name);
+};
 
-  handleClick = () => {
-    alert(this.props.character.name);
-  };
-
-  render() {
-    return (
-      <div className="container">
-        <img
-          src={`${window.location.origin}/img/${this.props.img}.jpg`}
-          alt={this.props.character.name}
-          onClick={this.handleClick}
-        />
-      </div>
-    );
-  }
-}
+const Character = props => (
+  <div>
+    <img
+      src={`${window.location.origin}/img/${props.img}.jpg`}
+      alt={props.character.name}
+      onClick={() => handleClick(props.character)}
+    />
+  </div>
+);
 
 export default Character;
