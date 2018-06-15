@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
 import CardList from './components/CardList';
 
 class App extends Component {

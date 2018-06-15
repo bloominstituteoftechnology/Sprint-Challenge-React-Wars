@@ -3,7 +3,7 @@ import Card from "./Card"
 
 const CardList = props => {
     return (
-        <div>
+        <div className="card-list-container">
             {props.charProps.map(char => {
                 return <Card charData={char}/>
         })}

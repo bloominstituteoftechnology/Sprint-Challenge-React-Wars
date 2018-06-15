@@ -1,0 +1,36 @@
+.card-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card-container{
+    font-family: starwars;
+    color: rgb(229,177,58);;
+    background: black;
+    border: 3px solid rgb(229,177,58);;
+    padding: 18px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.card-container h4{
+    font-size: 1.7rem;
+}
+
+@font-face {
+    font-family: starwars;
+    src: url("../death-star.regular.otf") format("opentype");
+}
+
+.Header{
+    font-family: starwars;
+    color: rgb(229,177,58);;
+    font-size: 5.2rem;
+    background: black;
+    width: 35%;
+    margin: 55px 0 0 30%;
+    border-radius: 7px;
+    border: 8px solid rgb(229,177,58);;
+}
