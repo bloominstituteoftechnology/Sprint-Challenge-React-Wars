@@ -1,0 +1,14 @@
+
+
+.container { 
+    display: flex;
+    width: 850px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    border: .5px solid black;
+    width: 400px;
+    background: coral;
+}
