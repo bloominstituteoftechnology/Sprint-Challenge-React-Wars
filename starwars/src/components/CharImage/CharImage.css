@@ -61,6 +61,5 @@
 
 .selected{
   filter: grayscale(0);
-  border-bottom: 3px solid skyblue;
   
 }
