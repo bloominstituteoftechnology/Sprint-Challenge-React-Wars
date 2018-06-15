@@ -5,7 +5,7 @@ const CharacterList = props => {
   let list = props.listItems;
 
   return (
-    <ul>{list.map( item =>  <Char key={item.name} item = {item} />)}</ul>
+    <div className="card-container">{list.map( item =>  <Char key={item.name} item = {item} />)}</div>
   )
 };
 

@@ -1,0 +1,12 @@
+.character-card {
+  width: 400px;
+  background: beige;
+  margin: auto;
+  opacity: .7;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
