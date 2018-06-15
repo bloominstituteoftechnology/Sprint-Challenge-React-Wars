@@ -1,0 +1,15 @@
+.Card {
+    border: 3px solid grey;
+    background: white;
+    color: black;
+    width: 470px;
+    margin: 30px;
+    opacity: .5;
+    font-size: 30px;
+}
+
+.CardsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

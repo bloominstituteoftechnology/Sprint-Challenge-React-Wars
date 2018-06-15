@@ -1,8 +1,15 @@
 import React from 'react';
+import Card from './Card';
 
-const CardsList = () => {
+const CardsList = props => {
     return (
-        <div>Card goes here.</div>
+        <div className="CardsList">
+            {props.characters.map(character => {
+                return (
+                    <Card key={Math.random()} character={character}/>
+                )
+            })}
+        </div>
     )
 
 }
