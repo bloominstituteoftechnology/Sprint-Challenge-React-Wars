@@ -18,7 +18,10 @@ Modal.setAppElement('#root');
 class Character extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { modalIsOpen: false };
+    this.state = {
+      modalIsOpen: false,
+      imgURL: null,
+    };
   }
   handleClick = character => {
     alert(character.name);
@@ -35,6 +38,10 @@ class Character extends React.Component {
   closeModal = () => {
     this.setState({ modalIsOpen: false });
   };
+
+  imgURL = () =>
+    `https://raw.githubusercontent.com/tbone849/star-wars-guide/master/build/assets/img/characters/${this
+      .props.img + 1}.jpg`;
 
   render() {
     return (
@@ -54,9 +61,8 @@ class Character extends React.Component {
           <button onClick={this.closeModal}>close</button>
         </Modal>
         <img
-          src={`${window.location.origin}/img/${this.props.img}.jpg`}
-          alt={this.props.character.name}
-          // onClick={() => this.handleClick(this.props.character)}
+          src={this.imgURL()} // src={`${window.location.origin}/img/${this.props.img}.jpg`}
+          alt={this.props.character.name} // onClick={() => this.handleClick(this.props.character)}
           onClick={() => this.openModal()}
           title={this.props.character.name}
         />
