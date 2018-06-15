@@ -6,7 +6,9 @@ const CardContainer = props => {
     <div>
       CARD CONTAINER
       {/* MAP THROUGH ALL CHARACTER CARDS SORT BY FILM */}
-      <CharacterCard />
+      {props.characters.map(character => (
+        <CharacterCard character={character} key={character.url} />
+      ))}
     </div>
   );
 };

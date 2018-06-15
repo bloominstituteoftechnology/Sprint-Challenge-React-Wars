@@ -8,7 +8,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentSelectedFilm: "All",
+      currentSorted: []
     };
   }
 
@@ -38,7 +40,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <FilmSelectForm />
-        <CardContainer />
+        <CardContainer characters={this.state.starwarsChars} />
+        {/* change to this.state.currentSorted when functional */}
       </div>
     );
   }
