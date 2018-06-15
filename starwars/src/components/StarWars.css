@@ -4,7 +4,7 @@
     color: black;
     width: 470px;
     margin: 30px;
-    opacity: .5;
+    opacity: .6;
     font-size: 30px;
 }
 
@@ -12,4 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+h3 {
+    border-bottom: 1px solid black;
 }
