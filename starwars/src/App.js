@@ -35,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterCard char={this.state.starwarsChars[0]} />
       </div>
     );
   }
