@@ -10,3 +10,28 @@
   box-shadow: 0 19px 38px rgba(0,0,0,.3), 0 19px 38px rgba(0,0,0,.3) ,0 19px 38px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.22);
 
 }
+
+
+/* 
+updateChars = (prevOrNext) => {
+  // We only have 9 pages of character info
+  let newPage = this.state.page;
+  if(prevOrNext === 'prev'){
+    newPage - 1 < 1 ? newPage = 9 : newPage--;
+  }
+  else{
+    newPage + 1 > 9 ? newPage = 1 : newPage++;
+  }
+  this.setState({page: newPage});
+}
+
+render() {
+  return (
+    <div className="App">
+      <h1 className="Header">React Wars</h1>
+      <button onClick={this.updateChars('prev')}>previous</button> <button onClick={this.updateChars('next')}>next</button>
+      <CardList charsList={this.state.starwarsChars} />
+    </div>
+  );
+}
+} */
