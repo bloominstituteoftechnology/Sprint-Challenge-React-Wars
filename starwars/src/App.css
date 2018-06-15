@@ -12,14 +12,14 @@
 .custom-list {
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 .custom-card {
   background: skyblue;
   border: 1px solid black;
   border-radius: 10%;
-  margin: 5%;
+  margin: 2%;
   padding: 0 5%;
   opacity: .7;
 }

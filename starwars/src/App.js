@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">StarWars Characters</h1>
-        <Character key={Math.random()} characters={this.state.starwarsChars} />
+        <Character characters={this.state.starwarsChars} />
       </div>
     );
   }
