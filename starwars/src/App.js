@@ -29,7 +29,7 @@ class App extends Component {
       .then(data => {
         this.setState({
           starwarsChars: data.results, nextURL: data.next, prevURL: data.previous
-  });
+        });
         console.log('data: ', data.previous);
       })
       .catch(err => {
@@ -38,11 +38,18 @@ class App extends Component {
   };
 
   handleClick = (url) => {
-     url=this.state.nextURL
+    url = this.state.nextURL
+    if (url == null) {
+      return null;
+    }
     this.getCharacters(url)
   }
   handlePrevClick = (url) => {
-     url=this.state.prevURL
+
+    url = this.state.prevURL
+    if (url == null) {
+      return null;
+    }
     this.getCharacters(url)
   }
 
