@@ -1,11 +1,12 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
-
+> React is a UI Rendering library that solves several problems. It solves the problem of displaying data dynamically, and user interaction by Rendering and re-rendering components whenever interacted with. React creates a virtual DOM and mounts to this DOM instead of the traditional DOM. This allows for it update only when necessary and only update the pieces that are necessary.
 1.  What does it mean to _think_ in react?
-
+> To think in React is to be able to break a UI into components. To go even deeper, it is to think of how to break these components into Stateless/Functional or Stateful/Class components.
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-
+> A stateful component has access to it's own state. State is just a fancy word for stored data that persists in the component at any given time. (This is different from application state). A stateful component has access to and can create new state, given certain conditions. A functional component is not concerned with the state of the component. It's sole purpose is to render Data or perhaps do some sort of action with that data. Stateful components usually store the logic of the component while functional components render UI.
 1.  Describe state.
-
+> The data that persists in the component. As an example, if we wanted to make a weather API call, we might store a 'zipcode' into the state. This zipcode will be the basis by which the GET request is handled. After the API call is made, we might store the request into the state as well. At this point, the component would be store both the zipcode and the weather data. When modifying the state, it is important to never mutate the data. Create a copy, then mutate the copy, then store that copy into the state, as the new state.
 1.  Describe props.
+> Props are data or functions that are passed to a child component in the form of props (short for properties). These props are 'read-only' which means that they cannot be modified. The state can be passed down as props, but it will be assigned a new value. Props are like arguments for functions that can be accessed in the child component.
