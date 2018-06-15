@@ -11,8 +11,15 @@
 
 }
 
+.card-selector .char-button.hidden {
+    background-color: black;
+    color: #d4d6d3;
+}
 
 
+.char-card.hidden {
+    display: none;
+}
 
 .char-card h2 {
         font-size: 1.6rem;

@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -24,7 +25,7 @@ class App extends Component {
       })
       .then(data => {
         let newData = data.results.map((datum) => {
-          let dataCopy = Object.assign({hidden: false}, datum);
+          let dataCopy = Object.assign({hidden: true}, datum);
           return dataCopy;
         });
         this.setState({ starwarsChars: newData });
@@ -34,8 +35,8 @@ class App extends Component {
       });
   };
 
- handleClick = (event) => {
-    let id = event.currentTarget.attributes.id;
+ handleClick (event) {
+    let id = event.currentTarget.attributes.id.value;
     let charArr = this.state.starwarsChars;
     let newCharArr = charArr.map((char) => {
       let newChar = Object.assign({}, char);
@@ -51,7 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">Meet</h1>
-        <CardDisplay chars={this.state.starwarsChars} />
+        <CardDisplay chars={this.state.starwarsChars} handleClick={this.handleClick} />
       </div>
     );
   }

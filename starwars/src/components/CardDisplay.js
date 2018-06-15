@@ -9,7 +9,11 @@ import CharCard from './CharCard.js'
         })
 
         let names = props.chars.map((char) => {
-            return <div key={char.name} id={char.name} className="char-button button">{char.name}</div>
+            let classList = "char-button button";
+            if (char.hidden) {
+                classList = classList + " hidden";
+            }
+            return <div key={char.name} id={char.name} className={classList} onClick={props.handleClick}>{char.name}</div>
         })
 
 
