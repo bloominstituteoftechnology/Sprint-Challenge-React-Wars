@@ -5,3 +5,12 @@
 .card-title {
     color: #4e89a4;
 }
+
+.starwars-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.starwars button {
+
+}
