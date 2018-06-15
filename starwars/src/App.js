@@ -59,7 +59,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <input id="myInput" type="text" placeholder="Search by name..." />
+        <input id="myInput" type="text" placeholder="Search..." />
         <Char passedPropToChar={this.state.starwarsChars} />
         <Button onclickProp={this.handleClick} onclickPropPrev={this.handlePrevClick} />
       </div>
