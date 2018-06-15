@@ -41,3 +41,6 @@ class App extends Component {
 }
 
 export default App;
+
+// Pull Request
+// https://github.com/LambdaSchool/Sprint-Challenge-React/pull/306
