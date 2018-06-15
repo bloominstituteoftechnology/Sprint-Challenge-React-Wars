@@ -8,6 +8,7 @@
 
 .image:hover{
   border-bottom: 3px solid white;
+  cursor: pointer;
 }
 
 .darth{
