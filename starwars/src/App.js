@@ -8,7 +8,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      // currentPage: 1,
+      // currentPage: 1, data from a previous pagination instatiation
       // charsPerPage: 4,
       nextURL: '',
       previousURL: ''
@@ -29,6 +29,11 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results, nextURL:data.next, previousURL: data.previous });
+        if (data.next === null) {
+          this.setState({nextURL: 'https://swapi.co/api/people/'})
+        } else if (data.previous === null) {
+          this.setState({previousURL: 'https://swapi.co/api/people/?page=9'})
+        }
       })
       .catch(err => {
         throw new Error(err);
