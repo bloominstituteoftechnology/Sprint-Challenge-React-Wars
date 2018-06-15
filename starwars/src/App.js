@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import Container from './elements/Container'
+
+import CharacterList from './components/CharacterList';
+//import styling
 import './App.css';
+import Container from './elements/Container'
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -30,10 +34,23 @@ class App extends Component {
       });
   };
 
+  addRenderProp = (name) =>{
+    let list = this.state.starwarsChars.slice();
+
+    list = list.map(char=>{
+      if (char.name === name){
+        char.render = !char.render;
+      }
+      return char;
+    })
+    this.setState({starwarsChars: list})
+  }
+
   render() {
     return (
       <Container app>
         <h1 className="Header">React Wars</h1>
+        <CharacterList handler={this.addRenderProp} list={this.state.starwarsChars}/>
       </Container>
     );
   }

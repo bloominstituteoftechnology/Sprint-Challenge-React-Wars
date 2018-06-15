@@ -1,10 +1,13 @@
 import React from 'react';
+import Content from '../elements/Content'
+import CharacterCard from './CharacterCard';
 
 const CharacterItem = (props) => {
 	return (
-		<div>
-			
-		</div>
+		<Content display onClick={()=>{props.handler(props.character.name)}}>
+			{props.character.name}
+			{props.character.render && <CharacterCard character={props.character} />}
+		</Content>
 	);
 };
 

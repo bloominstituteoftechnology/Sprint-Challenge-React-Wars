@@ -1,10 +1,20 @@
 import React from 'react';
 
+import CharacterItem from './CharacterItem'
+
+import Content from '../elements/Content'
+
 const CharacterList = (props) => {
 	return (
-		<div>
-			
-		</div>
+		<Content >
+			{
+				props.list.map(character=>{
+					return (
+						<CharacterItem handler={props.handler} key={character.name} character={character} />
+					)
+				})
+			}
+		</Content>
 	);
 };
 
