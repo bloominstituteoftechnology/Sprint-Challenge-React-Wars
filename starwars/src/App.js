@@ -12,13 +12,13 @@ class App extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   this.getCharacters('https://swapi.co/api/people/');
-  // }
-
-  componentWillMount() {
+  componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
   }
+
+  // componentWillMount() {
+  //   this.getCharacters('https://swapi.co/api/people/');
+  // }
 
   imageClickHandler = (name) =>{
     console.log(name, 'You clicked an this image!')
@@ -30,8 +30,7 @@ class App extends Component {
           selected:ind
         })
       }
-    })
-    // let urlNum = 
+    }) 
   }
 
   getCharacters = URL => {

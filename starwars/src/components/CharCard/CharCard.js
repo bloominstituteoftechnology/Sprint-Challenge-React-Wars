@@ -13,8 +13,7 @@ class CharCard extends Component {
   
     return ( 
       <div className="char-card">
-        <h1>{this.props.headerName}</h1>
-        <p>{`Name:       ${this.props.appState.starwarsChars[this.props.appState.selected].name}`}</p>
+        <h1>{this.props.appState.starwarsChars[this.props.appState.selected].name}</h1>
         <p>{`Height:     ${this.props.appState.starwarsChars[this.props.appState.selected].height}`}</p>
         <p>{`Mass:       ${this.props.appState.starwarsChars[this.props.appState.selected].mass}`}</p>
         <p>{`Birth Year: ${this.props.appState.starwarsChars[this.props.appState.selected].birth_year}`}</p>
