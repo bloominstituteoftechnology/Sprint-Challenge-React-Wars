@@ -2,11 +2,12 @@
 	width: 200px;
 	height: 200px;
 	border: 1px solid chocolate;
-	color: black;
-	/*background-color: almond;*/
+	color: teal;
+	background-color: #fff;
 }
 
 .container-style{
+	margin: 10%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
