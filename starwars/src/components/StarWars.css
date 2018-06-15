@@ -1,0 +1,8 @@
+.chars-wrapper{
+    background: white;
+    width: 50%;
+    margin:  auto;
+}
+.star-wars-card{
+    border: 1px solid black;
+}
