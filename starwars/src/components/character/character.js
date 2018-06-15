@@ -7,7 +7,7 @@ const Character = props => {
     return (
     <div className="character-card">
         <Card>
-            <img top width="100%" src={`${window.location.origin}/images/${props.char.name.split(' ').join('-')}.jpg`} alt={`portrait of ${props.char.name}`} className="char-img"/>
+             <CardImg top width="100%" src="" alt="Card image cap" />
             <CardBody className="char-info">
                 <CardTitle className="char-name">{props.char.name}</CardTitle>
                 <CardText>birth year: {props.char.birth_year}</CardText>
