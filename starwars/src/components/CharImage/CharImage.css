@@ -2,6 +2,7 @@
   height: 141px;
   /* border: 1px solid red; */
   width: 105px;
+  margin: 10px 15px;
 }
 
 .image:hover{
@@ -54,6 +55,7 @@
 .char-image-container{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .selected{

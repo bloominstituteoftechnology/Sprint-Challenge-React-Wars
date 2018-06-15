@@ -8,5 +8,6 @@ body {
   font-family: sans-serif;
   background: url('./sw-bg.jpg') no-repeat center center;
   background-size: cover;
-  height: 97vh;
+  height: 100vh;
+  width: 97vw;
 }

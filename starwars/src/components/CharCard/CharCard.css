@@ -1,13 +1,10 @@
 .char-card{
-  /* border: 1px solid red; */
-  width: 22%;
-  margin-top: 2%;
-  margin-right: 8%;
+  margin-top: 1.8%;
 }
 
 .char-card-container{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 }
 

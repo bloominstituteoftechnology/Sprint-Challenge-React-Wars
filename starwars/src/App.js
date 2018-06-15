@@ -56,9 +56,18 @@ class App extends Component {
     if (this.state.starwarsChars.length !== 0){
       return (
         <div className="App">
-          <h1 className="Header">React Wars</h1>
-          <CharImageContainer appState={this.state} onClick={this.imageClickHandler}/>
-          <CharCardContainer appState={this.state}/>
+          <h1 className="Header">Star Wars React Bio</h1>
+            <div className="container">
+            <div className="row content">
+              <div className="col-sm-8">
+                <CharImageContainer appState={this.state} onClick={this.imageClickHandler}/>
+              </div>
+              <div className="col-sm-4">
+                <CharCardContainer appState={this.state}/>
+              </div>
+            </div>
+            </div>
+          
         </div>
       );
     }else {

@@ -7,11 +7,9 @@ class CharImage extends Component {
   }
   render() { 
     return (  
-      <div>
-        <div 
+      <div 
         onClick={() => this.props.onClick(this.props.starwarsCharsObj.name)} 
         className={`image ${this.props.imageName} ${(this.props.index === this.props.selected)? "selected" : null }`}>
-        </div>
       </div>
     )
   }

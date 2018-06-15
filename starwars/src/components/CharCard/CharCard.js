@@ -14,11 +14,13 @@ class CharCard extends Component {
     return ( 
       <div className="char-card">
         <h1>{this.props.appState.starwarsChars[this.props.appState.selected].name}</h1>
-        <p>{`Height:     ${this.props.appState.starwarsChars[this.props.appState.selected].height}`}</p>
-        <p>{`Mass:       ${this.props.appState.starwarsChars[this.props.appState.selected].mass}`}</p>
-        <p>{`Birth Year: ${this.props.appState.starwarsChars[this.props.appState.selected].birth_year}`}</p>
-        <p>{`Hair Color: ${this.props.appState.starwarsChars[this.props.appState.selected].hair_color}`}</p>
-        <p>{`Eye Color:  ${this.props.appState.starwarsChars[this.props.appState.selected].eye_color}`}</p>
+        <h4>{`Height:     ${this.props.appState.starwarsChars[this.props.appState.selected].height}`}    </h4>
+        <h4>{`Gender:     ${this.props.appState.starwarsChars[this.props.appState.selected].gender}`}    </h4>
+        <h4>{`Mass:       ${this.props.appState.starwarsChars[this.props.appState.selected].mass}`      }</h4>
+        <h4>{`Birth Year: ${this.props.appState.starwarsChars[this.props.appState.selected].birth_year}`}</h4>
+        <h4>{`Hair Color: ${this.props.appState.starwarsChars[this.props.appState.selected].hair_color}`}</h4>
+        <h4>{`Eye Color:  ${this.props.appState.starwarsChars[this.props.appState.selected].eye_color}`} </h4>
+        <h4>{`Skin Color: ${this.props.appState.starwarsChars[this.props.appState.selected].skin_color}`}</h4>
       </div>      
      )
   
