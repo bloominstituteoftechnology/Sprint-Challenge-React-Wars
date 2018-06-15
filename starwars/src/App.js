@@ -33,6 +33,7 @@ class App extends Component {
   };
 
   render() {
+    console.log("RoodDataSet: ", this.state.starwarsChars);
     return (
       <div className="App">
         <Header />
