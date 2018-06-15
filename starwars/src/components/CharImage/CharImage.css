@@ -5,7 +5,7 @@
 }
 
 .image:hover{
-  border: 1px solid skyblue;
+  border-bottom: 3px solid white;
 }
 
 .darth{
@@ -29,4 +29,8 @@
 .char-image-container{
   display: flex;
   justify-content: space-evenly;
+}
+
+.selected{
+  border-bottom: 3px solid skyblue;
 }
