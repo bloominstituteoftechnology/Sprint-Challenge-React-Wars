@@ -12,7 +12,7 @@
 }
 
 
-/* 
+/*
 updateChars = (prevOrNext) => {
   // We only have 9 pages of character info
   let newPage = this.state.page;
