@@ -5,7 +5,12 @@ import './StarWars.css';
 const CharacterCards = props => {
   return (
     <div className="character-cards">
-      <Card />
+      {props.characters.map(character => (
+        <Card 
+          key={character.created}
+          character={character}
+        />
+      ))}
     </div>
   );
 };
