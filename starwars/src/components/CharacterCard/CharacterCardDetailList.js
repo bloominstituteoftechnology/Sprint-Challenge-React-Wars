@@ -12,14 +12,13 @@ const CharacterCardDetailList = props => {
     'Mass': props.characterData.mass,
     'Skin Color': props.characterData.skin_color
   });
-  console.log('charDetails', charDetails);
 
   return(
-    <ul className="character-card__details">
+    <ul className="character-card__detail-list">
       {charDetails.map((detail, index) => {
         return <CharacterCardDetail 
-          key={detail.id} 
-          id={detail.id}
+          key={index} 
+          id={index}
           detailName={detail[0]}
           detailValue={detail[1]}
         />;

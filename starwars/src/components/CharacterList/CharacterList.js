@@ -1,9 +1,10 @@
 import React from 'react';
 import CharacterCard from '../CharacterCard/CharacterCard';
+import './CharacterList.css';
 
 const CharacterList = props => {
   return(
-    <ul>
+    <ul className="character-list">
       {props.characters.map(character => {
         return <CharacterCard 
           key={character.id} 

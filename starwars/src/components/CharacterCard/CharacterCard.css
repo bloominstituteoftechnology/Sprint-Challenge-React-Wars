@@ -1,0 +1,45 @@
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background: url(images/texture.png) repeat-x;
+  background-color: rgba(40, 40, 40, .8);
+  border-top: 4px solid #9c5060;
+  color: #ddd;
+  font-family: 'DIN2014-Light';
+}
+
+.character-card__header {
+  margin: 0 0 20px 0;
+  font-family: 'DIN2014-Demi';
+  font-size: 2.9rem;
+  line-height: 3.4rem;
+  text-transform: uppercase;
+}
+
+.character-card__detail-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.character-card__detail {
+  display: flex;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.character-card__detail-name {
+  width: 50%;
+  font-family: 'DIN2014-Regular';
+}
+.character-card__detail-value {
+  width: 80%;
+  font-family: 'DIN2014-Regular';
+  color: #aaa;
+  text-transform: capitalize;
+}
