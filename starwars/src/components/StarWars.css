@@ -1,0 +1,39 @@
+
+.card-selector {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-selector .char-button {
+    padding: 5px 1%;
+    background-color: #d4d6d3;
+    border: 1px solid #c3844f;
+
+}
+
+
+
+
+.char-card h2 {
+        font-size: 1.6rem;
+}
+
+
+.stat-table .row {
+    display: flex;
+    justify-content: center;
+}
+
+.stat-table .cell {
+    width: 50%;
+}
+
+.stat-table .stat-name {
+    padding-right: 1%;
+    text-align: right;
+}
+
+.stat-table .stat-value {
+    padding-left: 1%;
+    text-align: left;
+}

@@ -23,11 +23,28 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        let newData = data.results.map((datum) => {
+          let dataCopy = Object.assign({hidden: false}, datum);
+          return dataCopy;
+        });
+        this.setState({ starwarsChars: newData });
       })
       .catch(err => {
         throw new Error(err);
       });
+  };
+
+ handleClick = (event) => {
+    let id = event.currentTarget.attributes.id;
+    let charArr = this.state.starwarsChars;
+    let newCharArr = charArr.map((char) => {
+      let newChar = Object.assign({}, char);
+      if (newChar.name === id) {
+        newChar.hidden = !newChar.hidden;
+      }
+      return newChar;
+    });
+    this.setState( {starwarsChars: newCharArr});
   };
 
   render() {

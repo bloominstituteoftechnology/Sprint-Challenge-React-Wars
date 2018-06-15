@@ -1,5 +1,10 @@
+body {
+  font-size: 10px;
+}
+
 .App {
   text-align: center;
+  font-size: 1.4rem;
 }
 .Header {
   color: #443e3e;
