@@ -6,3 +6,28 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.page-numbers {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 40px;
+  background-color: gray;
+  color: white;
+  opacity: .9;
+}
+
+.page-numbers li {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.page-numbers li:hover {
+  color: gold;
+}
+
+.active{
+  color: black;
+}

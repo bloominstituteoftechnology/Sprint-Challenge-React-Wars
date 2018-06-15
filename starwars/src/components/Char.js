@@ -5,7 +5,7 @@ import {Card, CardBody, CardTitle, CardHeader} from 'reactstrap';
 const Char = props => {
   return (
     <div>
-      <Card className="my-5 character-card">
+      <Card className="my-3 character-card">
       <CardHeader><h1>{props.item.name}</h1></CardHeader>
       <CardBody>
       <CardTitle>Stats</CardTitle>

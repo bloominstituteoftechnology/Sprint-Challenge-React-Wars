@@ -7,7 +7,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentPage: 1,
+      charsPerPage: 4
     };
   }
 
@@ -31,11 +33,34 @@ class App extends Component {
       });
   };
 
+handleClick = event => {
+  this.setState({
+    currentPage: Number(event.target.id)
+  });
+}
+
   render() {
+    const indexOfLastCharacter = this.state.currentPage * this.state.charsPerPage;
+    const indexOfFirstCharacter = indexOfLastCharacter - this.state.charsPerPage;
+    const currentChars = this.state.starwarsChars.slice(indexOfFirstCharacter, indexOfLastCharacter);
+    //Logic for displaying page numbers
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(this.state.starwarsChars.length / this.state.charsPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
+    const renderPageNumbers = pageNumbers.map(number => {
+      return (
+      <li key={number} id={number} onClick={this.handleClick}>{number}</li>
+    );
+  });
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList listItems={this.state.starwarsChars}  />
+        <ul className="page-numbers">{renderPageNumbers}</ul>
+        <CharacterList listItems={currentChars}  />
+
       </div>
     );
   }
