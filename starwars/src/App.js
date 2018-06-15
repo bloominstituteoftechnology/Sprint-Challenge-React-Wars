@@ -3,6 +3,8 @@ import "./App.css";
 import Header from "./components/Header.js";
 import FilmSelectForm from "./components/FilmSelectForm.js";
 import CardContainer from "./components/CardContainer";
+import filmNames from "./data/filmNames";
+import planetNames from "./data/planetNames";
 
 class App extends Component {
   constructor() {
@@ -34,14 +36,22 @@ class App extends Component {
       });
   };
 
+  currentMovieHandler = e => {
+    console.log("selection: ", e.target.value);
+    return this.setState({ currentSelectedFilm: e.target.value });
+  };
+
   render() {
     console.log("RoodDataSet: ", this.state.starwarsChars);
     return (
       <div className="App">
         <Header />
         <div className="container">
-          <FilmSelectForm />
-          <CardContainer characters={this.state.starwarsChars} />
+          <FilmSelectForm currentMovieHandler={this.currentMovieHandler} />
+          <CardContainer
+            characters={this.state.starwarsChars}
+            sortFilm={this.state.currentSorted}
+          />
           {/* change to this.state.currentSorted when functional */}
         </div>
       </div>

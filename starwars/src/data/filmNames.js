@@ -1,4 +1,4 @@
-filmNames = [
+const filmNames = [
   {
     index: 1,
     url: "https://swapi.co/api/films/1/",

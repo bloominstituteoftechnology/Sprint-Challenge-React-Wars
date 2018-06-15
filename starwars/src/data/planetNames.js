@@ -1,4 +1,4 @@
-planetNames = [
+const planetNames = [
   {
     index: 1,
     url: "https://swapi.co/api/planets/1/",
@@ -20,3 +20,5 @@ planetNames = [
     name: "Stewjon"
   }
 ];
+
+export default planetNames;
