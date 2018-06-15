@@ -1,24 +1,33 @@
 .card-container {
     display: flex;
     margin: 50px auto;
-    height: 300px;
-    width: 700px;
-    background: lightblue;
+    height: 400px;
+    max-width: 800px;
+    width: 95%;
+    background: rgb(76, 146, 146);
+    color: rgb(223, 223, 223);
 }
 
 .bio__container {
     display: flex;
     flex-direction: column;
     padding: 3%;
-    border-right: 1px solid black;
+    border-right: 10px solid transparent;
+    -webkit-box-shadow: inset 0px 0px 4px 0px rgba(11, 56, 45, 0.8);
+    -moz-box-shadow: inset 0px 0px 4px 0px rgba(5, 255, 192, 0.8);
+    box-shadow: inset 0px 0px 4px 0px rgba(5, 255, 192, 0.8);
+    width: 30.38%;
 }
+
 .bio__info {
     font-size: 3rem;
     margin-top: 12px;
 }
+
 .bio__name {
     font-size: 4rem;
 }
+
 .bio__list {
     display: flex;
     flex-direction: column;
