@@ -23,6 +23,22 @@ class CharImageContainer extends Component {
           return <CharImage key={ind+charObj.birth_year} imageName="leia" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
           else if (charObj.name === "Obi-Wan Kenobi")
           return <CharImage key={ind+charObj.birth_year} imageName="obi" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Palpatine")
+          return <CharImage key={ind+charObj.birth_year} imageName="palpatine" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Han Solo")
+          return <CharImage key={ind+charObj.birth_year} imageName="han" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Yoda")
+          return <CharImage key={ind+charObj.birth_year} imageName="yoda" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Chewbacca")
+          return <CharImage key={ind+charObj.birth_year} imageName="chew" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Ackbar")
+          return <CharImage key={ind+charObj.birth_year} imageName="ackbar" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Boba Fett")
+          return <CharImage key={ind+charObj.birth_year} imageName="boba" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Greedo")
+          return <CharImage key={ind+charObj.birth_year} imageName="greedo" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
+          else if (charObj.name === "Wilhuff Tarkin")
+          return <CharImage key={ind+charObj.birth_year} imageName="tarkin" index={ind} selected={this.props.appState.selected} starwarsCharsObj={charObj} onClick={this.props.onClick}/>
         })}
         {/* <CharImage appState={this.props.appState} onClick={this.props.onClick}/>
         <CharImage appState={this.props.appState} onClick={this.props.onClick}/>

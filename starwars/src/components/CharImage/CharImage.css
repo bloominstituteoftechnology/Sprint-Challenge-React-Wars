@@ -23,9 +23,34 @@
 .r2d2{
   background: url('./img/characters/r2d2.png') no-repeat center center;
 }
+.ackbar{
+  background: url('./img/characters/ackbar.png') no-repeat center center;
+}
+.boba{
+  background: url('./img/characters/boba.png') no-repeat center center;
+}
+.chew{
+  background: url('./img/characters/chew.png') no-repeat center center;
+}
+.han{
+  background: url('./img/characters/han.png') no-repeat center center;
+}
+.palpatine{
+  background: url('./img/characters/palpatine.png') no-repeat center center;
+}
+.tarkin{
+  background: url('./img/characters/tarkin.png') no-repeat center center;
+}
+.yoda{
+  background: url('./img/characters/yoda.png') no-repeat center center;
+}
 .leia{
   background: url('./img/characters/leia.png') no-repeat center center;
 }
+.greedo{
+  background: url('./img/characters/greedo.png') no-repeat center center;
+}
+
 .char-image-container{
   display: flex;
   justify-content: space-evenly;
