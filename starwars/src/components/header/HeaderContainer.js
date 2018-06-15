@@ -4,7 +4,7 @@ import Icon from './Icon';
 import Logo from './Logo';
 
 
-const HeaderContainer = () => {
+const HeaderContainer = (props) => {
 
 return (
     

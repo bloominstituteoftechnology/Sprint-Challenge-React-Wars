@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
 import HeaderContainer from './components/header/HeaderContainer';
 import UserContainer from './components/User/UserContainer';
-
+import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      starwarsChars: [],
-      mycharacter: {}
+      starwarsChars: []
     };
   }
 
@@ -33,14 +31,6 @@ class App extends Component {
       });
   };
 
-  displayMyCharacter = () => {
-   let characters = this.state.starwarsChars.slice();
-    console.log(characters[0]);
-  //  characters = characters.filter(characters[0]);
-   this.setState({mycharacter: characters});
-  
-
-  };
 
   render() {
      console.log(this.state);
@@ -48,7 +38,7 @@ class App extends Component {
       <div className="app-wrapper">
      
        <HeaderContainer />
-       <UserContainer displayMyCharacter = {this.displayMyCharacter} />
+       <UserContainer characters={this.state.starwarsChars} />
      
       </div>
     );
