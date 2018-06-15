@@ -7,13 +7,13 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [
-        {name: "Bob"}
-      ]
+      ],
+      page: 1
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.page}`);
   }
 
   getCharacters = URL => {
@@ -32,10 +32,20 @@ class App extends Component {
       });
   };
 
+  updateChars = event => {
+    // We only have 9 pages of character info
+    let newPage = this.state.page;
+    newPage + 1 > 9 ? newPage = 1 : newPage++;
+    this.setState({page: newPage});
+    console.log(this.state.page);
+    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.page}`);
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <button onClick={this.updateChars}>next</button>
         <CardList charsList={this.state.starwarsChars} />
       </div>
     );
