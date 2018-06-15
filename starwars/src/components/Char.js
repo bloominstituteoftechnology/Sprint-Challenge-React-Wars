@@ -17,8 +17,8 @@ const Char = (props) => {
                         <CardBody>
                             <div key={i}>
                                 <CardTitle>{item.name}</CardTitle>
-                                <CardSubtitle className='subtl'><h3>Gender: </h3> {item.gender}</CardSubtitle>
-                                <CardSubtitle className='subtl'><h3>Mass: </h3> {item.mass}</CardSubtitle>
+                                <CardSubtitle className='subtl'>Gender:  {item.gender}</CardSubtitle><br />
+                                <CardSubtitle className='subtl'>Mass: {item.mass}</CardSubtitle>
                                 <CardText> Height:   {item.height}</CardText>
                                 <CardText> Birth Year:  {item.birth_year}</CardText>
                             </div>

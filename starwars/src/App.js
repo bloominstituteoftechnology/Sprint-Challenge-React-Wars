@@ -30,6 +30,8 @@ class App extends Component {
         this.setState({
           starwarsChars: data.results, nextURL: data.next, prevURL: data.previous
         });
+        // console.log('data: ', data);
+        // console.log('data: ', data.next);
         console.log('data: ', data.previous);
       })
       .catch(err => {
