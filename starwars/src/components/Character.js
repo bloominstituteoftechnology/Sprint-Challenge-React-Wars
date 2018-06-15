@@ -13,6 +13,8 @@ const customStyles = {
   },
 };
 
+Modal.setAppElement('#root');
+
 class Character extends React.Component {
   constructor(props) {
     super(props);
@@ -42,7 +44,7 @@ class Character extends React.Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="Character Modal"
         >
           <h2 ref={subtitle => (this.subtitle = subtitle)}>
             {this.props.character.name}
