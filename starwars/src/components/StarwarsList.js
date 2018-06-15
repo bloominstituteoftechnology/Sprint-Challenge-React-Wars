@@ -3,7 +3,7 @@ import Starwars from './Starwars'
 
 const StarwarsList = props => {
     return (
-        <div>
+        <div className="list-container">
             {props.passedList.map(item => {
                 return <Starwars
                 key={Math.random()}
