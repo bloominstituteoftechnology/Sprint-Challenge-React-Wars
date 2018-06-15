@@ -12,19 +12,17 @@ const Char = (props) => {
 
             {props.passedPropToChar.map((item, i) => {
                 return (
-                    // <div className='card'>
-                    <Card className='card' key={i}>
+                    <Card key={i} className='forSearch'>
                         <CardBody>
 
                             <CardTitle>{item.name}</CardTitle>
                             <CardSubtitle className='subtl'>Gender:  {item.gender}</CardSubtitle><br />
                             <CardSubtitle className='subtl'>Mass: {item.mass}</CardSubtitle>
-                            <CardText> Height:   {item.height}</CardText>
-                            <CardText> Birth Year:  {item.birth_year}</CardText>
+                            <CardText > Height:   {item.height}</CardText>
+                            <CardText > Birth Year:  {item.birth_year}</CardText>
 
                         </CardBody>
                     </Card>
-                    // </div>
                 )
             })}
 
