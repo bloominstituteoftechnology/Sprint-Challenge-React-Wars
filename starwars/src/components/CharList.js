@@ -9,7 +9,7 @@ const CharList = props => {
       {props.starwarsChars.map(starwarsChar => (
         <StarwarsChar
         //   handleToggleComplete={props.handleToggleComplete}
-          key={starwarsChar.name}
+          key={starwarsChar} //.name?
           starwarsChar={starwarsChar}
         />
       ))}
