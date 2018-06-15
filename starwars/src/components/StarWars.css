@@ -30,7 +30,7 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.34);
     /* border: 1px solid blue; */
-    background-image: radial-gradient(rgb(213, 210, 208), #b1aaa1);
+    background-image: radial-gradient(rgb(213, 210, 208), white);
 }
 .card__back{
     height: 300px;
@@ -45,7 +45,7 @@
     overflow: hidden;
     transition: all .8s ease;
    
-    background-image: radial-gradient(rgb(213, 210, 208), #b1aaa1);
+    background-image: radial-gradient(rgb(213, 210, 208), white);
     /* background-color: rgb(236, 87, 0); */
 }
 
