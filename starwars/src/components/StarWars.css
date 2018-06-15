@@ -5,7 +5,15 @@
     flex-wrap: wrap;
 }
 
-.card-selector .char-button {
+.card-display .button {
+    padding: 5px 1%;
+    border: 1px solid #c3844f;
+    background-color: #d4d6d3;
+    color: black;
+
+}
+
+.card-selector .button {
     padding: 5px 1%;
     border: 1px solid #c3844f;
     background-color: black;
@@ -14,16 +22,25 @@
 
 }
 
+
+
 .card-selector .char-button.hidden {
     background-color: #d4d6d3;
     color: black;
     box-shadow: none;
+}
 
+.card-display .new-char-button {
+    margin: 3px 2%;
+    background-color: #c3844f;
+    color: #d4d6d3;
+    border: 1px solid black;
+    /* color: black; */
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
 }
 
 .char-card {

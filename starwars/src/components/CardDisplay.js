@@ -21,7 +21,9 @@ import CharCard from './CharCard.js'
         <div className="card-display">
             <div className="card-selector">
                 {names}
-
+            </div>
+            <div className="new-char-button button" onClick={props.getNewCharacters}>
+                I want new characters!
             </div>
             <div className="cards">
             {cards}

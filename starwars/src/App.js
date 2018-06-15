@@ -9,6 +9,7 @@ class App extends Component {
       starwarsChars: []
     };
     this.handleClick = this.handleClick.bind(this);
+    this.getNewCharacters = this.getNewCharacters.bind(this);
   }
 
   componentDidMount() {
@@ -29,12 +30,18 @@ class App extends Component {
           return dataCopy;
         });
         newData[3].hidden = false;
-        this.setState({ starwarsChars: newData });
+        this.setState({ 
+          starwarsChars: newData,
+          nextURL: data.next,
+          previousURL: data.previous
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+
+
 
  handleClick (event) {
     let id = event.currentTarget.attributes.id.value;
@@ -49,11 +56,15 @@ class App extends Component {
     this.setState( {starwarsChars: newCharArr});
   };
 
+  getNewCharacters () {
+    this.getCharacters(this.state.nextURL);
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">Meet</h1>
-        <CardDisplay chars={this.state.starwarsChars} handleClick={this.handleClick} />
+        <CardDisplay chars={this.state.starwarsChars} handleClick={this.handleClick} getNewCharacters={this.getNewCharacters} />
       </div>
     );
   }
