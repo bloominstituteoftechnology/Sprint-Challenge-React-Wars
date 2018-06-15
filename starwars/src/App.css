@@ -16,11 +16,12 @@
 
 }
 .custom-card {
+  font-size: 12px;
   background: skyblue;
   border: 1px solid black;
   border-radius: 10%;
   margin: 2%;
-  padding: 0 5%;
+  padding: 0 2%;
   opacity: .7;
   color: black;
   text-shadow: 1px 1px 5px #fff;
