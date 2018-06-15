@@ -8,10 +8,18 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    this.clickNext = this.clickNext.bind(this);
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
+  }
+  
+  clickNext() {
+    this.getCharacters('https://swapi.co/api/people/?page=2');
+    // for (let i=2; i<=9; i++) {
+    //   this.getCharacters('https://swapi.co/api/people/?page='[i]);
+    // }
   }
 
   getCharacters = URL => {
@@ -23,6 +31,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -42,6 +51,10 @@ class App extends Component {
         <CardList
           characters={this.state.starwarsChars}
         />
+
+        <div onClick={this.clickNext} className="load-more-button">
+          Next 10 Characters...
+        </div>
       </div>
     );
   }
