@@ -1,0 +1,21 @@
+.header-container {
+    height: 40px;
+    max-width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.normal-theme {
+    color: lightgrey;
+    font-size: 25px;
+}
+.logo {
+    font-family: 'Signika', sans-serif;
+    color: rgb(205, 57, 86);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    height: 30px;
+}

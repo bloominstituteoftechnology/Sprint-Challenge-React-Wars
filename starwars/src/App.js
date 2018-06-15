@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import HeaderContainer from './components/header/HeaderContainer';
+import UserContainer from './components/User/UserContainer';
+
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      mycharacter: {}
     };
   }
 
@@ -29,10 +33,23 @@ class App extends Component {
       });
   };
 
+  displayMyCharacter = () => {
+   let characters = this.state.starwarsChars.slice();
+    console.log(characters[0]);
+  //  characters = characters.filter(characters[0]);
+   this.setState({mycharacter: characters});
+  
+
+  };
+
   render() {
+     console.log(this.state);
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="app-wrapper">
+     
+       <HeaderContainer />
+       <UserContainer displayMyCharacter = {this.displayMyCharacter} />
+     
       </div>
     );
   }
