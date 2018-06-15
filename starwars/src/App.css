@@ -6,3 +6,13 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.card {
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  color: white;
+}
+.card-img-top {
+  width: 100%;
+}
