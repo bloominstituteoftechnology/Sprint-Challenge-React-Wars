@@ -9,11 +9,13 @@ const CardHeader = props => {
 	{props.charName.map(item => {
 		return( 
 		<div key={item.created} className={props.cardStyle}>		
-		<h3>Name: {item.name}</h3>
+		<h3>Name: {item.name}</h3>	
 		<p>Gender: {item.gender}</p>	
 		<p>Height: {item.height}</p>
 		<p>Birth Year: {item.birth_year}</p>
-		<p>Eye Color: {item.eye_color}</p>	
+		<p>Eye Color: {item.eye_color}</p>
+		<p>Mass: {item.mass}</p>
+		<p>Hair Color: {item.hair_color}</p>	
 
 			
 		</div>	
