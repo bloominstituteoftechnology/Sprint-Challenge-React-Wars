@@ -50,7 +50,7 @@ class App extends Component {
           <FilmSelectForm currentMovieHandler={this.currentMovieHandler} />
           <CardContainer
             characters={this.state.starwarsChars}
-            sortFilm={this.state.currentSorted}
+            currentSorted={this.state.currentSorted}
           />
           {/* change to this.state.currentSorted when functional */}
         </div>
