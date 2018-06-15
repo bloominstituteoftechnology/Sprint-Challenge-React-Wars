@@ -2,7 +2,7 @@
 
 1.  What is React JS and what problems does it try and solve?
 
-    - React.js is a library that is used for creating user interfaces. It speeds up the rendering process by using a virtual DOM and repainting only the changed items. It is relatively straightforward to learn because it primarily uses JavsScript.
+    - React.js is a library that is used for creating user interfaces. It speeds up the rendering process by using a virtual DOM and repainting only the changed items. It is relatively straightforward to learn because it primarily uses JavaScript.
 
 1.  What does it mean to _think_ in react?
 
