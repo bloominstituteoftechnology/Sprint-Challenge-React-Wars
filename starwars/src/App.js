@@ -30,6 +30,12 @@ class App extends Component {
       });
 
   };
+  addUniqueId = () => {
+    
+  }
+  archiveCard = () => {
+    let starWarChars = this.state.starwarsChars.slice();
+  }
 
   render() {
     return (

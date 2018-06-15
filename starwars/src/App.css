@@ -50,6 +50,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  box-sizing: border-box;
   font-size: 1.6rem;
 }
 .App {
