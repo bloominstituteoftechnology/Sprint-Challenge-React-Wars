@@ -23,7 +23,6 @@ class App extends Component {
     fetch(URL)
       .then(res => {
         return res.json();
-        console.log(res.json)
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
@@ -43,7 +42,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <ul>
         {(this.state.starwarsChars).map( item =>  
-          <CharList key={Date.now()} name={this.item} /> )};
+          <CharList key={Math.random()} name={this.item} /> )};
         </ul>
       </div>
     );
