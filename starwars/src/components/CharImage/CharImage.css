@@ -1,10 +1,39 @@
 .darth{
-  background: url('./img/characters/darth-vader.png') no-repeat center center;
+  background: url('./img/characters/darth.png') no-repeat center center;
   height: 141px;
   border: 1px solid red;
   width: 105px;
 }
-
+.luke{
+  background: url('./img/characters/luke.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
+.c3po{
+  background: url('./img/characters/c3po.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
+.obi{
+  background: url('./img/characters/obi.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
+.r2d2{
+  background: url('./img/characters/r2d2.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
+.leia{
+  background: url('./img/characters/leia.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
 .char-image-container{
   display: flex;
 }

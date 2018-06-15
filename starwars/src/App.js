@@ -20,6 +20,20 @@ class App extends Component {
     this.getCharacters('https://swapi.co/api/people/');
   }
 
+  imageClickHandler = (name) =>{
+    console.log(name, 'You clicked an this image!')
+    let localCharArr = this.state.starwarsChars.slice();
+    localCharArr.map((charObj,ind) => {
+      if (charObj.name === name){
+        this.setState({
+          starwarsChars:localCharArr,
+          selected:ind
+        })
+      }
+    })
+    // let urlNum = 
+  }
+
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -41,7 +55,7 @@ class App extends Component {
       return (
         <div className="App">
           <h1 className="Header">React Wars</h1>
-          <CharImageContainer />
+          <CharImageContainer appState={this.state} onClick={this.imageClickHandler}/>
           <CharCardContainer appState={this.state}/>
         </div>
       );
