@@ -1,0 +1,26 @@
+.card-content {
+    flex-flow: column wrap;
+    justify-content: space-evently;
+    background: gray;
+    text-align: left;
+    color: whitesmoke;
+    padding: 1rem;
+    margin: 10px 0;
+    word-wrap: break-word;
+    font-family: sans-serif;
+}
+
+.card {
+    height: 4rem;
+    overflow: hidden;
+}
+
+.card h2 {
+    color: whitesmoke;
+}
+
+.cards-container {
+    width: 60%;
+    margin: auto;
+}
+

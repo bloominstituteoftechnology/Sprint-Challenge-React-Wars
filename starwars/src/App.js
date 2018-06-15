@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardList starwarsChars={this.state.starwarsChars}/>
+        {this.state.starwarsChars.length ? <CardList starwarsChars={this.state.starwarsChars}/> : (null)} 
       </div>
     );
   }
