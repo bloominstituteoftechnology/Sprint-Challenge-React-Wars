@@ -9,9 +9,9 @@ const StarWarsList = props => {
     return (
         <div className="lists">
             {props.starwarsChars.map(starwars => (
-                <StarWarsCard
-                    name={starwars.name}
-                    starwars={starwars}
+                 <StarWarsCard
+                    key={Math.random()}
+                    cards={starwars}
                 />
             ))}
         </div>  

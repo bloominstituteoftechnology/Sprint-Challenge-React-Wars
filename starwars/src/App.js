@@ -29,6 +29,10 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+
+
+
   };
 
 
@@ -38,10 +42,13 @@ class App extends Component {
       <div className="App">
 
         <h1 className="Header">React Wars</h1>
+        
 
-         <StarWars 
+
+         <StarWars className="container"
           starwarsChars={this.state.starwarsChars}
         />
+
       </div>
     );
   }
