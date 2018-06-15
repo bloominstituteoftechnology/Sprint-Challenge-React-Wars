@@ -1,20 +1,39 @@
 import React from "react";
 
 let DisplayCharacters = props => {
-      var printArray = [];
+      let printArray = [];
       for (let i = 0; i < props.starwarsChars.length; i++){
-        printArray.push(
-          <div className="card ">
-            <img className="card-img-top" src="StarwarsLogo.png" alt="Card image cap"></img>
-            <div className="card-body">
-              <h5 className="card-title">{props.starwarsChars[i].name}</h5>
-              <p className="card-text">
-                Gender: {props.starwarsChars[i].gender} <br></br>
-                Height: {props.starwarsChars[i].height} <br></br>
-                Mass: {props.starwarsChars[i].mass} <br></br>
-              </p>
+        let charImg = "img/char" + i + ".png"
+        if (i < 1){
+          printArray.push(
+            <div className="card star-card">
+              <img className="card-img-top star-card-img-top" src={charImg} alt="Character"></img>
+              <div className="card-body star-card-body">
+                <h5 className="card-title star-card-title">{props.starwarsChars[i].name}</h5>
+                <p className="card-text star-card-text">
+                  <p>Gender: {props.starwarsChars[i].gender}</p>
+                  <p>Height: {props.starwarsChars[i].height} </p>
+                  <p>Mass: {props.starwarsChars[i].mass}</p>
+                </p>
+              </div>
             </div>
-          </div>
+          )
+          }
+          //only displaying one card, else statement is adding hidden attribute to card container
+          else (
+            printArray.push(
+              <div className="card star-card">
+                <img className="card-img-top star-card-img-top" src={charImg} alt="Character"></img>
+                <div className="card-body star-card-body">
+                  <h5 className="card-title star-card-title">{props.starwarsChars[i].name}</h5>
+                  <p className="card-text star-card-text">
+                    <p>Gender: {props.starwarsChars[i].gender}</p>
+                    <p>Height: {props.starwarsChars[i].height} </p>
+                    <p>Mass: {props.starwarsChars[i].mass}</p>
+                  </p>
+                </div>
+              </div>
+          )
         )
       }
       return printArray;
