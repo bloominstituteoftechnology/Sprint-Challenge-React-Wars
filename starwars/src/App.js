@@ -29,21 +29,27 @@ class App extends Component {
       });
   };
 
-  showName = name => {
-    let 
-  }
+ 
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-
-        <div>
-          this.starwarsChars.map(names=> {
-            key=Math.random() character = this.StarwarsChars}
-          })
+        <div className = "total">
+        {this.state.starwarsChars.map(name =><div className = "card" key={Math.random()}>
+        <ul>
+        name:{name.name} <br></br>
+        height :{name.height} <br></br>
+        mass: {name.mass} <br></br>
+        hair color: {name.hair_color} <br></br>
+        skin color: {name.ski_color} <br></br>
+        eye color: {name.eye_color} <br></br>
+        birthday:{name.birth_year} <br></br>
+        gender:{name.gender} <br></br>
+        </ul>
+        </div>)}
+       
         </div>
-
       </div>
     );
   }
