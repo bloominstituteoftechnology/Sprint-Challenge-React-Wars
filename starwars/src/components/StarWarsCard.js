@@ -7,7 +7,7 @@ const StarWarsCard = props => {
         <div className='row'>
             {props.starwarsChars.map(data => {
                 return <Card key={Math.random()} className='card-container' body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-                    <CardTitle style={{ color: data.eye_color }}>{data.name}</CardTitle>
+                    <CardTitle>{data.name}</CardTitle>
                     <div>
                         <p>Birth Year: {data.birth_year}</p>
                         <p>Created: {data.created}</p>
