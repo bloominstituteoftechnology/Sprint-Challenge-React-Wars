@@ -12,7 +12,7 @@ const starWars = props => {
                         birthYear={item.birth_year}
                         created={item.created}
                         edited={item.edited}
-                        eyeColor={item.eyeColor}
+                        eyeColor={item.eye_color}
                         films={item.films}
                         gender={item.gender}
                         hairColor={item.hair_color}
@@ -20,7 +20,7 @@ const starWars = props => {
                         homeworld={item.homeworld}
                         mass={item.mass}
                         name={item.name}
-                        skin_color={item.skin_color}
+                        skinColor={item.skin_color}
                         species={item.species}
                         starships={item.starships}
                         url={item.url}
