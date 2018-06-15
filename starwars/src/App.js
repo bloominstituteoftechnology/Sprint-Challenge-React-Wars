@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Character from './components/Characters/character';
 
 class App extends Component {
   constructor() {
@@ -33,9 +35,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Character swChars={this.state.starwarsChars}/>
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
