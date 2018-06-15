@@ -1,0 +1,9 @@
+.chars {
+    border: 5px solid black;
+}
+
+.char-index {
+    background: grey;
+    width: 50%;
+    margin: 5px auto;
+}

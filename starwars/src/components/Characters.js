@@ -1,13 +1,11 @@
 import React from 'react';
+import './StarWars.css';
 
 const Characters = props => {
     // let { starwarsChars, getCharacters } = this.props;
 
-    return (
-<div className="chars"> onClick={ () => props.showCharacter(props.starwarsChars.name)}>
-    {this.state.starwarsChars.name} 
-</div>
-    );
+    return <div className="chars">{props.swChar.name}</div>
+
 };
 
 export default Characters;

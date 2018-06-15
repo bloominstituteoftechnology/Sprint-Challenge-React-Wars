@@ -41,8 +41,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
       <CharacterIndex
-          starwarsChars={this.state.starwarsChars}
-          getCharacters={this.getCharacters}
+          chars={this.state.starwarsChars}
+          // getCharacters={this.getCharacters}
         />
 
        </div>
