@@ -1,13 +1,14 @@
 .card-content {
     flex-flow: column wrap;
     justify-content: space-evently;
-    background: gray;
+    background: rgba(61, 56, 56, 0.5);
     text-align: left;
-    color: whitesmoke;
+    color: white;
     padding: 1rem;
     margin: 10px 0;
     word-wrap: break-word;
     font-family: sans-serif;
+    font-size: 1.3rem;
 }
 
 .card {
@@ -16,11 +17,24 @@
 }
 
 .card h2 {
-    color: whitesmoke;
+    color: white;
+    display: table;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.5);
+}
+
+h2:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 
 .cards-container {
-    width: 60%;
+    width: 50%;
     margin: auto;
+}
+
+.hidden{
+    height: 100%;
 }
 
