@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import StarWarsDisplay from './components/StarWarsDisplay';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [
+        {
+          name: '',
+          height: '',
+          mass: '',
+          hair_color: '',
+        }
+      ]
     };
+    console.log(this.state);
   }
 
   componentDidMount() {
@@ -33,6 +42,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarWarsDisplay name={this.state.starwarsChars[0].name}/>
       </div>
     );
   }
