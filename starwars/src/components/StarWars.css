@@ -11,6 +11,11 @@
     justify-content: center;
 }
 
-.starwars button {
-
+.starwars-buttons button {
+    background: black;
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
 }
+

@@ -5,7 +5,7 @@ const StarWarsButtons = props => {
 
     return (
         <div className='starwars-buttons'>
-            <button onClick={() => props.button(props.prevPage)}>Previous!</button>
+            <button onClick={() => props.button(props.prevPage)}>Previous</button>
             <button onClick={() => props.button('https://swapi.co/api/people/?page=1')}>1</button>
             <button onClick={() => props.button('https://swapi.co/api/people/?page=2')}>2</button>
             <button onClick={() => props.button('https://swapi.co/api/people/?page=3')}>3</button>
@@ -15,7 +15,7 @@ const StarWarsButtons = props => {
             <button onClick={() => props.button('https://swapi.co/api/people/?page=7')}>7</button>
             <button onClick={() => props.button('https://swapi.co/api/people/?page=8')}>8</button>
             <button onClick={() => props.button('https://swapi.co/api/people/?page=9')}>9</button>
-            <button onClick={() => props.button(props.nextPage)}>Next!</button>
+            <button onClick={() => props.button(props.nextPage)}>Next</button>
         </div>
     );
 }
