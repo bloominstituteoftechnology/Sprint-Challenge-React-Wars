@@ -1,8 +1,24 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.custom-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.custom-card {
+  background: gray;
+  border: 1px solid black;
+  border-radius: 10%;
+  margin: 5%;
+  padding: 0 5%;
+}
