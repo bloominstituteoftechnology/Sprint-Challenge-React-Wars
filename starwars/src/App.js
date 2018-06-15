@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
+import CharacterIndex from './components/CharacterIndex.js';
 
 class App extends Component {
   constructor() {
@@ -29,11 +31,22 @@ class App extends Component {
       });
   };
 
+  // showCharacter = name => {
+  //   const viewCharacter = this.state.starwarsChars.find(char => char.name === name);
+  //   this.setState ({ viewCharacter: viewCharacter })
+  // }
+  
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
+      <CharacterIndex
+          starwarsChars={this.state.starwarsChars}
+          getCharacters={this.getCharacters}
+        />
+
+       </div>
+
     );
   }
 }
