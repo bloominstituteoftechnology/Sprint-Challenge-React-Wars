@@ -6,6 +6,7 @@ const CharacterFilmGroup = props => {
     <div>
       CHARACTER FILM GROUP
       <CharacterFilm />
+      {/* Loop over all current character films*/}
     </div>
   );
 };
