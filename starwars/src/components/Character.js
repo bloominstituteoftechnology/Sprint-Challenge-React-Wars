@@ -10,6 +10,7 @@ const Character = props => (
       src={`${window.location.origin}/img/${props.img}.jpg`}
       alt={props.character.name}
       onClick={() => handleClick(props.character)}
+      title={props.character.name}
     />
   </div>
 );
