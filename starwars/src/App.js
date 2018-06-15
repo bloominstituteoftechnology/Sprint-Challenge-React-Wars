@@ -46,7 +46,7 @@ class App extends Component {
     // We only have 9 pages of character info
     event.preventDefault();
     let newPage = this.state.page;
-    newPage + 1 < 1 ? newPage = 9 : newPage--;
+    newPage - 1 < 1 ? newPage = 9 : newPage--;
     this.setState({page: newPage});
     console.log(this.state.page);
     this.getCharacters(`https://swapi.co/api/people/?page=${this.state.page}`);
