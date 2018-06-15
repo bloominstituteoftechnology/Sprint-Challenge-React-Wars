@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import InputForm from './components/InputForm';
+import InputList from './components/InputList';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      input:""
     };
   }
 
@@ -33,6 +35,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <InputForm
+        value={this.state.input}
+        />
+        <InputList
+        key={Date.now()}
+        input={this.state.starwarsChars}
+        />
       </div>
     );
   }
