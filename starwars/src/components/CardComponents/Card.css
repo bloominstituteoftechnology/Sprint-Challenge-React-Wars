@@ -1,8 +1,33 @@
 .card-container {
-    margin: 0 auto;
+    display: flex;
+    margin: 50px auto;
     height: 300px;
     width: 700px;
     background: lightblue;
 }
 
+.bio__container {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border-right: 1px solid black;
+}
+.bio__info {
+    font-size: 3rem;
+    margin-top: 12px;
+}
+.bio__name {
+    font-size: 4rem;
+}
+.bio__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+    height: 100%;
+}
 
+.bio__item {
+    margin-top: 12px;
+}
