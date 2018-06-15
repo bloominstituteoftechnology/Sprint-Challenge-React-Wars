@@ -1,8 +1,20 @@
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.hero{
+  margin-bottom: 50px;
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: white;
 }
 /* write your parent styles in here for your App.js */
