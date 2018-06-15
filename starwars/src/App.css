@@ -28,3 +28,36 @@ h1 {
 .character-preview:hover {
   color: green;
 }
+
+.character-card-container {
+  margin-top: 50px;
+}
+
+.character-card {
+  width: 300px;
+  border: 2px solid black;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-card h1 {
+  margin: 0;
+}
+
+.character-card li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.return {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.return:hover {
+  color: green;
+}
