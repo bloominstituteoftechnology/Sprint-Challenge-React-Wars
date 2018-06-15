@@ -1,0 +1,6 @@
+.starwars-card {
+    width: 400px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}

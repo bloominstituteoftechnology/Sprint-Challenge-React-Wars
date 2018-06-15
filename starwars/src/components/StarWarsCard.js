@@ -1,8 +1,13 @@
 import React from 'react';
 
+import './StarWars.css';
+
 const starWarsCard = props => {
     return (
-        <div>{props.birthYear}</div>
+        <div className="starwars-card">
+            {props.birthYear}
+            {/* {props.created} */}
+        </div>
     );
 };
 
