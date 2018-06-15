@@ -6,9 +6,7 @@ const Chars = props => {
 
  const CharList = () => {
     return <div>
-    <ul>
-    <Chars char='char' name={this.state} />
-    </ul>
+    <Chars char='char' name={this.item} />
     </div>
 }
 

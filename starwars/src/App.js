@@ -8,6 +8,8 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    console.log(this.state.starwarsChars)
+
   }
 
   componentDidMount() {
@@ -26,6 +28,8 @@ class App extends Component {
       .then(data => {
         this.setState({ starwarsChars: data.results });
         console.log(data.results)
+        console.log(this.state.starwarsChars)
+
       })
       .catch(err => {
         throw new Error(err);
@@ -37,7 +41,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharList />
+        <ul>
+        {(this.state.starwarsChars).map( item =>  
+          <CharList key={Date.now()} name={this.item} /> )};
+        </ul>
       </div>
     );
   }
