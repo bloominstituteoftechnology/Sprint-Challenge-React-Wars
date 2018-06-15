@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
+import  CharImageContainer from './components/CharImage/CharImageContainer'
+import CharCardContainer from './components/CharCard/CharCardContainer';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      selected:0
     };
   }
 
-  componentDidMount() {
+  // componentDidMount() {
+  //   this.getCharacters('https://swapi.co/api/people/');
+  // }
+
+  componentWillMount() {
     this.getCharacters('https://swapi.co/api/people/');
   }
 
@@ -22,7 +29,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results,selected:0 });
       })
       .catch(err => {
         throw new Error(err);
@@ -30,11 +37,20 @@ class App extends Component {
   };
 
   render() {
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
-    );
+    if (this.state.starwarsChars.length !== 0){
+      return (
+        <div className="App">
+          <h1 className="Header">React Wars</h1>
+          <CharImageContainer />
+          <CharCardContainer appState={this.state}/>
+        </div>
+      );
+    }else {
+      return(
+        <div></div>
+      )
+    }
+    
   }
 }
 

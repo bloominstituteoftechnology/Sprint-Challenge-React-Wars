@@ -1,0 +1,8 @@
+.char-card{
+  border: 1px solid red;
+}
+
+.char-card-container{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,10 @@
+.darth{
+  background: url('./img/characters/darth-vader.png') no-repeat center center;
+  height: 141px;
+  border: 1px solid red;
+  width: 105px;
+}
+
+.char-image-container{
+  display: flex;
+}
