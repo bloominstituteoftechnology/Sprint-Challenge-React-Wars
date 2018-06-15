@@ -5,6 +5,7 @@ import StarwarsChar from './StarwarsChar';
 const CharList = props => {
   return (
     <div>
+        
       {props.starwarsChars.map(starwarsChar => (
         <StarwarsChar
         //   handleToggleComplete={props.handleToggleComplete}
@@ -12,6 +13,7 @@ const CharList = props => {
           starwarsChar={starwarsChar}
         />
       ))}
+      
     </div>
   );
 };

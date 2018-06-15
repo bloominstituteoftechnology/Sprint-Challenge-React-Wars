@@ -6,7 +6,7 @@ const StarwarsChar = props => {
     //   style={props.todo.completed ? { textDecoration: 'line-through' } : null}
     //   onClick={() => props.handleToggleComplete(props.todo.id)}
     >
-      {props.starwarsChar.Array}
+      {props.starwarsChar.name}
     </div>
   );
 };
