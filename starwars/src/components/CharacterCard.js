@@ -71,14 +71,14 @@ class CharacterCard extends Component {
 				<p>{this.props.character.name} has {this.props.character.eye_color} eyes</p>
 				<p>Species: {this.state.species ? this.state.species : <p>Loading...</p>}</p>
 				{
-					this.state.vehicle ? 
-					<p>When on land, {this.props.character.name} usually drives a {this.state.vehicle}</p> :
-					<p>Unfortunately, {this.props.character.name} doesn't really own any land vehicles.</p>
+					this.state.vehicle 
+					? <p>When on land, {this.props.character.name} usually drives a {this.state.vehicle}</p>
+					: <p>Unfortunately, {this.props.character.name} doesn't really own any land vehicles.</p>
 				}
 				{
-					this.state.starship ? 
-					<p>When in space, {this.props.character.name} is all about dat {this.state.starship}</p> :
-					<p>{this.props.character.name} is a scrub and aint got no spaceships.</p>
+					this.state.starship 
+					? <p>When in space, {this.props.character.name} is all about dat {this.state.starship}</p> 
+					: <p>{this.props.character.name} is a scrub and aint got no spaceships.</p>
 				}
 
 			</Card>
