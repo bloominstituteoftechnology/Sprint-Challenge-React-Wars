@@ -7,14 +7,18 @@
 
 .card-selector .char-button {
     padding: 5px 1%;
-    background-color: #d4d6d3;
     border: 1px solid #c3844f;
+    background-color: black;
+    color: #d4d6d3;
+    box-shadow: inset 0px 0px 3px 1px darkgray;
 
 }
 
 .card-selector .char-button.hidden {
-    background-color: black;
-    color: #d4d6d3;
+    background-color: #d4d6d3;
+    color: black;
+    box-shadow: none;
+
 }
 
 .cards {
