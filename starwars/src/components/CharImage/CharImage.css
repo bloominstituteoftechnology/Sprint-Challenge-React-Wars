@@ -3,6 +3,7 @@
   /* border: 1px solid red; */
   width: 105px;
   margin: 10px 15px;
+  filter: grayscale(100%);
 }
 
 .image:hover{
@@ -59,5 +60,7 @@
 }
 
 .selected{
+  filter: grayscale(0);
   border-bottom: 3px solid skyblue;
+  
 }
