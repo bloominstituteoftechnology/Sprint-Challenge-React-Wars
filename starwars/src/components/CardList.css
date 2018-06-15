@@ -1,0 +1,4 @@
+.starwars-charList {
+  display: flex;
+  flex-flow: row wrap;
+}

@@ -3,6 +3,10 @@
   border: 1px solid grey;
   margin: 5%;
   font-size: 10px;
-  width: 40%;
+  width: 32%;
   word-wrap: break-word;
+  padding: 1%;
+  background: linear-gradient(to right, orange, yellow);
+  box-shadow: 0 19px 38px rgba(0,0,0,.3), 0 19px 38px rgba(0,0,0,.3) ,0 19px 38px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.22);
+
 }
