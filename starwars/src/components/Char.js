@@ -13,9 +13,9 @@ const Char = (props) => {
             {props.passedPropToChar.map((item, i) => {
                 return (
                     // <div className='card'>
-                    <Card className='card'>
+                    <Card className='card' key={i}>
                         <CardBody>
-                            <div key={i}>
+                            <div>
                                 <CardTitle>{item.name}</CardTitle>
                                 <CardSubtitle className='subtl'>Gender:  {item.gender}</CardSubtitle><br />
                                 <CardSubtitle className='subtl'>Mass: {item.mass}</CardSubtitle>
