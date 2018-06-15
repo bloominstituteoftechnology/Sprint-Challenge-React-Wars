@@ -1,7 +1,8 @@
-// START
-
 import React, { Component } from 'react';
 import './App.css';
+import CharLinks from './components/CharLinks' ;
+import SearchBox from './components/SearchBox' ;
+import InfoCard from './components/InfoCard' ;
 
 class App extends Component {
   constructor() {
@@ -9,6 +10,15 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+  }
+
+  clickLinkReturnCard() {
+
+  }
+  copyStateNewArrayNameId = () => {
+    let nameArray = this.state.starwarsChars.map((obj) => {
+      
+    });
   }
 
   componentDidMount() {
@@ -35,6 +45,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <h3>Star Wars Characters</h3>
+        <CharLinks />
+        <SearchBox />
+        <InfoCard />
       </div>
     );
   }
