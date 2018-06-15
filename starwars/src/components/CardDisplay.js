@@ -23,7 +23,10 @@ import CharCard from './CharCard.js'
                 {names}
 
             </div>
+            <div className="cards">
             {cards}
+
+            </div>
         </div>
     );
   }

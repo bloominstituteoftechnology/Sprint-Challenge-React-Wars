@@ -5,6 +5,9 @@ body {
 .App {
   text-align: center;
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Header {
   color: #443e3e;

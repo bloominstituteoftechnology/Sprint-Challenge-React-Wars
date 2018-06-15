@@ -28,6 +28,7 @@ class App extends Component {
           let dataCopy = Object.assign({hidden: true}, datum);
           return dataCopy;
         });
+        newData[3].hidden = false;
         this.setState({ starwarsChars: newData });
       })
       .catch(err => {

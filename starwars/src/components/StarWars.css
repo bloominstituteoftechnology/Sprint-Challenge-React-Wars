@@ -1,4 +1,5 @@
 
+
 .card-selector {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +15,19 @@
 .card-selector .char-button.hidden {
     background-color: black;
     color: #d4d6d3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.char-card {
+    padding: 20px;
+    margin: 3px;
+    background-color: #99c0e1;
+    color: #443e3e;
+    opacity: .8;
 }
 
 
@@ -36,11 +50,11 @@
 }
 
 .stat-table .stat-name {
-    padding-right: 1%;
+    padding-right: 5%;
     text-align: right;
 }
 
 .stat-table .stat-value {
-    padding-left: 1%;
+    padding-left: 5%;
     text-align: left;
 }
