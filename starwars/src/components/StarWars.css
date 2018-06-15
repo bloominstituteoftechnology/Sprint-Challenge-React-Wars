@@ -1,0 +1,34 @@
+.Characters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1250px;
+  margin: auto;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 200px;
+  height: 225px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border: solid black 1px;
+  border-radius: 15px;
+  margin: 25px;
+}
+
+
+.card p {
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+
+.card h5 {
+  margin: 0;
+  font-size: 18px;
+  border-bottom: solid black 1px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
