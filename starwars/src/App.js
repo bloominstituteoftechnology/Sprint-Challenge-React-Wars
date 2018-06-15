@@ -39,9 +39,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <FilmSelectForm />
-        <CardContainer characters={this.state.starwarsChars} />
-        {/* change to this.state.currentSorted when functional */}
+        <div className="container">
+          <FilmSelectForm />
+          <CardContainer characters={this.state.starwarsChars} />
+          {/* change to this.state.currentSorted when functional */}
+        </div>
       </div>
     );
   }
