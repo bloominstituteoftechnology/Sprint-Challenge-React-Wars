@@ -1,12 +1,13 @@
 import React from 'react';
+import StarWars from '../StarWars.css';
 
-const character = props => {
+const Character = props => {
   return (
-    <div>
+    <div className="container-card">
       <h1>{props.char.name}</h1>
     </div>
   );
 };
 
 
-export default character;
+export default Character;
