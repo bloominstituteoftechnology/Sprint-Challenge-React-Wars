@@ -7,14 +7,16 @@ const CardHeader = props => {
 	return(
 	<div className={props.conatinerStyle}>	
 	{props.charName.map(item => {
-	return( 
-	<div className={props.cardStyle}>		
-	<h3>{item.name}</h3>
-	<p>{item.gender}</p>	
-	</div>
-	);		
+		return( 
+		<div key={item.created} className={props.cardStyle}>		
+		<h3>Name: {item.name}</h3>
+		  <p>Gender: {item.gender}</p>		
+		  <p>Height: {item.height}</p>
+		  <p>Mass: {item.mass}</p>	
+		</div>	
+		);		
 	})}
-	</div>	
+		</div>	
 	);
 };
 
