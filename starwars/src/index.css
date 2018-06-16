@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background: url('./sw-bg.jpg') no-repeat center center;
   background-size: cover;
+  height: 100vh;
+  width: 97vw;
 }

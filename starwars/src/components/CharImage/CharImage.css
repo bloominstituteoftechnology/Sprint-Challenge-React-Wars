@@ -1,0 +1,66 @@
+.image{
+  height: 141px;
+  /* border: 1px solid red; */
+  width: 105px;
+  margin: 10px 15px;
+  filter: grayscale(100%);
+}
+
+.image:hover{
+  border-bottom: 3px solid white;
+  cursor: pointer;
+}
+
+.darth{
+  background: url('./img/characters/darth.png') no-repeat center center;
+}
+.luke{
+  background: url('./img/characters/luke.png') no-repeat center center;
+}
+.c3po{
+  background: url('./img/characters/c3po.png') no-repeat center center;
+}
+.obi{
+  background: url('./img/characters/obi.png') no-repeat center center;
+}
+.r2d2{
+  background: url('./img/characters/r2d2.png') no-repeat center center;
+}
+.ackbar{
+  background: url('./img/characters/ackbar.png') no-repeat center center;
+}
+.boba{
+  background: url('./img/characters/boba.png') no-repeat center center;
+}
+.chew{
+  background: url('./img/characters/chew.png') no-repeat center center;
+}
+.han{
+  background: url('./img/characters/han.png') no-repeat center center;
+}
+.palpatine{
+  background: url('./img/characters/palpatine.png') no-repeat center center;
+}
+.tarkin{
+  background: url('./img/characters/tarkin.png') no-repeat center center;
+}
+.yoda{
+  background: url('./img/characters/yoda.png') no-repeat center center;
+}
+.leia{
+  background: url('./img/characters/leia.png') no-repeat center center;
+}
+.greedo{
+  background: url('./img/characters/greedo.png') no-repeat center center;
+}
+
+.char-image-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.selected{
+  filter: grayscale(0);
+  
+}
