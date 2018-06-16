@@ -1,0 +1,11 @@
+.btn-archive {
+    cursor: pointer;
+    border: 3px solid rgb(0, 128, 156);
+    background: #00B4DB;
+    height: 48px;
+    width: 40%;
+}
+
+.btn-archive:active {
+    background: rgb(0, 140, 172);
+}

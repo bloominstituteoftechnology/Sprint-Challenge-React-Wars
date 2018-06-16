@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import CardList from './components/CardComponents/CardList';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
-
   componentDidMount() {
+
     this.getCharacters('https://swapi.co/api/people/');
   }
 
@@ -23,16 +23,25 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+
       })
       .catch(err => {
         throw new Error(err);
       });
+
   };
+  addUniqueId = () => {
+    
+  }
+  archiveCard = () => {
+    let starWarChars = this.state.starwarsChars.slice();
+  }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList characters = {this.state.starwarsChars}/>
       </div>
     );
   }
