@@ -7,9 +7,7 @@ const UserImage = (props) => {
             props.logCharacters
         }
         className = 'profile-image'
-        src = {
-            props.imageSource
-        }
+        src = {props.imageSource}
         />
         </div>
     );

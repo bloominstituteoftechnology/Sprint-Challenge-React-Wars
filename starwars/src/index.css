@@ -44,7 +44,7 @@ html {
   }
 }
 
-@media (max-width: 680px) {
+/* @media (max-width: 680px) {
   .title {
     font-size: 55px;
     height: 65px;
@@ -67,4 +67,4 @@ html {
     font-size: 25px;
     height: 50px;
   }
-}
+} */

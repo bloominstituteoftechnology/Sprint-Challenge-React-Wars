@@ -1,4 +1,5 @@
 import React from 'react';
+import UserCard from './UserCard';
 import UserImage from './UserImage';
 import UserDetails from './UserDetails';
 import './user.css';
@@ -6,13 +7,10 @@ import './user.css';
 const UserContainer = (props) => {
     return (
         <div>
-            <UserImage imageSource = './img/lukeskywalker.jpg' />
-            {/* {props.characters.filter(character => {
-             if(character.name === 'Luke Skywalker') {
-             return <UserDetails name = {character.name} />
-            }})
-        } */}
-        Luke SkyWalker
+                {props.characters.map((char, index) => {
+                    return <UserCard {...char} />
+                })}
+                
 </div>
-    )};
+            )}; 
 export default UserContainer;

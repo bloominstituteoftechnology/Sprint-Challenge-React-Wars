@@ -9,7 +9,7 @@ const UserDetails = (props) => {
 console.log();
 return (
         <div>
-         {props.name}
+      <p>   {props.swChar.name} </p>
         </div>
   
 );
