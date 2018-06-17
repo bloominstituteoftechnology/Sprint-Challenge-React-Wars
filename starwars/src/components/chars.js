@@ -28,8 +28,6 @@ const Chars = (props) => {
             <CardText>Skin Color : {char.skin_color}</CardText>
             <CardText>Height : {char.height}</CardText>
             <CardText>Mass : {char.mass}</CardText>
-            {/* <CardLink href="#">Card Link</CardLink>
-            <CardLink href="#">Another Link</CardLink> */}
           </CardBody>
         </Card>
       ))}
