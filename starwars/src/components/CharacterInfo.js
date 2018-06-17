@@ -3,7 +3,7 @@ import Char from "./Char";
 import "./StarWars.css";
 
 
-const CharacterIndex = props => {
+const CharacterInfo = props => {
 
     return (
         <div >
@@ -15,4 +15,4 @@ const CharacterIndex = props => {
 };
 
 
-export default CharacterIndex;
+export default CharacterInfo;
