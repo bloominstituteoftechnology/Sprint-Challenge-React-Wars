@@ -3,11 +3,10 @@ import React from 'react';
 const UserImage = (props) => {
     return (
         <div>
-        < img onClick = {
-            props.logCharacters
-        }
-        className = 'profile-image'
-        src = {props.imageSource}
+          
+        <img
+        className = 'profile-image hidden'
+        src = {'./img/' + props.name + '.jpg'}
         />
         </div>
     );

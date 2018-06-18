@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "global": "^4.3.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-swipeable": "^4.3.0",
+    "react-swipeable-views": "^0.12.14"
   },
   "scripts": {
     "start": "react-scripts start",
