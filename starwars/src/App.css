@@ -19,4 +19,6 @@
 .card{
   width: 25%;
   border: 1px solid black;
+  background: whitesmoke;
+  margin: 1%;
 }

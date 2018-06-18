@@ -11,7 +11,7 @@ class and state would be focusing on state and the interactions between the life
 the functional component is focused on the input/ output
 
 1.  Describe state.
-state is the life cycle of the object or component
+state is the life cycle of the object or component memory that our component needs to have access to
 
 1.  Describe props.
-the props are the properties and object or component has
+the props are the properties and object or component, has the mechanism by which we pass data around

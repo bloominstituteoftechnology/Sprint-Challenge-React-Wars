@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharsList from './components/CharsList';
 
 class App extends Component {
   constructor() {
@@ -29,27 +30,26 @@ class App extends Component {
       });
   };
 
- 
-
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className = "total">
-        {this.state.starwarsChars.map(name =><div className = "card" key={Math.random()}>
+        
+        
+        <CharsList chars = {this.state.starwarsChars} />
+        {/* {this.state.starwarsChars.map(char =><div className = "card" key={Math.random()}>
         <ul>
-        name:{name.name} <br></br>
-        height :{name.height} <br></br>
-        mass: {name.mass} <br></br>
-        hair color: {name.hair_color} <br></br>
-        skin color: {name.ski_color} <br></br>
-        eye color: {name.eye_color} <br></br>
-        birthday:{name.birth_year} <br></br>
-        gender:{name.gender} <br></br>
+        name:{char.name} <br></br>
+        height :{char.height} <br></br>
+        mass: {char.mass} <br></br>
+        hair color: {char.hair_color} <br></br>
+        skin color: {char.ski_color} <br></br>
+        eye color: {char.eye_color} <br></br>
+        birthday:{char.birth_year} <br></br>
+        gender:{char.gender} <br></br>
         </ul>
-        </div>)}
-       
-        </div>
+        </div>)}        */}
+        
       </div>
     );
   }
