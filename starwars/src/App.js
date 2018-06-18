@@ -32,7 +32,7 @@ class App extends Component {
       });
   };
 
-  updateChars = (prevOrNext) => {
+  updateChars = (event, prevOrNext) => {
     // We only have 9 pages of character info
     let newPage = this.state.page;
     if(prevOrNext === 'prev'){
