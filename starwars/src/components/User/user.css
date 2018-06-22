@@ -1,0 +1,64 @@
+.profile-image {
+    max-width: 100%;
+    width: 100%;
+}
+
+.x-circle {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border: 10px solid lightgrey;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: -5px;
+
+}
+.info-circle {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 10px solid lightgrey;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    color: blue;
+    font-weight: bold;
+
+}
+.heart-circle {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border: 10px solid lightgrey;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+      margin-left: -5px;
+}
+.user-container {
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+   margin: 10px;
+   padding: 5px;
+   color: darkgrey;
+  
+}
+
+.controls-container {
+     display:flex;
+     justify-content: center;
+    padding: 20px;
+    align-items: center;
+    
+}
+.red-x {
+    color: red;
+    font-size: 30px;
+
+}
+.green-heart {
+    color: green;
+    font-size: 30px;
+}

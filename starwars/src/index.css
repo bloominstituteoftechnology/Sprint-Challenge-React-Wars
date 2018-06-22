@@ -2,6 +2,69 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
 }
+
+.title {
+  font-family: 'Signika', sans-serif;
+  color: rgb(205, 57, 86);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 75px;
+  height: 70px;
+}
+
+.mini-title {
+  font-family: 'Signika', sans-serif;
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  height: 40px;
+}
+
+.small {
+  color: grey;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10px;
+  height: 70px;
+}
+
+html {
+  /* background: url('./pinkspace.svg') no-repeat center bottom fixed; */
+  background-color: #282725;
+  background-size: 100vw;
+}
+
+@media (max-width: 1000px) {
+  .mini-title {
+    color: whitesmoke;
+    font-size: 45px;
+    height: 65px;
+  }
+}
+
+/* @media (max-width: 680px) {
+  .title {
+    font-size: 55px;
+    height: 65px;
+  }
+  .mini-title {
+    color: #9acd32;
+    font-size: 45px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 35px;
+    height: 45px;
+    text-shadow: 0 1px 0 #ccc, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+  }
+  .mini-title {
+    color: #9acd32;
+    font-size: 25px;
+    height: 50px;
+  }
+} */
