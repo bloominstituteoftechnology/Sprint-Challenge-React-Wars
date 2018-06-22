@@ -4,7 +4,7 @@ const StarWarsChars = props => {
 return (
 <div>
 
-{props.char.name}
+{props.chars.name}
 
 </div>
   );
