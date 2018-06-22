@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/CharacterCard'
+import CharacterCard from './components/CharacterCard'
 
 class App extends Component {
   constructor() {
