@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const Card = () => {
+const Card = props => {
     return (
-        <div>
-
+        <div className='card-body'>
+            <h1>{props.starwarsChars.name}</h1>
         </div>
     );
 }
