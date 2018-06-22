@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import CharsList from './components.js';
+import CharsList from './components/CharsList';
 
 class App extends Component {
   constructor() {
