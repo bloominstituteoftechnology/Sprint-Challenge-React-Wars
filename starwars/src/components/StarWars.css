@@ -1,0 +1,17 @@
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-body {
+    width: 300px;
+    background: grey;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}

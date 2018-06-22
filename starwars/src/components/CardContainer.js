@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './card';
+import './StarWars.css'
 
 
 const CardContainer = props => {
