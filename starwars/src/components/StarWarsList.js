@@ -6,7 +6,7 @@ const StarWarsList = props => {
     return (
         <div className="chars-container">
 
-        {props.starwarschars.map(starwarschars => <StarWarsChars key={starwarschars.name} chars={starwarschars} />)};
+        {props.chars.map(starwarschars => <StarWarsChars key={starwarschars.name} chars={starwarschars} />)};
         
         </div> 
    
