@@ -1,18 +1,18 @@
-// import React from 'react';
+import React from 'react';
 
 
-// const Character = props => {
-//     return (
-//         <div>
-//         {props.singleChar}
-//       </div>
-//     )
-// }
-
-
-
+const Character = props => {
+    return (
+        <div>
+        <h1>{props.SingleCharacter.name}</h1>
+        </div>
+    )
+}
 
 
 
 
-// export default Character; 
+
+
+
+export default Character; 
