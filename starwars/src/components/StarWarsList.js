@@ -5,7 +5,7 @@ const StarWarsList = props => {
     return (
         <div>
 
-        {props.starwarschars.map(starwarschars => <StarWarsChar char={starwarschar} />)}
+        {props.starwarschars.map(starwarschars => <StarWarsChars char={starwarschars} />)}
         
         </div> 
    
