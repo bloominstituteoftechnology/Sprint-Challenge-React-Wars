@@ -1,3 +1,4 @@
+Margo Nikolaisen
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
