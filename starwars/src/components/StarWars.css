@@ -1,0 +1,65 @@
+.name-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: rebeccapurple;
+    width: 85%;
+    height: 620px;
+    margin: 10px auto;
+    border: 3px solid rebeccapurple;
+    border-style: double;
+}
+
+.char-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px solid greenyellow;
+    width: 300px;
+    height: 100px;
+    border-style: dotted;
+}
+
+.counter {
+    position: relative;
+    right: 400px;
+}
+
+.header-pic {
+    position: relative;
+    right: 350px;
+}
+
+.mid-pic {
+    width: 85%;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+h2 {
+    color: rebeccapurple;
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.action-buttons {
+        background: greenyellow;
+        color: black;
+        font-size: 16px;
+        justify-content: space-evenly;
+        width: 100px;
+}
+
+h4 {
+    font-display: inherit;
+    font-size: 14px;
+    font-weight: lighter;
+}

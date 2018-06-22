@@ -6,7 +6,7 @@ React is a JavaScript UI library that allows users to efficiently build and arra
 
 1.  What does it mean to _think_ in react?
 
-    It means procedurally constructing an app from hierarchical components, starting with the framework then adding and passing content as necessary.
+    It means procedurally constructing or breaking down an app into a series of components, starting with the framework then adding and passing content as necessary.  
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
