@@ -1,9 +1,10 @@
 import React from 'react';
 import StarWarsChars from './StarWarsChars';
+import './StarWars.css';
 
 const StarWarsList = props => {
     return (
-        <div>
+        <div className="chars-container">
 
         {props.starwarschars.map(starwarschars => <StarWarsChars key={starwarschars.name} chars={starwarschars} />)};
         
