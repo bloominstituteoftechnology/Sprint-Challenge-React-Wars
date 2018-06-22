@@ -1,0 +1,17 @@
+.cards-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-wrapper{
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 20%;
+  margin: 20px 40px;
+}
+
+.card-wrapper h2{
+  border-bottom: 1px solid black;
+}
