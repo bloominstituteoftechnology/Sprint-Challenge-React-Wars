@@ -4,7 +4,8 @@ const CharacterCard= props => {
     return (
         <div>
             {props.getCharacters}
-            
+            {props.componentDidMount}
+            {props.fetch}
         </div>    
     );
 };
