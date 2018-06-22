@@ -11,4 +11,4 @@
 1.  Describe state.
     State is used when data is being changed. State is only used within a component, when it is passed outside a component it is considered a prop.
 1.  Describe props.
-    Props are data(properties) that are passed down from the parent component to the child component. These are processed by the child components and then rendered onto the page.
+    Props are data(properties) that are passed down from the parent component to the child component. These are processed by the child components and then rendered onto the page. You use props to access state from anothe component. (use props when you are not using state within that component)
