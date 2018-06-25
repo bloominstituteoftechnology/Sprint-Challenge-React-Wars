@@ -74,7 +74,7 @@ table {
     max-width: 590px; 
 }
 
-.app-container2 {
+/* .app-container2 {
   border:0.5px solid red;
   max-width: 590px; 
 }
@@ -82,6 +82,10 @@ table {
 .card-container {
   border:2.5px solid black;
   max-width: 590px; 
+} */
+
+.char-card-container {
+  border: 2px solid green;
 }
 
 .name-header {
@@ -94,3 +98,4 @@ table {
   display: flex;
   flex-direction:column;
 }
+

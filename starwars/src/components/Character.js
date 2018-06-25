@@ -12,17 +12,18 @@ import React from "react";
 
 const Character = props => {
     return (
-        <div>
+        <div className = "char-card-container">
+
             <div className = "name-header"> 
                 {props.singleCharacter.name}
             </div>
 
             <div className = "char-info">
-                birth year: {props.singleCharacter.birth_year}
-                eye color: {props.singleCharacter.eye_color}
-                gender:{props.singleCharacter.gender}
-                hair color: {props.singleCharacter.hair_color}
-                height: {props.singleCharacter.height} [cm]
+                <li> birth year: {props.singleCharacter.birth_year} </li>
+                <li> eye color: {props.singleCharacter.eye_color} </li>
+                <li> gender:{props.singleCharacter.gender} </li>
+                <li> hair color: {props.singleCharacter.hair_color} </li>
+                <li> height: {props.singleCharacter.height} [cm] </li>
             </div>
         </div>
     );
