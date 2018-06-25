@@ -13,7 +13,8 @@ import React from "react";
 const Character = props => {
     return (
         <div> 
-            {props.singleCharacter.name} 
+            {props.singleCharacter.name}
+            {props.singleCharacter.height}
         </div>
     );
 }
