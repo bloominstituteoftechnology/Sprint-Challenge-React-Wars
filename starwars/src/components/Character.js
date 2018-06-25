@@ -24,6 +24,8 @@ const Character = props => {
                 <li> gender:{props.singleCharacter.gender} </li>
                 <li> hair color: {props.singleCharacter.hair_color} </li>
                 <li> height: {props.singleCharacter.height} [cm] </li>
+                <li> mass: {props.singleCharacter.mass} [kg] </li>
+                <li> skin color: {props.singleCharacter.skin_color} </li>
             </div>
         </div>
     );
