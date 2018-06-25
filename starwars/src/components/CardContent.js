@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardContent = () => {
     return (
-        <div>
+        <div className = "card-content">
             beep
         </div>
     )

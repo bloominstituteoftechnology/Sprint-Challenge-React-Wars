@@ -8,7 +8,8 @@ const CharacterList = props => {
             {props.charsList.map(char => (
                 <Character
                     key = {Math.random()} 
-                    singleCharacter = {char} />
+                    singleCharacter = {char} 
+                />
             ))}
         </div>
     )
