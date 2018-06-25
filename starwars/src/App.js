@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Character from "./components/Character";
- 
+  
 class App extends Component {
   constructor() {
     super();
