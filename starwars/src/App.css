@@ -10,3 +10,21 @@
 .Header {
   font-size: 60px;
 }
+
+.jutCard {
+  display: flex;
+  align-items: center;
+}
+
+.fas {
+  font-size: 80px;
+  color: white;
+}
+
+.fa-arrow-left {
+  margin-left: 30px;
+}
+
+.fa-arrow-right {
+  margin-right: 30px;
+}

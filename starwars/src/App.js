@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
-import CardsList from './components/CardsList';
+import React, { Component } from "react";
+import "./App.css";
+import CardsList from "./components/CardsList";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      prev: "",
+      next: ""
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    console.log("componentDidMount called");
+    this.getCharacters(`https://swapi.co/api/people/`);
   }
 
   getCharacters = URL => {
@@ -23,18 +26,38 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          prev: data.previous,
+          next: data.next
+        });
+        if (data.previous === null) {
+          this.setState({ prev: "https://swapi.co/api/people/?page=9" });
+        } else if (data.next === null) {
+          this.setState({ next: "https://swapi.co/api/people/" });
+        }
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+  clickLeft = () => {
+    this.getCharacters(this.state.prev);
+  };
+  clickRight = () => {
+    this.getCharacters(this.state.next);
+  };
 
   render() {
+    console.log("render called");
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardsList characters={this.state.starwarsChars}/>
+        <div className="jutCard">
+          <i onClick={this.clickLeft} class="fas fa-arrow-left" />
+          <CardsList characters={this.state.starwarsChars} />
+          <i onClick={this.clickRight} class="fas fa-arrow-right" />
+        </div>
       </div>
     );
   }
