@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharCard from './components/CharCard';
 
 class App extends Component {
   constructor() {
@@ -7,6 +8,13 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    this.changeChar = this.changeChar.bind(this);
+  }
+
+  changeChar(newChar) {
+    this.setState({
+      starwarsChars: newChar
+    });
   }
 
   componentDidMount() {
