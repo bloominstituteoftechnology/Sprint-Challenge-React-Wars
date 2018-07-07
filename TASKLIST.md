@@ -1,5 +1,5 @@
 ### REACT SPRINT CHALLENGE
 
-- [] Create Card Component to hold data
-- [] Display Card
-- [] Style
+- [x] Create Card Component to hold data
+- [x] Display Card
+- [x] Style
