@@ -1,20 +1,41 @@
-.container {
-    display: flex; 
-    flex-flow: column wrap;
-    align-items: center;
-    border: 1px black solid;
+.Card {
+    background: brown;
+    opacity: .8;
+    border: 10px white solid;
+    font-weight: bold;
+    font-size: 14px;
+    width: 200px;
+    height: 270px;
+    padding: 20px;
+    margin: 15px 0 20px 16px;
 }
 
-.data {
+.Card__Name {
+    border: 3px black dotted;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.Card__Height {
+    text-align: center;
+    margin: 14px 10px;
+}
+
+.Card__Section1 {
+    display: flex;
+    border: black solid 5px;
+    border-radius: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Card__Section2 {
+    display: flex;
     border: 4px black solid;
-    width: 20%;
-    background: gray;
-    opacity: 0.8;
+    margin-top: 10px;
 }
 
-.data1 {
-    color: silver;
-    border-bottom: 3px solid black;
+.Card__Border {
+    border-right: 4px solid black;
+    padding: 0 4px;
 }
-
-

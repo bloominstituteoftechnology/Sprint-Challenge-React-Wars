@@ -27,11 +27,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <h1> The StarWars Crew </h1>
-        {this.state.starwarsChars.map((Chars, i) => {
-          return <Cards key = {'Chars' + i} {...Chars}/>;
-        })}
+        <h1 className="App__Header">React Wars: The Star Wars Crew</h1>
+        <div className="App__Cards">
+          {this.state.starwarsChars.map((char, i) => {
+            return <Cards key = {i} {...char}/>;
+          })}
+        </div>
       </div>
     );
   }
