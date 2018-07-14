@@ -5,3 +5,12 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.character
+{
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding-bottom: 20px;
+  display: block;
+}

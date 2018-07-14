@@ -22,7 +22,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results });        
       })
       .catch(err => {
         throw new Error(err);
@@ -30,9 +30,34 @@ class App extends Component {
   };
 
   render() {
+    let characters = this.state.starwarsChars;
+    console.log(characters);
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="container">
+          {
+            characters.map(character => {
+              return (
+                <div className="character">
+                  <div className="title">
+                    Name: {character.name}
+                  </div>
+                  <div className="birthyear">
+                    Birth Year: {character.birth_year}
+                  </div>
+                  <div className="eyecolor">
+                    Eye Color: {character.yellow}
+                  </div>
+                  <div className="height">
+                    Height: {character.height}
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
       </div>
     );
   }
