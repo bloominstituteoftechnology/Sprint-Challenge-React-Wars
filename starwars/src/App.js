@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharsList from './components/CharsList';
+// VIEW AT WIDTH 1200PX Looks cooler lol
 
 class App extends Component {
   constructor() {
