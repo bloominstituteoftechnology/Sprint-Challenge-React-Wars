@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.box {
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.box h3 {
+  text-shadow: 2px 4px black;
+  font-size: 30px;
+  color: white;
+  text-decoration: orange underline;
+}
+.box p {
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+}
