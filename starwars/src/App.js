@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharsList from './components/CharsList';
+// VIEW AT WIDTH 1200PX Looks cooler lol
 
 class App extends Component {
   constructor() {
@@ -7,6 +9,9 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    // state is the memory we have in our component,
+    // props is the mechanism for passing that state around.
+    // Not-so OLD WAY of binding our handlers // this.alertBandNameHandler = this.alertBandNameHandler.bind(this);
   }
 
   componentDidMount() {
@@ -33,6 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharsList chars={this.state.starwarsChars} />
       </div>
     );
   }
