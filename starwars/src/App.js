@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Characters from './Characters';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -27,9 +30,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+      <div className="card-container">
+        {this.state.starwarsChars.map(char => (
+          <Characters key={char.name} char={char} />))}
       </div>
-    );
-  }
+      </div>
+    )}
 }
-
 export default App;

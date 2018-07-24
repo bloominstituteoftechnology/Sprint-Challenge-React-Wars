@@ -5,4 +5,14 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+/* .card-container {
+  width: 45%;
+  display: inline-flex;
+  flex-direction: column;
+  }
+
+.card {
+  border: 3px solid black;
+} */
 /* write your parent styles in here for your App.js */
