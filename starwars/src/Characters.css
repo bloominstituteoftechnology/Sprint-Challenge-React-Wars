@@ -1,0 +1,18 @@
+/* .char-name {
+    font-weight: bold;
+}
+.description {
+    font-weight: 333;
+} */
+.cardbody {
+    margin-bottom: 10px;
+    border: 3px solid black;
+    
+ }
+
+ .card {
+     width: 45%;
+     border-width: 5px;
+     background: aqua;
+    
+ }
