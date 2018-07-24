@@ -1,9 +1,11 @@
 # Answers
 
-1. What is React JS? How does it differ from other JavaScript frameworks?
+1.  What is React JS and what problems does it try and solve?
 
+1.  What does it mean to _think_ in react?
 
-2. Explain briefly the React Component Lifecycle. Name three of the methods that are a part of the lifecycle and what they do.
+1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+1.  Describe state.
 
-3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+1.  Describe props.
