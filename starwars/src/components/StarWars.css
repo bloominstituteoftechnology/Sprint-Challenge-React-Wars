@@ -14,3 +14,7 @@
     border: 3px double black;
     width: 200px;
 }
+
+.card-title {
+    font-size: 105%;
+}
