@@ -1,9 +1,23 @@
-body {
+import Card from body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: black;
+  background-color: gray;
   background-size: cover;
+}
+.all-cards-main {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all-cards-sub {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .card-main {
   border: 1px solid black;
@@ -12,23 +26,27 @@ body {
   margin: 10px;
   width: 300px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-main h1 {
+  width: 100%;
 }
 .card-main:hover {
   background-color: rgba(192, 192, 192, 0.7);
 }
-.all-cards-main {
-  border: 1px solid red;
-  color: white;
+.card-stats {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
-.all-cards-sub {
-  border: 1px solid red;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.card-stats h2 {
+  text-decoration: underline;
+  margin: 0 0 10px 0;
+}
+.card-stats ul {
+  margin: 0 0 10px 30px;
+  padding: 0;
 }

@@ -1,10 +1,28 @@
+@import 'variables.less';
+@import 'mixins.less';
+import Card from
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  // background-image: url('./img/sw-bg.jpg');
-  background-color: black;
+  // background: @bg;
+  background-color: gray;
   background-size: cover;
+}
+
+.all-cards-main {
+  // border: 1px solid red;
+  color: gray;
+  .center;
+  flex-direction: column;
+}
+
+.all-cards-sub {
+  // border: 1px solid red;
+  color: black;
+  .center;
+  flex-wrap: wrap;
 }
 
 .card-main {
@@ -14,26 +32,30 @@ body {
   margin: 10px;
   width: 300px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  h1 {
+    // border: 1px solid red;
+    width: 100%;
+  }
   &:hover {
     background-color: rgba(192,192,192,0.7);
-
   }
 }
 
-.all-cards-main {
-  border: 1px solid red;
-  color: white;
+.card-stats {
+  // border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.all-cards-sub {
-  border: 1px solid red;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  margin-left: 10px;
+  h2 {
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+  }
+  ul {
+    margin: 0 0 10px 30px;
+    padding: 0;
+  }
 }

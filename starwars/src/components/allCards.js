@@ -2,14 +2,17 @@ import React from 'react';
 // import Card from './components/card.js';
 
 const Card = ({data}) => {
-  console.log(data)
+  console.log(data);
+
   return (
     <div className="card-main" data={data}>
       <h1>{data.name}</h1>
-      <li>
-        <ul>Name: {data.name}</ul>
-        <ul>Height: {data.height}</ul>
-      </li>
+      <div className="card-stats">
+        <h2>Stats:</h2>
+          <ul>Height: {data.height}</ul>
+          <ul>Mass: {data.mass}</ul>
+          <ul>Year Born: {data.birth_Year}</ul>
+      </div>
     </div>
   )
 }
@@ -18,7 +21,7 @@ const AllCards = props => {
   console.log(props);
   return (
     <div className="all-cards-main">
-      <h1>AllCards</h1>
+      <h1>Star Wars Characters</h1>
       <div className="all-cards-sub">
         {props.data.map( (each) => <Card
             key={each.name}
