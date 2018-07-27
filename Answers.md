@@ -4,7 +4,7 @@
 React JS is a user interface library that tries to solve the problem of re-usability and scale by breaking everything down into components that can be individually separated and compartmentalized and creating a virtual DOM that only updates and renders what needs to be updated, solving the problem of having to render the whole page which results in much faster upload speeds.
 
 1.  What does it mean to _think_ in react?
-Thinking in React is the idea of breaking everything down to its own component.
+Thinking in React is the idea of breaking everything down to its own component and the thought process of building components and linking them together to create a bigger application.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 A functional/presentational component is simpler and 'stateless', you can access props, but you cannot access state.
