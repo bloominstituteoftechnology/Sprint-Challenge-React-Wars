@@ -23,6 +23,7 @@ button:hover {
   background: rgb(186, 186, 248);
   color: white;
   border: dotted white 2px;
-  font-family: 'Permanent Marker'
+  font-family: 'Permanent Marker';
+  cursor: pointer;
 }
 
