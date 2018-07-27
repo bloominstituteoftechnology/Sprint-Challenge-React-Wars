@@ -9,8 +9,10 @@
 }
 /* write your parent styles in here for your App.js */
 
-.StarWarsChars {
-  font-size: 25px;
-  font-family: 'Space Mono', monospace;
+.char-card {
+ font-family: 'Space Mono', monospace;
   font-weight: bold;
+  font-size:30px;
 }
+
+

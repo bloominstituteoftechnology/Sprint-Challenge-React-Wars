@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import GalaxyFolks from './components/GalaxyFolks.js';
 import CharList  from './components/CharList.js';
+import CharCard from './components/CharCard';
 
 class App extends Component {
   constructor() {
