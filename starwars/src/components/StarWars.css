@@ -12,7 +12,7 @@
     height: 200px;
     border: 3px solid black;
     font-size: 0.8rem;
-    background: white;
+    background: lightgray;
     opacity: 0.5;
     padding: 1rem;
     overflow: hidden;
@@ -21,6 +21,7 @@
     opacity:1;
     font-weight: bold;
     font-size: 1rem;
+    background: whitesmoke;
 }
 
 .cards div{
