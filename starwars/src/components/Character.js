@@ -8,7 +8,7 @@ const Character = props => {
             <img className="my-image" src="http://worldwideinterweb.com/wp-content/uploads/2016/11/celebrities-in-star-wars.jpg" alt="Avatar"/>
         </div> */}
         <h4><b>{props.mychar.name}</b></h4>
-        <ul>
+        <ul className="unordered-list">
             <li>height: {props.mychar.height}</li>
             <li>mass: {props.mychar.mass}</li>
             <li>hair color: {props.mychar.hair_color}</li>
