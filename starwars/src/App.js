@@ -23,6 +23,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data); 
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -31,7 +32,7 @@ class App extends Component {
   };
 
   checkTheState = () => {
-    console.log(this.state); 
+    console.log(this.state.starwarsChars); 
   }
 
 
@@ -40,11 +41,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <h5 onClick = {this.checkTheState}>Checking State</h5>
-
-        {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
-        eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-        skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  }
+        <h5 onClick = {this.checkTheState}>Click to check State</h5>
+        <div className="characters">
+          {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
+          eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
+          skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  }
+        </div>
       </div>
     );
   }

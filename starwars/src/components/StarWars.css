@@ -1,0 +1,11 @@
+.characters {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.character {
+    border: 5px inset black;
+    color: white; 
+    width: 400px;
+}
