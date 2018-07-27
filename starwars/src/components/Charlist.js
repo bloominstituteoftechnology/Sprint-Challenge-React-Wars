@@ -5,7 +5,7 @@ import Char from './Char';
 const Charlist = props => {
     return (
         <div className="Charlist-Wrapper">
-
+           Char List
         </div>
     );
 };
