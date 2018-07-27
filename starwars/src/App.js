@@ -62,7 +62,16 @@ class App extends Component {
             {this.state.starwarsChars.map(character => {
               return <CharacterCard
                 key={character.name}
-                text={character.birth_year}
+                // Profile picture will do later
+                name={character.name}
+                birthday={character.birth_year}
+                eyeColor={character.eye_color}
+                gender={character.gender}
+                height={character.height}
+                mass={character.mass}
+                hairColor={character.hair_color}
+                skinColor={character.skin_color}
+
                 selected={character === this.state.selectedCharacter}
               />
             })}
