@@ -8,16 +8,30 @@
   src: url('./fonts/mandalor.ttf');
 }
 
+@font-face {
+  font-family: sith;
+  src: url('./fonts/sthproph.ttf');
+  font-size: 10px;
+}
+
 .coruscant-common{
   font-family: 'VT323';
+  font-size: 2rem;
 }
 
 .aurebesh{
   font-family: aurebesh;
+  font-size: 2rem;
 }
 
 .mandalorian{
   font-family: mandalorian;
+  font-size: 2rem;
+}
+
+.sith{
+  font-family: sith;
+  font-size: 1.2rem;
 }
 
 /* write your parent styles in here for your App.js */
@@ -40,5 +54,4 @@
   justify-content: center;
   align-items: center;
   color: #33FF33;
-  font-size: 2rem;
 }

@@ -14,6 +14,7 @@ class App extends Component {
         {font: 'coruscant-common', active: true, display: 'Coruscant Common',},
         {font: 'aurebesh', active: false, display: 'Aurebesh',},
         {font: 'mandalorian', active: false, display: 'Mandalorian',},
+        {font: 'sith', active: false, display: 'Sith',},
       ],
       activeChar: null,
       activeFont: 'coruscant-common',
@@ -56,7 +57,7 @@ class App extends Component {
     return (
       <div className="app-bg">
         <div className={`app-container ${this.state.activeFont}`}>
-        <FontMenu fonts={this.state.fonts} selectFont={this.selectFont}/>
+          <FontMenu fonts={this.state.fonts} selectFont={this.selectFont} />
           {(this.state.activeChar === null) ?
             <CharacterList characters={this.state.starwarsChars} selectChar={this.selectActiveCharacter} /> :
             <CharacterDisplayFull character={this.state.activeChar} deselectChar={this.deselectActiveCharacter} /> }
