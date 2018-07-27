@@ -7,7 +7,7 @@ import {
 
 const WarCard = (props) => {
   return(
-      <div className="cardContainer">
+      <div className="container">
           <div className="row">
               {props.attribute.map(e =>
                   <div>
