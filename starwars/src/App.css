@@ -40,4 +40,13 @@
 
 .Header {
   font-family: starwars;
+  font-size: 64px;
+}
+
+.left-button {
+  background-image: url('./img/lightsaber_left.png');
+}
+
+.right-button {
+  background-image: url('./img/lightsaber_right.png');
 }
