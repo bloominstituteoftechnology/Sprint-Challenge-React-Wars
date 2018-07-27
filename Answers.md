@@ -2,9 +2,13 @@
 
 1.  What is React JS and what problems does it try and solve?
 
+React JS is a User Interface library that was built by Facebook. It is declarative and component based. It has the virtual DOM which quickly nd efficiently updates the UI without a page refresh. 
+
 1.  What does it mean to _think_ in react?
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+
 
 1.  Describe state.
 
