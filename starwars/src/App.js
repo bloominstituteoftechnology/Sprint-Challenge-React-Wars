@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       count: 0,
+      page: 1
 
 
     };
@@ -27,7 +28,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        // console.log(data); 
+        console.log(data); 
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -36,30 +37,49 @@ class App extends Component {
   };
 
   checkTheState = () => {
-    // console.log(this.state.starwarsChars); 
+    console.log(this.state.starwarsChars); 
   }
   handleNext = () => {
-    let count = this.state.count;
-    if(count + 1 >= this.state.starwarsChars.length){
-      count++;
-    } else {
-      count = 0; 
-    }
+    // let count = this.state.count;
+    // if(count + 1 >= this.state.starwarsChars.length){
+    //   count++;
+    // } else {
+    //   count = 0; 
+    // }
      
-    this.setState({count:count});
+    // this.setState({count:count});
+    console.log("next")
+
+    let page = this.state.page; 
+
+    if (page + 1 !== 88){
+      page++;
+    } else {
+      page = 1; 
+    }
+    let url = 'https://swapi.co/api/people/'
+    url += "?page=" + page.toString()
+
+    this.getCharacters(url);
+    this.setState({})
+
+
   }
 
   handlePrevious = () => {
-    let count = this.state.count;
+    // let count = this.state.count;
     
 
-    if(count - 1 > 0){
-      count--;
-    } else {
-      count = this.state.starwarsChars.length -1; 
-    }
+    // if(count - 1 > 0){
+    //   count--;
+    // } else {
+    //   count = this.state.starwarsChars.length -1; 
+    // }
 
-    this.setState({count:count}); 
+    // this.setState({count:count}); 
+    console.log("previous");
+
+
   }
 
   handlePageChange = page => {
@@ -78,7 +98,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {/* <h5 onClick = {this.checkTheState}>Click to check State</h5> */}
+        <h5 onClick = {this.checkTheState}>Click to check State</h5>
         <div className="characters">
           {/* {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
           eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
@@ -97,8 +117,8 @@ class App extends Component {
            />
 
         </div>
-        {/* <button onClick = {this.handlePrevious}>Previous</button>
-        <button onClick = {this.handleNext}>Next</button> */}
+        <button onClick = {this.handlePrevious}>Previous</button>
+        <button onClick = {this.handleNext}>Next</button>
         {/* ^works but buggy and i believe its because of the way that we are rendering the data from the API */}
         <div className="pages">
           <button onClick = {() => this.handlePageChange(0)}>1</button><button onClick = {() => this.handlePageChange(1)}>2</button><button onClick = {() => this.handlePageChange(2)}>3</button><button onClick = {() => this.handlePageChange(3)}>4</button><button onClick = {() => this.handlePageChange(4)}>5</button><button onClick = {() => this.handlePageChange(5)}>6</button><button onClick = {() => this.handlePageChange(6)}>7</button><button onClick = {() => this.handlePageChange(7)}>8</button><button onClick = {() => this.handlePageChange(8)}>9</button><button onClick = {() => this.handlePageChange(9)}>10</button>
