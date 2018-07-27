@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ToonCard from './components/card';
 
 class App extends Component {
   constructor() {
@@ -10,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -22,10 +23,12 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
+        
       })
       .catch(err => {
-        throw new Error(err);
+        
       });
   };
 
@@ -33,6 +36,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(char => {
+          return <ToonCard name={char.name} gender={char.gender} height={char.height} weight={char.weight} birth_year={char.birth_year}/>;
+        })}
       </div>
     );
   }

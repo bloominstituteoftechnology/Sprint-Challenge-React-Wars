@@ -1,0 +1,9 @@
+.card-wrapper {
+    margin: 0 auto;
+    width: 38%; 
+}
+
+.card-container {
+    border: 2px solid yellow;
+    width: 700px;
+}
