@@ -1,0 +1,23 @@
+.allChars {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+}
+
+.cards{
+    width: 500px;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    background: white;
+    opacity: 0.5;
+    padding: 1rem;
+}
+.cards:hover{
+    opacity:1;
+}
+
+.cards div{
+    padding: 0.3rem;
+}
