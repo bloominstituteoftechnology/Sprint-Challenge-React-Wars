@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardsList from './components/CardsList';
 import './App.css';
 
 class App extends Component {
@@ -53,6 +54,8 @@ class App extends Component {
             <p>Edited: {character.edited}</p>                                             
           </div>
         )}
+
+        {/* <CardsList starwarsChars={this.state.starwarsChars} /> */}
       </div>
     );
   }

@@ -7,8 +7,8 @@
 }
 /* write your parent styles in here for your App.js */
 .card {
-  border: 3px solid crimson;
-  box-shadow: 10px 10px 8px black;
+  border: 3px solid rgb(88, 24, 24);
+  box-shadow: 10px 10px 8px rgb(94, 26, 26);
   width: 50%;
   margin: auto;
   margin-bottom: 50px;
