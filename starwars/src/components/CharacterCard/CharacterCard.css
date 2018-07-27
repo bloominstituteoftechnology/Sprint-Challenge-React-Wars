@@ -1,0 +1,23 @@
+
+.character-card {
+    display: none;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.selected {
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}

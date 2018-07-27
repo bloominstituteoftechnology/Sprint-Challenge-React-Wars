@@ -1,0 +1,23 @@
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    }
+
+.character {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    cursor: pointer;
+}
+    
+.character:hover {
+    opacity: 0.9;
+}
+    
+.character-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+    
