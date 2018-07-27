@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CardComponent.css';
-import { Card, CardText, CardBody, CardTitle,
-    CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 const CardComponent = props => {
   return (
