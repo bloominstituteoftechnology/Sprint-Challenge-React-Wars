@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from './components/Form';
 import InfoList from './components/InfoList';
+import CharacterCard from './components/CharacterCard';
 
 class App extends Component {
   constructor() {
@@ -45,6 +46,7 @@ class App extends Component {
     console.log(c3po);
   };
 
+
   render() {
     return (
       <div className="App">
@@ -61,6 +63,10 @@ class App extends Component {
           gender={this.state.starwarsChars.gender}
           />
         </div>
+          <CharacterCard 
+          name={this.state.starwarsChars.name}
+          birth_year={this.state.starwarsChars.birth_year}
+          />
       </div>
     );
   }
