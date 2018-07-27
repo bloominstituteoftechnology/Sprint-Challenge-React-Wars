@@ -1,0 +1,11 @@
+.starCardContainer{
+    background-color: white;
+    margin: 20px;
+}
+.starCardBody{
+    display:flex;
+}
+
+.hidden{
+    display: none;
+}
