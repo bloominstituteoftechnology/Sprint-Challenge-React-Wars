@@ -11,13 +11,9 @@ class Char extends React.Component {
         this.state = {
             character: props.star,
             name: props.star.name,
-            unwantedTraits: [
-                'name', 'url', 'homeworld', 'films', 'vehicles', 'starships', 'created', 'edited'
-            ],
+            unwantedTraits: { 'name': true, 'url': true, 'homeworld': true, 'films': true, 'vehicles': true },
             showList: false
         };
-        console.log(this.state.character.name);
-        
     }
     
     handleListShow = () => {
@@ -28,7 +24,6 @@ class Char extends React.Component {
         })
     };
 
-
     render(){
         return (
             <div className="character-container" onClick={this.handleListShow} >
@@ -36,15 +31,13 @@ class Char extends React.Component {
                 <div className="character-list" style={this.state.showList ? {display: 'flex'} : {display: 'none'}}>
                 {
                     Object.keys(this.state.character).map((k) => { 
-                        if (k != "name"){
-                            return <CharTrait className="trait" traitName={k} traitValue={this.state.character[k]}/>
-                        }
+                            if (k != this.state.unwantedTraits[i]) {
+                                return <CharTrait className="trait" traitName={k} traitValue={this.state.character[k]} />
+                            }
                     })
                 }
                 </div>
-
             </div>
-           
         )
     }
 };
