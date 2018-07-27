@@ -3,7 +3,7 @@ import React from "react";
 //Todo
 const Card = props => {
     return (
-    <div>
+    <div className="myCards">
         <div>
             <h3>{props.thisChar.name}</h3>
         </div>
