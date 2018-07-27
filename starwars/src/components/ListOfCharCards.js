@@ -6,7 +6,7 @@ import CharacterCard from "./CharacterCard";
 const ListOfCharCards = props => {
   let starwarsCharsArray = props.starwarsArray;
   return (
-    <div>
+    <div class="characterCardDiv">
       {starwarsCharsArray.map(char => (
         <CharacterCard
           // handleToggleComplete={props.handleToggleComplete}

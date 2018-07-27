@@ -7,7 +7,7 @@ const CharacterCard = props => {
   const feet = Math.floor(heightInFeetTotal);
   const inches = Math.round((heightInFeetTotal - feet) * 12);
   return (
-    <div
+    <div class="characterCard"
       // style={
       //   props.todoDataProp.completed ? { textDecoration: "line-through", textDecorationColor: "#FF220C"} : null
       // }

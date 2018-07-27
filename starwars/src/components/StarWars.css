@@ -1,0 +1,14 @@
+.characterCard {
+  background: black;
+  color: white;
+  border-radius: 1rem;
+  height: 15rem;
+  width: 15rem;
+}
+
+.characterCardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
