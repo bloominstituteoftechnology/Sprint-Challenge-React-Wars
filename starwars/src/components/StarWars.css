@@ -4,5 +4,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 }
+
+.custom-card{
+    background: #D7C077;
+}
+
+.btn{
+    background: #443011;
+    color: white;
+}
+
+.btn:visited{
+    background-color: #443011;
+  }
+  .btn:hover {
+    background-color: #443011;
+  }
+  .btn:active{
+    background-color: #443011;
+  }
+
+  .btn:focus{
+    background-color: #443011;
+  }
