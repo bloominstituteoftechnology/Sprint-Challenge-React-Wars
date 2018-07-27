@@ -7,8 +7,21 @@ import {
 
 const WarCard = (props) => {
   return(
-<h1> hello</h1>
-);
+      <div className="cardContainer">
+          <div className="row">
+              {props.attribute.map(e =>
+                  <div>
+                      <Card>
+                          <CardBody>
+                              <CardTitle>{e.name}</CardTitle>
+                          </CardBody>
+                      </Card>
+                  </div>
+              )
+              }
+          </div>
+      </div>
+  );
 }
 
 export default WarCard;
