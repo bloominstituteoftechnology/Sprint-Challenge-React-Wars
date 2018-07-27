@@ -32,11 +32,16 @@ class App extends Component {
       });
   };
 
+  handleNext = event => {
+
+  }
+
   render() {
     return (
       <div className="AppWrapper">
         <h1 className="Header">React Wars</h1>
         <CardList cardArray={ this.state.starwarsChars } />
+        {/* <button onClick={ this.getCharacters('https://swapi.co/api/people/?page=2') }>Next</button> */}
       </div>
     );
   }
