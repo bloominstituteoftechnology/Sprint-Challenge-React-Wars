@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  display: block;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  
 }
