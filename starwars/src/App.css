@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.cards{
+  width: 1000px;
+
+}
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  border: 5px inset black;
+  width: 750px;
+  text-align: center;
+  background-color: rgba(163, 132, 221, 0.5);
+  padding: 1%;
+}
