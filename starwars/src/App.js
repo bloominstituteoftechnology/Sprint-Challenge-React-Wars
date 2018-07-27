@@ -57,7 +57,7 @@ handleSearch = (event) => {
     return (
       <div className="App">
           <div className="main">
-          <div className="sear-bar">
+          <div className="search-bar">
           <input 
             type="text"
             placeholder="Search..."
