@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/Form';
-import InfoList from './components/InfoList';
-import CharacterCard from './components/CharacterCard';
+// import Form from './components/Form';
+// import InfoList from './components/InfoList';
+// import CharacterCard from './components/CharacterCard';
+import StarwarsChars from './components/StarwarsChars';
 
 class App extends Component {
   constructor() {
@@ -32,26 +33,17 @@ class App extends Component {
       });
   };
 
-  ButtonLuke = event => {
-    event.preventDefault();
-    console.log("Luke was clicked!");
-    let luke = this.state.starwarsChars[0];
-    console.log(luke);
-  };
-
-  ButtonC3po = event => {
-    event.preventDefault();
-    console.log("3-CPO was clicked!");
-    let c3po = this.state.starwarsChars[1];
-    console.log(c3po);
-  };
-
-
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className="Character-Buttons">
+        <div>
+          <div className="character-cards">
+            <StarwarsChars chars={this.state.starwarsChars}/>
+          </div>
+        </div>
+         
+        {/* <div className="Character-Buttons">
           <Form 
           handleButtonLuke={this.ButtonLuke}
           handleButtonC3po={this.ButtonC3po}
@@ -66,7 +58,7 @@ class App extends Component {
           <CharacterCard 
           name={this.state.starwarsChars.name}
           birth_year={this.state.starwarsChars.birth_year}
-          />
+          /> */}
       </div>
     );
   }
