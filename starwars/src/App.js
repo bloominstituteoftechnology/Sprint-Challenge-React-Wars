@@ -1,33 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import CharactersForm from'./components/CharactersForm'; 
+import Characters from './components/Characters';
 
-const Characters = props =>{
-  const { name } = props.characterProp; 
-  return(
-    <div>
-      <h4>{name}</h4>
-    </div>
-  );
-};
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
-      name: ""
     };
   }
-  display = e =>{
-  e.preventDefault();
-  const starwarsChars = this.state.starwarsChars.slice();
-  starwarsChars.push({
-    name: {name}, 
-  }); 
-  this.setState({starwarsChars});
-
-}
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -52,9 +34,9 @@ class App extends Component {
   render() {
     return(
       <div>
-      <CharactersForm 
-      handleDisplayInfo={this.displayInfo}
-      />
+        <section>
+        <Characters chars={this.state.starwarsChars} />
+        </section>
       </div>
     )
   }
