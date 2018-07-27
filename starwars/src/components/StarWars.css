@@ -5,8 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 0;
-    border-radius: 4px;
-    background-color: aquamarine;
+    border-radius: 11px;
 }
 
 .card{
@@ -15,4 +14,14 @@
     margin-bottom: 70px;
     border-radius: 7px;
     padding: 20px;
+    background-color: #eeeeee;
+
+}
+
+.card__header{
+    margin-bottom: 18px;
+    font-size: 2.1rem;
+    font-weight: 300;
+    text-decoration-line: underline;
+    color: #00adb5;
 }
