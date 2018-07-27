@@ -33,6 +33,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+        <h2>{}</h2>
+        <button onClick={this.getCharacters}>Click to display Data</button>
       </div>
     );
   }
