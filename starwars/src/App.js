@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      url: null
     };
   }
 
@@ -23,20 +24,30 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data)
+        this.setState({ 
+          starwarsChars: data.results,
+          url: data.next
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handlePageChange (){
+    console.log(this.state.url)
+    this.getCharacters(this.state.url)
+  }
+
   render() {
     const data = this.state.starwarsChars.map(character => <Card data={character} />)
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className="Header">React Wars</div>
         <div className="data">
           {data}
+          <button onClick={this.handlePageChange.bind(this)}>Next Page</button>
         </div>
       </div>
     );
