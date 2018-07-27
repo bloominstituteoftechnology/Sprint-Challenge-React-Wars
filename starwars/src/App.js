@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import GalaxyFolks from './components/GalaxyFolks.js';
+// import GalaxyFolks from './components/GalaxyFolks.js';
 import CharList  from './components/CharList.js';
 
 class App extends Component {
@@ -23,12 +23,14 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results});
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+
+
 
   render() {
     return (
