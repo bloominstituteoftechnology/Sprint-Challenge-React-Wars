@@ -17,8 +17,9 @@
 }
 
 .char-info__img-container {
-  width: 100%;
-  height: 230px;
+  margin: auto;
+  width: 96.5%;
+  height: 227px;
   border: solid 1px yellow;
   margin-top: 10px;
 }
