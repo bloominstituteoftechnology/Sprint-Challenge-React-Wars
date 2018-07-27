@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './components/Card'
+
 
 class App extends Component {
   constructor() {
@@ -30,9 +32,27 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(swchars => {
+          return (
+          <div key={swchars.name}>
+          <p>{swchars.birth_year}</p>
+          <p>{swchars.eye_color}</p>
+          {/* <p>{swchars.films}</p> */}
+          <p>{swchars.gender}</p>
+          <p>{swchars.hair_color}</p>
+          <p>{swchars.height}</p>
+          {/* <p>{swchars.homeworld}</p> */}
+          <p>{swchars.mass}</p>
+          <p>{swchars.name}</p>
+          <p>{swchars.skin_color}</p>
+          </div>
+          );
+        })}
+        />
       </div>
     );
   }
