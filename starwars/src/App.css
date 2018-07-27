@@ -5,5 +5,24 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 400%;
 }
-/* write your parent styles in here for your App.js */
+
+button {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 150%;
+  margin: 0 3% 1% 3%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.40);
+  background: pink;
+  border: solid palevioletred 1px;
+  font-family: 'Eczar';
+}
+button:hover {
+  background: rgb(186, 186, 248);
+  color: white;
+  border: dotted white 2px;
+  font-family: 'Permanent Marker'
+}
+

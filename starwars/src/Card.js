@@ -4,7 +4,11 @@ import sox from './img/sox.jpg'
 
 const Card = props => {
     return (
-    <div className ="characterCard">
+    <div className ={
+        `characterCard 
+        ${!props.clickedHumanishButton() ? null : props.clickedHumanishButton() && props.isRobot(props.itemprop.name) ? 'poof' : null} 
+        ${!props.clickedRobotButton() ? null : props.clickedRobotButton() && !props.isRobot(props.itemprop.name) ? 'poof' : null}`
+    }>
         <img className="pic" src={sox} alt="socks"/>
         <div className="pictext">
             <h3>{props.itemprop.name}</h3>

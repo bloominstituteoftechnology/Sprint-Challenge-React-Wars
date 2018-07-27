@@ -6,8 +6,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      clickedRobotButton: false,
+      clickedHumanishButton: false,
     };
+
   }
 
   componentDidMount() {
@@ -27,15 +30,60 @@ class App extends Component {
       });
   };
 
+  isRobot = (name) => {
+    if (name.includes(2)|name.includes(3)|name.includes(4)) {
+      return true;
+    } else {
+      return false;
+    }  
+  };
+
+  clickedRobotButton =()=> {
+    if (this.state.clickedRobotButton === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  clickedHumanishButton = () => {
+    if (this.state.clickedHumanishButton === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  clickR =()=>{
+    this.setState({clickedHumanishButton: false})
+    this.setState({clickedRobotButton: true})
+    
+  }
+
+  clickH =()=>{
+    this.setState({clickedRobotButton: false})
+    this.setState({clickedHumanishButton: true})
+    
+  }
+
+  clickA =()=>{
+    this.setState({clickedRobotButton: false})
+    this.setState({clickedHumanishButton: false})
+    
+  }
+
+
 
 
 
   render() {
-    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">I don't like Star Wars</h1>
-        <h2><Characters charArray={this.state.starwarsChars}/></h2>
+        <button onClick={this.clickA}>All</button>
+        <button onClick={this.clickR}>Robots</button>
+        <button onClick={this.clickH}>Humanishes</button>
+        <h2><Characters isRobot={this.isRobot} clickedHumanishButton={this.clickedHumanishButton} clickedRobotButton={this.clickedRobotButton} charArray={this.state.starwarsChars}/></h2>
       </div>
     );
   }

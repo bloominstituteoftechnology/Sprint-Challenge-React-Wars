@@ -46,3 +46,7 @@ h3 {
 div {
     font-size: 96%;
 }
+
+.poof{
+    display: none;
+}
