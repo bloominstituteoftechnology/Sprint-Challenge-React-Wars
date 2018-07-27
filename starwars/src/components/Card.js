@@ -8,7 +8,7 @@ const Card = props => {
       <h2>{props.name}</h2>
 
       <div className="char-info__img-container">
-        <img src={props.imgName} alt=""/>
+        <img src={props.imgName} alt="Star Wars Images"/>
       </div>
 
       <div className="char-info__title-container">
