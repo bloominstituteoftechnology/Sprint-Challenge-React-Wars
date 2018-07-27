@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   border: 1px solid #33FF33;
   background: rgba(0,0,0,0.6);
+  border-radius: 5px;
 }
 
 .character-list .character {
@@ -19,5 +20,31 @@
   height: 15%;
   width: 35%;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.character-list .character:hover{
+  background: black;
+}
+
+.character-full{
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  font-size: 5rem;
+}
+
+.character-full .deselect-btn{
+  border: 1px solid #33FF33;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-full .deselect-btn:hover{
+  background: black;
 }
