@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/Card';
+import Films from './components/Films';
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,8 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       count: 0,
-      page: 1
+      page: 1,
+      films: []
 
 
     };
@@ -36,20 +38,12 @@ class App extends Component {
       });
   };
 
+  
+
   checkTheState = () => {
     console.log(this.state.starwarsChars); 
   }
   handleNext = () => {
-    // let count = this.state.count;
-    // if(count + 1 >= this.state.starwarsChars.length){
-    //   count++;
-    // } else {
-    //   count = 0; 
-    // }
-     
-    // this.setState({count:count});
-    console.log("next")
-
     let page = this.state.page; 
 
     if (page + 1 !== 88){
@@ -62,12 +56,9 @@ class App extends Component {
 
     this.getCharacters(url);
     this.setState({page: page});
-
-
   }
 
   handlePrevious = () => {
-    
     let page = this.state.page; 
 
     if (page - 1 !== 0){
@@ -80,8 +71,6 @@ class App extends Component {
 
     this.getCharacters(url);
     this.setState({page: page});
-
-    console.log("previous");
   }
 
   handlePageChange = page => {
@@ -90,11 +79,8 @@ class App extends Component {
     this.setState({count:count}); 
   }
 
-
-
   render() {
     let characters = this.state.starwarsChars; 
-    
     
     
     return (
@@ -102,12 +88,6 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <h5 onClick = {this.checkTheState}>Click to check State</h5>
         <div className="characters">
-          {/* {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
-          eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-          skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  } */}
-          {/* {<Card   key= {characters[this.state.count].created} name ={characters[this.state.count].name} created = {characters[this.state.count].created} edited={characters[this.state.count].edited}
-          eyeColor = {characters[this.state.count].eye_color} gender ={characters[this.state.count].gender} hairColor ={characters[this.state.count].hair_color} height = {characters[this.state.count].height} mass = {characters[this.state.count].mass}
-          skinColor ={characters[this.state.count].skin_color} birthYear = {characters[this.state.count].birth_year}/>  } */}
 
           <Card   name = {characters.length > 0? characters[this.state.count].name: ""} key = {characters.length > 0? characters[this.state.count].created: ""} 
            edited = {characters.length > 0? characters[this.state.count].edited: ""} eyeColor =  {characters.length > 0? characters[this.state.count].eye_color: ""} 
@@ -115,13 +95,14 @@ class App extends Component {
            mass =  {characters.length > 0? characters[this.state.count].mass: ""} skinColor =  {characters.length > 0? characters[this.state.count].skin_color: ""}
            birthYear =  {characters.length > 0? characters[this.state.count].birth_year: ""}
            
-           
            />
+           <Films films = {characters.length > 0 ? characters[this.state.count].films: ""}/>
+           
 
         </div>
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
-        {/* ^works but buggy and i believe its because of the way that we are rendering the data from the API */}
+        
         <div className="pages">
           <button onClick = {() => this.handlePageChange(0)}>1</button><button onClick = {() => this.handlePageChange(1)}>2</button><button onClick = {() => this.handlePageChange(2)}>3</button><button onClick = {() => this.handlePageChange(3)}>4</button><button onClick = {() => this.handlePageChange(4)}>5</button><button onClick = {() => this.handlePageChange(5)}>6</button><button onClick = {() => this.handlePageChange(6)}>7</button><button onClick = {() => this.handlePageChange(7)}>8</button><button onClick = {() => this.handlePageChange(8)}>9</button><button onClick = {() => this.handlePageChange(9)}>10</button>
           {/* {characters.length > 0 ? characters.map( (char, i) => <button onClick = {() => this.handlePageChange({count}) } >i</button> )   : <button>Zero pages</button>    } */}
