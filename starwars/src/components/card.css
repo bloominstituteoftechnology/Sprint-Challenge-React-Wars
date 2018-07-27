@@ -1,9 +1,10 @@
 .card-wrapper {
-    margin: 0 auto;
-    width: 38%; 
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
 }
 
 .card-container {
+    align-content: center;
     color: yellow;
-    width: 700px;
 }

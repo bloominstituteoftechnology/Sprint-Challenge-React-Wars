@@ -5,10 +5,21 @@
 }
 
 .App {
+  
   font-family: 'Star Jedi';
+  position: relative;;
+  top:0;
+  z-index: 5;
+  margin: auto;
+  height: 800px;
+  overflow: hidden;
 }
+
 .Header {
+  position: relative;
+  width:100%;
   font-size: 1000%;
   color: yellow;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
 }

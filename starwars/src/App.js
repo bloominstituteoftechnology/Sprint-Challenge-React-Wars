@@ -19,7 +19,7 @@ class App extends Component {
     canvas.height = window.innerHeight;
 
     var c = canvas.getContext('2d');
-    var numStars = 300;
+    var numStars = 600;
     var stars = []; //Empty array
     var size = 1;
     var fl = canvas.width;
@@ -102,13 +102,13 @@ class App extends Component {
 
   render() {
     return (
-      [<canvas ref="canvas" id="c" style={{zIndex:-1, position:'absolute', top:0, width:'100%', height:'100%'}} />,
+      [
       <div className="App">
         <h1 className="Header">Star Wars</h1>
         {this.state.starwarsChars.map(char => {
           return <ToonCard name={char.name} gender={char.gender} height={char.height} weight={char.weight} birth_year={char.birth_year}/>;
         })}
-      </div>]
+      </div>,<canvas ref="canvas" id="c" style={{zIndex:-1, position:'absolute', top:0, width:'100%', height:'100%'}} />]
     );
   }
 }
