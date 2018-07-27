@@ -1,0 +1,19 @@
+.card-style{
+	width: 200px;
+	border: 1px solid chocolate;
+	color: teal;
+	opacity: 0.9;
+	background-color: #fff;
+	margin-bottom: 4%;
+	margin-right: 2%;
+	border-radius: 5px;
+}
+
+.container-style{
+	margin: 10%;
+	margin-top: 4%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
