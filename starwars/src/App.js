@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="AppWrapper">
         <h1 className="Header">React Wars</h1>
         <CardList cardArray={ this.state.starwarsChars } />
       </div>
