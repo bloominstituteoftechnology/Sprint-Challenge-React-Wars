@@ -44,12 +44,16 @@ class App extends Component {
    render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <div>
-          <div className="left-button" onClick={this.previous}>Previous</div>
-          <div className="right-button" onClick={this.next}>Next</div>
+        <div className="sticky-header">
+          <h1 className="Header">React Wars</h1>
+          <div className="d-flex justify-content-center">
+            <div className="nav-btn left-button" onClick={this.previous}>Back</div>
+            <div className="nav-btn right-button" onClick={this.next}>Next</div>
+          </div>
         </div>
-        <CharList charAttrib={this.state.starwarsChars}/>
+        <div className="core-content">
+          <CharList charAttrib={this.state.starwarsChars}/>
+        </div>       
       </div>
     );
   }

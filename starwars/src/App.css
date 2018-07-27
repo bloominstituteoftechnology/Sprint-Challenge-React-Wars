@@ -2,7 +2,7 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: black;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
@@ -12,6 +12,46 @@
   src: url(./fonts/DISTGRG_.ttf);
   font-style: normal;
   font-weight: 100;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;  
+  height: 150px;
+  opacity: 1;
+  background: darkslategray;
+}
+
+.Header {
+  font-family: starwars;
+  font-size: 64px;
+}
+
+.nav-btn {
+  height: 55px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position-y: 25px;
+  font-family: starwars;
+  font-size: 32px;
+  color: #e5b13a;
+  text-shadow: 2px 2px 8px black;
+  padding: 0 15px;  
+  cursor: pointer;
+}
+
+.left-button {
+  background-image: url('./img/lightsaber_left.png');
+}
+
+.right-button {
+  background-image: url('./img/lightsaber_right.png');
+}
+
+.core-content {
+  margin-top: 175px;
 }
 
 .char-card {
@@ -38,15 +78,3 @@
   font-family: 'Franklin Gothic Demi', 'Arial Narrow', Arial, sans-serif;
 }
 
-.Header {
-  font-family: starwars;
-  font-size: 64px;
-}
-
-.left-button {
-  background-image: url('./img/lightsaber_left.png');
-}
-
-.right-button {
-  background-image: url('./img/lightsaber_right.png');
-}
