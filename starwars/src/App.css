@@ -6,23 +6,41 @@
 /* write your parent styles in here for your App.js */
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 
 p {
+  font-size: 1.8rem;
+  text-shadow: .5px .5px 1px rgba(255,255,255,.7);
+}
+
+span {
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+a {
+  text-decoration: none;
   font-size: 1.6rem;
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
 }

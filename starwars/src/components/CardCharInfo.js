@@ -6,16 +6,16 @@ const CardCharInfo = props => {
     <div className="char-info__container">
 
       <div className="char-info__col-1">
-      <p className="char-info__item">{`Birth Year: ${props.birthYear}`}</p>
-      <p className="char-info__item">{`Gender: ${props.gender}`}</p>
-      <p className="char-info__item">{`Eye Color: ${props.eyeColor}`}</p>
+        <p className="char-info__item"><span>Birth Year:</span>{` ${props.birthYear}`}</p>
+        <p className="char-info__item"><span>Gender:</span>{` ${props.gender}`}</p>
+        <p className="char-info__item"><span>Height:</span>{` ${props.height}`}</p>
+        <p className="char-info__item"><span>Mass:</span>{` ${props.mass}`}</p>
       </div>
 
       <div className="char-info__col-2">
-      <p className="char-info__item">{`Skin Color: ${props.skinColor}`}</p>
-      <p className="char-info__item">{`hair Color: ${props.hairColor}`}</p>
-      <p className="char-info__item">{`Height: ${props.height}`}</p>
-      <p className="char-info__item">{`Mass: ${props.mass}`}</p>
+        <p className="char-info__item"><span>Hair Color:</span>{` ${props.hairColor}`}</p>
+        <p className="char-info__item"><span>Eye Color:</span>{` ${props.eyeColor}`}</p>
+        <p className="char-info__item"><span>Skin Color:</span>{` ${props.skinColor}`}</p>
       </div>
 
     </div>
