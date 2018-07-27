@@ -3,8 +3,8 @@ import React from 'react';
 const StarChar = props => {
     return (
         <div>
-            <div>{props.char.name}</div>
-            <div>{props.char.height}</div>
+            <h2>Name: {props.char.name}</h2>
+            <p>Height: {props.char.height}</p>
         </div>
     );
 };

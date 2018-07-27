@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import StarList from './components/StarList';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -30,12 +31,12 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+  
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarList starwarsChars={this.state.starwarsChars}/>
+        <StarList className="background" starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }
