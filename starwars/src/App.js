@@ -44,7 +44,7 @@ class App extends Component {
 
         {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
         eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-        skinColor ={character.skin_color} birthYear = {characters.birth_year}/> )  }
+        skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  }
       </div>
     );
   }
