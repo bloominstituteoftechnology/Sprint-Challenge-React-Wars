@@ -3,10 +3,10 @@ import './StarWars.css'
 
 const CharacterContainer = props => {
     return (
-        <div>
+        <div className={`grid`}>
             {props.starwarsChars.map((character) => {
                 return (
-                    <div key={character.created}> 
+                    <div key={character.created} className={`card-background`}> 
                         <h2>{character.name}</h2>
                         <ul>
                             <li>Gender: {character.gender}</li>
