@@ -1,11 +1,11 @@
 import React from 'react';
 import Card from './Card';
-import './StarWars.css';
 
 const CardsList = (props) => {
+    console.log(props);
     return (
         <div>
-            {props.starwarsChars.map((character, index) => <Card key={index} character={character} id={index} />)}
+            {props.starwarsChars.map((character) => <Card character={character}/> )}
         </div>
     )
 }

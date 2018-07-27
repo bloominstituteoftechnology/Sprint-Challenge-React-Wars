@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map((character) => 
+        {/* {this.state.starwarsChars.map((character) => 
           <div className='card'>
             <p>Name: {character.name}</p>
             <p>Birth Year: {character.birth_year}</p>
@@ -53,9 +53,9 @@ class App extends Component {
             <p>Created: {character.created}</p>
             <p>Edited: {character.edited}</p>                                             
           </div>
-        )}
+        )} */}
 
-        {/* <CardsList starwarsChars={this.state.starwarsChars} /> */}
+        <CardsList starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }
