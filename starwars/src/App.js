@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardList from './components/CardList';
 import './App.css';
 
 class App extends Component {
@@ -29,10 +30,16 @@ class App extends Component {
       });
   };
 
+  onClickHandler =(id) => {
+    let card=document.getElementById(id);
+    card.classList.toggle('hidden');
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.length ? <CardList starwarsChars={this.state.starwarsChars} onClickHandler={this.onClickHandler}/> : (null)} 
       </div>
     );
   }
