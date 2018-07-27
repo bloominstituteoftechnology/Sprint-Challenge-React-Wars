@@ -9,10 +9,9 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       currentlyShowing: [],
-      next: null,
-      previous: null
+      // next: null,
+      // previous: null
     };
-    // this.init();
   }
 
   componentDidMount() {
@@ -28,39 +27,65 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data,
+        currentlyShowing: data.results });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
-  init = event => {
-    const listCopy = this.state.starwarsChars.slice();
+  showIndividual = event => {
+    const listCopy = this.state.currentlyShowing.slice();
+    let firstItem = [];
+    firstItem.push(listCopy[0]);
+    this.setState({currentlyShowing: firstItem})
+  }
+
+  showAll = event => {
+    const listCopy = this.state.starwarsChars.results.slice();
     console.log(listCopy)
     this.setState({currentlyShowing: listCopy})
   }
 
-  showIndividual = event => {
-    const listCopy = this.state.starwarsChars.slice();
-    let firstItem = [];
-    firstItem.push(listCopy[0]);
-    this.setState({starwarsChars: firstItem})
+  next = event => {
+    const listCopy = this.state.currentlyShowing.slice();
+    console.log(listCopy)
+    this.setState({ currentlyShowing: listCopy})
   }
 
-  showAll = event => {
-    const listCopy = this.state.starwarsChars.slice();
-    console.log(listCopy)
-    this.setState({starwarsChars: listCopy})
+
+  previous = () => {
+    // console.log("previous envoked ")
+    const listCopy = this.state.currentlyShowing.slice();
+
+    listCopy.forEach( (each, i) => {
+      // let counter = 0
+      console.log(`each:`);
+      console.log(each);
+      // let foo = listCopy[0];
+      each.id = i;
+      // counter = counter + 1;
+    })
+
+    // for (let i = 0; i < listCopy.length; i++) {
+    //   this.listCopy[i].id = i
+    // }
+
+
+    // this.setState({currentlyShowing: listCopy});
   }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <AllCards name="Dummy Card" show1={this.showIndividual}
+        <AllCards name="Dummy Card"
+        show1={this.showIndividual}
         showAll={this.showAll}
-        data={this.state.starwarsChars}/>
+        next={this.next}
+        previous={this.previous}
+        data={this.state.currentlyShowing}/>
       </div>
     );
   }

@@ -4,8 +4,14 @@ import React from 'react';
 const Card = ({data}) => {
   console.log(data);
 
+const height2 = {
+    height: `${data.height}px`
+  }
+
+// `height: ${data.height}px`
   return (
-    <div className="card-main" data={data}>
+
+    <div style={height2}  className="card-main" data={data}>
       <h1>{data.name}</h1>
       <div className="card-stats">
         <h2>Stats:</h2>
@@ -21,10 +27,12 @@ const AllCards = props => {
   console.log(props.data.length);
   return (
     <div className="all-cards-main">
-      <h1>Star Wars Characters</h1>
+      <h1>Characters</h1>
       <div className="button-group">
+        <button onClick={props.previous}>Previous</button>
         <button onClick={props.showAll}>Show All</button>
         <button onClick={props.show1}>Show individual</button>
+        <button onClick={props.next}>Next</button>
       </div>
       <div className="all-cards-sub">
          {props.data.map( (each) => <Card
