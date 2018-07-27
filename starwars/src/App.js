@@ -1,16 +1,28 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import AllCharacters from "./AllCharacters";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [
+        // LukeSkywalker,
+        // C3PO,
+        // R2D2,
+        // DarthVader,
+        // LeiaOrgana,
+        // OwenLars,
+        // BeruLars,
+        // R5D4,
+        // BiggsDarklighter,
+        // ObiwanKenobi
+      ]
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -33,6 +45,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <AllCharacters />
       </div>
     );
   }
