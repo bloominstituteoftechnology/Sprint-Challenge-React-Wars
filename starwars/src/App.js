@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      activeChar: {},
     };
   }
 
@@ -31,10 +32,14 @@ class App extends Component {
       });
   };
 
+  selectActiveCharacter = id => {
+    this.setState({ activeChar: this.state.starwarsChars[id] });
+  }
+
   render() {
     return (
       <div className="App">
-        {<CharacterList characters={this.state.starwarsChars} />}
+        {<CharacterList characters={this.state.starwarsChars} selectChar={this.selectActiveCharacter} />}
       </div>
     );
   }
