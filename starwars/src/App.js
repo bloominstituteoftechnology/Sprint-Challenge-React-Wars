@@ -31,13 +31,18 @@ class App extends Component {
       });
   };
 
+  expand = (e) =>{
+
+   e.target.nextElementSibling.classList.toggle('hidden');
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map((Element)=>{
           // return JSON.stringify(Element);
-          return <StarCard data={Element} />
+          return <StarCard methods={this.expand} data={Element} />
         })}
       </div>
     );

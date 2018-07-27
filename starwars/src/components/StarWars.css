@@ -1,9 +1,15 @@
 .starCardContainer{
     background-color: white;
     margin: 20px;
+
+}
+.starCardTitleBar{
+padding: 10px;
 }
 .starCardBody{
     display:flex;
+    height: 30vh;
+    padding: 5px;
 }
 
 .hidden{
