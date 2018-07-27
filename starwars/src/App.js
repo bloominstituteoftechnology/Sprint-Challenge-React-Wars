@@ -8,7 +8,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      overlay: true
+      overlay: true,
+      show: true
     };
   }
 
@@ -34,8 +35,9 @@ class App extends Component {
 
   handleOverlayClick=()=>{
     let chars = this.state.starwarsChars.slice();
-    chars = chars.map(item => {return item.show=false})
-    console.log(chars);
+    chars.forEach(char => {return char.show=false});
+    chars[0].show=true;
+    console.log(chars[0]);
     this.setState(prevState => {
       return {overlay: !this.state.overlay}
     });
@@ -43,7 +45,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" onMouseEnter={this.loadpage}>
+      <div className="App">
         <Overlay overlay={this.state.overlay} overlayClick={this.handleOverlayClick} />
         <h1 className="Header">React Wars</h1>
         <CardsList array={this.state.starwarsChars} />
