@@ -2,8 +2,10 @@ import React from 'react';
 
 const CharCard = props => {
     return (
-        <div className="card char-card">
-            <h3>Name: {props.name}</h3>
+        <div className="card char-card col-3">
+            <div className="title">
+                <h3>{props.name}</h3>
+            </div>
             <h5>Height: {props.height}</h5>
             <h5>Mass: {props.mass}</h5>
             <h5>Hair Color: {props.hairColor}</h5>
