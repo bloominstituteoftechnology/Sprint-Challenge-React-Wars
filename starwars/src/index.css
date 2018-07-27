@@ -8,3 +8,13 @@ body, html, #root {
   font-family: sans-serif;
   height: 100%;
 }
+
+body {
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
