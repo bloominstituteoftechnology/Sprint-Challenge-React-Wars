@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,4 +9,7 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

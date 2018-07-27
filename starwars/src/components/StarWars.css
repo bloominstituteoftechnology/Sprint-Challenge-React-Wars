@@ -1,0 +1,16 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    font-size: 110%;
+    margin: 15px 5px;
+    padding: 0 20px;
+    background: lightslategray;
+    border: 3px double black;
+    width: 200px;
+}
