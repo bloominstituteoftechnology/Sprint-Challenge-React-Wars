@@ -3,7 +3,7 @@ import React from 'react';
 const Character = props => {
     return (
     <div>
-        {props.mychar.name}
+        { JSON.stringify(props.mychar, null, 2) }
     </div>
     );
 }
