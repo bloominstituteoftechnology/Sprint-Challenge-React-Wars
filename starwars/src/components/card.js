@@ -22,7 +22,7 @@ const ToonCard = props => {
               Height: {props.height}
               Weight: {props.weight}
               Birth Year: {props.birth_year}</p>
-            </CardText>
+            </CardText>            
           </CardBody>
         </Card>
       </div>
