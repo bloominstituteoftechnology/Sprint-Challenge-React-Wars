@@ -13,10 +13,6 @@ class Card extends Component {
           name: 'luke',
           url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/luke-sky.jpg'
         },
-        {
-          name: 'beru',
-          url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/Beru.jpg'
-        }
       ]
     }
   }
