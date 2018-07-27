@@ -1,21 +1,29 @@
-import React from 'react';
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const Example = (props) => {
+const Obiwan = () => {
   return (
     <div>
-      <Card inverse>
-        <CardImg width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97270&w=318&h=270&bg=333333&txtclr=666666" alt="Card image cap" />
-        <CardImgOverlay>
-          <CardTitle>Card Title</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-        </CardImgOverlay>
-      </Card>
+      <p>
+        "name": "Obi-Wan Kenobi", "height": "182", "mass": "77", "hair_color":
+        "auburn, white", "skin_color": "fair", "eye_color": "blue-gray",
+        "birth_year": "57BBY", "gender": "male", "homeworld":
+        "https://swapi.co/api/planets/20/", "films": [
+        "https://swapi.co/api/films/2/", "https://swapi.co/api/films/5/",
+        "https://swapi.co/api/films/4/", "https://swapi.co/api/films/6/",
+        "https://swapi.co/api/films/3/", "https://swapi.co/api/films/1/" ],
+        "species": [ "https://swapi.co/api/species/1/" ], "vehicles": [
+        "https://swapi.co/api/vehicles/38/" ], "starships": [
+        "https://swapi.co/api/starships/48/",
+        "https://swapi.co/api/starships/59/",
+        "https://swapi.co/api/starships/64/",
+        "https://swapi.co/api/starships/65/",
+        "https://swapi.co/api/starships/74/" ], "created":
+        "2014-12-10T16:16:29.192000Z", "edited": "2014-12-20T21:17:50.325000Z",
+        "url": "https://swapi.co/api/people/10/"
+      </p>
     </div>
   );
 };
 
-export default Example;
+export default Obiwan;
