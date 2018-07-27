@@ -45,6 +45,16 @@ class App extends Component {
       };
     });
   };
+  decrementLeftButton = (event) => {
+    event.preventDefault();
+    console.log("STATE PREVIOUSLY", this.state);
+    // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
+    this.setState(prevState => {
+      return {
+        leftCounter: prevState.leftCounter -1,
+      };
+    });
+  };
   // toggleChars= name => {
   //   let starwarsChars = this.state.starwarsChars.slice();
   //   starwarsChars = starwarsChars.map(char => {
@@ -77,7 +87,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CharacterForm rightCounter={this.incrementRightButton}/>
+        <CharacterForm 
+          rightCounter={this.incrementRightButton}
+          leftCounter={this.decrementLeftButton}
+        />
         <ListOfCharCards
           starwarsArray={this.state.starwarsChars}
           toggleChars={this.handleUpdateState}
