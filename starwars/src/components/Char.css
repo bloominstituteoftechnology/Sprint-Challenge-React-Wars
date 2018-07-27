@@ -1,0 +1,7 @@
+.character-container {
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    background: gray;
+    margin: 2%;
+}
