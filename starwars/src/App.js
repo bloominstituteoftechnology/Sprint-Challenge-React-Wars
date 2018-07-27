@@ -30,7 +30,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data); 
+        //console.log(data); 
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -86,27 +86,22 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <h5 onClick = {this.checkTheState}>Click to check State</h5>
+        {/* <h5 onClick = {this.checkTheState}>Click to check State</h5> */}
+        <button onClick = {this.handlePrevious}>Previous</button>
+        <button onClick = {this.handleNext}>Next</button>
         <div className="characters">
 
-          <Card   name = {characters.length > 0? characters[this.state.count].name: ""} key = {characters.length > 0? characters[this.state.count].created: ""} 
-           edited = {characters.length > 0? characters[this.state.count].edited: ""} eyeColor =  {characters.length > 0? characters[this.state.count].eye_color: ""} 
-           gender =  {characters.length > 0? characters[this.state.count].gender: ""} hairColor =  {characters.length > 0? characters[this.state.count].hair_color: ""}
-           mass =  {characters.length > 0? characters[this.state.count].mass: ""} skinColor =  {characters.length > 0? characters[this.state.count].skin_color: ""}
-           birthYear =  {characters.length > 0? characters[this.state.count].birth_year: ""}
+          {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
+        eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
+        skinColor ={character.skin_color} birthYear = {character.birth_year} films = {character.films}/> )  }
+        
+
            
-           />
-           <Films films = {characters.length > 0 ? characters[this.state.count].films: ""}/>
-           
+          
 
         </div>
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
-        
-        <div className="pages">
-          <button onClick = {() => this.handlePageChange(0)}>1</button><button onClick = {() => this.handlePageChange(1)}>2</button><button onClick = {() => this.handlePageChange(2)}>3</button><button onClick = {() => this.handlePageChange(3)}>4</button><button onClick = {() => this.handlePageChange(4)}>5</button><button onClick = {() => this.handlePageChange(5)}>6</button><button onClick = {() => this.handlePageChange(6)}>7</button><button onClick = {() => this.handlePageChange(7)}>8</button><button onClick = {() => this.handlePageChange(8)}>9</button><button onClick = {() => this.handlePageChange(9)}>10</button>
-          {/* {characters.length > 0 ? characters.map( (char, i) => <button onClick = {() => this.handlePageChange({count}) } >i</button> )   : <button>Zero pages</button>    } */}
-        </div>
       </div>
     );
   }
