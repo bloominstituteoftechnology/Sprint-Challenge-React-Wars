@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharCard from './components/CharCard';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      activeChar: 0
     };
+    this.changeChar = this.changeChar.bind(this);
+  }
+
+  changeChar(newChar) {
+    this.setState({
+      activeChar: newChar
+    });
   }
 
   componentDidMount() {
@@ -33,6 +42,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharCard charList={this.state.starwarsChars} charNum={this.state.activeChar} />
       </div>
     );
   }
