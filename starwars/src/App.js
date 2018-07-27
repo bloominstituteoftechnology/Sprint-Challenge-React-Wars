@@ -7,7 +7,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      allStarwarsChars: [],
+      selectedCharacter: null,
+      search: ""
     };
   }
 
@@ -24,7 +27,10 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: data.results,
+          allStarwarsChars: data.results
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -37,7 +43,13 @@ class App extends Component {
     });
   }
 
-
+handleSearch = (event) => {
+  this.setState ({
+    search: event.target.value,
+    starwarsChars: this.state.allStarwarsChars.filter((character) => 
+      new RegExp(event.target.value, "i").exec(character.name))
+  });
+}
 
 
 
@@ -45,6 +57,14 @@ class App extends Component {
     return (
       <div className="App">
           <div className="main">
+          <div className="sear-bar">
+          <input 
+            type="text"
+            placeholder="Search..."
+            value={this.state.search}
+            onChange={this.handleSearch}
+            />
+            </div>
           <h1 className="Header">React Wars</h1>
           <div className="characters">
             {this.state.starwarsChars.map(character => { 

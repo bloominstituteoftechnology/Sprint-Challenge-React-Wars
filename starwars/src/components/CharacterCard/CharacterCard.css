@@ -1,23 +1,28 @@
 
 .character-card {
-    display: none;
-    color: black;
-    font-weight: bold;
-    width: 100px;
-    height: auto;
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid black;
+    display: none;    
 }
 
 .selected {
     color: black;
     font-weight: bold;
-    width: 100px;
-    height: auto;
-    background-color: white;
-    text-align: center;
+    height: 100vh;
     padding: 10px;
+    background: white;
+    opacity: 0.4;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
+}
+
+.field {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px 0;
+    
 }
