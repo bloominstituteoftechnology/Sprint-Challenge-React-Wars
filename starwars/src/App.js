@@ -61,25 +61,27 @@ class App extends Component {
     url += "?page=" + page.toString()
 
     this.getCharacters(url);
-    this.setState({})
+    this.setState({page: page});
 
 
   }
 
   handlePrevious = () => {
-    // let count = this.state.count;
     
+    let page = this.state.page; 
 
-    // if(count - 1 > 0){
-    //   count--;
-    // } else {
-    //   count = this.state.starwarsChars.length -1; 
-    // }
+    if (page - 1 !== 0){
+      page--;
+    } else {
+      page = 87; 
+    }
+    let url = 'https://swapi.co/api/people/'
+    url += "?page=" + page.toString()
 
-    // this.setState({count:count}); 
+    this.getCharacters(url);
+    this.setState({page: page});
+
     console.log("previous");
-
-
   }
 
   handlePageChange = page => {
