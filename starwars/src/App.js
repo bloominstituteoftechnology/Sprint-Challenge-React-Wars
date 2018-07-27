@@ -36,11 +36,12 @@ class App extends Component {
 
 
   render() {
+    let characters = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
 
-        <Card checkState ={this.checkTheState}/>
+        {characters.map( character => <Card key= {character.created} name ={character.name}/>   )  }
       </div>
     );
   }

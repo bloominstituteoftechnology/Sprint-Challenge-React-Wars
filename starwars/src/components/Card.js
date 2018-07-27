@@ -13,7 +13,14 @@ class Card extends React.Component {
 
         return (
 
-            <div onClick = {this.props.checkState}>Checking out Placement</div>
+            // <div onClick = {this.props.checkState}>Checking out Placement</div>
+            <div className="characters">
+                <div className="character">
+                    <h1>{this.props.name}</h1>
+
+                </div>
+            
+            </div>
         );
     }
 }
