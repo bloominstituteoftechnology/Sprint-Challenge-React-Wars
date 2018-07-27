@@ -1,8 +1,16 @@
+@font-face{
+  font-family: DeathStar;
+  src: url(./assets/DeathStar.otf)
+}
+
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-family: DeathStar;
+  font-size: 70px;
+  text-shadow: 4px 2px 7px rgba(150, 150, 150, 1);
 }
 /* write your parent styles in here for your App.js */

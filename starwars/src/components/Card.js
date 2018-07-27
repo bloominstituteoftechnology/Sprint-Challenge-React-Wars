@@ -1,22 +1,31 @@
-import React from 'react';
+import React from "react";
 
 const Card = props => {
-  const {name, height, hair_color, eye_color, birth_year, gender} = props.character;
+  const {
+    name,
+    height,
+    hair_color,
+    eye_color,
+    birth_year,
+    gender,
+  } = props.character;
 
   return (
-  <div>
-    <h1>{name}</h1>
-    <div>
-      <p>{birth_year}</p>
-      <p>{gender}</p>
+    <div className="card">
+      <h1 className="card__header">{name}</h1>
+      <div className="card__body">
+        <div className="card__row">
+          <p>DOB: {birth_year}</p>
+          <p>{gender}</p>
+        </div>
+        <div className="card__row">
+          <p>height: {height}</p>
+          <p>hair color: {hair_color}</p>
+          <p>eye color: {eye_color}</p>
+        </div>
+      </div>
     </div>
-    <div>
-      <p>{height}</p>
-      <p>{hair_color}</p>
-      <p>{eye_color}</p>
-    </div>
-  </div>
-  )
-}
+  );
+};
 
 export default Card;
