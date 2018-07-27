@@ -38,7 +38,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App crt">
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map((Element)=>{
           // return JSON.stringify(Element);

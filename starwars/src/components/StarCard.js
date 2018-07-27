@@ -4,17 +4,19 @@ import './StarWars.css';
  const StarCard = (props) =>{
         const charInfo = props.data;
    return(
-       <div className="starCardContainer" >
+       <div className="starCardContainer " >
         <div className="starCardTitleBar"onClick={props.methods} >
             {charInfo.name}
         </div>
-        <div className= "starCardBody">
-        <div className="birthYear">Birth Year:<br/> {charInfo.birth_year}</div>
-        <div className="eyeColor">Eye Color: <br/> {charInfo.eye_color}</div>
-        <div className={  charInfo.hair_color === 'n/a' ? 'hidden hairColor':'hairColor'}>Hair Color:<br/> {charInfo.hair_color}</div>
-        <div className={  charInfo.gender === 'n/a' ? 'hidden gender':'gender'}>Gender: <br/>{charInfo.gender}</div>
-        <div className="height">Height: <br/>{charInfo.height}</div>
-        <div className="mass">Mass:<br/> {charInfo.mass}</div>
+        <div className= "starCardBody hidden">
+        <div className="birthYear dataResult ">Birth Year:<br/> {charInfo.birth_year}</div>
+        <div className="eyeColor dataResult">Eye Color: <br/> {charInfo.eye_color.charAt(0).toUpperCase() + charInfo.eye_color.slice(1)}</div>
+        <div className={  charInfo.hair_color === 'n/a' ? 'hidden hairColor dataResult':'hairColor dataResult'}>Hair Color:<br/> {charInfo.hair_color.charAt(0).toUpperCase() + charInfo.hair_color.slice(1)}</div>
+        <div className={  charInfo.skin_color === 'n/a' ? 'hidden skinColor dataResult':'skinColor dataResult'}>Skin Color:<br/> {charInfo.skin_color.charAt(0).toUpperCase() + charInfo.skin_color.slice(1)}</div>
+
+        <div className={  charInfo.gender === 'n/a' ? 'hidden gender dataResult':'gender dataResult'}>Gender: <br/>{charInfo.gender.charAt(0).toUpperCase() + charInfo.gender.slice(1)}</div>
+        <div className="height dataResult">Height: <br/>{charInfo.height}</div>
+        <div className="mass dataResult">Mass:<br/> {charInfo.mass}</div>
 
 
 
