@@ -42,13 +42,22 @@
   cursor: pointer;
 }
 
-.left-button {
+.left-btn {
   background-image: url('./img/lightsaber_left.png');
 }
 
-.right-button {
+.left-btn-hidden {
+  display: none;
+}
+
+.right-btn {
   background-image: url('./img/lightsaber_right.png');
 }
+
+.right-btn-hidden {
+  display: none;
+}
+
 
 .core-content {
   margin-top: 175px;
