@@ -4,5 +4,13 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-family: 'Audiowide', cursive;
+  font-size: 40px;
 }
 /* write your parent styles in here for your App.js */
+
+.StarWarsChars {
+  font-size: 25px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+}
