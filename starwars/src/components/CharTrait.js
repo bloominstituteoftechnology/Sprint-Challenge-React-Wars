@@ -8,7 +8,7 @@ const CharTrait = (props) => {
 
     return (
         
-        <div className="trait">{`${props.traitName} : ${props.traitValue}`}</div>
+        <div className="trait">{`${props.traitName} : ${props.traitValue}`}></div>
     );
     
 };
