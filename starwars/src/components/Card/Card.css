@@ -1,0 +1,33 @@
+.card-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-component {
+  border: 2px solid lightgray;
+  box-shadow: 2px 2px gray;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.profile-header {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.profile-information-list {  
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-information-list > li {
+  font-size: 20px;
+  margin: 3px 0;
+}

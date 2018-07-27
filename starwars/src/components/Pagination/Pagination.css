@@ -1,0 +1,13 @@
+.pagination-component {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+button {
+  border: 3px solid black;
+  background: transparent;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
