@@ -7,7 +7,7 @@ const CharacterList = props => {
         <div className="my-list">
             {props.mycharacters.map (mychar => (
                 <Character
-                    key={mychar.id}
+                    key={mychar.name}
                     mychar={mychar}
                 />
             ))}
