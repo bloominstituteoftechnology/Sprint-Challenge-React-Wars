@@ -1,0 +1,12 @@
+.char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.char {
+  border: 1px solid black;
+  width: 50%;
+  background-color: burlywood;
+  margin: 20px 10px;
+}
