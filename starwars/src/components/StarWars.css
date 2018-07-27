@@ -3,6 +3,8 @@
   padding: 5rem 3rem;
   margin: 1.5rem;
   clip-path: polygon(50% 0, 100% 3rem, 100% calc(100% - 3rem), 50% 100%, 0 calc(100% - 3rem), 0 3rem);
+  width: 300px;
+  animation: fadeIn 1s;
 }
 
 .Card__title {
@@ -20,4 +22,13 @@
   text-transform: uppercase;
   font-size: 1.8rem;
   color: #795548;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
