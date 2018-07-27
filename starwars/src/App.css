@@ -1,8 +1,43 @@
 .App {
-  text-align: center;
+ max-width: 1000px; 
+  width: 100%; 
+  margin: 0 auto; 
+
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 4rem; 
+  text-align:center; 
 }
 /* write your parent styles in here for your App.js */
+
+.character-cards {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 0 auto;
+  align-items: center; 
+}
+
+.characterCard{
+  width: 30%; 
+  margin-right: 3%;  
+  background-color: white; 
+  margin-bottom: 30px; 
+  padding: 20px;
+  border-radius: 20px; 
+}
+
+.characterCard:hover {
+  background-color: #D3D3D3; 
+}
+
+.character {
+  font-size: 1.6rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+}
