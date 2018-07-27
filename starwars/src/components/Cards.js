@@ -7,8 +7,10 @@ const Cards = props => {
     <div>
       {props.starwarsChars.map(newChar => (
         <Card
-          key = {newChar.created}
-          thisChar = {newChar}
+            handleToggle = {props.handleToggle}
+            key = {newChar.created}
+            thisChar = {newChar}
+            open = {props.open}
         />
       ))}
     </div>

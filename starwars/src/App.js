@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      open: false
     };
   }
 
@@ -30,12 +31,27 @@ class App extends Component {
       });
   };
 
+  handleToggleInfo = created => {
+    let starwarsChars = this.state.starwarsChars.slice();
+    starwarsChars = starwarsChars.map(thisChar => {
+      if (thisChar.created === created) {
+        thisChar.open = !thisChar.open;
+        return thisChar;
+      } else {
+        return thisChar;
+      }
+    });
+    this.setState({ starwarsChars });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Cards
           starwarsChars={this.state.starwarsChars}
+          handleToggle={this.handleToggleInfo}
+          open = {this.state.open}
         />
       </div>
     );
