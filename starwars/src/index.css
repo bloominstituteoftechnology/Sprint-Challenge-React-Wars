@@ -9,7 +9,12 @@ body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background-image: url('./sw-bg.jpg');
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(16, 25%, 43%, 0.75),
+    hsla(16, 25%, 33%, 0.75)
+    ),
+    url('./sw-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
