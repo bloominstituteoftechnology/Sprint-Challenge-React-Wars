@@ -1,7 +1,20 @@
-body {
+*{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  background-image: linear-gradient(to right bottom, #393e46, #222831);
+  height: 100%;
+  /* background-image: url('./sw-bg.jpg'); */
   background-size: cover;
 }
+
