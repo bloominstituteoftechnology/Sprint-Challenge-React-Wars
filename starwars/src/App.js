@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div className="App">
         <section>
         <Characters chars={this.state.starwarsChars} />
         </section>

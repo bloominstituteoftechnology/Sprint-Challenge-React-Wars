@@ -1,34 +1,38 @@
 .App {
-  text-align: center;
+  text-align: center;;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
-.starWars {
-  width: 400px; 
+.chars-container{
+  width: 650px; 
   height: auto; 
-  padding: 20px; 
-  margin: auto; 
   display: flex; 
-  justify-content: space-between; 
+  flex-direction: row;
+  flex-wrap: wrap;  
+  margin: auto; 
+  justify-content: space-evenly;
+}
+.starWars {
+  width: 150px; 
+  height: 350px; 
+  padding: 20px;  
+  display: flex; 
+  flex-direction: column; 
   align-items: center; 
   border: 1px solid white; 
-  margin-bottom: 20px; 
-  margin-top:20px; 
+  margin: 55px; 
   background: white; 
-  opacity: .7;  
-}
-h1{
-  font-size: 50px; 
-  display: flex; 
-  justify-content: center;
-  color: gray
+  opacity: .7; 
+  border-radius: 100px; 
 }
 .char1{
-  font-size: 30px; 
+  margin: 30px 0;
+  color: darkorchid ; 
 }
-.char2{
-  
+.first{
+  font-size: 20px;
+  color: darkolivegreen; 
 }
