@@ -1,0 +1,9 @@
+.card-wrapper {
+    height: 120px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
