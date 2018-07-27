@@ -10,6 +10,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+  
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -30,6 +31,21 @@ class App extends Component {
         throw new Error(err);
       });
   };
+
+  // toggleExpand = (name) => {
+  //   console.log(name);
+  //   this.setState(prevState => {
+  //     return {
+  //       starwarsChars: prevState.starwarsChars.map(char => {
+  //         if (name === char.name) {
+  //           return {
+  //             ...char, expand: !char.expand
+  //           }
+  //         } else return char
+  //       })
+  //     }
+  //   });
+  // }
 
   render() {
     return (

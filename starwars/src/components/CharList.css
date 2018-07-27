@@ -1,6 +1,6 @@
 .list-container {
     display: flex;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     flex-wrap: wrap;
     flex: 0 1 60%;
     justify-content: center;
