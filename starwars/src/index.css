@@ -1,11 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
   /* min-height: 100%; */
 }
 
+
 body {
-  margin: 0;
-  padding: 0;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -19,6 +24,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  box-sizing: border-box;
   /* min-height: 100%; */
 }
 

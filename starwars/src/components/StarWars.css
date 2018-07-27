@@ -1,4 +1,23 @@
 .Card {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5rem 3rem;
+  margin: 1.5rem;
+  clip-path: polygon(50% 0, 100% 3rem, 100% calc(100% - 3rem), 50% 100%, 0 calc(100% - 3rem), 0 3rem);
+}
+
+.Card__title {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-bottom: 3rem;
+  color: #795548;
+}
+
+.Card__bio-data:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.Card__bio-field {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #795548;
 }
