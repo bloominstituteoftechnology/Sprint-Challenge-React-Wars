@@ -1,0 +1,17 @@
+.cardWrapper {
+    width: 318px;
+    height: 350px;
+    margin: 20px;
+}
+
+.cardWrapper img {
+    width: 318px;
+    height: 180px;
+}
+
+.peopleWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
