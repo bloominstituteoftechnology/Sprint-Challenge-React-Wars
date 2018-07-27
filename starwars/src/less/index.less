@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   // background-image: url('./img/sw-bg.jpg');
+  background-color: black;
   background-size: cover;
 }
 
@@ -11,10 +12,28 @@ body {
   border-radius: 15px;
   background-color: rgba(192,192,192,0.5);
   margin: 10px;
-  max-width: 300px;
+  width: 300px;
   height: auto;
   &:hover {
     background-color: rgba(192,192,192,0.7);
 
   }
+}
+
+.all-cards-main {
+  border: 1px solid red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-cards-sub {
+  border: 1px solid red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
