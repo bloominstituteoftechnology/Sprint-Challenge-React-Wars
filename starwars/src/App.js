@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -32,12 +32,44 @@ class App extends Component {
   };
 
 
+  // // toggle completed todos
+  // toggleCompletedChars= name => {
+  //   let starwarsChars = this.state.starwarsChars.slice();
+  //   starwarsChars = starwarsChars.map(char => {
+  //     // if the todoData element id
+  //     // equals the id of the one we click
+  //     // we change to the opposite of what 
+  //     // it is, true to false, f to t
+  //     if (char.name === name) {
+  //       char.toggled = !char.toggled;
+  //       return char;
+  //     } else {
+  //       return char;
+  //     }
+  //   });
+  //   this.setState({ starwarsChars });
+  // };
+
+  // handleUpdateState = event => {
+  //   event.preventDefault();
+  //   const starwarsChars = this.state.starwarsChars.slice();
+  //   // clone our state starwarsChars array.
+  //   starwarsChars.push({
+  //     name: this.state.name,
+  //     id: Date.now(),
+  //     completed: true
+  //   });
+  //   this.setState({ starwarsChars, toggled: true});
+  // };
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <CharacterForm />
-        <ListOfCharCards starwarsArray={this.state.starwarsChars} />
+        <CharacterForm handleToggleCard={this.handleUpdateState} />
+        <ListOfCharCards 
+          starwarsArray={this.state.starwarsChars} 
+          handleCompletedChars={this.toggleCompletedChars}
+        />
       </div>
     );
   }
