@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWars from './components/StarWars';
+
 
 class App extends Component {
   constructor() {
@@ -27,12 +29,26 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
+
+
+
   };
+
+
 
   render() {
     return (
       <div className="App">
+
         <h1 className="Header">React Wars</h1>
+        
+
+
+         <StarWars className="container"
+          starwarsChars={this.state.starwarsChars}
+        />
+
       </div>
     );
   }
