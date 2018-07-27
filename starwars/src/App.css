@@ -6,3 +6,29 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.starWars {
+  width: 400px; 
+  height: auto; 
+  padding: 20px; 
+  margin: auto; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border: 1px solid white; 
+  margin-bottom: 20px; 
+  margin-top:20px; 
+  background: white; 
+  opacity: .7;  
+}
+h1{
+  font-size: 50px; 
+  display: flex; 
+  justify-content: center;
+  color: gray
+}
+.char1{
+  font-size: 30px; 
+}
+.char2{
+  
+}
