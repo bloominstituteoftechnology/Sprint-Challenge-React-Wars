@@ -10,7 +10,9 @@ const CharacterList = props => {
                 species = {character.species[0]}
                 birthYear = {character.birth_year}
                 eyeColor = {character.eye_color}
-                homeWorld = {character.homeworld}
+                hair = {character.hair_color}
+                height = {character.height}
+                mass = {character.mass}
                 />
             </div>
         ) 
