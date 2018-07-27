@@ -1,8 +1,63 @@
-.App {
-  text-align: center;
+* {
+  /*border: 1px solid black;*/
 }
-.Header {
+
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 62.5%;
+}
+
+.container {
+  text-align: center;
+  width: 500px;
+  font-size: 1.2rem;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+h1 {
+  font-size: 2rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.character-preview {
+  margin: 10px 0;
+}
+
+.character-preview:hover {
+  color: green;
+}
+
+.character-card-container {
+  margin-top: 50px;
+}
+
+.character-card {
+  width: 300px;
+  border: 2px solid black;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-card h1 {
+  margin: 0;
+}
+
+.character-card li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.return {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.return:hover {
+  color: green;
+}

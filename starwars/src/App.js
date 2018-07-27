@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+import CharacterCard from './components/CharacterCard';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      displayedCharacter: null
     };
   }
 
@@ -14,9 +17,6 @@ class App extends Component {
   }
 
   getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
         return res.json();
@@ -29,12 +29,28 @@ class App extends Component {
       });
   };
 
+  displayCharacter = name => {
+    const displayedCharacter = this.state.starwarsChars.find(char => char.name === name);
+    console.log(displayedCharacter);
+    this.setState({ displayedCharacter: displayedCharacter })
+  }
+
+  returnToList = event => {
+    this.setState({ displayedCharacter: null })
+  }
+
   render() {
+    if (this.state.displayedCharacter === null) {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className="container">
+        <h1>React Wars</h1>
+        <CharacterList chars={this.state.starwarsChars}
+                       displayCharacter={this.displayCharacter} />
       </div>
-    );
+    );} else {return (
+      <CharacterCard returnToList={this.returnToList}
+                     character={this.state.displayedCharacter} />
+    );}
   }
 }
 
