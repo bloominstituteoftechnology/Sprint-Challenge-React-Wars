@@ -1,17 +1,41 @@
 .my-list {
-    border: solid blue;
+    /* border: solid blue; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .text-box {
     /* border: 1px solid red; */
-    width: 33.3%;
+    width: 250px;
+    margin: 20px;
+    background-color: #AA7B5C;
+    opacity: .75;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text-box:hover {
+    color: white;
+    background-color: rgb(128, 54, 5);
+    opacity: .75;
+    font-style: italic;
 }
 
 .unordered-list {
+    padding-left: 0;
+}
+
+.char-names {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.properties {
     list-style-type: none;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
 /* .text-box .image-container {
