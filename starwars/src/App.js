@@ -40,7 +40,7 @@ class App extends Component {
   }
   handleNext = () => {
     let count = this.state.count;
-    if(count + 1 <= this.state.starwarsChars.length){
+    if(count + 1 >= this.state.starwarsChars.length){
       count++;
     } else {
       count = 0; 
@@ -50,7 +50,8 @@ class App extends Component {
   }
 
   handlePrevious = () => {
-    let count = this.state.count; 
+    let count = this.state.count;
+    
 
     if(count - 1 > 0){
       count--;
@@ -71,8 +72,6 @@ class App extends Component {
 
   render() {
     let characters = this.state.starwarsChars; 
-    console.log(this.character);
-
     
     
     
@@ -98,10 +97,12 @@ class App extends Component {
            />
 
         </div>
-        <button onClick = {this.handlePrevious}>Previous</button>
-        <button onClick = {this.handleNext}>Next</button>
+        {/* <button onClick = {this.handlePrevious}>Previous</button>
+        <button onClick = {this.handleNext}>Next</button> */}
+        {/* ^works but buggy and i believe its because of the way that we are rendering the data from the API */}
         <div className="pages">
           <button onClick = {() => this.handlePageChange(0)}>1</button><button onClick = {() => this.handlePageChange(1)}>2</button><button onClick = {() => this.handlePageChange(2)}>3</button><button onClick = {() => this.handlePageChange(3)}>4</button><button onClick = {() => this.handlePageChange(4)}>5</button><button onClick = {() => this.handlePageChange(5)}>6</button><button onClick = {() => this.handlePageChange(6)}>7</button><button onClick = {() => this.handlePageChange(7)}>8</button><button onClick = {() => this.handlePageChange(8)}>9</button><button onClick = {() => this.handlePageChange(9)}>10</button>
+          {/* {characters.length > 0 ? characters.map( (char, i) => <button onClick = {() => this.handlePageChange({count}) } >i</button> )   : <button>Zero pages</button>    } */}
         </div>
       </div>
     );
