@@ -9,14 +9,21 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+      Component based UI Library. Used primarily to render views. It helps take the load off the DOM when it comes to complex and data heavy websites. Since react uses a virtual DOM, all the changes and heavy lifting is done by the virtual DOM, and when it is time to render views, it updates the DOM for specific components that changed.
 
 1.  What does it mean to _think_ in react?
+      It is the way you see a website, all of the 'components' that are in a website, or project you are working on. It is preplanning how you want the components to work, and how you want to seperate them.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+      functional compoents are functions, they do not hold state, although you can just create an object within the function and treat it as state, functional components are used primarily to return views for the main component to render. They take in props as arguments with the data that comes from the main components, and they use that into to return elements/views
+
+      class components are classes, they can hold state, and they are extended from the main React Component that holds all of the properties and methods that allow classes to do what they do. Classes are used to not only render views but to also manage state. It can manipulate data, change views, pass data to other components and much more. It contains custom methods that manage/change data and also life cycles
 
 1.  Describe state.
+      state is the heart of React, it is data, state can come from anywhere, mostly held in objects or arrays. You use class components to manipulate data, and state uses props to be passed around to other components
 
 1.  Describe props.
+      props is the blood of React, it is what is used to pass around data to other components, it is short for properties and it comes from the react api as well
 
 ## Project
 

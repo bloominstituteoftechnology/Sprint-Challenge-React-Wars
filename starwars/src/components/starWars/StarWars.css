@@ -1,0 +1,44 @@
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  width: 440px;
+  height: 500px;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .3); 
+  border: solid 1px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  box-shadow: .5px .5px 35px .5px rgba(255,255,255,.7);
+}
+
+.char-info__img-container {
+  margin: auto;
+  width: 96.5%;
+  height: 227px;
+  border: solid 1px yellowgreen;
+  margin-top: 10px;
+}
+
+.char-info__title-container {
+  margin-top: 20px;
+}
+
+.char-info__item.home {
+  margin-top: 15px;
+}
+
+.char-info__container {
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.char-info__item {
+  margin-top: 10px;
+}
+
