@@ -33,6 +33,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="character"><button className="btn">Luke Skywalker</button></div> 
+        <div className="character"><button className="btn">C-3PO</button></div> 
+        <div className="character"><button className="btn">R2-D2</button></div> 
+        <div className="character"><button className="btn">Darth Vader</button></div> 
+        <div className="character"><button className="btn">Leia Organa</button></div> 
+        <div className="character"><button className="btn">Owen Lars</button></div> 
+        <div className="character"><button className="btn">Beru Whitesun Lars</button></div> 
+        <div className="character"><button className="btn">R5-D4</button></div> 
+        <div className="character"><button className="btn">Biggs Darklighter</button></div> 
+        <div className="character"><button className="btn">Obi-Wan Kenobi</button></div> 
       </div>
     );
   }
