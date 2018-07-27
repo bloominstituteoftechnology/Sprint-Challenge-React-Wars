@@ -1,8 +1,22 @@
-.App {
-  text-align: center;
-}
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-}
 /* write your parent styles in here for your App.js */
+.app-bg{
+  padding-top: 0;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  cursor: crosshair;
+}
+.app-container{
+  max-width: 880px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #33FF33;
+  font-family: 'VT323';
+  font-size: 2rem;
+}

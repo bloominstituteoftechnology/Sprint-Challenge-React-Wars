@@ -1,0 +1,23 @@
+.character-list{
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+}
+
+.character-list .character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #33FF33;
+  height: 15%;
+  width: 35%;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+}

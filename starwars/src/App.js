@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CharacterList from './components/CharacterList';
+import CharacterDisplayFull from './components/CharacterDisplayFull';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
-      activeChar: {},
+      activeChar: null,
     };
   }
 
@@ -36,10 +37,18 @@ class App extends Component {
     this.setState({ activeChar: this.state.starwarsChars[id] });
   }
 
+  deselectActiveCharacter = () => {
+    this.setState({ activeChar: null })
+  }
+
   render() {
     return (
-      <div className="App">
-        {<CharacterList characters={this.state.starwarsChars} selectChar={this.selectActiveCharacter} />}
+      <div className="app-bg">
+        <div className="app-container">
+          {(this.state.activeChar === null) ?
+            <CharacterList characters={this.state.starwarsChars} selectChar={this.selectActiveCharacter} /> :
+            <CharacterDisplayFull character={this.state.activeChar} deselectChar={this.deselectActiveCharacter} /> }
+        </div>
       </div>
     );
   }
