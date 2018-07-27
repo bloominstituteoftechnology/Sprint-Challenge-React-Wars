@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './StarWars.css';
 import CardCharInfo from './CardCharInfo';
+import CardImgs from './CardImgs';
 
 
 class Card extends Component {
@@ -9,19 +10,25 @@ class Card extends Component {
     this.state = {
       cardImgs: [
         {
-          url: './img/luke-sky.jpg'
+          name: 'luke',
+          url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/luke-sky.jpg'
+        },
+        {
+          name: 'beru',
+          url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1688543/Beru.jpg'
         }
       ]
     }
   }
+
   render() {
     return (
       <div className="card-container">
         <h2>{this.props.name}</h2>
         <div className="char-info__img-container">
-        {this.state.cardImgs.map(item => <cardImgs 
+        {this.state.cardImgs.map(item => <CardImgs 
           key={1977 + Math.random()}
-          url={item.url}
+          url={`${item.url}`}
         />)}
         </div>
 
