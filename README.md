@@ -20,7 +20,6 @@
       class components are classes, they can hold state, and they are extended from the main React Component that holds all of the properties and methods that allow classes to do what they do. Classes are used to not only render views but to also manage state. It can manipulate data, change views, pass data to other components and much more. It contains custom methods that manage/change data and also life cycles
 
 1.  Describe state.
-
       state is the heart of React, it is data, state can come from anywhere, mostly held in objects or arrays. You use class components to manipulate data, and state uses props to be passed around to other components
 
 1.  Describe props.

@@ -78,10 +78,3 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-.bg-img {
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
-  position: relative;
-  top: 0;
-  left: 0;
-}

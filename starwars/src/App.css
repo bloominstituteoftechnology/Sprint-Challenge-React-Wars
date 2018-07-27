@@ -1,8 +1,49 @@
-.main-container {
+
+.web-container {
+  width: 100%;
+  height: 100%;
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+.star-main-container {
   text-align: center;
   width: 100%;
   padding: 10px;
+  margin-bottom: -60px;
 }
+
+.star-bg-img {
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.simpsons-main-container {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: -60px;
+}
+
+.simpsons-bg-img {
+  background-image: url('./simpsons-bgg.jpg');
+  background-size: cover;
+  background-position-y: -465px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 /* write your parent styles in here for your App.js */
 
 h1 {
@@ -19,18 +60,19 @@ h2 {
 
 h3 {
   font-size: 2.3rem;
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: white;
+  text-shadow: 1px 1px 5px #443e3e;
 }
 
 p {
+  color: white;
   font-size: 1.8rem;
-  text-shadow: .5px .5px 1px rgba(255,255,255,.7);
+  text-shadow: .5px .5px 1px rgba(0,0,0,.7);
 }
 
 span {
   font-weight: bold;
-  text-shadow: 1px 1px 3px #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.7);
 }
 
 a {
@@ -42,5 +84,28 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px solid black;
+  color: yellowgreen;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.7);
 }
+
+button {
+  width: 150px;
+  height: 60px;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0,0,0,.5);
+  border: solid 2px rgba(255,255,255,.7);
+  border-radius: 5px;
+  position: relative;
+  bottom: 200px;
+  right: 45%;
+  left: 45%;
+  z-index: 1000;
+  box-shadow: .3px .3px 10px .3px rgba(255,255,255,.5);
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: .5px .5px 25px .5px rgba(255,255,255,.7);
+}
+
