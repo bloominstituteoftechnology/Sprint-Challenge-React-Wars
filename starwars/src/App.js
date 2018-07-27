@@ -8,7 +8,9 @@ class App extends Component {
 		super();
 		this.state = {
 			starwarsChars: [],
-			page: 1
+			page: 1,
+			prev: '',
+			next: ''
 		};
 	}
 
@@ -32,7 +34,7 @@ class App extends Component {
 			})
 			.then(data => {
 				console.log(data);
-				this.setState({ starwarsChars: data.results });
+				this.setState({ starwarsChars: data.results, next: data.next, prev: data.previous });
 			})
 			.catch(err => {
 				throw new Error(err);
@@ -47,7 +49,7 @@ class App extends Component {
 		if (this.state.page > 1){
 			this.setState((prevState) => {
 				return {page: prevState.page - 1};
-			});
+			}, () => this.getCharacters(this.state.prev));
 		}
 	}
 
@@ -55,7 +57,7 @@ class App extends Component {
 		if (this.state.page < 5) {
 			this.setState((prevState) => {
 				return { page: prevState.page + 1 };
-			});
+			}, () => this.getCharacters(this.state.next));
 		}
 	}
 
