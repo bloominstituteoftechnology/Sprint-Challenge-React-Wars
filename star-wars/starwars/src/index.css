@@ -5,3 +5,6 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+ul li {
+  list-style: none;
+}
