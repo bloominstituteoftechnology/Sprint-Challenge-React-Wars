@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import charactersForm from'./components/charactersForm'; 
+// import charactersForm from'./components/charactersForm'; 
 
+const characters = props => {
+  const { name } = props.charactersProp;
+  return (
+    <div>
+      <h4>Name: {name}</h4>
+    </div>
+  );
+};
 class App extends Component {
   constructor() {
     super();
@@ -14,9 +22,9 @@ class App extends Component {
     e.preventDefault(); 
     const starwarsChars = this.state.starwarsChars.slice(); 
     starwarsChars.push({
-      name:this.state.starwarsChars, 
+    name:this.state.starwarsChars, 
     });
-     this.setState({ starwarsChars })
+     this.setState({ starwarsChars: starwarsChar })
   }
 
   componentDidMount() {
@@ -41,8 +49,8 @@ class App extends Component {
 
   render() {
     return (
-    <charactersForm
-      handleDisplay={this.displayInfo} />
+      {this.state.starwarsChars.map(starwarsChar => <characters charactersProp={starwarsChar} />)}
+      <button className="btn" onClick={this.displayInfo}>Characters</button>
     );
   }
 }
