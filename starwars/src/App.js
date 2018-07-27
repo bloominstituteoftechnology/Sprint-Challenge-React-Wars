@@ -3,13 +3,20 @@ import './App.css';
 
 import CharacterList from './components/CharacterList';
 import CharacterDisplayFull from './components/CharacterDisplayFull';
+import FontMenu from './components/FontMenu';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
+      fonts: [
+        {font: 'coruscant-common', active: true, display: 'Coruscant Common',},
+        {font: 'aurebesh', active: false, display: 'Aurebesh',},
+        {font: 'mandalorian', active: false, display: 'Mandalorian',},
+      ],
       activeChar: null,
+      activeFont: 'coruscant-common',
     };
   }
 
@@ -41,10 +48,15 @@ class App extends Component {
     this.setState({ activeChar: null })
   }
 
+  selectFont = font => {
+    this.setState({activeFont: font})
+  }
+
   render() {
     return (
       <div className="app-bg">
-        <div className="app-container">
+        <div className={`app-container ${this.state.activeFont}`}>
+        <FontMenu fonts={this.state.fonts} selectFont={this.selectFont}/>
           {(this.state.activeChar === null) ?
             <CharacterList characters={this.state.starwarsChars} selectChar={this.selectActiveCharacter} /> :
             <CharacterDisplayFull character={this.state.activeChar} deselectChar={this.deselectActiveCharacter} /> }

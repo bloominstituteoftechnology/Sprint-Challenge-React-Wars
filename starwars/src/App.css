@@ -1,3 +1,25 @@
+@font-face {
+  font-family: aurebesh;
+  src: url('./fonts/Heaven-the-Galactic-Basic.otf');
+}
+
+@font-face {
+  font-family: mandalorian;
+  src: url('./fonts/mandalor.ttf');
+}
+
+.coruscant-common{
+  font-family: 'VT323';
+}
+
+.aurebesh{
+  font-family: aurebesh;
+}
+
+.mandalorian{
+  font-family: mandalorian;
+}
+
 /* write your parent styles in here for your App.js */
 .app-bg{
   padding-top: 0;
@@ -8,6 +30,7 @@
   width: 100%;
   cursor: crosshair;
 }
+
 .app-container{
   max-width: 880px;
   height: 100%;
@@ -17,6 +40,5 @@
   justify-content: center;
   align-items: center;
   color: #33FF33;
-  font-family: 'VT323';
   font-size: 2rem;
 }
