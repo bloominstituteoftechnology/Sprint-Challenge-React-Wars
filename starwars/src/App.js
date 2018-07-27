@@ -27,7 +27,8 @@ class App extends Component {
       })
       .then(data => {
         this.setState({
-          starwarsChars: data.results
+          starwarsChars: data.results,
+          leftCounter: data.results.length
         });
       })
       .catch(err => {
@@ -37,7 +38,6 @@ class App extends Component {
 
   incrementRightButton = (event) => {
     event.preventDefault();
-    console.log("STATE PREVIOUSLY", this.state);
     // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
     this.setState(prevState => {
       return {
@@ -47,13 +47,22 @@ class App extends Component {
   };
   decrementLeftButton = (event) => {
     event.preventDefault();
-    console.log("STATE PREVIOUSLY", this.state);
+    console.log("event", this.state.leftCounter);
     // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
-    this.setState(prevState => {
-      return {
-        leftCounter: prevState.leftCounter -1,
-      };
-    });
+    if (this.state.leftCounter <= 1) {
+      this.setState(prevState => {
+        return {
+            leftCounter: 10,
+        };
+      });
+    }
+    else {
+      this.setState(prevState => {
+        return {
+            leftCounter: prevState.leftCounter -1,
+        };
+      });
+    }
   };
   // toggleChars= name => {
   //   let starwarsChars = this.state.starwarsChars.slice();
