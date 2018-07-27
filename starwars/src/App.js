@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsCard from './StarWarsCard.js';
 
 class App extends Component {
   constructor() {
@@ -28,11 +29,11 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+  
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((e)=><StarWarsCard starProp={e}/>)};
       </div>
     );
   }
