@@ -4,9 +4,11 @@ import './StarWars.css';
 const Character = props => {
     return (
     <div className="text-box">
-        <img src="https://vignette.wikia.nocookie.net/star-wars-destiny-card-game/images/3/30/Swd03_poe-dameron.png/revision/latest?cb=20160924152517" alt="Avatar"/>
+        <div className="image-container">
+            {/* <img className="my-image" src="http://worldwideinterweb.com/wp-content/uploads/2016/11/celebrities-in-star-wars.jpg" alt="Avatar"/> */}
+        </div>
         <h4><b>{props.mychar.name}</b></h4>
-        <p>{ JSON.stringify(props.mychar, null, 2) }</p>
+        {/* <p>{ JSON.stringify(props.mychar, null, 2) }</p> */}
     </div>
     );
 }
