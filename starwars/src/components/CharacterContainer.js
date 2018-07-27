@@ -4,7 +4,7 @@ import './StarWars.css'
 const CharacterContainer = props => {
     return (
         <div>
-            {props.starwarsChars.map((character, id) => {
+            {props.starwarsChars.map((character) => {
                 return (
                     <div key={character.created}> 
                         <h2>{character.name}</h2>
