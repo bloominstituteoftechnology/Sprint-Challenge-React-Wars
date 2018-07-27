@@ -1,9 +1,8 @@
 import React from 'react';
 
-const charactersForm = props => {
+const CharactersForm = props => {
     return (
-        <form>
-        <button className="btn" onClick={props.handleDisplay}>Characters</button>
-        </form>
+        <button className="btn" onClick={props.handleDisplayInfo} onChange={props.handleChangeChar}>Characters</button>
     );
 }
+export default CharactersForm; 

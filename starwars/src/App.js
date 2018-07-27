@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-// import charactersForm from'./components/charactersForm'; 
+import CharactersForm from'./components/CharactersForm'; 
 
-const characters = props => {
-  const { name } = props.charactersProp;
-  return (
-    <div>
-      <h4>Name: {name}</h4>
-    </div>
-  );
-};
+
 class App extends Component {
   constructor() {
     super();
@@ -22,11 +15,14 @@ class App extends Component {
     e.preventDefault(); 
     const starwarsChars = this.state.starwarsChars.slice(); 
     starwarsChars.push({
-    name:this.state.starwarsChars, 
+    name:this.state.starwarsChars[0], 
     });
-     this.setState({ starwarsChars: starwarsChar })
+     this.setState({ starwarsChars })
   }
 
+  changeChar = e => this.setState({ [e.target.name]: e.target.value });
+
+ 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -48,10 +44,15 @@ class App extends Component {
   };
 
   render() {
-    return (
-      {this.state.starwarsChars.map(starwarsChar => <characters charactersProp={starwarsChar} />)}
-      <button className="btn" onClick={this.displayInfo}>Characters</button>
-    );
+    return(
+      <div>
+      <CharactersForm 
+      handleDisplayInfo={this.displayInfo}
+      handleChangeChar={this.changeChar} 
+
+      />
+      </div>
+    )
   }
 }
 
