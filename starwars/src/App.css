@@ -7,6 +7,13 @@
 }
 /* write your parent styles in here for your App.js */
 
+@font-face {
+  font-family: starwars;
+  src: url(./fonts/DISTGRG_.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
 .char-card {
   margin: 25px;
   box-shadow: 10px 10px 20px #443e3e;
@@ -21,10 +28,16 @@
 
 .title h3 {
   margin-bottom: 0;
+  font-size: 36px;
   color: #e5b13a;
+  font-family: starwars;
 }
 
 .char-card h5 {
   color: #e5b13a;
-  font-family: 'Franklin Gothic Demi', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Demi', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Header {
+  font-family: starwars;
 }
