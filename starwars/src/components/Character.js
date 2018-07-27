@@ -14,7 +14,7 @@ const Character = props => {
             <li className="properties">hair color: {props.mychar.hair_color}</li>
             <li className="properties">skin color: {props.mychar.skin_color}</li>
             <li className="properties">eye color: {props.mychar.eye_color}</li>
-            <li className="properties">birth_year: {props.mychar.birth_year}</li> 
+            <li className="properties">birth year: {props.mychar.birth_year}</li> 
         </ul>
         {/* <p>{ JSON.stringify(props.mychar, null, 2) }</p> */}
     </div>
