@@ -31,9 +31,7 @@ class App extends Component {
       });
   };
 
-
-  // // toggle completed todos
-  // toggleCompletedChars= name => {
+  // toggleChars= name => {
   //   let starwarsChars = this.state.starwarsChars.slice();
   //   starwarsChars = starwarsChars.map(char => {
   //     // if the todoData element id
@@ -41,7 +39,7 @@ class App extends Component {
   //     // we change to the opposite of what 
   //     // it is, true to false, f to t
   //     if (char.name === name) {
-  //       char.toggled = !char.toggled;
+  //       char.clicked = !char.clicked;
   //       return char;
   //     } else {
   //       return char;
@@ -50,27 +48,18 @@ class App extends Component {
   //   this.setState({ starwarsChars });
   // };
 
-  // handleUpdateState = event => {
-  //   event.preventDefault();
+  // handleUpdateState = () => {
   //   const starwarsChars = this.state.starwarsChars.slice();
-  //   // clone our state starwarsChars array.
-  //   starwarsChars.push({
-  //     name: this.state.name,
-  //     id: Date.now(),
-  //     completed: true
-  //   });
-  //   this.setState({ starwarsChars, toggled: true});
-  // };
-  handleUpdateState = () => {
-    const starwarsChars = this.state.starwarsChars.slice();
 
-    starwarsChars.push({
-      name: this.state.name,
-      clicked: true,
-    });
-    this.setState({starwarsChars})
-    console.log(starwarsChars)
-  }
+  //   starwarsChars = starwarsChars.map(char => (
+  //     char.push({
+  //       clicked: true,
+  //     })
+  //   ))
+
+  //   this.setState({starwarsChars})
+  // }
+
   render() {
     return (
       <div className="App">
