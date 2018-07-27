@@ -7,9 +7,10 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      count: 0
+      count: 0,
 
     };
+    this.character = this.state.starwarsChars[this.state.count];
   }
 
   componentDidMount() {
@@ -25,7 +26,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data); 
+        // console.log(data); 
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -34,7 +35,7 @@ class App extends Component {
   };
 
   checkTheState = () => {
-    console.log(this.state.starwarsChars); 
+    // console.log(this.state.starwarsChars); 
   }
   handleNext = () => {
     let count = this.state.count;
@@ -64,20 +65,33 @@ class App extends Component {
 
 
   render() {
-    let characters = this.state.starwarsChars;
-    console.log(this.state.starwarsChars[0].name); 
-    console.log(typeof characters);
+    let characters = this.state.starwarsChars; 
+    console.log(this.character);
+
+    
+    
+    
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <h5 onClick = {this.checkTheState}>Click to check State</h5>
         <div className="characters">
-          {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
+          {/* {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
           eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-          skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  }
-          {/* {<Card key= {characters[this.state.count].created} name ={characters[this.state.count].name} created = {characters[this.state.count].created} edited={characters[this.state.count].edited}
+          skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  } */}
+          {/* {<Card   key= {characters[this.state.count].created} name ={characters[this.state.count].name} created = {characters[this.state.count].created} edited={characters[this.state.count].edited}
           eyeColor = {characters[this.state.count].eye_color} gender ={characters[this.state.count].gender} hairColor ={characters[this.state.count].hair_color} height = {characters[this.state.count].height} mass = {characters[this.state.count].mass}
           skinColor ={characters[this.state.count].skin_color} birthYear = {characters[this.state.count].birth_year}/>  } */}
+
+          <Card   name = {characters.length > 0? characters[this.state.count].name: ""} key = {characters.length > 0? characters[this.state.count].created: ""} 
+           edited = {characters.length > 0? characters[this.state.count].edited: ""} eyeColor =  {characters.length > 0? characters[this.state.count].eye_color: ""} 
+           gender =  {characters.length > 0? characters[this.state.count].gender: ""} hairColor =  {characters.length > 0? characters[this.state.count].hair_color: ""}
+           mass =  {characters.length > 0? characters[this.state.count].mass: ""} skinColor =  {characters.length > 0? characters[this.state.count].skin_color: ""}
+           birthYear =  {characters.length > 0? characters[this.state.count].birth_year: ""}
+           
+           
+           />
+
         </div>
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
