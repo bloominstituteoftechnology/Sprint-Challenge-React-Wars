@@ -4,6 +4,8 @@
 .Header {
   color: greenyellow;
   text-shadow: 0px 0px 5px #fff;
+  font-size: 50px;
+
 }
 button{
   padding: 10px;
