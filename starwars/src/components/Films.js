@@ -5,7 +5,7 @@ import './StarWars.css';
 class Films extends React.Component{
     constructor(props){
         super(props)
-        this.state = {films : props.films}
+        this.state = {films : props.films[0], filmData: []}
     }
     getFilm = URL => {
         // feel free to research what this code is doing.
@@ -17,7 +17,7 @@ class Films extends React.Component{
           })
           .then(data => {
             console.log(data); 
-            this.setState({ flim: data.results });
+            this.setState({ flimData: data.results });
           })
           .catch(err => {
             throw new Error(err);
@@ -25,10 +25,14 @@ class Films extends React.Component{
       };
 
     render() {
-
+        let films = this.state.filmData; 
         return (
 
-            <div>{}</div>
+            <div>
+                <h1>{films.length > 0 ? films.title:"No film"}</h1>
+            </div>
+
+            
         );
 
     }
