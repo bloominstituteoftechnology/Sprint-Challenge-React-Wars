@@ -61,14 +61,23 @@ class App extends Component {
   //   });
   //   this.setState({ starwarsChars, toggled: true});
   // };
+  handleUpdateState = () => {
+    const starwarsChars = this.state.starwarsChars.slice();
 
+    starwarsChars.push({
+      name: this.state.name,
+      clicked: true,
+    });
+    this.setState({starwarsChars})
+    console.log(starwarsChars)
+  }
   render() {
     return (
       <div className="App">
-        <CharacterForm handleToggleCard={this.handleUpdateState} />
+        <CharacterForm />
         <ListOfCharCards 
           starwarsArray={this.state.starwarsChars} 
-          handleCompletedChars={this.toggleCompletedChars}
+          toggleChars={this.handleUpdateState}
         />
       </div>
     );

@@ -7,11 +7,11 @@ const CharacterCard = props => {
   const feet = Math.floor(heightInFeetTotal);
   const inches = Math.round((heightInFeetTotal - feet) * 12);
   return (
-    <div class="characterCard"
+    <div className="characterCard"
       // style={
       //   props.todoDataProp.completed ? { textDecoration: "line-through", textDecorationColor: "#FF220C"} : null
       // }
-      // onClick={() => props.handleCompletedChars(props.starwarsArray.name)}
+      onClick={() => props.toggleChars(props.starwarsArray.name)}
     >
         <h2>{name}</h2>
         <h4>Height: {`${feet}' ${inches}"`}</h4>
