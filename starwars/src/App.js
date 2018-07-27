@@ -40,10 +40,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <h5 onClick = {this.checkTheState}>Checking State</h5>
 
         {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
         eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-        checkTheState ={this.checkTheState} skinColor ={character.skin_color}/> )  }
+        skinColor ={character.skin_color} birthYear = {characters.birth_year}/> )  }
       </div>
     );
   }
