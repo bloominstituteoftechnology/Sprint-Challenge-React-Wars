@@ -6,7 +6,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      count: 0
+
     };
   }
 
@@ -34,10 +36,37 @@ class App extends Component {
   checkTheState = () => {
     console.log(this.state.starwarsChars); 
   }
+  handleNext = () => {
+    let count = this.state.count;
+    if(count + 1 <= this.state.starwarsChars.length){
+      count++;
+    } else {
+      count = 0; 
+    }
+     
+    this.setState({count:count});
+  }
+
+  handlePrevious = () => {
+    let count = this.state.count; 
+
+    if(count - 1 > 0){
+      count--;
+    } else {
+      count = this.state.starwarsChars.length -1; 
+    }
+
+    this.setState({count:count}); 
+  }
+
+
+
 
 
   render() {
     let characters = this.state.starwarsChars;
+    console.log(this.state.starwarsChars[0].name); 
+    console.log(typeof characters);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
@@ -46,6 +75,14 @@ class App extends Component {
           {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
           eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
           skinColor ={character.skin_color} birthYear = {character.birth_year}/> )  }
+          {/* {<Card key= {characters[this.state.count].created} name ={characters[this.state.count].name} created = {characters[this.state.count].created} edited={characters[this.state.count].edited}
+          eyeColor = {characters[this.state.count].eye_color} gender ={characters[this.state.count].gender} hairColor ={characters[this.state.count].hair_color} height = {characters[this.state.count].height} mass = {characters[this.state.count].mass}
+          skinColor ={characters[this.state.count].skin_color} birthYear = {characters[this.state.count].birth_year}/>  } */}
+        </div>
+        <button onClick = {this.handlePrevious}>Previous</button>
+        <button onClick = {this.handleNext}>Next</button>
+        <div>
+          
         </div>
       </div>
     );
