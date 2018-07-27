@@ -7,6 +7,7 @@ const DataList = props => {
   return(
     <div>
         {props.starwarslist.map(arrayItems => <DataItems key={arrayItems.edited} data={arrayItems}/>)}
+        
     </div>
    );
 };
