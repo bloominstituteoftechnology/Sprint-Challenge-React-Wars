@@ -28,7 +28,7 @@ class App extends Component {
       .then(data => {
         this.setState({
           starwarsChars: data.results,
-          leftCounter: data.results.length
+          leftCounter: data.results.length - 1
         });
       })
       .catch(err => {
@@ -38,28 +38,37 @@ class App extends Component {
 
   incrementRightButton = (event) => {
     event.preventDefault();
-    // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
-    this.setState(prevState => {
-      return {
-        rightCounter: prevState.rightCounter + 1,
-      };
-    });
-  };
-  decrementLeftButton = (event) => {
-    event.preventDefault();
-    console.log("event", this.state.leftCounter);
-    // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
-    if (this.state.leftCounter <= 1) {
-      this.setState(prevState => {
+    console.log("rightCounter", this.state.rightCounter);
+    if (this.state.rightCounter >= this.state.starwarsChars.length - 1) {
+      this.setState(() => {
         return {
-            leftCounter: 10,
+            rightCounter: 0,
         };
       });
     }
     else {
       this.setState(prevState => {
         return {
-            leftCounter: prevState.leftCounter -1,
+            rightCounter: prevState.rightCounter + 1,
+        };
+      });
+    }
+  };
+  decrementLeftButton = (event) => {
+    event.preventDefault();
+    console.log("leftCounter", this.state.leftCounter);
+    // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
+    if (this.state.leftCounter <= 0) {
+      this.setState(() => {
+        return {
+            leftCounter: this.state.starwarsChars.length -1,
+        };
+      });
+    }
+    else {
+      this.setState(prevState => {
+        return {
+            leftCounter: prevState.leftCounter - 1,
         };
       });
     }
