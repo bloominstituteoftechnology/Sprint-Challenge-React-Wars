@@ -1,11 +1,12 @@
 .characters {
     display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .character {
     border: 5px inset black;
     color: white; 
     width: 400px;
+    margin-bottom: 40px;
 }

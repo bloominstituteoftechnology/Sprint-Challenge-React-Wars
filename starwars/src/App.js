@@ -9,6 +9,7 @@ class App extends Component {
       starwarsChars: [],
       count: 0,
 
+
     };
     this.character = this.state.starwarsChars[this.state.count];
   }
@@ -60,7 +61,11 @@ class App extends Component {
     this.setState({count:count}); 
   }
 
-
+  handlePageChange = page => {
+    let count = this.state.count;
+    count = page; 
+    this.setState({count:count}); 
+  }
 
 
 
@@ -74,7 +79,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <h5 onClick = {this.checkTheState}>Click to check State</h5>
+        {/* <h5 onClick = {this.checkTheState}>Click to check State</h5> */}
         <div className="characters">
           {/* {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
           eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
@@ -95,8 +100,8 @@ class App extends Component {
         </div>
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
-        <div>
-          
+        <div className="pages">
+          <button onClick = {() => this.handlePageChange(0)}>1</button><button onClick = {() => this.handlePageChange(1)}>2</button><button onClick = {() => this.handlePageChange(2)}>3</button><button onClick = {() => this.handlePageChange(3)}>4</button><button onClick = {() => this.handlePageChange(4)}>5</button><button onClick = {() => this.handlePageChange(5)}>6</button><button onClick = {() => this.handlePageChange(6)}>7</button><button onClick = {() => this.handlePageChange(7)}>8</button><button onClick = {() => this.handlePageChange(8)}>9</button><button onClick = {() => this.handlePageChange(9)}>10</button>
         </div>
       </div>
     );
