@@ -1,0 +1,9 @@
+.card {
+  background-color: #222222;
+  color: #EEEEEE;
+  opacity: .9;
+}
+
+.card h5 {
+  font-weight: bold;
+}
