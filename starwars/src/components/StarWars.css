@@ -1,0 +1,34 @@
+.Card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5rem 3rem;
+  margin: 1.5rem;
+  clip-path: polygon(50% 0, 100% 3rem, 100% calc(100% - 3rem), 50% 100%, 0 calc(100% - 3rem), 0 3rem);
+  width: 300px;
+  animation: fadeIn 1s;
+}
+
+.Card__title {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-bottom: 3rem;
+  color: #795548;
+}
+
+.Card__bio-data:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.Card__bio-field {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #795548;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
