@@ -7,8 +7,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentlyShowing: [],
+      next: null,
+      previous: null
     };
+    // this.init();
   }
 
   componentDidMount() {
@@ -31,11 +35,32 @@ class App extends Component {
       });
   };
 
+  init = event => {
+    const listCopy = this.state.starwarsChars.slice();
+    console.log(listCopy)
+    this.setState({currentlyShowing: listCopy})
+  }
+
+  showIndividual = event => {
+    const listCopy = this.state.starwarsChars.slice();
+    let firstItem = [];
+    firstItem.push(listCopy[0]);
+    this.setState({starwarsChars: firstItem})
+  }
+
+  showAll = event => {
+    const listCopy = this.state.starwarsChars.slice();
+    console.log(listCopy)
+    this.setState({starwarsChars: listCopy})
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <AllCards name="Dummy Card" data={this.state.starwarsChars}/>
+        <AllCards name="Dummy Card" show1={this.showIndividual}
+        showAll={this.showAll}
+        data={this.state.starwarsChars}/>
       </div>
     );
   }

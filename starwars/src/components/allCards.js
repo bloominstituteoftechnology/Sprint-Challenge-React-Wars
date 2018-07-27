@@ -18,15 +18,19 @@ const Card = ({data}) => {
 }
 
 const AllCards = props => {
-  console.log(props);
+  console.log(props.data.length);
   return (
     <div className="all-cards-main">
       <h1>Star Wars Characters</h1>
+      <div className="button-group">
+        <button onClick={props.showAll}>Show All</button>
+        <button onClick={props.show1}>Show individual</button>
+      </div>
       <div className="all-cards-sub">
-        {props.data.map( (each) => <Card
-            key={each.name}
-            data={each}
-          />
+         {props.data.map( (each) => <Card
+              key={each.name}
+              data={each}
+            />
         )}
       </div>
       {/* <Card name2={props.name} data2={props.data}/> */}
