@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import charactersForm from'./components/charactersForm'; 
 
 class App extends Component {
   constructor() {
@@ -7,6 +8,15 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+  }
+
+  displayInfo = e =>{
+    e.preventDefault(); 
+    const starwarsChars = this.state.starwarsChars.slice(); 
+    starwarsChars.push({
+      name:this.state.starwarsChars, 
+    });
+     this.setState({ starwarsChars })
   }
 
   componentDidMount() {
@@ -31,19 +41,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <div className="character"><button className="btn">Luke Skywalker</button></div> 
-        <div className="character"><button className="btn">C-3PO</button></div> 
-        <div className="character"><button className="btn">R2-D2</button></div> 
-        <div className="character"><button className="btn">Darth Vader</button></div> 
-        <div className="character"><button className="btn">Leia Organa</button></div> 
-        <div className="character"><button className="btn">Owen Lars</button></div> 
-        <div className="character"><button className="btn">Beru Whitesun Lars</button></div> 
-        <div className="character"><button className="btn">R5-D4</button></div> 
-        <div className="character"><button className="btn">Biggs Darklighter</button></div> 
-        <div className="character"><button className="btn">Obi-Wan Kenobi</button></div> 
-      </div>
+    <charactersForm
+      handleDisplay={this.displayInfo} />
     );
   }
 }
