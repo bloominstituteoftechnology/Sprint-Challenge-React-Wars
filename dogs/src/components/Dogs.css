@@ -1,0 +1,16 @@
+.dogs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.dog {
+    margin: 15px;
+    padding: 10px;
+    background: darkslategray;
+    color: lightgrey;
+    cursor: pointer;
+    text-decoration: none;
+}
