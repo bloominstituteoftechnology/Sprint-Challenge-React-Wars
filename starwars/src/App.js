@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import CardsList from './components/CardsList.js';
+import Overlay from './components/Overlay.js';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      overlay: true
     };
   }
 
@@ -30,19 +32,19 @@ class App extends Component {
       });
   };
 
-  loadpage = () => {
+  handleOverlayClick=()=>{
     let chars = this.state.starwarsChars.slice();
-    chars.forEach(char => char.show = false);
+    chars = chars.map(item => {return item.show=false})
     console.log(chars);
-    chars[0].show=true;
-    this.setState({ starwarsChars: chars });
+    this.setState(prevState => {
+      return {overlay: !this.state.overlay}
+    });
   }
-
-
 
   render() {
     return (
-      <div className="App" >
+      <div className="App" onMouseEnter={this.loadpage}>
+        <Overlay overlay={this.state.overlay} overlayClick={this.handleOverlayClick} />
         <h1 className="Header">React Wars</h1>
         <CardsList array={this.state.starwarsChars} />
       </div>
