@@ -32,9 +32,6 @@ class App extends Component {
   };
 
   render() {
-
-    // this.setState({[this.state.starwarsChars[0]]: 'Hero' });
-    console.log(this.state.starwarsChars[0]);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
