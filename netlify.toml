@@ -8,6 +8,6 @@ ID = "44b9504e-3697-41d7-93cd-78710fc4ab68"
   base    = "starwars/"
   # NOTE: This is where we will look for package.json/.nvmrc/etc, not root.
   # This is the directory that you are publishing from (relative to root of your repo)
-  publish = "starwars/build-output/"
+  publish = "starwars/build/"
   # This will be your default build command
   command = "yarn build"
