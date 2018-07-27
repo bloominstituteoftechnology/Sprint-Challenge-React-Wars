@@ -5,8 +5,8 @@ const CharacterForm = props => {
   return (
     <form>
       {/* <button onClick={props.handleToggleCard}>Add</button> */}
-      <button>Add</button>
-      <button>Clear</button>
+      <button>Left</button>
+      <button onClick={props.rightCounter}>Right</button>
       {/* <button onClick={props.handleClearTodos}>Clear</button> */}
     </form>
   );

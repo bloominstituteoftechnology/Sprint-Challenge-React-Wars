@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
-import ListOfCharCards from './components/ListOfCharCards';
-import CharacterForm from './components/CharacterForm';
+import React, { Component } from "react";
+import "./App.css";
+import ListOfCharCards from "./components/ListOfCharCards";
+import CharacterForm from "./components/CharacterForm";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
+      rightCounter: 0,
+      leftCounter: 0
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -24,19 +26,31 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  incrementRightButton = (event) => {
+    event.preventDefault();
+    console.log("STATE PREVIOUSLY", this.state);
+    // this.setState({ count: this.state.count + 1 }); // DON'T Do THIS.
+    this.setState(prevState => {
+      return {
+        rightCounter: prevState.rightCounter + 1,
+      };
+    });
+  };
   // toggleChars= name => {
   //   let starwarsChars = this.state.starwarsChars.slice();
   //   starwarsChars = starwarsChars.map(char => {
   //     // if the todoData element id
   //     // equals the id of the one we click
-  //     // we change to the opposite of what 
+  //     // we change to the opposite of what
   //     // it is, true to false, f to t
   //     if (char.name === name) {
   //       char.clicked = !char.clicked;
@@ -63,9 +77,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CharacterForm />
-        <ListOfCharCards 
-          starwarsArray={this.state.starwarsChars} 
+        <CharacterForm rightCounter={this.incrementRightButton}/>
+        <ListOfCharCards
+          starwarsArray={this.state.starwarsChars}
           toggleChars={this.handleUpdateState}
         />
       </div>

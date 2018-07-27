@@ -14,7 +14,7 @@ const ListOfCharCards = props => {
           toggleChars={props.toggleChars}
           // add key below to remove error message about
           // needing unique key for each child
-          // key={char.id}
+          
         />
       ))}
     </div>
