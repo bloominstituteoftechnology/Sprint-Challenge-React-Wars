@@ -1,0 +1,11 @@
+.card {
+  /* display: none; */
+  max-width: 600px;
+  width: 100%;
+  border: 2px dashed gray;
+  margin: 10px auto;
+}
+
+.show-card {
+  display: inline-block;
+}
