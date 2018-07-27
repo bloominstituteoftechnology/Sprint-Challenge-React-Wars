@@ -1,5 +1,6 @@
 .char-container {
-    height: 125px;
-    width: 75px;
+    height: 200px;
+    width: 225px;
     border: 1px solid salmon;
+    margin: 4px;
 }
