@@ -15,8 +15,8 @@ class Films extends React.Component{
         console.log("clicked");
         console.log(this.state.filmData)
         const arrayOfFilms = this.state.films; // at this point they are just URL's.
-        if(this.state.filmData.length > 0){
-            this.setState({filmsData: []})
+        if(this.state.filmData.length){
+            this.setState({filmData: []}); 
             
             
         } else {
