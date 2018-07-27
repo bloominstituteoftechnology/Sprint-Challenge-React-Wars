@@ -2,7 +2,7 @@ import React from 'react';
 
 const CharCard = props => {
     return (
-        <div>
+        <div className="card char-card">
             <h3>Name: {props.name}</h3>
             <h5>Height: {props.height}</h5>
             <h5>Mass: {props.mass}</h5>
