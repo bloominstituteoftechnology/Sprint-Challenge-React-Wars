@@ -33,7 +33,9 @@ class App extends Component {
   };
 
   Next=()=>{
-    return this.getCharacters(this.state.data.next);
+    if (this.state.data.next!==null) {
+      return this.getCharacters(this.state.data.next);
+    }
   }
   Previous=()=>{
     if (this.state.data.previous!==null) {
@@ -44,8 +46,8 @@ class App extends Component {
     return (
       <div className="App">
         <StarWarsCard starProp={this.state.starwarsChars}/>
-        <NextButton onClick={this.Next}/>
         <PrevButton onClick={this.Previous}/>
+        <NextButton onClick={this.Next}/>
       </div>
     );
   }
