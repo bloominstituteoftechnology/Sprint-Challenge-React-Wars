@@ -35,7 +35,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <DataList starwarslist={this.state.starwarsChars}/>>
-
+     
       </div>
     );
   }
