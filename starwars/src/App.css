@@ -1,10 +1,14 @@
 .App {
   text-align: center;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 90vw;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.Characters{
+  color: brown;
 }
 /* write your parent styles in here for your App.js */
