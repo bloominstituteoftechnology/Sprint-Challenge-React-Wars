@@ -13,10 +13,16 @@ class Card extends React.Component {
 
         return (
 
-            // <div onClick = {this.props.checkState}>Checking out Placement</div>
+            // <div onClick = {this.props.checkTheState}>Checking out Placement</div>
             <div className="characters">
                 <div className="character">
                     <h1>{this.props.name}</h1>
+                    <p>{this.props.name} is {this.props.gender} born in {this.props.birthYear}. </p>
+                    <p>{this.props.name} has a height of {this.props.height} inches and a mass of {this.props.mass}. Skin color is {this.props.skinColor}
+                    and {this.props.eyeColor} eyes. </p>
+
+                    <p>{this.props.name} was created {this.props.created} and edited {this.props.edited}</p>
+
 
                 </div>
             
