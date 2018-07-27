@@ -54,4 +54,32 @@
   justify-content: center;
   align-items: center;
   color: #33FF33;
+  position: relative;
+}
+
+.app-container .paging-btns{
+  position: absolute;
+  top: 35px;
+  height: 40px;
+  right: 0;
+  width: 100%;
+  padding-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-container .paging-btns .page-btn{
+  border: 1px solid #33FF33;
+  color: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container .paging-btns .page-btn{
+  background: black;
 }
