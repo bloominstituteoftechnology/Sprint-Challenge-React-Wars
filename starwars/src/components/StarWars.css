@@ -25,3 +25,28 @@
     text-decoration-line: underline;
     color: #00adb5;
 }
+
+.app__button{
+    border: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	margin-right: 3rem;
+	display: inline-block;
+	background: #00adb5;
+	color: #eeeeee;
+	border-radius: 4px;
+	cursor: pointer;
+    letter-spacing: 2px;
+    transition: all .2s;
+    margin-bottom: 70px;
+}
+
+.app__button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+.app_button:active, .form__button:focus {
+    outline: none;
+}

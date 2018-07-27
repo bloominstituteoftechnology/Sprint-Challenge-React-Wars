@@ -6,7 +6,12 @@ React is a nonopinionated Javascript library.  I think it tries to solve two pro
 
 From a development point of view React wants to help developers overcome some intrinsic problems with working on the front end.  Control is unwieldy and the concerns
 for your layout and the behavior of your layout (e.g. your application) are separated in a shallow way.  React wants to put control in a single sensible location
-and put layout and behavior next to eachother so the developer can more conceptualize their design.
+and put layout and behavior next to eachother so the developer can more easily conceptualize their design.
+
+<<The Following was added after pencils down!  I completely forgot I wanted to make a second point here, which is arguably the more important of the two.  Wewps.>>
+
+From a DEPLOYMENT point of view React provides highly scalable applications.  By building out a blueprint as to how my application is going to alter the DOM before
+actually altering it then altering it all at once (rather than piecemeal) React achieves a high degree of computational efficiency.
 
 1.  What does it mean to _think_ in react?
 

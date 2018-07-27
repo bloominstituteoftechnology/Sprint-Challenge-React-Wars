@@ -43,8 +43,8 @@ class App extends Component {
 			<div className="AppWrapper">
 				<h1 className="Header">React Wars</h1>
 				<CardList cardArray={this.state.starwarsChars} />
-				<button className="Button" onClick={() => this.getCharacters(this.state.prev)}>Previous</button>
-				<button className="Button" onClick={() => this.getCharacters(this.state.next)}>Next</button>
+				<button className="app__button" onClick={() => this.getCharacters(this.state.prev)}>Previous</button>
+				<button className="app__button" onClick={() => this.getCharacters(this.state.next)}>Next</button>
 			</div>
 		);
 	}
