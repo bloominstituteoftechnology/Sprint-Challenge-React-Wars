@@ -10,7 +10,7 @@
 /* write your parent styles in here for your App.js */
 
 .main {
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

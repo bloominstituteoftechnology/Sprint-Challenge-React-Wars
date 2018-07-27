@@ -10,11 +10,12 @@
     padding: 10px;
     background: white;
     opacity: 0.4;
+    
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: 1px solid black;
 }
 
@@ -24,5 +25,12 @@
     border: 1px solid black;
     border-radius: 10px;
     margin: 30px 0;
-    
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

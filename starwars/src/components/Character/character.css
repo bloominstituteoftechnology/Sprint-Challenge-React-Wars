@@ -16,9 +16,15 @@
 }
     
 .character-image {
-    height: 200px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     border: 1px solid black;
 }
+
+.character-name {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
     
+}
+
