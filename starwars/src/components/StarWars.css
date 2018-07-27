@@ -25,16 +25,20 @@ ul {
     box-shadow: 0 8px 35px rgba(29,29,31,0.15);
 }
 
-.male {
-    background: palegoldenrod;
+h2 {
     padding: 20px;
     margin: 0;
     border-radius: 8px 8px 0 0;
 }
 
+.male {
+    background: paleturquoise;
+}
+
 .female {
     background: palevioletred;
-    padding: 20px;
-    margin: 0;
-    border-radius: 8px 8px 0 0;
+}
+
+.na {
+    background: palegoldenrod;
 }

@@ -7,7 +7,7 @@ const CharacterContainer = props => {
             {props.starwarsChars.map((character) => {
                 return (
                     <div key={character.created} className={`card-background`}> 
-                        <h2 className={`${character.gender === 'male' ? 'male' : 'female'}`}>{character.name}</h2>
+                        <h2 className={`${character.gender === 'male' ? 'male' : character.gender === 'female' ? 'female' : 'na'}`}>{character.name}</h2>
                         <ul>
                             <li>Gender: {character.gender}</li>
                             <li>Birth Year: {character.birth_year}</li>
