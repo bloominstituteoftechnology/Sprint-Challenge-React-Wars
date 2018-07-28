@@ -20,7 +20,7 @@ class App extends Component {
 
     var c = canvas.getContext("2d");
     var numStars = 600;
-    var stars = []; //Empty array
+    var stars = []; //Empty newCopy
     var size = 1;
     var fl = canvas.width;
     var centerX = canvas.width / 2;
@@ -77,20 +77,27 @@ class App extends Component {
     update();
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getCharacters("https://swapi.co/api/people/");
+  }
+
+  componentDidMount() {
+    const michael = () => {
+     const arr = this.state.starwarsChars;
+     if(arr.length === 0) { 
+       this.componentWillMount();
+     } else {
+       arr.shift();
+     }
+      this.setState({
+        starwarsChars: arr
+      });
+      setTimeout(michael, 4000);
+    };
+    michael();
     requestAnimationFrame(() => {
       this.animFrame();
     });
-    const michael = () => {
-      const array = this.state.starwarsChars;
-      array.shift();
-      console.log('Are we getting here?');
-      this.setState({
-        starwarsChars: array
-      });
-    };
-    setInterval(michael(), 1000);
   }
 
   getCharacters = URL => {
@@ -99,13 +106,10 @@ class App extends Component {
     // We then take that data and resolve it our state.
 
     //fallthrough if statement, only will work if that statement is true
-    if (this.state.starwarsChars.length === 0)
       fetch(URL)
-        .then(res => {
-          return res.json();
-        })
+        .then(res => res.json())
         .then(data => {
-          console.log(data);
+          console.log(data.results);
           this.setState({ starwarsChars: data.results });
         })
         .catch(err => {});
@@ -113,13 +117,13 @@ class App extends Component {
 
   render() {
     return [
-      <div className="App">
+      <div className="App" key="App">
         <h1 className="Header">Star Wars</h1>
         {this.state.starwarsChars.map((char, i) => {
-          return <ToonCard {...char} />;
+          return <ToonCard {...char} key={i} pos={i}/>;
         })}
       </div>,
-      <canvas
+      <canvas key="canvas"
         ref="canvas"
         id="c"
         style={{
@@ -133,7 +137,6 @@ class App extends Component {
     ];
   }
 }
-
 export default App;
 
-//setInterval, then pop or shift the array. margin-top 35px -
+//setInterval, then pop or shift the newCopy. margin-top 35px -
