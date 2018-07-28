@@ -32,8 +32,7 @@ class Films extends React.Component{
         // At a high level we are calling an API to fetch some starwars data from the open web.
         // We then take that data and resolve it our state.
         const arrayOfFilms = this.state.filmData; 
-        console.log(arrayOfFilms); 
-        console.log("arrayOfFilms"); 
+        
         fetch(URL)
           .then(res => {
             return res.json();

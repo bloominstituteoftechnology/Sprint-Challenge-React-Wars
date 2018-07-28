@@ -45,7 +45,7 @@ class HomeWorld extends React.Component{
 
     render() {
         const homeWorld = this.state.homeWorldData[0];
-        console.log(homeWorld); 
+        
         return(
             <div>
                 <button onClick = {this.getHomeWorldData}>HomeWorld</button>

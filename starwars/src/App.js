@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/Card';
-import Films from './components/Films';
+
 
 class App extends Component {
   constructor() {
@@ -81,7 +81,7 @@ class App extends Component {
 
   render() {
     let characters = this.state.starwarsChars; 
-    
+    //console.log(characters[0]);
     
     return (
       <div className="App">
@@ -93,7 +93,8 @@ class App extends Component {
 
           {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
         eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-        skinColor ={character.skin_color} birthYear = {character.birth_year} films = {character.films} species = {character.species[0]} homeWorld = {character.homeworld}/> )  }
+        skinColor ={character.skin_color} birthYear = {character.birth_year} films = {character.films} species = {character.species[0]} homeWorld = {character.homeworld}
+        starShips = {character.starships} vehicles = {character.vehicles}/> )  }
         
 
            
