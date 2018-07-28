@@ -9,14 +9,19 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+      React is a Javascript library built an effort to modularize UI functionality (into components) that merely "reacts" to state and state changes, and in-turn dynamically changes UI.  
 
 1.  What does it mean to _think_ in react?
+      To think in React, put simplistically, is to think in terms of breaking UI down into components, in a parent-child relationship, in combination with thinking in terms of Functional Programming (keeping state immutable).
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+    A Class/stateful component is a component in which state is "held", managed, and passed to child components.  The latter of which are Functional/Presentational components. Functional/Presentational components are passed data/state, act on it, and display it. In so doing, have no capacity to alter the data/state.
 
 1.  Describe state.
-
+      State is data.  Data upon which a program acts passively or may alter.  
+      
 1.  Describe props.
+      "Props" are the data as being passed to a component to act on.
 
 ## Project
 

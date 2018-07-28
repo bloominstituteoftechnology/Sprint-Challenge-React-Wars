@@ -1,0 +1,26 @@
+.character-container {
+    display: flex;
+    width: 400px;
+    flex-flow: column;
+    align-items: flex-start;
+    background: gray;
+    color: white;
+    margin: 2%;
+    padding-left: 2%;
+    padding: 2%;
+}
+
+.character-list {
+    display: none;
+    flex-flow: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.trait {
+    width: 390px;
+    padding: 2px;
+    margin: 2px 0;
+    background: black;
+    overflow-y: hidden
+}
