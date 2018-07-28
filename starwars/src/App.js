@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import StarWarsCard from './StarWarsCard.js';
+import NextButton from './NextButton.js';
+import PrevButton from './PreviousButton.js';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      data: {}
     };
   }
 
@@ -22,17 +25,29 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results,data:data });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  Next=()=>{
+    if (this.state.data.next!==null) {
+      return this.getCharacters(this.state.data.next);
+    }
+  }
+  Previous=()=>{
+    if (this.state.data.previous!==null) {
+      return this.getCharacters(this.state.data.previous);
+    }
+  }
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <StarWarsCard starProp={this.state.starwarsChars}/>
+        <PrevButton onClick={this.Previous}/>
+        <NextButton onClick={this.Next}/>
       </div>
     );
   }
