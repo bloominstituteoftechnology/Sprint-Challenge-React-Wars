@@ -6,7 +6,7 @@ const StarList = props => {
     return (
         <div className="background">
             {props.starwarsChars.map((char) => (
-                <StarChar name={char} char={char}/>
+                <StarChar key={char.name} char={char}/>
             ))}
         </div>
     );
