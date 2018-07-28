@@ -85,6 +85,9 @@ class App extends Component {
     
     return (
       <div className="App">
+        <video autoPlay muted loop id="myVideo">
+          <source src="https://giphy.com/gifs/ubvPR8PZywNJm/html5/"/>
+        </video>
         <h1 className="Header">React Wars</h1>
         <h5 onClick = {this.checkTheState}>Click to check State</h5>
         <button onClick = {this.handlePrevious}>Previous</button>

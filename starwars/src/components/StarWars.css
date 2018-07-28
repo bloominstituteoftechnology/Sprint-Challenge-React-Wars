@@ -13,9 +13,16 @@
     margin-bottom: 40px;
     margin-left: 10px;
 }
+.character:hover{
+    background: white;
+    color: black;
+}
 
 button{
     margin:2px;
+}
+button:hover {
+    cursor:pointer;
 }
 
 
