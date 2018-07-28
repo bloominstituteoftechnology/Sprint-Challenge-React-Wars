@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  border: solid blue;
 }
 .Header {
+  display: flex;
+  justify-content: center;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
