@@ -11,9 +11,7 @@ class Films extends React.Component{
     }
 
     getFilmData = () => {
-        //console.log(this.state.films)
-        console.log("clicked");
-        console.log(this.state.filmData)
+        
         const arrayOfFilms = this.state.films; // at this point they are just URL's.
         if(this.state.filmData.length){
             this.setState({filmData: []}); 
@@ -22,11 +20,6 @@ class Films extends React.Component{
         } else {
             arrayOfFilms.forEach( film => this.getFilm(film));
         }
-        
-       // 
-        //console.log(this.state.filmData); 
-        
-
     }
 
     
@@ -64,6 +57,7 @@ class Films extends React.Component{
 
             <div>
                 <button onClick = {this.getFilmData}>Films</button>
+                
                 {films.map((film, i) => <Film key = {i}title = {film.title} director = {film.director} producer = {film.producer} released = {film.release_date}/>)}
             </div>
 

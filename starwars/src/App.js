@@ -86,14 +86,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {/* <h5 onClick = {this.checkTheState}>Click to check State</h5> */}
+        <h5 onClick = {this.checkTheState}>Click to check State</h5>
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
         <div className="characters">
 
           {characters.map( character => <Card key= {character.created} name ={character.name} created = {character.created} edited={character.edited}
         eyeColor = {character.eye_color} gender ={character.gender} hairColor ={character.hair_color} height = {character.height} mass = {character.mass}
-        skinColor ={character.skin_color} birthYear = {character.birth_year} films = {character.films}/> )  }
+        skinColor ={character.skin_color} birthYear = {character.birth_year} films = {character.films} species = {character.species[0]} homeWorld = {character.homeworld}/> )  }
         
 
            
