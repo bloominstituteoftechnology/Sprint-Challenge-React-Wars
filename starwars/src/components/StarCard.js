@@ -9,13 +9,13 @@ const WarCard = props => {
       <div className="container  ">
           <div className="row d-flex justify-content-between">
               {props.attribute.map(e =>
-                  <div>
+                  <div key={e.name}>
                       <Card>
                         <CardImg top width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png" alt="Card image cap" />
                           <CardBody className="card">
                               <CardTitle>{e.name}</CardTitle>
                               <CardSubtitle>{e.birth_year}</CardSubtitle>
-                              <CardText>{e.starships[0]}</CardText>
+                              <CardText>{e.gender[0]}</CardText>
                               <Button > Add </Button>
                           </CardBody>
                       </Card>
