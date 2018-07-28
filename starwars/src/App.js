@@ -87,7 +87,7 @@ class App extends Component {
       <div className="App">
         
         <h1 className="Header">React Wars</h1>
-        <h5 onClick = {this.checkTheState}>Click to check State</h5>
+        {/* <h5 onClick = {this.checkTheState}>Click to check State</h5> */}
         <button onClick = {this.handlePrevious}>Previous</button>
         <button onClick = {this.handleNext}>Next</button>
         <div className="characters">
