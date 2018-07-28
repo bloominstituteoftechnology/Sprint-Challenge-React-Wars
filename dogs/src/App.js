@@ -44,13 +44,27 @@ class App extends Component {
       });
   };
 
+  onDogClick = breed => {
+    fetch(`https://dog.ceo/api/breed/${breed.toString()}/images/random`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ dogImg: data.message })
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header" >
           <h1 className="App-title">Welcome to Dogs Galore.</h1>
+          <p>Click a breed to generate a random picture of it.</p>
         </header>
-        <Dogs dogs={this.state.dogs} />
+        <Dogs dogs={this.state.dogs} onClick={this.onDogClick} />
         <div className="dog-img-container">
           <img src={this.state.dogImg} alt="A random dog!" />
         </div>
