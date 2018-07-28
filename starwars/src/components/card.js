@@ -18,10 +18,10 @@ const ToonCard = props => {
           <CardBody>
             <CardTitle>{props.name}</CardTitle>
             <CardText>
-              <p>Gender: {props.gender}
+              Gender: {props.gender}
               Height: {props.height}
               Weight: {props.weight}
-              Birth Year: {props.birth_year}</p>
+              Birth Year: {props.birth_year}
             </CardText>            
           </CardBody>
         </Card>
