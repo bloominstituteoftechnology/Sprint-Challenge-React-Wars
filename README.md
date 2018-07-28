@@ -4,28 +4,14 @@
 - Answers to your written questions will be recorded in _Answers.md_
 - This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
 
-## Start by forking and cloning this repository.
-
-## Questions
-
-1.  What is React JS and what problems does it try and solve?
-
-1.  What does it mean to _think_ in react?
-
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-
-1.  Describe state.
-
-1.  Describe props.
-
 ## Project
 
 - You're going to be building an application _starwars_ that consumes live data that we're retrieving across the world wide web!
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
 1.  **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
-1.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+2.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
+3.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
@@ -56,7 +42,7 @@
   })
 ```
 
-1.  Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
+2.  Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
 
 - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 - Your data coming back from Dogs should be formatted in JSON format.

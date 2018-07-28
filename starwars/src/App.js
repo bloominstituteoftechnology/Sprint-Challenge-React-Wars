@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWars from './components/StarWars';
 
 class App extends Component {
   constructor() {
@@ -22,17 +23,26 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  getMoreCharacters = () => {
+    this.getCharacters(this.state.next);
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <button onClick={this.getMoreCharacters} >View more characters</button>
+        <StarWars starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }
