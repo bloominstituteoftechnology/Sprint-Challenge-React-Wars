@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import CardsList from './components/CardsList.js';
+import Overlay from './components/Overlay.js';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      overlay: true,
+      show: true
     };
   }
 
@@ -29,10 +33,22 @@ class App extends Component {
       });
   };
 
+  handleOverlayClick=()=>{
+    let chars = this.state.starwarsChars.slice();
+    chars.forEach(char => {return char.show=false});
+    chars[0].show=true;
+    console.log(chars[0]);
+    this.setState(prevState => {
+      return {overlay: !this.state.overlay}
+    });
+  }
+
   render() {
     return (
       <div className="App">
+        <Overlay overlay={this.state.overlay} overlayClick={this.handleOverlayClick} />
         <h1 className="Header">React Wars</h1>
+        <CardsList array={this.state.starwarsChars} />
       </div>
     );
   }
