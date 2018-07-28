@@ -13,8 +13,7 @@ class Species extends React.Component{
         // At a high level we are calling an API to fetch some starwars data from the open web.
         // We then take that data and resolve it our state.
         const arrayofSpecies = this.state.speciesData; 
-        console.log(arrayofSpecies); 
-        console.log("arrayofSpecies"); 
+        
         fetch(URL)
           .then(res => {
             return res.json();
@@ -30,7 +29,6 @@ class Species extends React.Component{
       };
 
       getSpeciesData = () => {
-        console.log(this.state.species); 
         const species = this.state.species; // at this point they are just URL's.
         if(this.state.speciesData.length){
             this.setState({speciesData: []}); 
@@ -45,7 +43,7 @@ class Species extends React.Component{
 
     render () {
         let species = this.state.speciesData; 
-        console.log(this.props.species); 
+        
         return (
             <div>
                 <button onClick = {this.getSpeciesData}>Species</button>

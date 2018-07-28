@@ -2,6 +2,7 @@ import React from 'react';
 import './StarWars.css';
 import Films from './Films';
 import Species from './Species';
+import HomeWorld from './HomeWorld';
 
 class Card extends React.Component {
     constructor(props){
@@ -32,6 +33,8 @@ class Card extends React.Component {
 
                     <Films films ={this.props.films} characterName= {this.props.name}/>
                     <Species species = {this.props.species} characterName= {this.props.name}/>
+                    <HomeWorld  homeWorld = {this.props.homeWorld} characterName = {this.props.name}/>
+                    
                 </div>
                
             
