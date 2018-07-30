@@ -3,5 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  background-size: auto;
+  background-attachment: fixed;
+  opacity: .85;
 }
