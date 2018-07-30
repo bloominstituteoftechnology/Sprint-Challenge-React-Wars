@@ -1,11 +1,9 @@
 import React from 'react';
 import './StarWars.css';
+import Paginate from './Paginate';
+
 
 const StarWars = props => {
-  console.log(props.prevPage);
-  let prev = props.prevPage;
-  let next = props.nextPage;
-  console.log(next);
   return (
     <div className='char-container'>
       {(props.chars.map(char => {
@@ -19,8 +17,8 @@ const StarWars = props => {
           </div>
         )
       }))}
-      <button onClick={console.log('clicked')} >Prev</button>
-      {/*<button onClick={props.getCharacters(props.nextPage)}>Next</button>*/}
+      <Paginate nextPage={props.nextPage} prevPage={props.prevPage} clicked={props.clicked} />
+
 
     </div>
   );

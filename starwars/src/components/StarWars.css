@@ -10,3 +10,16 @@
   background-color: burlywood;
   margin: 20px 10px;
 }
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: burlywood;
+  margin: 50px;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #b5966e;
+  box-shadow: 0 0 5px 5px #b5966e;
+}
