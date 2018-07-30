@@ -1,0 +1,62 @@
+.Character {
+    border: 1px dashed black;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(18, 105, 235, 0.2)
+}
+
+.AboutMe {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.AboutMe h4 {
+    margin: 0;
+    font-size: 150%;
+}
+
+.AboutMeInfo {
+    padding-left: 10px;
+}
+
+.AboutMeInfo div {
+    margin: 5px 0;
+}
+
+.BTS {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.BTS h4{
+    margin: 0;
+    font-size: 150%;
+}
+
+.BTSInfo {
+    padding-left: 10px;
+}
+
+.BTSInfo div {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
