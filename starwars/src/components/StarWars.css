@@ -1,0 +1,12 @@
+
+.chars-wrapper {
+    margin: 10px auto;
+}
+
+.card-wrapper {
+    height: 250px;
+    width: 30%;
+    background: #333333;
+    border-radius: 4px;
+    border: 1px solid green;
+}
