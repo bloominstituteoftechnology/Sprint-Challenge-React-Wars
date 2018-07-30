@@ -1,0 +1,10 @@
+.card-wrapper {
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-container {
+    align-content: center;
+    color: yellow;
+}
