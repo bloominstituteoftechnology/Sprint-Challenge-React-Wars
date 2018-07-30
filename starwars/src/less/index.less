@@ -30,32 +30,47 @@ body {
   border-radius: 15px;
   background-color: rgba(192,192,192,0.5);
   margin: 10px;
-  width: 300px;
-  // height: auto;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   h1 {
-    // border: 1px solid red;
+    border: 1px solid red;
     width: 100%;
   }
   &:hover {
     background-color: rgba(192,192,192,0.7);
   }
+  .row {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+  }
+  .height {
+    border: 1px solid purple;
+    transform: rotateZ(270deg);
+    display: flex;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card-stats {
-  // border: 1px solid green;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10px;
+  width: 100%;
+  // margin-left: 10px;
+
   h2 {
     text-decoration: underline;
     margin: 0 0 10px 0;
   }
   ul {
-    margin: 0 0 10px 30px;
+    // margin: 0 0 10px 30px;
     padding: 0;
   }
 }

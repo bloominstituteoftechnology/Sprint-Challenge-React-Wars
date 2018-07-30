@@ -8,17 +8,26 @@ const height2 = {
     height: `${data.height}px`
   }
 
+const width2 = {
+    width: `${data.height}px`
+  }
+
 // `height: ${data.height}px`
   return (
 
-    <div style={height2}  className="card-main" data={data}>
-      <h1>{data.name}</h1>
-      <div className="card-stats">
-        <h2>Stats:</h2>
-          <ul>Height: {data.height}</ul>
-          <ul>Mass: {data.mass}</ul>
-          <ul>Year Born: {data.birth_Year}</ul>
+    <div className="card-main" data={data}>
+      <div style={width2} className="height">
+        <div>Height: {data.height}</div>
+
       </div>
+      <div style={height2} className="card-stats">
+        <h1>{data.name}</h1>
+          <h2>Stats:</h2>
+            <ul>Mass: {data.mass}</ul>
+            <ul>Year Born: {data.birth_Year}</ul>
+      </div>
+
+
     </div>
   )
 }
@@ -27,7 +36,6 @@ const AllCards = props => {
   console.log(props.data.length);
   return (
     <div className="all-cards-main">
-      <h1>Characters</h1>
       <div className="button-group">
         <button onClick={props.previous}>Previous</button>
         <button onClick={props.showAll}>Show All</button>
