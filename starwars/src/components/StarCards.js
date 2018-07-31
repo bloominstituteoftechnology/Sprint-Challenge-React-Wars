@@ -18,7 +18,7 @@ class StarCards extends React.Component {
                                     <li>Height: {character.height}</li>
                                     <li>Mass: {character.mass}</li>
                                 </ul>
-                                {/* {character.name in this.props.images && <img src={this.props.images}[character.name] />} */}
+                                {character.name in this.props.images && <img src={this.props.images[character.name]} />}
                             </Modal>
                         </Card>
                     </Col>
