@@ -10,6 +10,8 @@ const Character = props => {
         <p> Gender: {props.character.gender}</p>
         <p> Height: {props.character.height} cm</p> 
         <p> Mass: {props.character.mass} kg</p>
+        <p> Eye Color: {props.character.eye_color} </p>
+        <p> Hair Color: {props.character.hair_color} </p> 
       </div>
     </div> 
   );
