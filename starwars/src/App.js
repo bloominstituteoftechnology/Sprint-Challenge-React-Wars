@@ -3,13 +3,15 @@ import './App.css';
 
 const Character = props => {
   return (
-    <div className = "card">
-      <h3> Name: {props.character.name}</h3>
-      <p> Year Born: {props.character.birth_year}</p>
-      <p> Gender: {props.character.gender}</p>
-      <p> Height: {props.character.height}</p> 
-      <p> Mass: {props.character.mass} </p>
-    </div>
+    <div className = "card-container">
+      <div className = "card">
+        <h3> Name: {props.character.name}</h3>
+        <p> Born: {props.character.birth_year}</p>
+        <p> Gender: {props.character.gender}</p>
+        <p> Height: {props.character.height} cm</p> 
+        <p> Mass: {props.character.mass} kg</p>
+      </div>
+    </div> 
   );
 };
 

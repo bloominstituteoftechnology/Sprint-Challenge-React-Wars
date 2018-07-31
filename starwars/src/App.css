@@ -2,12 +2,33 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Orbitron', sans-serif;
 }
 
-
 .App {
   text-align: center;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+.card{
+  border: 1px solid black;
+  background-color: #BCC4C6;
+  opacity: .7;
+  text-align: left;
+  padding: 0 10px 0 10px;
+  width: 60%;
+  margin: 20px;
+  display: inline-block;
+}
+
+
+.characters{
+  max-width: 1024px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
