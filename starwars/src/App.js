@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const Character = props => {
+  return (
+    <div className = "card">
+      <h3> Name: {props.character.name}</h3>
+      <p> Year Born: {props.character.birth_year}</p>
+      <p> Gender: {props.character.gender}</p>
+      <p> Height: {props.character.height}</p> 
+      <p> Mass: {props.character.mass} </p>
+    </div>
+  );
+};
+
+
+const Characters = props => {
+  return (
+    <div className = "Characters">
+    {props.characters.map(character => <Character key = {character.name} character = {character} />)}
+    </div>
+  );
+};
+
 
 
 class App extends Component {
@@ -36,6 +57,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">Star Wars Characters</h1>
+        <Characters characters = {this.state.starwarsChars} />
       </div>
     );
   }
