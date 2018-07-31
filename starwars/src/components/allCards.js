@@ -4,23 +4,27 @@ import React from 'react';
 const Card = ({data}) => {
   console.log(data);
 
-const height2 = {
+const heightHeight = {
     height: `${data.height}px`
   }
-
-const width2 = {
-    width: `${data.height}px`
+const cardHeight = {
+    height: `${data.height}px + 20px`
   }
 
-// `height: ${data.height}px`
+const heightWidth = {
+    height: `${data.height}px`,
+    width: `${data.mass}px`
+  }
+
   return (
 
-    <div className="card-main" data={data}>
-      <div style={width2} className="height">
-        <div>Height: {data.height}</div>
-
+    <div style={cardHeight} className="card-main" data={data}>
+      <div style={heightWidth} className="figure" >
+        <div className="height">Height: {data.height}</div>
+        <div className="mass">Mass: {data.mass}</div>
       </div>
-      <div style={height2} className="card-stats">
+
+      <div style={heightHeight} className="card-stats">
         <h1>{data.name}</h1>
           <h2>Stats:</h2>
             <ul>Mass: {data.mass}</ul>

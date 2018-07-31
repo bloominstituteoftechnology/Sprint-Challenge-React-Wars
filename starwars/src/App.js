@@ -54,7 +54,6 @@ class App extends Component {
     this.setState({ currentlyShowing: listCopy})
   }
 
-
   previous = () => {
     // console.log("previous envoked ")
     const listCopy = this.state.currentlyShowing.slice();
