@@ -7,7 +7,7 @@ const StarWarsC =  props =>  {
     return (
 
         <div>
-            {props.List.map((list,i) => <ListC key={i} list={list}/>)}
+            {props.List.map((list,i) => <ListC key={i} ListC={list}/>)}
         </div>
     );
 };          
