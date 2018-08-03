@@ -30,6 +30,19 @@ class App extends Component {
       });
   };
 
+  handleInfoToggler = create => {
+    let swChars = this.state.swChars.slice();
+    swChars = swChars.map(eachChar => {
+      if (eachChar.create === create) {
+        eachChar.open = !eachChar.open;
+        return eachChar;
+      } else {
+        return eachChar;
+      }
+    });
+    this.setState({ swChars });
+  };
+
   render() {
     return (
       <div className="App">
