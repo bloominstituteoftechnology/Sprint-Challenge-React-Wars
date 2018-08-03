@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Bio from './components/Bio';
-import Vehicles from './components/Vehicles';
+import BioForm from './components/BioForm';
 
 
 class App extends Component {
@@ -33,18 +33,16 @@ class App extends Component {
   };
 
 
-
-
-
-
+  
 
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Bio />
-        <Vehicles />
+        <Bio bioChar={this.state.starwarsChars} />
+        <BioForm />
+        
       </div>
     );
   }
