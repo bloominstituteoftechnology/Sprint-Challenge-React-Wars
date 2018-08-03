@@ -8,10 +8,10 @@ import BioItems from './BioItems';
 const Bio = (props) => {
     return ( 
         <div>
-            {console.log(props.bioChar[0])}
+            {/* {console.log(props.Object.values(biodChar))} */}
              {props.bioChar.map((eachBio, i) => {
                  return (
-                    <BioItems key={i} bio={eachBio.name} />
+                    <BioItems key={i} bio={Object.values(eachBio)} />
                  )
              })}        
         </div> 
