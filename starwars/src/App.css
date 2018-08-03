@@ -6,3 +6,16 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.characters-list{
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+}
+
+.characters {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  
+}

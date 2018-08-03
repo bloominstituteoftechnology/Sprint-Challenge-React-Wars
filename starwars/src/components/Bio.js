@@ -7,7 +7,7 @@ import BioItems from './BioItems';
 
 const Bio = (props) => {
     return ( 
-        <div>
+        <div className= "character-list">
             {/* {console.log(props.Object.values(biodChar))} */}
              {props.bioChar.map((eachBio, i) => {
                  return (

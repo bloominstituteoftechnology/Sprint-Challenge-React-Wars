@@ -3,7 +3,7 @@ import React from 'react';
 
 const BioItems = (props) => {
     return  (
-    <div>{props.bio}</div>
+    <div className="characters">{props.bio}</div>
     
 )
 
