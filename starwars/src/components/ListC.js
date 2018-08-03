@@ -1,8 +1,8 @@
 import React from 'react';
 import StarWarsC from './StarWarsC.js';
 
-const List = props => {
+const ListC = props => {
     return <div> {props.name} </div>
 }
 
-export default  List;
+export default  ListC;

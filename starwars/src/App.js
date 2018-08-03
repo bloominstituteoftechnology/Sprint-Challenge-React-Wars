@@ -38,8 +38,10 @@ class App extends Component {
       
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="star">
         <StarWarsC List = {this.state.starwarsChars}
         />
+        </div>
       </div>
     );
   }
