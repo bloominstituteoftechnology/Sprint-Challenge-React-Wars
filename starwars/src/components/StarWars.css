@@ -6,9 +6,9 @@
 .star {
   border: 1px solid red;
   width: 350px;
-  height: 50%;
+  height: 350px;
   margin-left: 100px;
-  background: yellow;
+  background: lightblue;
   font-size: bold;
   overflow-y: scroll;
   padding-left: 10px;
