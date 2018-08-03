@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -30,27 +30,14 @@ class App extends Component {
       });
   };
 
-  handleInfoToggler = create => {
-    let swChars = this.state.swChars.slice();
-    swChars = swChars.map(eachChar => {
-      if (eachChar.create === create) {
-        eachChar.open = !eachChar.open;
-        return eachChar;
-      } else {
-        return eachChar;
-      }
-    });
-    this.setState({ swChars });
-  };
+
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CardContainer
-        swChars={this.state.swChars}
-        infoToggler={this.handleInfoToggler}
-        open = {this.state.open} 
+        starwarsChars={this.state.starwarsChars}
         />
       </div>
     );

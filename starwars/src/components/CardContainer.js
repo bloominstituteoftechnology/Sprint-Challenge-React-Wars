@@ -1,15 +1,13 @@
 import React from "react";
 import StarCard from "./StarCard";
+import "./StarWars.css"
 
 const CardContainer = props => {
   return (
     <div className="container">
-      {props.swChars.map(createChar => (
+      {props.starwarsChars.map(createChar => (
         <StarCard
-          infoToggle={props.infoToggle}
-          key={createChar.create}
           eachChar={createChar}
-          open={props.open}
         />
       ))}
     </div>
