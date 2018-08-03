@@ -7,6 +7,7 @@
     to be able to look at your code and asses the best ways and times to use components.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+    Class components are the only ones that can use state - that's the main difference this gives us the interactivity, functional components are used as a way to pass data to the main app itself (under the hood)
 
 
 1.  Describe state.
