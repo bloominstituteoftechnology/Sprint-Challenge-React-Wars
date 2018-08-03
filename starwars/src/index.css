@@ -5,3 +5,14 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.starring {
+  color: white;
+}
+
+.data {
+  border: 1px dashed palevioletred;
+  width: 400px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
