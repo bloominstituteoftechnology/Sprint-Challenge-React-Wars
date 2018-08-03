@@ -36,12 +36,12 @@ class App extends Component {
   
 
 
-  render() {
+  render()  {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Bio bioChar={this.state.starwarsChars} />
-        <BioForm />
+        
         
       </div>
     );
