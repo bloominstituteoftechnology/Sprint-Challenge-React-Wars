@@ -8,7 +8,7 @@ In my view, it means thinking in components. Looking at a mockup, for example, l
 
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-Class/stateful: these components can have state which means they are typically much more robust and dynamic.
+Class/stateful: these components can have state and methods which means they are typically much more robust and dynamic.
 Functional components: Essentially just JS functions which can take in props
 
 1.  Describe state.

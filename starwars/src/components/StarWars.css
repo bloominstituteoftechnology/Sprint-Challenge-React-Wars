@@ -40,12 +40,11 @@
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
   
-    border-radius: 30px 10px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    overflow: hidden;
     transition: 0.3s;
+    border-radius: 10px 20px;
   }
   .btn:after {
     position: absolute;
@@ -54,7 +53,8 @@
     width: 0;
     left: 50%;
     bottom: 0;
-    height: 3px;
+    height: 5px;
+    margin: auto;
     background: burlywood;
   }
   .btn:hover {
