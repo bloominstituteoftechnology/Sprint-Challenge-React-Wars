@@ -1,11 +1,17 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
+    A Javascript library that tries to solve the issue of scaleability by giving developers a way to (easily) create reusable elements/components
 
 1.  What does it mean to _think_ in react?
+    to be able to look at your code and asses the best ways and times to use components.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+
 1.  Describe state.
+    Quoting Ryan " State is the heart of every (class)component" it's what devs use to add interactivity and make our apps dynamic
 
 1.  Describe props.
+    props are used to transfer your data between components both class and presentational
+
