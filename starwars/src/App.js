@@ -36,6 +36,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div>
+          {this.state.prev ? <button onClick={() => this.getCharacters(this.state.prev)}>
+            Previous
+          </button> : null}
+          {this.state.next ? <button onClick={() => this.getCharacters(this.state.next)}>
+            Next
+          </button> : null}
+        </div>
         <SWList traits={this.state.starwarsChars} />
       </div>
     );
