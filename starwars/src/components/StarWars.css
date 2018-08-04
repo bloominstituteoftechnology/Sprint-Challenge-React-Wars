@@ -1,17 +1,4 @@
-.container: {
+.container {
   display: flex;
 
-}
-
-.star {
-  border: 1px solid red;
-  width: 350px;
-  height: 350px;
-  margin-left: 100px;
-  background: lightblue;
-  font-size: bold;
-  overflow-y: scroll;
-  padding-left: 10px;
-  text-align: left;
-  line-height: 1.5;
 }

@@ -1,17 +1,16 @@
-import React from 'react';
-import StarWarsC from './StarWarsC.js';
-import StarWars from  './StarWars.css';
+import React from "react";
 
 const ListC = props => {
-    return ( <div>
-        <h1> Star Wars Character</h1>
-    <div> Name: {props.ListC.name} </div>
-     <div>Gender: {props.ListC.gender} </div>
-    < div> Eye Color: {props.ListC.eye_color} </div>
-    < div> Height: {props.ListC.height} </div>
-    < div> Home World: {props.ListC.homeworld} </div>
-     </div>
-    );
-    };
+  return (
+    <div>
+      <h1> Star Wars Character</h1>
+      <div> Name: {props.charObject.name} </div>
+      <div>Gender: {props.charObject.gender} </div>
+      <div> Eye Color: {props.charObject.eye_color} </div>
+      <div> Height: {props.charObject.height} </div>
+      <div> Home World: {props.charObject.homeworld} </div>
+    </div>
+  );
+};
 
-export default  ListC;
+export default ListC;
