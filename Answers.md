@@ -18,4 +18,4 @@
 
 4. See above.  State is the data accessible to  and controlled by the class component.  State is altered as a result of user interaction.
 
-5.  When data is updated in state it is passed down to the components in the form of props, or properties.  Props are the data that define elements contained in presentational components,
+5.  When data is updated in state it is passed down to the components in the form of props, or properties.  Props are the data that define elements contained in presentational components.

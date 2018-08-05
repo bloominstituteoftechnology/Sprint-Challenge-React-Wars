@@ -1,5 +1,5 @@
 import React from "react";
-import './CharacterSelect.css';
+// import './CharacterSelect.css';
 import Character from './Character';
 
 const CharacterSelect = props => {
