@@ -1,7 +1,4 @@
 
 .each-card {
-  position: relative;
-  margin: 25px 0;
-  background: white;
-  border-radius: 10px;
+  border: 1px solid red;
 };
