@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './StarWars.css';
 
-let StarCard;
 
-StarCard = () => {
+
+const StarCard = (props) => {
     return (
-        <div>
-
+        <div className='cards'>
+            <div>NAME:   {props.charData.name}</div>
+            <div>HEIGHT: {props.charData.height}</div>
+            <div>EYE COLOR: {props.charData.eye_color}</div>
+            <div>SKIN TONE: {props.charData.skin_color}</div>
+            <div>HAIR COLOR: {props.charData.hair_color}</div>
+            <div>MASS/WEIGHT: {props.charData.mass}</div>
         </div>
     );
 };
