@@ -1,0 +1,13 @@
+
+.each-card {
+  position: relative;
+  background: #fff;
+};
+
+.test{
+  position: absolute;
+  z-index: 10;
+  max-width: 100px;
+  width: 100%;
+  opacity: .5;
+};

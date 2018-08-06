@@ -1,17 +1,21 @@
 import React from "react";
 import StarCard from "./StarCard";
+import './CardsContainer.css';
 
 const CardsContainer = props => {
   return (
-    <div className='cards-container'>
+    <div className="cards-container">
       {props.swd.map((each, i) => (
-        <StarCard
-        //   five={"5"}
-        //   justus={"green"}
-        //   dad={"blue"}
-        //   Eric={"purple and gold"}
-        charData={each}
-        />
+        <div className="each-card" key={i}>
+         <div className="test"> {props.facePics[i]}</div> 
+          <StarCard
+            //   five={"5"}
+            //   justus={"green"}
+            //   dad={"blue"}
+            //   Eric={"purple and gold"}
+            charData={each}
+          />
+        </div>
       ))}
     </div>
   );
