@@ -7,18 +7,40 @@
 }
 /* write your parent styles in here for your App.js */
 .cards {
+  box-sizing: border-box;
   background: white;
-  width: 300px;
-  height: 200px;
-  margin: 50px 0;
-  padding-top: 35px;
+  width: 500px;
+  height: 300px;
   border: 2px solid darkgray;
   border-radius: 10px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.text {
+  position: absolute;
+  z-index: 50;
+  opacity: 1;
+  color: black;
+  left: 50%;
+  margin-left: -105px;
+
 }
 
 .cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  opacity: .7;
+}
+
+img {
+  z-index: 0;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  opacity: .5;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
 }

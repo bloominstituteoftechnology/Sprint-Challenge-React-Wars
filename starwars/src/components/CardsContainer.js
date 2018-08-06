@@ -7,7 +7,7 @@ const CardsContainer = props => {
     <div className="cards-container">
       {props.swd.map((each, i) => (
         <div className="each-card" key={i}>
-         <div className="test"> {props.facePics[i]}</div> 
+         {props.facePics[i]}
           <StarCard
             //   five={"5"}
             //   justus={"green"}
