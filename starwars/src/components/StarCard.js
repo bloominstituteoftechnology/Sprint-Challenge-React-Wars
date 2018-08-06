@@ -16,4 +16,8 @@ const StarCard = (props) => {
     );
 };
 
+const FacePics = [
+    <img src="./img/star-wars-luke-skywalker-tatooine.jpg" alt="Luke"/>, <img src="./img/C3po.jpg" alt="C3pO"/>, <img src="./img/r2d2-socialmedia.jpg" alt="R2D2"/>, <img src="./img/Darth Vader.webp" alt="Darth Vader"/>, <img src="./img/Star-Wars-Princess-Leia.jpg" alt="Leia"/>, <img src="./img/Owen_Lars.jpg" alt="Owen"/>, <img src="./img/Beru_Lars.png" alt="Beru"/>, <img src="./img/r5d4.jpg" alt="R5D4"/>, <img src="./img/biggs.jpeg" alt="Biggs"/>, <img src="./img/Ben_Kenobi.png" alt="Obi Wan"/>
+];
+
 export default StarCard;
