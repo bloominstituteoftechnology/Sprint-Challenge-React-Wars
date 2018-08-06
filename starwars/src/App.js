@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: [],
+      starwarsChars: null,
+      charHomeworlds: []
     };
   }
   /********** Fetch call in question **********/
@@ -14,20 +15,52 @@ class App extends Component {
     // https://swapi.co/api/planets/{planet-index}/
   // char = this.state.starwarsCharacters.{someChatacter}
   // index = index of char
-  fetchHomeworldData(url, char, index) {
-    fetch(url)
+  // fetchHomeworldData(url, char, index) {
+  //   fetch(url)
+  //     .then(res => {
+  //       return res.json();
+  //     }).then(data => {
+  //       // Tried to set up a new property in each character object
+  //       // char.homeworldJSON = data;
+  //       // this.setState({ homeworldData: this.state.starwarsChars.map((char, index) => ( 
+  //       //   index = { homeworld: data }
+  //       // ))});
+  //       // this.setState(console.log(this));
+  //     }).catch(err => {
+  //       throw new Error(err);
+  //     });
+  // }
+  // Funniest thing is that it shows up in state when checking react dev tools
+  // But I cannot access through standard dot syntax
+  /********************************************/
+
+  getStarwarsChars() {
+    fetch('https://swapi.co/api/people/')
       .then(res => {
         return res.json();
       }).then(data => {
-        // Tried to set up a new property in each character object
-        char.homeworldJSON = data;
+        this.setState({ starwarsChars: data.results });
+        console.log(this.state.starwarsChars);
       }).catch(err => {
         throw new Error(err);
       });
   }
-  // Funniest thing is that it shows up in state when checking react dev tools
-  // But I cannot access through standard dot syntax
-  /********************************************/
+
+  getHomeworldData() {
+    fetch('https://swapi.co/api/people/')
+      .then(res => {
+        return res.json();
+      }).then(data => {
+        console.log(data);
+      }).catch(err => {
+        throw new Error(err);
+      });
+  }
+
+  // getStarwarsCharsAndHomeworlds() {
+  //   return Promise.all([this.getStarwarsChars(), this.getHomeworldData()]);
+  // }
+
   componentDidMount() {
     fetch('https://swapi.co/api/people/')
       .then(res => {
@@ -40,6 +73,8 @@ class App extends Component {
   }
 
   render() {
+    if (!this.state.starwarsChars) return <div>Loading Characters Please Wait.....</div>
+    console.log(this.state);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>

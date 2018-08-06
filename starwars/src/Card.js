@@ -6,7 +6,7 @@ const Card = props => {
       {props.chars.map((char, index) => (
         <div className="card" key={`${char.name}${index}`}>
           {/********** Fetch call in question **********/}
-          {props.fetchHomeworldData(char.homeworld, char, index)}
+          {/* {props.fetchHomeworldData(char.homeworld, char, index)} */}
           <div className="card_personInfo">
             <div className="personInfo_name">
               <strong>Name:</strong> {char.name}
