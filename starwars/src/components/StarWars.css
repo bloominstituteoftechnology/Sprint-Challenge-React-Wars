@@ -1,0 +1,21 @@
+.cards {
+    height: 290px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
+    padding: 10px;
+    margin: 20px auto;
+    line-height: 25px;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    /* border: 2px dashed red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    justify-content: center;
+}
