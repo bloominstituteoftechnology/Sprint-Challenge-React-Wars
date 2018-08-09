@@ -26,13 +26,12 @@ class App extends Component {
         throw new Error(err);
       });
   }
+
   render() {
     return (
       <div className="App">
-        <div className="header-box"> 
-        {/* <img className='headstar' src="https://static1.squarespace.com/static/57a08731e4fcb54d65c2481d/t/57d7cba38419c22c6f135c2a/1473760177409/Rotating-Xwing.gif?format=750w" /> */}
+        <div className="header-box">
         <img className='header-logo' src="https://vignette.wikia.nocookie.net/disney/images/2/21/Star_Wars_logo.png/revision/latest?cb=20170909202326" />
-        {/* <img className='headstar' src="https://media.giphy.com/media/3og0ILdD4AWjibwIFO/giphy.gif" /> */}
         <h1 className="Header">The Empire Swipes Back</h1>
         </div>
         <StarCard {...this.state}/>

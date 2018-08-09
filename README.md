@@ -22,7 +22,7 @@
 
 ![Star Wars state data](starwars_data.png)
 
-* Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course. 
+* Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
 * For now, just build a react app that displays this fun Star Wars data. Build a card for each object and style it to make it nice and fancy. 
 * Feel free to integrate Bootstrap with whichever `Bootstrap React Component Library` you're comfortable with.
 

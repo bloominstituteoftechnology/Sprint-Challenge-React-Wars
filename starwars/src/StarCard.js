@@ -4,7 +4,7 @@ import { Card, CardImg, CardText, CardBody, CardLink,
     CardTitle, CardSubtitle } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { Button } from 'reactstrap';
-  
+
   const StarCard = (props) => {
     return (
       <div>
@@ -16,7 +16,6 @@ import { Button } from 'reactstrap';
             <img className='redsaber' src="https://i.imgur.com/TwZgZVc.png" />
             <CardSubtitle></CardSubtitle>
           </CardBody>
-          
           <CardBody className='cardbottom'>
           <Table className='table'>
         <thead>
@@ -38,7 +37,7 @@ import { Button } from 'reactstrap';
           </tr>
 
         </tbody>
-      </Table> 
+      </Table>
       <Button className='buttontwo' color="link"><img className='button-two' src="https://vignette.wikia.nocookie.net/emoticon/images/f/f5/Jar-Jar-Binks-1.png/revision/latest?cb=20150704200134" /><p className='button-text-two'>Not The Droid</p> </Button>
       <Button className='buttonone' color="link"><img className='button-one' src="http://files.softicons.com/download/tv-movie-icons/star-wars-characters-icons-by-jonathan-rey/png/256x256/Han%20Solo%20-%2002.png" /><p className='button-text-one'>Force Be With You</p></Button>
           </CardBody>
@@ -47,5 +46,5 @@ import { Button } from 'reactstrap';
       </div>
     );
   };
-  
+
   export default StarCard;
