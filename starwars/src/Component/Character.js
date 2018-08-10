@@ -6,10 +6,6 @@ class Character extends React.Component {
     
     constructor(props) {
         super(props);
-
-        // this.state = {
-        //     starwarsChars: ['',]
-        // }
     }
 
     render() {
