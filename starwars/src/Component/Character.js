@@ -6,35 +6,27 @@ class Character extends React.Component {
     
     constructor(props) {
         super(props);
+
+        // this.state = {
+        //     starwarsChars: ['',]
+        // }
     }
 
     render() {
         return (
-            <div>
                 <Row>
-                    <Col sm="4">
+                    <Col>
                         <Card body>
                             <CardTitle>{this.props.character.name}</CardTitle>
-                            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                            <Button>Go somewhere</Button>
-                        </Card>
-                    </Col>
-                    <Col sm="4">
-                        <Card body>
-                            <CardTitle>Special Title Treatment</CardTitle>
-                            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                            <Button>Go somewhere</Button>
-                        </Card>
-                    </Col>
-                    <Col sm="4">
-                        <Card body>
-                            <CardTitle>Special Title Treatment</CardTitle>
-                            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                            <Button>Go somewhere</Button>
+                            <CardText>
+                                <div>Height:</div>
+                                <div>{this.props.character.height}</div>
+                                <div>Birth Year:</div>
+                                <div>{this.props.character.birth_year}</div> 
+                            </CardText>
                         </Card>
                     </Col>
                 </Row>
-            </div>
         );
     };
 }; // class

@@ -30,7 +30,17 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div><Character character = {this.state.starwarsChars}/></div>
+        <div className="CardsContainer">
+          {this.state.starwarsChars.map((char, index) => {
+              return (
+                <Character
+                  character={char}
+                  key={index}
+                />
+              )
+            })
+          };
+          </div>
       </div>
     );
   }
