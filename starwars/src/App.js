@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PostContainer from './components/PostContainer/PostContainer.js';
+import PostContainer from './components/PostContainer/postcontainer';
 
 class App extends Component {
   constructor() {
