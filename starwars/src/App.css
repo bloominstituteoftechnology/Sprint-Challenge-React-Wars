@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vw;
 }
 .Header {
   color: #443e3e;
@@ -10,18 +11,26 @@
 .card {
   display: flex;
   color: rgb(15, 14, 14);
+  width: 100%;
+}
+
+.cardFlow {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: rgb(15, 14, 14);
+  max-width: 30%;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 10px;
-  width: 100%;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   border-radius: 10px;
-  width: 30%;
+  width: 100%;
 }
 
 .cardRow {
