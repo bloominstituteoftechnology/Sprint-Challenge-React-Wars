@@ -1,0 +1,30 @@
+
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-body {
+    width: 310px;
+    background: grey;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.card-body .char-attributes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-body .char-attributes .attribute {
+    width: 145px;
+    padding-bottom: 10px;
+}
+
