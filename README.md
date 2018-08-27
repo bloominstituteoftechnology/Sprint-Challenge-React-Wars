@@ -34,10 +34,10 @@
 
   ## React Sprint Challenge
 
-- [ ] Answer Questions in `Answers.md`
+- [X] Answer Questions in `Answers.md`
 
 ### Project
-- [ ] Install dependencies and start your server
+- [X] Install dependencies and start your server
 - [ ] Build a card to display each object
 - [ ] Style your cards
 - [ ] Display the list of cards for each character object
