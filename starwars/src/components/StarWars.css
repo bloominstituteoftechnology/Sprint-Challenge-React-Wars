@@ -19,12 +19,47 @@
 
 .hide {display: none;}
 
-.back-display {
+.name {
   background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 300px;
   width: 200px;
+}
 
+.height {
+  background-image: url('https://www.jamberoo.net/uploads/default/files/ico-height.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+}
+
+.mass {
+  background-image: url('http://www.particleadventure.org/images/page-elements/scales.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+}
+
+.hair {
+  background-image: url('https://i.dailymail.co.uk/i/pix/2018/02/06/13/48EE14B600000578-5358041-image-a-50_1517924589814.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+}
+
+.skin {
+  background-image: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-img.instyle.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F684xflex%2Fpublic%2Fimages%2F2016%2F10%2F100516-glowing-skin.jpg%3Fitok%3DXV9YJvOi&w=700&q=85');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 200px;
 }

@@ -4,7 +4,7 @@ import './StarWars.css'
 function Card (props) {
    return (
     <div className="character" onClick={props.onClick}>
-      <p className="name"> Name: {props.name} </p>
+      <p> Name: {props.name} </p>
       <p> Height: {props.height} </p>
       <p> Mass: {props.mass} </p>
       <p> Hair Color: {props.hairColor} </p>
