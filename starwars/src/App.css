@@ -8,6 +8,72 @@
 }
 /* write your parent styles in here for your App.js */
 
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.no-page-div-style {
+  width: 30%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+}
+
 .display-none {
   display: none;
+}
+
+
+
+
+/* Animations */
+
+.appear {
+  -webkit-animation-name: appear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: appear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+
+/* Standard syntax */
+@keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+
+.disappear {
+  -webkit-animation-name: disappear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: disappear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
+}
+
+/* Standard syntax */
+@keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
 }

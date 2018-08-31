@@ -10,8 +10,8 @@ class App extends Component {
       starwarsChars: [],
       nextPage: '',
       previousPage: '',
-      prevClass: ['display-none'],
-      nextClass: ['display-none']
+      prevClass: ['display-none', 'no-page-div-style'],
+      nextClass: ['display-none', 'no-page-div-style']
     };
   }
 
@@ -35,6 +35,10 @@ class App extends Component {
       });
   };
 
+  handleClick = (e, pageURL) => {
+    return this.getNewPage(pageURL);
+  }
+
   getNewPage = URL => {
     fetch(URL)
       .then(res => {
@@ -45,28 +49,44 @@ class App extends Component {
       })
       .catch(err => {
         if (!this.state.previousPage) {
-          this.setState({ prevClass: [] }, () => {
+          return this.setState({ prevClass: ['no-page-div-style', 'appear'] }, () => {
             setTimeout(() => {
               this.setState((prevState) => {
-                prevState.prevClass.push('display-none');
+                prevState.prevClass.push('disappear');
 
                 return { prevClass: prevState.prevClass };
+              }, () => {
+                setTimeout(() => {
+                  this.setState((prevState) => {
+                    prevState.prevClass.push('display-none');
+    
+                    return { prevClass: prevState.prevClass };
+                  });
+                }, 250);
               });
-            }, 1000);
+            }, 2000);
           });
         } else if (!this.state.nextPage) {
-          this.setState({ nextClass: [] }, () => {
+          return this.setState({ nextClass: ['no-page-div-style', 'appear'] }, () => {
             setTimeout(() => {
               this.setState((prevState) => {
-                prevState.nextClass.push('display-none');
+                prevState.nextClass.push('disappear');
 
                 return { nextClass: prevState.nextClass };
+              }, () => {
+                setTimeout(() => {
+                  this.setState((prevState) => {
+                    prevState.nextClass.push('display-none');
+    
+                    return { nextClass: prevState.nextClass };
+                  });
+                }, 250);
               });
-            }, 1000);
+            }, 2000);
           });
-        } else {
-          throw new Error(err);
         }
+        
+        throw new Error(err);
       });
   };
 
@@ -74,10 +94,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <button onClick = { () => this.getNewPage(this.state.previousPage) }>PREVIOUS</button>
-        <button onClick = { () => this.getNewPage(this.state.nextPage) }>NEXT</button>
-        <div className={ this.state.prevClass.join(" ") }>There is no previous page</div>
-        <div className={ this.state.nextClass.join(" ") }>There is no next page</div>
+        <button onClick = { (e) => this.handleClick(e, this.state.previousPage) }>PREVIOUS</button>
+        <button onClick = { (e) => this.handleClick(e, this.state.nextPage) }>NEXT</button>
+        <div className={ this.state.prevClass.join(" ") }>There is no previous page.</div>
+        <div className={ this.state.nextClass.join(" ") }>There is no next page.</div>
         <StarWars 
           starwarsChars = { this.state.starwarsChars } 
         />
