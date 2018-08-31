@@ -74,6 +74,7 @@ class App extends Component {
           <button onClick={this.prevPage}>Previous Page</button>
           <button onClick={this.nextPage}>Next Page</button>
         </div>
+        <h4>Current Page: {this.state.num}</h4>
         <StarwarsList charactersData={this.state.starwarsChars} />
       </div>
     );
