@@ -3,13 +3,12 @@ import React from 'react';
 function CharacterTraits(props) {
     return (
         <div className="character-card">
-
             <h2>{props.traits.name}</h2>
-            <div>{props.traits.birth_year}</div>
-            <div>{props.traits.eye_color}</div>
-            <div>{props.traits.hair_color}</div>
-            <div>{props.traits.height}</div>
-            <div>{props.traits.mass}</div>
+            <p>{props.traits.birth_year}</p>
+            <p>{props.traits.eye_color}</p>
+            <p>{props.traits.hair_color}</p>
+            <p>{props.traits.height}</p>
+            <p>{props.traits.mass}</p>
         </div>
     );
 }

@@ -57,13 +57,21 @@ table {
   font-size: 62.5%;
 }
 
-
-
 .App {
+  margin: 0 auto;
   text-align: center;
+  font-size: 1.6rem;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 3.5rem;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
-/* write your parent styles in here for your App.js */
+
+h2 {
+  font-size: 2rem;
+}
+
+
