@@ -37,15 +37,16 @@ class App extends Component {
     console.log(event.target);
     console.log(event.target.classList)
     console.log(event.target.classList[1])
-    var option = event.target.innerText ?
-    re.exec(event.target.innerText)[0].toLowerCase()
-    : event.target.classList[1].toLowerCase()
+
     // console.log(option)
     // console.log(event.target.name);
     // console.log(event.target.classList[0]);
     if (event.target.tagName == 'P'
     || event.target.classList[0] === 'back-display') {
       console.log('im normal')
+      var option = event.target.innerText ?
+      re.exec(event.target.innerText)[0].toLowerCase()
+      : event.target.classList[1].toLowerCase()
       console.log(event.target.parentNode.children[event.target.parentNode.children.length-1]);
       Array.from(event.target.parentNode.children).forEach(
         item =>
@@ -54,8 +55,10 @@ class App extends Component {
       event.target.parentNode.children[event.target.parentNode.children.length-1]
       .classList.toggle(option)
     } else {
+      var option = event.target.children[event.target.children.length-1].classList[1]
         console.log('im different')
         console.log(event.target.children);
+        console.log('option:', option);
         Array.from(event.target.children).forEach(
           item=>
           item.classList.toggle('hide')
