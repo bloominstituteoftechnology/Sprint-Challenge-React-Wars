@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './components/StarWars.css';
 import CharacterList from './components/CharacterList';
 
 class App extends Component {
@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     console.log(this.state.starwarsChars[0]);
     return (
-      <div className="App">
+      <div className="container">
         <h1 className="Header">React Wars</h1>
         <CharacterList 
         characters = {this.state.starwarsChars} 
