@@ -2,7 +2,7 @@ import React from 'react';
 
 function StarwarsChar(props) {
   return (
-    <div name={props.starwarsChar.name}>
+    <div className="char-card" name={props.starwarsChar.name}>
       <h1>{props.starwarsChar.name}</h1>
       <h3>
         Birth year: <span>{props.starwarsChar.birth_year}</span>
