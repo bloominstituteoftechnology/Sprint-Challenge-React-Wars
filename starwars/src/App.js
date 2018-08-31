@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []      
+      starwarsChars: []           
     };
   }
 
@@ -35,6 +35,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList characterArray={this.state.starwarsChars} />
+        <p className="JarJar">Meesa broke into dis website. Feel meesa wrath, for meesa Sith Lord in sa secret!</p>
       </div>
     );
   }

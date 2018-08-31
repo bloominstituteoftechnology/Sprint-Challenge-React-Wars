@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './StarWars.css';
+
 const Character = (props) => {
   return (
     <div className='character-data'>
@@ -11,7 +13,7 @@ const Character = (props) => {
         <li>Hair the Color of: {props.charData.hair_color}</li>
         <li>{props.charData.height} Space-ship parts tall</li>
         <li>{props.charData.mass} Grains of sand from Tatoine-wide</li>
-        <li>{props.charData.skin_color}: skin</li>
+        <li>skin: {props.charData.skin_color}</li>
 
       </div>
     </div>

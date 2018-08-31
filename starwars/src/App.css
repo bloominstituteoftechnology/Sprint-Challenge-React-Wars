@@ -3,4 +3,30 @@
   text-shadow: 1px 1px 5px #fff;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.JarJar {
+  border: 1px solid white;
+  background-color: white;
+  padding: 50px 0;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.JarJar:hover {
+  background-image: url('./ProfilePictures/DarthVader.jpg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  color: coral;  
+  height: 800px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
 /* write your parent styles in here for your App.js */
