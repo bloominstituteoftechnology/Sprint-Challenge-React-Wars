@@ -1,7 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  height: fit-content;
+  margin: 0 auto;
+  background: rgba(40,42,53,1);
+  filter: brightness(90%);
+}
+@media (max-width: 500px) {
+  body {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
