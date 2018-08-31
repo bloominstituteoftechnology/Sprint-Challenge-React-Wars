@@ -1,0 +1,15 @@
+.container {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  color: white;
+  border: 1px solid red;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
