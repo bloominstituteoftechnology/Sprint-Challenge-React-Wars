@@ -1,0 +1,29 @@
+
+
+.charachterListDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 26%;
+}
+
+.charachterDiv{
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.charachterDiv p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.charachterDiv h2{
+    text-decoration-line: underline;
+    margin: 0 0 10px 0;
+}
