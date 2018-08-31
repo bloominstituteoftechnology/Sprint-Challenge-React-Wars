@@ -1,0 +1,18 @@
+/* All styles for your header Components live here */
+.container {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.headerTitle {
+    display: flex;
+    /* border: 1px solid gray; */
+    font-weight: bold;
+}
+
+.date {
+    color: lightgray;
+}
+.headerImg {
+width: 4rem;
+}
