@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
+import CharacterList from './components/CharacterCard/CharacterList';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      character: null
     };
   }
 
@@ -29,10 +32,32 @@ class App extends Component {
       });
   };
 
+  // displayCard = name => {
+
+  //   let characters = this.state.starwarsChars.slice();
+    
+  //   let string = '';
+  //   characters = characters.forEach(character => {
+  //     console.log(character.name);
+  //     if(character.name === name){
+  //       for (const [key, value] of Object.entries(character)) {
+  //         string = (`${key} ${value}`);
+          
+  //       } 
+  //       return (string);
+  //       }
+  //       this.setState({character:string});
+  //     }
+      
+  //   );
+   
+  // }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList characters = {this.state.starwarsChars} displayCard = {this.displayCard} characteritem = {this.state.character}/>
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.list-container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App .list-container .card-container{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    padding: 0 4%;
+}
