@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .char-card {
@@ -10,12 +11,12 @@
     width: 50%;
     margin: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .char-card * {
@@ -23,7 +24,8 @@
 }
 
 .char-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 hr {
@@ -31,11 +33,19 @@ hr {
     border-color: black;
 }
 
-.char-name-gender, .char-home-world {
+.char-name {
     width: 100%;
+}
+
+.char-gender-birthyear {
+    width: 50%;
 }
 
 .char-stats {
     margin: 0 10px;
     width: 30%;
+}
+
+span {
+    color: #AAA;
 }
