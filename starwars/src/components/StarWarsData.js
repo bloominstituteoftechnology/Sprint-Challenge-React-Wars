@@ -3,13 +3,17 @@ import React, { Component } from 'react';
 const StarWarsData = props => {
     return(
     <div className="data-card">
-            Name: {props.starwarsChars.name} <br/>
-       Birth Year: {props.starwarsChars.birth_year} <br/>
-            Gender: {props.starwarsChars.gender}<br/>
-            Eye-Color: {props.starwarsChars.eye_color}<br />
-            Hair-Color: {props.starwarsChars.hair_color}<br />
-            Height: {props.starwarsChars.height}<br />
-            Skin-Color: {props.starwarsChars.skin_color}<br />
+         <h3>{props.starwarsChars.name} <br/></h3>
+            <div class="right-content"> 
+                <span>Birth Year</span>: {props.starwarsChars.birth_year} <br/>
+                <span>Gender</span>: {props.starwarsChars.gender}<br/>
+                <span>Eye-Color</span>: {props.starwarsChars.eye_color}<br />
+            </div>
+            <div class="left-content">
+                <span>Hair-Color</span>: {props.starwarsChars.hair_color}<br />
+                <span>Height</span>: {props.starwarsChars.height}<br />
+                <span> Skin-Color</span>: {props.starwarsChars.skin_color}<br />
+            </div>
     </div>
     );
 };
