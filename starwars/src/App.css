@@ -9,10 +9,11 @@
 /* write your parent styles in here for your App.js */
 
 button {
-  background-color: white;
+  background-color: #DDD;
   color: black;
   padding: 10px 20px;
   margin: 10px;
+  border-radius: 20px;
 }
 
 button:hover {
