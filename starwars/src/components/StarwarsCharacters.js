@@ -3,7 +3,9 @@ import Character from './Character';
 
 function StarwarsCharacters(props) {
     return (
-      <div></div>
+      <div>
+        {props.chars.map(char => <Character key={char.name} char={char} />)} 
+      </div>
     );
 };
  export default StarwarsCharacters; 

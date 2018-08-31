@@ -35,8 +35,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div>
-          <div className="character-cards">
-            <StarwarsCharacters/>
+          <div className="character-cards centered scrollbar" id="content">
+            <StarwarsCharacters chars={this.state.starwarsChars}/>
           </div>
         </div>
       </div>

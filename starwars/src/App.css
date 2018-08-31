@@ -6,3 +6,9 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.character-cards{
+ overflow-y: scroll;
+ overflow-x: hidden;
+ height: 70vh;
+}
