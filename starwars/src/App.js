@@ -8,6 +8,8 @@ class App extends React.Component {
     super()
     this.state = {
       swChars: [],
+      currentPage: 1,
+      maxPage: "",
       previousPage: "",
       nextPage: "",
     }
@@ -27,9 +29,11 @@ class App extends React.Component {
         return res.json()
       })
       .then(data => {
-        console.log(data)
+        let count = Math.ceil(data.count / 9)
+
         this.setState({ 
           swChars: data.results,
+          maxPage: count,
           previousPage: data.previous,
           nextPage: data.next
          })
@@ -44,9 +48,7 @@ class App extends React.Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Pagination
-          currentPage={this.state.currentPage}
-          previousPage={this.state.previousPage}
-          nextPage={this.state.nextPage}
+          state={this.state}
           getCharacters={this.getCharacters}
         />
         <Cards swChars={this.state.swChars} />

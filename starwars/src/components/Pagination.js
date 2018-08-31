@@ -1,11 +1,18 @@
 import React from 'react'
-import './Card.css'
+import './Pagination.css'
 
 const Pagination = (props) => {
+  let countArr = [...Array(props.state.maxPage).keys()]
+
   return (
     <div className="Pagination">
-      <button onClick={(e) => props.getCharacters(props.previousPage ? props.previousPage : "https://swapi.co/api/people")}>Previous Page</button>
-      <button onClick={(e) => props.getCharacters(props.nextPage)}>Next Page</button>
+      <div className="counters">
+        {countArr.map(page => {
+          return <span className="counter" key={page}>{page + 1}</span>
+        })}
+      </div>
+      <button onClick={(e) => props.getCharacters(props.state.previousPage ? props.state.previousPage : "https://swapi.co/api/people")}>Previous Page</button>
+      <button onClick={(e) => props.getCharacters(props.state.nextPage)}>Next Page</button>
     </div>
   )
 }

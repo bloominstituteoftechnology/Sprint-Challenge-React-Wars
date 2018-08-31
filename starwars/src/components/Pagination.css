@@ -1,0 +1,14 @@
+.counters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.counter {
+  border: 1px solid black;
+  background: goldenrod;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gray;
+  padding: 0.5%;
+  margin: 0 1%;
+}
