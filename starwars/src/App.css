@@ -21,4 +21,11 @@ button {
   border: 1px solid black;
   font-size: 16px;
   cursor: pointer;
+  flex-grow: 1;
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }

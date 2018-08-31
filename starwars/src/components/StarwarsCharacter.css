@@ -29,7 +29,7 @@
 
 h2 {
   color: #000;
-  text-shadow: 1px 1px 3px rgba(255,255,255, 0.7);
+  text-shadow: 1px 1px 5px #fff;
   text-align: center;
   padding: 10px 5% 0;
 }
@@ -51,6 +51,7 @@ a:hover {
 
 h3 {
   padding: 10px 5% 0;
+  text-shadow: 1px 1px 5px #fff;
 }
 
 ul {
