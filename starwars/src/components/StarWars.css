@@ -1,0 +1,20 @@
+.starwarsChars{
+    display: flex;
+    width:100%;
+
+}
+
+.starwarsChar {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border: 1px solid red;
+}
+
+.starwarsCharValues{
+
+}
+
+.starwarsCharProp{
+    font-size:15px;
+}

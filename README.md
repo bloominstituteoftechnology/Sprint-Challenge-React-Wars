@@ -9,14 +9,18 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+    - React JS is a Javascript-based programming language that 
+      Facebook created to deal with problems that require live or constant rendering of information across multiple locations on a website due a single data change in the state of an object
+2.  What does it mean to _think_ in react?
+    - To think in react, one must break the entire user interface into smaller components and subcomponents.  This is usually related to the different layers of the design image.
+3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-1.  What does it mean to _think_ in react?
+4.  Describe state.
+    - A state of an application is an immutable data set that contains information about the current environment of the application
 
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+5.  Describe props.
+    - Pros are properties of a component of an application that typically adopts information from the state of the application.  Props are mutable, while state is not.
 
-1.  Describe state.
-
-1.  Describe props.
 
 ## Project
 
