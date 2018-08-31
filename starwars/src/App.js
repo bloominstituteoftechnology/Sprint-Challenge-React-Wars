@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarCharList from './components/StarChar/StarCharList';
+
 
 class App extends Component {
   constructor() {
@@ -29,10 +31,22 @@ class App extends Component {
       });
   };
 
+  checkCharacters = event => {
+   if(this.state.starwarsChars.name === "Luke Skywalker"){
+     <h1>Hi there!</h1>
+   }
+
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+       <StarCharList  
+         starwarsItem ={this.state.starwarsChars}
+         addAffiliation={this.checkCharacters}
+       />
+        
       </div>
     );
   }

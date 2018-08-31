@@ -6,3 +6,31 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.newCharacter{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3%;
+  justify-content: space-evenly;
+}
+.line{
+  border: 1px solid black;
+}
+.image{
+  width: 100%;
+}
+
+.name{
+  
+  color:black;
+  text-align: center;
+}
+
+.Character{
+  margin: 30px;
+  width: 350px;
+  height: 393px;
+  border: 2px solid black;
+  background: tan;
+  text-align: left;
+}
