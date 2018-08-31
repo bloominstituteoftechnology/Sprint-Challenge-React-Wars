@@ -13,7 +13,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -36,7 +36,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterCard starWarsChars={this.state.starwarsChars[0]}/>
+        <div className='cards-container'>
+        {this.state.starwarsChars.map(character=> {
+          return <CharacterCard characterProps={character} />
+        })}
+        </div>
       </div>
     );
   }
