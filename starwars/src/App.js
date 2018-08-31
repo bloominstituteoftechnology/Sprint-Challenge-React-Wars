@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ItemList from './components/ItemList';
+import Down from './components/Down';
 
 class App extends Component {
   constructor() {
@@ -8,6 +9,7 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       counter: 1,
+      classes: "toggle",
     };
   }
 
@@ -18,15 +20,21 @@ class App extends Component {
   upURL = event => {
     event.preventDefault();
     let newState = {...this.state};
+    this.state.classes = "";
     this.state.counter = this.state.counter + 1;
     newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
+    console.log(this.state.counter);
     this.setState({...newState});
   }
   downURL = event => {
     event.preventDefault();
     let newState = {...this.state};
-    if (this.state.counter === 1){
-      alert(`can't go down further`)
+    console.log(this.state.counter);
+    if (this.state.counter === 2){
+      this.state.counter = this.state.counter - 1;
+      newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
+      this.setState({...newState});
+      this.state.classes = "toggle";
     } else {
       this.state.counter = this.state.counter - 1;
       newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
@@ -55,7 +63,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.downURL}>Last Page</button>
+        <Down down={this.downURL} classes={this.state.classes} />
         <button onClick={this.upURL}>Next Page</button>
         <h1 className="Header">React Wars</h1>
         <ItemList items={this.state.starwarsChars} />
