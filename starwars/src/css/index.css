@@ -1,0 +1,82 @@
+import Card from body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: gray;
+  background-size: cover;
+}
+.all-cards-main {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all-cards-sub {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-main {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgba(192, 192, 192, 0.5);
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.card-main h1 {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0;
+}
+.card-main:hover {
+  background-color: rgba(192, 192, 192, 0.7);
+}
+.card-main .row {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+}
+.card-main .figure {
+  border: 1px solid purple;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.card-main .figure .mass {
+  border: 1px solid red;
+  border-radius: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.card-main .figure .height {
+  margin-bottom: 15px;
+  border: 1px solid red;
+  transform: rotateZ(270deg);
+}
+.card-main .card-stats {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+}
+.card-main .card-stats h2 {
+  text-decoration: underline;
+  margin: 0;
+}
+.card-main .card-stats ul {
+  padding: 0;
+  margin: 0;
+}
