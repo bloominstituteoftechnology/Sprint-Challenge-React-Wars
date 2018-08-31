@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import CardList from './components/CardComponents/CardList';
+import CardForm from './components/CardComponents/CardForm';
+import Card from './components/CardComponents/Card';
 import './App.css';
 
 class App extends Component {
@@ -29,10 +32,28 @@ class App extends Component {
       });
   };
 
+  loopCharacters (e) {
+    let chars = this.state.starwarsChars.splice();
+
+    chars = this.state.starwarsChars.map(char => {
+      return char;
+    })
+
+    chars.forEach(char => {
+      console.log(char);
+      return char.name;
+    })
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList
+          card={this.state.starwarsChars}
+        />
       </div>
     );
   }
