@@ -6,12 +6,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      num: 1,
+      startpage: `https://swapi.co/api/people/?page=`,
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters('https://swapi.co/api/people/?page=' + this.state.num);
     // Stretch Goal
     // console.log(this.state.starwarsChars);
   }
@@ -25,7 +27,6 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        // stretch
         console.log(data);
         this.setState({ starwarsChars: data.results });
       })
@@ -34,24 +35,43 @@ class App extends Component {
       });
   };
 
-  // nextPage = () => {
-  //   fetch(URL)
-  //   .then(res => {
-  //     return res.json();
-  //   })
-  //   .then(data => {
-  //     // stretch
-  //     console.log(data);
-  //     this.setState({ starwarsChars: data.results });
-  //   })
-  //   .catch(err => {
-  //     throw new Error(err);
-  //   });
-  // }
+  nextPage = () => {
+    this.setState({num: this.state.num + 1 });
+    fetch(`${this.state.startpage}${this.state.num}`)
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      console.log(data)
+      console.log(data.next);
+      this.getCharacters(data.next);
+    })
+    .catch(err => {
+      throw new Error(err);
+    });
+  }
+
+  prevPage = () => {
+    this.setState({num: this.state.num + -1 });
+    fetch(`${this.state.startpage}${this.state.num}`)
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      // stretch
+      this.getCharacters(data.previous);
+      // this.setState({ starwarsChars: data.results });
+    })
+    .catch(err => {
+      console.error(new Error(err));
+      throw new Error(err);
+    });
+  }
 
   render() {
     return (
       <div className="App">
+        <button onClick={this.prevPage}>Previous Page</button>
         <button onClick={this.nextPage}>Next Page</button>
         <h1 className="Header">React Wars</h1>
         <StarwarsList charactersData={this.state.starwarsChars} />
