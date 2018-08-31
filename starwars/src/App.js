@@ -32,7 +32,7 @@ class App extends Component {
   };
 
   render() {
-    
+    const data = this.state.starwarsChars.map(character => <Card data={character} />)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
