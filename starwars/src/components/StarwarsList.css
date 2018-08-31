@@ -1,7 +1,7 @@
 .sw-list {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: baseline;
   flex-wrap: wrap;
   max-width: 100%;
   width: 1200px;
