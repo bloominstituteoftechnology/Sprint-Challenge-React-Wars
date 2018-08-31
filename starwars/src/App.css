@@ -2,22 +2,31 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: yellow;
+  text-shadow: -2px 2px 1px #000;
+  font-size: 80px;
+  margin: 20px;
 }
 /* write your parent styles in here for your App.js */
 .card-container {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card {
   display: flex;
   flex-flow: column nowrap;
   background: white;
-  margin: 10px 0px;
+  margin: 10px;
   border-radius: 10px;
-  width: 30%;
+  width: 300px;
+  padding-bottom: 20px;
+  border: 1px solid black;
+}
+
+.card p {
+  
+  margin: 5px 10px;
 }
