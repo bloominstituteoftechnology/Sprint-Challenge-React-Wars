@@ -4,7 +4,9 @@ import './info.css';
 const Name = (props) => {
 
     return (
-        <h1>Name:{props.starwarsChars.name}</h1>
+       <div>
+            <h1>Name: {props.starwarsChar.name}</h1>
+       </div>
     )
 }
 

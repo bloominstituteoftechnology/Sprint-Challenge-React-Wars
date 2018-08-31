@@ -9,7 +9,9 @@ const InfoContainer = (props) => {
     return (
         <div className="info-container">
             <div className="name">
-                <Name starwarsChars={props.starwarsChars}/>
+                <ul>
+                    {props.starwarsChars.map(char => <Name starwarsChar={char}/>)}
+                </ul>
             </div>
             {/* <section className="bottom">
                 <div className="films">
