@@ -1,0 +1,18 @@
+.card {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('../sw-bg.jpg');
+  background-size: cover;
+}
+
+p {
+  font-size: 16px;
+}
+
+.stats {
+  width: 176px;
+  border: 2px solid black;
+  text-align: left;
+  margin-left: 447px;
+}
