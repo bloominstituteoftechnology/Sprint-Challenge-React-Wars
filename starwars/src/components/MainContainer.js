@@ -1,13 +1,15 @@
 import React from 'react';
-import Img from './Img';
 import InfoContainer from './info/InfoContainer';
 import './main.css';
 
 const MainContainer = (props) => {
     return (
         <div className="main-container">
-            <Img />
-            <InfoContainer starwarsChars={props.starwarsChars} />
+            <div className="info">
+                <ul>
+                    {props.starwarsChars.map(char => <InfoContainer starwarsChar={char}/>)}
+                </ul>
+            </div> 
         </div>
     )
 }
