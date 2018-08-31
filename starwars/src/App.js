@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CardList from './components/CardList';
+
 class App extends Component {
   constructor() {
     super();
@@ -10,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -33,8 +35,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList characterArray={this.state.starwarsChars} />
+        {this.lookThrough(this.state.starwarsChars)}
       </div>
     );
+  }
+
+  lookThrough = array =>{
+    array.forEach(thing =>{
+      console.log(thing);
+    });
   }
 }
 

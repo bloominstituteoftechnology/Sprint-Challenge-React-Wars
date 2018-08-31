@@ -1,0 +1,10 @@
+.character{
+    display: flex;
+    justify-content: space-around;
+    border: 3px #3B0A15 solid;
+    margin: 30px;
+}
+
+.desc{
+    font-weight: bold;
+}
