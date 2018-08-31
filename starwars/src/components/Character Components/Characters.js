@@ -3,7 +3,8 @@ import './Characters.css';
 
 function Characters(props){
     return(
-            <div className="card">
+        <div className="card">
+            <div className="content-container">
                 <div className="card-content">
                     <h2>{props.starchar.name}</h2>
                     <h4>Gender: {props.starchar.gender}</h4>
@@ -13,6 +14,7 @@ function Characters(props){
                     <h4>Birth Year: {props.starchar.birth_year}</h4>
                 </div>
             </div>
+        </div>
     )
 }
 

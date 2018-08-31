@@ -1,16 +1,36 @@
-
+* {
+    box-sizing: border-box;
+}
 .cards-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .card{
-   border: solid black 1px;
-   width: 700px;
-   height: 400px;
+   border: solid #443e3e 1px;
+   width: 270px;
+   height: 250px;
+   margin-bottom: 50px;
+   margin-right: 13px;
+   margin-left: 13px;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 50px;
+   background: white;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    width: 85%;
+    height: 80%;
+}
+
+.card-content{
+    color: #443e3e;
+    height: 225px;
+    line-height: 0.75rem;
 }
