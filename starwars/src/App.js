@@ -8,7 +8,6 @@ class App extends React.Component {
     super()
     this.state = {
       swChars: [],
-      currentPage: 1,
       maxPage: "",
       previousPage: "",
       nextPage: "",
@@ -29,7 +28,7 @@ class App extends React.Component {
         return res.json()
       })
       .then(data => {
-        let count = Math.ceil(data.count / 9)
+        let count = Math.floor(data.count / 9)
 
         this.setState({ 
           swChars: data.results,
