@@ -15,6 +15,7 @@ function Card (props){
                 <p><strong>Height:</strong> {data.height}</p>
                 <p><strong>Mass:</strong> {data.mass}</p>
                 <p><strong>Skin Color:</strong> {data.skin_color}</p>
+                <p><strong>Movies:</strong> {data.films.length}</p>
             </div>
         </div>
     )
