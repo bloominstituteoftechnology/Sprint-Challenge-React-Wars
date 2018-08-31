@@ -5,7 +5,7 @@ import Character from './Character';
 function StarwarsData(props) {
     return (
         <div>
-            {props.charInfoList.map((element, index ) => <Character key={index} traits={element} />)}
+            {props.charInfoList.map((element, index ) => <Character key={element.created} traits={element} />)}
         </div>
     );
 }
