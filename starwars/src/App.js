@@ -49,6 +49,11 @@ class App extends Component {
       })
       .catch(err => {
         if (!this.state.previousPage) {
+          // if the error is that there is no previous page
+          // add appear class to animate error msg appering
+          // then after a set amount of time, give it the disappear class to
+          // animate it disappearing, and then finally give it the
+          // display-none class to hide it completely
           return this.setState({ prevClass: ['no-page-div-style', 'appear'] }, () => {
             setTimeout(() => {
               this.setState((prevState) => {
@@ -67,6 +72,11 @@ class App extends Component {
             }, 2000);
           });
         } else if (!this.state.nextPage) {
+          // if the error is that there is no next page
+          // add appear class to animate error msg appering
+          // then after a set amount of time, give it the disappear class to
+          // animate it disappearing, and then finally give it the
+          // display-none class to hide it completely
           return this.setState({ nextClass: ['no-page-div-style', 'appear'] }, () => {
             setTimeout(() => {
               this.setState((prevState) => {
