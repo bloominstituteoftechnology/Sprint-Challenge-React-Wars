@@ -12,8 +12,8 @@ const Character = (props) => {
             <div className="appearance">
                 <h3>Appearance</h3>
                 <hr/>
-                <p className="height"><strong>Height: </strong>{props.height}cm</p>
-                <p className="mass"><strong>Mass: </strong>{props.mass}kg</p>
+                <p className="height"><strong>Height: </strong>{props.height} cm</p>
+                <p className="mass"><strong>Mass: </strong>{props.mass} kg</p>
                 <p className="hair-color"><strong>Hair Color: </strong>{props.hairColor}</p>
                 <p className="skin-color"><strong>Skin Color: </strong>{props.skinColor}</p>
 
