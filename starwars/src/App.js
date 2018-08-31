@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/Character.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
-
+ 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -29,10 +30,16 @@ class App extends Component {
       });
   };
 
+  
+
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(char => {
+          return <Character className="Styling" name={char.name} height={char.height} mass={char.mass} hair_color={char.hair_color} skin_color={char.skin_color} key={Math.random()}   />
+        })}
       </div>
     );
   }
