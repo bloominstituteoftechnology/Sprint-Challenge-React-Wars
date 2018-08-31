@@ -4,4 +4,6 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
