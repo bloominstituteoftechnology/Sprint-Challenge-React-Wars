@@ -3,7 +3,6 @@ import './Pagination.css'
 
 const Pagination = (props) => {
   let countArr = [...Array(props.state.maxPage).keys()]
-  // console.log(countArr.pop());
 
   return (
     <div className="Pagination">
@@ -19,7 +18,7 @@ const Pagination = (props) => {
         })}
       </div>
       <button onClick={(e) => props.getCharacters(props.state.previousPage ? props.state.previousPage : "https://swapi.co/api/people")}>Previous Page</button>
-      <button onClick={(e) => props.getCharacters(props.state.nextPage)}>Next Page</button>
+      <button onClick={(e) => props.getCharacters(props.state.nextPage ? props.state.nextPage : `https://swapi.co/api/people/?page=${countArr.length}`)}>Next Page</button>
     </div>
   )
 }
