@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CharList from './components/CharList';
+import CharBtn from './components/CharBtn';
 import './components/StarWars.css';
 
 class App extends Component {
