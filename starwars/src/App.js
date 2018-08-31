@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import container from './container';
 
 class App extends Component {
   constructor() {
@@ -9,35 +10,12 @@ class App extends Component {
     };
   }
 
-  addNewChar = e => {
-    e.preventDefault();
-    const newChar = {name: 'name', 
-                    //  id: Date.now(), 
-                     height: 'height', 
-                     mass: 'mass', 
-                     skin: 'skin_color', 
-                     hair: 'hair_color',
-                     eye: 'eye_color',
-                     birthyear: 'birth_year',
-                     gender: 'gender',
-                     homeworld: 'homeworld',
-                     films: 'films',
-                     species: 'species',
-                     vehicles: 'vehicles',
-                     starships: 'starships',};
-    const newarr = [...this.state.starwarsChars];
-    newarr.push(newChar);
-      this.setState({starwarsChars: newarr});
-  }
-
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
 
   getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
+   
     fetch(URL)
       .then(res => {
         return res.json();
@@ -54,9 +32,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <container traits={this.state.starwarsChars} />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
