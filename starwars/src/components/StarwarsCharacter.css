@@ -1,9 +1,13 @@
 .character {
-  width: 600px;
+  width: 300px;
   max-width: 100%;
-  margin: 0 auto;
+  height: fit-content;
+  margin: 20px auto;
   position: relative;
-  padding: 20px 5% ;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .backdrop {
@@ -37,6 +41,23 @@ p {
   padding:  10px 5% 0;
 }
 
+a {
+  padding: 10px 5% 0;
+}
+
 a:hover {
   font-weight: bold;
+}
+
+h3 {
+  padding: 10px 5% 0;
+}
+
+ul {
+  padding: 10px 5% 0;
+}
+
+li {
+  padding: 10px 5% 0;
+  list-style-type: none;
 }

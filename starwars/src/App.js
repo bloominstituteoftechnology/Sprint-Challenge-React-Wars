@@ -14,14 +14,9 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/?page=' + this.state.num);
-    // Stretch Goal
-    // console.log(this.state.starwarsChars);
   }
 
   getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
         return res.json();
@@ -74,9 +69,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.prevPage}>Previous Page</button>
-        <button onClick={this.nextPage}>Next Page</button>
         <h1 className="Header">React Wars</h1>
+        <div className="btn-nav">
+          <button onClick={this.prevPage}>Previous Page</button>
+          <button onClick={this.nextPage}>Next Page</button>
+        </div>
         <StarwarsList charactersData={this.state.starwarsChars} />
       </div>
     );

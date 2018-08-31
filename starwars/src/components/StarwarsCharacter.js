@@ -1,5 +1,5 @@
 import React from 'react';
-import './StarWars.css';
+import './StarwarsCharacter.css';
 import uuidv4 from 'uuid/v4';
 
 export default function StarwarsCharacter(props) {

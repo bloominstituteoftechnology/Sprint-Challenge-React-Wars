@@ -1,10 +1,11 @@
 import React from 'react';
 import StarwarsCharacter from './StarwarsCharacter';
 import uuidv4 from 'uuid/v4';
+import './StarwarsList.css';
 
 export default function StarwarsList(props) {
   return (
-    <div>
+    <div className="sw-list" >
       {
         props.charactersData.map(char => {
           return (
