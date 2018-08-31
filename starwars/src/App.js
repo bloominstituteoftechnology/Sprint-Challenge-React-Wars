@@ -3,6 +3,9 @@ import './App.css';
 import CharCard from './components/CharCard';
 //TODO: make a list of characters component
 
+// TODO: make a specific character to display based upon chatacter name : I am thinking some sort of component with a 
+// clickable name of char or something that allows us to click the link and display the stats or something
+
 class App extends Component {
   constructor() {
     super();
@@ -30,6 +33,20 @@ class App extends Component {
         throw new Error(err);
       });
   };
+
+  // TODO: a way to get a character and return it :: fill out some more logic to set the state
+  showCurrentChar = name => {
+    // find the char that matches the name in the arguments
+    const currentChar = this.state.starwarsChars.find(char => char.name === name);
+    //test if it returns like expected
+    console.log(currentChar);
+    // TODO: set the state based on returned currentChar
+  }
+
+
+  // TODO: a method to get back to a list of characters
+
+
 
   render() {
     return (
