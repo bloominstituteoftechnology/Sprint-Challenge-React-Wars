@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    border: 1px solid red;
+    margin: 2%;
+    display: flex;
+    width: 25%;
+    /* height: 300px; */
+    /* text-align: left; */
+    background: white;
+    padding: 2%;
+    flex-flow: column wrap;
+    justify-content: left;
+}
