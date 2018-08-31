@@ -1,14 +1,16 @@
 .card {
     background-color: transparent;
-    border:2px;
-    padding:10px;
-    margin:10px;
+    border: 2px;
+    padding: 10px;
+    margin: 10px;
     width: 50%;
+    opacity: 0.8;
+    
 }
 
-card img{
-    width:100%;
+card img {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding:40px;
+    padding: 150px;
 }

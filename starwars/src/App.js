@@ -48,8 +48,8 @@ class App extends Component {
         <div className="Header">React Wars</div>
         <div className="data">
         {data}
-        <button onClick={this.handlePageChange.bind(this)}>Next Page</button>
-</div>
+        </div>
+        <div><button onClick={this.handlePageChange.bind(this)}>Next Page</button></div>
         
       </div>;
       
