@@ -3,10 +3,10 @@ import React from "react";
 
 const CharCard = props => {
   return (
-    <div className="character-card-container">
-      <div className="character-card">
-        <h1>{props.character.name}</h1>
-        <ul>
+    <div className="main-wrapper">
+      <div className="card-wrapper">
+        <h1 className="Header charHeader">{props.character.name}</h1>
+        <ul className="charData">
           <li>Birth year: {props.character.birth_year}</li>
           <li>Gender: {props.character.gender}</li>
           <li>Eye color: {props.character.eye_color}</li>

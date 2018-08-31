@@ -43,12 +43,18 @@ class App extends React.Component {
     if (this.state.currentChar === null) {
       return (
         <div className="container">
-          <h1>React Wars</h1>
-          <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} />
+          <h1 className="Header">React Wars</h1>
+          <div className="charList">
+            <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} />
+          </div>
         </div>
       );
     } else {
-        return ( <CharCard returnToList={this.returnToList} character={this.state.currentChar} />);
+        return ( 
+          <div className="container">
+            <CharCard returnToList={this.returnToList} character={this.state.currentChar} />
+          </div>
+        );
     }
   }
 }
