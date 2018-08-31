@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './components/CardComponents/CardList';
-import CardForm from './components/CardComponents/CardForm';
-import Card from './components/CardComponents/Card';
+import ButtonComponent from './components/ButtonComponents/ButtonComponent';
 import './App.css';
 
 class App extends Component {
@@ -36,9 +35,22 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ButtonComponent 
+          btnValue1="Previous Page"
+          btnValue2="Next Page"
+          btnHandleClick1={() => this.getCharacters('https://swapi.co/api/people/?page=1')}
+          btnHandleClick2={() => this.getCharacters('https://swapi.co/api/people/?page=2')}
+        />
         <CardList
           card={this.state.starwarsChars}
         />
+        <ButtonComponent 
+          btnValue1="Previous Page"
+          btnValue2="Next Page"
+          btnHandleClick1={() => this.getCharacters('https://swapi.co/api/people/?page=1')}
+          btnHandleClick2={() => this.getCharacters('https://swapi.co/api/people/?page=2')}
+        />
+        
       </div>
     );
   }

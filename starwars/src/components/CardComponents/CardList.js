@@ -5,7 +5,7 @@ import './Card.css'
 const CardList = props => {
     return (
         <div className="card-container"> {
-            props.card.map(card => <Card card={card}/>)
+            props.card.map(card => <Card key={card.created + card.birth_year} card={card}/>)
         }
         </div>
     )
