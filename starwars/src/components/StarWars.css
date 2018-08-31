@@ -19,7 +19,7 @@
 
 .info {
   z-index: 1;
-  filter: saturate(70%);
+  /* filter: saturate(70%); */
   line-height: 1.4;
 }
 
@@ -32,7 +32,7 @@ h2 {
 
 p {
   color: #fff;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 0px 0px 1px #000;
   text-align: left;
   padding:  10px 5% 0;
 }

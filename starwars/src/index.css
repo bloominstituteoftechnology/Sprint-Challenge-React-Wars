@@ -5,8 +5,6 @@
 body {
   padding: 0;
   font-family: sans-serif;
-  background: url('./sw-bg.jpg') center;
-  background-size: stretch;
   height: fit-content;
   margin: 0 auto;
 }
