@@ -1,0 +1,16 @@
+.Card {
+  width: calc(100% * (1/4));
+  border: 2px solid black;
+  background: goldenrod;
+  border-radius: 20px;
+  margin: 2%;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.charName {
+  text-decoration: underline;
+}
+
+.charProperty {
+  font-weight: bold;
+}
