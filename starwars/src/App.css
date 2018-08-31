@@ -1,8 +1,62 @@
 .App {
-  text-align: center;
+  max-width: 1200px; 
+   width: 100%; 
+   margin: 0 auto;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  text-shadow: 1px 1px 5px #ffd54e;
+  font-size: 8rem;
+  text-align: left;
+  letter-spacing: .5rem;
+  margin: 10px 0 10px 155px;
 }
-/* write your parent styles in here for your App.js */
+
+.character-cards {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 0 auto;
+  align-items: center; 
+}
+
+.characterCard{
+  width: 15%; 
+  height: 250px;  
+  margin: 15px 15px; 
+  padding: 10px;
+  border-radius: 20px; 
+  border: solid 1.5px #ffd54e;
+  opacity: 0.4;
+}
+
+.characterCard:hover {
+  background-color: black;
+  color: #ffd54e;
+  opacity: 1;
+}
+
+.character {
+  font-size: 1.6rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Impact;
+  text-decoration: underline;
+}
+
+.content {
+  height: auto;
+  text-align: left;
+  line-height: 1.4rem;
+}
+
+.content:hover {
+  color: #ffd54e;
+}
