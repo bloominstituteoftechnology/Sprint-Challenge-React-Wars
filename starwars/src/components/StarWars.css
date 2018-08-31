@@ -20,7 +20,7 @@
 }
 
 .char-card * {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .char-card:hover {
@@ -29,12 +29,14 @@
 }
 
 hr {
-    width: 80%;
+    width: 70%;
     border-color: black;
 }
 
 .char-name {
     width: 100%;
+    padding-bottom: 20px;
+    font-size: 24px;
 }
 
 .char-gender-birthyear {

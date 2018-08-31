@@ -7,7 +7,7 @@ const StarWarsChar = (props) => {
         <section className='char-container'>
             <div className='char-card'>
                 <div className="char-name">{ props.charProps.name }</div>
-                <hr />
+                
                 <div className="char-gender-birthyear">Gender: <span>{ props.charProps.gender }</span></div>
                 <div className="char-gender-birthyear">Birth year: <span>{ props.charProps.birth_year }</span></div>
                 <hr />
