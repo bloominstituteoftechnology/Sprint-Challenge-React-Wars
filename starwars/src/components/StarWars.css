@@ -1,0 +1,19 @@
+.starwars-cards {
+    
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;    
+    
+    flex-wrap: wrap;
+}
+
+.starwars-card {
+    
+    width: 49%;;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid black;
+    text-overflow: ellipsis;
+
+}
