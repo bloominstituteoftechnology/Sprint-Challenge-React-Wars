@@ -1,0 +1,39 @@
+.cards-container {
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 1px solid pink;
+}
+
+.card {
+  width: 240px;
+  margin: 10px 20px;
+
+  border: 5px solid #ffe062;
+  border-radius: 5px;
+}
+
+.card .name {
+  background-color: #718da5;
+  color: white;
+}
+.card .character-img {
+  width: 240px;
+  height: 100px;
+
+  background-color: lightcoral;
+}
+
+.card .character-details {
+  font-size: 12px;
+  display: flex;
+  margin: 0 5px;
+  background-color: #718da5;
+  color: white;
+}
+
+.character-details p {
+  margin: 0 20px;
+}

@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import CardsContainer from "../src/components/CardsContainer.js";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextURL: ""
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -23,8 +25,11 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        // this.setState({ nextUrl: data.next });
+        // console.log(data);
       })
       .catch(err => {
+        console.log(err);
         throw new Error(err);
       });
   };
@@ -33,6 +38,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardsContainer characters={this.state.starwarsChars} />
+        {/* <div className="next" onClick={this.getCharacters(this.state.nextURL)}>
+          More data
+        </div> */}
       </div>
     );
   }
