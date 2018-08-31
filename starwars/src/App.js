@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CardContainer from './components/CardContainer.js'
+
 class App extends Component {
   constructor() {
     super();
@@ -8,6 +10,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -30,9 +33,14 @@ class App extends Component {
   };
 
   render() {
+    this.state.starwarsChars.forEach(item => console.log(item.name))
+    this.state.starwarsChars.forEach(item => console.log(item.mass))
+    this.state.starwarsChars.forEach(item => console.log(item.hair_color))
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardContainer characters={this.state.starwarsChars} />
       </div>
     );
   }
