@@ -6,3 +6,25 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.display-characters ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-characters ul li {
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HOX7rov7iorrrmav/star-wars-starburst-hyper-space-effect_rse18xtu__F0000.png');
+  width: 250px;
+  margin-right: 100px;
+  margin-top: 80px;
+  color: white;
+  box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+}
+
+.display-characters ul li h2 {
+  color: yellow;
+}
