@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharList';
 import CharCard from './components/CharCard';
-//TODO: make a list of characters component
 
 // TODO: make a specific character to display based upon chatacter name : I am thinking some sort of component with a 
 // clickable name of char or something that allows us to click the link and display the stats or something

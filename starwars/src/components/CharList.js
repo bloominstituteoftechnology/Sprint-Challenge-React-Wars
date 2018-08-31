@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrentChar from './CurrentChar';
 
 const CharList = props => {
   // map over the characters and teturn the element data
