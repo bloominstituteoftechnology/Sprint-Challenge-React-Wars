@@ -1,0 +1,24 @@
+ul {  
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.character-data {
+  border: 3px solid black;
+  background-color: aliceblue;  
+  margin-top: 105px;
+}
+
+.character-data:hover {
+  background-image: url('../ProfilePictures/DarthVader.jpg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  color: white;  
+  height: 200px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+}
