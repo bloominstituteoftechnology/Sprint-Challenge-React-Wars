@@ -5,3 +5,18 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.card {
+  margin: 10px auto;
+  background: lightgray;
+  opacity: .8;
+  width: 20%;
+  padding: 10px;
+  border: 2px solid cyan;
+}
+ul, li{
+  list-style-position: inside;
+}
+li {
+  list-style: none;
+}
