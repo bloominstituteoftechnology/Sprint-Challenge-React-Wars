@@ -9,7 +9,8 @@ class App extends React.Component {
     this.state = {
       starwarsChars: [],
       currentChar: null,
-      nextPage: ""
+      nextPage: null,
+      prevPage: null
     };
   }
 
@@ -24,18 +25,26 @@ class App extends React.Component {
       })
       .then(data => {
         console.log(data); 
-        this.setState({ starwarsChars: data.results, nextPage: data.next});
+        this.setState({ starwarsChars: data.results, nextPage: data.next, prevPage: data.previous});
       })
       .catch(err => {
         throw new Error(err);
       });
   };
-
+ // show the next page of data
   showNextPage = event => {
+    if(this.state.nextPage !== null) {
+      const newData = this.getCharacters(this.state.nextPage);
+      console.log(newData);
+    }
+  }
 
-
-    const newData = this.getCharacters(this.state.nextPage);
-    console.log(newData);
+  // show the previous page of data
+  showPrevPage = event => {
+    if(this.state.prevPage !== null) {
+      const newData = this.getCharacters(this.state.prevPage);
+      console.log(newData);
+    }
   }
 
   showCurrentChar = name => {
@@ -54,7 +63,7 @@ class App extends React.Component {
         <div className="container">
           <h1 className="Header">React Wars</h1>
           <div className="charList">
-            <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} showNextPage={this.showNextPage} nextPage={this.state.nextPage} />
+            <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} showNextPage={this.showNextPage} showPrevPage={this.showPrevPage} nextPage={this.state.nextPage} prevPage={this.state.prevPage} />
           </div>
         </div>
       );
