@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
 const StarWarsData = props => {
-    return (
-        <div>
-            Star Wars Data
-        </div>
+    return(
+    <div>
+        Banana
+    </div>
     );
 };
-
 
 export default StarWarsData;

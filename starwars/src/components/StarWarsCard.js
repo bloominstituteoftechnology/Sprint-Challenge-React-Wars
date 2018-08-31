@@ -4,7 +4,10 @@ import StarWarsData from './StarWarsData';
 const StarWarsCard = props => {
     return (
         <div>
-            <StarWarsData/>
+            {props.starwarsChars.map(char => (
+            <StarWarsData
+            />  
+            ))}
         </div>
     );
 };
