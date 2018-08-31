@@ -41,7 +41,7 @@ class App extends Component {
     const currentChar = this.state.starwarsChars.find(char => char.name === name);
     //test if it returns like expected
     console.log(currentChar);
-    // TODO: set the state based on returned currentChar
+    //set the state based on returned currentChar
     this.setState({currentChar: currentChar});
   }
 
@@ -55,11 +55,17 @@ class App extends Component {
 
 
   render() {
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
-    );
+    // conditional logic for character selection
+    if(!this.state.currentChar) {
+        return (
+          <div className="App">
+            <h1 className="Header">React Wars</h1>
+            <CharList chars={this.state.starwarsChars} currentChar={this.showCurrentChar} />
+          </div>
+        );
+      } else {
+        <CharList chars={this.state.starwarsChars} currentChar={this.showCurrentChar} />
+      }
   }
 }
 
