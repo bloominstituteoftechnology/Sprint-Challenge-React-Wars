@@ -1,14 +1,14 @@
 import React from 'react';
-
+import Char  from './Char.js'
 const CharButton = (props)=> {
 
-console.log(props.nameprops[0]);
+console.log(props.nameprops);
   return(
 
-    <button>
-      {}
+    <div>
+      {props.nameprops.map(name => <Char nameprops={name} />)}
 
-    </button>
+    </div>
   );
 
 
