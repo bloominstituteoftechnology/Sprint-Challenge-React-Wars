@@ -46,7 +46,11 @@ class App extends Component {
   }
 
 
-  // TODO: a method to get back to a list of characters
+  // return to the list of characters
+  returnToList = event => {
+    // set the currentChar's state to null
+    this.setState({ currentChar: null });
+  }
 
 
 
