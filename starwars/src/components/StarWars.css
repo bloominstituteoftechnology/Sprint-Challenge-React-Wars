@@ -16,15 +16,18 @@
   border-radius: 10px;
 }
 
-.character h2 {
+.character thead tr th {
+  width: 100%;
+  font-size: 2.2rem;
   margin-bottom: 8px;
 }
 
 .character tr {
+  display: flex;
   width: 100%;
 }
 
 .character tr th {
-  width: 126px;
+  width: 50%;
   text-align: left;
 }

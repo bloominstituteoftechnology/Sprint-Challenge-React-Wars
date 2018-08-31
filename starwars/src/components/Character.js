@@ -5,7 +5,12 @@ const Character = (props) => {
   return (
     <table className='character'
         id={props.character.created}>
-        <h2>{props.character.name}</h2>
+        <thead>
+          <tr>
+            <th>{props.character.name}</th>
+          </tr>
+        </thead>
+        <tbody>
         <tr>
           <th>Birth year:</th>
           <td>{props.character.birth_year}</td>
@@ -34,6 +39,7 @@ const Character = (props) => {
           <th>Mass:</th>
           <td>{props.character.mass}</td>
         </tr>
+      </tbody>
     </table>
   );
 }
