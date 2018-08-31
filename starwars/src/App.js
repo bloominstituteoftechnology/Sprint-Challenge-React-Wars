@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
+import Cards from './components/Cards'
+import './App.css'
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      starwarsChars: []
-    };
+      swChars: []
+    }
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people')
   }
 
   getCharacters = URL => {
@@ -19,23 +20,24 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
-        return res.json();
+        return res.json()
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ swChars: data.results })
       })
       .catch(err => {
-        throw new Error(err);
-      });
-  };
+        throw new Error(err)
+      })
+  }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Cards swChars={this.state.swChars}/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
