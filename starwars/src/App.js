@@ -33,11 +33,11 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
-  };
+  }; // getCharacters()
 
   handleClick = (e, pageURL) => {
     return this.getNewPage(pageURL);
-  }
+  } // handleClick()
 
   getNewPage = URL => {
     fetch(URL)
@@ -98,19 +98,39 @@ class App extends Component {
         
         throw new Error(err);
       });
-  };
+  }; // getNewPage()
+
+  scrollToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  } // scrollToTop()
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <button onClick = { (e) => this.handleClick(e, this.state.previousPage) }>PREVIOUS</button>
-        <button onClick = { (e) => this.handleClick(e, this.state.nextPage) }>NEXT</button>
-        <div className={ this.state.prevClass.join(" ") }>There is no previous page.</div>
-        <div className={ this.state.nextClass.join(" ") }>There is no next page.</div>
+
+        <button 
+          onClick = { (e) => this.handleClick(e, this.state.previousPage) }
+          className = "prev-next-btns"
+        >PREVIOUS</button>
+        <button 
+          onClick = { (e) => this.handleClick(e, this.state.nextPage) }
+          className = "prev-next-btns"
+        >NEXT</button>
+
+        <div className = { this.state.prevClass.join(" ") }>There is no previous page.</div>
+        <div className = { this.state.nextClass.join(" ") }>There is no next page.</div>
+
         <StarWars 
           starwarsChars = { this.state.starwarsChars } 
         />
+
+        <button 
+          onClick = { this.scrollToTop } 
+          className = "top-btn" 
+          title="Go to top"
+        >^</button>
       </div>
     );
   }
