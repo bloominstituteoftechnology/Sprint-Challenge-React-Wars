@@ -1,10 +1,5 @@
 import React from "react";
 import './StarWars.css';
-import Film from './Films';
-import Species from './Species';
-import Ship from './Starships';
-import Veh from './Vehicles';
-
 
 function Item(props){
 	return (
@@ -24,10 +19,10 @@ function Item(props){
 				<li>url: {props.url}</li>
 			</ul>
 			<div className="flex">
-				<ul className="flex-item">Films: {props.films.map((film) => <Film film={film}/>)}</ul>
-				<ul className="flex-item">Species: {props.species.map((spe) => <Species spe={spe}/>)}</ul>
-				<ul className="flex-item">Starships: {props.starships.map((ship) => <Ship ship={ship}/>)}</ul>
-				<ul className="flex-item">Vehicles: {props.vehicles.map((veh) => <Veh veh={veh}/>)}</ul>
+				<ul className="flex-item">Films {props.films.map((film) => <li key={film}>{film}</li>)}</ul>
+				<ul className="flex-item">Species: {props.species.map((spe) => <li key={spe}>{spe}</li>)}</ul>
+				<ul className="flex-item">Starships: {props.starships.map((ship) => <li key={ship}>{ship}</li>)}</ul>
+				<ul className="flex-item">Vehicles: {props.vehicles.map((veh) => <li key={veh}>{veh}</li>)}</ul>
 			</div>
 		</div>
 	);
