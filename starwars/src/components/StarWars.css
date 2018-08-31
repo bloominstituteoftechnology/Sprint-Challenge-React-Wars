@@ -1,0 +1,28 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.data-card {
+    width: 600px;
+    height: 300px;
+    background: lightblue;
+    margin: 50px;
+    text-align: left;
+    padding: 0 30px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-card span {
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+}
