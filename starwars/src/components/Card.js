@@ -1,8 +1,9 @@
 import React from "react";
+import './StarWars.css'
 
 function Card (props) {
    return (
-    <div>
+    <div className="character">
       <p> Name: {props.name} </p>
       <p> Height: {props.height} </p>
       <p> Mass: {props.mass} </p>

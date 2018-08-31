@@ -1,10 +1,12 @@
 import React from "react";
+import './StarWars.css'
 
 import Card from './Card'
 
 function CardContainer(props) {
    return (
-      props.characters.map(
+     <div className='card-container'>
+      {props.characters.map(
            character =>
            <Card
             key={character.name}
@@ -14,7 +16,8 @@ function CardContainer(props) {
             hairColor={character.hair_color}
             skinColor={character.skin_color}
           />
-           )
+           )}
+     </div>
    );
 }
 
