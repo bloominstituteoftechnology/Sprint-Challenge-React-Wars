@@ -19,14 +19,24 @@
 
 .hide {display: none;}
 
-.name {
-  background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');
+.back-display {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 300px;
   width: 200px;
 }
+
+.nameluke {background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');}
+.namec-3po {background-image: url('https://cdn.dribbble.com/users/35381/screenshots/1376218/c3po.png')}
+.namer2-d2 {background-image: url('https://vignette.wikia.nocookie.net/jadensadventures/images/4/4f/R2d2_002.png/revision/latest?cb=20130823043614')}
+.namedarth {background-image: url('http://www.how-to-draw-cartoons-online.com/image-files/xhow-to-draw-darth-vader.gif.pagespeed.ic.-p_lqYBCpL.png')}
+.nameleia {background-image: url('http://getdrawings.com/img2/princess-leia-cartoon-drawing-51.jpg')}
+.nameowen {background-image: url('https://static.comicvine.com/uploads/scale_small/6/62795/5012547-star+wars.jpg')}
+.nameberu {background-image: url('https://t00.deviantart.net/4AsnuDNpneAMQtboscZbfbTkV6w=/fit-in/500x250/filters:fixed_height(100,100):origin()/pre00/62cd/th/pre/f/2013/285/c/1/beru_lars_by_planetkurth-d6q8psd.jpg')}
+.namer5-d4 {background-image: url('https://img00.deviantart.net/e6f0/i/2016/343/2/c/r5d4_by_davemilburn-d9q1min.png')}
+.namebiggs {background-image: url('https://static.comicvine.com/uploads/scale_small/0/8015/199233-158766-biggs-darklighter.jpg')}
+.nameobi-wan {background-image: url('https://orig00.deviantart.net/a801/f/2007/113/1/e/o_is_for_obi_wan_by_joewight.jpg')}
 
 .height {
   background-image: url('https://www.jamberoo.net/uploads/default/files/ico-height.png');

@@ -35,8 +35,12 @@ class App extends Component {
   handleClick = event => {
     var re =/[A-Z][a-z]*/
     console.log(event.target);
-    console.log(event.target.classList)
-    console.log(event.target.classList[1])
+    // console.log('data:', event.target.dataset.char);
+    event.target.dataset.char ? console.log('data:', event.target.dataset.char) :
+    console.log('data parent:', event.target.parentNode.dataset.char)
+
+    // console.log(event.target.classList)
+    // console.log(event.target.classList[1])
 
     // console.log(option)
     // console.log(event.target.name);
@@ -47,18 +51,26 @@ class App extends Component {
       var option = event.target.innerText ?
       re.exec(event.target.innerText)[0].toLowerCase()
       : event.target.classList[1].toLowerCase()
-      console.log(event.target.parentNode.children[event.target.parentNode.children.length-1]);
+      console.log('if option:', option)
+      // console.log(event.target.parentNode.children[event.target.parentNode.children.length-1]);
       Array.from(event.target.parentNode.children).forEach(
         item =>
         item.classList.toggle('hide')
       )
+
       event.target.parentNode.children[event.target.parentNode.children.length-1]
-      .classList.toggle(option)
-    } else {
+      .classList.toggle(option+event.target.parentNode.dataset.char)
+    }
+
+    else {
+
       var option = event.target.children[event.target.children.length-1].classList[1]
-        console.log('im different')
-        console.log(event.target.children);
-        console.log('option:', option);
+      // event.target.dataset.char ? option += event.target.dataset.char :
+      // option += event.target.parentNode.dataset.char
+      console.log('else option:', option)
+        // console.log('im different')
+        // console.log(event.target.children);
+        // console.log('option:', option);
         Array.from(event.target.children).forEach(
           item=>
           item.classList.toggle('hide')
