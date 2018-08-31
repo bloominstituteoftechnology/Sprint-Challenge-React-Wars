@@ -59,6 +59,7 @@ html, body {
 
 .App {
   text-align: center;
+  font-size: 1.6rem;
 }
 .Header {
   font-size: 42px;
@@ -66,3 +67,6 @@ html, body {
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+h2 {
+  font-size: 2rem;
+}

@@ -1,0 +1,9 @@
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character {
+  width: 300px;
+  border: 4px solid blue;
+}
