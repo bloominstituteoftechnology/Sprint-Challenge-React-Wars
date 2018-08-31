@@ -1,13 +1,43 @@
 import React, { Component } from 'react';
 import './App.css';
-import Characters from './components/characters';
+// import Characters from './components/Characters';
+import Character from "./components/Character";
 
+// const Character = props => {
+
+//   return (
+
+//   <div>persona: {props.data.persona} </div>
+
+//   );
+  
+// };
+
+// const Characters = props => {
+//   return (
+//     <div>
+//       {props.starwarsChars.map(character => <Character key={character.id} data={character} />)}
+//     </div>
+//   )
+// }
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: [],
+      starwarsChars: [{
+        birth_year: "19BBY",
+        created: "2014-12-09T13:50:51.644000Z",
+        edited: "2014-12-20T21:17:56.891000Z",
+        eye_color: "blue",
+        gender: "male",
+        hair_color: "blond",
+        height: "172",
+        mass: "77",
+        name: "Luke Skywalker",
+        skin_color: "fair",
+       }],
+
       persona: "",
     };
   }
@@ -36,8 +66,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Characters characters={this.state.characters} />
-       
+        {/* <Characters characters={this.state.starwarsChars} /> */}
+        {this.starwarsChars.map(character => <Character key={character.id} data={character} />)}
         
       </div>
     );
