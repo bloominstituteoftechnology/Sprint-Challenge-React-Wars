@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import CharList from './components/CharList';
 import CharCard from './components/CharCard';
 
-// TODO: make a specific character to display based upon chatacter name : I am thinking some sort of component with a 
-// clickable name of char or something that allows us to click the link and display the stats or something
-
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -20,9 +17,6 @@ class App extends Component {
   }
 
   getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
         return res.json();
@@ -35,37 +29,27 @@ class App extends Component {
       });
   };
 
-  // TODO: a way to get a character and return it :: fill out some more logic to set the state
   showCurrentChar = name => {
-    // find the char that matches the name in the arguments
     const currentChar = this.state.starwarsChars.find(char => char.name === name);
-    //test if it returns like expected
     console.log(currentChar);
-    //set the state based on returned currentChar
-    this.setState({currentChar: currentChar});
+    this.setState({ currentChar: currentChar });
   }
 
-
-  // return to the list of characters
   returnToList = event => {
-    // set the currentChar's state to null
-    this.setState({ currentChar: null });
+    this.setState({ currentChar: null })
   }
-
-
 
   render() {
-    // conditional logic for character selection
-    if(!this.state.currentChar) {
-        return (
-          <div className="App">
-            <h1 className="Header">React Wars</h1>
-            <CharList chars={this.state.starwarsChars} currentChar={this.showCurrentChar} />
-          </div>
-        );
-      } else {
-        <CharList chars={this.state.starwarsChars} currentChar={this.showCurrentChar} />
-      }
+    if (this.state.currentChar === null) {
+      return (
+        <div className="container">
+          <h1>React Wars</h1>
+          <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} />
+        </div>
+      );
+    } else {
+        return ( <CharCard returnToList={this.returnToList} character={this.state.currentChar} />);
+    }
   }
 }
 
