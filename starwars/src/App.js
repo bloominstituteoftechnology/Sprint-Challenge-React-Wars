@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+import './components/StarWars.css';
+import CharacterFilter from './components/CharacterFilter';
 
 class App extends Component {
   constructor() {
@@ -10,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -29,11 +32,32 @@ class App extends Component {
       });
   };
 
+  robotsOnly = event => {
+    event.preventDefault();
+    const robots = [...this.state.starwarsChars].filter((chara) => {
+      return chara.gender === "n/a";
+    })
+
+    this.setState({
+      starwarsChars: robots
+    })
+  };
+
+
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterFilter
+        robotsOnly={this.robotsOnly}
+        />
+        <CharacterList
+        charas={this.state.starwarsChars}
+        />
+        
       </div>
+      
     );
   }
 }
