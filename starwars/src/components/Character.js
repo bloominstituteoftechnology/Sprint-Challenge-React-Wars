@@ -7,7 +7,7 @@ const Character = props => {
     return (
         <div className = "character" >
         <Header header = {props.header} />
-        <CharacterInfo birthYear = {props.birthYear} 
+        <CharacterInfo birthYear = {props.birthYear}
                     gender = {props.gender}
                     eyeColor = {props.eyeColor}
                     hair = {props.hair}
