@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import "./components/StarWars.css";
+import Card from "./components/Card";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      url: null
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -22,19 +25,34 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          url: data.next
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handlePageChange() {
+    console.log(this.state.url);
+    this.getCharacters(this.state.url);
+  }
+
   render() {
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
-    );
+    const data = this.state.starwarsChars.map(character => (
+      <Card data={character} />
+    ));
+    return <div className="App">
+        <div className="Header">React Wars</div>
+        <div className="data">
+        {data}
+        </div>
+        <div><button onClick={this.handlePageChange.bind(this)}>Next Page</button></div>
+        
+      </div>;
+      
   }
 }
 
