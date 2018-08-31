@@ -3,8 +3,6 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-
-  border: 1px solid pink;
 }
 
 .card {
@@ -20,16 +18,19 @@
   color: white;
 }
 .card .character-img {
-  width: 240px;
+  width: 150px;
   height: 100px;
+  margin: 0 auto;
 
-  background-color: lightcoral;
+  background-color: lightgray;
+  background-image: url("https://www.flaticon.com/free-icon/robot-head_71339");
 }
 
 .card .character-details {
   font-size: 12px;
   display: flex;
-  margin: 0 5px;
+  flex-direction: column;
+  margin: 10px 0;
   background-color: #718da5;
   color: white;
 }

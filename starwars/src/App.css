@@ -1,13 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.container {
+  margin: 0 auto;
+}
 .next {
+  width: 95px;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 15px;
+  margin-right: 15px;
+  background-color: black;
+  align-self: center;
+  border-radius: 50px;
   font-size: 24px;
   color: white;
   cursor: pointer;
+}
+
+.next:hover {
+  color: black;
+  background-color: white;
 }
