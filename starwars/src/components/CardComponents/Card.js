@@ -4,7 +4,9 @@ import './Card.css'
 const Card = props => {
     return (
         <div className="card">
-        <div><p><strong>Name:</strong></p><p className="prop"> {props.card.name}</p></div>
+        <div className="card-header">
+            <p> {props.card.name}</p>
+        </div>
         <div><p><strong>Birth Year:</strong></p><p className="prop"> {props.card.birth_year}</p></div>
         <div><p><strong>Created:</strong></p><p className="prop"> {props.card.created}</p></div>
         <div><p><strong>Edited:</strong></p><p className="prop"> {props.card.edited}</p></div>
