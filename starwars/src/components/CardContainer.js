@@ -15,6 +15,7 @@ function CardContainer(props) {
             mass={character. mass}
             hairColor={character.hair_color}
             skinColor={character.skin_color}
+            onClick={props.handleClick}
           />
            )}
      </div>

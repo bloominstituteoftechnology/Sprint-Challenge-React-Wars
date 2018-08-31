@@ -16,3 +16,15 @@
   width: 215px;
   margin: 20px 15px;
 }
+
+.hide {display: none;}
+
+.back-display {
+  background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+
+}

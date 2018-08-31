@@ -3,12 +3,13 @@ import './StarWars.css'
 
 function Card (props) {
    return (
-    <div className="character">
-      <p> Name: {props.name} </p>
+    <div className="character" onClick={props.onClick}>
+      <p className="name"> Name: {props.name} </p>
       <p> Height: {props.height} </p>
       <p> Mass: {props.mass} </p>
       <p> Hair Color: {props.hairColor} </p>
       <p> Skin Color: {props.skinColor} </p>
+      <div className="back-display hide"></div>
     </div>
    );
 }

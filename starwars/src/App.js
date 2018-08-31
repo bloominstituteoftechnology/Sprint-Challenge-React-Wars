@@ -32,15 +32,39 @@ class App extends Component {
       });
   };
 
+  handleClick = event => {
+    var re =/[A-Z][a-z]*/
+    console.log(re.exec(event.target.innerText)[0]);
+    // console.log(event.target.name);
+    // console.log(event.target.classList[0]);
+    if (event.target.tagName == 'P'
+    || event.target.classList[0] === 'back-display') {
+      Array.from(event.target.parentNode.children).forEach(
+        item =>
+        item.classList.toggle('hide')
+      )} else {
+        Array.from(event.target.children).forEach(
+          item=>
+          item.classList.toggle('hide')
+        )
+
+    }
+    // event.target.classList.toggle('hide')
+   }
+
+  handleChange = event => {
+    console.log(event.target.name)
+   this.setState({
+     [event.target.name]: event.target.value
+   });
+ };
+
   render() {
-    this.state.starwarsChars.forEach(item => console.log(item.name))
-    this.state.starwarsChars.forEach(item => console.log(item.mass))
-    this.state.starwarsChars.forEach(item => console.log(item.hair_color))
     console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardContainer characters={this.state.starwarsChars} />
+        <CardContainer characters={this.state.starwarsChars} handleClick={this.handleClick} />
       </div>
     );
   }
