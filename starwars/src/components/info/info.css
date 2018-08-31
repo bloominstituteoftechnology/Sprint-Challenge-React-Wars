@@ -1,4 +1,21 @@
+.info-container {
+    width: 600px; 
+    padding-bottom: 30px; 
+    border: 1px solid #7B6753;
+    margin: 0 auto;
+}
+
 .info-container .films ul li {
     list-style-type: none; 
 }
+
+.info-container a {
+    text-decoration: none;
+}
+
+.info-container h4 {
+    color: black;
+}
+
+
 

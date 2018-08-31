@@ -20,6 +20,7 @@ const InfoContainer = (props) => {
                     {props.starwarsChar.films.map(film => 
                         <li>Film: <a href={film}>{film}</a></li>)}
                 </ul>
+            
             </div>
             
             
