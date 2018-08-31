@@ -10,7 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentChar: null
     };
   }
 
@@ -41,6 +42,7 @@ class App extends Component {
     //test if it returns like expected
     console.log(currentChar);
     // TODO: set the state based on returned currentChar
+    this.setState({currentChar: currentChar});
   }
 
 
@@ -52,7 +54,6 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharCard character={{name: "Bob Skywalker"}} />
       </div>
     );
   }
