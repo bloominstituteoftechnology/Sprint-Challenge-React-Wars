@@ -8,7 +8,8 @@ class App extends React.Component {
     super();
     this.state = {
       starwarsChars: [],
-      currentChar: null
+      currentChar: null,
+      nextPage: ""
     };
   }
 
@@ -22,12 +23,20 @@ class App extends React.Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data); 
+        this.setState({ starwarsChars: data.results, nextPage: data.next});
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+
+  showNextPage = event => {
+
+
+    const newData = this.getCharacters(this.state.nextPage);
+    console.log(newData);
+  }
 
   showCurrentChar = name => {
     const currentChar = this.state.starwarsChars.find(char => char.name === name);
@@ -45,14 +54,14 @@ class App extends React.Component {
         <div className="container">
           <h1 className="Header">React Wars</h1>
           <div className="charList">
-            <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} />
+            <CharList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar} showNextPage={this.showNextPage} nextPage={this.state.nextPage} />
           </div>
         </div>
       );
     } else {
         return ( 
           <div className="container">
-            <CharCard returnToList={this.returnToList} character={this.state.currentChar} />
+            <CharCard returnToList={this.returnToList} character={this.state.currentChar}/>
           </div>
         );
     }
