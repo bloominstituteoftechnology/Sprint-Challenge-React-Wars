@@ -1,14 +1,20 @@
+html, body {
+  font-family: 'Concert One', sans-serif;
+}
+
 .App {
   text-align: center;
   font-size: 1.6rem;
 }
 .Header {
-  font-size: 36px;
+  font-size: 2.8rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
 
+
 h3 {
   font-size: 2.2rem;
+  padding-top: 4%;
 }
