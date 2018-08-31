@@ -32,21 +32,6 @@ class App extends Component {
       });
   };
 
-  loopCharacters (e) {
-    let chars = this.state.starwarsChars.splice();
-
-    chars = this.state.starwarsChars.map(char => {
-      return char;
-    })
-
-    chars.forEach(char => {
-      console.log(char);
-      return char.name;
-    })
-  }
-
-
-
   render() {
     return (
       <div className="App">
