@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarwarsList from './components/StarwarsList';
 
 class App extends Component {
   constructor() {
@@ -10,7 +11,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
+    // Stretch Goal
+    // console.log(this.state.starwarsChars);
   }
 
   getCharacters = URL => {
@@ -22,6 +25,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // stretch
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -29,10 +34,27 @@ class App extends Component {
       });
   };
 
+  // nextPage = () => {
+  //   fetch(URL)
+  //   .then(res => {
+  //     return res.json();
+  //   })
+  //   .then(data => {
+  //     // stretch
+  //     console.log(data);
+  //     this.setState({ starwarsChars: data.results });
+  //   })
+  //   .catch(err => {
+  //     throw new Error(err);
+  //   });
+  // }
+
   render() {
     return (
       <div className="App">
+        <button onClick={this.nextPage}>Next Page</button>
         <h1 className="Header">React Wars</h1>
+        <StarwarsList charactersData={this.state.starwarsChars} />
       </div>
     );
   }
