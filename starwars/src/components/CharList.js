@@ -9,8 +9,10 @@ const CharList = props => {
                                  key={index}
                                  showCurrentChar={props.showCurrentChar} />;
       })}
-       <div className="return" onClick={props.showNextPage}>Next</div>
-       <div className="return" onClick={props.showPrevPage}>Previous</div>
+      <div className="pWrapper">
+       <div className="return prev" onClick={props.showPrevPage}>Previous</div>
+       <div className="return next" onClick={props.showNextPage}>Next</div>
+      </div>
     </div>
   );
 };

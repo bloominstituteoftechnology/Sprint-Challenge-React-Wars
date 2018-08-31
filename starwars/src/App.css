@@ -40,3 +40,22 @@
 .charHeader {
   color: rgb(69, 84, 223);
 }
+
+.pWrapper {
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+
+}
+.prev, .next {
+  font-size: 3rem;
+  background-color: black;
+  height: 70px;
+  width: 200px;
+  border: 2px solid #888;
+  border-radius: 10px;
+  color: #fff;
+}
