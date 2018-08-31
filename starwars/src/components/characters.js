@@ -6,12 +6,12 @@ const Characters = props => {
 
   return (
     <div>
-      {props.data && props.starwarsChars.map(character => (
+      {props.characters.map(item =>
       <Character 
-      key={character.id} 
-      data={character} 
+      key={item.name} 
+      data={item} 
       />
-    ))}
+      )}
     </div>
   )
 }
