@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
+import CharachterList from './components/Charachterlist';
+import Button from './components/Button';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      link:`https://swapi.co/api/people/?page=1`,
+      count: 1,
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters(this.state.link);
   }
 
   getCharacters = URL => {
@@ -29,10 +33,31 @@ class App extends Component {
       });
   };
 
+  // incrementCount = event => {
+  //   this.setState(prevState => { 
+  //   return { count: prevState.count +1 };
+  //   })
+  //   console.log(this.state.count);
+  // };
+  
+  // updateLink = event => {
+  //   this.setState({
+  //     link: `https://swapi.co/api/people/?page=${this.state.count}`})
+  //     console.log(this.state.link);
+  // };
+
+ 
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharachterList 
+        starwarsChars={this.state.starwarsChars} 
+        char={this.state.starwarsChars} 
+        onClick={this.clickIMG}/>
+        {/* <Button function={this.incrementCount} text="increment count"/>
+        <Button function={this.updateLink} text='update link'/> */}
       </div>
     );
   }
