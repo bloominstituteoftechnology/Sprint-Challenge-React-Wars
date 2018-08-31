@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  border: 3px solid green;
+  background-color: lightblue;
+  font-size: 1.5rem;
+  max-width: 500px;
+  width: 20%;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.allCards {
+  display: flex;
+  flex-flow: row wrap;
+}

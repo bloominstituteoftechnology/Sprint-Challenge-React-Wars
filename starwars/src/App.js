@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardList from './components/CardList';
 
 class App extends Component {
   constructor() {
@@ -33,8 +34,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList
+          chars={this.state.starwarsChars}
+          componentDidMount={this.componentDidMount}
+        />
       </div>
+
     );
+
   }
 }
 
