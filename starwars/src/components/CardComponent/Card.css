@@ -1,0 +1,8 @@
+.card-container {
+  width: 500px;
+  background-color: white;
+}
+
+.card-content {
+  display: inline-flex;
+}
