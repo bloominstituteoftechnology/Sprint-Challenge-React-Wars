@@ -8,9 +8,10 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    console.log(this.state);
   }
 
-  componentDidMount() {
+  componentDidMount() { 
     this.getCharacters('https://swapi.co/api/people');
   }
 
@@ -30,11 +31,24 @@ class App extends Component {
       });
   };
 
+  addNewCharacter = e => {
+    e.preventDefault();
+    const starwarsChars = this.state.starwarsChars;
+    starwarsChars.push({character: this.getCharacters});
+    this.setState({starwarsChars});
+  
+}
+  
+
+  // this.setState({ characters})
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <DisplayCard />
+        <DisplayCard 
+        handleNewCharacter={this.addNewCharacter}
+        />
       </div>
     );
   }
