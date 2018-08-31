@@ -8,6 +8,7 @@ const Character = props => {
         <div className = "character" >
         <Header header = {props.header} />
         <CharacterInfo birthYear = {props.birthYear} 
+                    gender = {props.gender}
                     eyeColor = {props.eyeColor}
                     hair = {props.hair}
                     height = {props.height}

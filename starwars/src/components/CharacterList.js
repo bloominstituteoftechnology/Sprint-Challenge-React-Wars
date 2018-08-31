@@ -7,8 +7,8 @@ const CharacterList = props => {
             <div className = "characterCard">
             <Character 
                 header = {character.name}
-                species = {character.species[0]}
                 birthYear = {character.birth_year}
+                gender = {character.gender}
                 eyeColor = {character.eye_color}
                 hair = {character.hair_color}
                 height = {character.height}

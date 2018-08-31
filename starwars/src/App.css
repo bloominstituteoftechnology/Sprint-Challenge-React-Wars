@@ -1,7 +1,6 @@
 .App {
   max-width: 1200px; 
-   width: 100%; 
-   margin: 0 auto;
+   width: 100%;
 }
 .Header {
   color: black;
@@ -27,13 +26,15 @@
   padding: 10px;
   border-radius: 20px; 
   border: solid 1.5px #ffd54e;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .characterCard:hover {
-  background-color: black;
   color: #ffd54e;
-  opacity: 1;
+  background-color:  black;
+  opacity: 0.6;
+  font-size: 1.90rem;
+  letter-spacing: .1rem;
 }
 
 .character {
@@ -46,6 +47,7 @@
 }
 
 h1 {
+  margin-bottom: 3px;
   font-size: 2rem;
   font-family: Impact;
   text-decoration: underline;
@@ -55,8 +57,4 @@ h1 {
   height: auto;
   text-align: left;
   line-height: 1.4rem;
-}
-
-.content:hover {
-  color: #ffd54e;
 }
