@@ -1,0 +1,6 @@
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: space-around;
+}
