@@ -2,10 +2,10 @@ import React from 'react';
 
 function StarwarsData(props) {
     return (
-        <ul>
-            
-        </ul>
+        <div>
+            {props.charInfoList.map((element, index ) => <Character key={i} traits={element})}
+        </div>
     );
 }
 
-export default StarwarsData.js;
+export default StarwarsData;
