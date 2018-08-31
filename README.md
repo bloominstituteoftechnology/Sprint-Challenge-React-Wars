@@ -1,1 +1,1 @@
-Code Sanbox Preview: https://codesandbox.io/s/github/BrianARuff/Sprint-Challenge-React-Wars/tree/master/starwars
+Code Sanbox Preview: https://codesandbox.io/s/1rypj9rr4q
