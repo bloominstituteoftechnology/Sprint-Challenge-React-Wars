@@ -1,0 +1,4 @@
+.character-cards {
+    display: flex;
+    flex-wrap: flex;
+}
