@@ -58,15 +58,18 @@ html, body {
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.6rem;
 }
 .Header {
   font-size: 42px;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin: 10px 0;
 }
 /* write your parent styles in here for your App.js */
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }

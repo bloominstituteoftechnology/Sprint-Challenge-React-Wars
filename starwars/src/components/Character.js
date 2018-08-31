@@ -3,17 +3,38 @@ import './StarWars.css';
 
 const Character = (props) => {
   return (
-    <li className='character'
+    <table className='character'
         id={props.character.created}>
         <h2>{props.character.name}</h2>
-        <p>{props.character.birth_year}</p>
-        <p>{props.character.gender}</p>
-        <p>{props.character.hair_color}</p>
-        <p>{props.character.eye_color}</p>
-        <p>{props.character.skin_color}</p>
-        <p>{props.character.height}</p>
-        <p>{props.character.mass}</p>
-    </li>
+        <tr>
+          <th>Birth year:</th>
+          <td>{props.character.birth_year}</td>
+        </tr>
+        <tr>
+          <th>Gender:</th>
+          <td>{props.character.gender}</td>
+        </tr>
+        <tr>
+          <th>Hair color:</th>
+          <td>{props.character.hair_color}</td>
+        </tr>
+        <tr>
+          <th>Eye color:</th>
+          <td>{props.character.eye_color}</td>
+        </tr>
+        <tr>
+          <th>Skin color:</th>
+          <td>{props.character.skin_color}</td>
+        </tr>
+        <tr>
+          <th>Height:</th>
+          <td>{props.character.height}</td>
+        </tr>
+        <tr>
+          <th>Mass:</th>
+          <td>{props.character.mass}</td>
+        </tr>
+    </table>
   );
 }
 
