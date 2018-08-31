@@ -1,0 +1,36 @@
+
+div {
+    margin: 25px auto;
+    
+}
+
+.charCard {
+    color: white;
+    font-weight: 900;
+    width: 45%;
+    text-align: left;
+    background-color: black;
+    opacity: .5;
+    text-align: center;
+    border-radius: 120px;
+}
+
+p {
+    word-wrap: break-word;
+    /* font-weight: 900; */
+    font-size: 12px;
+    
+}
+
+.mainChar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App {
+    max-width: 1024px;
+}
+
+.root {
+    background-repeat: repeat;
+}
