@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './StarWars.css';
 
 const CharacterCard = props => {
+    // assigns an ID based on the CharacterList count
+    
     return (
-        <div class = 'card' id={props.char.created}>
+        <div className = 'card' id={props.count}>
             <h2>{props.char.name}</h2>
             <p>Birth Year: {props.char.birth_year}</p>
             <p>Gender: {props.char.gender}</p>

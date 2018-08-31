@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  background: white;
+  margin: 10px 0px;
+  border-radius: 10px;
+  width: 30%;
+}

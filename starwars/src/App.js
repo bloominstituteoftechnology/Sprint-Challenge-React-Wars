@@ -6,9 +6,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentIndex: 0
     };
   }
+
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -34,8 +36,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList chars = {this.state.starwarsChars} />
-        
+        <div>
+        <CharacterList chars = {this.state.starwarsChars} currentIndex = {this.state.currentIndex}/>
+        </div>
       </div>
     );
   }
