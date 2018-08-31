@@ -2,7 +2,7 @@ import React from 'react';
 import './StarWars.css';
 
 const Char = (props) => {
-    return <div>
+    return <div class="card">
 	<li>{props.char.birth_year}</li>
 	<li>{props.char.created}</li>
 	<li>{props.char.edited}</li>
@@ -13,7 +13,6 @@ const Char = (props) => {
 	<li>{props.char.mass}</li>
 	<li>{props.char.name}</li>
 	<li>{props.char.skin_color}</li>
-        <p></p>
     </div>;
 };
 
