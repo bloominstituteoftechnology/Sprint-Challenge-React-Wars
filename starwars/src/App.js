@@ -31,6 +31,7 @@ class App extends Component {
   };
 
   
+  
 
   render() {
     console.log(this.state.starwarsChars);
@@ -38,7 +39,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map(char => {
-          return <Character className="Styling" name={char.name} height={char.height} mass={char.mass} hair_color={char.hair_color} skin_color={char.skin_color} key={Math.random()}   />
+          return <Character name={char.name} height={char.height} mass={char.mass} hair_color={char.hair_color} skin_color={char.skin_color} films={char.films} key={Math.random()}   />
         })}
       </div>
     );
