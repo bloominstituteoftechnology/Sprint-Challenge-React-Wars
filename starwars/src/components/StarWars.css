@@ -23,8 +23,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 300px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 .nameluke {background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');}
@@ -38,38 +38,46 @@
 .namebiggs {background-image: url('https://static.comicvine.com/uploads/scale_small/0/8015/199233-158766-biggs-darklighter.jpg')}
 .nameobi-wan {background-image: url('https://orig00.deviantart.net/a801/f/2007/113/1/e/o_is_for_obi_wan_by_joewight.jpg')}
 
-.height {
-  background-image: url('https://www.jamberoo.net/uploads/default/files/ico-height.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 300px;
-  width: 200px;
-}
+.heightluke {background-image: url('../img/h172.png') }
+.heightc-3po {background-image: url('../img/r167.png') }
+.heightr2-d2 {background-image: url('../img/r96.png') }
+.heightdarth {background-image: url('../img/h202.png') }
+.heightleia {background-image: url('../img/m150.png') }
+.heightowen {background-image: url('../img/h178.png') }
+.heightberu {background-image: url('../img/h165.png') }
+.heightr5-d4 {background-image: url('../img/r97.png') }
+.heightbiggs {background-image: url('../img/h183.png') }
+.heightobi-wan {background-image: url('../img/h182.png') }
 
-.mass {
-  background-image: url('http://www.particleadventure.org/images/page-elements/scales.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 300px;
-  width: 200px;
-}
+.massluke {background-image: url('../img/77.png') }
+.massc-3po {background-image: url('../img/75.png') }
+.massr2-d2 {background-image: url('../img/32.png') }
+.massdarth {background-image: url('../img/136.png') }
+.massleia {background-image: url('../img/49.png') }
+.massowen {background-image: url('../img/120.png') }
+.massberu {background-image: url('../img/75.png') }
+.massr5-d4 {background-image: url('../img/32.png') }
+.massbiggs {background-image: url('../img/84.png') }
+.massobi-wan {background-image: url('../img/77.png') }
 
-.hair {
-  background-image: url('https://i.dailymail.co.uk/i/pix/2018/02/06/13/48EE14B600000578-5358041-image-a-50_1517924589814.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 300px;
-  width: 200px;
-}
+.hairluke {background-image: url('../img/untitled.png') }
+.hairc-3po {background-image: url('../img/untitled.png') }
+.hairr2-d2 {background-image: url('../img/untitled.png') }
+.hairdarth {background-image: url('../img/untitled.png') }
+.hairleia {background-image: url('../img/untitled.png') }
+.hairowen {background-image: url('../img/untitled.png') }
+.hairberu {background-image: url('../img/untitled.png') }
+.hairr5-d4 {background-image: url('../img/untitled.png') }
+.hairbiggs {background-image: url('../img/untitled.png') }
+.hairobi-wan {background-image: url('../img/untitled.png') }
 
-.skin {
-  background-image: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-img.instyle.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F684xflex%2Fpublic%2Fimages%2F2016%2F10%2F100516-glowing-skin.jpg%3Fitok%3DXV9YJvOi&w=700&q=85');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 300px;
-  width: 200px;
-}
+.skinluke {background-image: url('../img/untitled.png') }
+.skinc-3po {background-image: url('../img/untitled.png') }
+.skinr2-d2 {background-image: url('../img/untitled.png') }
+.skindarth {background-image: url('../img/untitled.png') }
+.skinleia {background-image: url('../img/untitled.png') }
+.skinowen {background-image: url('../img/untitled.png') }
+.skinberu {background-image: url('../img/untitled.png') }
+.skinr5-d4 {background-image: url('../img/untitled.png') }
+.skinbiggs {background-image: url('../img/untitled.png') }
+.skinobi-wan {background-image: url('../img/untitled.png') }

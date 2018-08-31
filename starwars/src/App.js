@@ -58,8 +58,12 @@ class App extends Component {
         item.classList.toggle('hide')
       )
 
+      event.target.innerText ?
       event.target.parentNode.children[event.target.parentNode.children.length-1]
       .classList.toggle(option+event.target.parentNode.dataset.char)
+      :
+      event.target.parentNode.children[event.target.parentNode.children.length-1]
+      .classList.toggle(option)
     }
 
     else {
@@ -90,7 +94,6 @@ class App extends Component {
  };
 
   render() {
-    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
