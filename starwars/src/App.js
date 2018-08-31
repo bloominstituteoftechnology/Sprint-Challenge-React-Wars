@@ -52,20 +52,23 @@ class App extends Component {
   }
 
   prevPage = () => {
-    this.setState({num: this.state.num + -1 });
-    fetch(`${this.state.startpage}${this.state.num}`)
-    .then(res => {
-      return res.json();
-    })
-    .then(data => {
-      // stretch
-      this.getCharacters(data.previous);
-      // this.setState({ starwarsChars: data.results });
-    })
-    .catch(err => {
-      console.error(new Error(err));
-      throw new Error(err);
-    });
+    console.log(this.state.num);
+    if(this.state.num > 1){
+        this.setState({num: this.state.num + -1 });
+        fetch(`${this.state.startpage}${this.state.num}`)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          // stretch
+          this.getCharacters(data.previous);
+          // this.setState({ starwarsChars: data.results });
+        })
+        .catch(err => {
+          console.error(new Error(err));
+          throw new Error(err);
+        });
+      }
   }
 
   render() {
