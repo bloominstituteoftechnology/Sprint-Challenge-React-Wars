@@ -12,7 +12,7 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-    Class/stateful components handle data as it moves through the React application. These components are responsible for defnining and organizing the data. Functional/ presentational components then take that more clearly defined/ potentially better organized data and "run it through" functions and commands that dictate presentation such that now the data is actually being made useful for the app user.
+    Class/Stateful component uses state and methods. Functional/Presentational component passes data to the main app under the hood.
 
 
 
