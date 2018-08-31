@@ -1,0 +1,45 @@
+.dataCards {
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+  background: rgba(63, 127, 191, 0.3);
+  padding: 10px;
+  border-radius: 30px;
+  font-family: Audiowide;
+  font-weight: bolder;
+}
+.dataCards p {
+  line-height: 1.25;
+  font-family: Open Sans Condensed;
+}
+
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid burlywood;
+  background: #fac695;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.btn:after {
+  position: absolute;
+  transition: 0.3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: burlywood;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:hover:after {
+  width: 100%;
+  left: 0;
+}

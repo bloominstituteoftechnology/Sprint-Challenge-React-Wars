@@ -1,8 +1,18 @@
 .App {
   text-align: center;
+  font-family: Audiowide;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 5px 10px 30px;
+  background-color: rgba(232, 173, 63, 0.2);
+}
