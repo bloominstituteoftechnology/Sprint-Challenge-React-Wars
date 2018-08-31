@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ItemList from './components/ItemList';
 import Down from './components/Down';
+import Up from './components/Up';
 
 class App extends Component {
   constructor() {
@@ -10,6 +11,7 @@ class App extends Component {
       starwarsChars: [],
       counter: 1,
       classes: "toggle",
+      classes2: "",
     };
   }
 
@@ -19,26 +21,28 @@ class App extends Component {
 
   upURL = event => {
     event.preventDefault();
-    let newState = {...this.state};
-    this.state.classes = "";
-    this.state.counter = this.state.counter + 1;
-    newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
-    console.log(this.state.counter);
-    this.setState({...newState});
+    let newState = this.state;
+    if (newState.counter === 7){
+      newState.counter = newState.counter + 1;
+      newState.classes2 = "toggle";
+    }
+    newState.classes = "";
+    newState.counter = newState.counter + 1;
+    newState = this.getCharacters(`https://swapi.co/api/people/?page=${newState.counter}`); 
   }
   downURL = event => {
     event.preventDefault();
-    let newState = {...this.state};
-    console.log(this.state.counter);
-    if (this.state.counter === 2){
-      this.state.counter = this.state.counter - 1;
-      newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
-      this.setState({...newState});
+    let newState = this.state;
+    if (newState.counter === 2){
+      newState.counter = newState.counter - 1;
+      newState = this.getCharacters(`https://swapi.co/api/people/?page=${newState.counter}`); 
+      this.setState(newState);
       this.state.classes = "toggle";
     } else {
-      this.state.counter = this.state.counter - 1;
-      newState = this.getCharacters(`https://swapi.co/api/people/?page=${this.state.counter}`); 
-      this.setState({...newState});
+      newState.counter = newState.counter - 1;
+      newState = this.getCharacters(`https://swapi.co/api/people/?page=${newState.counter}`);
+      this.setState(newState);
+      this.state.classes2 = ""; 
     }
   }
 
@@ -52,7 +56,6 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -64,7 +67,7 @@ class App extends Component {
     return (
       <div className="App">
         <Down down={this.downURL} classes={this.state.classes} />
-        <button onClick={this.upURL}>Next Page</button>
+        <Up up={this.upURL} classes2={this.state.classes2} />
         <h1 className="Header">React Wars</h1>
         <ItemList items={this.state.starwarsChars} />
       </div>
