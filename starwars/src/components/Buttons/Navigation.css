@@ -1,0 +1,56 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navigation .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 0 20px;
+    transition: color .2s, background-color .1s;
+    cursor: pointer;
+}
+
+.navigation .button:hover {
+background-color: black;
+color: lightskyblue;
+text-shadow: 0 0 7px deepskyblue;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .navigation h1 {
+        order: 0;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .navigation .button {
+        order: 1;
+        position: fixed; 
+        width: 40px;
+        top: 33%;
+    }
+
+    .navigation .button.next {
+        right: 20px;
+    }
+
+    .navigation .button.previous {
+        left: 20px;
+    }
+}
