@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Header {
   color: #443e3e;
@@ -8,7 +11,13 @@
 /* write your parent styles in here for your App.js */
 
 .character {
-  border: 1px solid black;
-  margin: 2rem;
+  border: 1px solid gray;
+  margin: 5rem;
+  background: lightgray;
+  width: 30rem;
+  box-shadow: 0px 0px 107px -5px rgba(0,0,0,0.7);
 }
 
+/* .character img {
+  width: 100%;
+} */

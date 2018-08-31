@@ -2,15 +2,6 @@ import React from 'react';
 import Card from "./Card"
 import './Card.css';
 
-function CardContainer(props){
-	return 
-    <div>
-      {props.starwarsChars.map(char => {
-        return <Card/>
-      })}
-    </div>;
- }
-
  function CardContainer(props) {
   return(
       <ul>

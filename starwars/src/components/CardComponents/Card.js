@@ -1,6 +1,7 @@
 import React from "react";
 
 function Card(props) {
+
     return(
         <div className="character" >
             <div>
@@ -14,8 +15,6 @@ function Card(props) {
                     <h3>Eye Color: {props.char.eye_color}</h3>
                     <h3>Birth Year: {props.char.birth_year}</h3>
                 </div>
-                
-                <img  src="" alt="none" ></img>
             </div>
         </div>
     );
