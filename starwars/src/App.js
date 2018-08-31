@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CharacterList from './components/CharacterList.js'
 
+
 class App extends Component {
   constructor() {
     super();
