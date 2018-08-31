@@ -9,6 +9,27 @@ class App extends Component {
     };
   }
 
+  addNewChar = e => {
+    e.preventDefault();
+    const newChar = {name: 'name', 
+                    //  id: Date.now(), 
+                     height: 'height', 
+                     mass: 'mass', 
+                     skin: 'skin_color', 
+                     hair: 'hair_color',
+                     eye: 'eye_color',
+                     birthyear: 'birth_year',
+                     gender: 'gender',
+                     homeworld: 'homeworld',
+                     films: 'films',
+                     species: 'species',
+                     vehicles: 'vehicles',
+                     starships: 'starships',};
+    const newarr = [...this.state.starwarsChars];
+    newarr.push(newChar);
+      this.setState({starwarsChars: newarr});
+  }
+
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
