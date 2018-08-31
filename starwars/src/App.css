@@ -7,7 +7,7 @@ html, body {
   font-size: 1.6rem;
 }
 .Header {
-  font-size: 2.8rem;
+  font-size: 3.4rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
@@ -17,4 +17,11 @@ html, body {
 h3 {
   font-size: 2.2rem;
   padding-top: 4%;
+  text-decoration: underline overline;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+ul {
+  padding-bottom: 2%;
+  list-style-type: none;
 }

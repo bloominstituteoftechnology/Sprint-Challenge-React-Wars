@@ -8,15 +8,17 @@
 
 .character {
   width: 300px;
-  border: 3px solid white;
+  border: 3px solid #CDB399;
   border-radius: 10px;
-  background: ;
   padding: 5px;
+
 }
 
 .character-wrap {
-  background: grey;
+  color: #443e3e;
   font-size: 1.4rem;
   line-height: 20px;
-  background:rgba(255, 255, 255, 0.5);
+  background: rgba(200, 200, 200, 0.5);
+  height: 90%;
+  margin-top: -5.2%;
 }
