@@ -1,17 +1,22 @@
 import React from 'react';
+import Card from "./Card"
 import './Card.css';
 
-const CardContainer = () => {
-    return (
-      <div className = "cardContainer">
-        <a href = "reactjs.org">
-            <img src = "https://ibin.co/3wnC6SgIOJud.png" alt = "" className = "cardContainerImg"/>
-            <p>Get started with React</p>
-            <p>React makes it painless to create interactive UIs. Design simple views for each state in your application.</p>
-            <p>reactjs.org</p>
-        </a>
-      </div>
-    );
-  };
+function CardContainer(props){
+	return 
+    <div>
+      {props.starwarsChars.map(char => {
+        return <Card/>
+      })}
+    </div>;
+ }
+
+ function CardContainer(props) {
+  return(
+      <ul>
+          {props.charactersBlock.map(char => <Card char={char} name={char.name} gender={char.gender} height={char.height} hair={char.hair_color} />)} 
+      </ul>
+  );
+};
 
 export default CardContainer;
