@@ -4,7 +4,7 @@ import './StarWars.css';
 function CharCard(props) {
     return (
         <div className='card'>
-            <h2 onClick={props}>{props.cardData.name}</h2>
+            <h2>{props.cardData.name}</h2>
             <table>
                 <tbody>
                     <tr>
