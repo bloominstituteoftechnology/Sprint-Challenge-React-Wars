@@ -10,6 +10,7 @@ function Character(props) {
         <p><strong>Birth Year:</strong> {props.chara.birth_year}</p>
         <p><strong>Height:</strong> {props.chara.height}</p>
         <p><strong>Mass:</strong> {props.chara.mass}</p>
+        <button onClick={() => props.finishHim(props.chara.created)}>Destroy</button>
 
     </div>;
 }

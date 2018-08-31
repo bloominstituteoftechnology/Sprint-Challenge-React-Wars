@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      inputText: ""
     };
   }
 
@@ -43,7 +44,35 @@ class App extends Component {
     })
   };
 
+  finishHim = id => {
+  //  event.preventDefault();  Gave an error, "unexpected use of event". Why does it work without it?
+      const survivors = [...this.state.starwarsChars].filter((chara) => {
+      return chara.created !== id;
+    })
 
+    this.setState({
+      starwarsChars: survivors
+    })
+  }
+
+  handleInput = event => {
+    this.setState({
+      inputText: event.target.value
+    });
+  };
+
+  search = event => {
+  event.preventDefault();
+    console.log("hello!")
+    console.log(this.state.inputText)
+
+      const target = [...this.state.todos];
+      target.map(chara => {
+        if(chara.name === this.state.inputText) {
+          console.log(chara);
+        }
+      })
+  }
 
   render() {
     return (
@@ -51,11 +80,15 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <CharacterFilter
         robotsOnly={this.robotsOnly}
+        inputText={this.inputText}
+        handleInput={this.handleInput}
+        search={this.search}
         />
         <CharacterList
         charas={this.state.starwarsChars}
+        finishHim = {this.finishHim}
         />
-        
+
       </div>
       
     );

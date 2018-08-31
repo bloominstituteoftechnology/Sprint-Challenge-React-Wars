@@ -8,6 +8,7 @@ function CharacterList(props) {
         <Character
         chara={chara}
         key={chara.created}
+        finishHim={props.finishHim}
         //function?
         />)}
     </div>
