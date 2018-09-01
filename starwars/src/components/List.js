@@ -5,7 +5,7 @@ function List(props) {
   console.log('props', props);
   return(
     <div>
-      {props.height.map(height => <Display height = {height} />)}
+      {props.height.map((height,index) => <Display key = {index} height = {height} />)}
 
 
 
