@@ -1,0 +1,22 @@
+.character-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.character-card {
+    width: 300px;
+    border: 1px solid ghostwhite;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.character-card p {
+    margin: 2px;
+}
+
+.character-card h2 {
+    margin: 15px;
+}
