@@ -4,7 +4,7 @@ import Character from './Character';
 const CharacterList = props => {
     return props.list.map(character => { 
         return (
-            <div className = "characterCard">
+            <div className ={`characterCard  ${character.name.replace(" ", "")}`}>
             <Character 
                 header = {character.name}
                 birthYear = {character.birth_year}
