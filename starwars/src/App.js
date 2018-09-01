@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharButton from './components/CharButton.js';
-
+import List from './components/List.js';
 class App extends Component {
   constructor(props) {
     super();
@@ -35,6 +35,8 @@ class App extends Component {
 
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <List  height={this.state.starwarsChars}/>
+
         <CharButton nameprops = {this.state.starwarsChars} />
 
 
