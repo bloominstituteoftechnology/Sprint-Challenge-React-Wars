@@ -1,8 +1,13 @@
 .list-elements{
 border: 1px solid black;
 margin-bottom: 100px;
+box-shadow: 15px 24px 9px 5px rgba(0,0,0,0.75);
+background-color: #35404a;
 }
 
 .list-elements li{
   list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }

@@ -1,10 +1,12 @@
 import React from 'react';
-import './StarWars.css'
+import './StarWars.css';
+import PicDisplay from './PicDisplay';
 
 function Display(props) {
   console.log('props', props);
   return (
   <div className= "list-elements">
+    <PicDisplay height={props.height} />
     <ul>
       <li>Name: {props.height.name}</li>
       <li>Height: {props.height.height}</li>
