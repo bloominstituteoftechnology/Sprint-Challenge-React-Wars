@@ -7,20 +7,20 @@ const Character = props => {
   
   <div className= "card">
   
-  <h2>NAME:{props.data.name}</h2>
+  <h2>{props.data.name}</h2>
 
   <div className= "stats">
-    <p>{props.data.birth_year}</p>
-    <p>{props.data.gender}</p>
-    <p>{props.data.hair_color}</p>
-    <p>{props.data.eye_color}</p>
-    <p>{props.data.skin_color}</p>
-    <p>{props.data.height}</p>
-    <p>{props.data.mass}</p>
+    <p>Born: {props.data.birth_year}</p>
+    <p>Gender: {props.data.gender}</p>
+    <p>Hair: {props.data.hair_color}</p>
+    <p>Eyes: {props.data.eye_color}</p>
+    <p>Complextion: {props.data.skin_color}</p>
+    <p>Height: {props.data.height}</p>
+    <p>Mass: {props.data.mass}</p>
   </div>
-  <div>
-    <p>{props.data.created}</p>
-    <p>{props.data.edited}</p>
+  <div className= "notes"> 
+    <p className= "p-notes">{props.data.created}</p>
+    <p className= "p-notes">{props.data.edited}</p>
 
   </div>
 

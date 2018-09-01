@@ -6,13 +6,35 @@
   background-size: cover;
 }
 
+h2 {
+  /* border: 2px solid black; */
+  /* width: 181px;
+  margin-left: 438px; */
+  width: 219px;
+  margin-left: 397px;
+  padding-top: 13px;
+}
+
 p {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .stats {
-  width: 176px;
-  border: 2px solid black;
+  width: 140px;
+  /* border: 2px solid black; */
   text-align: left;
-  margin-left: 447px;
+  margin-left: 458px;
+}
+
+.notes {
+  margin-left: 459px;
+  text-align: left;
+  padding-bottom: 21px;
+}
+
+.p-notes {
+  font-size: 10px;
+  font-weight: bold;
+  color: darkgreen;
 }
