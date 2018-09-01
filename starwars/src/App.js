@@ -8,11 +8,12 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
-    console.log(this.state);
   }
 
+
+
   componentDidMount() { 
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -29,15 +30,9 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
   };
 
-  addNewCharacter = e => {
-    e.preventDefault();
-    const starwarsChars = this.state.starwarsChars;
-    starwarsChars.push({character: this.getCharacters});
-    this.setState({starwarsChars});
-  
-}
   
 
   // this.setState({ characters})
@@ -47,8 +42,10 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <DisplayCard 
-        handleNewCharacter={this.addNewCharacter}
+        starwarsChars={this.state.starwarsChars}
         />
+    
+        
       </div>
     );
   }
