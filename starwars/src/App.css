@@ -1,8 +1,154 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  max-width: 1300px;
+   width: 100%;
+   height: 100%;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  text-shadow: 1px 1px 5px #ffd54e;
+  font-size: 8rem;
+  text-align: left;
+  letter-spacing: .5rem;
+  margin: 5px 0 10px 185px;
 }
-/* write your parent styles in here for your App.js */
+
+.character-cards {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 0;
+  align-items: center; 
+}
+
+.characterCard{
+  color: rgba(0, 0, 0, 0);
+  width: 15%; 
+  height: 250px;  
+  margin: 15px 15px 15px 15px;
+  padding: 10px;
+  border-radius: 20px; 
+  border: solid 1.5px #ffd54e;
+}
+
+.characterCard:hover {
+  background-image: none;
+  color: rgb(0, 0, 0);
+  background-color:  rgba(255, 255, 255, 0.349);
+  font-size: 1.90rem;
+  letter-spacing: .1rem;
+}
+
+.character {
+  font-size: 1.6rem; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+}
+
+h1 {
+  margin-bottom: 3px;
+  font-size: 2rem;
+  font-family: Impact;
+  text-decoration: underline;
+}
+
+.content {
+  height: auto;
+  text-align: left;
+  line-height: 1.4rem;
+}
+
+.LukeSkywalker {background-image: url("Old_Luke_Skywalker.png"); background-size: cover;}
+
+.C-3PO {background-image: url("C-3PO.png"); background-size: cover;}
+
+.R2-D2 {background-image: url("D2R2.jpg"); background-size: cover;}
+
+.DarthVader {background-image: url("tumblr_mvjalikVk61r1yfh5o1_500.jpg"); background-size: cover;}
+
+.LeiaOrgana {background-image: url("leia-organa-feature-image_d0f5e953.jpeg"); background-size: cover;}
+
+.OwenLars {background-image: url("Young_owen.jpg"); background-size: cover;}
+
+.BeruWhitesun {background-image: url("Beru.jpg"); background-size: cover;}
+
+.R5-D4 {background-image: url("Star-Wars-R5-D4-Sideshow-Collectibles-Action-Figure-Pic-3.jpg"); background-size: cover;}
+
+.BiggsDarklighter {background-image: url("BiggsDark.jpeg"); background-size: cover;}
+
+.Obi-WanKenobi {background-image: url("ObiWan.png"); background-size: cover;}
+
+/* <============ MEDIA QUERIES ===========> */
+
+@media (max-width:850px) {
+  
+  .characterCard {
+    width: 20%;
+  }
+}
+
+@media (max-width:620px) {
+
+  .characterCard {
+    width: 30%;
+  }
+
+}
+
+@media (max-width:420px) {
+
+  .characterCard {
+    width: 50%;
+  }
+
+}
+
+@media (max-width:2000px) {
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App {
+    max-width: 1600px;
+     width: 100%;
+     height: 100%;
+  }
+
+  .Header {
+    font-family: Impact;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 1px 1px 5px #ffd54e;
+    font-size: 8rem;
+    text-align: left;
+    letter-spacing: .5rem;
+    margin: 20px 0 10px 185px;
+  }
+
+  .character-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 0;
+    align-items: center; 
+  }
+
+  .characterCard{
+    color: rgba(0, 0, 0, 0);
+    width: 15%; 
+    height: 250px;  
+    margin: 45px 25px;
+    padding: 10px;
+    border-radius: 20px; 
+    border: solid 1.5px #ffd54e;
+  }
+
+}

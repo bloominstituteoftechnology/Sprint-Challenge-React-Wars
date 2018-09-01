@@ -9,14 +9,19 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+React is a user-interface library that manages dynamic data and put it on the front-end of an app. It helps with changes on the app because of user interaction.
 
-1.  What does it mean to _think_ in react?
+2.  What does it mean to _think_ in react?
+Thinking in React is understanding that an app is a collection of components. Each component can be divided into smaller parts that make up the whole. Sometimes these are reusable in other apps/components.
 
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+Class components are used when state is needed and the ability to change state in that component. Class components also make the ability to pass through information to functional/presentational components. Functional Components are used to return presentational components to the DOM and add structure to the app. 
 
-1.  Describe state.
+4.  Describe state.
+State starts with a default value, but allows changes from user interaction. State is used so that a component can keep track of information in between any renders that it does. State is managed within the component.
 
-1.  Describe props.
+5.  Describe props.
+Props are how components talk to each other. Props gets passed to a component from the parent.
 
 ## Project
 
