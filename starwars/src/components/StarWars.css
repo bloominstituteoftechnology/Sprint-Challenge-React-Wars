@@ -13,3 +13,7 @@
     width: 50%;
     border: 1px solid gray;
 } */
+
+h1 {
+    display: block;
+}
