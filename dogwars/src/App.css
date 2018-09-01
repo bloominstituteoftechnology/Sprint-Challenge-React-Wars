@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+.Header {
+  margin-top: 30px;
+  font-size: 6rem;
+  color: #443e3e;
+  text-shadow: 1px 1px 8px #fff;
+}
+/* write your parent styles in here for your App.js */
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.charList, .charData, .return {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px  #666;
+}
+
+.return {
+  color: #222d63;
+}
+
+.card-wrapper {
+  background-color: rgba(23, 23, 23, 0.5);
+  padding: 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.charHeader {
+  color: rgb(69, 84, 223);
+}
+
+.pWrapper {
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+
+}
+.prev, .next {
+  font-size: 3rem;
+  background-color: black;
+  height: 70px;
+  width: 200px;
+  border: 2px solid #888;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.dogWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogNext {
+  background-color: #443e3e;
+  width: 200px;
+  height: 65px;
+  border: 2px solid  #eee;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.dogPic {
+  width: 75%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
