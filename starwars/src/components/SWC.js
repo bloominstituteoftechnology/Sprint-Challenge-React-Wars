@@ -11,20 +11,18 @@ import {
 
 const SWC = props => {
   return (
-    <div className="swc">
+    <div className="sw-card">
       <Card>
         <CardImg
           top
           width="100%"
-          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-          alt="Card image cap"
+          src="https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2017/08/star-wars-thumb.jpg"
+          alt="Star Wars Card"
         />
         <CardBody>
           <CardTitle>{props.name}</CardTitle>
-          <CardSubtitle>{props.homeworld}</CardSubtitle>
-          <CardText>
-            {props.starships}
-          </CardText>
+          <CardSubtitle>Height: {props.height} cm</CardSubtitle>
+          <CardText>Weight: {props.mass} kg</CardText>
           <Button>Collect</Button>
         </CardBody>
       </Card>
