@@ -7,12 +7,13 @@ const DisplayCard = props => {
         <h1>Who's Who of Combat</h1>
         <h1>
             {props.starwarsChars.map(starwarsChar => (
-                starwarsChar.name
+                <p>{starwarsChar.name}</p>
         
             ))}
         </h1>
         </div>
     );
 };
+console.log(this.state);
 
 export default DisplayCard;

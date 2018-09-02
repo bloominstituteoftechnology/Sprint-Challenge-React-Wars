@@ -3,8 +3,8 @@ import './App.css';
 import DisplayCard from './components/DisplayCard';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -38,6 +38,7 @@ class App extends Component {
   // this.setState({ characters})
 
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
