@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
 import './App.css';
-import CardContainer from './components/CardContainer/CardContainer.js';
+import './components/CardContainer/CardContainer.css';
+import Films from './components/Films/Films.js';
 
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: null,
+      films_lookup: null
     };
   }
   componentDidMount() {
@@ -23,15 +26,52 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+    fetch('https://swapi.co/api/films')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ films_lookup: this._filter_films(data.results)});
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
   }
+
+  _filter_films = films => {
+    return films.reduce(function(obj, film) {
+       obj[film.url] = film.title;
+       return obj; 
+    }, {});
+  }
+
+
   render() {
+    const { starwarsChars, films_lookup } = this.state;
     return (
       <div className="App">
       <h1 className="Header">STAR WARS PHONEBOOK</h1>
-        <CardContainer data={this.state.starwarsChars}/>
+        <div className="card-container">
+          {starwarsChars && films_lookup ? (
+            starwarsChars.map(i => {
+              return (
+                <Card key={i.name}>
+                  <CardBody>
+                    <CardTitle>{i.name}</CardTitle>
+                    <CardSubtitle>{`Born: ${i.birth_year}`}</CardSubtitle>
+                    <Films films={i.films} films_lookup={films_lookup} />
+                  </CardBody>
+                </Card>
+              );
+            })
+          ) : (null)
+          }
+        </div>
       </div>
     );
   }
+
 }
+
 
 export default App;

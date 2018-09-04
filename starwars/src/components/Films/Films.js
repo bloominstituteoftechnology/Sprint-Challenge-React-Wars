@@ -2,13 +2,13 @@ import React from 'react';
 import './Films.css';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-export default class Example extends React.Component {
+class Films extends React.Component {
     constructor(props) {
         super(props);
 
         this.toggle = this.toggle.bind(this);
         this.state = {
-            dropdownOpen: false,
+            dropdownOpen: false
         };
     }
 
@@ -19,15 +19,16 @@ export default class Example extends React.Component {
     }
 
     render() {
+        const { films, films_lookup } = this.props;
         return (
             <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle caret>
                     Films
-        </DropdownToggle>
+                </DropdownToggle>
                 <DropdownMenu>
-                    {this.props.data.map(i => {
+                    {films.map(film => {
                         return (
-                            <DropdownItem key={i.films}>{i.films}</DropdownItem>
+                            <DropdownItem key={film}>{films_lookup[film]}</DropdownItem>
                         );
                     })}
                 </DropdownMenu>
@@ -35,3 +36,5 @@ export default class Example extends React.Component {
         );
     }
 }
+
+export default Films;
