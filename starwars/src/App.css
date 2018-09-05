@@ -1,8 +1,29 @@
+/* Fonts */
+@font-face {
+  font-family: 'StarWars';
+  src: url('./fonts/starwars.woff') format('woff');
+}
+@font-face {
+  font-family: 'DIN2014-Demi';
+  src: url('./fonts/din2014-demi.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'DIN2014-Regular';
+  src: url('./fonts/din2014-regular.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'DIN2014-Light';
+  src: url('./fonts/din2014-light.woff') format('woff'); 
+}
+
 .App {
-  text-align: center;
+  padding: 20px 40px;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-family: 'StarWars';
+  font-size: 8rem;
+  color: #fff;
+  margin: 4rem 0 3rem;
+  text-align: center;
 }
 /* write your parent styles in here for your App.js */
