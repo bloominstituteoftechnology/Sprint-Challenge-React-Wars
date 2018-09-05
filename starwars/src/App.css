@@ -6,3 +6,19 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.total{
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.card{
+  width: 25%;
+  border: 1px solid black;
+  background: whitesmoke;
+  margin: 1%;
+}
