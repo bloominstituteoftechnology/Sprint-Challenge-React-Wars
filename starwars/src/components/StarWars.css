@@ -1,0 +1,18 @@
+.card-container {
+    max-width: 800px;
+    
+}
+
+.card {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    
+    border-bottom: 1px solid black;
+}
+
+.card .char {
+    display: flex;
+    flex-direction: column;
+}
