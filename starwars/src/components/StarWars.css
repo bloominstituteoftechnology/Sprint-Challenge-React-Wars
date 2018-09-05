@@ -1,0 +1,14 @@
+.Card{
+	margin-top:15px;
+	display:flex;
+	flex-wrap:wrap;
+	 justify-content:space-evenly;
+	 max-width:70%;
+}
+
+.unicorn{
+	background:rgba(255,255,255,0.5);
+	border:1px solid black;
+	 max-width:400px;
+	margin-bottom:10px;
+}
