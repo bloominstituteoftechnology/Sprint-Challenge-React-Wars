@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterCard from './components/CharacterCard'
 
 class App extends Component {
   constructor() {
@@ -19,7 +20,7 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
-        return res.json();
+        return res.json(); 
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
@@ -33,6 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterCard className='card' characters={this.state.starwarsChars} />
       </div>
     );
   }
