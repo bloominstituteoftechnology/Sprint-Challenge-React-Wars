@@ -1,0 +1,12 @@
+.chars-container {
+width: 40%;
+
+margin: 6px auto;
+}
+
+.char-card {
+border: 2px solid darkslategray;
+padding: 15px;
+border-radius: 25px;
+background: sandybrown;
+}
