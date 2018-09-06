@@ -17,15 +17,16 @@ import React from 'react';
 function CardComponent(props) {
   //ultimately, this function should contain everything to display
   //the character's information on a single card.
+  const {char} = props;
   return (
     <div className="card">
-    <h2>{props.name}</h2>
-      <p>Gender: {props.gender}</p>
-      <p>Hair color: {props.hair_color}</p>
-      <p>Eye color: {props.eye_color}</p>
-      <p>Height: {props.height}</p>
-      <p>Mass: {props.mass}</p>
-      <p>Skin color: {props.skin_color}</p>
+    <h2>{props.char.name}</h2>
+      <p>Gender: {props.char.gender}</p>
+      <p>Hair color: {props.char.hair_color}</p>
+      <p>Eye color: {props.char.eye_color}</p>
+      <p>Height: {props.char.height}</p>
+      <p>Mass: {props.char.mass}</p>
+      <p>Skin color: {props.char.skin_color}</p>
 
     <ul>
 
