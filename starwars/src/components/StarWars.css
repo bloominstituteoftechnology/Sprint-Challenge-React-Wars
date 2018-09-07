@@ -1,0 +1,17 @@
+.cardContainer {
+    display: flex;
+}
+.cards {
+    margin: 5px 5px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    opacity: .75;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
