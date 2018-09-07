@@ -6,7 +6,7 @@ const StarwarsChar = (props) => {
 console.log(props)
 return(
   <div>
-    {props.data.map((data,index) => <Display key = {index} data = {data} />)}
+    {props.data.map((data,index) => <Display key = {index} data = {data} changeInfo = {props.changeInfo} classio ={props.classio} />)}
   </div>
 )
 

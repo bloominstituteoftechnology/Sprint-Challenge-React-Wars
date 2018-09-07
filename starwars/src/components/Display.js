@@ -1,18 +1,18 @@
 import React from 'react';
-import Display from './Display.js'
-
+import Display from './Display.js';
+import './StarWars.css';
 const StarwarsChar = (props) => {
 
 console.log(props)
 return(
+  <div className= "Card">
+    <button onClick={props.changeInfo}>{props.data.name}</button>
   <div>
-    <h4>{props.data.name}</h4>
-  
-<li>height:{props.data.height}</li>
-<li>mass:{props.data.mass}</li>
-<li>hair_color:{props.data.hair_color}</li>
-<li>skin_color:{props.data.skin_color}</li>
-
+<li className={props.classio}>height:{props.data.height}</li>
+<li className={props.classio}>mass:{props.data.mass}</li>
+<li className={props.classio}>hair_color:{props.data.hair_color}</li>
+<li className={props.classio}>skin_color:{props.data.skin_color}</li>
+</div>
   </div>
 )
 
