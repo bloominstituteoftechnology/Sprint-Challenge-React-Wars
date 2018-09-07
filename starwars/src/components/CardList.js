@@ -4,8 +4,8 @@ import Card from "./Card";
 function CardList(props) {
   return (
     <ul>
-      {props.propsCards.map(card => {
-        <Card propsCard={card} />;
+      {props.chars.map(char => {
+        return <Card char={char} />;
       })}
     </ul>
   );
