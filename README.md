@@ -9,15 +9,24 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+
     React is a powerful unopioniomated UI library, with the purpose of building powerful web applications
 
 1)  What does it mean to _think_ in react?
+    Building components that can be dynamic using props to create applications.
 
 1)  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
 1)  Describe state.
 
-1)  Describe props.
+state is sometimes described as the heart of a react application. State is the data, that our components can hold onto and pass around to other components. When the state updates, so will our components thus making them reactive.
+State is mutable. But only though a special function called `set state`.
+Unlike props, a components state is not passed in from the outside. A component decides its own state.
+
+1.  Describe props.
+    Every component can receive props. Props are immutable. The can be passed from town down with event handlers.
+
+Props are shorthand for properties. Props are how components talk to each other. Props flow down from the parent component
 
 ## Project
 
