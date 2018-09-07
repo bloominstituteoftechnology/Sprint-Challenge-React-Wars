@@ -5,8 +5,10 @@ const StarwarsCharsDisplay = props =>{
 
     return(
 
-        <p>
-            {props.starwarsChar}
-        </p>
+        <li>
+            {props.char}
+        </li>
     );
 }
+
+export default StarwarsCharsDisplay;

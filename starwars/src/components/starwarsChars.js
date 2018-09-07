@@ -1,12 +1,29 @@
 import React from 'react';
-import './StarwarsCharsDisplay'
+import StarwarsCharsDisplay from  './StarwarsCharsDisplay'
 
-const StarwarsCharsDisplay = props =>{
+const StarwarsChars = props =>{
 
     return(
 
-        <div>
-            props.starwarsChars.map( char => <StarwarsCharsDisplay starwarsChar={char} /> )
-        </div>
+        <ul>
+            {props.starwarsChars.map(starwarschar => {
+
+            <StarwarsCharsDisplay 
+                char={starwarschar} 
+                key={starwarschar.created}> 
+
+                {starwarschar.name}
+
+            </StarwarsCharsDisplay> 
+            } )
+            
+            
+            }
+
+            </ul>
     );
-}
+
+};
+
+
+export default StarwarsChars;
