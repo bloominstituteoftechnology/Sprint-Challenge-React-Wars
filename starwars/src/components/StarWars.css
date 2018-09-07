@@ -1,0 +1,83 @@
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  height: 330px;
+  width: 215px;
+  margin: 20px 15px;
+}
+
+.hide {display: none;}
+
+.back-display {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nameluke {background-image: url('https://http2.mlstatic.com/3d-deco-light-luke-skywalker-mini-D_NQ_NP_819303-MLM26108177587_102017-F.jpg');}
+.namec-3po {background-image: url('https://cdn.dribbble.com/users/35381/screenshots/1376218/c3po.png')}
+.namer2-d2 {background-image: url('https://vignette.wikia.nocookie.net/jadensadventures/images/4/4f/R2d2_002.png/revision/latest?cb=20130823043614')}
+.namedarth {background-image: url('http://www.how-to-draw-cartoons-online.com/image-files/xhow-to-draw-darth-vader.gif.pagespeed.ic.-p_lqYBCpL.png')}
+.nameleia {background-image: url('http://getdrawings.com/img2/princess-leia-cartoon-drawing-51.jpg')}
+.nameowen {background-image: url('https://static.comicvine.com/uploads/scale_small/6/62795/5012547-star+wars.jpg')}
+.nameberu {background-image: url('https://t00.deviantart.net/4AsnuDNpneAMQtboscZbfbTkV6w=/fit-in/500x250/filters:fixed_height(100,100):origin()/pre00/62cd/th/pre/f/2013/285/c/1/beru_lars_by_planetkurth-d6q8psd.jpg')}
+.namer5-d4 {background-image: url('https://img00.deviantart.net/e6f0/i/2016/343/2/c/r5d4_by_davemilburn-d9q1min.png')}
+.namebiggs {background-image: url('https://static.comicvine.com/uploads/scale_small/0/8015/199233-158766-biggs-darklighter.jpg')}
+.nameobi-wan {background-image: url('https://orig00.deviantart.net/a801/f/2007/113/1/e/o_is_for_obi_wan_by_joewight.jpg')}
+
+.heightluke {background-image: url('../img/h172.png') }
+.heightc-3po {background-image: url('../img/r167.png') }
+.heightr2-d2 {background-image: url('../img/r96.png') }
+.heightdarth {background-image: url('../img/h202.png') }
+.heightleia {background-image: url('../img/m150.png') }
+.heightowen {background-image: url('../img/h178.png') }
+.heightberu {background-image: url('../img/h165.png') }
+.heightr5-d4 {background-image: url('../img/r97.png') }
+.heightbiggs {background-image: url('../img/h183.png') }
+.heightobi-wan {background-image: url('../img/h182.png') }
+
+.massluke {background-image: url('../img/77.png') }
+.massc-3po {background-image: url('../img/75.png') }
+.massr2-d2 {background-image: url('../img/32.png') }
+.massdarth {background-image: url('../img/136.png') }
+.massleia {background-image: url('../img/49.png') }
+.massowen {background-image: url('../img/120.png') }
+.massberu {background-image: url('../img/75.png') }
+.massr5-d4 {background-image: url('../img/32.png') }
+.massbiggs {background-image: url('../img/84.png') }
+.massobi-wan {background-image: url('../img/77.png') }
+
+.hairluke {background-image: url('../img/untitled.png') }
+.hairc-3po {background-image: url('../img/untitled.png') }
+.hairr2-d2 {background-image: url('../img/untitled.png') }
+.hairdarth {background-image: url('../img/untitled.png') }
+.hairleia {background-image: url('../img/untitled.png') }
+.hairowen {background-image: url('../img/untitled.png') }
+.hairberu {background-image: url('../img/untitled.png') }
+.hairr5-d4 {background-image: url('../img/untitled.png') }
+.hairbiggs {background-image: url('../img/untitled.png') }
+.hairobi-wan {background-image: url('../img/untitled.png') }
+
+.skinluke {background-image: url('../img/untitled.png') }
+.skinc-3po {background-image: url('../img/untitled.png') }
+.skinr2-d2 {background-image: url('../img/untitled.png') }
+.skindarth {background-image: url('../img/untitled.png') }
+.skinleia {background-image: url('../img/untitled.png') }
+.skinowen {background-image: url('../img/untitled.png') }
+.skinberu {background-image: url('../img/untitled.png') }
+.skinr5-d4 {background-image: url('../img/untitled.png') }
+.skinbiggs {background-image: url('../img/untitled.png') }
+.skinobi-wan {background-image: url('../img/untitled.png') }
