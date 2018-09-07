@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import StarWars from './Star Wars';
+import StarWars from './components/StarWars';
 
 class App extends Component {
   constructor() {
