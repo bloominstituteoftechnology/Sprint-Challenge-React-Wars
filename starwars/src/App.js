@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import StarwarsChars from './components/StarwarsChars'
 import './App.css';
-import StarwarsCharsDisplay from './components/StarwarsCharsDisplay'
 
 class App extends Component {
   constructor() {
@@ -33,16 +32,22 @@ class App extends Component {
   };
 
   render() {
+
+    //console.log(this.state.starwarsChars);
+
+
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
 
-        <StarwarsChars 
-              getCharacters={this.getCharacters}
-              starwarsChars={this.state.starwarsChars}
-        />
 
-        <StarwarsCharsDisplay />
+              <h1 className="Header">React Wars</h1>
+
+              <StarwarsChars 
+                    getCharacters={this.getCharacters}
+                    starwarsChars={this.state.starwarsChars}
+              />
+
+        
        
 
       </div>

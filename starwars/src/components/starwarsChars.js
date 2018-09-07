@@ -3,18 +3,20 @@ import StarwarsCharsDisplay from  './StarwarsCharsDisplay'
 
 const StarwarsChars = props =>{
 
+    //console.log(props);
+
     return(
 
-        <ul>
+        <ul className='character-list'>
             {props.starwarsChars.map(starwarsChar => {
 
-            <StarwarsCharsDisplay 
+         return  ( <StarwarsCharsDisplay 
             
                 key={starwarsChar.created}
                 char={starwarsChar}
 
             /> 
-            } )
+     ) } )
             
             
             }
