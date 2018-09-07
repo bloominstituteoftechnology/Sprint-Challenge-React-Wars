@@ -13,6 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log('grabbing api');
     this.getCharacters('https://swapi.co/api/people');
   }
 
@@ -25,6 +26,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -36,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">ReactWars</h1>
-        <CharComponents char={this.state.starwarsChars} />
+        <CharComponents chars={this.state.starwarsChars} />
         )}
       </div>
     );

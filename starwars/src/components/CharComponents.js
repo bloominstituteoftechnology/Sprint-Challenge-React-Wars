@@ -1,15 +1,15 @@
 import React from 'react';
+import CharCard from './CharCard';
 
-const CharComponents = props => (
-  <div>
-    {this.starwarsChar.map(char => {
-      return (
-        <div key={char.name}>
-          {char.name} {char.birth_year} {char.gender}
-        </div>
-      );
-    })}
-  </div>
-);
+import './StarWars.css';
 
+const CharComponents = props => {
+  return (
+    <div className="char-components">
+      {props.chars.map(char => (
+        <CharCard key={char.name} char={char} />
+      ))}
+    </div>
+  );
+};
 export default CharComponents;
