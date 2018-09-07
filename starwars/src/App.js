@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import StarwarsChars from './components/StarwarsChars'
 import './App.css';
+import StarwarsCharsDisplay from './components/StarwarsCharsDisplay'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
-      starwarsObjChars:''
+      
     };
   }
 
@@ -40,6 +41,8 @@ class App extends Component {
               getCharacters={this.getCharacters}
               starwarsChars={this.state.starwarsChars}
         />
+
+        <StarwarsCharsDisplay />
        
 
       </div>

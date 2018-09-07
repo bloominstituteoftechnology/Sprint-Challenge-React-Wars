@@ -6,15 +6,14 @@ const StarwarsChars = props =>{
     return(
 
         <ul>
-            {props.starwarsChars.map(starwarschar => {
+            {props.starwarsChars.map(starwarsChar => {
 
             <StarwarsCharsDisplay 
-                char={starwarschar} 
-                key={starwarschar.created}> 
+            
+                key={starwarsChar.created}
+                char={starwarsChar}
 
-                {starwarschar.name}
-
-            </StarwarsCharsDisplay> 
+            /> 
             } )
             
             
