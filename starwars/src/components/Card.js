@@ -21,11 +21,11 @@ function Card(props) {
       <li>My gender is: {props.card.gender}</li>
       <li>My hair color is: {props.card.hair_color}</li>
       <li>My height is: {props.card.height}</li>
-      <li>My homeworld is: {props.card.homeworld}</li>
+      {/* <li>My homeworld is: {props.card.homeworld}</li> */}
       <li>My mass is: {props.card.mass}</li>
       <li>My skin color is: {props.card.skin_color}</li>
-      <li>My species is: {props.card.species}</li>
-      <li>My starships are: {props.card.starships}</li>
+      {/* <li>My species is: {props.card.species}</li> */}
+      {/* <li>My starships are: {props.card.starships}</li> */}
     </ul>
   );
 }
