@@ -13,12 +13,20 @@
 }
 
 .rwar-cell {
-	width: 120px;
-	height: 120px;
+	width: 300px;
+	height: 300px;
 	margin: 10px;
 	background-color: #fff;
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+.card-header {
+	font-size: 20px;
+}
+
+.card-content {
+	font-size: 16px;
 }

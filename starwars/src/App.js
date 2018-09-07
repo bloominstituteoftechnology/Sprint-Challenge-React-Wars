@@ -7,6 +7,7 @@ class App extends Component {
 		super();
 		this.state = {
 			starwarsChars: [],
+			nextCharacter: [],
 		};
 	}
 
@@ -23,18 +24,29 @@ class App extends Component {
 				return res.json();
 			})
 			.then((data) => {
-				this.setState({ starwarsChars: data.results });
+				this.setState({
+					starwarsChars: data.results,
+					nextCharacter: data.next,
+				});
 			})
 			.catch((err) => {
 				throw new Error(err);
 			});
 	};
 
+	nextCharacterHandler = () => {
+		if (this.getCharacters(this.state.nextCharacter)) {
+			this.setState({
+				starwarsChars: this.state.nextCharacter,
+			});
+		}
+	};
 	render() {
 		return (
 			<div className="App">
 				{/* <h1 className="Header">React Wars</h1> */}
-				<RWarList />
+				<RWarList characters={this.state.starwarsChars} />
+				<button onClick={this.nextCharacterHandler}>Next Character</button>
 			</div>
 		);
 	}

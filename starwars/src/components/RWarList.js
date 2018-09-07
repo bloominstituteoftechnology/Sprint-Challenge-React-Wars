@@ -1,13 +1,13 @@
 import React from 'react';
-import RwarCell from './RWarCell';
+import RWarCell from './RWarCell';
 import './StarWars.css';
 
-const RWarList = () => {
+const RWarList = (props) => {
 	return (
 		<section className="rwar-list">
-			<RWarCell />
-			<RWarCell />
-			<RWarCell />
+			{props.characters.map((character) => (
+				<RWarCell character={character} />
+			))}
 		</section>
 	);
 };
