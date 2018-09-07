@@ -9,9 +9,13 @@
 
 /* write your parent styles in here for your App.js */
 .main-container {
-  border: 1px solid red;
+  border: 1px solid black;
+  text-align: center;
 }
 
 .char-card {
-  border: 1px solid black;
+  border: 3px solid black;
+  background-color: orange;
+  padding: 40px;
+  border-radius: 50px;
 }
