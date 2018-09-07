@@ -43,3 +43,40 @@
 .display-none {
   display: none;
 }
+
+/* Animations */
+
+.appear {
+  -webkit-animation-name: appear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: appear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+ /* Safari 4.0 - 8.0 */
+@-webkit-keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+ /* Standard syntax */
+@keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+ .disappear {
+  -webkit-animation-name: disappear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: disappear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+ /* Safari 4.0 - 8.0 */
+@-webkit-keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
+}
+ /* Standard syntax */
+@keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
+}

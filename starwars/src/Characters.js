@@ -21,4 +21,4 @@ const CharacterData = props => {
     );
 }
 
-export default Characters;
+export default CharacterData;
