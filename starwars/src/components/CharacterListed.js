@@ -1,17 +1,8 @@
 import React from 'react';
-import StarWarsCharacter from './StarWarsCharacter.js';
+import Characters from './Characters.js';
 
-const CharacterListed = props => {
-    return (
-        <div>
-            {props.starwarsChars.map(starWarsCharacter => ( //starwarsChars = empty array, mapping a copy and putting the toggle on the StarWarsCharacter = typed result?
-                <StarWarsCharacter
-                    handleToggleComplete={props.handleToggleComplete}
-                    key={StarWarsCharacter.id}
-                    StarWarsCharacter={StarWarsCharacter}
-                />
-            ))}
-        </div>
-    );
-};
-    export default CharacterListed;
+function CharacterList(props) {
+    return <ul> {props.starwarsChars.map(characters => 
+        <Characters key={characters.value} starwarsChars={characters} />)} </ul>;
+}
+    export default CharacterList;

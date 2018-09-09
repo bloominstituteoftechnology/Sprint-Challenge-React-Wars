@@ -6,3 +6,22 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.contentBox {
+  width: 60%;
+  height: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 225, 255, 0.1);
+  border: 1px solid blue;
+  
+}
+.characterBox {
+  color: navy;
+  border: 1px solid orange;
+  padding: 10px;
+  height: 50px;
+  width: 90%;
+  margin-top: 10px;
+  background-color: rgba(255, 0, 0, .18);
+
+}
