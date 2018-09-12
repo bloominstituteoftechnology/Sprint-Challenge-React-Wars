@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import StarwarsChars from './components/StarwarsChar.js';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      className: "NotActive-Info"
     };
   }
-
+  changeInfo = event => {
+    event.preventDefault();
+    this.setState({
+      className: "Active-Info",
+    });
+  }
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -33,6 +39,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <button onClick={this.changeInfo}/>
+        <StarwarsChars data={this.state.starwarsChars} changeInfo={this.changeInfo} classio={this.state.className}/>
       </div>
     );
   }
