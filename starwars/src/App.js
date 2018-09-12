@@ -39,6 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <button onClick={this.changeInfo}/>
         <StarwarsChars data={this.state.starwarsChars} changeInfo={this.changeInfo} classio={this.state.className}/>
       </div>
     );
