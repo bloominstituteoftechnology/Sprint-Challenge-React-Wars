@@ -3,8 +3,9 @@
 }
 
 .card-content {
+  margin: 0 auto;
   display: inline-flex;
-  width: 500px;
+  width: 600px;
   background-color: white;
   border: 1px solid black;
 }
