@@ -10,6 +10,7 @@ class App extends Component {
     };
   }
 
+
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
   }
@@ -23,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data.results);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -35,13 +37,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-       
-        <CharList chars={this.state.starwarsChars} />
-
+               <CharList chars={this.state.starwarsChars} />
       </div>
     );
   }}
 
 export default App;
-
-//<Button name='Luke Skywalker' customStyleProp='Luke Skywalker' onClick={this.displayCard}/>

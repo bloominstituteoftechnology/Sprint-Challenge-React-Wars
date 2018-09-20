@@ -2,7 +2,6 @@ import React from 'react';
 import './Card.css';
 
 const Char = props => {
-    console.log(props.char);
     return (
         <div className='card'>
         <h2 className='name'>{props.swChar.name}</h2>

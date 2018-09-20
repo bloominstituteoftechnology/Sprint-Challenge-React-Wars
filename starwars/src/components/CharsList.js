@@ -7,9 +7,8 @@ const CharList = props => {
     return (
         <div className='charlist'>
             {props.chars.map(char => 
-                <Char swChar={char} />
-            )}
-    
+            <Char swChar={char} />              
+            )}   
         </div>
     )
 }
