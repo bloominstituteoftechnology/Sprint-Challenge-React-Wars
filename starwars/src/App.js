@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharsList';
 
 class App extends Component {
   constructor() {
@@ -8,6 +9,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -22,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data.results);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -29,13 +32,14 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+               <CharList chars={this.state.starwarsChars} />
       </div>
     );
-  }
-}
+  }}
 
 export default App;
