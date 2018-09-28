@@ -1,11 +1,17 @@
 import React from "react";
-import Char from "./Char";
 import "./StarWars.css";
 
 const CharsList = props => {
   return (
-    <div className="note">
-      {props.chars.map(char => <Char key={char.name} swChar={char} />)}
+    <div>
+      {props.chars.map(char => {
+        return (
+          <div className="note">
+            <div>Name: {char.name}</div>
+            <div>Height: {char.height}</div>
+          </div>
+        );
+      })}
     </div>
   );
 };
