@@ -1,0 +1,9 @@
+.note {
+  /* height: 150px;
+  width: 150px; */
+  background-color: yellow;
+  margin: 10px 0 0 10px;
+  /* position: absolute; */
+  -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+}

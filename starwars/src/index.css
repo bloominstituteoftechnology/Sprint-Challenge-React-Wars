@@ -1,7 +1,13 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-image: url("./sw-bg.jpg");
 }
