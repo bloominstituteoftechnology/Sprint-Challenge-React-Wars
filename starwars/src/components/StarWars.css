@@ -1,0 +1,27 @@
+.starDiv {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border: solid black 1px;
+  padding: 1%;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+}
+
+.starDiv ul { 
+	list-style-type: none; 
+}
+
+.starDiv .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 200px;
+}
