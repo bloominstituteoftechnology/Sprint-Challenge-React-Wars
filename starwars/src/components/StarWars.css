@@ -1,13 +1,31 @@
-.cards{
-    display: flex;
-    width: 100%;
-}
 
 .card-info {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
 }
 
 .info-row {
     display: flex;
+    padding-right: 1%;
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-bottom: 3px solid red;
+
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 2%;
+    width: 30%;
+    background-color: tan;
+    margin: 3%;
+  }

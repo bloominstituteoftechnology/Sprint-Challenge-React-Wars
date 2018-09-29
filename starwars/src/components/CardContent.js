@@ -14,7 +14,7 @@ class CardContent extends React.Component {
                     <h2 className='align-right'>{this.props.details.name}</h2>
                 </div>
                 <div className='info-row'>
-                    <h2 className='align-left'>Birth-year:</h2>
+                    <h2 className='align-left'>Birth-year: </h2>
                     <h2 className='align-right'>{this.props.details.birth_year}</h2>
                 </div>
                 <div className='info-row'>

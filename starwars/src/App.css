@@ -1,9 +1,7 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid red;
-  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;
@@ -11,3 +9,9 @@
 }
 /* write your parent styles in here for your App.js */
 
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
