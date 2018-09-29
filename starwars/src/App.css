@@ -1,5 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
 .App {
-	max-width: 900px;
+	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
 
@@ -20,18 +24,21 @@
 	justify-content: center;
 	margin: 0 auto;
 	align-items: center;
+	width: 100%;
 }
 
 .CharacterList {
-	width: 40%;
-	background-color: #BEC5C7;
+	max-height: 500px;
+	border: 1px solid black;
+	width: 30%;
+	background-color: #3C6478;
 	margin: 20px 3% 20px 0;
-	padding: 15px;
 	border-radius: 10px;
+	color: white;
 }
 
 .CharacterList:hover {
-	background-color: #C0C0C0;
+	background-color: #107896;
 }
 
 .characterCards {
@@ -45,7 +52,11 @@
 }
 
 .cardHeader {
-	color: #443e3e;
+	color: white;
 	font-size: 1.2rem;
 	text-shadow: 1px 1px 5px #fff;
+}
+
+.cardHeader:hover {
+	color: #3C6478;
 }
