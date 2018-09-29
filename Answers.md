@@ -10,6 +10,10 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+    * Some of the differences are that class components that are stateful provide us with data that we can use through all our components for example if you have a class app with some state you can assign properties to the other components using that state. We can later on modify the state through setState or add new key values making this data dynamic when rendering UI. 
+    
+    * Functional components are used mostly to provide the visual representation of the UI. They don't hold state data but since they are functions they can take advantage of the state data on a previous component and as long as the property is assigned to this functional component it can use that data.
+
 1.  Describe state.
 
 1.  Describe props.
