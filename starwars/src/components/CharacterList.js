@@ -5,7 +5,7 @@ import styles from './StarWars.css'
 const CharacterList = props =>{
     return(
         <div>
-            {props.starwarsChars.map(charcter=>{
+            {props.starwarsChars.map(character=>{
                 return(
                     <Character key = "character.value" character = {character} />
                 )
