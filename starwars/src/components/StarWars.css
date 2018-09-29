@@ -1,0 +1,33 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+.age{
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.char_info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_text {
+    display: flex;
+    flex-direction: column;
+}
