@@ -9,14 +9,28 @@
 ## Questions
 
 1.  What is React JS and what problems does it try and solve?
+    React is a front end framework that tries to make building UI's easier. It
+    also makes handling dynamic data easier.
 
 1.  What does it mean to _think_ in react?
+        React lets us right declrative code which is both more semantic and easier to think about.
+            we can write less code, reduce bugs, it's easier to understand, and easier to change.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+        Classical components which contain state have methods and are constructed with data.
+        Functional components are fuctions and have data passed in. While classical components
+            can also have props, they are able to get their data from the state as well. Functional
+            components don't have that option.
+
+            Classical components are also class objects as opposed to functions.
 
 1.  Describe state.
+        State is the object containing all of the relevant data of the application.
+        (or component if it's not the App state)
 
 1.  Describe props.
+        props are the data passed into the component.
+
 
 ## Project
 
