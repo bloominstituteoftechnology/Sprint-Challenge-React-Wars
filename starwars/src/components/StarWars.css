@@ -1,0 +1,22 @@
+.star-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid red;
+  padding: 8px;
+  background: #fff;
+  height: auto;
+}
+
+.info{
+  flex-direction: column;
+  max-width:860px;
+  width: 100%;
+  border: 1px solid red;
+  padding: 8px;
+  background: #fff;
+  height: auto;
+}

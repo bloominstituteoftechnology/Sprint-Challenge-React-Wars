@@ -5,9 +5,8 @@ class Star extends Component{
   render(){
     return(
       <div className="star-container">
-        <h3>{this.props.star.name}</h3>
+        <h3>{this.props.star.name} </h3>
       </div>
-      
     );
   }
 }
