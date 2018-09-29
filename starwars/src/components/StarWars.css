@@ -1,0 +1,49 @@
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    margin-bottom: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    margin-left: 15%;
+    height: 250px;
+    width: 300px;
+}
+.card:hover{
+    padding: 5px;
+    box-shadow: 2px 2px olive;
+    transition: 1s;
+    background: rgba(255, 255, 255, .3);
+    
+}
+.birth{
+    font-size:20px;
+    padding-bottom: 25px;
+}
+.birth:hover{
+    color:rgb(179,14,14);
+    transition: 1s;
+}
+.name{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.name:hover{
+    color:rgb(179,14,14);
+    transition: 1s;
+}
+li{
+    list-style-type:lower-greek;
+    font-family: cursive;
+    font-size: 15px;
+   
+}
+li:hover{
+    color: rgb(179, 14, 14);
+    
+    transition: 1s;
+}
