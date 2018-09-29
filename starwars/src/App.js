@@ -9,8 +9,9 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
-    this.swCharsCurIndex = 0;
-    this.curChar;
+    this.previous;
+    this.next;
+    
   }
 
   componentDidMount() {
@@ -18,6 +19,9 @@ class App extends Component {
   }
 
   getCharacters = URL => {
+    if(URL === null) {
+      return;
+    }
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
@@ -26,6 +30,9 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        this.previous = data.previous;
+        console.log('Previous = ' + this.previous);
+        this.next = data.next;
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -39,6 +46,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterDataList dataList={this.state.starwarsChars} />
+        <button onClick={()=>this.getCharacters(this.previous)}>previous</button>
+        <button onClick={()=>this.getCharacters(this.next)}>next</button>
       </div>
     );
   }
