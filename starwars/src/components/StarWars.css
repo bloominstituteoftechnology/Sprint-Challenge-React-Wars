@@ -9,6 +9,10 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
+.card:hover{
+    opacity: .9;
+    background: lightgray;
+}
 .card div{
     display: flex;
     flex-direction: column;
