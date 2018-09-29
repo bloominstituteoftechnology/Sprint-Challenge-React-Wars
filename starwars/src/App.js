@@ -31,7 +31,9 @@ class App extends Component {
       });
   };
 
- 
+  handleClick = (event) => {
+    console.log(event.target.value)
+  }
 
   render() {
     return (

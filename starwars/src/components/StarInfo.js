@@ -4,7 +4,6 @@ import "./StarWars.css"
 
 class StarInfo extends Component {
   render() { 
-    console.log(this.props.star)
     return ( 
       <div>
         {this.props.stars.map(star => {
