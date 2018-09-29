@@ -1,16 +1,29 @@
 .charList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 
 .charCard {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
   border: 1px solid black;
+  border-radius: 8px;
   width: 25%;
+  background-color: white;
+  opacity: .8;
 }
 
+.charCard h3 {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.charInfo {
+  padding: 15px;
+}
 
 .charInfo ul {
   list-style-type: none;
