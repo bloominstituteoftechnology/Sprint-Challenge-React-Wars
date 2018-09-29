@@ -3,7 +3,9 @@ import CharacterCard from './CharacterCard'
 
 const characters = props => (
 	<React.Fragment>
-		{props.characters.map(character => <CharacterCard character={character} />)}
+		{props.characters.map(character => (
+			<CharacterCard key={character.created} character={character} />
+		))}
 	</React.Fragment>
 )
 export default characters
