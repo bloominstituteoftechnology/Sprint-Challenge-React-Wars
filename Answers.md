@@ -1,6 +1,7 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
+    React JS is a Javascript library that
 
 1.  What does it mean to _think_ in react?
 
