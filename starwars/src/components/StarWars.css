@@ -30,3 +30,8 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.card p span {
+    font-size: 14px;
+    color: grey;
+}

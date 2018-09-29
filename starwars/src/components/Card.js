@@ -6,17 +6,17 @@ const Card = props => {
         <div className="card">
             <h1>{props.character.name}</h1>
             <div className="content-medium">
-                <p>Height: {props.character.height}</p>
-                <p>Mass: {props.character.mass}</p>
+                <p><span>Height:</span> {props.character.height}</p>
+                <p><span>Mass:</span> {props.character.mass}</p>
             </div>
             <div className="content-medium">
-                <p>Gender: {props.character.gender}</p>
-                <p>Birth Year: {props.character.birth_year}</p>
+                <p><span>Gender:</span> {props.character.gender}</p>
+                <p><span>Birth Year:</span> {props.character.birth_year}</p>
             </div>
             <div className="content-bottom">
-                <p>Skin Color: {props.character.skin_color}</p>
-                <p>Hair Color: {props.character.hair_color}</p>
-                <p>Eye Color: {props.character.eye_color}</p>
+                <p><span>Skin Color:</span> {props.character.skin_color}</p>
+                <p><span>Hair Color:</span> {props.character.hair_color}</p>
+                <p><span>Eye Color:</span> {props.character.eye_color}</p>
             </div>
         </div>
     )
