@@ -18,5 +18,5 @@
 }
 
 .tab.selected {
-    background-color: none;
+    background-color: rgba(0,0,0,0.5);
 }

@@ -7,13 +7,16 @@ const Tab = (props) => {
     // - name: character name
     // - id: index
     // - clickHandler: handler for click selection
+    // - selected: which item is selected
 
     const toggle = () => {
         props.clickHandler(props.id);
     };
     
+    const sel = (props.selected === props.id) ? "tab selected" : "tab";
+
     return (
-        <div className='tab' key={props.id} onClick={toggle}>{props.name}</div>
+        <div className={sel} key={props.id} onClick={toggle}>{props.name}</div>
     );
 };
 

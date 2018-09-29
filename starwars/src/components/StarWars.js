@@ -13,7 +13,11 @@ const StarWars = (props) => {
     return (
         // Pass name to Tabs
         <div className="mainDisplay">
-            <Tabs names={props.charArray.map(swChar => swChar.name)} clickHandler={props.clickHandler}/>
+            <Tabs 
+                names={props.charArray.map(swChar => swChar.name)} 
+                clickHandler={props.clickHandler}
+                selected={props.selected}
+            />
             <Console {...props.charArray[props.selected]} />
         </div>
     );
