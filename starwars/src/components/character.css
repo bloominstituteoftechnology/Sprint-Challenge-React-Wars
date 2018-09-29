@@ -1,0 +1,17 @@
+.character {
+  box-sizing: border-box;
+  width: 20%;
+  margin: 10px;
+  padding: 20px 0;
+  border: 1px solid rgb(66, 66, 66);
+  background-color: rgba(231, 229, 229, 0.808);
+}
+
+.charCard {
+  box-sizing: border-box;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
