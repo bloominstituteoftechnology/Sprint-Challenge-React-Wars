@@ -1,8 +1,9 @@
 import React from 'react';
+import CharCard from './CharCard.js';
 
 const CharList = (props) => {
   return (
-    <div className={charList}>
+    <div className='charList'>
       {this.props.starwarsChars.map(char => {
         return <CharCard
                   key={char.created}
