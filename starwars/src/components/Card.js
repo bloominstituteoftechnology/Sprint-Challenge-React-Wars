@@ -12,6 +12,10 @@ const Card = (props) => {
             <p><strong>Skin Color</strong>: {props.char.skin_color}</p>
             <p><strong>Mass</strong>: {props.char.mass}-kg</p>
             <p><strong>Height</strong>: {props.char.height}-cm</p>
+            <p><strong># of Films</strong>: {props.char.films.length}</p>
+            <p><strong># of Vehicles</strong>: {props.char.vehicles.length}</p>
+            <p><strong># of Starships</strong>: {props.char.starships.length}</p>
+            <p><strong># of Species</strong>: {props.char.species.length}</p>
             <p><strong>Created</strong>: {props.char.created}</p>
             <p><strong>Modified</strong>: {props.char.edited}</p>
         </div>
