@@ -3,7 +3,7 @@
     min-height: 300px;
     margin: 20px;
     padding: 10px;
-    /* box-sizing: border-box;/ */
+     box-sizing: border-box;/ 
     color: rgb(28, 25, 20);
     border-radius: 10px;
 /* card hover */

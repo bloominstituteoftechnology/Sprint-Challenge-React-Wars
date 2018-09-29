@@ -12,8 +12,8 @@ Functional/Presentational components` are used to simply render components.
 
 
 4. Describe state.
- State is the memory of a piece of information 
+ State is the memory of a piece of information.
 
 
 5.  Describe props.
-Props is the way to pass and reference state to different components
+Props is the way to pass and reference state to different components.
