@@ -6,6 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      pageNumber: 1,
       starwarsChars: []
     };
   }
@@ -23,13 +24,28 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
-  
+
+  nextPage = () => {
+    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`);
+    this.setState({pageNumber: this.state.pageNumber + 1})
+  }
+
+  previousPage = () => {
+    if (this.state.pageNumber > 1) {
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber - 1}`);
+      this.setState({pageNumber: this.state.pageNumber - 1});
+    }
+    else {
+      this.getCharacters(`https://swapi.co/api/people`);
+    }
+  }
   clickHandler = (event) => {
     event.preventDefault();
     event.target.parentNode.classList.add('selected');
@@ -51,7 +67,12 @@ class App extends Component {
           key={this.state.starwarsChars.name}
           />
         </div>
-        <div className="reset" onClick={this.resetHandler}>Reset</div>
+        <div className="buttons">
+          <div className="previous" onClick={this.previousPage}>Previous</div>
+          <div className="reset" onClick={this.resetHandler}>Reset</div>
+          <div className="next" onClick={this.nextPage}>Next</div>
+        </div>
+        
       </div>
     )
   }
