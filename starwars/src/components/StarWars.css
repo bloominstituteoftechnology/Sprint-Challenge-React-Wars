@@ -12,4 +12,21 @@
     border-radius: 10px;
     margin: 5px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card h1 {
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card .content-medium {
+    width: 50%;
+}
+
+.card .content-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
