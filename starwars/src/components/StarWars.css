@@ -1,0 +1,33 @@
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    margin: 20px;
+    word-wrap: break-word;
+}
+
+.name {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.4rem;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.descriptor {
+    font-weight: bold;
+}
