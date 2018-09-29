@@ -1,0 +1,33 @@
+ul{
+    list-style:none;
+}
+
+.character-list-container{
+    width:60%;
+    margin:20px auto;
+}
+.character-container-container{
+    border:2px solid rgb(63, 61, 60);
+    border-radius:3px;
+    margin-bottom:20px;
+    
+    background-color:#993516d5;
+    
+}
+.character-container{
+    width:90%;
+    background-color:rgba(211, 224, 228, 0.925);
+    border:2px solid rgb(63, 61, 60);
+    margin:10px auto;
+    
+    border-radius:3px;
+    text-align:center;
+}
+.character-name{
+    font-size:32px;
+    color:  rgb(63, 61, 60);
+    
+}
+.character-attribute{
+    font-size:16px;
+}
