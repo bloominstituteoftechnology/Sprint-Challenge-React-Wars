@@ -2,8 +2,8 @@ import React from "react";
 import './card.css';
 
 const Chars = props => {
-  return (<div className="cardCont">
-    <div className="card">
+  return (
+    <div className="card" >
       <div className="title">
         {props.name.name}
       </div>
@@ -11,7 +11,7 @@ const Chars = props => {
         {props.name.gender}
         {" "}
         {props.name.birth_year}</div>
-    </div>
+
   </div>);
 };
 

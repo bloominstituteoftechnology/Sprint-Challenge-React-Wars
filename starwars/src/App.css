@@ -1,12 +1,28 @@
+
+@font-face {
+  font-family: 'Jedi';
+  src: url('./fonts/DeathStar.otf') format('woff2');
+}
 .App {
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: goldenrod;
   text-shadow: 1px 1px 5px #fff;
+   font-family: Jedi;
+   font-size: 150px;
+     text-align: center;
 }
 
-.bg{
+.cardCont{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+
 
 }
 

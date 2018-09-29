@@ -14,6 +14,8 @@ class App extends Component {
     this.getCharacters('https://swapi.co/api/people');
   }
 
+  
+
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -32,7 +34,9 @@ class App extends Component {
   render() {
     return (<div className="App">
       <h1 className="Header">React Wars</h1>
+      <div className="cardCont">
       <CharList charsProp={this.state.starwarsChars}/>;
+      </div>
     </div>);
   }
 }

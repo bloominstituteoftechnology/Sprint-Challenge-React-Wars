@@ -3,23 +3,19 @@
   src: url('../fonts/DeathStar.otf') format('woff2');
 }
 
-.cardCont{
-display: flex;
-justify-content: space-between;
-width: 33%;
 
-
-}
 .card{
   background: white;
   opacity: 0.7;
-  float: left;
-     width: 300px;
-
-     margin-left: 10px;
-     margin-top: 10px;
-     padding: 5px;
-
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 380px;
+  margin-bottom: 16px;
+  padding: 24px;
 }
 
 
