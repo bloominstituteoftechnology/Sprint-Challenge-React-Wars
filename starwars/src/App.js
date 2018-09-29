@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import CharacterCard from './components/Cards/characterCard';
+import PaginationFooter from './components/Pagination/PaginationFooter';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      previous :  '',
+      next: ''
     };
   }
 
@@ -22,18 +25,32 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({
+          starwarsChars: data.results,
+          previous: data.previous,
+          next: data.next
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  paginationOnClick = (e) => {
+    const pageCall = e.target.ariaLabel;
+    console.log(pageCall)
+  }
   render() {
-    console.log(this.state.characters)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+      {this.state.starwarsChars.map((character) => {
+        return (
+          <CharacterCard character={character} key={character.name}/>
+        );
+      })}
+      <PaginationFooter onClick={this.paginationOnClick}/>
       </div>
     );
   }

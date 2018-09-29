@@ -1,0 +1,15 @@
+.pagination-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-link {
+  font-size: 32px;
+  width: 75px;
+}
+.page-item .page-link:hover {
+  background-color: gray;
+  color: white;
+  border-color: gray;
+}
