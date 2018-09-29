@@ -31,13 +31,19 @@ class App extends Component {
       });
   };
 
+ 
+
   render() {
     return (
       <div className="container">
         <h1 className="Header">React Wars</h1>
-        <div className="MainContainer">
-          <StarLists  stars={this.state.starwarsChars}/>
-          <StarInfo/>
+        <div className ="MainContainer">
+          <div className="ListContainer">
+            <StarLists  showInfo={this.handleClick} stars={this.state.starwarsChars}/>
+          </div>
+          <div className="InfoContainer">
+            <StarInfo stars={this.state.starwarsChars}/>
+          </div>
         </div>
       </div>
     );

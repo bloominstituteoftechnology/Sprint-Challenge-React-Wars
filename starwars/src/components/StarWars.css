@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 200px;
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid darkgray;
   padding: 8px;
   background: #fff;
   height: auto;
@@ -13,10 +13,26 @@
 
 .info{
   flex-direction: column;
-  max-width:860px;
-  width: 100%;
-  border: 1px solid red;
+  border: 1px dotted darkgray;
   padding: 8px;
   background: #fff;
   height: auto;
+  margin-bottom:15px;
+}
+
+.star{
+  width: 100%;
+  padding:4px;
+  border-bottom:1px dotted #C4C4C4
+}
+.star h3{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #969191;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.star:last-child{
+  border-bottom: none;
 }

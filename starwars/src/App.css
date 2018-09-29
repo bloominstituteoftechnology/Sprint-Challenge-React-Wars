@@ -8,16 +8,18 @@ html{
   display: flex;
   justify-content:center;
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
   margin:0 auto;
   max-width: 1140px;
   width: 100%;
-  border:1px solid black;
+  /* border:1px solid black; */
 }
 .Header {
   align-self: center;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size:3.0rem;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .MainContainer{
@@ -25,4 +27,14 @@ html{
   flex-direction: row;
   width:100%;
   justify-content: space-between;
+}
+
+.ListContainer{
+  width: 100%;
+  max-width: 200px;
+}
+
+.InfoContainer{
+  width: 100%;
+  max-width:860px;
 }
