@@ -31,12 +31,23 @@ class App extends Component {
       });
   };
 
+  // Click handler to switch information based on tab selected.
+  clickHandler = charId => {
+    this.setState({
+      selected: charId
+    });
+  };
+
   render() {
     // Pass state through charArray to StarWars.js
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWars charArray={this.state.starwarsChars} selected={this.state.selected}/>
+        <StarWars 
+          charArray={this.state.starwarsChars} 
+          selected={this.state.selected}
+          clickHandler={this.clickHandler}
+        />
       </div>
     );
   }
