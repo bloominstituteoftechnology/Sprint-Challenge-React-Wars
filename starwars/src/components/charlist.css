@@ -1,0 +1,24 @@
+.characterCard {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	border: 2px solid yellow;
+}
+
+.charContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.characterCard p {
+	margin-bottom: 0;
+	color: rgb(48, 95, 162);
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.characterCard h2 {
+	color: yellow;
+}
