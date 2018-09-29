@@ -9,7 +9,6 @@
 
 .charCard {
   box-sizing: border-box;
-  /* border: 1px solid orange; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
