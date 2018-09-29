@@ -1,24 +1,35 @@
-
-
-.CardBody {
-width: 50%;
-border: 1px solidrgba(51, 51, 51, 0.335);
-display:flex;
-flex-direction: column;
-justify-content: center;
-background-color: whitesmoke;
-margin-bottom:75px;
-
+.card-content {
+ display: inline-block;
+ border: 1px solid #eee;
+ background-color: whitesmoke;
+ width: 35%;
+ padding: 1px 1px;
+ margin: 15px;
+ border-radius: 10px;
+ text-align: left;
 }
-h1{
-
+h1 {
+    text-align: center;
 }
-
 h2 {
-    font-size:16px;
-
+    font-size:18px;
 }
 p{
- margin:20px;
+    font-size:13px;
+}
+img {
+    width: 100%;
 
+}
+
+button {
+margin-left: 100px;
+        background-color: #333;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
 }

@@ -10,7 +10,6 @@ export const StarwarsList = props => {
                     chars={chars}
                     name={chars.name}
                     key={index}
-
                     />
             })}
         </div>
