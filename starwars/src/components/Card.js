@@ -9,8 +9,8 @@ const Card = props => {
             {
                 props.characters.map(chars => {
                     return  (<div className="card">
-                                <CardHeader name={chars.name} />
-                                <CardContent obj={chars} />
+                                <CardHeader name={chars.name} key={chars.name} />
+                                <CardContent obj={chars} key={chars.birth_year}/>
                             </div>)                       
                 })
             }
