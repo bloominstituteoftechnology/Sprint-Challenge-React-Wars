@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import Cards from './components/Cards';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      open: false
     };
-    Holder: ''
   }
 
   componentDidMount() {
@@ -30,10 +31,17 @@ class App extends Component {
       });
   };
 
+  
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Cards
+          starwarsChars={this.state.starwarsChars}
+         
+          
+        />
       </div>
     );
   }
