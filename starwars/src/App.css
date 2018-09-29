@@ -1,13 +1,51 @@
 .App {
-  text-align: center;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+
 }
+
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+	color: #443e3e;
+	text-shadow: 1px 1px 5px #fff;
+	font-size: 4rem;
+	text-align: center;
 }
+
 /* write your parent styles in here for your App.js */
 
 .Starwars {
 	display: flex;
-	border: 2px solid red;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.CharacterList {
+	width: 40%;
+	background-color: #BEC5C7;
+	margin: 20px 3% 20px 0;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.CharacterList:hover {
+	background-color: #C0C0C0;
+}
+
+.characterCards {
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-shadow: 1px 1px 5px #fff;
+}
+
+.cardHeader {
+	color: #443e3e;
+	font-size: 1.2rem;
+	text-shadow: 1px 1px 5px #fff;
 }

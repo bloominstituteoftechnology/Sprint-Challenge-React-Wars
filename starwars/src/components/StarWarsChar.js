@@ -6,6 +6,7 @@ const StarWarsChar = (props) => {
 		return (
 			<div className="CharacterList">
 			   <Characters
+				key = {character.name}
 				header = {character.name}
 				birthYear = {character.birth_year}
 				species = {character.species[0]}

@@ -4,7 +4,7 @@ import Header from './Header.js';
 
 const Characters = (props) => {
 		return (
-			<div>
+			<div className="characterCards">
 			  <Header header= {props.header}/>
 			  <CharacterCards
 				birthYear = {props.birthYear}
