@@ -31,10 +31,11 @@ class App extends Component {
   };
 
   render() {
+    // Pass state through charArray to StarWars.js
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWars />
+        <StarWars charArray={this.state.starwarsChars}/>
       </div>
     );
   }
