@@ -1,0 +1,32 @@
+.cardConatiner{
+    margin: 0px auto;
+    width: 1200px;
+ 
+}
+.cardContainerItems{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    border: 2px solid black;
+    width: 300px;
+    height: 355px;
+    margin: 25px 25px;
+}
+
+.cardNameTitle{
+    position: relative;
+    bottom: 160px;
+    right: 2px;
+    width: 300px;
+    border: 1px solid blue;
+    height: 35px;
+    color: red;
+    z-index: +1;
+}
+
+.cardNameTitle h1 {
+    position: relative;
+    bottom: 13px;
+    font-size: 21px;
+}
