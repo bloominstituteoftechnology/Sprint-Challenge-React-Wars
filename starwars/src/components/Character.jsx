@@ -7,15 +7,15 @@ class Character extends React.Component {
     render () {
         return (
             <div className="character">
-                <h2>Name: {this.props.name}</h2>
-                <p>Birth Year: {this.props.birth_year}</p>
-                <p>Gender: {this.props.gender}</p>
-                <p>Height: {this.props.height}</p>
-                <p>Mass: {this.props.mass}</p>
-                <p>Hair Color: {this.props.hair_color}</p>
-                <p>Skin Color: {this.props.skin_color}</p>
-                <p>Eye Color: {this.props.eye_color}</p>
-                <p># of Apperances: {this.props.films.length}</p>
+                <h2>{this.props.name}</h2>
+                <p>Birth Year: <span>{this.props.birth_year}</span></p>
+                <p>Gender: <span>{this.props.gender}</span></p>
+                <p>Height: <span>{this.props.height}</span></p>
+                <p>Mass: <span>{this.props.mass}</span></p>
+                <p>Hair Color: <span>{this.props.hair_color}</span></p>
+                <p>Skin Color: <span>{this.props.skin_color}</span></p>
+                <p>Eye Color: <span>{this.props.eye_color}</span></p>
+                <p># of Film Appearances: <span>{this.props.films.length}</span></p>
             </div>
         )
     }

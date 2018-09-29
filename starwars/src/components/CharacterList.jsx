@@ -6,7 +6,7 @@ import Character from './Character';
 class CharacterList extends React.Component {
     render () {
         return (
-            <div>
+            <div className="character-list">
                 {this.props.starwarsChars.map(char => {
                     return (<Character
                         key = {char.created}
@@ -18,7 +18,6 @@ class CharacterList extends React.Component {
                         eye_color = {char.eye_color}
                         gender = {char.gender}
                         birth_year = {char.birth_year}
-                        homeworld = {char.homeworld}
                         films = {char.films}
                         />
                 )})}
