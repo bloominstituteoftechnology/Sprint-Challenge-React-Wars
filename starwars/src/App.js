@@ -23,6 +23,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -30,14 +31,18 @@ class App extends Component {
       });
   };
 
+  
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <h1> Character List</h1>
         <div>
-          <CharacterList 
-              grabResultsArray={this.state.starwarsChars} />
+          <section className="main-content">
+            <CharacterList 
+                grabResultsArray={this.state.starwarsChars} />
+          </section>
         </div>
         
       </div>
@@ -52,7 +57,21 @@ class CharacterList extends React.Component {
       return (
         <div>
             <ul>
-                <li><Character key={e.created} characterName={e.name} /></li>
+                <li>
+                    <a> 
+                    <Character key={e.created} 
+                      characterName={e.name} 
+                      birthdate={e.birth_year} 
+                      gender={e.gender}
+                      height={e.height}
+                      mass={e.mass}
+                      eye={e.eye_color}
+                      hair={e.hair_color}
+                      skin={e.skin_color}
+                      
+                    />
+                    </a>
+                </li>
             </ul>
         </div>
       )
@@ -63,8 +82,19 @@ class CharacterList extends React.Component {
 class Character extends React.Component {
   render() {
     return (
-      <div>
-          <p>{this.props.characterName}</p>
+      <div className="grow">
+          <article>
+            <p> Name: {this.props.characterName},  
+                Born: {this.props.birthdate},
+                Gender: {this.props.gender},
+                Height: {this.props.height},
+                Mass: {this.props.mass},
+                Eye: {this.props.eye},
+                Hair: {this.props.hair},
+                Skin: {this.props.skin},
+            </p>
+            
+          </article>
       </div>
     )
   }
