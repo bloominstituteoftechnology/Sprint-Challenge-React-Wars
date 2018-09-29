@@ -9,6 +9,7 @@ class App extends Component {
     };
   }
 
+
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -33,8 +34,39 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <h1> Character List</h1>
+        <div>
+          <CharacterList 
+              grabResultsArray={this.state.starwarsChars} />
+        </div>
+        
       </div>
     );
+  }
+}
+
+
+class CharacterList extends React.Component {
+  render() {
+    return this.props.grabResultsArray.map((e) => {
+      return (
+        <div>
+            <ul>
+                <li><Character key={e.created} characterName={e.name} /></li>
+            </ul>
+        </div>
+      )
+    });
+  }
+}
+
+class Character extends React.Component {
+  render() {
+    return (
+      <div>
+          <p>{this.props.characterName}</p>
+      </div>
+    )
   }
 }
 
