@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
 
 import CharList from './components/CharList.js';
 
