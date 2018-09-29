@@ -5,7 +5,25 @@ class Card extends React.Component {
 
     picture = (props) => {
         if (this.props.name === "Luke Skywalker") {
-            return 'https://i.imgflip.com/2/b6l2b.jpg'
+            return 'https://scrw-af.netlify.com/starwars/src/img/luke.jpg'
+        } else if (this.props.name === "C-3PO") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/c3po.jpg'
+        } else if (this.props.name === "R2-D2") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/r2d2.jpg'
+        } else if (this.props.name === "Darth Vader") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/vader.jpg'
+        } else if (this.props.name === "Leia Organa") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/leia.jpg'
+        } else if (this.props.name === "Owen Lars") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/owen.jpg'
+        } else if (this.props.name === "Beru Whitesun lars") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/beru.jpg'
+        } else if (this.props.name === "Biggs Darklighter") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/biggs.jpg'
+        } else if (this.props.name === "R5-D4") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/r5d4.jpg'
+        } else if (this.props.name === "Obi-Wan Kenobi") {
+            return 'https://scrw-af.netlify.com/starwars/src/img/obi.jpg'
         }
     }
     render() {

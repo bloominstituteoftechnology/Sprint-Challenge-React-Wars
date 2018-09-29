@@ -1,27 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Orbitron');
 
 body {
-  margin-top: 200px;
   padding: 0;
   background-color: #333;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  width: 90%; 
+  margin: 10px auto;
+  padding-top: 50px;
 }
 
-h1 {
-  font-family: 'Orbitron', sans-serif;
-  color: lime;
-}
 
-.allCards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.card {
-  border: 2px dashed white;
-  border-radius: 10px;
-  width: 40%;
-  margin: 20px;
- 
-}
+
+

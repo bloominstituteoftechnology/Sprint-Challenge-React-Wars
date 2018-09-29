@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Intelligence Reports</h1>
+        <h1 className="header">Intelligence Reports</h1>
         <AllCards 
          person={this.state.starwarsChars}/>
       </div>
