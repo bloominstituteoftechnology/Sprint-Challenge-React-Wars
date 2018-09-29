@@ -4,7 +4,7 @@ import InfoList from '../components/InfoList';
 class Character extends React.Component {
     render() {
         return (
-            <div>
+            <div className={'characterDiv'}>
                 <h1>{this.props.char.name}</h1>
                 <InfoList char={this.props.char}/>
             </div>

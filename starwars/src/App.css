@@ -2,7 +2,30 @@
   text-align: center;
 }
 .Header {
+  font-size: 3.8rem;
+  font-weight: bold;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.contentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.characterDiv {
+    width: 20%;
+    height: 175px;
+    padding-top: 10px;
+    border: 1px solid grey;
+    margin: 10px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    box-shadow: 2px 2px dimgrey;
+}
+
+.characterDiv h1 {
+  margin-bottom: 5px;
+}

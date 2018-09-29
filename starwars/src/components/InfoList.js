@@ -1,5 +1,4 @@
 import React from "react";
-import InfoItem from "../components/InfoList";
 
 class InfoList extends React.Component {
   render() {
@@ -14,13 +13,6 @@ class InfoList extends React.Component {
         <p>Height: {charList.height}</p>
         <p>Mass: {charList.mass}</p>
         <p>Skin Color: {charList.skin_color}</p>
-        <p>Home World: {charList.homeworld}</p>
-        <p>Species: {charList.species}</p>
-        <p>Vehicles: {charList.vehicles}</p>
-        <p>Starships: {charList.starships}</p>
-        <p>Movies: {charList.movies}</p>
-        <span>Created: {charList.created} Edited: {charList.edited}</span>
-
     </ul>
     );
   }
