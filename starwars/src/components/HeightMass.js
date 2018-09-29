@@ -2,14 +2,15 @@
 // import React from 'react';
 // import './StarWars.css';
 
-// const HairEyes = (props) => {
+
+// const HeightMass = (props) => {
 //     return (
 //         <div> 
 //             {props.starwarsChars.map(char => {
 //                 return (
 //                     <div key={char.toString()}>
-//                         <li>{char.hair_color}</li>
-//                         <li>{char.eye_color}</li>
+//                         <li>{char.height}</li>
+//                         <li>{char.mass}</li>
 //                     </div>
 //                 )
 //             })}
@@ -17,4 +18,4 @@
 //     )
 // }
 
-// export default HairEyes;
+// export default HeightMass;

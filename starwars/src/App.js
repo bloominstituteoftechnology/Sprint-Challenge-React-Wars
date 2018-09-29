@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import StarWarsChar from'./components/StarWarsChar';
-import HairEyes from './components/HairEyes';
+// import HairEyes from './components/HairEyes';
+// import HeightMass from './components/HeightMass';
 
 class App extends Component {
   constructor() {
@@ -36,7 +37,9 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <StarWarsChar starwarsChars={this.state.starwarsChars} />
-        <HairEyes starwarsChars={this.state.starwarsChars} />
+        {/* <HairEyes starwarsChars={this.state.starwarsChars} />
+        <HeightMass starwarsChars={this.state.starwarsChars} /> */}
+
       </div>
     );
   }
