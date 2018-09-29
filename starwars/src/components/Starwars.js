@@ -19,7 +19,7 @@ return (
         <p>Birthday: {this.props.chars.birth_year}{' '}</p>
         <p>Weight: {this.props.chars.mass} {' '} </p>
 
-        <button>Button</button>
+       
 </div>
 
 )
