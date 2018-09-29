@@ -31,4 +31,5 @@ img {
     padding: 5px;
     width: 25%;
     text-align: center;
+    cursor: pointer;
 }
