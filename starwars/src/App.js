@@ -32,10 +32,10 @@ class App extends Component {
       });
   };
         
-  showCurrentChar = name => {
-    const currentChar = this.state.starwarsChars.find(char => char.name === name);
-    console.log(currentChar);
-    this.setState({ currentChar: currentChar });
+  showCurrentCharacter = name => {
+    const currentCharacter = this.state.starwarsChars.find(char => char.name === name);
+    console.log(currentCharacter);
+    this.setState({ currentCharacter: currentCharacter });
   }
 
   returnToList = event => {
