@@ -6,6 +6,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      cssClasses: {
+        charClass: 'char',
+        infoClass: 'info',
+        displayNone: 'hidden'
+      },
       starwarsChars: []
     };
   }
@@ -34,7 +39,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <AllChars allChars={this.state.starwarsChars} />
+        <AllChars 
+            allChars={this.state.starwarsChars}
+            cssClasses={this.state.cssClasses}
+        />
       </div>
     );
   }
