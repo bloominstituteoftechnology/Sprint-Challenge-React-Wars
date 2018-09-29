@@ -7,7 +7,7 @@ React is a jvascript framework that renders a virtual DOM. DOM manipulation is p
 To think in React is to think about how the app works in realtion to the UI, and how the app changes as the user progresses through the app. 
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-
+The only difference I could find on google between class/stateful component is that every class comonent is stateful, but not every stateful component is a class component.
 A functional component is just a javascript function. 
 Presentational components are concerned with how things look. 
 1.  Describe state.
