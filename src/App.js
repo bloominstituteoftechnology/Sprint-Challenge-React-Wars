@@ -8,17 +8,14 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       place: [],
-      current: ''
+      current: '',
+      next: '',
+      previous: ''
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
-    const newarr=['2014-12-09T13:50:51.644000Z', '2014-12-10T15:10:51.357000Z', '2014-12-10T15:11:50.376000Z', '2014-12-10T15:18:20.704000Z', '2014-12-10T15:20:09.791000Z', '2014-12-10T15:52:14.024000Z', '2014-12-10T15:53:41.121000Z', '2014-12-10T15:57:50.959000Z', '2014-12-10T15:59:50.509000Z', '2014-12-10T16:16:29.192000Z'];
-    this.setState({
-      place: [...this.state.place, newarr],
-      current: '2014-12-09T13:50:51.644000Z'
-    })
   }
 
   getCharacters = URL => {
@@ -30,8 +27,13 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data);
-        this.setState({ starwarsChars: data.results });
+        console.log(data.next);
+        console.log(data.previous);
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous,
+         });
       })
       .catch(err => {
         throw new Error(err);
@@ -39,8 +41,24 @@ class App extends Component {
   };
 
   next = (event) => {
+    this.getCharacters(this.state.next);
+  }
+
+  previous = (event) => {
+    if (this.state.previous === null) {
+      event.preventDefault();
+    } else {
+    this.getCharacters(this.state.previous); 
+    }
+  }
+
+  nextCard = (event) => {
     event.preventDefault();
-    
+    const newarr=['2014-12-09T13:50:51.644000Z', '2014-12-10T15:10:51.357000Z', '2014-12-10T15:11:50.376000Z', '2014-12-10T15:18:20.704000Z', '2014-12-10T15:20:09.791000Z', '2014-12-10T15:52:14.024000Z', '2014-12-10T15:53:41.121000Z', '2014-12-10T15:57:50.959000Z', '2014-12-10T15:59:50.509000Z', '2014-12-10T16:16:29.192000Z'];
+    this.setState({
+      place: newarr,
+      current: '2014-12-09T13:50:51.644000Z'
+    })
   }
 
   render() {
@@ -48,6 +66,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className='buttons'>
+          <button className='button' onClick={this.previous}>Previous</button>
           <button className="button" onClick={this.next}>Next</button>
         </div>
         <CardList starwarsChars={this.state.starwarsChars} />

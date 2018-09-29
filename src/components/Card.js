@@ -6,7 +6,6 @@ const Card = (props) => {
 
             <div>
                 Name: {props.name}
-                <br></br>{props.id}
             </div>
 
             <div className={ props.gender === 'n/a' ? 'hidden' : ''}>
