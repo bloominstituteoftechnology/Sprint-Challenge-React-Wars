@@ -9,3 +9,4 @@
 1.  Describe state.
 
 1.  Describe props.
+    Props are short of properties , props is how data is passed down from a parent component to a child component , allowing the child component to act upon recieving this props , pros are immutable , The idea behind props is that you can make a single component that is used in many different places in your app.
