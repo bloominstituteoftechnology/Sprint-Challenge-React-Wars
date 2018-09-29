@@ -7,8 +7,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
+    
   }
 
   componentDidMount() {
@@ -31,22 +32,16 @@ class App extends Component {
       });
   };
 
-  handleClick = (event) => {
-    console.log(event.target.value)
+  handleClick = () => {
+    
   }
 
   render() {
+    console.log(this.card)
     return (
       <div className="container">
         <h1 className="Header">React Wars</h1>
-        <div className ="MainContainer">
-          <div className="ListContainer">
-            <StarLists  showInfo={this.handleClick} stars={this.state.starwarsChars}/>
-          </div>
-          <div className="InfoContainer">
-            <StarInfo stars={this.state.starwarsChars}/>
-          </div>
-        </div>
+          <StarLists  show={this.handleClick} stars={this.state.starwarsChars}/>
       </div>
     );
   }

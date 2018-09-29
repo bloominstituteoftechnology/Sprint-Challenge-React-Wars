@@ -22,19 +22,15 @@ html{
   font-family: Arial, Helvetica, sans-serif
 }
 
-.MainContainer{
-  display:flex;
-  flex-direction: row;
-  width:100%;
-  justify-content: space-between;
+.main{
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.ListContainer{
-  width: 100%;
-  max-width: 200px;
-}
-
-.InfoContainer{
-  width: 100%;
-  max-width:860px;
-}
