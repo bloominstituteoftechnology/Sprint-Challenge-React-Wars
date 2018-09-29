@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  /*margin: 0 auto;*/
 }
 .Header {
   color: #443e3e;
