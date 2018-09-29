@@ -27,7 +27,6 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results, data: data });
-        console.log(data)
       })
       .catch(err => {
         throw new Error(err);
