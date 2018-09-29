@@ -16,7 +16,10 @@
 
 .card {
   background-color: white;
-  height: 100px;
-  width: 25%;
+  height: 300px;
+  width: 50%;
 
+}
+.hidden {
+  display: none;
 }

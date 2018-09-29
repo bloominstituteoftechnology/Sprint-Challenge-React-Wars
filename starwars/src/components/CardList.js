@@ -13,7 +13,7 @@ const CardList = (props) => {
 
                         eyeColor={item.eye_color}
                         hairColor={item.hair_color}
-                        skinColor={item.skinColor}
+                        skinColor={item.skin_color}
 
                         films={item.films}
 
