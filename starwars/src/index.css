@@ -1,10 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
-  background-position: top;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: center;
 }
