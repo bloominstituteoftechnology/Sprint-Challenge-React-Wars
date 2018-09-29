@@ -6,15 +6,15 @@ const StarwarsCharsDisplay = props =>{
 
     return(
 
-        <div>
+        <div className = 'card'>
 
             <h2>{props.char.name}</h2> 
-        <p><span className="charProperty">Birthday:</span> {props.char.birth_year}</p>
-        <p><span className="charProperty">Eye Color:</span> {props.char.eye_color}</p>
-        <p><span className="charProperty">Gender:</span> {props.char.gender}</p>
-        <p><span className="charProperty">Hair Color:</span> {props.char.hair_color}</p>
-        <p><span className="charProperty">Height:</span> {props.char.height}m</p>
-        <p><span className="charProperty">Mass:</span> {props.char.mass}kg</p>
+        <p className="data">Birthday: {props.char.birth_year}</p>
+        <p className="data">Eye Color: {props.char.eye_color}</p>
+        <p className="data">Gender: {props.char.gender}</p>
+        <p className="data">Hair Color: {props.char.hair_color}</p>
+        <p className="data">Height: {props.char.height}m</p>
+        <p className="data">Mass: {props.char.mass}kg</p>
        
 
         </div>

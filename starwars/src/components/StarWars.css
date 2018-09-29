@@ -1,0 +1,23 @@
+.card {
+    border: 5px solid grey;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+.data {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-style: wavy;
+}
+h2 {
+    color: grey;
+    text-shadow: 2px 2px 2px brown;
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
