@@ -8,9 +8,9 @@ const Tabs = (props) => {
     // - names: Array of character names
     return (
         <div className='tabs'>
-            {props.names.map( charName => {
+            {props.names.map( (charName, index) => {
                 return (
-                    <Tab name={charName} />
+                    <Tab name={charName} id={index}/>
                 );
             })}
         </div>

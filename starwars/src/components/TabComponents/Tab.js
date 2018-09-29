@@ -5,8 +5,9 @@ import './Tab.css';
 const Tab = (props) => {
     // Props:
     // - name: character name
+    // - id: index
     return (
-        <div className='tab'>{props.name}</div>
+        <div className='tab' key={props.id}>{props.name}</div>
     );
 };
 
