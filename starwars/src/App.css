@@ -1,8 +1,74 @@
 .App {
-  text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 3.2rem;
+  padding: 25px;
 }
-/* write your parent styles in here for your App.js */
+
+.card-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid darkgray;
+  background-color: rgb(211, 163, 100);
+  width: 45%;
+  height: 200px;
+  margin: 20px 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-top-bar {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 10px 0 10px 10px;
+}
+
+.card-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.card-left {
+  width: 42%;
+}
+
+.card-right {
+  width: 53%;
+}
+
+.card-content p {
+  padding: 5px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+}
