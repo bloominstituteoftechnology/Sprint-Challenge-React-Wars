@@ -6,7 +6,7 @@ import Card from './Card';
 const Cardlist = (props) => {
 
     return (
-        <div>
+        <div className={'cardlist'}>
         {props.characters.map(character =>(
             <Card value={character}/>
         )

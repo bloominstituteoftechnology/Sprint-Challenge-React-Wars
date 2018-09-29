@@ -8,7 +8,7 @@ const Card = (props) => {
     
     
     return(
-        <div>
+        <div className={'card'}>
             {props.value.name}
             {props.value.gender}
             {props.value.birth_year}
