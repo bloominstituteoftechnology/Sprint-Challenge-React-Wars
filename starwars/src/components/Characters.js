@@ -7,7 +7,7 @@ const Characters = (props) => {
         <div className='card-container'>
             {props.characters.map((character) => {
                 return (
-                    <div className='character-cards'>
+                    <div key={character.name} className='character-cards'>
                         <Card character={character} />
                     </div>
                 )

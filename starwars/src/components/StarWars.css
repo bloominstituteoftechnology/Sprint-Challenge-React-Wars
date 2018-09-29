@@ -11,6 +11,7 @@
     color: maroon;
     display: flex;
     justify-content: center;
+    text-shadow: 1px 1px 5px black;
 }
 
 .character-attributes {
