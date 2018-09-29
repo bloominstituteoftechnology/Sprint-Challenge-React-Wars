@@ -31,10 +31,16 @@ class App extends Component {
   };
 
   render() {
+
+    const setCards = (arr) => {
+      let cards = arr.map((el, i) => <Card key={i} data={el}/>);
+      return cards;
+    }
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.length > 0 ? <Card data={this.state.starwarsChars[0]} /> : null}
+        {setCards(this.state.starwarsChars)}
       </div>
     );
   }
