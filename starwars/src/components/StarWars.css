@@ -17,6 +17,9 @@ heading font 443E3E
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border: 1px solid #E0E5E6;
+
+
 
 }
 
