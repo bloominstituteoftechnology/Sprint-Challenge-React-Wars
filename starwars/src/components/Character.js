@@ -10,7 +10,7 @@ class Character extends React.Component {
     render() {
 
         return (
-            <div className={this.props.cssClasses.charClass} onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOver}>
+            <div className='char' onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOver}>
                 <div>
                 {this.props.name}
                 <div className='hidden' ref='charElement'>

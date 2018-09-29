@@ -19,11 +19,11 @@ class AllChars extends React.Component {
                                 mass={char.mass}
                                 skinColor={char.skin_color}
                                 name={char.name}
-                                cssClasses={this.props.cssClasses}
                             />
                         </div>
                     )
                 })}
+            
             </div>
         )
     }
