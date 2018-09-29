@@ -3,7 +3,17 @@ import React from 'react';
 const CharInfo = (props) => {
   return (
     <div className='charInfo'>
-      <p>{props.facts.birth_year}</p>
+      <ul>
+        <li>{props.facts.homeworld}</li>
+        <li>{props.facts.gender}</li>
+        <li>{props.facts.species}</li>
+        <li>{props.facts.birth_year}</li>
+        <li>{props.facts.height} cm</li>
+        <li>{props.facts.mass} kg</li>
+        <li>{props.facts.eye_color}</li>
+        <li>{props.facts.hair_color}</li>
+        <li>{props.facts.skin_color}</li>
+      </ul>
     </div>
   )
 }
