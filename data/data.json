@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg/revision/latest/scale-to-width-down/500?cb=20170927034529"
+  },
+  {
+    "name": "C-3PO",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/3/3f/C-3PO_TLJ_Card_Trader_Award_Card.png/revision/latest/scale-to-width-down/243?cb=20180121052644"
+  },
+  {
+    "name": "R2-D2",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png/revision/latest/scale-to-width-down/500?cb=20161108040914"
+  },
+  {
+    "name": "Darth Vader",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest/scale-to-width-down/500?cb=20130621175844"
+  },
+  {
+    "name": "Leia Organa",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/f/fc/Leia_Organa_TLJ.png/revision/latest/scale-to-width-down/500?cb=20171224004147"
+  },
+  {
+    "name": "Owen Lars",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/e/eb/OwenCardTrader.png/revision/latest/scale-to-width-down/499?cb=20171108050140"
+  },
+  {
+    "name": "Beru Whitesun lars",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/c/cc/BeruCardTrader.png/revision/latest/scale-to-width-down/499?cb=20170713063118"
+  },
+  {
+    "name": "R5-D4",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/c/cb/R5-D4_Sideshow.png/revision/latest/scale-to-width-down/500?cb=20160809033145"
+  },
+  {
+    "name": "Biggs Darklighter",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png/revision/latest/scale-to-width-down/350?cb=20130305010406"
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg/revision/latest/scale-to-width-down/500?cb=20111115052816"
+  }
+]
