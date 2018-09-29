@@ -23,9 +23,9 @@
 - You're going to be building an application _starwars_ that consumes live data that we're retrieving across the world wide web!
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
-1.  **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
-1.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+1. [x]  **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
+2. [x] Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
+3. [x] Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
@@ -35,9 +35,9 @@
 
 ![Star Wars state data](starwars_data.png)
 
-- Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
-- For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
-- I suggest building **function over form** at first. Then take time to style your app after.
+[x] Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
+[x] For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
+[x] I suggest building **function over form** at first. Then take time to style your app after.
 - Feel free to integrate Bootstrap for styling. You can research the `react-strap` library and see what components are available for you if you'd like.
 
 ## Stretch Problems
@@ -56,7 +56,7 @@
   })
 ```
 
-1.  Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
+2.  Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
 
 - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 - Your data coming back from Dogs should be formatted in JSON format.
