@@ -7,7 +7,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      selected: "none"
+      selected: 0
     };
   }
 
