@@ -1,3 +1,7 @@
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 .character-data-container {
     max-width: 600px;
     width: 100%;
