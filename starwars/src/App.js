@@ -43,7 +43,6 @@ class App extends Component {
     });
 
     const addCharacters = charactersArray => {
-      console.log(charactersArray);
       this.setState({ starwarsChars: charactersArray });
     }  
   };

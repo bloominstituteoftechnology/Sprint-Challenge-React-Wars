@@ -6,6 +6,8 @@
 
 1.  What does it mean to _think_ in react?
 
+    * For me what it means is to take advantage of the React Library and separate the website in chunks of reusable code that can be reused through the website. 
+
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
 1.  Describe state.
