@@ -7,7 +7,7 @@ const Card = props => {
         <div>
             <h3>{props.thisChar.name}</h3>
         </div>
-        <div className = "closed"
+        <div 
             style={ props.thisChar.open ? { display: "block" } : null }>
            <p className='birth'>Birth year: {props.thisChar.birth_year}</p>
            <p Gender className="gender">Gender: {props.thisChar.gender}</p>
