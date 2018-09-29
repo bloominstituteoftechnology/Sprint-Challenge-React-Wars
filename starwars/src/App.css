@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  padding: 0px 10px;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-size: 48px;
+  font-family: "rig-solid-bold-reverse", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 /* write your parent styles in here for your App.js */
