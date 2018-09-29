@@ -35,6 +35,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Star Wars Character Profiles</h1>
         <Cardlist characters={this.state.starwarsChars}/>
       </div>
     );
