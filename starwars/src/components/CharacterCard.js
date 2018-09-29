@@ -4,7 +4,12 @@ import React, { Component } from 'react';
 
 const CharacterCard = (props) => {
     return (
-        <h1>CharacterCard Test</h1>
+        <div>
+            <h1>CharacterCard Test</h1>
+            <p>{props.characterInfo.name}</p>
+        </div>
+        
+
     )
 }
 

@@ -7,7 +7,9 @@ const CharacterList = (props) =>{
     return (
         <div>
             <h1>CharacterList Test</h1>
-            {props.characters.map(character => {return (<CharacterCard />)})}
+            {props.characters.map(character => {
+                return (<CharacterCard characterInfo={character}/>)
+            })}
         </div>
     )
 }
