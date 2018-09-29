@@ -29,5 +29,11 @@
     justify-content: space-around;
 }
 
+.greyed {
+    cursor: not-allowed;
+    color: grey;
+    background-color: silver;
+}
+
 
 /* write your parent styles in here for your App.js */

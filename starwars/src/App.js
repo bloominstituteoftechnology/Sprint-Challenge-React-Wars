@@ -35,6 +35,8 @@ class App extends Component {
   nextPage = () => {
     this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`);
     this.setState({pageNumber: this.state.pageNumber + 1})
+    document.querySelector('.previous').classList.remove("greyed");
+      
   }
 
   previousPage = () => {
@@ -44,6 +46,7 @@ class App extends Component {
     }
     else {
       this.getCharacters(`https://swapi.co/api/people`);
+      document.querySelector('.previous').classList.add("greyed");
     }
   }
   clickHandler = (event) => {
@@ -55,6 +58,14 @@ class App extends Component {
     document.querySelectorAll('.character-card').forEach(el => {
      return el.classList.remove('selected');
     })
+  }
+  greyButton = () => {
+    const previousButton = document.querySelector('.previous')
+    if (this.state.pageNumber === 1) {
+      previousButton.classList.add('greyed');
+    } else {
+      previousButton.classList.remove('.greyed');
+    }
   }
 
   render() {
@@ -68,7 +79,7 @@ class App extends Component {
           />
         </div>
         <div className="buttons">
-          <div className="previous" onClick={this.previousPage}>Previous</div>
+          <div className="previous greyed" onClick={this.previousPage}>Previous</div>
           <div className="reset" onClick={this.resetHandler}>Reset</div>
           <div className="next" onClick={this.nextPage}>Next</div>
         </div>
