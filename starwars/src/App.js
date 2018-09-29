@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ListChars from './ListChars';
 
 class App extends Component {
   constructor() {
@@ -23,16 +24,47 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+     
       })
       .catch(err => {
+        console.log(err);
         throw new Error(err);
+       
       });
   };
+
+ 
+  ListItem = props => {
+    return props.data.results.map((item, index) => (
+      <li>
+      {item.name}
+      {item.gender}
+      {item.height}
+      {item.hair_color}
+     
+      </li>
+    ));  
+  };
+
+
+
+
+
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          <div className="CardContainer">
+         <ul>
+<li>
+</li>
+           </ul>
+        
+
+          </div>
+
+
       </div>
     );
   }
