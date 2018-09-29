@@ -8,7 +8,7 @@ const ListChars = props => {
     <div>
       {props.chars.map((char, index) => {
         return <ListItem char={char}
-                                 key={index}
+                                 key={index}   // i know, bad...
                                  showCurrentChar={props.showCurrentChar} />;
       })}
       <div className="btnContainer">
