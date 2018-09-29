@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import CharacterDataList from './components/CharacterDataList';
+
 import './App.css';
 
 class App extends Component {
@@ -7,6 +9,8 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    this.swCharsCurIndex = 0;
+    this.curChar;
   }
 
   componentDidMount() {
@@ -30,9 +34,11 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterDataList dataList={this.state.starwarsChars} />
       </div>
     );
   }

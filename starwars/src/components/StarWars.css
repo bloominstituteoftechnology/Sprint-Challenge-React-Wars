@@ -1,0 +1,21 @@
+.character-data-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 2% auto;
+    background-color: darkgrey;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    color: whitesmoke;
+}
+
+.data-container {
+    width: 50%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px inset lightgrey;
+    padding: 15px;
+}
