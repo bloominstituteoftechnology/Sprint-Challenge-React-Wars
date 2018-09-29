@@ -1,7 +1,7 @@
-character-container {
+.character-container {
     display: flex;
 }
 
-character-card {
+.character-card {
     background-color: white;
 }

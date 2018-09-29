@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Buttons = () => {
+const Buttons = props => {
     return (
-        <div>
-            <button className='btn'>Show 5</button>
-            <button className='btn'>Show 20</button>
-            <button className='btn'>Show 50</button>
-            <button className='btn'>Show All</button>
+        <div className='btn-container'>
+            <button className='btn' onClick={() => props.showCharacter(5)}>Show 5</button>
+            <button className='btn' onClick={() => props.showCharacter(20)}>Show 20</button>
+            <button className='btn' onClick={() => props.showCharacter(50)}>Show 50</button>
+            <button className='btn' onClick={() => props.showCharacter(props.characterList.length)}>Show All</button>
         </div>
     );
 };

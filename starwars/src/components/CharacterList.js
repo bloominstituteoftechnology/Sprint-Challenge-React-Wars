@@ -3,7 +3,7 @@ import Character from './Character';
 import './StarWars.css';
 
 const CharacterList = props => {
-    const characters = props.characterList.slice(0, 5).map(character => {
+    const characters = props.characterList.slice(0, props.characterListLength).map(character => {
         return (
             <div key={character.created} className='character-card'>
                 <Character character={character} />

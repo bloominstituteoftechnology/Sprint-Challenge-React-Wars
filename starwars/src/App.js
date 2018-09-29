@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      characterListLength: 5
     };
   }
 
@@ -31,12 +32,16 @@ class App extends Component {
       });
   };
 
+  showCharacter = length => {
+    this.setState({ characterListLength: length});
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Buttons />
-        <CharacterList characterList={this.state.starwarsChars} />
+        <Buttons showCharacter={this.showCharacter} characterList={this.state.starwarsChars}/>
+        <CharacterList characterList={this.state.starwarsChars} characterListLength={this.state.characterListLength} />
       </div>
     );
   }
