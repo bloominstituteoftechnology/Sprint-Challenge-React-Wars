@@ -1,0 +1,27 @@
+.card {
+    width: 50%;
+    margin: 35px auto;
+    padding: 25px 0;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 4px 6px 22px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 22px 8px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 22px 8px rgba(0,0,0,0.75);
+    background: #e4f5fc;
+    background: -moz-linear-gradient(-45deg, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%);
+    background: -webkit-linear-gradient(-45deg, #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%);
+    background: linear-gradient(135deg, #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 );
+}
+p {
+    font-weight: bold
+}
+span {
+    color: red
+}
+.card-content {
+    text-align: start;
+    padding-left: 100px;
+}
+h2 {
+    margin-bottom: 50px;
+}
