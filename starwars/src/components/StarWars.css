@@ -1,0 +1,28 @@
+.individual-character {
+    width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.character-name {
+    padding-top: 10px;
+}
+
+.character-information-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.character-information-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.character-information-1, .character-information-2 p {
+    font-size: 12px;
+}
+
+.character-card {
+    display: flex;
+    flex-wrap: wrap;
+}

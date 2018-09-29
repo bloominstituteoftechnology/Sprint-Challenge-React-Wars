@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CharacterCards from './components/CharacterCards';
-import Character from './components/Character';
 
 class App extends Component {
   constructor() {
