@@ -4,7 +4,7 @@ import './StarWars.css';
 const CardInfo = (props) => {
     return (
         <div className="card-info">
-            <p>Name: {props.name}</p>
+            <p className="name">{props.name}</p>
             <p>Height: {props.height} cm</p>
             <p>Mass: {props.mass} kg</p>
             <p>Hair Color: {props.hair_color}</p>

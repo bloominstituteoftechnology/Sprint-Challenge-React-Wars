@@ -23,8 +23,16 @@ p {
 
 .card-info {
     border: 1px solid #D7BD7A;
-    width: 240px;
+    width: 250px;
     background-color: rgba(244,218,179, .7);
     margin: 16px;
     border-radius: 5px;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: 600; 
+    margin-top: 0px;
+    padding: 6px 0px 6px 0px;
+    background: rgba(175,112,42, .2);
 }
