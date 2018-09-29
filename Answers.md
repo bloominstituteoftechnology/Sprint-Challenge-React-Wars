@@ -6,7 +6,7 @@
 
 1.  What does it mean to _think_ in react?
 
-`No clue, needs investigation!`
+`No clue, needs investigation!... possibly means think from the user's standpoint <or> think what each components function is when building/working with components. Spolier alert, I checked it out after writing the first line and it means the latter. Phew!`
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
