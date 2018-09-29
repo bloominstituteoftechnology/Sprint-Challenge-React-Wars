@@ -9,6 +9,8 @@ const Character = props => {
             <li>Height: {props.character.height}</li>
             <li>Mass: {props.character.mass}</li>
             <li>Hair Color: {props.character.hair_color}</li>
+            <li>Skin Color: {props.character.skin_color}</li>
+            <li>Eye Color: {props.character.eye_color}</li>
         </ul>
     );
 }

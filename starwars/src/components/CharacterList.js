@@ -1,17 +1,18 @@
 import React from 'react';
 import Character from './Character';
+import './StarWars.css';
 
 const CharacterList = props => {
     const characters = props.characterList.slice(0, 5).map(character => {
         return (
-            <div key={character.created}>
+            <div key={character.created} className='character-card'>
                 <Character character={character} />
             </div>
         );
     });
 
     return (
-        <div>
+        <div className='character-container'>
             {characters}
         </div>
     );
