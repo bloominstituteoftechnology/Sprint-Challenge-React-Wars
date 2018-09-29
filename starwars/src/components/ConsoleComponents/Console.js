@@ -12,7 +12,7 @@ const Console = (props) => {
     return(
         <div className='console'>
             <h2>{props.name}</h2>
-            <div className='charRow'>
+            <div className='charRow noBottomMargin'>
                 <div className='charRowFour'>Gender: {props.gender}</div>
                 <div className='charRowFour'>Birth Year:{props.birth_year}</div>
                 <div className='charRowFour'>Height: {props.height}</div>
@@ -24,14 +24,20 @@ const Console = (props) => {
                 <div className='charRowFour'>Eye Color: {props.eye_color}</div>
                 <div className='charRowFour'>Species: </div>
             </div>
+
             <div className='charRow'>Homeworld: {props.homeworld}</div>
+
             <div className='charRow'>Starships: </div>
+
             <div className='charRow'>Vehicles: </div>         
+
             <div className='charRow'>Films: </div>
+
             <div className='charRow'>
                 <div>Created: {props.created}</div>
                 <div>Edited: {props.edited}</div>
             </div>
+
             <div className='charRow'>URL: {props.url}</div>
         </div>
     );
