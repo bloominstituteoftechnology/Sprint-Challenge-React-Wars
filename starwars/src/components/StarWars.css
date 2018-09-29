@@ -1,0 +1,12 @@
+
+
+.CardBody {
+display:flex;
+
+}
+.card {
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+
+}
