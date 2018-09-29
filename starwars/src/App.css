@@ -1,8 +1,22 @@
+/* App styles */
+
 .App {
-  text-align: center;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid black;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 4rem;
 }
-/* write your parent styles in here for your App.js */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 1px solid blue;
+}

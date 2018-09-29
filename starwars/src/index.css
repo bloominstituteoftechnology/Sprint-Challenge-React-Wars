@@ -1,7 +1,21 @@
+/* global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
