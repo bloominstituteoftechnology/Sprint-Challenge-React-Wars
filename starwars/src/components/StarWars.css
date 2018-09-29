@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background: white;
+    opacity: .5;
+    margin: .3% auto;
+    padding: 1%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+}

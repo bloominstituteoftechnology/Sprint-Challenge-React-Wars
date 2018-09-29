@@ -35,6 +35,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((char)    =>  (
+            <Card name={char.name} height={char.height} mass={char.mass} eye_color={char.eye_color}
+                hair_color={char.hair_color} skin_color={char.skin_color} gender={char.gender} key={char.created}/>
+        ))}
       </div>
     );
   }
