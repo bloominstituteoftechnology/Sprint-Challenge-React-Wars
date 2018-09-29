@@ -19,3 +19,5 @@
     * State is an object that can hold data and tells the components how to render & behave. State is what makes our components dynamic and interactive.
 
 1.  Describe props.
+
+    * Props are a value in a function that we can use in the component to display some data.
