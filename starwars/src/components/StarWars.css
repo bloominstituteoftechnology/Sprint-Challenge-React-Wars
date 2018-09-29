@@ -6,6 +6,7 @@
     margin: 0 auto;
     justify-content: space-around;
     font-size: 1.3rem;
+    
 }
 .card{
     display: flex;
@@ -15,6 +16,7 @@
     width: 400px;
     height: 300px;
     justify-content: space-between;
+    margin: .5rem 0 0.5rem 0;
     
 }
 
