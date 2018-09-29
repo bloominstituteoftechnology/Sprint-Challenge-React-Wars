@@ -8,8 +8,7 @@ class App extends Component {
     this.state = {
       cssClasses: {
         charClass: 'char',
-        infoClass: 'info',
-        displayNone: 'hidden'
+        infoClass: '',
       },
       starwarsChars: []
     };

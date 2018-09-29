@@ -10,6 +10,7 @@ class AllChars extends React.Component {
                     return (
                         <div>
                             <Character 
+                                infoClass={char.infoClass}
                                 birthYear={char.birth_year}
                                 eyeColor={char.eye_color}
                                 gender={char.gender}
