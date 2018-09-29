@@ -13,6 +13,10 @@ const StarWarsChar = (props) => {
                 return (
                     <div key={char.toString()}>
                         {char.name}
+                        {char.birth_year}
+                        {char.gender}
+                        <li>{char.hair_color}</li>
+                        <li>{char.eye_color}</li>
                     </div>
                 )
             })}
