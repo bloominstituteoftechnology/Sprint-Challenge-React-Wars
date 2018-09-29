@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 import CardComponent from './components/CardComponent';
 import PreviousButton from './components/PreviousButton';
@@ -15,6 +16,10 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  componentDidUpdate() {
+    ReactDOM.findDOMNode(this).scrollIntoView();
   }
 
   getCharacters = URL => {
