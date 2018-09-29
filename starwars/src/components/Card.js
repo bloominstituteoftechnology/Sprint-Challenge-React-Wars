@@ -2,11 +2,11 @@ import React from "react";
 import "./StarWars.css";
 
 const Card = props => (
-    <div>
+    <div className="card-container">
         <header>
-            <h3><a href={props.link}>{props.name}</a></h3>
+            <h3 className="card-font-title"><a href={props.link}>{props.name}</a></h3>
         </header>
-        <section>
+        <section className="card-font">
             <p>Species: {props.species}</p>
             <p>Homeworld: {props.homeworld}</p>
             <p>Gender: {props.gender}</p>

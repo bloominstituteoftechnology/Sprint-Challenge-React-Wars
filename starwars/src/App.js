@@ -54,7 +54,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <button value="prev" onClick={this.handlePagination}>Previous Page</button>
         <button value="next" onClick={this.handlePagination}>Next Page</button>
-        <div>
+        <div className="card-section-container">
           {this.state.starwarsChars.map(character => (
             <Card
               link={character.url}
