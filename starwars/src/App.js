@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardList from "./components/CardList";
 
 class App extends Component {
   constructor() {
@@ -29,13 +30,35 @@ class App extends Component {
       });
   };
 
+  clickHandler = (event) => {
+    event.preventDefault();
+    event.target.parentNode.classList.add('selected');
+  };
+
+  resetHandler = () => {
+    document.querySelectorAll('.characterCard').forEach(elem => {
+      return elem.classList.remove('selected');
+    })
+  };
+
+
+
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div>
+          <CardList starwars={this.state.starwarsChars}
+                    clickHandler={this.clickHandler}
+                    key={this.state.starwarsChars.name}
+          />
+        </div>
+        <div className="reset" onClick={this.resetHandler}>Reset</div>
       </div>
-    );
+    )
   }
 }
+
 
 export default App;

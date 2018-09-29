@@ -1,0 +1,48 @@
+.characterCard {
+  border: 1px solid dodgerblue;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selected {
+  display: none;
+}
+
+.selectCard {
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: gray;
+  color: black;
+  border-radius: 3px;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  margin-left: 120px;
+
+}
+
+.reset {
+  border: 1px solid black;
+  background: gainsboro;
+  color: black;
+  padding: 4px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.reset:hover{
+  color: dodgerblue;
+}
