@@ -6,18 +6,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      selected: false,
       starwarsChars: []
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
-  }
-
-  clickHandler = (event) => {
-    event.preventDefault();
-    event.target.parentNode.classList.toggle('selected');
   }
 
   getCharacters = URL => {
@@ -35,16 +29,31 @@ class App extends Component {
         throw new Error(err);
       });
   };
+  
+  clickHandler = (event) => {
+    event.preventDefault();
+    event.target.parentNode.classList.add('selected');
+  }
+
+  resetHandler = () => {
+    document.querySelectorAll('.character-card').forEach(el => {
+     return el.classList.remove('selected');
+    })
+  }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardList starwars={this.state.starwarsChars} 
-        selected={this.state.selected}
-        clickHandler={this.clickHandler} />
+        <div>
+          <CardList starwars={this.state.starwarsChars}
+          clickHandler={this.clickHandler}
+          key={this.state.starwarsChars.name}
+          />
+        </div>
+        <div className="reset" onClick={this.resetHandler}>Reset</div>
       </div>
-    );
+    )
   }
 }
 
