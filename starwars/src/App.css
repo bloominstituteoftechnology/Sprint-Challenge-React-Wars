@@ -24,12 +24,14 @@
       rgba(90, 61, 53, 0.5),
       rgba(43, 56, 43, 0) 70.71%) beige;
   height: auto;
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 10px 0;
   padding: 20px 0 40px 0;
+  border: 1px solid rgb(32, 16, 2);
+  border-radius: 5px;
 }
 
 .card div {
@@ -40,4 +42,14 @@
 }
 .hidden {
   display: none;
+}
+
+.button {
+  width: 10%;
+  height: 5vh;
+  background-color: white;
+}
+
+.button:hover {
+  background-color: rgb(205,155,108);
 }

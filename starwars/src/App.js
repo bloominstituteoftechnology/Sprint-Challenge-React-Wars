@@ -6,12 +6,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      place: [],
+      current: ''
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+    const newarr=['2014-12-09T13:50:51.644000Z', '2014-12-10T15:10:51.357000Z', '2014-12-10T15:11:50.376000Z', '2014-12-10T15:18:20.704000Z', '2014-12-10T15:20:09.791000Z', '2014-12-10T15:52:14.024000Z', '2014-12-10T15:53:41.121000Z', '2014-12-10T15:57:50.959000Z', '2014-12-10T15:59:50.509000Z', '2014-12-10T16:16:29.192000Z'];
+    this.setState({
+      place: [...this.state.place, newarr],
+      current: '2014-12-09T13:50:51.644000Z'
+    })
   }
 
   getCharacters = URL => {
@@ -31,10 +38,18 @@ class App extends Component {
       });
   };
 
+  next = (event) => {
+    event.preventDefault();
+    
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className='buttons'>
+          <button className="button" onClick={this.next}>Next</button>
+        </div>
         <CardList starwarsChars={this.state.starwarsChars} />
       </div>
     );

@@ -2,10 +2,11 @@ import React from 'react';
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <div className="card" id={props.id}>
 
             <div>
-                Name: {props.name} <br></br>
+                Name: {props.name}
+                <br></br>{props.id}
             </div>
 
             <div className={ props.gender === 'n/a' ? 'hidden' : ''}>
@@ -17,7 +18,7 @@ const Card = (props) => {
             </div>
 
             <div className={ props.hairColor === 'n/a' ? 'hidden' : props.hairColor === 'none' ? 'hidden' : '' } >
-                Hair Color: {props.hairColor} <br></br>
+                Hair Color: {props.hairColor}
             </div>
 
             <div>
@@ -33,7 +34,7 @@ const Card = (props) => {
             </div>
 
             <div>
-                Mass: {props.mass}
+                Mass: {props.mass} kg
             </div>
 
             <div className={ props.starships.length === 0 ? 'hidden' : '' } >

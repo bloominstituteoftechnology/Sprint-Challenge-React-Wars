@@ -8,6 +8,7 @@ const CardList = (props) => {
                 return (
                     <Card 
                         key={item.created}
+                        id={item.created}
                         name={item.name}
                         birthYear={item.birth_year}
 
