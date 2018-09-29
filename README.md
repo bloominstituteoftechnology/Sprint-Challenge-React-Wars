@@ -1,8 +1,8 @@
 # Assessing your React Learning
 
-- The purpose of this exercise is to get you used to being quizzed on _Interview Questions_ commonly asked about ReactJS.
-- Answers to your written questions will be recorded in _Answers.md_
-- This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
+X The purpose of this exercise is to get you used to being quizzed on _Interview Questions_ commonly asked about ReactJS.
+X Answers to your written questions will be recorded in _Answers.md_
+X This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
 
 ## Start by forking and cloning this repository.
 
@@ -10,13 +10,23 @@
 
 1.  What is React JS and what problems does it try and solve?
 
+React JS is a Javascript library a developer created that allows us to build out websites with good UI more quickly.
+
 1.  What does it mean to _think_ in react?
+
+To consider projects, as you start them, in components. Separating each section of a page down into boxes of components, organized by like functions and design.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+The main difference is that a Class component can hold state, data that can be changed and passed through to other components. Functional components pass props. Syntatically, we write Class components differently than Functional components as well - class components extend React.Component and utilize super() to access React's built in methods and functionality.
+
 1.  Describe state.
 
+State is data held and passed into components, but it is mutable - it can be updated between renderings. State is created in a class component but can be passed and updated between parent and child.
+
 1.  Describe props.
+
+Props are properties that are passed into functional components from a parent component and are immutable - the data shouldn't change.
 
 ## Project
 
