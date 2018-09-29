@@ -3,8 +3,8 @@ import './StarWars.css';
 
  function Character(props) {
     return (
-        <div>
-            <h3>{props.char.name}</h3>
+        <div className="container">
+            <h3 className="character-name">{props.char.name}</h3>
             <p>Gender: {props.char.gender}</p>
             <p>Birth Year: {props.char.birth_year}</p>
             <p>Height: {props.char.height}</p>
