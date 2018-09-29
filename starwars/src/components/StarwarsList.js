@@ -4,13 +4,13 @@ import './StarWars.css'
 export const StarwarsList = props => {
 
     return (
-        <div className="card">
+        <div>
         {props.list.map((chars, index)=> {
                 return <Starwars
                     chars={chars}
                     name={chars.name}
                     key={index}
-                    className="card"
+
                     />
             })}
         </div>
