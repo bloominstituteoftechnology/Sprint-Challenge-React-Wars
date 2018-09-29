@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 100%;
+    max-width: 330px;
+    background: rgba(236, 190, 104, 0.6);
+    margin: 1%;
+    border-radius: 15%;
+    font-weight: bold;
+}
