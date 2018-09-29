@@ -5,4 +5,18 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.card {
+  background-color: aliceblue;
+  opacity: 0.6;
+  width: 500px;
+  margin: 30px 0;
+}
 /* write your parent styles in here for your App.js */
