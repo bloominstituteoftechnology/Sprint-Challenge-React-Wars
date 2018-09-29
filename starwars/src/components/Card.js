@@ -3,7 +3,7 @@ import './StarWars.css';
 
 const Card = (props) => {
     return (
-        <div>
+        <div className='card'>
             <p>Hello there!</p>
             <div><p>Name</p>{props.character.name}</div>
             <div><p>Birth year</p>{props.character.birth_year}</div>
