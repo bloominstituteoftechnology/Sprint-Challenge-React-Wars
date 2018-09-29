@@ -1,0 +1,9 @@
+/* Tabs container styling */
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+}

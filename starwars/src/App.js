@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import StarWars from './components/StarWars';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      selected: 0
     };
   }
 
@@ -29,10 +31,23 @@ class App extends Component {
       });
   };
 
+  // Click handler to switch information based on tab selected.
+  clickHandler = charId => {
+    this.setState({
+      selected: charId
+    });
+  };
+
   render() {
+    // Pass state through charArray to StarWars.js
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarWars 
+          charArray={this.state.starwarsChars} 
+          selected={this.state.selected}
+          clickHandler={this.clickHandler}
+        />
       </div>
     );
   }

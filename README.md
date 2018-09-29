@@ -1,4 +1,4 @@
-# Assessing your React Learning
+# Assessing your React Learning (Jen)
 
 - The purpose of this exercise is to get you used to being quizzed on _Interview Questions_ commonly asked about ReactJS.
 - Answers to your written questions will be recorded in _Answers.md_
