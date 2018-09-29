@@ -35,9 +35,9 @@
 
 ![Star Wars state data](starwars_data.png)
 
-- Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
-- For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
-- I suggest building **function over form** at first. Then take time to style your app after.
+- [x] Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
+- [x] For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
+- [x] I suggest building **function over form** at first. Then take time to style your app after.
 - Feel free to integrate Bootstrap for styling. You can research the `react-strap` library and see what components are available for you if you'd like.
 
 ## Stretch Problems
