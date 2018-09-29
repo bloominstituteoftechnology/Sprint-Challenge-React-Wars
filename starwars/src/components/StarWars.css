@@ -1,0 +1,13 @@
+.cards{
+    display: flex;
+    width: 100%;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-row {
+    display: flex;
+}
