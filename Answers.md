@@ -1,11 +1,12 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
+React is a Library that helps making complex user interfaces easier. A problem it tries to solve 
 
-1.  What does it mean to _think_ in react?
+2.  What does it mean to _think_ in react?
 
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-1.  Describe state.
+4.  Describe state.
 
-1.  Describe props.
+5.  Describe props.

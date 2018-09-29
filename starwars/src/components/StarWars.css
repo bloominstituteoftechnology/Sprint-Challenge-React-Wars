@@ -1,0 +1,16 @@
+.cta{
+    border-top:5px solid black;
+    border-bottom:5px solid black;
+    width:470px;
+    margin-bottom: 10px;
+    font-size:20px;
+    font-weight: bolder;
+    border-radius: 10%;
+    box-sizing: border-box;
+}
+.cardInfo{
+    max-width: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

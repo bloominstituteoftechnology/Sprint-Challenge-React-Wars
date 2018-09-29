@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './StarWars.css'
 class Card extends React.Component {
 
     render() {
         return (
             <div className="cta">
-                <p>
+                <p className="text">
                     Name: {this.props.starWarsInfo.name}<br />
                     Height: {this.props.starWarsInfo.height}cm<br />
                     Birth Year: {this.props.starWarsInfo.birth_year}<br />
