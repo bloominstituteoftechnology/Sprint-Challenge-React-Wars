@@ -1,8 +1,30 @@
 .App {
-  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto 8% auto 8%;
 }
+
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #34282C;
 }
-/* write your parent styles in here for your App.js */
+
+p, h1, h2, h3, hr {margin: 0}
+
+@media only screen and (max-width: 600px) {
+  .App {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+    .character-card {
+      width: 60%;
+      max-width: 200px;
+    }
+  }
