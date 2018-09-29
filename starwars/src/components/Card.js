@@ -14,7 +14,7 @@ const Card = (props) => {
                             hair_color={data.hair_color}
                             skin_color={data.skin_color}
                             eye_color={data.eye_color}
-                            birth_year={data.birth_color}
+                            birth_year={data.birth_year}
                             gender={data.gender}
                         />
             })}

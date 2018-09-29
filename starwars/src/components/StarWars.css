@@ -1,0 +1,30 @@
+body {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-family: 'Notable', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    color: #483319;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-info {
+    border: 1px solid #D7BD7A;
+    width: 16%;
+    background-color: rgba(244,218,179, .7);
+    margin: 16px;
+    border-radius: 5px;
+}

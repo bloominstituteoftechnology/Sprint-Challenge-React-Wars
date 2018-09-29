@@ -4,14 +4,14 @@ import './StarWars.css';
 const CardInfo = (props) => {
     return (
         <div className="card-info">
-            Name: {props.name}{" "}
-            Height: {props.height}{" "}
-            Mass: {props.mass}{" "}
-            Hair Color: {props.hair_color}{" "}
-            Skin Color: {props.skin_color}{" "}
-            Eye Color: {props.eye_color}{" "}
-            Birth Year{props.birth_year}{" "}
-            Gender: {props.gender}{" "}
+            <p>Name: {props.name}</p>
+            <p>Height: {props.height} cm</p>
+            <p>Mass: {props.mass} kg</p>
+            <p>Hair Color: {props.hair_color}</p>
+            <p>Skin Color: {props.skin_color}</p>
+            <p>Eye Color: {props.eye_color}</p>
+            <p>Birth Year: {props.birth_year}</p>
+            <p>Gender: {props.gender}</p>
         </div>
     )
 }
