@@ -1,7 +1,7 @@
 import React from 'react';
 
-const DisplayCharacters = (props) => {
+const DisplayCharacter = (props) => {
    return(
-      
+
    )
 }
