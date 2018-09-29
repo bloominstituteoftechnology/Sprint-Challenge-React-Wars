@@ -9,6 +9,7 @@ class StarWarsCard extends React.Component {
           //   return <div>{x.name}</div>;
           return (
             <Character
+              key={x.created}
               name={x.name}
               gender={x.gender}
               birthYear={x.birth_year}
