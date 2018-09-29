@@ -1,7 +1,9 @@
 .cta{
     border-top:5px solid black;
     border-bottom:5px solid black;
-    width:470px;
+    width:430px;
+    margin-left:20px;
+    margin-right:20px;
     margin-bottom: 10px;
     font-size:20px;
     font-weight: bolder;
@@ -11,6 +13,6 @@
 .cardInfo{
     max-width: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
