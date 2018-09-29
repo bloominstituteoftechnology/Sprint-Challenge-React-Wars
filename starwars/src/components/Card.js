@@ -1,20 +1,20 @@
 import React from 'react';
+import './StarWars.css';
 
 const Card = (props)=>{
     return (
         <li className="card">
-            <h1>{props.charData.name}</h1>
-            <h2>Bio</h2>
-            <p>Born: {props.charData.gender}</p>
-            <p>Born: {props.charData.birth_year}</p>
-            <p>Born: {props.charData.height}</p>
-            <p>Born: {props.charData.mass}</p>
-            <p>Born: {props.charData.hair_color}</p>
-            <p>Born: {props.charData.eye_color}</p>
-            <p>Born: {props.charData.skin_color}</p>
-            {/* Add species */}
-            <h2>StarShips and Vehicles</h2>
-            <h2>Films Appeared In</h2>
+            <h2>{props.charData.name}</h2>
+            <h3>Bio</h3>
+            <div className="bio-info">
+                <p>Gender: {props.charData.gender}</p>
+                <p>Born: {props.charData.birth_year}</p>
+                <p>Height: {props.charData.height}</p>
+                <p>Weight: {props.charData.mass}</p>
+                <p>Hair Color: {props.charData.hair_color}</p>
+                <p>Eye Color: {props.charData.eye_color}</p>
+                <p>Skin Color: {props.charData.skin_color}</p>
+            </div>
         </li>
     )
 }
