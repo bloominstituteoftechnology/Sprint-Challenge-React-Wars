@@ -39,18 +39,18 @@ class App extends Component {
   }
 
   returnToList = event => {
-    this.setState({currentChar: null})
+    this.setState({currentCharacter: null})
   }
 
 
   render() {
-    if (this.state.currentChar === null) {
+    if (this.state.currentCharacter === null) {
     return (
         
       
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList chars={this.state.starwarsChars} showCurrentChar={this.showCurrentChar}/>
+        <CharacterList chars={this.state.starwarsChars} showCurrentCharacter={this.showCurrentCharacter}/>
       </div>
     );
   } else {

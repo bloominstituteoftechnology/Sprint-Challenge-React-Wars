@@ -10,3 +10,7 @@
 .current-character { 
   padding: 10px;
 }
+
+.current-character:hover { 
+  font-size: 100px;
+}
