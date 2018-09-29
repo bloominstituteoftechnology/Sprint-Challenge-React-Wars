@@ -10,6 +10,7 @@ class Card extends React.Component {
             <p>Hair Color: {this.props.hair}</p>
             <p>Eye Color: {this.props.eyes}</p>
             <p>Skin Color: {this.props.skin}</p>
+                <div className="select-button" onClick={this.props.clickHandler}>Select</div>
             </div>
         )
     }

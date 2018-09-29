@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardList from './components/CardList.js';
 
 class App extends Component {
   constructor() {
@@ -12,6 +13,11 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  clickHandler = (event) => {
+    event.preventDefault();
+    event.target.parentNode.classList.toggle('selected');
   }
 
   getCharacters = URL => {
@@ -34,6 +40,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList starwars={this.state.starwarsChars} 
+        selected={this.state.selected}
+        clickHandler={this.clickHandler} />
       </div>
     );
   }

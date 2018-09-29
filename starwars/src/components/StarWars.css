@@ -1,0 +1,9 @@
+.character-card {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.selected {
+    opacity: 0.2;
+}

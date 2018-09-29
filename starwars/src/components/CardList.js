@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card.js';
+import './StarWars.css';
 
 class CardList extends React.Component {
     render() {
@@ -11,7 +12,8 @@ class CardList extends React.Component {
                  gender={char.gender}
                  hair={char.hair_color}
                  eyes={char.eye_color}
-                 skin={char.skin_color} />
+                 skin={char.skin_color}
+                 clickHandler={this.props.clickHandler} />
             })
         )
     }  
