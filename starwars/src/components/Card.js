@@ -4,7 +4,7 @@ import App from '../App.js'
 
 
 const Card = props => {
-    console.log(props.data[0])
+    console.log(props.data[1].name);
     return (
         <h1>HI</h1>
     )
