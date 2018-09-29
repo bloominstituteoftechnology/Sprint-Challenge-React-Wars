@@ -32,7 +32,7 @@ const Card = (props) => {
                 Height: {props.height} cm 
             </div>
 
-            <div>
+            <div className={ props.mass === 'unknown' ? 'hidden' : ''}>
                 Mass: {props.mass} kg
             </div>
 
