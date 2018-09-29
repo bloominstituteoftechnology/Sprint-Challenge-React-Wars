@@ -1,12 +1,18 @@
 import React from "react";
-import CharMovies from "./CharMovies";
+import './card.css';
 
 const Chars = props => {
-  return (
-    <div>
-      {props.name.name}, {props.name.mass}
+  return (<div className="cardCont">
+    <div className="card">
+      <div className="title">
+        {props.name.name}
+      </div>
+      <div className='stats'>
+        {props.name.gender}
+        {" "}
+        {props.name.birth_year}</div>
     </div>
-  );
+  </div>);
 };
 
 export default Chars;
