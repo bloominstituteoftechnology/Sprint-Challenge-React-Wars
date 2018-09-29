@@ -1,5 +1,5 @@
 import React from 'react';
-import './StarWars.css';
+import './TheLook.css';
 import Items from './Items';
 
 function Data(props){

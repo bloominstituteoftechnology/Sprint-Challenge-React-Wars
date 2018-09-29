@@ -1,5 +1,5 @@
 import React from 'react';
-import './StarWars.css';
+import './TheLook.css';
 
 function Items(props){
 	const{name,birth_year,gender,eye_color,skin_color,height,mass} = props.character;
