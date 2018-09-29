@@ -9,6 +9,7 @@ class App extends Component {
     };
   }
 
+  
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -28,6 +29,8 @@ class App extends Component {
         throw new Error(err);
       });
   };
+
+  
 
   render() {
     return (
