@@ -17,21 +17,36 @@ const Card = (props) => {
             </div>
 
             <div className={ props.hairColor === 'n/a' ? 'hidden' : props.hairColor === 'none' ? 'hidden' : '' } >
-                Hair color: {props.hairColor} <br></br>
+                Hair Color: {props.hairColor} <br></br>
             </div>
 
             <div>
-                Eye color: {props.eyeColor}
+                Eye Color: {props.eyeColor}
             </div>
 
+            <div>
+                Skin Color: {props.skinColor}
+            </div>
 
-        Skin color: {props.skinColor} <br></br>
-        Height: {props.height} <br></br>
-        Mass: {props.mass} <br></br>
-        I have {props.starships.length} starships and {props.vehicles.length} vehicles. <br></br>
+            <div>
+                Height: {props.height} cm 
+            </div>
 
-        I was in {props.films.length} <br></br>
+            <div>
+                Mass: {props.mass}
+            </div>
 
+            <div className={ props.starships.length === 0 ? 'hidden' : '' } >
+                Startships: {props.starships.length}
+            </div>
+
+            <div className={ props.vehicles.length === 0 ? 'hidden' : '' } >
+                Vehicles: {props.vehicles.length}
+            </div>
+
+            <div className={ props.films.length === 0 ? 'hidden' : '' }     >
+                Films Appeared In: {props.films.length}
+            </div>
 
         </div>
     )

@@ -11,14 +11,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .card {
-  background-color: white;
-  height: 300px;
+  background: radial-gradient(circle at 50% 0,
+      rgba(122, 112, 102, 0.5),
+      rgba(0, 0, 0, 0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(167, 75, 30, 0.5),
+      rgba(36, 36, 65, 0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(90, 61, 53, 0.5),
+      rgba(43, 56, 43, 0) 70.71%) beige;
+  height: auto;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 20px 0 40px 0;
+}
 
+.card div {
+  margin: 5px;
+  /* border: 1px solid green; */
+  text-align: left;
+  padding-left: 10%;
 }
 .hidden {
   display: none;
