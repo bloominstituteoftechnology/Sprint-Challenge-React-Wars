@@ -3,7 +3,7 @@ import React from 'react';
 const CharCard = (props) => {
   return (
     <div>
-      <h3>{props.char.name}</h3>
+      <h3>{props.character.name}</h3>
     </div>
   )
 }

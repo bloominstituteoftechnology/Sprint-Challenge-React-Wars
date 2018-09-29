@@ -4,7 +4,7 @@ import CharCard from './CharCard.js';
 const CharList = (props) => {
   return (
     <div className='charList'>
-      {this.props.starwarsChars.map(char => {
+      {props.characters.map(char => {
         return <CharCard
                   key={char.created}
                   character={char} />
