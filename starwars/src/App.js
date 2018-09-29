@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from './components/Card.js'
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(this.state)
       })
       .catch(err => {
         throw new Error(err);
