@@ -14,7 +14,7 @@ A functional component does not have state - meaning it is static, it will not c
 
 1.  Describe state.
 
-State is dynamic data. 
+State is dynamic data, usually  an object with some properties. State is passed from parent class to child class through props. This allows components to pass properties (inheritance) down the hierarchy. 
 
 1.  Describe props.
 
