@@ -1,10 +1,14 @@
 import React from "react";
 
 const Card = (props) =>{
+
+    const open = () =>{
+        props.openHandler(props.id)
+    }
     return(
         <div>
             <p>{props.name}</p>
-            <button>Open</button>
+            <button onClick={open}>Open</button>
             <ul>
                 <li>Born: {props.birth_year}</li>
                 <li>Eye Color: {props.eye_color}</li>

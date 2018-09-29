@@ -7,6 +7,10 @@ const Character = (props) =>{
             {props.starwarsChars.map(item =>{
                 return(
                         <Card 
+                        open = {props.open}
+                        openHandler = {props.openHandler}
+                        key = {item.created}
+                        id = {item.created}
                         name={item.name}
                         birth_year={item.birth_year}
                         eye_color={item.eye_color}
