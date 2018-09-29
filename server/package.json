@@ -1,0 +1,17 @@
+{
+  "name": "starwars-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Mykeal",
+  "license": "MIT",
+  "homepage": "https://github.com/LambdaSchool/SPA-Routing-React#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sprint-challenge-react-wars",
+  "version": "1.0.0",
+  "description": "Main file for launching everyting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/startboth.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/Sprint-Challenge-React-Wars.git"
+  },
+  "author": "fireinjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/Sprint-Challenge-React-Wars/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/Sprint-Challenge-React-Wars#readme",
+  "dependencies": {}
+}
