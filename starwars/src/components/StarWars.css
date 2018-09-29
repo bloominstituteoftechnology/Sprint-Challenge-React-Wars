@@ -11,9 +11,9 @@
 }
 .age{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
