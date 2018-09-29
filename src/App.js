@@ -10,7 +10,8 @@ class App extends Component {
       place: [],
       current: '',
       next: '',
-      previous: ''
+      previous: '',
+      previousHidden: true
     };
   }
 
@@ -41,14 +42,23 @@ class App extends Component {
   };
 
   next = (event) => {
-    this.getCharacters(this.state.next);
+    if (this.state.next === null) {
+      this.getCharacters('https://swapi.co/api/people');
+    } else {
+      this.getCharacters(this.state.next);
+      this.setState({
+        previousHidden: false
+      })
+    }
   }
 
   previous = (event) => {
     if (this.state.previous === null) {
-      event.preventDefault();
+      this.setState({
+        previousHidden: true
+      })
     } else {
-    this.getCharacters(this.state.previous); 
+      this.getCharacters(this.state.previous); 
     }
   }
 
@@ -66,8 +76,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className='buttons'>
-          <button className='button' onClick={this.previous}>Previous</button>
-          <button className="button" onClick={this.next}>Next</button>
+          <button className={ this.state.previousHidden ? 'hidden' : 'button'} onClick={this.previous}>Previous</button>
+          <button className='button' onClick={this.next}>Next</button>
         </div>
         <CardList starwarsChars={this.state.starwarsChars} />
       </div>
