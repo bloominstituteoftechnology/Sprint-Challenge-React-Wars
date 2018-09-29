@@ -7,8 +7,8 @@ const Cardlist = (props) => {
 
     return (
         <div>
-        {props.character.map(detail =>(
-            <Card />
+        {props.characters.map(character =>(
+            <Card value={character}/>
         )
 
         )}
