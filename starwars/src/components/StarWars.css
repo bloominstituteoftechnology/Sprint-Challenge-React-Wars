@@ -1,0 +1,22 @@
+.card-list-container {
+   border: 1px solid black;
+   height: 400px;
+   width: 400px;
+   display: flex;
+   justify-content: center;
+}
+
+h1 {
+   font-family: 'Pacifico', cursive;
+   font-weight: normal;
+   font-size: 2.1rem;
+   color: #fff4d1;
+   text-shadow: 3px 3px 3px black;
+}
+
+h3 {
+   font-family: 'Inconsolata', monospace;
+   font-size: 1.3rem;
+   color: #fff4d1;
+   text-shadow: 3px 3px 3px black;
+}
