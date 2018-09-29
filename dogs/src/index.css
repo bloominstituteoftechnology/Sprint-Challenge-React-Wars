@@ -1,0 +1,8 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  font-family: sans-serif;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+}
