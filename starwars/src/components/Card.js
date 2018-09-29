@@ -4,9 +4,9 @@ import './StarWars.css';
 const Card = (props) => {
     return (
         <div className='card'>
-            <h1>Hello there!</h1>
-            <div className='character-attributes'>
-                <div className='attribute'><p>Name</p>{props.character.name}</div>
+            <h1 onClick={props.clicked}>Hello there!</h1>
+            <div className={props.character.clicked ? 'true' : 'false'}>
+                <div className='attribute name'><p>Name</p>{props.character.name}</div>
                 <div className='attribute'><p>Birth year</p>{props.character.birth_year}</div>
                 {/* <div className='attribute'><p>Home world</p>{props.character.homeworld}</div> */}
                 <div className='attribute'><p>Gender</p>{props.character.gender}</div>

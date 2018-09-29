@@ -8,7 +8,7 @@ const Characters = (props) => {
             {props.characters.map((character) => {
                 return (
                     <div key={character.name} className='character-cards'>
-                        <Card character={character} />
+                        <Card clicked={props.clicked} character={character} />
                     </div>
                 )
             })}

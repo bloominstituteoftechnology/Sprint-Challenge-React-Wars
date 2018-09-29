@@ -9,16 +9,23 @@
 
 .card h1 {
     color: maroon;
-    display: flex;
-    justify-content: center;
+    margin: 20px auto;
+}
+
+.card h1:hover {
+    cursor: pointer;
     text-shadow: 1px 1px 5px black;
 }
 
-.character-attributes {
+.false {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/* .false {
+    display: none;
+} */
 
 .attribute {
     width: 30%;

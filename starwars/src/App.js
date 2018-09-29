@@ -6,9 +6,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [{ clicked: false },]
     };
   }
+
+  onClickMe = () => {
+    this.setState({ clicked: !this.state.clicked });
+}
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -36,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Characters characters={this.state.starwarsChars} />
+        <Characters clicked={this.onClickMe} characters={this.state.starwarsChars} />
       </div>
     );
   }
