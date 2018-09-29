@@ -38,7 +38,8 @@
 }
 
 .CharacterList:hover {
-	background-color: #107896;
+	background-color: #E5D469;
+	color: black;
 }
 
 .characterCards {
@@ -55,8 +56,4 @@
 	color: white;
 	font-size: 1.2rem;
 	text-shadow: 1px 1px 5px #fff;
-}
-
-.cardHeader:hover {
-	color: #3C6478;
 }
