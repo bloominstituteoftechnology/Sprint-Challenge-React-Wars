@@ -12,13 +12,23 @@ Forked, cloned, and now committing/pushing/pulling.
 
 1.  What is React JS and what problems does it try and solve?
 
-1.  What does it mean to _think_ in react?
+React JS is a JavaScript library (collection of other people's code for reuse) that is aimed at making the creation of user interfaces painless (no comment on whether this is actually the case ;).  Part of trying to solve this is to create a virtual DOM that the user interacts with and changes before ReactJS renders these changes to the actual DOM.
 
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+2.  What does it mean to _think_ in react?
 
-1.  Describe state.
+This means to break components down into a parent-child-etc. relationship and to assign responsibilities to each component appropriate to that component's level, without reaching too high or too low for functionality.
 
-1.  Describe props.
+3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+Functional components have no state, and are simpler to write.
+
+4.  Describe state.
+
+State in ReactJS is a container of data, usually presented as an array of objects, that the ReachJS is intended to take in, make changes to, and return prior to rendering.
+
+5.  Describe props.
+
+Props is a set of properties accepted as arguments into ReactJS functions that the program then processes.
 
 ## Project
 
@@ -26,8 +36,8 @@ Forked, cloned, and now committing/pushing/pulling.
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
 1.  **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
-1.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+2.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
+3.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 

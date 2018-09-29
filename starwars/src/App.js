@@ -6,8 +6,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: []
-    };
   }
+};
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -27,12 +27,18 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+
   };
+
+
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <p>{this.state.starwarsChars}</p>
+          )
+        })}
       </div>
     );
   }
