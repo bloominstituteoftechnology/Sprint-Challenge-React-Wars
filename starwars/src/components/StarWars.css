@@ -1,14 +1,22 @@
 .cardsContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .cardContainer {
-    width: 100%;
-    height: 300px;
-    background-color: peachpuff;
+    width: 450px;
+    height: 400px;
+    background-color: rgba(255,218,185, 0.8) ;
+    line-height: 36px;
     margin: 20px;
     font-size: 20px;
+    border: salmon 3px solid;
+    border-radius: 10%;
+    color: gray;
+}
+
+.cardContainer h2 {
+    color: black;
 }
 
 .cardContainer ul {
