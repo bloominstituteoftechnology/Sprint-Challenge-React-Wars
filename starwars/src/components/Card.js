@@ -5,7 +5,7 @@ import CardContent from './CardContent';
 
 const Card = props => {
     return (
-        <div>
+        <div className="cards">
             {
                 props.characters.map(chars => {
                     return  (<div className="card">

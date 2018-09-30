@@ -1,6 +1,10 @@
-
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
 .card {
-    width: 50%;
+    width: 30%;
+    padding: 35px;
     margin: 35px auto;
     padding: 25px 0;
     background-color: whitesmoke;
@@ -21,8 +25,22 @@ span {
 }
 .card-content {
     text-align: start;
-    padding-left: 100px;
 }
 h2 {
     margin-bottom: 50px;
+    font-size: 24px;
+}
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #2ab0ed;
+    color: black;
+    font-weight: bold;
+    border-radius: 7px;
+    margin: 0 50px;
+    cursor: pointer;
+}
+.containers {
+    display: flex;
+    justify-content: space-around;
 }

@@ -8,3 +8,7 @@
 }
 
 /* write your parent styles in here for your App.js */
+.inactive {
+  background-color: gray;
+  cursor: not-allowed;
+}
