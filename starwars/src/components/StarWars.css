@@ -27,14 +27,37 @@ img {
     width: 100%;
 }
 
-button {
-    margin-left: 100px;
-    background-color: #333;
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prev {
+    position: absolute;
+    top: 100%;
+    right: 85%;
+    cursor: pointer;
+    font-size: 23px;
+    background-color:#333;
+    height: 35px;
+    width: 100px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.next {
+    position: absolute;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    top: 100%;
+    left: 85%;
+    font-size: 23px;
+    cursor: pointer;
+    background-color:#333;
+    height: 35px;
+    width: 100px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    color: #fff;
 }
