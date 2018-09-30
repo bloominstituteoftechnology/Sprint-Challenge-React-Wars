@@ -6,3 +6,32 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+.starwars-card{
+  border: 1px solid;
+  display: inline-flex;
+  flex-direction: column;
+  width: 550px;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: rgba(114, 133, 145, 0.568);
+}
+.starwars-card .name{
+  font-weight: bold;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tan;
+  height: 40px;
+  font-size: 25px;
+  border: 1px solid;
+}
+.starwars-card .info{
+  display: flex;
+}
+.starwars-card p{
+ line-height: 25px;
+ font-size: 16px;
+}
