@@ -34,3 +34,29 @@ html{
   flex-flow: row wrap;
 }
 
+.action{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:20px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px 15px 20px 0px;
+
+}
+
+
+.disabled {
+  opacity: 0.23; 
+  cursor: not-allowed;
+}

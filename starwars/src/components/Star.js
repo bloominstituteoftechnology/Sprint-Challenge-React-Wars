@@ -15,13 +15,13 @@ class Star extends Component{
             <p><span>gender</span> : {this.props.star.gender}</p>
             <p><span>Eye Color</span> : {this.props.star.eye_color}</p>
             <p><span>Hair</span>:{this.props.star.hair_color}</p>
-            <p><span>Height</span>:{this.props.star.height}</p>
-            <p><span>films</span>: appear in { this.props.star.films.length}</p>
+            <p><span>Height</span>:{this.props.star.height} cm</p>
+            <p><span>films</span> :appear in { this.props.star.films.length}</p>
           </div>
         </div>
         <div className="card-footer">
-          <p><span>Ships</span> : {this.props.star.starships.length}</p>
-          <p><span>vehicles</span> : {this.props.star.vehicles.length}</p>
+          <p>Ships: <span> {this.props.star.starships.length}</span></p>
+          <p>vehicles: <span>{this.props.star.vehicles.length}</span></p>
         </div>
       </div>
       

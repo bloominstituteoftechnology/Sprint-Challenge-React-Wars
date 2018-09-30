@@ -74,3 +74,16 @@
   border-top: 1px dotted darkgray;
   justify-content: space-evenly;
 }
+
+.card-footer p{
+  font-size: 1.2rem;
+  margin-right:8px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card-footer p span{
+  font-weight: normal;
+}

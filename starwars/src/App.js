@@ -7,6 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      pageNumber:1,
       starwarsChars: [],
     };
     
@@ -32,8 +33,31 @@ class App extends Component {
       });
   };
 
-  handleClick = () => {
-    
+  nextPage = () => {
+    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`);
+    this.setState({ pageNumber: this.state.pageNumber + 1})
+    document.querySelector('.prev').classList.remove('disabled');
+  }
+  
+  prevPage = () => {
+    if (this.state.pageNumber > 1) {
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber - 1}`);
+      this.setState({pageNumber: this.state.pageNumber - 1});
+    }
+    else {
+      this.getCharacters(`https://swapi.co/api/people`);
+      document.querySelector('.prev').classList.add("disabled");
+    }
+  }
+
+  disabled = () =>{
+    const previousButton = document.querySelector('.prev');
+    if(this.state.pageNumber === 1){
+      previousButton.classList.add('disabled')
+    }
+    else{
+      previousButton.classList.remove('disabled');
+    }
   }
 
   render() {
@@ -42,6 +66,10 @@ class App extends Component {
       <div className="container">
         <h1 className="Header">React Wars</h1>
           <StarLists  show={this.handleClick} stars={this.state.starwarsChars}/>
+          <div className="action">
+           <div className="btn prev disabled" onClick={this.prevPage}>{this.state.pageNumber -1} Prev </div>
+           <div className ="btn next" onClick={this.nextPage}> Next {this.state.pageNumber} </div>
+          </div>
       </div>
     );
   }
