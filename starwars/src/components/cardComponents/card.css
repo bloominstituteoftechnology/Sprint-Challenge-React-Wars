@@ -1,32 +1,63 @@
 .cardConatiner{
     margin: 0px auto;
     width: 1200px;
+    margin: 0px auto;
  
 }
 .cardContainerItems{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    border: 2px solid black;
     width: 300px;
-    height: 355px;
-    margin: 25px 25px;
+    height: 375px;
+    margin: 25px auto;
+}
+.birthDiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    width: 300px;
+    height: 375px;
+    margin: 25px auto;
+    left: 60px;
+    bottom: 3935px;
 }
 
+.birthText p{
+    position: relative;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
 .cardNameTitle{
     position: relative;
-    bottom: 160px;
+    bottom: 165px;
     right: 2px;
     width: 300px;
-    border: 1px solid blue;
+    border-bottom: 2px solid black;
     height: 35px;
-    color: red;
     z-index: +1;
+
+
 }
 
 .cardNameTitle h1 {
     position: relative;
     bottom: 13px;
-    font-size: 21px;
+    font-size: 24px;
+    font-weight: bold;
+    Color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.charPictureContainer{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 175px;
+    border: 1px solid black;
 }
