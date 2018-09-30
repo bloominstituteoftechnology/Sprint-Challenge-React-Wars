@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+
+.allChars {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.char {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px 15px;
+    background-color: darkgray;
+    opacity: 0.7;
+}
