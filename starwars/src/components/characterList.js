@@ -1,10 +1,14 @@
 import React from 'react';
 import Character from './Character'
+import './CharacterList.css'
+
+
 const CharacterList = (props) => {
-    console.log('help')
     return (
-        props.list.map(item => <Character key={item.created} obj={item} />
-    ))
+        <div className='Main'>
+        {props.list.map(item => <Character backgroundHandler={props.backgroundHandler} key={item.created} obj={item} />)}
+        </div>
+    )
 }
 
 export default CharacterList;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CharacterList from './components/characterList';
+import CharacterList from './components/CharacterList';
 
 class App extends React.Component {
   constructor() {
@@ -8,6 +8,18 @@ class App extends React.Component {
     this.state = {
       starwarsChars: []
     };
+  }
+
+  backgroundHandler = event => {
+   
+    if (event.target.className==='trick') {
+      event.target.className='card';}
+    
+    else {event.target.className='trick'}
+    console.log('It Worked');
+  
+
+ 
   }
 
   componentDidMount() {
@@ -31,9 +43,11 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.backgroundHandler)
+
     return (
       <div>
-        <CharacterList list={this.state.starwarsChars} />
+        <CharacterList list={this.state.starwarsChars} backgroundHandler={this.backgroundHandler} />
       </div>
     );
   }

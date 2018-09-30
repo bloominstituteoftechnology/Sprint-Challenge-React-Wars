@@ -1,0 +1,61 @@
+.card {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    border: 2px solid black;
+    background-image:url('https://i.amz.mshcdn.com/O8rMOJtTmcjAJSkJtdbJUAC100g=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F675031%2Fbbb3432c-5253-4fa8-bb03-35b4d1b9ce23.jpg');
+    background-size: 200%;
+    background-position: center;
+    width:300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.trick {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+    width:300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    pointer-events: none;
+}
+
+p {
+    pointer-events: none;
+}
+
+
+ .card h1 {
+    visibility: hidden;
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bold;
+}
+
+.trick h1 {
+    display:flex;
+   font-size: 1.5rem;
+   color:black;
+   font-weight: bold;
+}
+
+
+.card p {
+    visibility: hidden;
+    font-size: 1.25rem;
+    color:brown;
+    margin: 5px;
+    pointer-events: none;
+}
+
+.trick p {
+    font-size: 1.25rem;
+    color:brown;
+    margin: 5px;
+}
