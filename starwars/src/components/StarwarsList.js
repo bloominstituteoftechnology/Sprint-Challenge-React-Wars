@@ -11,10 +11,10 @@ export const StarwarsList = props => {
                     name={chars.name}
                     key={index}
                     /> })}
-    
+
         <div className="btn-wrapper">
-            <div className="prev" onClick={props.showPrevPage}>Previous</div>
-            <div className="next" onClick={props.showNextPage}>Next</div>
+                <div className="prev" onClick={props.showPrevPage}><i class="fas fa-caret-left"></i></div>
+                <div className="next" onClick={props.showNextPage}><i class="fas fa-caret-right"></i></div>
         </div>
     </div>
     )

@@ -35,29 +35,24 @@ img {
 
 .prev {
     position: absolute;
-    top: 100%;
-    right: 85%;
+    top: 60%;
+    right: 90%;
     cursor: pointer;
-    font-size: 23px;
-    background-color:#333;
+    font-size: 100px;
     height: 35px;
     width: 100px;
-    border: 2px solid #888;
-    border-radius: 10px;
-    color: #fff;
+    color:#333;
 }
 
 .next {
     position: absolute;
     text-align: center;
-    top: 100%;
-    left: 85%;
+    top: 60%;
+    left: 90%;
     font-size: 23px;
     cursor: pointer;
-    background-color:#333;
+    font-size: 100px;
     height: 35px;
     width: 100px;
-    border: 2px solid #888;
-    border-radius: 10px;
-    color: #fff;
+    color:#333;
 }
