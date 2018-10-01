@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 import CardHolder from './components/CardHolder';
+import Paginator from './components/Paginator';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage: null,
+      previousPage: null
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  getPage = direction => {
+    if (direction === "next" && this.state.nextPage != null) {
+      this.getCharacters(this.state.nextPage);
+    } else if (direction === "prev" && this.state.previousPage != null) {
+      this.getCharacters(this.state.previousPage);
+    }
   }
 
   getCharacters = URL => {
@@ -23,7 +34,11 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: data.results,
+          nextPage: data.next,
+          previousPage: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -34,7 +49,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Paginator pageHandler={this.getPage} />
         <CardHolder characters={this.state.starwarsChars} />
+        <Paginator pageHandler={this.getPage} />
       </div>
     );
   }
