@@ -6,11 +6,12 @@ export class Starwars extends React.Component {
 
 render() {
 return (
-
+<div className='card-container'>
 <div className="card-content">
     <div className='front'> 
     <h1>Starwars</h1>
-    <h2>Character<br /> 
+    <h2>Character<br />  
+                    <img src="https://cdn4.iconfinder.com/data/icons/star-wars-13/50/31-512.png" className="R2" alt=""/>
     <p />
     {this.props.chars.name}</h2>
     </div> 
@@ -24,7 +25,7 @@ return (
         <p>Weight: {this.props.chars.mass} {' '} </p>
       </div>
 </div>
-
+    </div>
 )
 }
 }
