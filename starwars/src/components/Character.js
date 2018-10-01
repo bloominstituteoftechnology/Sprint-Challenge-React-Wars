@@ -6,14 +6,14 @@ const Character = (props) => {
         <div className="card-container">
             <h1>Lets find out about {props.obj.name}!</h1>
             <div className="attributes">
-                <div className="char-name atrribute">{props.obj.name}</div>
-                <div className="char-bday atrribute">DOB: {props.obj.birth_year}</div>
-                <div className="char-eye-color atrribute">Eye Color: {props.obj.eye_color}</div>
-                <div className="char-gender atrribute">Gender: {props.obj.gender}</div>
-                <div className="char-hair-color atrribute">Hair Color: {props.obj.hair_color}</div>
-                <div className="char-height atrribute">Height: {props.obj.height}</div>
-                <div className="char-mass atrribute">Mass: {props.obj.mass}</div>
-                <div className="char-skin atrribute">Skin Type: {props.obj.skin_color}</div>
+                <div className="char-name">{props.obj.name}</div>
+                <div><h3>DOB: ↓</h3> <span className="attribute">{props.obj.birth_year}</span></div>
+                <div><h3>Eye Color: ↓ </h3> <span className="attribute">{props.obj.eye_color}</span></div>
+                <div><h3>Gender: ↓</h3> <span className="attribute">{props.obj.gender}</span></div>
+                <div><h3>Hair Color: ↓</h3> <span className="attribute">{props.obj.hair_color}</span></div>
+                <div><h3>Height: ↓</h3> <span className="attribute">{props.obj.height}</span></div>
+                <div><h3>Mass: ↓</h3> <span className="attribute">{props.obj.mass}</span></div>
+                <div><h3>Skin Type: ↓</h3> <span className="attribute">{props.obj.skin_color}</span></div>
             </div>
         </div>
     )
