@@ -34,25 +34,29 @@ img {
 }
 
 .prev {
-    position: absolute;
-    top: 60%;
-    right: 90%;
+    position: fixed;
+    top: 20%;
+    right: 85%;
     cursor: pointer;
     font-size: 100px;
     height: 35px;
     width: 100px;
-    color:#333;
+    color: #333;
 }
 
 .next {
-    position: absolute;
+    position: fixed;
     text-align: center;
-    top: 60%;
-    left: 90%;
-    font-size: 23px;
+    top: 20%;
+    left: 85%;
     cursor: pointer;
     font-size: 100px;
     height: 35px;
     width: 100px;
-    color:#333;
+    color: #333;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+   color: black;
 }
