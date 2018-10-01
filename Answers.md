@@ -18,3 +18,4 @@ React is component-based (i.e. modular) in that components can encapsulate both 
 4.  Describe state.
 
 5.  Describe props.
+  A: Props is an abbreviation of 'properties' which are the attributes of an object.  Props are the 
