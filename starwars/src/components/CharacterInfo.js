@@ -3,7 +3,7 @@ import React from 'react';
     return (
         <div className="card">
             <div className="char-info">
-                <p className="char-attr">Name: {props.info.name}</p>
+                <h3>{props.info.name}</h3>
                 <p className="char-attr">Gender: {props.info.gender}</p>
                 <p className="char-attr">Birth Year: {props.info.birth_year}</p>
                 <p className="char-attr">Skin Color: {props.info.skin_color}</p>              
