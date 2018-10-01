@@ -2,36 +2,59 @@
     display: inline-block;
     border: 1px solid rgba(51, 51, 51, 0.13);
     background: linear-gradient( to bottom, rgba(208, 230, 173, 0.664), rgba(255, 68, 0, .789));
-    width: 25%;
+    width: 300px;
+    height: 350px;
     padding: 1px 1px;
     margin: 15px;
     border-radius: 10px;
     text-align: left;
     box-shadow: 1px 1px 20px 1px #333;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
 }
 
 .card-content:hover {
     background-color: rgba(255, 255, 255, 0.699);
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    backface-visibility: hidden;
 }
 
 h1 {
+    margin-top: 30px;
+    margin-left: 50px;
     text-align: center;
 }
 
 h2 {
+    margin-top: 80px;
+    margin-left: 30px;
     font-size: 18px;
-    margin-left: 10px;
+    text-align: center;
 }
 
 p {
-    display: inline-block;
+    position: relative;
+    top: 150px;
     font-size: 12px;
-    margin-left: 10px;
     font-weight: bold;
     color: black;
 }
 
 img {
+    position: absolute;
+    backface-visibility: hidden;
+    right: 30px;
     width: 100%;
 }
 
