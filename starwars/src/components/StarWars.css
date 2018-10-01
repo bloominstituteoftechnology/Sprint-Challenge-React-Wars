@@ -46,7 +46,7 @@ h2 {
 
 p {
     position: relative;
-    top: 150px;
+    top: 160px;
     font-size: 12px;
     font-weight: bold;
     color: black;
@@ -55,8 +55,9 @@ p {
 img {
     position: absolute;
     backface-visibility: hidden;
-    right: 30px;
-    width: 100%;
+    border-radius:10px;
+    right: 1px;
+    width: 120%;
 }
 
 .btn-wrapper {
