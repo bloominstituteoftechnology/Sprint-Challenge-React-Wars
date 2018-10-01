@@ -1,12 +1,17 @@
 .card-content {
     display: inline-block;
     border: 1px solid rgba(51, 51, 51, 0.13);
-    background: linear-gradient( to bottom, rgba(208, 230, 173, 0.589), rgba(255, 68, 0, .589));
+    background: linear-gradient( to bottom, rgba(208, 230, 173, 0.664), rgba(255, 68, 0, .789));
     width: 25%;
     padding: 1px 1px;
     margin: 15px;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 1px 1px 20px 1px #333;
+}
+
+.card-content:hover {
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 h1 {
@@ -19,8 +24,11 @@ h2 {
 }
 
 p {
-    font-size: 13px;
+    display: inline-block;
+    font-size: 12px;
     margin-left: 10px;
+    font-weight: bold;
+    color: black;
 }
 
 img {
@@ -58,5 +66,5 @@ img {
 
 .fa-caret-left,
 .fa-caret-right {
-   color: black;
+    color: black;
 }
