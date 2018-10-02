@@ -14,7 +14,7 @@ const Character = (props) => {
                             <p>Height: {props.character.height}</p>
                         </div>
                         <div className="character-information-2">
-                            <p>Eye Color:{props.character.eye_color}</p>
+                            <p>Eye Color: {props.character.eye_color}</p>
                             <p>Hair Color: {props.character.hair_color}</p>
                             <p>Skin Color: {props.character.skin_color}</p>
                         </div>
