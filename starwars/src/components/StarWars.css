@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
 .chars-container{
-    height: 200px;
-    width:400px;
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
 }
 .chars{
     height: 200px;
     width:400px;
     border: 1px solid;
     color:black;
-    background: url("https://i.pinimg.com/originals/bc/e4/d3/bce4d3db85d2738206d08f90e9b1de07.jpg") ;
-    background-img:
+    background: url("https://chairish-prod.freetls.fastly.net/image/product/sized/3c5cabff-4bf6-4e12-82ba-e2d6304f67f0/iron-rivet-pot-1857?aspect=fit&width=640&height=640") ;
+    border-radius: 15px;
+    margin:15px auto;
+    -webkit-box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
+    -moz-box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
+    box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
+    margin-right:12px;
+}
+.chars h2{
+    font-family:  'Cuprum', sans-serif;
 }
