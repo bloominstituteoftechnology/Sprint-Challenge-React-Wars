@@ -6,7 +6,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: '',
+      previous: ''
     };
   }
 
@@ -23,18 +25,35 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data)
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  nextHandler = (event) => {
+    event.preventDefault();
+    this.getCharacters(this.state.next)
+  }
+
+  previousHandler = (event) => {
+    event.preventDefault();
+    this.getCharacters(this.state.previous)
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList value={this.state.starwarsChars} />
+        <button  onClick={this.previousHandler}>Previous</button>
+        <button onClick={this.nextHandler}>Next</button>
       </div>
     );
   }
