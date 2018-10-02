@@ -10,7 +10,7 @@
   .cardWrapper {
     margin: 5px;
     flex-wrap: wrap;
-    background-color: #b4b0a5 ;
+    background-image: url('sw-bg.jpg');
     opacity: 0.8;
     width: 440px;
     border-radius: 1em;
