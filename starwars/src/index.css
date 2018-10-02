@@ -1,11 +1,8 @@
-
-
-
 body {
-  margin: 0 auto;
-  max-width:1024px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
-  background-size: cover;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url('./sw-bg.jpg');
+    background-size: cover;
+    max-width: 1024px;
 }
