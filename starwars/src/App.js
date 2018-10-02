@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/Card';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 class App extends Component {
   constructor() {
@@ -34,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        < ThemeSwitcher />
           <Card cards={this.state.starwarsChars} />
       </div>
     );
