@@ -32,14 +32,12 @@ class ThemeSwitcher extends React.Component {
 
       <div className = "btn-group" >
 
-      <button type = "button"   className = {`btn btn-${themeClass} btn-lg`} > {theme || 'Choose'}>
+      <button type = "button"   className = {`btn btn-${themeClass} btn-lg`} > {theme || 'Choose'}
       Theme </button>
 
       <button type = "button"  className = {`btn btn-${themeClass} btn-lg dropdown-toggle dropdown-toggle-split`}
-      data-toggle = "dropdown"
-      aria-haspopup = "true"
-      aria-expanded = "false" >
-      <span className = "sr-only" > Toggle Theme Dropdown </span> </button>
+      data-toggle = "dropdown"   aria-haspopup = "true"   aria-expanded = "false" >
+      <span className = "sr-only" > Starwars Character </span> </button>
 
       <div className = "dropdown-menu" >
 

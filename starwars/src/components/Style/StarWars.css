@@ -8,9 +8,12 @@
   }
   
   .cardWrapper {
+    color: azure;
     margin: 5px;
     flex-wrap: wrap;
-    background-image: url('sw-bg.jpg');
+    background-image: url('580128.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     opacity: 0.8;
     width: 440px;
     border-radius: 1em;
