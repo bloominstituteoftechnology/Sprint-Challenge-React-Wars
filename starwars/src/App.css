@@ -15,3 +15,7 @@ button {
   text-align: center;
   font-weight:bold;
 }
+
+.hide {
+  display:none;
+}
