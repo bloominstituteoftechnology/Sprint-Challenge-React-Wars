@@ -1,12 +1,12 @@
 .chars-container{
     height: 200px;
     width:400px;
-    border: 1px solid pink;
-    color:black;
 }
 .chars{
     height: 200px;
     width:400px;
-    border: 1px solid pink;
+    border: 1px solid;
     color:black;
+    background: url("https://i.pinimg.com/originals/bc/e4/d3/bce4d3db85d2738206d08f90e9b1de07.jpg") ;
+    background-img:
 }
