@@ -1,0 +1,12 @@
+.chars-container{
+    height: 200px;
+    width:400px;
+    border: 1px solid pink;
+    color:black;
+}
+.chars{
+    height: 200px;
+    width:400px;
+    border: 1px solid pink;
+    color:black;
+}

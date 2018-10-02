@@ -2,7 +2,7 @@ import React from 'react';
 
 const StarChars =(props)=>{
     return(
-        <div>{props.info}</div>
+        <div className='chars'>{props.info}</div>
     )
 }
 export default StarChars;
