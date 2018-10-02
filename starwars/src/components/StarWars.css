@@ -1,0 +1,7 @@
+.card-body{
+    border: 5px solid gainsboro;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 250px;
+    margin-bottom: 20px;
+}

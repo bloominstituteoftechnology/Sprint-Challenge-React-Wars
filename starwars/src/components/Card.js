@@ -1,9 +1,9 @@
 import React from "react";
-import "./starwars.css";
+import "./StarWars.css";
 class Card extends React.Component {
     render() {
         return (
-            <div key={this.props.name} className="Card-body">
+            <div key={this.props.name} className="card-body">
                 <h2>{this.props.name}</h2>
                 <div className="card-content">
                     <h3>Info</h3>
