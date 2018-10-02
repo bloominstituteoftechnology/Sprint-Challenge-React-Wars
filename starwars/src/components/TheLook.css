@@ -1,0 +1,22 @@
+.Data-Wrapper{
+	max-width:1000px;
+	margin:0 auto;
+/*	color:red; /* It works! */
+
+}
+
+.card{
+	position:relative;
+	max-width:350px;
+	display:flex;
+	flex-direction:row;
+	margin:0 auto;
+	right:325px;
+	
+}
+
+h2{
+	position:relative;
+	padding:20px;	
+	bottom:12px;
+}
