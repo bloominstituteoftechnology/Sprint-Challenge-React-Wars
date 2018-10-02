@@ -1,31 +1,36 @@
 .cardWrap {
+    flex-wrap: wrap;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 300px;
-}
-
-.cardWrapper {
-    background-color: rgba(78, 34, 5, 0.705);
-    width: 400px;
-    padding: 1em;
+    width: 100%;
+  }
+  
+  .cardWrapper {
+    margin: 5px;
+    flex-wrap: wrap;
+    background-color: #b4b0a5 ;
+    opacity: 0.8;
+    width: 440px;
     border-radius: 1em;
     border: 4px solid rgb(252, 252, 252);
   }
   
-  .cardRow {
+  .cardCol {
+    margin: 5px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
   }
   
-  .alignRight {
+  .justifyR {
     text-align: right;
     width: 50%;
   }
   
-  .alignLeft {
+  .justifyL {
     text-align: left;
     width: 50%;
     margin-left: 1em;

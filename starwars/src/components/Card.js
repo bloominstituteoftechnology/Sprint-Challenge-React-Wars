@@ -10,37 +10,37 @@ class Card extends React.Component {
                     {this.props.cards.map((card) => {
                             return (
                                 <div className="cardWrapper">
-          <div className="cardRow">
-            <h2 className="alignRight">Name:</h2>{" "}
-            <h2 className="alignLeft">{card.name}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Name:</h2>
+            <h2 className="justifyL">{card.name}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Birth year:</h2>{" "}
-            <h2 className="alignLeft">{card.birth_year}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Birth year:</h2>{" "}
+            <h2 className="justifyL">{card.birth_year}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Eye color:</h2>{" "}
-            <h2 className="alignLeft">{card.eye_color}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Eye color:</h2>{" "}
+            <h2 className="justifyL">{card.eye_color}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Gender:</h2>{" "}
-            <h2 className="alignLeft">{card.gender}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Gender:</h2>{" "}
+            <h2 className="justifyL">{card.gender}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Hair Color:</h2>{" "}
-            <h2 className="alignLeft">{card.hair_color}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Hair Color:</h2>{" "}
+            <h2 className="justifyL">{card.hair_color}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Height:</h2>{" "}
-            <h2 className="alignLeft">{card.height}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Height:</h2>{" "}
+            <h2 className="justifyL">{card.height}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Mass:</h2>{" "}
-            <h2 className="alignLeft">{card.mass}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Mass:</h2>{" "}
+            <h2 className="justifyL">{card.mass}</h2>
           </div>
-          <div className="cardRow">
-            <h2 className="alignRight">Skin Color:</h2>{" "}
-            <h2 className="alignLeft">{card.skin_color}</h2>
+          <div className="cardCol">
+            <h2 className="justifyR">Skin Color:</h2>{" "}
+            <h2 className="justifyL">{card.skin_color}</h2>
           </div>
         </div>
                                 
