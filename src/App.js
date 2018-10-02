@@ -25,7 +25,7 @@ class App extends Component {
       })
       .then(data => {
         console.log(data);
-        this.setState({ starwarsChars: data.results });
+          this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
@@ -33,9 +33,15 @@ class App extends Component {
   };
 
   nextPage = () => {
-    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`);
-    this.setState({pageNumber: this.state.pageNumber + 1})
-    document.querySelector('.previous').classList.remove("greyed");
+    if (this.state.pageNumber < 9) {
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`);
+      this.setState({pageNumber: this.state.pageNumber + 1})
+      document.querySelector('.previous').classList.remove("greyed")
+    } else {
+        this.getCharacters(`https://swapi.co/api/people`);
+        document.querySelector('.previous').classList.add("greyed");
+        this.setState({pageNumber: 1});
+    }
       
   }
 
