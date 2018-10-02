@@ -1,9 +1,10 @@
+CardInfo.js
 import React from 'react';
-//  import { Link } from 'react-router-dom';
-
- const Character = (props) => {
-   return <div className="Card-item">
-   <p className="name">{props.name}</p>
+import './StarWars.css';
+const CardInfo = (props) => {
+  return (
+    <div className="card-info">
+      <p className="name">{props.name}</p>
       <p>Height: {props.height} cm</p>
       <p>Mass: {props.mass} kg</p>
       <p>Hair Color: {props.hair_color}</p>
@@ -11,7 +12,7 @@ import React from 'react';
       <p>Eye Color: {props.eye_color}</p>
       <p>Birth Year: {props.birth_year}</p>
       <p>Gender: {props.gender}</p>
-   </div>
- }
- 
- export default Character;
+    </div>
+  )
+}
+export default CardInfo;

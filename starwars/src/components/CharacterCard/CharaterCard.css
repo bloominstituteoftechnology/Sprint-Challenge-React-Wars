@@ -17,7 +17,7 @@
   text-align: center;
 }
 .Card-row {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
 	margin: 10px;
 	/* border: 1px solid #eee;

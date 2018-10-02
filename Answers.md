@@ -11,7 +11,7 @@
 
     1. Start with a mock.
 
-    2.  Break the UI into a Component hierarchy.
+    2. Break the UI into a Component hierarchy.
 
     3.Build a static version with no interactivity.
 

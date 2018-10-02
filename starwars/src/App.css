@@ -28,7 +28,9 @@
 
 /* RUNTIME STYLES */
 .Char-container {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 30%;
   margin: 0 auto;
   text-align: left;
@@ -44,7 +46,7 @@
 }
 
 .Card-row {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
 	margin: 10px;
 	/* border: 1px solid #eee;
