@@ -13,7 +13,6 @@ class Card extends React.Component {
                     <p>hair Color: {this.props.hairColor}</p>
                     <p>Height {this.props.height}</p>
                     <p>Weigth: {this.props.weigth}</p>
-                    <p>Films: {this.props.films}</p>
                 </div>
             </div>
         )

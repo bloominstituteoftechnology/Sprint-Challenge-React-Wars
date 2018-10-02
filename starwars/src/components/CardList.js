@@ -14,7 +14,7 @@ class CardList extends React.Component {
                     gender={character.genter}
                     hairColor={character.hair_color}
                     height={character.height}
-                    weigth={character.weigth} />
+                    weigth={character.mass} />
                 )
             })
         )
