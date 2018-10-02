@@ -26,13 +26,13 @@
   color: yellowgreen;
 }
 
+
 /* RUNTIME STYLES */
 .Char-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  width: 30%;
-  margin: 0 auto;
+  flex-wrap: wrap;
+
   text-align: left;
   background: lightcyan;
     /* 
@@ -44,10 +44,19 @@
   background: lightcyan;
   color: black;*/
 }
+
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 2px;
+  background-color: coral;
+}
+/* rem 'root em' unit is based on font size */
 
 .Card-row {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 	margin: 10px;
 	/* border: 1px solid #eee;
 	box-shadow: 0 2px 2px #ccc; */
@@ -65,7 +74,7 @@
   background: lightcyan;
   color: black;
 }
-.Card-body{
+/* .Card-body{
   background-color: rgba(81, 187, 236, 0.329);
   height: 150px;
   width: 175px;
@@ -75,57 +84,7 @@
   font-size: 11pt;
   color: black;
   text-align: center;
-}
-
-
-/* RUNTIME STYLES */
-.Char-container {
-  display: inline-block;
-  width: 30%;
-  margin: 0 auto;
-  text-align: left;
-  background: lightcyan;
-    /* 
-	margin: 10px;
-	border: 1px solid #eee;
-	box-shadow: 0 2px 2px #ccc;
-	width: 150px;
-  padding: 10px 20px 10px 20px;
-  background: lightcyan;
-  color: black;*/
-}
-
-.Card-row {
-  display: inline-flex;
-  justify-content: flex-start;
-	margin: 10px;
-	/* border: 1px solid #eee;
-	box-shadow: 0 2px 2px #ccc; */
-	/* width: 70%; */
-	/* padding: 20px; */
-}
-
-.Card-item {
-  display: inline-block;
-	margin: 10px;
-	border: 1px solid #eee;
-	box-shadow: 0 2px 2px #ccc;
-	width: 150px;
-  padding: 10px 20px 10px 20px;
-  background: lightcyan;
-  color: black;
-}
-.Card-body{
-  background-color: rgba(81, 187, 236, 0.329);
-  height: 150px;
-  width: 175px;
-  margin: 0px 10px 0px;
-  padding: 0px;
-  font-family: sans-serif;
-  font-size: 11pt;
-  color: black;
-  text-align: center;
-}
+} */
 
 .Body {
   margin: 0;
