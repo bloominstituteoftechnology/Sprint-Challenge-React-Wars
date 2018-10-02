@@ -31,15 +31,27 @@ class App extends Component {
   };
 
 
+
+
+
+
+
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <p>{JSON.stringify(this.state.starwarsChars[0])}</p>
+        <h2>Star Wars Birth Years</h2>
+        <div className="Container">
+        <p className="Name">Name</p>
+        <p className="birthYear">Birth Year</p>
+        //going to try rendering a simple table of charcters names and their years-of-birth; will go on to deeper complexity once I've mastered this; the p elements are placeholders.
+        </div>
       </div>
     );
   }
 }
+
 
 
 
