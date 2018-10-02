@@ -10,7 +10,7 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-    
+  A Class/stateful component carries mutable data the react watches in order to know if anything needs to be rerendered. While a Functional/Presentational component is exactly how it sounds. A component that is just rendered to serve a function. They have no control over how data for an application is changed.
 
 1.  Describe state.
 
