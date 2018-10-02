@@ -3,14 +3,14 @@
     width:90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     
 }
 .chars{
     height: 200px;
     width:400px;
-    border: 1px solid;
+    border: 2px solid sandybrown ;
     color:black;
     background: url("https://chairish-prod.freetls.fastly.net/image/product/sized/3c5cabff-4bf6-4e12-82ba-e2d6304f67f0/iron-rivet-pot-1857?aspect=fit&width=640&height=640") ;
     border-radius: 15px;
@@ -18,8 +18,35 @@
     -webkit-box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
     -moz-box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
     box-shadow: 0px 0px 42px 9px rgba(184,51,51,1);
-    margin-right:12px;
+    margin-right:7px;
 }
 .chars h2{
     font-family:  'Cuprum', sans-serif;
+    font-size: 1.8rem;
+}
+.chars span{
+    font-family:  'Cuprum', sans-serif;
+    font-weight: bold;
+}
+.chars p{
+    font-size: 1.1rem;
+    
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin:20px;
+    margin-bottom:40px;
+    font-family:'Permanent Marker', cursive;
+    font-size: 1.4rem;
+    border-radius:10px;
+    background:sandybrown;
+    -webkit-box-shadow: -5px 0px 25px 11px rgba(130,193,204,1);
+    -moz-box-shadow: -5px 0px 25px 11px rgba(130,193,204,1);
+    box-shadow: -5px 0px 25px 11px rgba(130,193,204,1);
+    
+}
+.disabled{
+    cursor: not-allowed;
+    
 }

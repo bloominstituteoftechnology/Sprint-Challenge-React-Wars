@@ -8,5 +8,5 @@ const StarCharsList = (props) =>{
             {props.info.map(item => <StarChars  key={item.created} obj={item}/> )}
         </div>
     )
-}
+} 
 export default StarCharsList;
