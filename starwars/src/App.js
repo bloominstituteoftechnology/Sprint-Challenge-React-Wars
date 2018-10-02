@@ -23,7 +23,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState([this.state.starwarsChars= data.results ]);
+        this.setState({starwarsChars: data.results });
+          console.log(this.state.starwarsChars)
       })
       .catch(err => {
         throw new Error(err);
