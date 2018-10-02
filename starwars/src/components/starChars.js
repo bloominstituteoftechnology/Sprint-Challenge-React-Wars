@@ -1,5 +1,8 @@
 import React from 'react';
 
 const StarChars =(props)=>{
-    return
+    return(
+        <div>{props.info}</div>
+    )
 }
+export default StarChars;
