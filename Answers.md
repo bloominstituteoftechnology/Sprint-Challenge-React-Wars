@@ -1,9 +1,9 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
-React JS is a framework created by Facebook engineers that is optimized for single page applications (like Facebook).  It features a virtual DOM and simplifies writing HTML by using a language called JSX.  JSX looks very close to Javascript but is not.  However, JSX allows developers to generate HTML dynamically at runtime by using a familiar syntax.
+  A:  React JS is a framework created by Facebook engineers that is optimized for single page applications (like Facebook).  It features a virtual DOM and simplifies writing HTML by using a language called JSX.  JSX looks very close to Javascript but is not.  However, JSX allows developers to generate HTML dynamically at runtime by using a familiar syntax.
 
-React is component-based (i.e. modular) in that components can encapsulate both logic and data.  In React's syntax data is referred to as 'state'.  States are contained within the component itself to avoid binding issues with 'this'.
+  React is component-based (i.e. modular) in that components can encapsulate both logic and data.  In React's syntax data is referred to as 'state'.  States are contained within the component itself to avoid binding issues with 'this'.
 
 2.  What does it mean to _think_ in react?  
 
