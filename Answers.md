@@ -5,7 +5,23 @@ React JS is a framework created by Facebook engineers that is optimized for sing
 
 React is component-based (i.e. modular) in that components can encapsulate both logic and data.  In React's syntax data is referred to as 'state'.  States are contained within the component itself to avoid binding issues with 'this'.
 
-2.  What does it mean to _think_ in react?
+2.  What does it mean to _think_ in react?  
+
+    A:  To _think_ in React means developing react apps in a manner that makes the code easily understandable to other and easy to maintain.  This is accomplished by following best practices that have been reduced to a series of steps:
+
+    1. Start with a mock.
+
+    2.  Break the UI into a Component hierarchy.
+
+    3.Build a static version with no interactivity.
+
+    4. Identify minimal representation of UI state.
+
+    5.  Identify where state should live.
+
+    6. Add Inverse data flow.
+
+    7.  Document your code.
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
@@ -16,6 +32,7 @@ React is component-based (i.e. modular) in that components can encapsulate both 
 
 
 4.  Describe state.
+    State is one or more mutable values used by the app.  These values are stored as an array of key/value pairs and accessed using JSX and array-specific methods.  It is common to use .map() and .filter() array methods to manipulate state.
 
 5.  Describe props.
-  A: Props is an abbreviation of 'properties' which are the attributes of an object.  Props are the 
+  A: Props is an abbreviation of 'properties' which are the attributes of an object.  Props are used to pass data from parent objects to children.  The dataflow is one way.  Props are immutable.  
