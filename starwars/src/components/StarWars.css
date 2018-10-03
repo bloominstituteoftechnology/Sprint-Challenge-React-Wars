@@ -25,4 +25,5 @@
 .character-card {
     display: flex;
     flex-wrap: wrap;
+    opacity: 0.8;
 }
