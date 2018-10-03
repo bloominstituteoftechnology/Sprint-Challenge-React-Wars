@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Character from './components/Character/Character';
+import CharacterCard from './components/CharacterCard/CharacterCard';
+
+import StarWarsChars from './StarWarsChars';
+// refactor to use CharacterCards and CharacterDetails
+
 class App extends Component {
   constructor() {
     super();
@@ -31,8 +37,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div className='App'>
+        <h1 className='Header'>REACTORS</h1>
+        <div className='Subheader'><h2>Characters from Science-Fiction and Super Hero Films</h2>
+        </div>
+        <div className='Card-row'>
+          <div className='Char-container'>
+        {this.state.starwarsChars.map(char => <StarWarsChars key={char.name} char={char} />)}
+          </div>
+        </div>
       </div>
     );
   }
