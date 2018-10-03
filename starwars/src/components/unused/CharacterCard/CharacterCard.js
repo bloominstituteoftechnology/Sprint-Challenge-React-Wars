@@ -1,4 +1,7 @@
-import React from "react";
+// CURRENTLY NOT USED
+// CharacterCard contains the elements that make up the presentation of the card object.  It should not contain item-specific elements (i.e. content that is being presented)
+
+import React from 'react';
 import {
   Card,
   CardHeader,
@@ -9,7 +12,7 @@ import {
   CardText,
   Button,
 } from "reactstrap";
-
+ 
 const StarWarsChars = props => {
   return (
     <Card key={props.char.name}>
@@ -69,4 +72,4 @@ const StarWarsChars = props => {
   );
 };
 
-export default StarWarsChars;
+ export default CharacterCard

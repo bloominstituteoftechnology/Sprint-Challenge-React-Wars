@@ -1,0 +1,26 @@
+/* DUPLICATE OF CharacterCard.css */
+
+/* On refactor separate concerns for Character-specific content from CharacterCard 
+
+Character.css
+Character image
+Character data
+  Species:
+  Gender:
+
+  Physical
+    Height: 96 | Mass: 32
+    Skin: 
+    Eyes: red | Hair: n/a
+
+  Demographics
+    Created: 2014-12-10T15:11:50.376000Z
+    Birth Year: 33BBY
+    Homeworld: https://swapi.co/api/planets/8/
+
+  Intel
+    Starships:
+    Vehicles:
+    Url: TestLink
+
+*/

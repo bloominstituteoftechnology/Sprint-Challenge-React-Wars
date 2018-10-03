@@ -1,4 +1,4 @@
-.Sub-Header {
+ .Sub-Header {
   margin: 10px 0px 0px;
   padding: 0px;
   font-size: 14pt;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 .Card-row {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
 	margin: 10px;
 	/* border: 1px solid #eee;
@@ -57,18 +57,4 @@
   height: 50px;
   padding: 20px;
   color: white;
-}
-
-.TestTextYellow {
-  background-color: rgb(182, 90, 90);
-  /* height: 14px;
-  padding: 20px; */
-  color: yellow;
-}
-
-.TestTextYellowGreen {
-  background-color: rgb(182, 90, 90);
-  /* height: 14px;
-  padding: 2px; */
-  color: yellowgreen;
-}
+} 
