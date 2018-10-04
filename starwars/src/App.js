@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import SSB from "./components/SSB";
+import SWCList from "./components/SWCList";
+import "./components/StarWars.css";
+import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      input: ""
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -29,12 +33,27 @@ class App extends Component {
       });
   };
 
+  onSearchChange = event => {
+    this.setState({
+      input: event.target.value
+    });
+  };
+
   render() {
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
-    );
+    const filteredChars = this.state.starwarsChars.filter(item => {
+      return item.name.toLowerCase().includes(this.state.input.toLowerCase());
+    });
+    if (this.state.starwarsChars.length === 0) {
+      return <h1>Loading...</h1>;
+    } else {
+      return (
+        <div className="App">
+          <h1 className="Header">React Wars</h1>
+          <SSB searchChange={this.onSearchChange} />
+          <SWCList list={filteredChars} />
+        </div>
+      );
+    }
   }
 }
 
