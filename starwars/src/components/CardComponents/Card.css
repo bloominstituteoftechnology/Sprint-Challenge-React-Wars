@@ -1,0 +1,11 @@
+/* All styles for your Card Components live here */
+
+.cardContainer {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+}
+
+.cardContainer p {
+    color: black;
+}
