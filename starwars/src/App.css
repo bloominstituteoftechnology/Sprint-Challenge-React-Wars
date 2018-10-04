@@ -1,8 +1,85 @@
-.App {
-  text-align: center;
-}
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-}
 /* write your parent styles in here for your App.js */
+
+.App {
+    text-align: center;
+}
+
+.Header {
+    margin-top: 30px;
+    font-size: 6rem;
+    color: #443e3e;
+    text-shadow: 1px 1px 8px #fff;
+}
+
+/* write your parent styles in here for your App.js */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.charList,
+.charData,
+.return {
+    color: #fff;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(23, 23, 23, 0.5);
+}
+
+.return {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+    color: white;
+}
+
+.return:hover {
+    background-color: black;
+}
+
+.card-wrapper {
+    background-color: rgba(23, 23, 23, 0.664);
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.charHeader {
+    color: rgb(223, 69, 69);
+    font-weight: bold;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.prev,
+.next {
+    font-size: 2.8rem;
+    background-color: black;
+    height: 60px;
+    width: 250px;
+    border: 2px solid rgb(51, 7, 252);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.prev:hover {
+    background-color: aqua;
+}
+
+.next:hover {
+    background-color: aqua;
+}
