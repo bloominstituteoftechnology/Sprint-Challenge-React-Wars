@@ -8,24 +8,24 @@
 
 ## Questions
 
-1.  What is React JS and what problems does it try and solve?
+1. What is React JS and what problems does it try and solve?
 
-1.  What does it mean to _think_ in react?
+1. What does it mean to _think_ in react?
 
-1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+1. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-1.  Describe state.
+1. Describe state.
 
-1.  Describe props.
+1. Describe props.
 
 ## Project
 
 - You're going to be building an application _starwars_ that consumes live data that we're retrieving across the world wide web!
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
-1.  **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
-1.  Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1.  Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+1. **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
+1. Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
+1. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
@@ -38,7 +38,6 @@
 - Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
 - For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
 - I suggest building **function over form** at first. Then take time to style your app after.
-- Feel free to integrate Bootstrap for styling. You can research the `react-strap` library and see what components are available for you if you'd like.
 
 ## Stretch Problems
 
