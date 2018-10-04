@@ -1,0 +1,33 @@
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: rgba(173, 216, 230, 0.8);
+  line-height: 2rem;
+  padding: 8px 16px;
+  margin: 12px;
+  border: 8px solid rgba(0, 102, 255, 0.8);
+  border-radius: 10px;
+}
+
+.character thead tr th {
+  width: 100%;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.character tr {
+  display: flex;
+  width: 100%;
+}
+
+.character tr th {
+  width: 50%;
+  text-align: left;
+}
