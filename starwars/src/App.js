@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList.js'
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -30,9 +32,11 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }
