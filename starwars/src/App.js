@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardList from "./components/CardList";
 import './App.css';
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
-
+  
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -29,10 +30,21 @@ class App extends Component {
       });
   };
 
+  addCard = () => {
+    this.setState({
+      starwarsChars:
+      [...this.state.starwarsChars,
+      {card: this.state.inputCard,
+        id: Date.now()
+      }]
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList cards={this.state.starwarsChars} />
       </div>
     );
   }
