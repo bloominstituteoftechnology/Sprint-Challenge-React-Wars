@@ -14,12 +14,12 @@
   background-size: cover; 
   margin:0 auto;
   width:100%;
-  height:105vh;
+  height:100vh;
 
 }
 
 .nav {
-  height: 30px;
+  height: 5px;
   /* background-image: url('https://wallpapercave.com/wp/gfwPusm.jpg') */
   background: black;
 }
@@ -30,7 +30,7 @@
   background: transparent;
   border: gray;
   padding: 15px 15px 15px 15px;
-  color: white;
+  color: #FFD700;
 } 
 @font-face {
   font-family: DeathStar;
