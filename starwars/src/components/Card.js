@@ -5,8 +5,8 @@ const Card = props => {
 
     return (
       <div className="profileCard">
-        <p>{props.name}</p>
-        <p>{props.birth_year}</p>
+        <p className="characterName">{props.name}</p>
+        <p> <span className="infoLabel">Date of Birth: </span>{props.birth_year}</p>
       </div>
     );
 }

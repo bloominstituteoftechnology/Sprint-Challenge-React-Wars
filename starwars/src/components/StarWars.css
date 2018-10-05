@@ -11,3 +11,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.characterName {
+    font-size: 20px;
+    font-weight: bold;
+    color:saddlebrown;
+}
+
+.infoLabel {
+    font-weight: bold;
+}
