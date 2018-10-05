@@ -3,7 +3,7 @@ import './StarWars.css'
 
 const Charecter = props => {
     return (
-        <div>
+        <div className='containerAll'>
             {props.data.map(item => {
                 return (
                 <div className='containerCard'>
@@ -14,6 +14,8 @@ const Charecter = props => {
                 <p className='colorKey'>Skin color: {item.skin_color}</p>
                 <p className='colorKey'>Created: {item.created}</p>
                 <p className='colorKey'>Edited: {item.edited}</p>
+                <p className='colorKey'>Height: {item.height}</p>
+                <p className='colorKey'>Mass: {item.mass}</p>
                 </div>)
             })}
         </div>

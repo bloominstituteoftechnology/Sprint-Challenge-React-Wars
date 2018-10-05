@@ -1,8 +1,17 @@
 .colorKey {
-    color: red;
+    color: white;
 }
 .containerCard {
     border: 1px solid white;
-    width: 30%;
+    width: 18%;
     margin: 0 auto;
+    text-shadow: 1px 1px 5px red;
+    margin-bottom: 2%;
+}
+.containerCard:hover {
+    box-shadow: 8px 10px #888888;
+}
+.containerAll {
+    display: flex;
+    flex-wrap: wrap;
 }
