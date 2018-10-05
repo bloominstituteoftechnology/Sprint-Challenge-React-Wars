@@ -34,7 +34,7 @@ class App extends Component {
       });
   };
 
-  nextCard = event => {
+  nextCard = () => {
     this.setState(
       prevState => ({ current: prevState.current + 1 }), 
       () => {
@@ -45,7 +45,7 @@ class App extends Component {
     );
   }
 
-  previousCard = event => {
+  previousCard = () => {
     this.setState(
       prevState => ({ current: prevState.current - 1 }), 
       () => {
