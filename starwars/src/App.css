@@ -1,8 +1,48 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-family: "fantasy";
 }
 /* write your parent styles in here for your App.js */
+
+.container {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+  border: 1px solid black;
+  width: 45%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.container p {
+  color: yellow;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.container h1 {
+  border-bottom: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  font-family: "fantasy";
+  margin-top: 25px;
+}
