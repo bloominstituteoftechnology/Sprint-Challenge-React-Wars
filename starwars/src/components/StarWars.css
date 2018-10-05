@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header {
+    font-size: 3.5rem;
+    background-color: darkslateblue;
+    color: white;
+}
+
+h2 {
+    font-size: 3.3rem;
+}
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.7rem;
+}
+.character {
+    background-color: lavender;
+    width: 400px;
+    margin: 20px;
+    border: 3px dashed sandybrown;
+}
+
+span {
+    font-weight: bold;
+}
