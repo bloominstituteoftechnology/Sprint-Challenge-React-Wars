@@ -20,6 +20,22 @@
   /* border-radius: 20px; */
   margin: 0 auto;
 }
+.list-container .shadow-top {
+  width: 200%;
+  height: 20px;
+  position: absolute;
+  top: 0%;
+  z-index: 5;
+  box-shadow: 0 4px 4px 0px #4d4d4d inset;
+}
+.list-container .shadow-left {
+  width: 20px;
+  height: 200%;
+  position: absolute;
+  z-index: 5;
+  box-shadow: 4px 0 4px 0px #4d4d4d inset;
+}
+
 .list-container .scroll-container {
   height: 70vh;
   max-height: 600px;
