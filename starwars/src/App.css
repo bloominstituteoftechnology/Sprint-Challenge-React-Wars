@@ -7,6 +7,11 @@
 }
 /* write your parent styles in here for your App.js */
 
+* {
+  font-family: 'Roboto Mono', sans-serif;
+  box-sizing: border-box;
+}
+
 .card {
   border: 2px solid rgba(161, 34, 34);
   border-radius: 15px;
