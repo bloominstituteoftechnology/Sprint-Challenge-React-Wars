@@ -1,6 +1,6 @@
 import React from 'react'
 import './StarWars.css'
-import Avatar from './Avatar';
+
 /*
 birth_year: "19BBY"
 created: "2014-12-09T13:50:51.644000Z"

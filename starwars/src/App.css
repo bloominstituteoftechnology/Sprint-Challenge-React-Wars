@@ -12,3 +12,36 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.pagination button{
+  margin: 10px;
+  padding: 5px 15px;
+  border: 1px solid beige;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.lds-circle {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: beige;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
