@@ -1,0 +1,52 @@
+.char-card-unclicked {
+  height: 50px;
+  width: 50%;
+  margin: 0 auto;
+  background: black;
+  border: 2px solid #fade37;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.char-card-unclicked p {
+  display: none;
+}
+
+.char-card-clicked {
+  height: 175px;
+  width: 50%;
+  margin: 0 auto;
+  background: black;
+  border: 2px solid #fade37;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.char-card-clicked p {
+  display: block;
+}
+
+.char-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  color: #fade37;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  width: 50%;
+  color: #fade37;
+  font-family: "Righteous", cursive;
+}
