@@ -53,8 +53,10 @@ class App extends Component {
             Next
           </button>
         </div>
-        <h1 className="Header">React Wars</h1>
-        <CharacterCaro characters={this.state.starwarsChars} />
+        <div className="content">
+          <h1 className="Header">React Wars</h1>
+          <CharacterCaro characters={this.state.starwarsChars} />
+        </div>
       </div>
     );
   }

@@ -4,18 +4,30 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
 }
 /* write your parent styles in here for your App.js */
 
-
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
 .buttons {
   position: fixed;
   display: flex;
-  top: 50px;
   width: 100%;
   justify-content: space-between;
+  height: 100%;
+}
+.buttons button {
+  width: 120px;
 }
 
 .character h1 {
   background-color: blue;
+  text-align: center;
+}
+
+.character:hover {
+  background-color: orange;
 }
