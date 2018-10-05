@@ -3,7 +3,7 @@ import "./StarWars.css";
 
 const StarWars = props =>
   props.characters.map(character => (
-    <div className="profile">
+    <div key={character.created} className="profile">
       <h2>{character.name}</h2>
       <ul>
         <li>Gender: {character.gender}</li>
