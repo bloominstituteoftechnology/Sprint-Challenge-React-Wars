@@ -9,45 +9,31 @@ const CardContainer = props => {
           <div className="character">
             <h2>{char.name}</h2>
             <p>
-              <span>
-                <strong>Gender:</strong>
-              </span>{" "}
+              <strong>Gender: </strong>
               {char.gender}
             </p>
             <p>
-              <span>
-                <strong>DOB:</strong>
-              </span>{" "}
+              <strong>DOB: </strong>
               {char.birth_year}
             </p>
             <p>
-              <span>
-                <strong>Height:</strong>
-              </span>{" "}
+              <strong>Height: </strong>
               {char.height}
             </p>
             <p>
-              <span>
-                <strong>Mass:</strong>
-              </span>{" "}
+              <strong>Mass: </strong>
               {char.mass}
             </p>
             <p>
-              <span>
-                <strong>Skin:</strong>
-              </span>{" "}
+              <strong>Skin: </strong>
               {char.skin_color}
             </p>
             <p>
-              <span>
-                <strong>Hair:</strong>
-              </span>{" "}
+              <strong>Hair: </strong>
               {char.hair_color}
             </p>
             <p>
-              <span>
-                <strong>Eyes:</strong>
-              </span>{" "}
+              <strong>Eyes: </strong>
               {char.eye_color}
             </p>
           </div>

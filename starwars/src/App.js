@@ -6,7 +6,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      picture: [
+        "luke.jpg",
+        "c3po.jpg",
+        "r2d2.jpg",
+        "vader.jpg",
+        "leia.jpg",
+        "lars.jpg",
+        "beru.jpg",
+        "r5d4.jpg",
+        "biggs.jpg",
+        "obi.jpg"
+      ]
     };
   }
 
@@ -31,13 +43,12 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.starwarsChars.map(char => char.name));
+    // console.log(this.state.starwarsChars.map(char => char.name));
     const starwars = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {/* <h1>{this.state.starwarsChars[0].name}</h1> */}
-        <CardContainer className="container" starwars={starwars} />
+        <CardContainer starwars={starwars} />
       </div>
     );
   }

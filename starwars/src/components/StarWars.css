@@ -1,21 +1,16 @@
-body {
-  background: #333;
-}
-
-.container {
+.card {
+  width: 70%;
+  opacity: 0.9;
+  margin: 30px auto;
+  padding: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.card {
-  width: 350px;
-  background: white;
-  opacity: 0.9;
-  margin: 30px auto;
-}
-
 .character {
-  margin: 40px auto;
+  background: white;
+  width: 300px;
+  margin: 40px;
   padding: 25px;
 }
