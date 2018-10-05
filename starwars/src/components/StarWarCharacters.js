@@ -3,12 +3,12 @@ import React from "react";
 const Characters = props => {
   return (
     <div className="individual">
-      <h1 className="bigName">{props.starwarsChars.name}</h1>
-      <p>{props.starwarsChars.gender}</p>
-      <p>{props.starwarsChars.height}</p>
-      <p>{props.starwarsChars.hair_color}</p>
-      <p>{props.starwarsChars.eye_color}</p>
-      <p>{props.starwarsChars.birth_year}</p>
+      <h1 className="bigName">{props.char.name}</h1>
+      <p>{props.char.gender}</p>
+      <p>{props.char.height}</p>
+      <p>{props.char.hair_color}</p>
+      <p>{props.char.eye_color}</p>
+      <p>{props.char.birth_year}</p>
     </div>
   );
 };
