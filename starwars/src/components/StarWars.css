@@ -1,0 +1,11 @@
+.card {
+    width: 150px;
+    background-color: darkgray;
+    color: gold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+li {
+    ist-style-type: none;
+}

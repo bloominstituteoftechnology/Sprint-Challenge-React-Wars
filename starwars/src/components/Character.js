@@ -1,8 +1,9 @@
 import React from 'react';
+import './StarWars.css';
 
 const Character = props => {
     return (
-        <div>
+        <div className="card">
             <h2>{props.char.name}</h2>
                 <ul>
                     <li>{props.char.birth_year}</li>
