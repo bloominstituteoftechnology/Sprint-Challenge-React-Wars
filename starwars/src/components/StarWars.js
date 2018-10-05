@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Time from './time';
+import UserProfile from './UserProfile';
+import PhysicalTraits from './PhysicalTraits';
 const StarWars= props =>{
     return(
         props.starwarsChars.map((item)=>{
@@ -11,6 +13,12 @@ const StarWars= props =>{
                     <Time 
                         created={item.created}
                         edited={item.edited}
+                    />
+                    <UserProfile 
+                        birthYear={item.birth_year}
+                        gender={item.gender}
+                        height={item.height}
+                        mass={item.mass}
                     />
                 </div>
             ) 
