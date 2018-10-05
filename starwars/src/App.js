@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+const Character = props => {
+  return (
+    <div className="characterList">
+      <h1>Testing: {props.starwarsChars} </h1>
+    </div>
+    
+  )
+}
+
+const Card = props => {
+  return <h1>Testing</h1>
+}
+
+
 class App extends Component {
   constructor() {
     super();
@@ -29,10 +44,27 @@ class App extends Component {
       });
   };
 
+  handleUpdateState = () => {
+    // clone state into our array, so as to not mutate the original
+    const starwarsChars = this.state.starwarsChars.slice();
+    console.log(starwarsChars);
+    // so then! update the state!
+    this.setState({ starwarsChars: starwarsChars });
+    {console.log(this.state.starwarsChars[0])}
+  };
+
+  
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Card />
+        {/* <button onClick={this.handleUpdateState}>ADD</button> */}
+        {this.handleUpdateState}
+        {this.state.starwarsChars.map(character => <h5>{character.name}</h5>)}
+        {console.log(this.state.starwarsChars)}
+        <Character />
       </div>
     );
   }
