@@ -1,0 +1,14 @@
+.character {
+  background: rgb(219, 219, 219);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.character h2 {
+  color: #443e3e;
+}
+
+.character p {
+  color: #443e3e;
+}
