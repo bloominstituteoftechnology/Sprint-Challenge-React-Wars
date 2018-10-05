@@ -11,7 +11,10 @@ const Card = (props) => {
             <p><strong>Skin Color</strong>: {props.char.skin_color}</p>
             <p><strong>Mass</strong>: {props.char.mass}-kg</p>
             <p><strong>Height</strong>: {props.char.height}-cm</p>
+            
         </div>
     )
  }
+
+ 
 export default Card;
