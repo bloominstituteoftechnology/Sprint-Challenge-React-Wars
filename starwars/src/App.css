@@ -3,8 +3,9 @@
   width: 100%;
   max-width: 700px;
   margin: 10px auto;
-  font-size: 2.6rem;
-  line-height: 4rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bold;
 }
 .Header {
   color: #443e3e;
@@ -12,3 +13,13 @@
 }
 /* write your parent styles in here for your App.js */
 
+.charList {
+  background: gray;
+}
+
+.return {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
