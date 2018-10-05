@@ -1,8 +1,33 @@
 .App {
   text-align: center;
+  max-width:1800px;
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.characters {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+}
+.Films {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+  flex-direction: row;
+}
+
+.Towns {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+}
+

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import Character from "./components/StarWarsCharacters";
+import HomeTowns from"./components/StarWarsPlanets";
+import Films from"./components/StarWarsFilms";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
-      homeNames: [],
-      species:[],
-
     };
   }
 
@@ -38,11 +37,22 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map(item => {
-          return(
-          <Character characterSet={item} />
-          )
-        }) }
+        <h1 className="Header">Characters</h1>
+        <div className="characters">
+          {this.state.starwarsChars.map(item => {
+            return(
+            <Character characterSet={item} />
+            )
+          }) }
+        </div>
+        <h1 className="Header">Planets</h1>
+        <div className="Towns">
+          <HomeTowns />
+        </div>
+        <h1 className="Header">Films</h1>
+        <div className="Films">
+          <Films />
+        </div>
       </div>
     );
   }

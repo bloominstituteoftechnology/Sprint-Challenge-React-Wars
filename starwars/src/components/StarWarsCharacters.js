@@ -8,7 +8,7 @@ class Character extends React.Component {
     render() {
         let props = this.props
         return(
-            <div class="box">
+            <div className="box">
                 <h1>{props.characterSet.name}</h1>
                 <p>Gender:{props.characterSet.gender}</p>
                 <p>Birth Year:{props.characterSet.birth_year}</p>

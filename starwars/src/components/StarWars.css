@@ -1,0 +1,47 @@
+ * {
+     font-family: 'Poller One', cursive;
+ }
+ 
+ p{
+    font-family: 'K2D', sans-serif;
+    font-size:20px;
+    color:#2d2c2b;
+ }
+
+ .box{
+     width:20%;
+     margin:0 auto;
+ }
+ .box h1 {
+     font-size:25px;
+ }
+
+ .hometown  {
+   display:flex;
+   flex-wrap:wrap;
+   margin: 0 auto;
+ }
+
+ .hometown h1 {
+     width:20%;
+     margin:0 auto;
+     padding: 10px 0px;
+ }
+
+ .films {
+     width: 33%;
+ }
+ .films h1 {
+    margin:0 auto;
+    padding: 10px 0px;
+ }
+
+ .filmbox {
+     width:100%;
+     display:flex;
+     flex-wrap:wrap;
+ }
+
+
+
+ 
