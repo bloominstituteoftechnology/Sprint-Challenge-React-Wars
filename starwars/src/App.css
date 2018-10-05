@@ -4,5 +4,19 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 10px;
 }
 /* write your parent styles in here for your App.js */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+button {
+  color: #443e3e;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 10px;
+}
