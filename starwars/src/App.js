@@ -67,7 +67,9 @@ class App extends Component {
             <ListChars chars={this.state.starwarsChars} 
               showCurrentChar={this.showCurrentChar} 
               showNextPage={this.showNextPage}
-              showPrevPage={this.showNextPage}
+              showPrevPage={this.showPrevPage}
+              nextPage={this.state.nextPage}
+              prevPage={this.state.prevPage}
             />
           </div>
         </div>
