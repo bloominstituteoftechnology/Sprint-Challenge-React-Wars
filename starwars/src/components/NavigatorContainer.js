@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigator from './Navigator'
+import './StarWars.css'
 
 const NavigatorContainer = ({ navigate, previous, next }) => (
   <div className="navigator-container">

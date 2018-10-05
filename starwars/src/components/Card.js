@@ -14,7 +14,7 @@ const Card = ({
   }
 }) => (
   <div className="card">
-    <p>{name}</p>
+    <h3>{name}</h3>
     <p>Born: {birth_year}</p>
     <p>Eye color: {eye_color}</p>
     <p>Gender: {gender}</p>
