@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
 import './App.css';
+import './components/StarWars.css';
+import CharComponents from './components/CharComponents';
 
 class App extends Component {
   constructor() {
@@ -10,6 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log('fetching api');
     this.getCharacters('https://swapi.co/api/people');
   }
 
@@ -33,6 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharComponents chars={this.state.starwarsChars} />
       </div>
     );
   }
