@@ -1,0 +1,15 @@
+.card-container {
+    display: grid;
+    grid: auto-flow dense / repeat(4, 1fr);
+    min-width: 800px;
+    margin: 0 auto;
+}
+.card-character {
+    background: rgba(255,255,255,0.8);
+    outline: 1px solid black;
+    margin: 10px;
+}
+.card-stats {
+    display: flex;
+    flex-direction: column;
+}
