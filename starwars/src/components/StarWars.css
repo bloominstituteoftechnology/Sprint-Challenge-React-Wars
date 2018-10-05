@@ -2,18 +2,24 @@ body {
   font-family: 'Russo One', sans-serif;
 }
 
+.Header {
+  font-size: 4rem;
+}
+
 .card-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
-  background: rgba(100, 100, 100, .3);
+  background: rgba(200, 200, 200, .6);
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   align-items: center;
   border: 4px double #F8D300;
 }
@@ -25,10 +31,13 @@ body {
 
 .char-name {
   font-size: 2rem;
+  text-shadow: -2px 2px 4px #f8d300;
 }
 
 .char-born {
+  font-size: .8rem;
   color: #444;
+  text-shadow: 0 0 2px #f8d300;
 }
 
 .char-attributes {
@@ -41,4 +50,5 @@ body {
   padding: 5px 0 10px;
   margin: 10px;
   border-bottom: 1px solid black;
+  text-shadow: 0 0 2px #f8d300;
 }
