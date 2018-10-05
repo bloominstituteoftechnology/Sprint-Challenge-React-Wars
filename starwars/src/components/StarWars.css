@@ -1,0 +1,20 @@
+.app-Wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text-style{
+    display: flex;
+    justify-content: center;
+}
+
+.text-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.star-container{
+    width: 25%;
+    height: 300px;
+}
