@@ -3,8 +3,12 @@ import React from "react";
 import "./Char.css";
 const Char = props => {
   return (
-    <div className="char-card" id={props.id}>
-      <h2>{props.charName}</h2>
+    <div
+      onClick={props.toggleClicked}
+      className={"char-card-" + props.clicked}
+      id={props.id}
+    >
+      <h2 id={props.id}>{props.charName}</h2>
 
       <div className={"char-info"}>
         <p>Gender: {props.charGender}</p>

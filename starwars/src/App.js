@@ -23,15 +23,39 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        //modified the data coming into state by adding a completed property on it
+        //to allow for toggling
+        let modArr = data.results;
+        modArr.forEach(element => {
+          element.clicked = "unclicked";
+        });
+
+        this.setState({ starwarsChars: modArr });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  toggleClicked = event => {
+    event.preventDefault();
+    let newArr = this.state.starwarsChars;
+    newArr.forEach(function(item) {
+      console.log(item.created);
+      console.log(event.target.id);
+      if (item.created == event.target.id) {
+        if (item.clicked === "unclicked") {
+          item.clicked = "clicked";
+        } else {
+          item.clicked = "clicked";
+        }
+      }
+    });
+
+    this.setState({ starwarsChars: newArr });
+  };
+
   render() {
-    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
@@ -39,6 +63,8 @@ class App extends Component {
           {this.state.starwarsChars.map(char => {
             return (
               <Char
+                toggleClicked={this.toggleClicked}
+                clicked={char.clicked}
                 id={char.created}
                 charName={char.name}
                 charGender={char.gender}

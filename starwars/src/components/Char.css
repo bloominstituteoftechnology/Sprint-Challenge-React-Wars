@@ -1,4 +1,4 @@
-.char-card {
+.char-card-unclicked {
   height: 175px;
   width: 40%;
   background: black;
@@ -8,6 +8,18 @@
   border-radius: 10px;
   opacity: 0.8;
 }
+
+.char-card-clicked {
+  height: 175px;
+  width: 40%;
+  background: black;
+  border: 2px solid #fade37;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
 .char-info {
   display: flex;
   flex-wrap: wrap;
