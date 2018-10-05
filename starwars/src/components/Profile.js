@@ -3,11 +3,23 @@ import "./Profile.css";
 
 const Profile = (props) => {
 
+        let propNames = Object.getOwnPropertyNames(props.profile);
+        let nonURL = Object.keys(props.profile).filter(item => item !== 'homeworld' )
+                                               .filter(item => item !== 'species' )
+                                               .filter(item => item !== 'films' )
+                                               .filter(item => item !== 'vehicles' )
+                                               .filter(item => item !== 'starships' )
+                                               .filter(item => item !== 'url' );
+        console.log(nonURL);
     return (
 
         <div>
-        {console.log(props.profile[0])}    
-        <p>{props.profile.birth_year}</p>
+        {nonURL.map(key => {
+            
+            return <p>{key}: {props.profile[key]}</p>
+            
+        })}   
+        
         </div>
 
        

@@ -35,6 +35,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        
+        <div class='container'></div>
         {this.state.starwarsChars.map((profile, index) => {
 
           return <Profile key={index} id={index} profile={profile} profileList={this.state.starwarsChars}/>
