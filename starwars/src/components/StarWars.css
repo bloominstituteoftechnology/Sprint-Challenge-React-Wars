@@ -1,51 +1,124 @@
 .Luke{
+    
     /* background-color: rgb(0, 162, 0); */
+    background-image: url("http://assets1.ignimgs.com/2018/02/21/lukeskywalker-1519252298974_1280w.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 6px rgb(21, 11, 159);
+    color: white;
+    height: 500px;
+    
 }
 
 .divide{
     margin-top: 25px;
+    height: 450px;
 }
 
 .display{
-    display: block;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90%;;
+
 }
 
-.display-block{
+.display-none{
     display: none;
 }
 
 .C-3PO{
-
+    background-image: url("https://i.ytimg.com/vi/jH_DT7ekFiA/maxresdefault.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(255, 111, 0);
+    height: 500px;
 }
 
 .R2-D2{
-
+    background-image: url("https://cdn.vox-cdn.com/thumbor/oDLHu2WB5XXZ3YTlpySjsaBUH1o=/89x0:988x599/1200x800/filters:focal(89x0:988x599)/cdn.vox-cdn.com/uploads/chorus_image/image/50377245/r2d2.0.0.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(78, 202, 236);
+    height: 500px;
 }
 
 .Darth{
-
+    background-image: url("http://digitalspyuk.cdnds.net/15/50/980x490/landscape-1449498579-darth-vader-star-wars.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(255, 0, 0);
+    height: 500px;
 }
 
 .Leia {
-
+    background-image: url("https://thenextissuepodcast.files.wordpress.com/2016/12/leia.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(255, 255, 255);
+    height: 500px;
 }
 
 .Owen{
-
+    background-image: url("http://www.followingthenerd.com/site/wp-content/uploads/uncle-owen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(69, 216, 74);
+    height: 500px;
 }
 
 .Beru{
-
+    background-image: url("https://d2juyu303oh9b6.cloudfront.net/image/2322a12f2fd0f833c55cf60e78a9ad56.jpg?&icq=80&sig=01f529b7174a7ba51884ae058163fce5");
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(255, 0, 149);
+    height: 500px;
 }
 
 .R5-D4{
-
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/001/727/465/large/paul-beards-r5-d4-final-preview-01.jpg?1451853235");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(245, 127, 127);
+    color: rgb(47, 7, 7);
+    height: 500px;
 }
 
 .Biggs{
-
+    background-image: url("https://pbs.twimg.com/media/Dbkfd0JW4AEbxiT.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px yellow;
+    height: 500px;
 }
 
 .Obi-Wan{
-
+    background-image: url("https://hicomm.bg/uploads/articles/201708/53255/mainimage-obi-uan-kenobi-shche-poluchi-sobstven-star-wars-film.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-shadow: 0px 1px 4px rgb(7, 230, 255);
+    height: 500px;
 }

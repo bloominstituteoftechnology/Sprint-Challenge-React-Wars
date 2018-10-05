@@ -13,20 +13,19 @@ const StarWarsMemes = props => {
             
 
             ><button onClick={()=>props.addNewClass(id)} className = "toggle-button">{star.name} </button>
-            <section className= {props.starToggle ? 'display-block': "display"}>
-            <div>height: {star.height}</div>
-            <div>mass: {star.mass}</div>
-            <div>hair color: {star.hair_color}</div>
-            <div>skin color: {star.skin_color}</div>
+            <section className= {props.starToggle ? 'display-none' : "display"}>
+            <div>Height: {star.height}</div>
+            <div>Mass: {star.mass}</div>
+            <div>Hair Color: {star.hair_color}</div>
+            <div>Skin Color: {star.skin_color}</div>
             <div>Eye Color: {star.eye_color}</div>
-            <div>gender: {star.gender}</div>
+            <div>Gender: {star.gender}</div>
             <div>Birth Year: {star.birth_year}</div>
             <div>Date Created: {star.created}</div>
             <div>Edited: {star.edited}</div>
-            <div>Home World: {star.homeworld}</div>
-            <div>Species: {star.species}</div>
-            <div>Starships: {star.starships}</div>
-            <div>Vehicles: {star.vehicles}</div>
+            
+            
+
             </section>
             </div>
             

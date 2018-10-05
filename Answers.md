@@ -4,7 +4,7 @@
 It solves the problem of slow rendering when multiple users are interacting with a website. The state of the DOM tree structure is stored and replaced, instead of having the page refresh multiple times.
 
 1.  What does it mean to _think_ in react?
-It means to break down a website into functional components.
+It means to break down a website into discrete components.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
