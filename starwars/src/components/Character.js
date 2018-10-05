@@ -6,18 +6,15 @@ function Character(props) {
     // console.log(keys);
     const values = Object.values(props.characterData);
     // console.log(values);
-    
-        for (let i=0; i<keys.length; i++) {
-            console.log(<div>`${keys[i]}:${values[i]}`</div>) ;
-        }
-    
-    
-    
+     
     return (
         <div className="character">
-            <Factoid key={}
+           {keys.map(key => {
+              return <div className="datum">{key}: {props.characterData[key]}</div>
+           })}
         </div>
     )
 }
 
 export default Character;
+
