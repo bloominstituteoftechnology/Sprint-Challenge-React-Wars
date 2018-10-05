@@ -45,4 +45,9 @@
   margin: 0 auto;
   font-family: "fantasy";
   margin-top: 25px;
+  text-shadow:
+  -1px -1px 0 yellow,
+  1px -1px 0 yellow,
+  -1px 1px 0 yellow,
+  1px 1px 0 yellow;
 }
