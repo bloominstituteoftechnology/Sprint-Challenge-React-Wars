@@ -12,3 +12,11 @@
     width: 350px;
     height: 350px;
 }
+
+li {
+    background-color: red;
+    margin: 15px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}

@@ -6,11 +6,7 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
-.nextButton {
-}
 
-.prevButton {
-}
 
 .buttons {
   position: fixed;
@@ -18,4 +14,8 @@
   top: 50px;
   width: 100%;
   justify-content: space-between;
+}
+
+.character h1 {
+  background-color: blue;
 }
