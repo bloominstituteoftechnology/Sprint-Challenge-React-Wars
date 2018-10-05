@@ -6,3 +6,28 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.cardlist{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.cards {
+  background-color: rgba(255, 255, 255, 0.781);
+  margin: 20px;
+  width: 40%;
+  text-align: left;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  text-decoration-line: underline;
+}
+.listItem {
+  padding: 0px 0px 0px 20px;
+  font-size: 18px;
+}

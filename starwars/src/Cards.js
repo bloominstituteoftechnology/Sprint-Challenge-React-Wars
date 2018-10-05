@@ -3,14 +3,14 @@ import React from 'react';
 const Cards = props => {
     return (
         <div className = 'cards'>
-            <ul>
-                <h3> {props.data.name}</h3>
-                    <li>Gender: {props.data.gender}</li>
-                    <li>Hair Color: {props.data.hair_color}</li>
-                    <li>Eye Color: {props.data.eye_color}</li>
-                    <li>Height: {props.data.height}</li>
-                    <li>Skin Color: {props.data.skin_color}</li>
-            </ul>
+           
+                <h2 className = 'title'> {props.data.name}</h2>
+                    <p className = 'listItem'>Gender: {props.data.gender}</p>
+                    <p className = 'listItem'>Hair Color: {props.data.hair_color}</p>
+                    <p className = 'listItem'>Eye Color: {props.data.eye_color}</p>
+                    <p className = 'listItem'>Height: {props.data.height}</p>
+                    <p className = 'listItem'>Skin Color: {props.data.skin_color}</p>
+            
         </div>
     )
 }
