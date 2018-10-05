@@ -6,6 +6,31 @@
 
 
 .characterCard {
-  border: 3px yellow dashed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
   background: white;
+  margin: 25px 0;
+}
+
+.headline {
+  background: lightgray;
+  width: 100%;
+  height: 50px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  
+}
+
+.stats p {
+  margin: 0 3%;
 }

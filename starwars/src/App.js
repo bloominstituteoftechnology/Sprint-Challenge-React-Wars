@@ -6,12 +6,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      homeWorld: []
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  getHomeworld = () => {
+    let luke = this.state.starwarsChar;
+    console.log(luke)
   }
 
   getCharacters = URL => {
@@ -30,11 +36,13 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
       <div className="App">
+      {this.getHomeworld()}
         <h1 className="Header">Chad Jemmett's React Wars</h1>
-        <CardContainer starwarsChars={this.state.starwarsChars} />
+        <CardContainer starwarsChars={this.state.starwarsChars} getCharacters={this.getCharacters} />
       </div>
     );
   }

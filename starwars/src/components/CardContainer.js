@@ -4,10 +4,13 @@ import React from 'react';
 const CardContainer= props => {
   return (
       <div className='cardContainer'>
-        this is the card container
         {
           props.starwarsChars.map((item, idx) => {
-            return <CharacterCard key={idx} character={item}/>
+            return <CharacterCard 
+                    key={idx} 
+                    character={item} 
+                    getCharacters={props.getCharacters}
+                    />
           })
         }
       </div>
