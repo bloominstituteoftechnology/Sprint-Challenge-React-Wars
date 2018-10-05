@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Person from './components/Person';
 
 class App extends Component {
   constructor() {
@@ -29,10 +30,23 @@ class App extends Component {
       });
   };
 
+  
+
+  renderList = () => {
+    if (this.state.starwarsChars.length > 0) {
+      return (
+        <div className="list-container">
+          {this.state.starwarsChars.map((item, i) => <Person info={item} key={i}/>)}
+        </div>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.renderList()}
       </div>
     );
   }
