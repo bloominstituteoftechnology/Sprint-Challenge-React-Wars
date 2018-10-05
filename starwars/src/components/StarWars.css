@@ -1,5 +1,6 @@
 .character {
-  background: rgb(219, 219, 219);
+  background: #E6DAC9;
+  box-shadow: 1px 1px 1px 0px #4d4d4d;
   padding: 20px;
   border-radius: 20px;
   margin: 20px;
