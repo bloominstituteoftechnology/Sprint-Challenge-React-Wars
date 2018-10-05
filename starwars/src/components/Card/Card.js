@@ -9,8 +9,20 @@ const Card = props =>{
         <div className='card'>
             <div className='card-header'>{props.character.name}</div>
             <div className='card-body'>
+                <p className='card-body-header'>Url:</p><p className='card-body-detail'>{props.character.url}</p>
+                <br></br>
                 <p className='card-body-header'>Home World:</p><p className='card-body-detail'>{props.character.homeworld}</p>
                 <br></br>
+                <p className='card-body-header'>Species:</p>
+                <div>
+                    {
+                        props.character.species.map((element,index) =>{
+                            return (
+                                <p key={index} className='card-body-subdetail'>{element}</p>
+                            )
+                        })
+                    }                
+                </div>
                 <p className='card-body-header'>Birth Year:</p><p className='card-body-detail'>{props.character.birth_year}</p>
                 <br></br>
                 <p className='card-body-header'>Height:</p><p className='card-body-detail'>{props.character.height}</p>
@@ -18,10 +30,10 @@ const Card = props =>{
                 <p className='card-body-header'>Films:</p>
                 <div>
                     {
-                        props.character.films.map(element =>{
+                        props.character.films.map((element,index) =>{
                             return (
 
-                                <p className='card-body-subdetail'>{element}</p>
+                                <p key={index} className='card-body-subdetail'>{element}</p>
                                 
                             )
                         })
@@ -30,10 +42,9 @@ const Card = props =>{
                 <p className='card-body-header'>Starships:</p>
                 <div>
                     {
-
-                        props.character.starships.map(element =>{
+                        props.character.starships.map((element,index) =>{
                             return (
-                                <p className='card-body-subdetail'>{element}</p>
+                                <p key={index} className='card-body-subdetail'>{element}</p>
                             )
                         })
                     }                

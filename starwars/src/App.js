@@ -40,9 +40,9 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <div className='app-cards-container'>
           {
-            this.state.starwarsChars.map(element => {
+            this.state.starwarsChars.map((element,index) => {
               return (
-                <CardContainer character={element}/>
+                <CardContainer key={index} character={element}/>
               )
             }) 
           }
