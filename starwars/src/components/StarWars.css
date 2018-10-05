@@ -1,0 +1,13 @@
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card {
+    background-color:#ecf0f1;
+    border: 2px solid #bdc3c7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 15%;
+    margin: 20px 2.3%;
+}
