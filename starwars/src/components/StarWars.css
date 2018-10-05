@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    background-color: grey;
+    opacity: .9;
+    height: 400px;
+    max-width: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    display:flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    opacity: .9;
+    border-radius: 5px;
+    width: 100%;
+    margin: 2px;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 28%;
+}
+
+.stats p{
+    width: 80%;
+    margin:0;
+}
