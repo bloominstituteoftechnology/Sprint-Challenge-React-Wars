@@ -1,8 +1,28 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.list-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 70vh;
+  max-height: 600px;
+  overflow: hidden;
+  background: rgb(230, 230, 230);
+  border: 5px inset;
+  /* border-radius: 20px; */
+  margin: 0 auto;
+}
+.list-container .scroll-container {
+  height: 70vh;
+  max-height: 600px;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
