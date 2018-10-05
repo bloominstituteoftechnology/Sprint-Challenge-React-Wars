@@ -1,7 +1,8 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
-   
+    React is a library used to build UI.
+
     React was built to handle large amount of user data at scale, parse that data and display it back to the user in ways where they can interact with it in a way that is much higher performing than methods used in the past.
 
 
@@ -13,7 +14,7 @@
     How to transfer data through your app.
     Thinking about building UI.
     Thinking about how to make data useful to a user.
-
+    What data needs to change? What data needs to be managed in state?
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 A class/stateful component is the "smart" component. It controls the data or "state" in your app. It is also often called the data management center for your app. All data flows to your other components from here.
@@ -21,8 +22,8 @@ A class/stateful component is the "smart" component. It controls the data or "st
 A functional presentational component receives data from your Class component and displays that data back to the user in useful ways, these components also hold the style or "look" of your app.
 
 1.  Describe state.
-State is the data that you store on your app.
+State is the data that you store on your app, it is dynamic and it can change.
 
 
 1.  Describe props.
-Props is state data that is passed to child and grandchild componeents.
+Props is data or methods that is passed to child and grandchild components that are read-only.

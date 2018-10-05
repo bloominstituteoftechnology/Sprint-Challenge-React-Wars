@@ -1,21 +1,26 @@
 .cardContainer {
-    
-    width: 100%;
+    width: 80%;
+    -ms-flex-align: center;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0 auto;
-    
     
    
 }
 
 .cardList {
-   
-    width: 100%;
+    width: 30%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-align: start;
     align-items: flex-start;
-    margin: 20px auto;
-    background-color: rgba(0, 0, 0, 0.7)
+    margin: 1%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 1%;
     
 }
 
