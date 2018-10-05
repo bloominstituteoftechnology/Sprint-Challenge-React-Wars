@@ -4,9 +4,9 @@ import StarWars from "./StarWars";
 const StarWarsList = props => {
   return (
     <div>
-      {props.data.map(x => {
+      {props.data.map((x, index) => {
         return (
-          <StarWars data={x} />
+          <StarWars data={x} key={index}/>
         )
       })}
     </div>
