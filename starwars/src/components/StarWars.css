@@ -12,6 +12,20 @@
     
 }
 
+.toggle-button{
+    
+    width: 100px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.toggle-button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+
 .divide{
     margin-top: 25px;
     height: 450px;
@@ -23,7 +37,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 90%;;
+    height: 90%;
+    transition-property: all;
+    transition: 1s;
+    opacity: 100%;
+
+    
 
 }
 
