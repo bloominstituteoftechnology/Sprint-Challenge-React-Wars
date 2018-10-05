@@ -16,8 +16,8 @@
   width:100%;
   height:100vh;
 
-}
 
+}
 .nav {
   height: 5px;
   /* background-image: url('https://wallpapercave.com/wp/gfwPusm.jpg') */
@@ -46,7 +46,6 @@
   width: 100%;
   height: 600px;
   background-image: url(' https://media.giphy.com/media/xTiQyKnqAjwCJ2vdUQ/giphy.gif ');
- 
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -114,3 +113,29 @@
   font-family: 'DeathStarOutlines';
   
 }
+/* 
+@media screen and (max-width: 600px) {
+  .header{
+    width: 550px
+  }
+
+  img {
+    width: 200px; 
+   height: 200px;
+  }
+
+  .in-between {
+    width: 550px
+
+  }
+
+  .nav {
+    width: 600px
+  }
+
+  .hamburger {
+    margin: 5px 10px 0px 550px;
+
+  }
+
+} */
