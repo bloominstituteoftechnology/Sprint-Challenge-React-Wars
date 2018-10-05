@@ -9,6 +9,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      next: '',
+      previous: '',
       starwarsChars: []
     };
   }
