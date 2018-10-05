@@ -6,7 +6,6 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
   font-size: 4rem;
-  border: 1px solid blue;
   width: 100%;
   justify-content: center;
   display: flex;
@@ -16,25 +15,24 @@
 
 .allstarwarscards{
   display: flex;
-  width: 100%;
+  max-width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid orange;
 }
 
 .starwarCard{
-  border: 1px solid blue;
   margin: 10px 10% 0 10%;
   padding: 10px 5% 10px 5%;
   background-color: #fff;
-  opacity: .6;
+  opacity: .4;
   width: 30%;
 }
 
 .starwarCard:hover{
   opacity: 1;
-  background-image: url(https://secure.img1-ag.wfcdn.com/im/43241737/resize-h600-w600%5Ecompr-r85/1717/17178453/Star+Wars+Luke+Skywalker+Cutout+Wall+Decal.jpg);
+  background-image: url(http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/star-wars-new-trilogy-rian-johnson.jpg?itok=zdfNe0BM);
+  color: white;
 }
 
 .starwarCard h2{

@@ -9,11 +9,12 @@ an user interface broken into components that are/can be reused
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+Class/Stateful components handle the data/methods/updates to the presentational component. The presentational component handles the layout and what the user interacts with. 
 
 1.  Describe state.
 
-heart
+The heart of the component. Data that components need and the ability of components to have update/access data which needs to be displayed. 
 
 1.  Describe props.
 
-blood
+blood of the component. They take information from the state and bring it to each part of the component so the information can be rendered. 
