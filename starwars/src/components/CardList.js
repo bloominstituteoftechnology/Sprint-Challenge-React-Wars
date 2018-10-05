@@ -8,6 +8,9 @@ const CardList = props => {
             {props.starwarsChars.map(item => {
                 return <Card character={item} />
             })}
+            {props.starwarsChars2.map(item => {
+                return <Card character={item} />
+            })}
         </div>
     );
 }
