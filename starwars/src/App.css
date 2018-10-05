@@ -1,8 +1,16 @@
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-image: url("https://images.pond5.com/star-wars-hyperspace-travel-60fps-footage-070361406_iconl.jpeg");
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 70px;
+  border-bottom: 5px solid grey;
+  padding-bottom: 3%;
 }
-/* write your parent styles in here for your App.js */
