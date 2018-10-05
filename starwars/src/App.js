@@ -12,10 +12,6 @@ const Character = props => {
   )
 }
 
-const Card = props => {
-  return <h1>Testing</h1>
-}
-
 
 class App extends Component {
   constructor() {
@@ -51,7 +47,6 @@ class App extends Component {
     console.log(starwarsChars);
     // so then! update the state!
     this.setState({ starwarsChars: starwarsChars });
-    {console.log(this.state.starwarsChars[0])}
   };
 
   
