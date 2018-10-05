@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+
+
+const Character = props => {
+  return (
+    <div className="characterList">
+      <h1>Testing: {props.starwarsChars} </h1>
+    </div>
+    
+  )
+}
+
 
 class App extends Component {
   constructor() {
@@ -29,10 +41,21 @@ class App extends Component {
       });
   };
 
+  handleUpdateState = () => {
+    // clone state into our array, so as to not mutate the original
+    const starwarsChars = this.state.starwarsChars.slice();
+    console.log(starwarsChars);
+    // so then! update the state!
+    this.setState({ starwarsChars: starwarsChars });
+  };
+
+  
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList characters={this.state.starwarsChars} />
       </div>
     );
   }

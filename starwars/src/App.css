@@ -4,5 +4,44 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 100px;
 }
 /* write your parent styles in here for your App.js */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.characterCard {
+  border: 3px solid #000;
+}
+
+.characterName {
+  font-family: 'Press Start 2P';
+  font-size: 30px;
+}
+
+.characterInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.characterDetailList {
+  list-style: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.characterDetail {
+  text-transform: uppercase;
+}
+
+.characterDetailAnswer {
+  font-weight: 400;
+  text-transform: lowercase;
+}
