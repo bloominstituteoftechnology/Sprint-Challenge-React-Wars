@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Profile from './components/Profile.js';
 
+const obj = {a: 1, b: 1, c: 1};
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +35,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((profile, index) => {
+
+          return <Profile key={index} id={index} profile={profile} profileList={this.state.starwarsChars}/>
+
+        })}
+        
       </div>
     );
   }
