@@ -1,0 +1,24 @@
+//1.What is React JS and what problems does it try and solve?
+    // It helps on developers by giving them tools to make more dynamic
+    // and reusable components and makes the data flow within the whole app more
+    // transparent
+
+
+//2.What does it mean to think in react?
+    // Thinking in react is working with the state and just passing
+    // down the data through props with components.
+
+// 3.Briefly describe some of the differences
+//   between a Class/Stateful component and a 
+//   Functional/Presentational component.
+
+// Class/Stateful Components are meant to hold data for the components and manage the state.
+//While Functional/Presentational components are meant to show the data
+//  and get the data as props from the state
+
+//4. Describe state.
+// State is a object on our components that holds data later on to be managed and displayed.
+
+// 5.Describe props.
+// Props are datasets in react used to access data in the state by
+// Key-value pair in the components to make it dynamic and reusable.
