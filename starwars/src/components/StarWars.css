@@ -1,0 +1,15 @@
+.character {
+  background: #E6DAC9;
+  box-shadow: 1px 1px 1px 0px #4d4d4d;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.character h2 {
+  color: #443e3e;
+}
+
+.character p {
+  color: #443e3e;
+}

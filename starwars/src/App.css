@@ -1,8 +1,42 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.list-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 70vh;
+  max-height: 600px;
+  overflow: hidden;
+  background: rgb(250, 250, 250);
+  margin: 0 auto;
+}
+.list-container .shadow-top {
+  width: 200%;
+  height: 20px;
+  position: absolute;
+  top: 0%;
+  z-index: 5;
+  box-shadow: 0 4px 4px 0px #4d4d4d inset;
+}
+.list-container .shadow-left {
+  width: 20px;
+  height: 200%;
+  position: absolute;
+  z-index: 5;
+  box-shadow: 4px 0 4px 0px #4d4d4d inset;
+}
+
+.list-container .scroll-container {
+  height: 70vh;
+  max-height: 600px;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
