@@ -7,6 +7,7 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   font-family: Star Jedi;
+  cursor: default;
 }
 
 .container h1 {
@@ -16,6 +17,7 @@ html {
   letter-spacing: 3px;  
   width: 100%;
   margin-bottom: 0;
+  opacity: .7;
 }
 .Header {
   color: #443e3e;
@@ -66,7 +68,7 @@ button:hover {
   border: 1px solid black;
   border-radius: 5px;
   border: 1px solid white;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .character:hover {
