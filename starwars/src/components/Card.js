@@ -10,7 +10,7 @@ const Card = props => {
     birth_year,
     gender,
     mass,
-    homeworld,
+    // homeworld,
   } = props.character;
 
   return (

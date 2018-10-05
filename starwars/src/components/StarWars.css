@@ -5,6 +5,25 @@
   padding: 3% 5%;
 }
 
+.card-container button {
+  font-size: 3rem;
+  width: 15%;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin: 0 10%;
+
+
+}
+
+.card-container button:focus {
+  outline: none;
+}
+
+.card-container .next {
+  justify-self: end;
+}
+
 .card {
   background: #DCAA6D;
   display: flex;
@@ -39,7 +58,7 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2%; 
+  padding: 2%;
 }
 
 .card .details p {
@@ -47,4 +66,8 @@
   width: 40%;
   padding: 1%;
 
+}
+
+.empty {
+  color: gray; 
 }
