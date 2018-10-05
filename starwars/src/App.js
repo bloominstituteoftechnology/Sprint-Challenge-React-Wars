@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Card from "./components/Card";
+import CardCollection from "./components/CardCollection";
 
 class App extends Component {
   constructor() {
@@ -37,8 +37,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <h1 className="Header">React Wars</h1>
-          <h2>{JSON.stringify(this.state.starwarsChars[this.state.current].name)}</h2>
-          <Card info={this.state.starwarsChars[this.state.current]} />
+          <CardCollection info={this.state.starwarsChars} />
         </div> {/* Container */}
       </div> // App 
     );
