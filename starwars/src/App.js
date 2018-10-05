@@ -16,6 +16,12 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+    for (let i = 0; i < this.state.starwarsChars.length; i++) {
+      let imgFilename = `./images/char${i}.jpg`;
+      const copy = this.state.starwarsChars.slice();
+      copy[i].image = imgFilename;
+      this.setState({ starwarsChars: copy });
+    }
   }
 
   getCharacters = URL => {
