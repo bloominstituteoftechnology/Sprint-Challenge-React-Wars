@@ -150,7 +150,7 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   font-size: 1.6rem;
   font-weight: 300;
 }

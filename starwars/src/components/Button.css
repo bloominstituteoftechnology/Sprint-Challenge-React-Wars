@@ -1,0 +1,10 @@
+.Button {
+  width: 25%;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  font-family: inherit;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}

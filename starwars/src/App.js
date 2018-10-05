@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/Card';
+import Button from './components/Button';
 
 class App extends Component {
   constructor() {
@@ -52,8 +53,16 @@ class App extends Component {
         {this.state.starwarsChars.map((character, i) => {
           return <Card character={character} key={i} />;
         })}
-        <button onClick={this.handleButtonClick}>prev</button>
-        <button onClick={this.handleButtonClick}>next</button>
+        <Button
+          handleButtonClick={this.handleButtonClick}
+          name="prev"
+          disabled={!this.state.previous}
+        />
+        <Button
+          handleButtonClick={this.handleButtonClick}
+          name="next"
+          disabled={!this.state.next}
+        />
       </div>
     );
   }
