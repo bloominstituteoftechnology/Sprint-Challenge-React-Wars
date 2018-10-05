@@ -5,3 +5,9 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.card-section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
