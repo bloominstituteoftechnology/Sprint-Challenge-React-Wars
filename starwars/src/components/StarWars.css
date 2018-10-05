@@ -43,7 +43,7 @@
 
 @media (max-width: 650px) {
   .char-container {
-    flex-basis: calc(90% - 14px);
+    flex-basis: calc(100% - 14px);
     margin: 10px auto;
   }
   .star-wars-container {
