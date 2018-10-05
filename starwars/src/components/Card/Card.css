@@ -1,10 +1,7 @@
 
 
 .card{
-    min-height:400px;
-    min-width: 300px;
-    padding-left:15px;
-    padding-right:15px;
+    margin-bottom:30px;
 }
 .card-header{
     background: #172E59;

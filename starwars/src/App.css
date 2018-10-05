@@ -62,12 +62,24 @@ html{
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size:5rem;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 
 .app-cards-container{
-  max-width: 1024px;
+  max-width: 500px;
   margin:0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-background{
+  width: 100vw;
+  font-family: sans-serif;
+  background: url('./sw-bg.jpg');
+  background-repeat:repeat-y;
+  background-position: center;
 
 }

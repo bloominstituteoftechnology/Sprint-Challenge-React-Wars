@@ -36,17 +36,16 @@ class App extends Component {
 
     return (
       <div className="App">
-        
-        <h1 className="Header">React Wars</h1>
-        <div className='app-cards-container'>
-          {
-            this.state.starwarsChars.map((element,index) => {
-              return (
-                <CardContainer key={index} character={element}/>
-              )
-            }) 
-          }
-            
+        <div className='app-background'>
+          <div className='app-cards-container'>
+            {
+              this.state.starwarsChars.map((element,index) => {
+                return (
+                  <CardContainer key={index} character={element}/>
+                )
+              }) 
+            }
+          </div>
         </div>
       </div>
     );
