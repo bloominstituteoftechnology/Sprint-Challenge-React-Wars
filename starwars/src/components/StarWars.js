@@ -7,7 +7,7 @@ const StarWarsContainer = (props) => {
         <div className='characterList'>
         {props.characters.map(char => {
             return(
-                <character={char}
+                <CharacterCard character={char}
                 key={char.created} />
             )
         })}
