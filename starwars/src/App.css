@@ -20,5 +20,6 @@ body{
 }
 .card{
   background:rgba(250, 202, 31, 0.5);
-  width:50%;
+  width:40%;
+  border-bottom:2px solid rgba(0, 0, 0, 0.37);
 }
