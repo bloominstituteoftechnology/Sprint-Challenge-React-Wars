@@ -31,10 +31,11 @@ class App extends Component {
   };
 
   render() {
+    // console.log(nameArray);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card />
+        <Card data={this.state.starwarsChars} />
       </div>
     );
   }
