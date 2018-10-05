@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardContainer from './components/CardComponents/CardContainer.js'
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -29,10 +30,14 @@ class App extends Component {
       });
   };
 
+  
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardContainer swData={this.state.starwarsChars}/>
+        {console.log(this.state.starwarsChars)}
       </div>
     );
   }

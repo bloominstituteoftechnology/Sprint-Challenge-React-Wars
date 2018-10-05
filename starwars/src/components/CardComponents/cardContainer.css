@@ -1,0 +1,30 @@
+.cardContainer {
+    
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+   
+}
+
+.cardList {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7)
+    
+}
+
+.cardList p {
+    margin: 3px 0;
+    color: white;
+    font-size: 15px;
+}
+
+.cardList h1 {
+    color: white;
+}

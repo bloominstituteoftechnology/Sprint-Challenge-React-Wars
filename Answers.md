@@ -25,4 +25,4 @@ State is the data that you store on your app.
 
 
 1.  Describe props.
-Props is state data that is passed to child and grandchild components.
+Props is state data that is passed to child and grandchild componeents.
