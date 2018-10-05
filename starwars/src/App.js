@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
 
 
 const Character = props => {
@@ -59,12 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card />
-        {/* <button onClick={this.handleUpdateState}>ADD</button> */}
-        {this.handleUpdateState}
-        {this.state.starwarsChars.map(character => <h5>{character.name}</h5>)}
-        {console.log(this.state.starwarsChars)}
-        <Character />
+        <CharacterList characters={this.state.starwarsChars} />
       </div>
     );
   }

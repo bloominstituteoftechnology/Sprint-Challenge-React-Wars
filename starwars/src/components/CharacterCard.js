@@ -1,5 +1,5 @@
 import React from 'react';
-import CharacterInfomation from './CharacterInformation.js';
+import CharacterInformation from './CharacterInformation.js';
 
 const CharacterCard = (props) => {
   return (
