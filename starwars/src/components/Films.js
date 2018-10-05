@@ -1,13 +1,7 @@
 import React from 'react'
 
 const Films = (props) => {
-  return (
-    props.characters.map((film) => {
-      return (
-        {props.profil}
-      )
-    })
-  )
+  return <div>{props.profile.films}</div>
 }
 
 export default Films

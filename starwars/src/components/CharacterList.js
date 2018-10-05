@@ -4,6 +4,7 @@ import BirthYear from './BirthYear'
 import Created from './Created'
 import Edited from './Edited'
 import EyeColor from './EyeColor'
+import Films from './Films'
 import Gender from './Gender'
 
 
@@ -17,6 +18,7 @@ const CharacterList = props => {
           <Created profile={profile}/>
           <Edited profile={profile} />
           <EyeColor profile={profile} />
+          <Films profile={profile} />
           <Gender profile={profile}/>
         </p>
 
