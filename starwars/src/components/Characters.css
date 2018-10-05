@@ -1,0 +1,48 @@
+.character-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.character-card {
+    transition: 0.5s;
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 20px 40px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.character-card * {
+    margin: 10px 0;
+}
+
+hr {
+    width: 50%;
+    border-color: black;
+}
+
+.character-name {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.birthyear-gender {
+    width: 50%;
+}
+
+.stats {
+    margin: 0 10px;
+    width: 30%;
+}
+
+span {
+    color: #AAA;
+}
