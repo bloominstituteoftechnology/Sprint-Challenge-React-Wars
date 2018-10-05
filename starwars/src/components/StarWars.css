@@ -8,3 +8,11 @@
   margin: 10px 300px;
   background-color: #b5653f;
 }
+
+.char-components {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
