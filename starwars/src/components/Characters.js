@@ -3,7 +3,7 @@ import Character from "./Character";
 import "./StarWars.css";
 
 const Characters = ({ chars }) => (
-  <div className="characters">
+  <div className="Characters">
     {chars.map((char, index) => (
       <Character key={index} data={char} />
     ))}
