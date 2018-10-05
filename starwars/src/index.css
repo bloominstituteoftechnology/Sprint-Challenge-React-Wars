@@ -2,15 +2,4 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
-.container {
-  margin: 0 auto;
-  max-width: 1024px;
-  font-family: sans-serif;
 
-}
-h1 {
-  text-align: center;
-}
-.profile {
-  background: #ffffff;
-}

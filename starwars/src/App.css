@@ -1,8 +1,35 @@
-.App {
-  text-align: center;
-}
-.Header {
+.header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.profile {
+  background: rgba(0, 0, 0, 0.452);
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 /* write your parent styles in here for your App.js */
