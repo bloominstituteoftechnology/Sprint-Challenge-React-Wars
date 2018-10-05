@@ -1,0 +1,44 @@
+body {
+  font-family: 'Russo One', sans-serif;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background: rgba(100, 100, 100, .3);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border: 4px double #F8D300;
+}
+
+.main-attr {
+  grid-column: 1;
+  margin-right: 5px;
+}
+
+.char-name {
+  font-size: 2rem;
+}
+
+.char-born {
+  color: #444;
+}
+
+.char-attributes {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.char-attr {
+  padding: 5px 0 10px;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
