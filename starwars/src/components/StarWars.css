@@ -1,0 +1,15 @@
+/* component styles */
+
+.CharacterList {
+    height: 500px;
+    width: 350px;
+    margin: 20px;
+    border: 1px solid green;
+}
+
+.CharacterCard {
+    height: 500px;
+    width: 350px;
+    margin: 20px;
+    border: 1px solid red;
+}

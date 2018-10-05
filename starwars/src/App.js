@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+import CharacterCard from './components/CharacterCard';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentChar: 0,
     };
   }
 
@@ -29,10 +32,22 @@ class App extends Component {
       });
   };
 
+  // change the currently selected character
+  pickHandler = (event, index) => {
+    this.setState({currentChar: index});
+  };
+
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">React Wars!</h1>
+
+        <div className="container">
+          <CharacterList charList={this.state.starwarsChars} controller={this} />
+          <CharacterCard charList={this.state.starwarsChars}
+                         currentChar={this.state.currentChar} controller={this} />
+        </div>
       </div>
     );
   }
