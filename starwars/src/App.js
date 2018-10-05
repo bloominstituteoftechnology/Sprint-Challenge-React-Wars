@@ -6,12 +6,27 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      url: 'https://swapi.co/api/people',
+      starwarsChars: [],
+      next: '',
+      previous: '',
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters(this.state.url);
+  }
+
+   previousPage = () => {
+    if (this.state.previous !== null) {
+      this.getCharacters(this.state.previous);
+    }
+  }
+
+  nextPage = () => {
+    if (this.state.next !== null) {
+      this.getCharacters(this.state.next);
+    }
   }
 
   getCharacters = URL => {
@@ -23,7 +38,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ starwarsChars: data.results, next: data.next, previous: data.previous });
       })
       .catch(err => {
         throw new Error(err);
@@ -36,6 +52,10 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <div className="cards">
           {this.state.starwarsChars.map((char, i) => <Card key={i} char={char}/>)}
+        </div>
+        <div className="pageButtons">
+          <button onClick={this.previousPage}>Previous</button>
+          <button onClick={this.nextPage}>Next</button>
         </div>
       </div>
     );
