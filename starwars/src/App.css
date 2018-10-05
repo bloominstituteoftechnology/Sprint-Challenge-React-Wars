@@ -15,8 +15,8 @@
   height: 70vh;
   max-height: 600px;
   overflow: hidden;
-  background: rgb(230, 230, 230);
-  border: 5px inset;
+  background: rgb(250, 250, 250);
+  border: 5px inset rgb(230, 230, 230);
   /* border-radius: 20px; */
   margin: 0 auto;
 }
