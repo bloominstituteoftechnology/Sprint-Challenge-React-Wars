@@ -26,6 +26,8 @@
      width:20%;
      margin:0 auto;
      padding: 10px 0px;
+     font-family: 'K2D', sans-serif;
+     font-size:45px;
  }
 
  .films {
@@ -34,6 +36,8 @@
  .films h1 {
     margin:0 auto;
     padding: 10px 0px;
+    font-family: 'K2D', sans-serif;
+    font-size:45px;
  }
 
  .filmbox {

@@ -15,6 +15,11 @@
   display:flex;
   flex-wrap:wrap;
   margin:0 auto;
+  opacity:0;
+  animation-name:myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 .Films {
   width:100%;
@@ -22,6 +27,11 @@
   flex-wrap:wrap;
   margin:0 auto;
   flex-direction: row;
+  opacity:0;
+    animation-name:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:4s;
 }
 
 .Towns {
@@ -29,5 +39,14 @@
   display:flex;
   flex-wrap:wrap;
   margin:0 auto;
+  opacity:0;
+    animation-name:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:2.5s;
 }
 
+@keyframes myAnimation{
+  0% {opacity:0}
+  100% {opacity:1}
+}
