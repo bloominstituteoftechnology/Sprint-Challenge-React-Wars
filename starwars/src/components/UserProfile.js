@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 const UserProfile= props=>{
     return(
-        <div className='title'>
+        <div>
+            <div className='title'>
             <h2>
                 User Profile
             </h2>
+            </div>
             <p className='info'>
                 <b>Birth year:</b>{props.birthYear}
             </p>

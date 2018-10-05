@@ -6,3 +6,38 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+* {
+  box-sizing:border-box;
+  font-size: 62.5%;
+}
+.container{
+  margin: 20px auto;
+  max-width: 500px;
+  
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.6rem;
+}
+b{
+  font-size:1.6rem;
+}
+.name{
+  border: black 2px solid;
+  color: red;
+}
+.info-container{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  text-align: left;
+}
+.title{
+  color:blue;
+}

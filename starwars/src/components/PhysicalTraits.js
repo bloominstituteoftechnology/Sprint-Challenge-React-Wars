@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 const PhysicalTraits= props=>{
     return(
-        <div className='title'>
+        <div >
+            <div className='title'>
             <h2>
                 Physical Traits
             </h2>
+            </div>
             <p className='info'>
                 <b>Eyes color:</b>{props.eyeColor}
             </p>

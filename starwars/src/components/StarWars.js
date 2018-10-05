@@ -10,6 +10,7 @@ const StarWars= props =>{
                     <div className="name">
                         <h1>{item.name}</h1>
                     </div>
+                    <div className='info-container'>
                     <Time 
                         created={item.created}
                         edited={item.edited}
@@ -25,6 +26,7 @@ const StarWars= props =>{
                        hairColor={item.hair_color}
                        skinColor={item.skin_color}
                     />
+                    </div>
                 </div>
             ) 
         })

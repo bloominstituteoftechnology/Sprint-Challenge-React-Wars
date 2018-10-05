@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 const Time= props=>{
     return(
-        <div className='title'>
+        <div>
+            <div className='title'>
             <h2>
                 Time info
             </h2>
+            </div>
             <p className='info'>
                 <b>Created:</b>{props.created}
             </p>
