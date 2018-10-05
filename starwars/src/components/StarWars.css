@@ -1,0 +1,48 @@
+.hide{
+    display: none;
+}
+
+.char-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card, .splash{
+    background: lightblue;
+    opacity: .8;
+    border-radius: 5px;
+    padding: 0 15px 20px;
+    margin: 5px;
+}
+
+.img-container{
+    height: 320px;
+    width: 320px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.splash{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+button{
+    background: lightblue;
+    opacity: .8;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
