@@ -65,6 +65,8 @@ html{
 }
 
 .app-cards-container{
+  max-width: 1024px;
+  margin:0 auto;
   display: flex;
   flex-wrap: wrap;
 

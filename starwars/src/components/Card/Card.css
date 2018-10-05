@@ -1,8 +1,10 @@
 
 
 .card{
-    height:400px;
-    width: 300px;
+    min-height:400px;
+    min-width: 300px;
+    padding-left:15px;
+    padding-right:15px;
 }
 .card-header{
     background: #172E59;
@@ -13,6 +15,9 @@
     background: #D7D98E;
     text-align: left;
     height:100%;
+    padding:15px;
+    
+
 }
 .card-body-header{
  display:inline;
