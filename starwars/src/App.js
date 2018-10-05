@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      page: 1
     };
   }
 
@@ -30,11 +31,38 @@ class App extends Component {
       });
   };
 
+  getNextCharacters = () => {
+    fetch(`https://swapi.co/api/people?page=${this.state.page + 1}`)
+      .then(res => {
+        return res.json();  
+      })
+      .then(data => {
+        this.setState({ starwarsChars: data.results, page: this.state.page + 1 });
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
+  getPrevCharacters = () => {
+    fetch(`https://swapi.co/api/people?page=${this.state.page - 1}`)
+      .then(res => {
+        return res.json();  
+      })
+      .then(data => {
+        this.setState({ starwarsChars: data.results, page: this.state.page - 1 });
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
   render() {
-    console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <button onClick={this.getPrevCharacters}>&lt;&lt; Previous Characters</button>
+        <button onClick={this.getNextCharacters}>Next Characters &gt;&gt;</button>
         <div className="cards">
           {this.state.starwarsChars.map((char,i) => <Character char={char} key={i} />)}
         </div>

@@ -2,10 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F3A346;
+  background: #A75228;
   border: 5px solid white;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black;
-  width: 250px;
+  width: 300px;
   margin-bottom: 20px;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  background: #A7BACB;
+  border-radius: 5px 5px 0 0;
+}
+
+.card p {
+  margin: 5px 0;
 }
