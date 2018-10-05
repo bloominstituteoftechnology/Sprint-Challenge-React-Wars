@@ -1,0 +1,29 @@
+.card{
+    border:1px solid white;
+    background:white;
+    width: 500px;
+    margin:10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+.card:hover{
+    -webkit-box-shadow: 13px 13px 10px -7px rgba(0,0,0,0.24);
+    -moz-box-shadow: 13px 13px 10px -7px rgba(0,0,0,0.24);
+    box-shadow: 13px 13px 10px -7px rgba(0,0,0,0.24);
+}
+.card li{
+    list-style-type: none;
+    font-size:20px;
+    line-height: 2rem;
+    transition:0.3s;
+}
+.card li:hover{
+    text-shadow: 2px 2px 5px blue;
+    color:white
+}
+.info{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width:100%;
+}
