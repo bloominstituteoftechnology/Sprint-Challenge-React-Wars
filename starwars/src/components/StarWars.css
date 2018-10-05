@@ -1,21 +1,25 @@
 .container {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
 }
 
 .character-cards {
-  border: 1px solid blue;
-  width: 45%;
-  margin: 0% 2% 0%;
-  padding: 0% 0% 0%;
-  background-color: aliceblue;
+  width: 29%;
+  margin: 5% 2%;
+  padding: 5% 0%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 10px 15px 10px #f8f9f9;
 }
 
 .names {
   font-size: 20px;
 }
 
-li {
+.attributes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style: none;
+  padding-inline-start: 0px;
 }

@@ -6,8 +6,9 @@ const StarWars = props => {
     <div className="container">
       {props.starwars.map(characters => (
         <div className="character-cards">
+          <h1>{characters[1]}</h1>
           <h1 className="names">{characters.name}</h1>
-          <ul>
+          <ul className="attributes">
             <li>Height: {characters.height}</li>
             <li>Mass: {characters.mass}</li>
             <li>Hair Color: {characters.hair_color}</li>
