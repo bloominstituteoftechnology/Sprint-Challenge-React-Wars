@@ -4,17 +4,49 @@
   display: flex;
   flex-wrap: wrap;
   color: white;
+  max-width: 1400px;
 }
 
 .char-container {
-  border: 1px solid black;
-  width: 350px;
-  height: 250px;
+  border: 1px solid white;
+  border-radius: 5px;
+  /* width: 350px;
+  height: 250px; */
+  display: flex;
+  flex-basis: calc(33.33% - 20px);
   background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
 }
+.char-container:last-of-type {
+  flex-basis: 100%;
+}
+@media (max-width: 960px) {
+  .char-container:last-of-type {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
 .char-container p {
   font-size: 1.2rem;
 }
 .char-container h1 {
   padding: 10px 10px 0;
+}
+
+@media (max-width: 960px) {
+  .char-container {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 650px) {
+  .char-container {
+    flex-basis: calc(90% - 14px);
+    margin: 10px auto;
+  }
+  .star-wars-container {
+    width: 95%;
+  }
 }

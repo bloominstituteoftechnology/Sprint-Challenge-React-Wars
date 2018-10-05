@@ -8,9 +8,9 @@ const StarWarsChars = props => {
       {props.starwarsChars.map(char => {
         console.log(char);
         return (
-          <ul key={char.created}>
+          <React.Fragment key={char.created}>
             <Char char={char} keys={char.created} />
-          </ul>
+          </React.Fragment>
         );
       })}
     </div>
