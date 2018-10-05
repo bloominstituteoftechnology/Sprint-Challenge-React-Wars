@@ -3,4 +3,6 @@ ID = "ReactWars"
 
 [build]
 
-base = 'starwars/'
+  base    = "./starwars"
+  publish = "./starwars/build"
+  command = "yarn build"
