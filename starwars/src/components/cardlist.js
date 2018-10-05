@@ -3,7 +3,7 @@ import React from 'react';
 
 const CardList = props => {
   return (
-        <div>
+        <div className='allstarwarscards'>
 
             {props.starwars.map((starwar, index) => (
                 <div className ='starwarCard'>
