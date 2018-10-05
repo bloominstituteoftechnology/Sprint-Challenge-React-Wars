@@ -1,0 +1,24 @@
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.Refresh {
+  text-align: center;
+  font-size: 4rem;
+  color: #0097e6;
+  transition: all 500ms;
+}
+
+.Refresh:hover {
+  transform: rotate(360deg);
+  color: #00a8ff;
+}

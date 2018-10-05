@@ -4,36 +4,3 @@
   max-width: 1200px;
   margin: 3rem auto 1rem;
 }
-
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 5rem;
-  margin-bottom: 2rem;
-}
-
-.Refresh {
-  width: 100%;
-  text-align: center;
-  font-size: 4rem;
-  color: #0097e6;
-  transition: all 500ms;
-}
-
-.Refresh:hover {
-  transform: rotate(360deg);
-  color: #00a8ff;
-}
-
-.Footer {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Footer span {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
