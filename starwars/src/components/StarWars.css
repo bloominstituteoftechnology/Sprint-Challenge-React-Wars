@@ -1,0 +1,50 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  padding: 3% 5%;
+}
+
+.card {
+  background: #DCAA6D;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  padding: 3% 0;
+  margin: 3%;
+}
+
+.card h2 {
+  font-size: 2rem;
+  padding: 2%;
+}
+
+
+.card .subtitle {
+  /* display: flex;
+  width: 100%;
+  justify-content: center; */
+
+}
+.card .subtitle p{
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1%;
+
+}
+
+.card .details {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%; 
+}
+
+.card .details p {
+  font-size: 1.6rem;
+  width: 40%;
+  padding: 1%;
+
+}

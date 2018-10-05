@@ -6,10 +6,10 @@ import './StarWars.css';
 const CardContainer = props => {
   return (
     <div className='card-container'>
-      {props.characters.map(character => <Card character={character} />)}
+      {props.characters.map(character => <Card key={character.created} character={character} />)}
     </div>
   )
 }
 
 
-export default CardContainer; 
+export default CardContainer;
