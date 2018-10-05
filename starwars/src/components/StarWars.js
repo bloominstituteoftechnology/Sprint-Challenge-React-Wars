@@ -20,6 +20,11 @@ const StarWars= props =>{
                         height={item.height}
                         mass={item.mass}
                     />
+                    <PhysicalTraits 
+                       eyeColor={item.eye_color} 
+                       hairColor={item.hair_color}
+                       skinColor={item.skin_color}
+                    />
                 </div>
             ) 
         })

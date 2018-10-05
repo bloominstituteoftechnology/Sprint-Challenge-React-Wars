@@ -6,13 +6,13 @@ const PhysicalTraits= props=>{
                 Physical Traits
             </h2>
             <p className='info'>
-                <b>Eyes color</b>{props.created}
+                <b>Eyes color:</b>{props.eyeColor}
             </p>
             <p className='info'>
-                <b>Hair color</b>{props.edited}
+                <b>Hair color:</b>{props.hairColor}
             </p>
             <p className='info'>
-                <b>Skin color</b>{props.edited}
+                <b>Skin color:</b>{props.skinColor}
             </p>
         </div>
     )
