@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CardCollection from "./components/CardCollection";
+import LeftButton from "./components/LeftButton";
+import RightButton from "./components/RightButton";
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      current: 0
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+    for (let i = 0; i < this.state.starwarsChars.length; i++) {
+      let imgFilename = `./images/char${i}.jpg`;
+      const copy = this.state.starwarsChars.slice();
+      copy[i].image = imgFilename;
+      this.setState({ starwarsChars: copy });
+    }
   }
 
   getCharacters = URL => {
@@ -29,11 +40,40 @@ class App extends Component {
       });
   };
 
+  nextCard = () => {
+    this.setState(
+      prevState => ({ current: prevState.current + 1 }), 
+      () => {
+        if (this.state.current >= this.state.starwarsChars.length) {
+          this.setState({ current: 0 });
+        }
+      }
+    );
+  }
+
+  previousCard = () => {
+    this.setState(
+      prevState => ({ current: prevState.current - 1 }), 
+      () => {
+        if (this.state.current < 0) {
+          this.setState({ current: this.state.starwarsChars.length - 1 });
+        }
+      }
+    );
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+        <div className="container">
+          <h1 className="Header">React Wars</h1>
+          <div className="forButtons">
+            <LeftButton action={this.previousCard} />
+            <CardCollection info={this.state.starwarsChars} currentIdx={this.state.current} />
+            <RightButton action={this.nextCard} />
+          </div>
+        </div> {/* Container */}
+      </div> // App 
     );
   }
 }

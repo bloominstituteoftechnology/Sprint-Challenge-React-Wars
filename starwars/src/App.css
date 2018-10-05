@@ -1,8 +1,29 @@
 .App {
   text-align: center;
 }
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px #f00;
 }
 /* write your parent styles in here for your App.js */
+
+.forButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.forButtons > img {
+  width: 50px;
+  cursor: pointer;
+}
