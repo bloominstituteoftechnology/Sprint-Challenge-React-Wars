@@ -12,11 +12,54 @@ const Form = props => {
                 className="input"
             />
 
+            <div className="gender">
+				<label 
+                    for="male">
+                Male </label>
+				<input 
+                    onClick={props.displayMale}
+                    type="radio" 
+                    name="gender" 
+                    id="male"
+                    value="MALE" 
+                />
+		
+				<label 
+                    for="female">
+                Female </label>
+				<input 
+                    onClick={props.displayFemale}
+                    type="radio" 
+                    name="gender" 
+                    id="female" 
+                    value="FEMALE" 
+                />
+	
+				<label 
+                    for="other">
+                Other </label>
+				<input 
+                    onClick={props.displayOtherGender}
+                    type="radio" 
+                    name="gender" 
+                    id="other" 
+                    value="OTHER" 
+                    required
+                />
+			</div>
+
             <button
-                onClick={props.buttonClick}
+                onClick={props.displaySearchedCharacter}
                 type="submit"
                 className="button"
             >Search Character</button>
+
+            <button
+                onClick={props.reloadPage} 
+                className="button"  
+            >Reload Page</button>
+
+            <p>(reload page after every search)</p>
         </form>
     )
 }

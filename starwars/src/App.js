@@ -38,12 +38,32 @@ class App extends Component {
     })
   }
 
-  buttonClick = event => {
+  displaySearchedCharacter = event => {
     event.preventDefault()
     let characterSearched = [...this.state.starwarsChars]
     characterSearched = characterSearched.filter(item => item.name === this.state.searchedCharacter)
     this.setState({starwarsChars: characterSearched})
   }
+
+  displayMale = () => {
+    let genderClicked = [...this.state.starwarsChars]
+    genderClicked = genderClicked.filter(item => item.gender === 'male')
+    this.setState({starwarsChars: genderClicked})
+  }
+
+  displayFemale = () => {
+    let genderClicked = [...this.state.starwarsChars]
+    genderClicked = genderClicked.filter(item => item.gender === 'female')
+    this.setState({starwarsChars: genderClicked})
+  }
+
+  displayOtherGender = () => {
+    let genderClicked = [...this.state.starwarsChars]
+    genderClicked = genderClicked.filter(item => item.gender === 'n/a')
+    this.setState({starwarsChars: genderClicked})
+  }
+
+  reloadPage = event => {}
 
   render() {
     return (
@@ -52,7 +72,11 @@ class App extends Component {
         <Form 
           inputChange={this.inputChange}
           searchedCharacter={this.state.searchedCharacter}
-          buttonClick={this.buttonClick}
+          displaySearchedCharacter={this.displaySearchedCharacter}
+          displayMale={this.displayMale}
+          displayFemale={this.displayFemale}
+          displayOtherGender={this.displayOtherGender}
+          reloadPage={this.reloadPage}
         />
         <MainComponent 
           propsData={this.state.starwarsChars}
