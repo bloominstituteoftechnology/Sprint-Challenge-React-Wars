@@ -4,5 +4,10 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  border-bottom: 2px solid brown;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  border-bottom: 2px solid brown;
+}
