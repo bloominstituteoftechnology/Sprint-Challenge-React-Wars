@@ -1,0 +1,35 @@
+.cardList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.card {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background-color: gray;
+    color: antiquewhite;
+}
+
+.noShip {
+    display: none;
+}
+
+.noVehicle {
+    display: none;
+}
+
+.noGender {
+    visibility: hidden;
+}
+
+.noGender:before {
+    display: block;
+    content: 'Gender: robot';
+    visibility: visible;
+}
