@@ -14,4 +14,4 @@ A Class/Stateful component is one that is concerned with state. Functional/Prese
 I think of state as the current view that the user is seeing or interacting with. The current data/view that is being represented or changed by the user. You can have this "state" change based on user interactions, timed events or not change at all (static website).
 
 5.  Describe props.
-Props are methods/functions that are available to a Component and can be passed down to the component's children (usually) or other components using the props term in React. 
+<!-- Props are methods/functions that are available to a Component and can be passed down to the component's children (usually) or other components using the props term in React.  -->
