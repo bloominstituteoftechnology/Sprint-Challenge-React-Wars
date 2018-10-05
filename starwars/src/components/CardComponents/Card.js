@@ -2,8 +2,8 @@ import React from 'react';
 
 function Card(props){
     return(
-        <div className='character'>
-            <div>
+        <div className='characterCard'>
+            <div className = 'textContainer'>
                 <h1 className = 'nameHeader'>{props.char.name}</h1>
                 <div className = 'content'>
                 <h3>Gender: {props.char.gender}</h3>

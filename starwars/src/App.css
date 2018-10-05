@@ -1,8 +1,39 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
+
+
+
+ul{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*The Cards*/
+.characterCard{
+  background: rgb(206, 206, 206, 0.8);
+  
+  width: 220px;
+  height: 220px;
+  margin: 1%;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0px 3px 6px rgba(0,0,0,0.23);
+
+}
+.textContainer{
+  opacity: 1;
+}
+
