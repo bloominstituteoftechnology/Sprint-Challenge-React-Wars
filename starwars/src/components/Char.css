@@ -1,5 +1,5 @@
 .char-card-unclicked {
-  height: 175px;
+  height: 50px;
   width: 40%;
   background: black;
   border: 2px solid #fade37;
@@ -7,6 +7,9 @@
   padding-bottom: 10px;
   border-radius: 10px;
   opacity: 0.8;
+}
+.char-card-unclicked p {
+  display: none;
 }
 
 .char-card-clicked {
@@ -18,6 +21,10 @@
   padding-bottom: 10px;
   border-radius: 10px;
   opacity: 0.8;
+}
+
+.char-card-clicked p {
+  display: block;
 }
 
 .char-info {

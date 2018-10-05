@@ -41,13 +41,11 @@ class App extends Component {
     event.preventDefault();
     let newArr = this.state.starwarsChars;
     newArr.forEach(function(item) {
-      console.log(item.created);
-      console.log(event.target.id);
       if (item.created == event.target.id) {
         if (item.clicked === "unclicked") {
           item.clicked = "clicked";
         } else {
-          item.clicked = "clicked";
+          item.clicked = "unclicked";
         }
       }
     });
