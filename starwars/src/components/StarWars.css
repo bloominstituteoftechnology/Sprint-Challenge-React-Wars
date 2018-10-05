@@ -1,3 +1,12 @@
+.person-container {
+    display: none;
+    width: 100%;
+}
+.person {
+    position: absolute;
+    width: 300px;
+    margin: 0 auto;
+}
 .person h3 {
     /* color: #443e3e;
     text-shadow: 1px 1px 5px #fff; */
@@ -9,4 +18,8 @@
     text-shadow: 1px 1px 5px #fff;
     /* color: white;
     text-shadow: 1px 1px 5px #443e3e; */
+}
+
+.show {
+    display: flex;
 }

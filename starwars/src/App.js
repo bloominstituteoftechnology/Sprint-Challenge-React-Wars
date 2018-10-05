@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      indexShow: 0,
     };
   }
 
@@ -30,13 +31,35 @@ class App extends Component {
       });
   };
 
+  leftPage = () => {
+    this.setState(prevState => {
+      let { indexShow } = prevState;
+      indexShow = (indexShow - 1 < 0) ? prevState.starwarsChars.length - 1 : indexShow - 1;
+      return {indexShow};
+    })
+  }
+
+  rightPage = () => {
+    this.setState(prevState => {
+      let { indexShow } = prevState;
+      indexShow = (indexShow + 1 >= prevState.starwarsChars.length) ? 0 : indexShow + 1;
+      return {indexShow};
+    })
+  }
   
 
   renderList = () => {
     if (this.state.starwarsChars.length > 0) {
       return (
         <div className="list-container">
-          {this.state.starwarsChars.map((item, i) => <Person info={item} key={i}/>)}
+          <button onClick={this.leftPage}>{'<'}</button>
+          {
+            this.state.starwarsChars.map((item, i) => {
+              if (this.state.indexShow === i) return <Person info={item} key={i} show={true}/>
+              return <Person info={item} key={i}/>
+            })
+          }
+          <button onClick={this.rightPage}>{'>'}</button>
         </div>
       );
     }

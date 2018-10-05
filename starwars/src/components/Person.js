@@ -2,9 +2,9 @@ import React from 'react';
 import PersonInfo from './PersonInfo';
 // import Vehicles from './Vehicles';
 
-const Person = ({info}) => {
+const Person = ({info, show = false}) => {
     return (
-        <div>
+        <div className="person-container" style={show ? { display: 'flex'} : {}}>
             <PersonInfo person={info}/>
             {/* <Vehicles starships={info.starships} vehicles={info.vehicles}/> */}
         </div>
