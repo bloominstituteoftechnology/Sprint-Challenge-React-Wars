@@ -3,7 +3,7 @@ import React from 'react';
 const Character = props => {
     return (
         <div className="character-container">
-           <h2>
+           <h2 onClick={props.selected}>
                 {props.name}
            </h2>
            <p>About Me:</p>
@@ -27,6 +27,7 @@ const Character = props => {
                    Height: {props.height}
                </li>
            </ul>
+       
         </div>
     );
 }
