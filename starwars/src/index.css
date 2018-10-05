@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'StarWarsFont';
+  src: url('Starjedi.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
