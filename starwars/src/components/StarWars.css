@@ -16,13 +16,13 @@
     flex-wrap: wrap;
 }
 
-.card-content h1  {
+.card-content h2  {
     background: rgb(77, 70, 30);
     padding: 2.5rem 0;
     width: 100%;
 }
 
-.card-content h2 {
+.card-content h3 {
     width: 100%;
 }
 
