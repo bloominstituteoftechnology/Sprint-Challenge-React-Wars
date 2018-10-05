@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import Characters from './components/Characters';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [{ clicked: false },]
     };
   }
+
+  onClickMe = () => {
+    this.setState({ clicked: !this.state.clicked });
+}
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -22,6 +27,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -29,10 +35,12 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Characters clicked={this.onClickMe} characters={this.state.starwarsChars} />
       </div>
     );
   }
