@@ -55,9 +55,11 @@
 .starwarCard h2{
   font-size: 1.8rem;
   font-weight: bold;
+  text-shadow: 1px 1px 5px #fff;
 }
 
 .starwarCard h4{
   font-size: 1.4rem;
   padding: 3px 0;
+  text-shadow: 1px 1px 5px #fff;
 }
