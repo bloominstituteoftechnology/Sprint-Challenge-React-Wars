@@ -1,0 +1,8 @@
+.star-wars {
+    display: flex;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 22px;
+    color: black;
+
+}
