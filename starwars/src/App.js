@@ -39,7 +39,6 @@ class App extends Component {
 
   nextPage = event => {
     event.preventDefault();
-    console.log('hi')
 
     if (this.state.next !== null) {
       this.getCharacters(this.state.next);
@@ -58,12 +57,13 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1 className="heading">React Wars</h1>
+          {/* <h1 className="heading">React Wars</h1> */}
+          <img className="heading-img" src="https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo-1.png" alt="star wars logo"/>
         </header>
 
         <div className="list-container">
-          <Pagination previousPage={this.previousPage} nextPage={this.nextPage}/>
           <CharacterList characters={this.state.starwarsChars} />
+          <Pagination previousPage={this.previousPage} nextPage={this.nextPage}/>
         </div>
 
       </div>
