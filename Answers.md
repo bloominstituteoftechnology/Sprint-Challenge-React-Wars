@@ -8,3 +8,4 @@
 7.  Describe state.  state is the heart of the app. it creates persistent memory in a component.  it can pass data down to other components allowing an app to be interactive or reactive. state can keep track of the changes in the information flow. 
 8.  
 9.  Describe props.  props are the blood that the heart pumps to the rest of the organism/program. these are properties or data that are passed down by components from parent to child.  they are immutable. 
+
