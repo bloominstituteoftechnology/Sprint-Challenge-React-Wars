@@ -28,15 +28,17 @@ b{
   font-size:1.6rem;
 }
 .name{
-  border: black 2px solid;
-  color: red;
+  border: red 2px solid;
+  color: hotpink;
 }
 .info-container{
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-top: 1px solid black;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid blue;
+  border-top: 1px solid blue;
   text-align: left;
+  padding-left:10px;
+  
 }
 .title{
   color:blue;
