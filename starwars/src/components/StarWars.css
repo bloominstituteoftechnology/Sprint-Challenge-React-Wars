@@ -1,0 +1,10 @@
+.char-card {
+  height: 50px;
+  width: auto;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  border: 3px solid lightslategray;
+  border-radius: 5px;
+  margin: 10px 300px;
+  background-color: #b5653f;
+}
