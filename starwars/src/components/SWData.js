@@ -4,9 +4,12 @@ const SWData = props => {
   return (
     <div className='sw-data'>
       <h2>{props.starwarsChars.name}<br/></h2>
-      <span>Gender</span>: {props.starwarsChars.gender}<br/>
-      <span>Birth Year</span>: {props.starwarsChars.birth_year}<br/>
-      <span>Height</span>: {props.starwarsChars.height}<br/>
+      <span>Gender: {props.starwarsChars.gender}</span>
+      <span>Birth Year: {props.starwarsChars.birth_year}</span>
+      <span>Height: {props.starwarsChars.height}</span>
+      <span>Hair Color: {props.starwarsChars.hair_color}</span>
+      <span>Eye Color: {props.starwarsChars.eye_color}</span>
+      <span>Skin Color: {props.starwarsChars.skin_color}</span>
     </div>
   );
 };
