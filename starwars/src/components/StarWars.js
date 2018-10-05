@@ -1,14 +1,23 @@
 import React from "react";
-import './StarWars.css';
+import "./StarWars.css";
 
-const StarWars = props => (
-    <div>
-    {props.characters.map(character => (
-    <h2>{character.name}</h2>
-    
-    )
-    )}
+const StarWars = props =>
+  props.characters.map(character => (
+    <div className="profile">
+      <h2>{character.name}</h2>
+      <ul>
+        <li>Gender: {character.gender}</li>
+        <li>
+          Height: {character.height}
+          cm
+        </li>
+        <li>
+          Weight: {character.mass}
+          kg
+        </li>
+        <li>Year Born: {character.birth_year}</li>
+      </ul>
     </div>
-)
+  ));
 
-export default StarWars
+export default StarWars;
