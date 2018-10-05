@@ -1,0 +1,41 @@
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin: 15px 0;
+    border: 2px solid #6adb99;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #6adb99, 0 0 40px #6adb99 inset;
+}
+
+.card h2{
+    margin-bottom: 10px;
+    font-size: 3.2rem;
+}
+
+.list{
+    width: 100%;
+}
+
+.card h3{
+    width: 30%;
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 2px solid #a00625;
+}
+
+.bio-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.bio-info p{
+    margin-bottom: 5px;
+}
