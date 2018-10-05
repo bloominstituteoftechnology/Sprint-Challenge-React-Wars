@@ -25,8 +25,22 @@ const Card = props =>{
                 </div>
                 <p className='card-body-header'>Birth Year:</p><p className='card-body-detail'>{props.character.birth_year}</p>
                 <br></br>
+                <p className='card-body-header'>Created:</p><p className='card-body-detail'>{props.character.created}</p>
+                <br></br>                
+                <p className='card-body-header'>Edited:</p><p className='card-body-detail'>{props.character.edited}</p>
+                <br></br>                
+                <p className='card-body-header'>Gender:</p><p className='card-body-detail'>{props.character.gender}</p>
+                <br></br>                
+                <p className='card-body-header'>Eye Color:</p><p className='card-body-detail'>{props.character.eye_color}</p>
+                <br></br>                
+                <p className='card-body-header'>Hair Color:</p><p className='card-body-detail'>{props.character.hair_color}</p>
+                <br></br>                
                 <p className='card-body-header'>Height:</p><p className='card-body-detail'>{props.character.height}</p>
                 <br></br>
+                <p className='card-body-header'>Mass:</p><p className='card-body-detail'>{props.character.mass}</p>
+                <br></br>                
+                <p className='card-body-header'>Skin Color:</p><p className='card-body-detail'>{props.character.skin_color}</p>
+                <br></br>                                
                 <p className='card-body-header'>Films:</p>
                 <div>
                     {
@@ -49,8 +63,18 @@ const Card = props =>{
                         })
                     }                
                 </div>
-
                 <br></br>
+                <p className='card-body-header'>Vehicles:</p>
+                <div>
+                    {
+                        props.character.vehicles.map((element,index) =>{
+                            return (
+                                <p key={index} className='card-body-subdetail'>{element}</p>
+                            )
+                        })
+                    }                
+                </div>
+
             </div>
         </div>
     )
