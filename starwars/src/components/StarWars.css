@@ -68,6 +68,12 @@
 
 }
 
+.planet p{
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1%; 
+}
+
 .empty {
-  color: gray; 
+  color: gray;
 }
