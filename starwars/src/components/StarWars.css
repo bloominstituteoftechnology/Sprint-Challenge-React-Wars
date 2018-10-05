@@ -11,8 +11,7 @@
 }
 
 .card, .splash{
-    background: lightblue;
-    opacity: .8;
+    background: #ADD5E58d;
     border-radius: 5px;
     padding: 0 15px 20px;
     margin: 5px;
@@ -22,6 +21,7 @@
     height: 320px;
     width: 320px;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 img{
@@ -38,8 +38,7 @@ img{
 }
 
 button{
-    background: lightblue;
-    opacity: .8;
+    background: #ADD5E58d;
     border-radius: 5px;
     margin: 10px;
     padding: 5px 35px;
