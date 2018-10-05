@@ -27,7 +27,7 @@ class Homeworld extends React.Component {
       this.setState({
         homeworld: JSON.parse(text),
         });
-        console.log(this.state.homeworld);
+        // console.log(this.state.homeworld);
     })
     .catch(err => {
       throw new Error(err);

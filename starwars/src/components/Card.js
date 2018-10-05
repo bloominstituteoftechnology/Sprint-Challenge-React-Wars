@@ -33,6 +33,7 @@
 
 import React from 'react';
 import Homeworld from './Homeworld.js';
+// import Classification from './Classification.js'
 
 
 const Card = props => {
@@ -45,11 +46,13 @@ const Card = props => {
     gender,
     mass,
     homeworld,
+    // species,
   } = props.character;
 
   return (
     <div className='card'>
       <h2 className='name'>{name}</h2>
+      {/* <Classification species={species} /> */}
       <div className='subtitle'>
         <p>Born: {birth_year}</p>
         <p>Identifies as: {gender}</p>
