@@ -35,3 +35,16 @@
     font-size: 15px;
     color: grey;
 }
+
+.paginator {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginator button {
+    width: 25%;
+    height: 40px;
+    margin: 20px 0;
+}
