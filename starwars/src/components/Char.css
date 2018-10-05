@@ -1,6 +1,7 @@
 .char-card-unclicked {
   height: 50px;
-  width: 40%;
+  width: 50%;
+  margin: 0 auto;
   background: black;
   border: 2px solid #fade37;
   margin-bottom: 50px;
@@ -14,7 +15,8 @@
 
 .char-card-clicked {
   height: 175px;
-  width: 40%;
+  width: 50%;
+  margin: 0 auto;
   background: black;
   border: 2px solid #fade37;
   margin-bottom: 50px;
