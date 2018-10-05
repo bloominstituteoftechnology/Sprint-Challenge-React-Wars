@@ -9,15 +9,6 @@ import './Pagination.css';
 //-- Implementation ------------------------------
 class Pagination extends React.Component {
 
-    //-- Basic Setup ---------------------------------
-    /*constructor(props) {
-        super(...arguments);
-        this.state = {
-            tabs: titles,
-            currentTabTitle: titles[0]
-        }
-    }*/
-
     //-- Rendering - only render current tab ---------
     render = () => {
         let hidePrevious = this.props.pagePrevious? '' : ' pagination-nav-hide';
