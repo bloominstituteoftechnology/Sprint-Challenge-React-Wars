@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">  
-        <h1>CHOOSE YOUR CHARACTER</h1>    
+        <h1>Choose Your Destiny</h1>    
         <div className="buttons">
           {this.state.starwarsChars.map((char,i) => <Buttons displayCharacter={this.displayCharacter} char={char} key={i} />)}  
         </div>

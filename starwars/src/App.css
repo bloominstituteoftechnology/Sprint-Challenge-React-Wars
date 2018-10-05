@@ -1,14 +1,21 @@
+html {
+  box-sizing:border-box;
+  font-size: 62.5%;
+}
 .container {
   text-align: center; 
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: Star Jedi;
 }
 
 .container h1 {
+  font-size: 9rem;
   color: yellow;
-  text-shadow: 1px 1px 5px black;
-  letter-spacing: 1px;  
+  -webkit-text-stroke: .25px black;
+  letter-spacing: 3px;  
+  width: 100%;
+  margin-bottom: 0;
 }
 .Header {
   color: #443e3e;
@@ -18,31 +25,35 @@
 .buttons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  
-  
-
+  justify-content: space-evenly;
+  margin-top: 10px; 
 }
 
 button {
-  width: 40%;
+  width: 35%;
   height: 40px;
   margin-top: 15px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   letter-spacing: 2px;
-  font-family: Star Jedi;
+  font-family: Death Star;
   cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 0;
 }
 button:hover {
+  font-family: Death Star Outlines;
   color:white;
-  background-color: black;
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/star-wars-stars-background-2.jpg);
+  border:1px solid white;
+  -webkit-text-stroke: 1px yellow;
 }
 
 .cards {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 .character {
@@ -51,17 +62,23 @@ button:hover {
   margin: 30px;
   border: 1px solid black;
   border-radius: 5px;
-  
-
+  border: 1px solid white;
 }
 
+.character:hover {
+  
+}
 .character h2 {
+  font-family: Death Star Outlines;
   color: yellow;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 3.6rem;
+  text-shadow: 3px 3px 5px grey;
+  
 }
 .character p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: yellow;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 5px grey;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px grey;
 }
