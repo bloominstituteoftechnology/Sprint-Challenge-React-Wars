@@ -3,7 +3,14 @@
   width: 250px;
   border-radius: 50%;
   margin: 2rem;
+  /* border: 8px solid #dcdde1; */
+  transition: all 200ms;
+  box-shadow: 0 5px 10px -5px rgba(47, 54, 64, 0.7);
   animation: popin 400ms ease-in-out forwards;
+}
+
+.Image:hover {
+  transform: scale(1.05);
 }
 
 @keyframes popin {
