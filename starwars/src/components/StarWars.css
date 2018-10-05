@@ -1,0 +1,15 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: white;
+  border: 2px solid black;
+  width: 200px;
+  margin: 20px;
+  text-align: left;
+  padding: 10px;
+}
