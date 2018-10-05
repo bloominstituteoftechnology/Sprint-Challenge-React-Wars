@@ -9,15 +9,11 @@
 /* write your parent styles in here for your App.js */
 .App {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.characterList {
-  
-  
-}
 
 .characterCard {
   border: 3px solid #000;
@@ -46,6 +42,6 @@
 }
 
 .characterDetailAnswer {
-  color: red;
+  font-weight: 400;
   text-transform: lowercase;
 }
