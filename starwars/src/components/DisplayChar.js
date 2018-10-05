@@ -5,7 +5,7 @@ import Display from './Display';
 
 const DisplayChar = props => {
     return (
-        <div>
+        <div className="container">
             {props.starwarsChars.map(characters => {
                 return (
                 <Display

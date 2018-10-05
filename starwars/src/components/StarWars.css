@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    min-height: 500px;
+    width: 40%;
+    margin: 10px 20px;
+    border: 0.5px solid #000000;
+    font-family: sans-serif;
+    background-image: url('../sw-bg.jpg');
+    background-size: 100%;
+   
+  }
+  
+  .content {
+      width: 100%;
+      font-size: 12px;
+      
+  }
+
+  .url {
+      font-size: 10px;
+  }
