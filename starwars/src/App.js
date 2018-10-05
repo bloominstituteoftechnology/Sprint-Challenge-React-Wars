@@ -5,7 +5,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentChar: null,
+      nextPage: null,
+      prevPage: null
     };
   }
 
@@ -28,6 +31,11 @@ class App extends Component {
         throw new Error(err);
       });
   };
+
+  showCurrentChar = name => {
+    const currentChar = this.state.starwarsChars.find(char => char.name === name);
+    console.log(currentChar);
+  }
 
   render() {
     return (
