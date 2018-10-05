@@ -1,0 +1,14 @@
+.characterCaro {
+    display: flex;
+}
+
+.characterContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.character {
+    width: 350px;
+    height: 350px;
+}

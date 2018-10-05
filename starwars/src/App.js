@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterCaro from './components/CharacterCaro';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: "",
+      previous: ""    
     };
   }
 
@@ -22,7 +25,11 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -33,6 +40,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterCaro 
+        characters={this.state.starwarsChars}
+        />
+        <button className="prevButton" onClick={() => this.getCharacters(this.state.previous)}>Previous</button>
+        <button className="nextButton" onClick={() => this.getCharacters(this.state.next)}>Next</button>
       </div>
     );
   }
