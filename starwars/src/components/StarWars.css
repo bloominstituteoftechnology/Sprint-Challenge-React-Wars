@@ -1,5 +1,6 @@
 .colorKey {
     color: white;
+    font-size: 0.8333333333333334vw
 }
 .containerCard {
     border: 1px solid black;
@@ -14,4 +15,7 @@
 .containerAll {
     display: flex;
     flex-wrap: wrap;
+}
+h2{
+    font-size: 1.1458333333333335vw;
 }
