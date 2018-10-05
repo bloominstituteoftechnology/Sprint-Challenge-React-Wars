@@ -10,3 +10,8 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+img {
+  width: 100px;
+  height: auto;
+}

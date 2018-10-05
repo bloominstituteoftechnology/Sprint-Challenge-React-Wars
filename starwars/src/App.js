@@ -4,6 +4,15 @@ import './App.css';
 import Character from './components/Character/Character';
 
 import BeruLars from './components/Character/img/BeruLars.jpg';
+import BiggsDarklighter from './components/Character/img/BiggsDarklighter.jpg';
+import C3PO from './components/Character/img/C-3PO.jpeg';
+import DarthVader from './components/Character/img/DarthVader.jpg';
+import LeiaOrgana from './components/Character/img/LeiaOrgana.jpg';
+import LukeSkywalker from './components/Character/img/LukeSkywalker.png';
+import ObiWanKenobi from './components/Character/img/ObiWanKenobi.jpeg';
+import OwenLars from './components/Character/img/OwenLars.png';
+import R2D2 from './components/Character/img/R2-D2.jpg';
+import R5D4 from './components/Character/img/R5-D4.jpeg';
 
 class App extends Component {
   constructor() {
@@ -13,27 +22,27 @@ class App extends Component {
       starwarsImages: [
         {
           url: "https://swapi.co/api/people/1/",
-          image: "https://ybxzcgnc7b-flywheel.netdna-ssl.com/wp-content/uploads/2017/11/cute.jpg"
+          image: LukeSkywalker
         },
         {
           url: "https://swapi.co/api/people/2/",
-          image: "../src/components/Character/img/C-3PO.jpeg"
+          image: C3PO
         },
         {
           url: "https://swapi.co/api/people/3/",
-          image: "./img/R2-D2.jpg"
+          image: R2D2
         },
         {
           url: "https://swapi.co/api/people/4/",
-          image: "./img/DarthVader.jpg"
+          image: DarthVader
         },
         {
           url: "https://swapi.co/api/people/5/",
-          image: "./img/LeiaOrgana.png"
+          image: LeiaOrgana
         },
         {
           url: "https://swapi.co/api/people/6/",
-          image: "./img/OwenLars.png"
+          image: OwenLars
         },
         {
           url: "https://swapi.co/api/people/7/",
@@ -41,15 +50,15 @@ class App extends Component {
         },
         {
           url: "https://swapi.co/api/people/8/",
-          image: "./img/R5-D4.jpeg"
+          image: R5D4
         },
         {
           url: "https://swapi.co/api/people/9/",
-          image: "./img/BiggsDarklighter.jpg"
+          image: BiggsDarklighter
         },
         {
           url: "https://swapi.co/api/people/10/",
-          image: "./img/ObiWanKenobi.png"
+          image: ObiWanKenobi
         }
       ]
     };
@@ -57,7 +66,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
-    this.addImages();
+    //this.addImages();
   }
 
   getCharacters = URL => {
@@ -76,13 +85,13 @@ class App extends Component {
       });
   };
 
-  addImages = () => {
-    let characterHolder = this.state.starwarsChars;
-    characterHolder.map((character) => {
-      character.image = (this.state.starwarsImages.find((image) => image.url === character.url)).image;
-    });
-    this.setState(() => ({ starwarsChars: characterHolder }));
-  }
+  // addImages = () => {
+  //   let characterHolder = this.state.starwarsChars;
+  //   characterHolder.map((character) => {
+  //     character.image = (this.state.starwarsImages.find((image) => image.url === character.url)).image;
+  //   });
+  //   this.setState(() => ({ starwarsChars: characterHolder }));
+  // }
 
   render() {
     return (
