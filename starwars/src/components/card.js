@@ -4,7 +4,8 @@ const Card = props =>{
         <div className="card">
             <h3>{props.charInfo.name}</h3>
             <p>Gender:{props.charInfo.gender}</p>
-            <p>Born On:{props.charInfo.birthYear}</p>
+            <p>Height:{props.charInfo.height}</p>
+            <p>Birth Year: {props.charInfo. birth_year}</p>
         </div>
     );
 }

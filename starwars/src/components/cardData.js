@@ -2,15 +2,16 @@ import React from 'react';
 import Card from './card';
  function CardData(props){
     return(
-        <ul>
+        <div className='card-container'>
             {props.characterData.map(charInfo => 
             <Card 
             charInfo={charInfo} 
             name={charInfo.name} 
             gender={charInfo.gender}  
-            birthYear = {charInfo.birth_year}
+            height={charInfo.height}
+            birth_year={charInfo.birth_year}
             />)}
-        </ul>
+        </div>
     );
 };
 export default CardData;
