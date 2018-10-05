@@ -1,13 +1,18 @@
 * {
   box-sizing: border-box;
 }
+html{
+  overflow: hidden;
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
-  
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: auto;
+  height: 100%;
 }
 
