@@ -6,3 +6,12 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.profiles-container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}

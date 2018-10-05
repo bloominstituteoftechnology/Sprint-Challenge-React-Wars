@@ -21,27 +21,32 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
+        console.log(res.json);
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+  
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         
-        <div class='container'></div>
+        <div className='profiles-container'>
         {this.state.starwarsChars.map((profile, index) => {
 
           return <Profile key={index} id={index} profile={profile} profileList={this.state.starwarsChars}/>
 
         })}
+
+        </div>
         
       </div>
     );
