@@ -7,7 +7,23 @@
 .card-header{
     background: #172E59;
     color:white;
+    font-size:2rem;
 }
 .card-body{
     background: #D7D98E;
+    text-align: left;
+    height:100%;
+}
+.card-body-header{
+ display:inline;
+ font-size:1.7rem;
+}
+.card-body-detail{
+    display: inline;
+    font-size:1.6rem;
+}
+.card-body-subdetail{
+    display: block;
+    font-size:1.4rem;
+    padding-left:50px;
 }
