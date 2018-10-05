@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.css';
 
 const Card = ({ character }) => {
   return (
@@ -10,27 +11,27 @@ const Card = ({ character }) => {
         <h3>Stats</h3>
         <ul className="Card-List">
           <li className="Card-Item">
-            <span className="Card-Key">Date of Birth:</span>
+            <span className="Card-Key">Date of Birth: </span>
             {character.birth_year}
           </li>
           <li className="Card-Item">
-            <span className="Card-Key">Height:</span>
+            <span className="Card-Key">Height: </span>
             {character.height}
           </li>
           <li className="Card-Item">
-            <span className="Card-Key">Mass:</span>
+            <span className="Card-Key">Mass: </span>
             {character.mass}
           </li>
           <li className="Card-Item">
-            <span className="Card-Key">Hair Color:</span>
+            <span className="Card-Key">Hair Color: </span>
             {character.hair_color}
           </li>
           <li className="Card-Item">
-            <span className="Card-Key">Skin Color:</span>
+            <span className="Card-Key">Skin Color: </span>
             {character.skin_color}
           </li>
           <li className="Card-Item">
-            <span className="Card-Key">Eye Color:</span>
+            <span className="Card-Key">Eye Color: </span>
             {character.eye_color}
           </li>
         </ul>
