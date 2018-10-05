@@ -9,8 +9,8 @@ React is a JavaScript library developed by FaceBook engineers and solves the pro
 To break things into components and sections.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-Stateful components:
-class components:
+Stateful components:Contains this.state? has it's own state
+class components: get access to the render and constructor functions
 Functional: A functional component handles state and is reactive
 Presentational:Presentational components do not have a state and are only concerned about displaying data
 
