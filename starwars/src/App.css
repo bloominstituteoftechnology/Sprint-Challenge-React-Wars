@@ -13,6 +13,7 @@
 }
 
 .card {
+  width: 400px;
   border: 2px solid rgba(161, 34, 34);
   border-radius: 15px;
   background: rgba(161, 34, 34, 0.3);
@@ -21,8 +22,10 @@
 }
 
 .cardList {
-  max-width: 400px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 h3 {
