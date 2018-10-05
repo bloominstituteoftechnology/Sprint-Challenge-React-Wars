@@ -23,11 +23,17 @@ class App extends Component {
     if (this.state.previous !== null) {
       this.getCharacters(this.state.previous);
     }
+    else {
+      alert("You're at the first page! Try the 'Next' button.")
+    }
   }
 
   nextPage = () => {
     if (this.state.next !== null) {
       this.getCharacters(this.state.next);
+    }
+    else {
+      alert("You're at the last page! Try the 'Previous' button.")
     }
   }
 
