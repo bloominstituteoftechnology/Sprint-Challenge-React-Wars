@@ -1,0 +1,16 @@
+
+
+li {
+    background-color: white;
+    width: 400px;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2 {
+    color: rgb(78, 77, 77);
+    font-size: 32px;
+}
