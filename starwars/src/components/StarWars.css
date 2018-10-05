@@ -2,7 +2,7 @@
     color: white;
 }
 .containerCard {
-    border: 1px solid white;
+    border: 1px solid black;
     width: 18%;
     margin: 0 auto;
     text-shadow: 1px 1px 5px red;

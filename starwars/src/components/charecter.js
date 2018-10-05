@@ -12,10 +12,10 @@ const Charecter = props => {
                 <p className='colorKey'>Gender: {item.gender}</p>
                 <p className='colorKey'>Eye color: {item.eye_color}</p>
                 <p className='colorKey'>Skin color: {item.skin_color}</p>
-                <p className='colorKey'>Created: {item.created}</p>
-                <p className='colorKey'>Edited: {item.edited}</p>
                 <p className='colorKey'>Height: {item.height}</p>
                 <p className='colorKey'>Mass: {item.mass}</p>
+                <p className='colorKey'>Created: {item.created}</p>
+                <p className='colorKey'>Edited: {item.edited}</p>
                 </div>)
             })}
         </div>
