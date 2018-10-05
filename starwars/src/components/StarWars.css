@@ -1,11 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card {
     width: 150px;
     background-color: darkgray;
     color: gold;
     border: 1px solid black;
     border-radius: 5px;
+    margin: 60px;
+    flex-direction: wrap;
 }
 
 li {
-    ist-style-type: none;
+    list-style-type: none;
+    text-align: center;
 }
