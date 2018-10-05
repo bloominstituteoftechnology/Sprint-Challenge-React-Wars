@@ -16,3 +16,7 @@
   font-size: 5rem;
 }
 /* write your parent styles in here for your App.js */
+
+button {
+  width: 50%;
+}

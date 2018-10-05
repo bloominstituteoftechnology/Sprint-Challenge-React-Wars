@@ -37,17 +37,18 @@
 
 ![Star Wars state data](starwars_data.png)
 
-- Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
-- For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
-- I suggest building **function over form** at first. Then take time to style your app after.
+[x] Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
+[x] For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
+[x] I suggest building **function over form** at first. Then take time to style your app after.
 
 ## Stretch Problems
 
 1.  Build a pagination system that will allow you to load the next page of data
 
-- Take note on the data that's coming back from the server call in our `getCharacters`
-- console.log() the data coming back from the server.
-- Notice that there are `next` `previous` fields that give you a URL.
+[x] Take note on the data that's coming back from the server call in our `getCharacters`
+[x] console.log() the data coming back from the server.
+[x] Notice that there are `next` `previous` fields that give you a URL.
+
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
 
 ```js
