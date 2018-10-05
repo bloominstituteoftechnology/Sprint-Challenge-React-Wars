@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarDisplay from './components/StarDisplay.js';
+import NextBackButton from './components/NextBackButton.js';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      
     };
   }
 
@@ -22,7 +26,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars : data.results });
       })
       .catch(err => {
         throw new Error(err);
@@ -33,6 +37,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+        
+        {this.state.starwarsChars.map((stars, i) => 
+          <StarDisplay key={i} char={char} /> 
+        )}
+
+        <NextBackButton />
+
       </div>
     );
   }
