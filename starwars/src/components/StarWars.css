@@ -1,0 +1,30 @@
+
+ul {
+    width: 100%;
+   margin: 10px 0;
+    background: whitesmoke;
+}
+li {
+    line-height: 30px;
+    list-style: none;
+    color: black;
+   text-align: center;
+    
+}
+.cards {
+    border: 2px solid black;
+   width: 400px;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: darkgrey;
+   margin: 20px 0;
+  
+}
+
+h2 {
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
