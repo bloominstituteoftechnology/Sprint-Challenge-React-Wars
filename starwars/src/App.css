@@ -1,8 +1,11 @@
 .App {
+  font-family: 'Notable', sans-serif;
   text-align: center;
+  letter-spacing: 3px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 48px;
 }
 /* write your parent styles in here for your App.js */

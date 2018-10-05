@@ -1,7 +1,7 @@
 .char-card {
   height: 50px;
   width: auto;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
   padding-top: 3%;
   border: 3px solid lightslategray;
   border-radius: 5px;
@@ -25,4 +25,10 @@
   z-index: 1;
   text-shadow: 1px 1px 5px #fff;
   color: #443e3e;
+}
+
+.char-image {
+  height: 20px;
+  width: 20px;
+  background-color: #b5653f;
 }
