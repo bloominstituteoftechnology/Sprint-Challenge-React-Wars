@@ -5,22 +5,25 @@
 }
 
 .card-container {
-    min-height: 500px;
+    height: 500px;
     width: 40%;
-    margin: 10px 20px;
-    border: 0.5px solid #000000;
+    margin: 20px auto;
+    border-radius: 15px;
     font-family: sans-serif;
-    background-image: url('../sw-bg.jpg');
+    color: white;
+    background-image: url('../star-wars-space.png');
+    opacity: 0.75;
     background-size: 100%;
    
   }
   
   .content {
       width: 100%;
-      font-size: 12px;
+      font-size: 16px;
+      line-height: 2;
       
   }
 
   .url {
-      font-size: 10px;
+      display: none;
   }
