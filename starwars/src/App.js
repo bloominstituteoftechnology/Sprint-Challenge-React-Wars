@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Card from "./components/Card";
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      current: 0
     };
   }
 
@@ -32,8 +35,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+        <div className="container">
+          <h1 className="Header">React Wars</h1>
+          <h2>{JSON.stringify(this.state.starwarsChars[this.state.current].name)}</h2>
+          <Card info={this.state.starwarsChars[this.state.current]} />
+        </div> {/* Container */}
+      </div> // App 
     );
   }
 }
