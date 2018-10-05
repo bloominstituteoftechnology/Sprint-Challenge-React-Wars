@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardList from "./components/CardList";
 import './App.css';
 
 class App extends Component {
@@ -30,9 +31,13 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="cards-container">
+        <CardList starwars={this.state.starwarsChars} key={this.state.starwarsChars.name} />
+        </div>
       </div>
     );
   }
