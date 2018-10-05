@@ -1,4 +1,5 @@
 import React from 'react';
+import './StarWars.css'
 
 class Card extends React.Component {
 
