@@ -12,7 +12,7 @@ html {
 .container h1 {
   font-size: 9rem;
   color: yellow;
-  -webkit-text-stroke: .25px black;
+  -webkit-text-stroke: 1px black;
   letter-spacing: 3px;  
   width: 100%;
   margin-bottom: 0;
@@ -34,19 +34,22 @@ button {
   height: 40px;
   margin-top: 15px;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   font-family: Death Star;
   cursor: pointer;
   border: 1px solid black;
   margin-bottom: 0;
+  opacity: .4;
 }
 button:hover {
+  font-size: 2.4rem;
   font-family: Death Star Outlines;
   color:white;
   background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/star-wars-stars-background-2.jpg);
   border:1px solid white;
   -webkit-text-stroke: 1px yellow;
+  opacity: 0.8;
 }
 
 .cards {
@@ -63,6 +66,7 @@ button:hover {
   border: 1px solid black;
   border-radius: 5px;
   border: 1px solid white;
+  opacity: 0.8;
 }
 
 .character:hover {

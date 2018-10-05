@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-image: url(http://allhdwallpapers.com/wp-content/uploads/2017/05/Star-Wars-Battlefront-II-6.jpg);
+  position: sticky;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
