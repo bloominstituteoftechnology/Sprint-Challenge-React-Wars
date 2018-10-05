@@ -3,7 +3,7 @@ import './StarWars.css';
 
 const ListItem = props => {
     return (
-        <div>
+        <div className='charcter-preview' onClick={() => props.showCurrentChar(props.char.name)}>
             {props.char.name}
         </div>
     );
