@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
-import CharacterCaro from './components/CharacterCaro';
+import React, { Component } from "react";
+import "./App.css";
+import CharacterCaro from "./components/CharacterCaro";
 
 class App extends Component {
   constructor() {
@@ -8,12 +8,12 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       next: "",
-      previous: ""    
+      previous: ""
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -25,7 +25,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ 
+        this.setState({
           starwarsChars: data.results,
           next: data.next,
           previous: data.previous
@@ -39,12 +39,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="buttons">
+          <button
+            className="prevButton"
+            onClick={() => this.getCharacters(this.state.previous)}
+          >
+            Previous
+          </button>
+          <button
+            className="nextButton"
+            onClick={() => this.getCharacters(this.state.next)}
+          >
+            Next
+          </button>
+        </div>
         <h1 className="Header">React Wars</h1>
-        <CharacterCaro 
-        characters={this.state.starwarsChars}
-        />
-        <button className="prevButton" onClick={() => this.getCharacters(this.state.previous)}>Previous</button>
-        <button className="nextButton" onClick={() => this.getCharacters(this.state.next)}>Next</button>
+        <CharacterCaro characters={this.state.starwarsChars} />
       </div>
     );
   }
