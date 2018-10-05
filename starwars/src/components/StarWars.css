@@ -1,0 +1,11 @@
+.cardContainer {
+  border: 3px white solid;
+  background: white;
+  max-width: 600px;
+}
+
+
+.characterCard {
+  border: 3px yellow dashed;
+  background: white;
+}
