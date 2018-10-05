@@ -1,8 +1,11 @@
 import React from 'react';
+import StarStock from '../img/star-wars-logo-new-tall.jpg'
 
 const CardMedia = (props) => {
     return (
-        <p>THIS IS THE MEDIA SECTION</p>
+        <div className='imgWrapper'>
+            <img src={StarStock} alt='star wars character placeholder' />
+        </div>
     )
 }
 

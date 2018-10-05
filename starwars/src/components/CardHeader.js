@@ -5,7 +5,6 @@ const CardHeader = (props) => {
     return (
         <div className="header">
             <p>{props.character.name}</p>
-            <p>{props.character.birth_year}</p>
         </div>
     );
 }
