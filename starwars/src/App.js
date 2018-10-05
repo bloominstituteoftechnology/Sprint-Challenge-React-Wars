@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+import Pagination from './components/Pagination';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      previous: '',
+      next: ''
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -22,17 +26,46 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          previous: data.previous,
+          next: data.next
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  nextPage = event => {
+    event.preventDefault();
+
+    if (this.state.next !== null) {
+      this.getCharacters(this.state.next);
+    }
+  }
+
+  previousPage = event => {
+    event.preventDefault();
+
+    if (this.state.previous !== null) {
+      this.getCharacters(this.state.previous);
+    }
+  };
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <header>
+          {/* <h1 className="heading">React Wars</h1> */}
+          <img className="heading-img" src="https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo-1.png" alt="star wars logo"/>
+        </header>
+
+        <div className="list-container">
+          <CharacterList characters={this.state.starwarsChars} />
+          <Pagination previousPage={this.previousPage} nextPage={this.nextPage}/>
+        </div>
+
       </div>
     );
   }

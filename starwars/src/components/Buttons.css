@@ -1,0 +1,30 @@
+.button-container {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 20px;
+}
+
+.button-container button {
+  border: 2px solid rgba(35, 39, 63, 0.8);
+  width: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #fafafa;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+  background-color: #fdcb34;
+}
+
+.button-container button:focus {
+  outline: none;
+  background-color: #e3aa00;
+  box-shadow: none;
+}

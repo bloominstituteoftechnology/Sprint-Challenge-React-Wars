@@ -1,0 +1,49 @@
+.character-list {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.character-list .character-card {
+  border: 1px solid #fafafa;
+  width: 32%;
+  padding: 20px;
+  height: 350px;
+  margin-top: 30px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.character-list .character-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.character-list .character-card h1 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  text-shadow: -2px 1px 2px rgba(35, 39, 63, 0.4);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #f1f1f1;
+  color: #202338;
+}
+
+.character-list .character-card .info-container {
+  margin-bottom: 25px;
+}
+
+.character-list .character-card .info-container p {
+  line-height: 25px;
+}
+
+.character-list .character-card .logo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.character-list .character-card div img {
+  width: 25%;
+}
