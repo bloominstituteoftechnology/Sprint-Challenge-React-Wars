@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ListChars from './components/ListChars';
 
 class App extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class App extends Component {
 
   showCurrentChar = name => {
     const currentChar = this.state.starwarsChars.find(char => char.name === name);
-    console.log(currentChar);
+    this.setState({currentChar: currentChar});
   }
 
   render() {
