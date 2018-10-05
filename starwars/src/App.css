@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.App h1{
+ width: 100%;
+ font-size: 5rem;
+ font-weight: bold;
 }
 .Header {
   color: #443e3e;

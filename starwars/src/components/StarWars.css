@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card-content {
+    width: 39%;
+    background: rgb(211, 178, 129);
+    border-radius: 2rem;
+    margin: 2.5% 5%;
+    padding: 2rem 0;
+    border: 1px solid rgb(77, 70, 30);
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.card-content h2  {
+    background: rgb(77, 70, 30);
+    padding: 2.5rem 0;
+    width: 100%;
+}
+
+.card-content h3 {
+    width: 100%;
+}
+
+.card-content .info {
+    font-weight: bold;
+}
+
+.card-content p {
+    width: 50%;
+}
