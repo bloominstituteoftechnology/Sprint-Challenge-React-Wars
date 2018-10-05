@@ -189,7 +189,9 @@ li {
 
 .character {
   width: 18%;
+  min-width: 150px;
   height: 280px;
   margin: 10px;
   background:rgba(255,255,255,0.7);
+  box-shadow: 4px 4px 3px lightgray;
 }
