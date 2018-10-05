@@ -1,0 +1,43 @@
+
+
+/*== Pagination ==============================================================*/
+
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pagination-nav {
+    cursor: pointer;
+}
+.pagination-nav-previous {}
+.pagination-nav-next {}
+.pagination-nav-hide {
+    visibility: hidden;
+}
+
+@media (min-width: 800px) {
+    .pagination-container {
+        position: relative;
+        top: 0;
+    }
+    .pagination-nav {
+        align-self: flex-start;
+        position: sticky;
+        top: 20vh;
+    }
+    .pagination-nav-next {
+        order: 1;
+    }
+}
+@media (max-width: 800px) {
+    .pagination-container {
+        flex-wrap: wrap;
+    }
+    .pagination-nav-previous {
+        margin-right: 20vw;
+    }
+    .pagination-nav-next {
+        margin-left: 20vw;
+    }
+}

@@ -1,0 +1,37 @@
+.card-container {
+    display: grid;
+    grid: auto-flow dense / repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card-character, .card-ship {
+    background: rgba(255,255,255,0.8);
+    outline: 1px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-ship {
+    background: white;
+    padding: 10px;
+}
+.card-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0 auto 10px auto;
+}
+.card-ship-link {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .card-container {
+        grid: auto-flow dense / repeat(2, 1fr);
+        max-width: 600px;
+    }
+}
