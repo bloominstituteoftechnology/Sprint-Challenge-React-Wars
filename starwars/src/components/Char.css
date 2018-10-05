@@ -1,10 +1,12 @@
 .char-card {
   height: 175px;
   width: 40%;
-  background: white;
-  border: 1px solid blue;
+  background: black;
+  border: 2px solid #fade37;
   margin-bottom: 50px;
+  padding-bottom: 10px;
   border-radius: 10px;
+  opacity: 0.8;
 }
 .char-info {
   display: flex;
@@ -13,6 +15,9 @@
 }
 
 h2 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  color: #fade37;
 }
 
 p {
@@ -21,4 +26,6 @@ p {
   padding: 0;
   line-height: 25px;
   width: 50%;
+  color: #fade37;
+  font-family: "Righteous", cursive;
 }

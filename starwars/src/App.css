@@ -2,8 +2,12 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #fade37;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: "Oswald";
+  font-size: 70px;
+
+  letter-spacing: 8px;
 }
 .char-list {
   display: flex;
