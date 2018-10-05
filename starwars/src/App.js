@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+import Header from './Header.js';
+import Nav from './Nav.js';
+import CardComponent from './CardComponent.js';
+import InBetween from './InBetween.js';
+
+
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      info: {}
     };
   }
 
+// fires immediately before rendering with new props or state
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
+
+
+
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -29,10 +42,19 @@ class App extends Component {
       });
   };
 
+
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Nav />
+        <Header />
+        <InBetween />
+        <div className="allcards">
+        <CardComponent starwarsChars={this.state.starwarsChars}/>
+      
+          </div>
+        </div>
       </div>
     );
   }
