@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'StarWarsFont';
+  src: url('Starjedi.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+}
+
+img {
+  width: 100px;
+  height: auto;
 }
