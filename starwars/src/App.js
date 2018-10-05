@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/character'
+import Buttons from './components/buttons';
 
 class App extends Component {
   constructor() {
@@ -29,11 +31,25 @@ class App extends Component {
       });
   };
 
+  displayCharacter = event => {
+    event.preventDefault();
+    // console.log(event.target);
+    // let newState = this.state.starwarsChars.slice();
+    // console.log(newState);    
+    // newState = newState.filter(char => char.starwarsChars.name === char.target.name)
+  }
+
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+      <div className="container">  
+        <h1>CHOOSE YOUR CHARACTER</h1>    
+        <div className="buttons">
+          {this.state.starwarsChars.map((char,i) => <Buttons displayCharacter={this.displayCharacter} char={char} key={i} />)}  
+        </div>
+        <div className="cards">
+          {this.state.starwarsChars.map((char,i) => <Character char={char} key={i} />)}
+        </div>
+      </div>      
     );
   }
 }
