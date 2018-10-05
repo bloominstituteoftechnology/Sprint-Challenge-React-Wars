@@ -1,0 +1,8 @@
+.colorKey {
+    color: red;
+}
+.containerCard {
+    border: 1px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
