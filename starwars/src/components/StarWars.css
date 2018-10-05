@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card-content {
+    width: 40%;
+    background: rgb(211, 178, 129);
+    border-radius: 2rem;
+    margin: 2.5% 5%;
+    padding: 2rem 0;
+}
