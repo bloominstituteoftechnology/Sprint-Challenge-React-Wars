@@ -1,0 +1,20 @@
+.star-wars-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.char-container {
+  border: 1px solid black;
+  width: 350px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.char-container p {
+  font-size: 1.2rem;
+}
+.char-container h1 {
+  padding: 10px 10px 0;
+}
