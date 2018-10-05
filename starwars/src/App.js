@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsPeeps from './components/StarWarsPeeps.js';
+import CharIndex from './components/CharIndex.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [
+          // {
+          //     name : '',
+          //     height : '',
+          //     birth_year : '',
+          //     mass : '',
+
+          // },
+      ],
+      jedi: ''
+      // console.log(state.birth_year);
     };
   }
 
@@ -29,13 +41,25 @@ class App extends Component {
       });
   };
 
+  displayCharacter = name => {
+    const viewCharacter = this.state.starwarsChars
+    this.setState({viewCharacter: viewCharacter})
+  }
+
   render() {
+    console.log('App Render Called!')
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
+      <CharIndex
+          starwarsChars={this.state.starwarsChars}
+          
+        />
+      {/* <StarWarsPeeps
+           */}
+       </div>
     );
   }
 }
-
+// console.log(this.state.starwarsChars);
 export default App;
