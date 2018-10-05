@@ -1,4 +1,5 @@
 import React from 'react';
+import "./StarWars.css" 
 
 const Character = (props) => {
   const { bio } = props;
