@@ -4,7 +4,7 @@ const Vehicles = (props) => {
   return (
     <div>
       {props.vehicles.map(vehicle => (
-        <div>{vehicle.vehicles}</div>
+        <div>{vehicle}</div>
       ))}
     </div>
   )

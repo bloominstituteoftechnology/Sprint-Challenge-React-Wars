@@ -33,7 +33,7 @@ const CharacterList = props => {
           <HomeWorld profile={profile} />
           <Mass profile={profile} />
           <SkinColor profile={profile} />
-          <Species profile={profile} />
+          <Species species={profile.species} />
           <Starships starships={profile.starships} />
           <Vehicles vehicles={profile.vehicles} />
         </div>

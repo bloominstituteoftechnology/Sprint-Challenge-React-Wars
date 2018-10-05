@@ -1,7 +1,12 @@
 import React from 'react'
 
 const Species = (props) => {
-  return <div>{props.profile.species}</div>
+  return (
+    <div>
+      {props.species.map(group => (
+        <div>{group}</div>
+      ))}
+    </div>
+  )
 }
-
 export default Species

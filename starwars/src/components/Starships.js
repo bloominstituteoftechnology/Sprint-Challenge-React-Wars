@@ -4,7 +4,7 @@ const Starships = (props) => {
   return (
     <div>
       {props.starships.map(ship => (
-        <div>{ship.starship}</div>
+        <div>{ship}</div>
       ))}
     </div>
   )
