@@ -39,7 +39,7 @@ class App extends Component {
           {this.state.starwarsChars.map(char => {
             return (
               <Char
-                key={char.created}
+                id={char.created}
                 charName={char.name}
                 charGender={char.gender}
                 charBirthYear={char.birth_year}

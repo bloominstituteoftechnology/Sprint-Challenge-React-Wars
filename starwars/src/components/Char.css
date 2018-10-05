@@ -1,0 +1,24 @@
+.char-card {
+  height: 175px;
+  width: 40%;
+  background: white;
+  border: 1px solid blue;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.char-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  width: 50%;
+}
