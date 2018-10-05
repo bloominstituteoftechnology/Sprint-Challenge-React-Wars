@@ -44,7 +44,6 @@ const Form = props => {
                     name="gender" 
                     id="other" 
                     value="OTHER" 
-                    required
                 />
 			</div>
 

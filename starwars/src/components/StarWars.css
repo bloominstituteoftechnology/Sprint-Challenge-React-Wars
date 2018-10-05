@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
     background:rgba(5, 220, 228, 0.753);
-    width: 400px;
-    margin: 0 auto;
+    width: 450px;
+    margin: 40px auto;
+    padding: 10px 0 2px;
 }
 
 .container .names {
@@ -16,9 +21,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(85, 231, 85, 0.699);
+    width: 300px;
+    margin: 0 auto;
 }
 
 .form .input {
+    margin-top: 20px;
     width: 250px;
     padding: 4px 0 4px 4px; 
 }
