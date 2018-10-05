@@ -59,7 +59,7 @@ class App extends Component {
       this.getCharacters(this.state.data.previous);
     }
   }
-  
+
   render() {
     return (
       <div className="App">
@@ -67,7 +67,6 @@ class App extends Component {
         <div className="pagination">
           <button prev="prev" onClick={this.prevPage}>{'<--Prev'}</button>
           <button next="next" onClick={this.nextPage}>{'Next-->'}</button>
-          <button next="next" onClick={this.changePageNum}>{'Next but diffrent-->'}</button>
           </div>
           <div className="Card-Container">
           {(this.state.loading ? (
