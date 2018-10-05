@@ -1,8 +1,26 @@
-.App {
-  text-align: center;
+/* .Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+} */
+/* write your parent styles in here for your App.js */
+
+.App header {
+  border: 1px solid red;
+  width: 100%;
+  padding: 40px 0;
 }
-.Header {
+
+header .heading {
+  border: 1px solid blue;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+
+.list-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}

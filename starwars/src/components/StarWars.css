@@ -1,0 +1,17 @@
+.character-list {
+  border: 1px solid blue;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-list .character-card {
+  border: 1px solid red;
+  width: 25%;
+}
+
+.character-list .character-card h1 {
+  font-size: 3rem;
+
+}
