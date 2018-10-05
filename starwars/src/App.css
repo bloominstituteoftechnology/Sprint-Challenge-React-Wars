@@ -11,16 +11,27 @@
 /* write your parent styles in here for your App.js */
 
 .list-container {
-  width: 350px;
+  width: 100%;
+  max-width: 300px;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
-
-.list-container button { 
+/* .list-container button { 
   margin-top: 30%;
   height: 30px;
   width: 30px;
+  border-radius: 50%;
+  background: white;
+} */
+
+.list-container button { 
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  border: none;
   border-radius: 50%;
   background: white;
 }

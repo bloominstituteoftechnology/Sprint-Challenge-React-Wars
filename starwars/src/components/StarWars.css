@@ -3,7 +3,6 @@
     width: 100%;
 }
 .person {
-    position: absolute;
     width: 300px;
     margin: 0 auto;
 }
@@ -22,4 +21,16 @@
 
 .show {
     display: flex;
+}
+
+.page-button-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.active-page{ 
+    color: white;
+    background-color: #443e3e !important;
 }
