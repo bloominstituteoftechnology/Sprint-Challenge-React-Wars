@@ -1,0 +1,13 @@
+
+
+.card{
+    height:400px;
+    width: 300px;
+}
+.card-header{
+    background: #172E59;
+    color:white;
+}
+.card-body{
+    background: #D7D98E;
+}
