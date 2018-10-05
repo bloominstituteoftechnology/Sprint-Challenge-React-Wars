@@ -3,13 +3,17 @@ import '../App.css';
 
 const DisplayChar = props => {
     return(
-        <div>
+        <div
+            className='main-content'>
             {props.starwarsChars.map((item, index) => {
     return(
-        <div>
-        <h1 key={index}>{item.name}</h1>
+        <div
+        key={index}
+        className='character'
+        >
+        <h2>{item.name}</h2>
 
-        <ul key={index}>
+        <ul>
             <li>birth year: {item.birth_year}</li>
             <li>eye color: {item.eye_color}</li>
             <li>gender: {item.gender}</li>
