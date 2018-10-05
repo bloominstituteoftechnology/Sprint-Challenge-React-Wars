@@ -1,15 +1,27 @@
 .card-container {
     display: grid;
-    grid: auto-flow dense / repeat(4, 1fr);
-    min-width: 800px;
+    grid: auto-flow dense / repeat(3, 1fr);
+    max-width: 800px;
     margin: 0 auto;
 }
 .card-character {
     background: rgba(255,255,255,0.8);
     outline: 1px solid black;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-stats {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    margin: 0 auto 10px auto;
+}
+
+@media (max-width: 800px) {
+    .card-container {
+        grid: auto-flow dense / repeat(2, 1fr);
+        max-width: 600px;
+    }
 }
