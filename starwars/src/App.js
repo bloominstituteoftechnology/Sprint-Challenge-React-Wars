@@ -65,16 +65,17 @@ class App extends Component {
   render() {
     let prev = null;
     if(this.state.oldUrl.length > 1) {
-      prev = <button onClick= {this.getnewCharacters} value='old'>Previous</button>;
+      prev = <button className = 'button1'onClick= {this.getnewCharacters} value='old'>Previous</button>;
     } else {
       prev = null;
     }
     return (
       <div className="App">
        <h1>STAR WARS CHARACTERS</h1>
-       <div>{prev}</div>
-       <button onClick= {this.getnewCharacters} value='new'>Next</button>
-       
+       <div classname = 'buttons'>
+          <div>{prev}</div>
+          <button  className = 'button2' onClick= {this.getnewCharacters} value='new'>Next</button>
+       </div>
         <Card 
           starwarsChars={this.state.starwarsChars}
         />
