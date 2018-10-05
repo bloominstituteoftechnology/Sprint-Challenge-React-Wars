@@ -20,8 +20,8 @@ class Pagination extends React.Component {
 
     //-- Rendering - only render current tab ---------
     render = () => {
-        let hidePrevious = '';
-        let hideNext = '';
+        let hidePrevious = this.props.pagePrevious? '' : ' pagination-nav-hide';
+        let hideNext     = this.props.pageNext    ? '' : ' pagination-nav-hide';
         return (
             <div className="pagination-container">
                 <img

@@ -10,8 +10,11 @@
 .pagination-nav {
     cursor: pointer;
 }
-.pargination-nav-previous {}
-.pargination-nav-next {}
+.pagination-nav-previous {}
+.pagination-nav-next {}
+.pagination-nav-hide {
+    visibility: hidden;
+}
 
 @media (min-width: 800px) {
     .pagination-container {

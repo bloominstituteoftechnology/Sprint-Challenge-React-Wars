@@ -43,14 +43,16 @@ class App extends Component {
   }
 
   render() {
+    let nextFunction     = this.state.pageNext    ? this.pageNext     : null;
+    let previousFunction = this.state.pagePrevious? this.pagePrevious : null;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Pagination
           navImageLeft="img/nav_left.png"
           navImageRight="img/nav_right.png"
-          pagePrevious={this.pagePrevious}
-          pageNext={this.pageNext}
+          pagePrevious={previousFunction}
+          pageNext={nextFunction}
         >
           <div className="card-container">{
             this.state.starwarsChars.map(character => (
