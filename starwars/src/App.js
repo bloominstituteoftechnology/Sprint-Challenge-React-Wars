@@ -43,18 +43,20 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+        
   getPrevCharacters = () => {
-    fetch(`https://swapi.co/api/people?page=${this.state.page - 1}`)
-      .then(res => {
-        return res.json();  
-      })
-      .then(data => {
-        this.setState({ starwarsChars: data.results, page: this.state.page - 1 });
-      })
-      .catch(err => {
-        throw new Error(err);
+    if (this.state.page > 1) {
+      fetch(`https://swapi.co/api/people?page=${this.state.page - 1}`)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          this.setState({ starwarsChars: data.results, page: this.state.page - 1 });
+        })
+        .catch(err => {
+          throw new Error(err);
       });
+    }
   };
 
   render() {
