@@ -1,5 +1,5 @@
 import React from 'react'
-import './StarWars.css'
+import './GoodBoy.css'
 
 /*
 birth_year: "19BBY"
@@ -21,20 +21,18 @@ vehicles: (2) ["https://swapi.co/api/vehicles/14/", "https://swapi.co/api/vehicl
 */
 
 
-class CharacterCard extends React.Component {
+class GoodyBoyCard extends React.Component {
 
 
   render() {
     return (
-      <div className="character-card">
-        <h2>{this.props.data.name}</h2>
-        <div>Birth year: {this.props.data.birth_year}</div>
-        <div>Eye color: {this.props.data.eye_color}</div>
-        <div>Hair color: {this.props.data.hair_color}</div>
+      <div className="good-boy-card">
+        <h2>Number of good boys: {this.props.numBoys}</h2>
+        <img src={this.props.goodBoy} alt="good boy"/>
       </div>
     )
   }
 
 }
 
-export default CharacterCard;
+export default GoodyBoyCard;

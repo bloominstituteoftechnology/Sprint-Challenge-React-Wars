@@ -1,80 +1,59 @@
 import React, { Component } from 'react';
 import './App.css';
-import CharacterCard from './components/CharacterCard';
+import GoodyBoyCard from './components/GoodBoyCard';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      starwarsChars: [],
-      pageNum: 1,
-      data: {
-        previous: null,
-        next: null
-      },
+      currentGoodBoy: 'https://images.dog.ceo/breeds/shiba/shiba-3i.jpg',
+      numBoys: 1,
       loading: false
     };
-
-    this.prevPage = this.prevPage.bind(this)
-    this.nextPage = this.nextPage.bind(this)
+    console.log(this)
+    this.nextGoodBoy = this.nextGoodBoy.bind(this)
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people?page=' + this.state.pageNum);
+    this.getGoodBoy();
   }
 
-  getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
-    fetch(URL)
+  getGoodBoy = () => {
+    const randomGoodBoy = 'https://dog.ceo/api/breeds/image/random'
+    fetch(randomGoodBoy)
       .then(res => {
-        return res.json();
+        return res.json()
+      }).then(data => {
+        this.setState({ currentGoodBoy: data.message, loading: false})
+      }).catch(err => {
+        throw new Error(err)
       })
-      .then(data => {
-        console.log(data);
-        this.setState({ starwarsChars: data.results, data: data, loading: false });
-      })
-      .catch(err => {
-        throw new Error(err);
-      });
-  };
+  }
 
-  nextPage() {
-    if (this.state.data.next !== null && !this.state.loading) {
+
+  nextGoodBoy() {
+    if (!this.state.loading) {
       this.setState({
-        pageNum: this.state.pageNum + 1,
-        loading: true
-        
-      })
-      this.getCharacters(this.state.data.next);
-    }
-  }
-  prevPage() {
-    if (this.state.data.previous !== null && !this.state.loading) {
-      this.setState({
-        pageNum: this.state.pageNum - 1,
+        numBoys: this.state.numBoys + 1,
         loading: true
       })
-      this.getCharacters(this.state.data.previous);
+      this.getGoodBoy();
     }
   }
+
 
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Goodboy.com</h1>
         <div className="pagination">
-          <button prev="prev" onClick={this.prevPage}>{'<--Prev'}</button>
-          <button next="next" onClick={this.nextPage}>{'Next-->'}</button>
+          <button next="next" onClick={this.nextGoodBoy}>{'Good Boy!'}</button>
           </div>
           <div className="Card-Container">
           {(this.state.loading ? (
             <div className="lds-circle"></div>
             ):(
-              this.state.starwarsChars.map((chracter, i) => {
-              return <CharacterCard key={i} data={chracter} />
-            })
+              <GoodyBoyCard goodBoy={this.state.currentGoodBoy} numBoys={this.state.numBoys}/>
           ))}
         </div>
       </div>
