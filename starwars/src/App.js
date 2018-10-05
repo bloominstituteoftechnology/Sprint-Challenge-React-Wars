@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CardCollection from "./components/CardCollection";
+import LeftButton from "./components/LeftButton";
+import RightButton from "./components/RightButton";
 
 class App extends Component {
   constructor() {
@@ -32,12 +34,38 @@ class App extends Component {
       });
   };
 
+  nextCard = event => {
+    this.setState(
+      prevState => ({ current: prevState.current + 1 }), 
+      () => {
+        if (this.state.current >= this.state.starwarsChars.length) {
+          this.setState({ current: 0 });
+        }
+      }
+    );
+  }
+
+  previousCard = event => {
+    this.setState(
+      prevState => ({ current: prevState.current - 1 }), 
+      () => {
+        if (this.state.current < 0) {
+          this.setState({ current: this.state.starwarsChars.length - 1 });
+        }
+      }
+    );
+  }
+
   render() {
     return (
       <div className="App">
         <div className="container">
           <h1 className="Header">React Wars</h1>
-          <CardCollection info={this.state.starwarsChars} />
+          <div className="forButtons">
+            <LeftButton action={this.previousCard} />
+            <CardCollection info={this.state.starwarsChars} currentIdx={this.state.current} />
+            <RightButton action={this.nextCard} />
+          </div>
         </div> {/* Container */}
       </div> // App 
     );

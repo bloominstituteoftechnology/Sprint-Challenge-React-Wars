@@ -3,9 +3,10 @@ import React from "react";
 import "./StarWars.css";
 
 const Card = props => {
+    let tag = (props.current) ? "card current" : "card";
     return (
-        <div className="card">
-            {/* <h2>{JSON.stringify(props.info)}</h2> */}
+        <div className={tag}>
+        
             <h2>{props.item.name}</h2>
             <p>
                 <strong>Skin:</strong> {props.item.skin_color} &bull; <strong>Hair:</strong> {props.item.hair_color} &bull; <strong>Eyes:</strong> {props.item.eye_color}

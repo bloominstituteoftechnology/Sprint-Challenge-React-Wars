@@ -16,3 +16,14 @@
   text-shadow: 1px 1px 5px #f00;
 }
 /* write your parent styles in here for your App.js */
+
+.forButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.forButtons > img {
+  width: 50px;
+  cursor: pointer;
+}
