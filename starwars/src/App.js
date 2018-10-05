@@ -60,8 +60,3 @@ class App extends Component {
 }
 
 export default App;
-
-// plan:
-// -data is an array of objects, 10 things.
-//pass data array down to a container, to a card.
-//card has birthyear, eyecolor, gender, hair color, height, mass, maybe species or homeworld if i can figure out how to get them?
