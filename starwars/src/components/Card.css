@@ -1,0 +1,49 @@
+.Card {
+  width: 18%;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  transition: all 200ms;
+  animation: popin 400ms ease-in-out forwards;
+}
+
+.Card-Header {
+  margin-bottom: 2rem;
+}
+
+.Card-Title {
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.Card-Item {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.Card-Key {
+  font-size: 1.2rem;
+}
+
+@keyframes popin {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

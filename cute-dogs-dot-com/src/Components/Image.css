@@ -1,0 +1,30 @@
+.Image {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 2rem;
+  /* border: 8px solid #dcdde1; */
+  transition: all 200ms;
+  box-shadow: 0 5px 10px -5px rgba(47, 54, 64, 0.7);
+  animation: popin 400ms ease-in-out forwards;
+}
+
+.Image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes popin {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

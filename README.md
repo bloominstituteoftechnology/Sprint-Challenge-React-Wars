@@ -23,9 +23,11 @@
 - You're going to be building an application _starwars_ that consumes live data that we're retrieving across the world wide web!
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
-1. **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
-1. Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+[x] **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
+
+[x] Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
+
+[x] Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
@@ -35,17 +37,18 @@
 
 ![Star Wars state data](starwars_data.png)
 
-- Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
-- For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
-- I suggest building **function over form** at first. Then take time to style your app after.
+[x] Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
+[x] For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
+[x] I suggest building **function over form** at first. Then take time to style your app after.
 
 ## Stretch Problems
 
 1.  Build a pagination system that will allow you to load the next page of data
 
-- Take note on the data that's coming back from the server call in our `getCharacters`
-- console.log() the data coming back from the server.
-- Notice that there are `next` `previous` fields that give you a URL.
+[x] Take note on the data that's coming back from the server call in our `getCharacters`
+[x] console.log() the data coming back from the server.
+[x] Notice that there are `next` `previous` fields that give you a URL.
+
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
 
 ```js
