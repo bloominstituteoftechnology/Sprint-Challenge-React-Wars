@@ -1,0 +1,12 @@
+.person h3 {
+    /* color: #443e3e;
+    text-shadow: 1px 1px 5px #fff; */
+    color: white;
+    text-shadow: 1px 1px 5px #443e3e;
+}
+.person h2 {
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+    /* color: white;
+    text-shadow: 1px 1px 5px #443e3e; */
+}
