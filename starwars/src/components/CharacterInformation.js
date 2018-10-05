@@ -5,18 +5,18 @@ const CharacterInformation = props => {
     <div className="characterInformation">
       <div className="left">
         <ul className="characterDetailList">
-          <li className="characterDetail">Gender: {props.details.gender}</li>
-          <li className="characterDetail">Birth Year: {props.details.birth_year}</li>
-          <li className="characterDetail">Height: {props.details.height} cm</li>
-          <li className="characterDetail">Weight: {props.details.mass} kg</li>
+          <li className="characterDetail">Gender: <span className='characterDetailAnswer'>{props.details.gender}</span></li>
+          <li className="characterDetail">Birth Year: <span className='characterDetailAnswer'>{props.details.birth_year}</span></li>
+          <li className="characterDetail">Height: <span className='characterDetailAnswer'>{props.details.height} cm</span></li>
+          <li className="characterDetail">Weight: <span className='characterDetailAnswer'>{props.details.mass} kg</span></li>
         </ul>
       </div>
 
       <div className="right">
         <ul className="characterDetailList">
-          <li className="characterDetail">Eye Color: {props.details.eye_color}</li>
-          <li className="characterDetail">Hair Color: {props.details.hair_color}</li>
-          <li className="characterDetail">Skin Color: {props.details.skin_color}</li>
+          <li className="characterDetail">Eye Color: <span className='characterDetailAnswer'>{props.details.eye_color}</span></li>
+          <li className="characterDetail">Hair Color: <span className='characterDetailAnswer'>{props.details.hair_color}</span></li>
+          <li className="characterDetail">Skin Color: <span className='characterDetailAnswer'>{props.details.skin_color}</span></li>
         </ul>
       </div>
     </div>
