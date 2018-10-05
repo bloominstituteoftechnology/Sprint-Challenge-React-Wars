@@ -4,7 +4,7 @@
   max-width: 700px;
   margin: 10px auto;
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 2.8rem;
   font-weight: bold;
 }
 .Header {
@@ -21,5 +21,12 @@
   border: 1px solid black;
   padding: 20px;
   margin: 20px;
+  cursor: pointer;
+}
+
+charList {
+  cursor: pointer;
+}
+.character-preview {
   cursor: pointer;
 }

@@ -63,6 +63,7 @@ class App extends Component {
       return (
         <div className="App">
           <h1 className="Header">React Wars</h1>
+          <h5>Your can click on each name</h5>
           <div className='charList'>
             <ListChars chars={this.state.starwarsChars} 
               showCurrentChar={this.showCurrentChar} 
