@@ -1,0 +1,34 @@
+.char-card {
+  height: 50px;
+  width: auto;
+  padding-bottom: 6%;
+  padding-top: 3%;
+  border: 3px solid lightslategray;
+  border-radius: 5px;
+  margin: 10px 300px;
+  background-color: #b5653f;
+}
+
+.char-components {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.char-info {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+  text-shadow: 1px 1px 5px #fff;
+  color: #443e3e;
+}
+
+.char-image {
+  height: 20px;
+  width: 20px;
+  background-color: #b5653f;
+}
