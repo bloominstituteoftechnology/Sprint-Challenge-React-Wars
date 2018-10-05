@@ -50,6 +50,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="pageButtons">
+          <button onClick={this.previousPage}>Previous</button>
+          <button onClick={this.nextPage}>Next</button>
+        </div>
         <div className="cards">
           {this.state.starwarsChars.map((char, i) => <Card key={i} char={char}/>)}
         </div>
