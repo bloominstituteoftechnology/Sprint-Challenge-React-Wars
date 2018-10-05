@@ -9,6 +9,7 @@ React is a javascript library for building user interfaces. React was built to m
  Thinking in react refers to breaking a project down into a logical react workflow. You start with a mock and you break that down into a hierarchy of components. You then build a static version of that (without state). You then identify the minimal set of mutable state that your app needs and figure out where your state should live. Finally you add your data flow.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
 A functional component is a regular pure JavaScript function that accepts props as its argument, and returns some JSX whereas class based component is in fact a JavaScript class. It extends React.Component, and its only required method is render().
 
 1.  Describe state.
