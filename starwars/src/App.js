@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterPresenter from "./components/CharacterPresenter";
+import PageChange from "./components/PageChange";
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data.next);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -30,13 +32,28 @@ class App extends Component {
       });
   };
 
+  prevCharacters = event => {
+    event.preventDefault();
+    this.getCharacters('https://swapi.co/api/people');
+  }
+  nextCharacters = event => {
+    event.preventDefault();
+    this.getCharacters("https://swapi.co/api/people/?page=2");
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+          <PageChange
+                starwarsChars={this.state.starwarsChars}
+                prevCharacters={this.prevCharacters}
+                nextCharacters={this.nextCharacters}
+              />
           <div className="Container">
             <CharacterPresenter 
-              starwarsChars={this.state.starwarsChars} 
+              starwarsChars={this.state.starwarsChars}
+               
             />
           </div>
       </div>

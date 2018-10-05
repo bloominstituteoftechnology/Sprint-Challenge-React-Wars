@@ -9,4 +9,16 @@
 .Container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Poller One', cursive;
+  border: none;
+  background-color: black;
+  color: #FFD700;
+  margin-right: 12.5%;
+  margin-left: 10.5%;
+  font-size: 24px;
+  cursor: pointer;
 }
