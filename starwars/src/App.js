@@ -60,6 +60,14 @@ class App extends Component {
           </button>
         </div>
         <StarWars characters={this.state.starwarsChars} />
+        <div className="buttons">
+          <button className="previous" onClick={this.previousPage}>
+            Previous
+          </button>
+          <button className="next" onClick={this.nextPage}>
+            Next
+          </button>
+        </div>
       </div>
     );
   }
