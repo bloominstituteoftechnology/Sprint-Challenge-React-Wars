@@ -1,0 +1,13 @@
+.profileCard {
+    width: 40%;
+    height: auto;
+    background: white;
+    padding: 15px;
+    margin: 20px;
+}
+.cardCollection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
