@@ -21,8 +21,8 @@ const Card = props => {
         <p>Identifies as: {gender}</p>
       </div>
       <div className='details'>
-        <p>Height: {height}</p>
-        <p>Mass: {mass}</p>
+        <p>Height: {height} cm</p>
+        <p>Mass: {mass} kg</p>
         <p>Hair: {hair_color}</p>
         <p>Eyes: {eye_color}</p>
       </div>

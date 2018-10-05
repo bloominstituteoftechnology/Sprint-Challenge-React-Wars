@@ -34,20 +34,18 @@ class App extends Component {
 
   getNext = event => {
     event.preventDefault();
-    if (this.getCharacters(this.state.nextData)) {
-      this.setState({
-        previousData: this.state.starwarsChars, starwarsChars: this.state.nextData})
+    if (this.state.nextData){
+      this.getCharacters(this.state.nextData);
     }
+
   }
 
   getPrevious = event => {
     event.preventDefault();
-    if (this.state.previousData.length > 0){
-      this.setState({
-        nextData: this.state.starwarsChars,
-        starwarsChars: this.state.previousData
-      })
+    if (this.state.previousData){
+      this.getCharacters(this.state.previousData);
     }
+
   }
 
   render() {
