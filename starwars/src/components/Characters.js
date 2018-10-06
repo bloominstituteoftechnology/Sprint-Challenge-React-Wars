@@ -1,6 +1,6 @@
 import React from "react";
 
-const Character = props => {
+const Characters = props => {
     return (
         <div className="card">
             <h2 className="card_header">{props.char.name}</h2>
