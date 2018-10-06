@@ -9,7 +9,7 @@ Such as a puzzle is many pieces, when you put it together you have one big pictu
 How these pieces fit together and are related is part of the process. 
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-Class components usually have state (but can exist without it); functional components are stateless and offer more features/functionality.
+Class components usually have state (but can exist without it) and offer more features/functionality, whereas Functional components do not have state but instead obtain data via props from state and offer less features.
 The main reason you would chose one over the other, is that Class components are able to have state. 
 
 
