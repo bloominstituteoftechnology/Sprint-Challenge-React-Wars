@@ -8,14 +8,24 @@
     width: 95%;
     margin: 0 auto;
     justify-content: center;
+    
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .card, .splash{
     background: #ADD5E58d;
     border-radius: 5px;
     padding: 0 15px 20px;
     margin: 15px;
     box-shadow: 3px 3px 25px #EBD2447d, -3px -3px 25px #EBD2447d;
+    
+}
+
+.card:hover, .splash.hover, button:hover{
+    background: #ADD5E5;
+    
 }
 
 .img-container{
@@ -47,4 +57,12 @@ button{
     font-weight: bold;
     cursor: pointer;
     box-shadow: 3px 3px 25px #EBD2447d, -3px -3px 25px #EBD2447d;
+}
+
+.darkside{
+    background: #ff00008d;
+}
+
+.darkside:hover{
+    background: #ff0000;
 }
