@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardCont from './components/CardCont';
 
 class App extends Component {
   constructor() {
@@ -27,30 +28,20 @@ class App extends Component {
       .catch(err => {
         throw new Error(err);
       });
+    }
 
+    render() {
+      return (
+        <div>
+        <h1 className="Header">React Wars</h1>
+       <CardCont chars={this.state.starwarsChars} />
+       </div>
+      )
+      }
   };
 
 
 
-
-
-
-
-  render() {
-    console.log(this.state.starwarsChars);
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <h2>Star Wars Birth Years</h2>
-        <div className="Container">
-        <p className="Name">Name</p>
-        <p className="birthYear">Birth Year</p>
-        //going to try rendering a simple table of charcters names and their years-of-birth; will go on to deeper complexity once I've mastered this; the p elements are placeholders.
-        </div>
-      </div>
-    );
-  }
-}
 
 
 
