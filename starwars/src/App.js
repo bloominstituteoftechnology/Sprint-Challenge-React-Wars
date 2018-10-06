@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
+import CardList from './components/CardList';
+import PageSelector from './components/PageSelector';
+
 import './App.css';
-import CardList from './components/CardList'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentPage: 'https://swapi.co/api/people/?page=1',
+      prevPage: '',
+      nextPage: ''
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters(this.state.currentPage);
   }
 
   getCharacters = URL => {
@@ -23,11 +28,23 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ 
+          starwarsChars: data.results,
+          prevPage: data.previous,
+          nextPage: data.next
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
+  };
+
+  changePage = event => {
+    event.preventDefault();
+    this.setState({
+      [this.state.currentPage]: event.target.value
+    });
   };
 
   render() {
@@ -35,6 +52,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <h2>Star Wars Characters</h2>
+        <PageSelector currentPage={this.state.currentPage} prevPage={this.state.prevPage} nextPage={this.state.nextPage}/>
 
         <CardList
           starwarsChars={this.state.starwarsChars}

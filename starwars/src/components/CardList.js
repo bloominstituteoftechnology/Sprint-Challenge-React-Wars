@@ -4,7 +4,6 @@ import Card from './Card';
 import './StarWars.css';
 
 const CardList = function (props) {
-  console.log(JSON.stringify(props.starwarsChars));
   return (
     <div className='card-list'>
       {props.starwarsChars.map((character) => {
