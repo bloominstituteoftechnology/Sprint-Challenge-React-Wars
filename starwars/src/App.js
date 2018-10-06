@@ -10,13 +10,7 @@ class App extends Component {
     };
   }
 
-  bgHandler = e => {
-    if (e.target.className ==='move'){
-      e.target.className='card';
-    }
-    else{e.target.className= 'move'}
-    console.log('Im here')
-  }
+  
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -40,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CharacterList  list={this.state.starwarsChars} bgHandler={this.bgHandler}/>
+        <CharacterList  list={this.state.starwarsChars}/>
       </div>
     );
   }
