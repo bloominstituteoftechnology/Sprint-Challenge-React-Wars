@@ -1,4 +1,5 @@
 import React from "react";
+import './StarWars.css';
 
 const Characters = props => {
     return (
@@ -10,15 +11,17 @@ const Characters = props => {
                 <h3 className="charSex">{props.char.gender}</h3>
 
                 <div className="card-content_info">
-                    Species: {props.char.species}
-                    From: {props.char.homeworld}
-                    Ship(s): {props.char.starships}
+                    <ul>
+                   <li> Species: {props.char.species}</li>
+                   <li>From: {props.char.homeworld}</li>
+                   <li>Ship(s): {props.char.starships}</li>
 
-                    Skin: {props.char.skin_color}
-                    Eye color: {props.char.eye_color}
-                    Hair: {props.char.hair_color}
-                    Mass: {props.char.mass}
-                    Vehicle(s): {props.char.vehicles}
+                    <li>Skin: {props.char.skin_color}</li>    
+                    <li>Eye color: {props.char.eye_color}</li>
+                    <li>Hair: {props.char.hair_color}</li>
+                    <li>Mass: {props.char.mass}</li>
+                    <li>Vehicle(s): {props.char.vehicles}</li>
+                    </ul>
                 </div>
 
                 <h3 className="charMovies">Featured in: {props.char.films}</h3>
