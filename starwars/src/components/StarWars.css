@@ -5,14 +5,10 @@
     align-items: center;
 }
 .character-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 10px 0;
     background-color: #F5F5F5;
     width: 300px;
-    height: 300px;
+    height: 250px;
     border-radius: 2%;
 }
 
@@ -20,16 +16,7 @@ ul {
     list-style: none;
 }
 
-.names {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .attributes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  margin-right: 35px;
+} 
