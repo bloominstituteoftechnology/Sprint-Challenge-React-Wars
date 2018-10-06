@@ -19,3 +19,37 @@
 h2{
     font-size: 1.1458333333333335vw;  
 }
+@media (max-width: 1300px) {
+    .containerCard {
+        width: 40%;
+    }
+    .colorKey {
+        font-size: 1.2307692307692308vw;
+    }
+    h2 {
+        font-size: 1.8461538461538463vw;
+    }
+}
+@media (max-width: 1000px) {
+    .colorKey {
+        font-size: 2vw;
+    }
+    h2 {
+        font-size: 3vw;
+    }
+
+}
+@media (max-width: 600px) {
+    .containerAll {
+        flex-direction: column;
+    }
+    .containerCard {
+        width: 80%;
+    }
+    .colorKey {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 5.5vw;
+    }
+}
