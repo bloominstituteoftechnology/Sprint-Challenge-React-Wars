@@ -25,7 +25,7 @@ a{
 
 .card:hover, .splash.hover, button:hover{
     background: #ADD5E5;
-    
+    box-shadow: 7px 7px 29px #EBD244, -7px -7px 29px #EBD244;
 }
 
 .img-container{
