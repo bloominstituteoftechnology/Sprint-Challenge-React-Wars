@@ -5,3 +5,7 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+.App{
+  border: 1px solid red;
+  background: white;
+}
