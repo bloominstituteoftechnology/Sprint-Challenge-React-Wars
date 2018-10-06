@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
 
 class App extends Component {
   constructor() {
@@ -9,6 +10,13 @@ class App extends Component {
     };
   }
 
+  bgHandler = e => {
+    if (e.target.className ==='move'){
+      e.target.className='card';
+    }
+    else{e.target.className= 'move'}
+    console.log('Im here')
+  }
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -32,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <CharacterList  list={this.state.starwarsChars} bgHandler={this.bgHandler}/>
       </div>
     );
   }
