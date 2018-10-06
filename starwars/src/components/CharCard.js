@@ -7,7 +7,7 @@ const CharCard = props => {
             {props.starwarsChars.map(char => {
                 return (
                     <div className = "card"> 
-                        <h1>{char.name}</h1>
+                        <h2>{char.name}</h2>
                         <Char char ={char}/> 
                     </div>               
                 )
