@@ -1,13 +1,12 @@
-.container {
-    max-width: 1010px;
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     border: 1px solid black;
     margin: 10px;
-    max-width: 500px;
-}
-
-.person {
-    width: 50%;
+    width: 500px;
+    background-color: lightgray;
 }
