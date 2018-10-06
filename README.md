@@ -23,9 +23,9 @@
 - You're going to be building an application _starwars_ that consumes live data that we're retrieving across the world wide web!
 - You will be given architectural liberty here to create the files you will need. It could look very similar to your Todo List you've been building.
 
-1. **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
+1. X **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
 1. Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
-1. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+1. X Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
