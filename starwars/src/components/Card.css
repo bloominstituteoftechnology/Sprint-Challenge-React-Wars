@@ -1,0 +1,13 @@
+.container {
+    max-width: 1010px;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 10px;
+    max-width: 500px;
+}
+
+.person {
+    width: 50%;
+}
