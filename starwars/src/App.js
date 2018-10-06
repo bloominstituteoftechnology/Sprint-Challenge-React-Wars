@@ -15,10 +15,12 @@ class App extends Component {
   }
 
   nextPage = () => {
-    this.getCharacters(
-      `https://swapi.co/api/people/?page=${this.state.page + 1}`
-    );
-    this.setState({ page: this.state.page + 1 });
+    if (this.state.page < 9) {
+      this.getCharacters(
+        `https://swapi.co/api/people/?page=${this.state.page + 1}`
+      );
+      this.setState({ page: this.state.page + 1 });
+    }
   };
 
   previousPage = () => {
