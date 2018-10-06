@@ -4,7 +4,7 @@ import CharacterList from './CharacterList.js'
 const Characters = props => {
 	return props.list.map(character => {
 		return (
-			<div>
+			<div className="character-container">
 				<CharacterList 
 					key = {Math.random()}
 					title = {character.name}

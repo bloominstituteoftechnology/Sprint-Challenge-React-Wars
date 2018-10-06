@@ -1,10 +1,11 @@
 import React from 'react';
 import CharacterCard from './CharacterCard.js'
 import Title from './Title.js'
+import './StarWars.css'
 
 const CharacterList = props => {
 	return (
-		<div>
+		<div className="list-container">
 			<Title 
 				title = {props.title} 
 			/>

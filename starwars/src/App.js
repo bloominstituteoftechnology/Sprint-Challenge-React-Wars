@@ -37,10 +37,7 @@ class App extends Component {
       <div className="App">
 
         <h1 className="Header">React Wars</h1>
-
-        <div>
-          <Characters list={this.state.starwarsChars} />
-        </div>
+        <Characters list={this.state.starwarsChars} />
         
       </div>
     );
