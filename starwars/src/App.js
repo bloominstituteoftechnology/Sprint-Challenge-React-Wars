@@ -1,24 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import CardContainer from "./components/CardContainer";
+import Card from "./components/Card";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: [],
-      picture: [
-        "luke.jpg",
-        "c3po.jpg",
-        "r2d2.jpg",
-        "vader.jpg",
-        "leia.jpg",
-        "lars.jpg",
-        "beru.jpg",
-        "r5d4.jpg",
-        "biggs.jpg",
-        "obi.jpg"
-      ]
+      starwarsChars: []
     };
   }
 
@@ -45,10 +33,11 @@ class App extends Component {
   render() {
     // console.log(this.state.starwarsChars.map(char => char.name));
     const starwars = this.state.starwarsChars;
+    const picture = this.state.picture;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardContainer starwars={starwars} />
+        <Card starwars={starwars} picture={picture} />
       </div>
     );
   }

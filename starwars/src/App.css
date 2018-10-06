@@ -2,8 +2,13 @@
   text-align: center;
 }
 .Header {
-  font-family: "Righteous";
+  font-family: "Bungee";
   text-transform: uppercase;
   color: white;
+  margin: 0;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gold;
+  font-size: 70px;
 }
 /* write your parent styles in here for your App.js */
