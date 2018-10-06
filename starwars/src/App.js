@@ -210,7 +210,6 @@ class App extends Component {
     }
 
     this.setState({ starwarsChars: sortedChars });
-    console.log(this.state);
   };
 
   displayToggle = () => {
@@ -218,7 +217,6 @@ class App extends Component {
     this.addPicture();
     this.setState({ pageDisplay: true });
     this.updateCharHistory();
-    console.log(this.state);
   };
 
   getCharacters = URL => {

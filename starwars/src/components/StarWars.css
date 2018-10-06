@@ -23,10 +23,7 @@ a{
     
 }
 
-.card:hover, .splash.hover, button:hover{
-    background: #ADD5E5;
-    box-shadow: 7px 7px 29px #EBD244, -7px -7px 29px #EBD244;
-}
+
 
 .img-container{
     height: 320px;
@@ -58,7 +55,10 @@ button{
     cursor: pointer;
     box-shadow: 3px 3px 25px #EBD2447d, -3px -3px 25px #EBD2447d;
 }
-
+.card:hover, .splash:hover, button:hover{
+    background: #ADD5E5;
+    box-shadow: 7px 7px 29px #EBD244, -7px -7px 29px #EBD244;
+}
 .darkside{
     background: #ff00008d;
 }
