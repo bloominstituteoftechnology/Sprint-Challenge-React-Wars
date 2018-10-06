@@ -1,18 +1,26 @@
 import React from 'react';
 
 
+
 const Characters = props => {
     
     return(
 
-<div className="extra-one">
-<div className= "characters-container">
 
- {this.state({starwarsChars: data.results})};
+            <div className= "char">
+               
+            <h3>{props.charInfo.name}</h3>
 
-</div>
+            <p>Gender: {props.charInfo.gender}</p>
+            <p>Height: {props.charInfo.height}</p>
+            <p>Hair Color: {props.charInfo.hair_color}</p>
+            <p>Mass: {props.charInfo.mass}</p>
+            <p>Skin Color: {props.charInfo.skin_color}</p>
+            <p>Birth Year: {props.charInfo.birth_year}</p>
 
-</div>
+            
+        </div>
+
 
 );
     

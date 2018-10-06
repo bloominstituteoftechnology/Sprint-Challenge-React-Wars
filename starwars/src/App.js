@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Characters from './components/Characters';
+import CharacterData from './components/Characters-data';
 
 class App extends Component {
   constructor() {
@@ -21,24 +22,15 @@ class App extends Component {
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
     fetch(URL)
+
       .then(res => {
         return res.json();
       })
       .then(data => {
-        let starwars = data.results.map((pic) => {
-          return(
-            <div key= {pic.results}>
-            
-            
-            </div>
-      );
-
-
-        }//data.results
-        this.setState({ starwarsChars: data.results });
-        console.log('state',this.state.starwarsChars);
+        this.setState ({starwarsChars: data.results});
+        
       })
-    
+        
       .catch(err => {
         throw new Error(err);
       });
@@ -48,7 +40,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-<Characters />
+<Characters characterData= {this.state.starwarsChars} />
+
       </div>
     );
   }
