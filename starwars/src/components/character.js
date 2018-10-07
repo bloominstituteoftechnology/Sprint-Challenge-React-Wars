@@ -13,8 +13,9 @@ const Character = (props) => {
             <p>Skin Color: {props.char.skin_color}</p>
             <p>Hair Color: {props.char.hair_color}</p>
           </div>        
+          
         );
-   
-}
+}   
+
 
 export default Character;

@@ -39,6 +39,9 @@ html {
   .container button:hover {
     height: auto;
   }
+  .container .character {
+    width: 100%;
+  }
 }
 @keyframes big-to-small {
   0%   {font-size: 60rem;}
@@ -105,7 +108,6 @@ button:hover {
 }
 
 .character {
-  display: none;
   background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/star-wars-stars-background-2.jpg);
   width: 40%;
   margin: 30px;
