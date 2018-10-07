@@ -21,6 +21,31 @@ html {
   animation-name: fade-in2;
   animation-duration: 1s;
 }
+
+@media (max-width: 500px) {
+  .container h1{
+    width: 95%;
+    font-size:7rem;
+    line-height: 1;
+    margin-bottom: 40px;    
+    animation-name: big-to-small;
+    animation-duration: 1s;
+    transition: .5s font-size;
+  }
+  .container button {
+    width:48%;
+    height: 70px;
+  }
+  .container button:hover {
+    height: auto;
+  }
+}
+@keyframes big-to-small {
+  0%   {font-size: 60rem;}
+  25%  {font-size: 30rem;}
+  50%  {font-size: 20rem;}
+  100% {font-size: 7rem;}  
+}
 @keyframes fade-in2 {
   0%   {opacity: 0;}
   25%  {opacity: 0.2;}
