@@ -18,6 +18,14 @@ html {
   width: 100%;
   margin-bottom: 0;
   opacity: .7;
+  animation-name: fade-in2;
+  animation-duration: 1s;
+}
+@keyframes fade-in2 {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.2;}
+  50%  {opacity: 0.4;}
+  100% {opacity: 0.6;}
 }
 .Header {
   color: #443e3e;
@@ -43,7 +51,17 @@ button {
   border: 1px solid black;
   margin-bottom: 0;
   opacity: .4;
+  animation-name: fade-in;
+    animation-duration: 1s;
 }
+
+@keyframes fade-in {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.1;}
+  50%  {opacity: 0.2;}
+  100% {opacity: 0.3;}
+}
+
 button:hover {
   font-size: 2.4rem;
   font-family: Death Star Outlines;
@@ -62,6 +80,7 @@ button:hover {
 }
 
 .character {
+  display: none;
   background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/star-wars-stars-background-2.jpg);
   width: 40%;
   margin: 30px;
@@ -69,10 +88,13 @@ button:hover {
   border-radius: 5px;
   border: 1px solid white;
   opacity: 0.75;
+
 }
 
+
+
 .character:hover {
-  
+  cursor: crosshair;
 }
 .character h2 {
   font-family: Death Star Outlines;
