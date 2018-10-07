@@ -5,11 +5,18 @@ import GoodyBoyCard from './components/GoodBoyCard';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    let boyCounter = 1;
+    if (window.localStorage.getItem('goodBoyCounter') !== null) {
+      boyCounter = parseInt(window.localStorage.getItem('goodBoyCounter'), 10)
+    }
+
     this.state = {
       currentGoodBoy: 'https://images.dog.ceo/breeds/shiba/shiba-3i.jpg',
-      numBoys: 1,
-      loading: false
+      numBoys: boyCounter,
+      loading: true
     };
+
     console.log(this)
     this.nextGoodBoy = this.nextGoodBoy.bind(this)
   }
@@ -24,7 +31,7 @@ class App extends Component {
       .then(res => {
         return res.json()
       }).then(data => {
-        this.setState({ currentGoodBoy: data.message, loading: false})
+        this.setState({ currentGoodBoy: data.message, loading: false })
       }).catch(err => {
         throw new Error(err)
       })
@@ -33,27 +40,29 @@ class App extends Component {
 
   nextGoodBoy() {
     if (!this.state.loading) {
+      document.querySelector('.good-boy-card').classList.toggle('fade-out-card')
       this.setState({
         numBoys: this.state.numBoys + 1,
         loading: true
       })
       this.getGoodBoy();
+      document.querySelector('.good-boy-card').classList.toggle('fade-out-card')
+      document.querySelector('.good-boy-card').classList.toggle('fade-in-card')
     }
   }
 
 
   render() {
+    window.localStorage.setItem('goodBoyCounter', this.state.numBoys);
     return (
       <div className="App">
         <h1 className="Header">Goodboy.com</h1>
-        <div className="pagination">
-          <button next="next" onClick={this.nextGoodBoy}>{'Good Boy!'}</button>
-          </div>
-          <div className="Card-Container">
+        <h2>Good Boy Counter: {this.state.numBoys}</h2>
+        <div className="Card-Container">
           {(this.state.loading ? (
             <div className="lds-circle"></div>
-            ):(
-              <GoodyBoyCard goodBoy={this.state.currentGoodBoy} numBoys={this.state.numBoys}/>
+          ) : (
+            <GoodyBoyCard goodBoy={this.state.currentGoodBoy} numBoys={this.state.numBoys} nextGoodBoy={this.nextGoodBoy}/>
           ))}
         </div>
       </div>

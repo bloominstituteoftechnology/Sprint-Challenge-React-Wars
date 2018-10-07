@@ -27,7 +27,10 @@ class GoodyBoyCard extends React.Component {
   render() {
     return (
       <div className="good-boy-card">
-        <h2>Number of good boys: {this.props.numBoys}</h2>
+        
+        <div className="pagination">
+        <button onClick={this.props.nextGoodBoy}>{'Good Boy!'}</button>
+        </div>
         <img src={this.props.goodBoy} alt="good boy"/>
       </div>
     )
