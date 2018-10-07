@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/character'
+import Buttons from './components/buttons';
 
 class App extends Component {
   constructor() {
@@ -29,11 +31,22 @@ class App extends Component {
       });
   };
 
+  displayCharacter = (event) => {
+    event.preventDefault();
+    console.log(event.target.className)
+  }
+
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+      <div className="container">  
+        <h1>Choose Your Destiny</h1>    
+        <div className="buttons">
+          {this.state.starwarsChars.map((char,i) => <Buttons displayCharacter={this.displayCharacter.bind(this)} char={char} key={i} />)}  
+        </div>
+        <div className="cards">
+          {this.state.starwarsChars.map((char,i) => <Character char={char} key={i} />)}
+        </div>
+      </div>      
     );
   }
 }
