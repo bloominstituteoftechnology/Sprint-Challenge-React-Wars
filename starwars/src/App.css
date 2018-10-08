@@ -28,3 +28,7 @@
 .CharacterName {
   color: rgb(165, 222, 182);
 }
+
+.button {
+  margin: 10px;
+}

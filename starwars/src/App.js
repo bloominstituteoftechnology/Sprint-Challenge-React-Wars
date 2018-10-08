@@ -18,13 +18,13 @@ class App extends Component {
   }
 
   nextPage = e => {
-    const url = this.state.nextPage;
-    this.getCharacters(url);
+     const url = this.state.nextPage;
+     if (url) {this.getCharacters(url);}
   }
 
   prevPage = e => {
     const url = this.state.prevPage;
-    this.getCharacters(url);
+    if (url) {this.getCharacters(url);}
   }
 
   getCharacters = URL => {
