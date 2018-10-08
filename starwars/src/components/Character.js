@@ -3,7 +3,7 @@ import React from 'react';
 const Character = props => {
   return (
     <div className="character">
-      <h3>Character Component</h3>
+      <h3>{props.character.name}</h3>
     </div>
   )
 }
