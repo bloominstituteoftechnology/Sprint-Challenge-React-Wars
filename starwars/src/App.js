@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterList from './components/CharacterList';
+import PageControls from './components/PageControls';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage: null,
+      prevPage: null,
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  nextPage = e => {
+    const url = this.state.nextPage;
+    this.getCharacters(url);
+  }
+
+  prevPage = e => {
+    const url = this.state.prevPage;
+    this.getCharacters(url);
   }
 
   getCharacters = URL => {
@@ -23,7 +36,10 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
+        this.setState({ nextPage: data.next});
+        this.setState({ prevPage: data.previous});
       })
       .catch(err => {
         throw new Error(err);
@@ -35,6 +51,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList characters={this.state.starwarsChars}/>
+        <PageControls nextPage={this.nextPage} prevPage={this.prevPage}/>
       </div>
     );
   }
