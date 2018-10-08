@@ -4,15 +4,16 @@ import Char from './Char';
 const CharCard = props => {
     const cardWrapper = {
         display: "flex",
-        flexWrap: "wrap",
+        flexWrap: "wrap"
+       
     }
     const card = {
         border: "1px solid black",
-        borderBottom: "10px solid black",
-        borderRight: "20px solid black",
-        borderTop: "2px solid black",
-        width: "40%",
-        margin: "auto"
+        borderRight: "15px solid black",
+        borderTop: "5px solid black",
+        borderRadius: "5px",
+        width: "17%",
+        margin: "auto",
     }
     
     return (
