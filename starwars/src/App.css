@@ -6,3 +6,25 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.CharacterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid purple;
+}
+
+.Character {
+  width: 35%;
+  background: lightslategray;
+  opacity: .8;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  color: #941414;
+}
+
+.CharacterName {
+  color: rgb(165, 222, 182);
+}

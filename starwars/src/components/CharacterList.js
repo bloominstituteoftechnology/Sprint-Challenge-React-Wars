@@ -3,8 +3,7 @@ import Character from './Character';
 
 const CharacterList = props => {
   return (
-    <div clasName="character-list">
-      <h2>CharacterList component</h2>
+    <div className="CharacterList">
       {props.characters.map((char, idx) => (
         <Character 
         key={idx}
