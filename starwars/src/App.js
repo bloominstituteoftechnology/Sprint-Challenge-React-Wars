@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-// import CharacterPage from './components/characterPage';
+// import CharacterPage from './components/CharacterPage';
 import CharList from './components/CharList';
 class App extends Component {
   constructor() {
@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharList list={this.state.starwarsChars} />
+        <CharList  list={this.state.starwarsChars} />
       </div>
     );
   }
