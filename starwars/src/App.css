@@ -6,3 +6,28 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.characterContainer{
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width : 800px;
+  margin : 0 auto;
+}
+
+.character{
+  width : 30%;
+  border : 1px solid black;
+  background : lightblue;
+  margin : 10px 0;
+}
+
+.character p{
+  text-align: left;
+  margin-left : 10px;
+}
+
+.character ul{
+  text-align: left;
+ padding-left : 25px;
+}
