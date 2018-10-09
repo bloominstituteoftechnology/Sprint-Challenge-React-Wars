@@ -1,38 +1,69 @@
 import React, { Component } from 'react';
 import './App.css';
+import GoodyBoyCard from './components/GoodBoyCard';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    let boyCounter = 1;
+    if (window.localStorage.getItem('goodBoyCounter') !== null) {
+      boyCounter = parseInt(window.localStorage.getItem('goodBoyCounter'), 10)
+    }
+
     this.state = {
-      starwarsChars: []
+      currentGoodBoy: 'https://images.dog.ceo/breeds/shiba/shiba-3i.jpg',
+      numBoys: boyCounter,
+      loading: true
     };
+
+    console.log(this)
+    this.nextGoodBoy = this.nextGoodBoy.bind(this)
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getGoodBoy();
   }
 
-  getCharacters = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
-    fetch(URL)
+  getGoodBoy = () => {
+    const randomGoodBoy = 'https://dog.ceo/api/breeds/image/random'
+    fetch(randomGoodBoy)
       .then(res => {
-        return res.json();
+        return res.json()
+      }).then(data => {
+        this.setState({ currentGoodBoy: data.message, loading: false })
+      }).catch(err => {
+        throw new Error(err)
       })
-      .then(data => {
-        this.setState({ starwarsChars: data.results });
+  }
+
+
+  nextGoodBoy() {
+    if (!this.state.loading) {
+      document.querySelector('.good-boy-card').classList.toggle('fade-out-card')
+      this.setState({
+        numBoys: this.state.numBoys + 1,
+        loading: true
       })
-      .catch(err => {
-        throw new Error(err);
-      });
-  };
+      this.getGoodBoy();
+      document.querySelector('.good-boy-card').classList.toggle('fade-out-card')
+      document.querySelector('.good-boy-card').classList.toggle('fade-in-card')
+    }
+  }
+
 
   render() {
+    window.localStorage.setItem('goodBoyCounter', this.state.numBoys);
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h2>Good Boy Counter: {this.state.numBoys}</h2>
+        <div className="Card-Container">
+          {(this.state.loading ? (
+            <div className="lds-circle"></div>
+          ) : (
+            <GoodyBoyCard goodBoy={this.state.currentGoodBoy} numBoys={this.state.numBoys} nextGoodBoy={this.nextGoodBoy}/>
+          ))}
+        </div>
       </div>
     );
   }
