@@ -56,7 +56,6 @@ class App extends Component {
     window.localStorage.setItem('goodBoyCounter', this.state.numBoys);
     return (
       <div className="App">
-        <h1 className="Header">Goodboy.com</h1>
         <h2>Good Boy Counter: {this.state.numBoys}</h2>
         <div className="Card-Container">
           {(this.state.loading ? (
