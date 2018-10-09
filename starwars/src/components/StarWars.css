@@ -1,0 +1,27 @@
+.card-container {
+    margin: 20px;
+}
+
+.card-title {
+    color: #4e89a4;
+}
+
+.starwars-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.starwars-buttons button {
+    background: black;
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.starwars-buttons button:hover {
+    background: white;
+    color: black;
+}
+

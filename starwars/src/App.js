@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import StarWarsCard from './components/StarWarsCard';
+import StarWarsButtons from './components/StarWarsButtons';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage: '',
+      prevPage: ''
     };
   }
 
@@ -22,7 +26,21 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+
+        if (data.next === null) {
+          data.next = 'https://swapi.co/api/people/';
+        }
+        if (data.previous === null) {
+          data.previous = 'https://swapi.co/api/people/?page=9'
+        }
+
+        this.setState({
+          starwarsChars: data.results,
+          nextPage: data.next,
+          prevPage: data.previous
+        });
+
       })
       .catch(err => {
         throw new Error(err);
@@ -31,8 +49,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <h1 className="Header">React Wars</h1>
+        <StarWarsButtons prevPage={this.state.prevPage} nextPage={this.state.nextPage} button={this.getCharacters} />
+        <StarWarsCard starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }
