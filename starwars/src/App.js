@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card characters={this.state.starwarsChars} />
+        <Card characters={this.state.starwarsChars} /> // characters is a prop passing down to component
       </div>
     );
   }

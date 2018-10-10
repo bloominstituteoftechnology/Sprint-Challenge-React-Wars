@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .Header {
@@ -20,4 +22,9 @@
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: row;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
 }
