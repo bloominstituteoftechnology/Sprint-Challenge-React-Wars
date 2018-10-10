@@ -5,6 +5,7 @@ const CharacterList = props => {
     return (
         <div className="characterList">
                 {props.starwarsChars.map(item => {
+                    return(
                         <CharacterCard 
                             name= {item.name}
                             gender= {item.gender}
@@ -13,6 +14,7 @@ const CharacterList = props => {
                             mass= {item.mass}
                             films= {item.films}
                         />
+                    )
             })};
         </div>
     );
