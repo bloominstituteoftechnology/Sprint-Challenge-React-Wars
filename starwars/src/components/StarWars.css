@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0.8;
+    margin: 10px;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    margin: 15px auto;
+    padding: 25px 0;
+    background-color: sandybrown;
+    box-shadow: 4px 6px 22px 8px rgba(0,0,0,0.75);
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    padding-right: 100px;
+    float: left;
+    color: red;
+}
+
+.card-content {
+    text-align: start;
+    padding-left: 100px;
+}
+
+h2 {
+    font-family: 'Charmonman', cursive;
+    margin-bottom: 50px;
+}
