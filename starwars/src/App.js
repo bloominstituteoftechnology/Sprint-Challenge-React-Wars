@@ -6,9 +6,11 @@ import Card from './components/Card';
 
 class App extends Component {
   constructor(props) {
-    super(props);    
+    super(props);
+    this.state = 
+      {starwarsChars: [] 
   }
-
+  }
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -29,15 +31,11 @@ class App extends Component {
       });
   };
 
-  getData() {
-    return this.state.starwarsChars;
-  }
-
   render() {
     return (
       <div className="App">
         <h1>React Wars</h1>
-        {/* <Card starwarsChars = {this.state.starwarsChars}/> */}
+        <Card starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }

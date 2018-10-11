@@ -6,7 +6,7 @@ const Card = props => {
             {props.starwarsChars.map((item) => {
                 return (
                     <h1>
-                    {item.starwarsChars}
+                        {item.name}
                     </h1>
                 )
             })}
