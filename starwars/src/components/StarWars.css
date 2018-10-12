@@ -4,9 +4,14 @@ li {
   width: 50%;
   background-color: rgba(49, 0, 78, 0.25);
   color: rgb(226, 213, 27);
+  letter-spacing: 4px;
   margin: 5%;
   border: 12px double rgba(236, 75, 228, 0.116);
   border-radius: 4%;
+}
+
+h1 {
+  text-shadow: 3px 3px 15px rgba(226, 27, 216, 0.705);
 }
 
 p {

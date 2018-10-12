@@ -3,7 +3,8 @@
 }
 .Header {
   color: rgb(226, 213, 27);
-  text-shadow: 1px 1px 5px rgb(226, 213, 27);
-  font-size: 40px;
+  text-shadow: 3px 3px 15px rgba(226, 27, 216, 0.705);
+  letter-spacing: 14px;
+  font-size: 60px;
 }
 /* write your parent styles in here for your App.js */
