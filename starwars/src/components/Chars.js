@@ -11,6 +11,7 @@ const Chars = props => {
     </div>
   )
   
-}
+};
+
 
 export default Chars;
