@@ -1,10 +1,11 @@
 import React from 'react';
+import StarWarsChars from './StarsWarsCard';
 
 
 const StarWarsList = props => {
     return(
         <div>
-            <h1>THis is test text</h1>
+            <StarWarsChars characters={props.characters}/>
         </div>
     )
 }
