@@ -2,9 +2,11 @@ li {
   align-self: center;
   list-style-image: url('./if_R2-D2_15783\ \(1\).png');
   width: 50%;
-  background-color: rgba(49, 0, 128, 0.3);
+  background-color: rgba(49, 0, 78, 0.25);
   color: rgb(226, 213, 27);
   margin: 5%;
+  border: 12px double rgba(236, 75, 228, 0.116);
+  border-radius: 4%;
 }
 
 p {
