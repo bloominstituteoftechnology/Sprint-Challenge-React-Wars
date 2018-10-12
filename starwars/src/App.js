@@ -6,9 +6,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      style: "no-card"
     };
   }
+ 
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -30,16 +32,27 @@ class App extends Component {
       });
   };
 
-
   showCharCard = index => {
-    console.log(index);
+    console.log("card launched", index);
+    this.setState({
+      starwarsChars: this.state.starwarsChars.map((char, idx)=> {
+        if(index !== idx){
+          return char;
+        }else{
+          return {
+            ...char,
+            style: char.style === "character-card" ?  "no-card" : "character-card"
+          }
+        }
+      })
+    });
   }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWarsList characters={this.state.starwarsChars} card={this.showCharCard}/>
+        <StarWarsList characters={this.state.starwarsChars} card={this.showCharCard} classStyle={this.state.style}/>
       </div>
     );
   }
