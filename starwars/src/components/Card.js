@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 
-const Card = props => {
-  return ;
-}
+// const Card = props => {
+//   return ;
+// }
 
-export default Card;
+// export default Card;
