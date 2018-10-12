@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    
+
+
+.card {
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+    margin: 20px;
+    background: #737373;
+    line-height: 35px;
+}
+
+
+

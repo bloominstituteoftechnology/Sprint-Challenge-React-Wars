@@ -1,4 +1,5 @@
 import React from 'react';
+import "./StarWars.css";
 
 const Card = props => {
     return (
@@ -13,32 +14,11 @@ const Card = props => {
              <p>Skin Color: {character.skin_color}</p>
              <p>Eye Color: {character.eye_color}</p>
              <p>Birth Year: {character.birth_year}</p>
-             
-             
-             
-             
              </div>
             )
         })}
-        
-        
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default Card;
