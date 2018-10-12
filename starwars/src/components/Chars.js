@@ -5,11 +5,12 @@ const Chars = props => {
     <div>
       <ul>
         {props.starwarsChars.map((char, i) => {
-          return (<li>{char}</li>)
+          return (<li>{char}</li>);
         }
       </ul>
     </div>
   )
+)
   
 };
 
