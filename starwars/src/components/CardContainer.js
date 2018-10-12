@@ -5,7 +5,7 @@ import './StarWars.css';
 const CardContainer = props => {
   return (
     <div class = 'card-container'>
-      <p>card container placeholder</p>;
+      <h2>card container placeholder</h2>
     </div>
   );
 };
