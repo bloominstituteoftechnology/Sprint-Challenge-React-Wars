@@ -7,7 +7,7 @@ const StarWarsList = props => {
         <div>
             {props.characters.map((char, index) => {
                 return(
-                   <StarWarsChars key={index.toString()} characters={char} index={index} />
+                   <StarWarsChars key={index.toString()} characters={char} index={index} card={props.card} />
                 )
             })}
            

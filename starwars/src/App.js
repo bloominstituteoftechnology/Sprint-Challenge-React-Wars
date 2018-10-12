@@ -30,12 +30,16 @@ class App extends Component {
       });
   };
 
+
+  showCharCard = index => {
+    console.log(index);
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWarsList characters={this.state.starwarsChars}/>
-
+        <StarWarsList characters={this.state.starwarsChars} card={this.showCharCard}/>
       </div>
     );
   }
