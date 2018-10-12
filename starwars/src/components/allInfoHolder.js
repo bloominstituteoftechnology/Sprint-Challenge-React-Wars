@@ -5,7 +5,7 @@ import './StarWars.css';
 const AllInfoHolder = props =>
 {
   return (
-    <div>
+    <div className = "All-Holder">
       { props.persons.map( element =>
         {
           return (

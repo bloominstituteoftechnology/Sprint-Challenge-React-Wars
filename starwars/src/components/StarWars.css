@@ -1,5 +1,15 @@
 .Basic-Holder{
-    background-color: lightgrey;
-    display: flex;
+    background-color: rgb(255, 230, 230, 0.3);
+    
     margin: 20px 0px 10px 0px;
+    width: 350px;
+    border-radius: 10px;
+}
+.All-Holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
