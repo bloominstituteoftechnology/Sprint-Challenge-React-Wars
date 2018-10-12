@@ -5,3 +5,5 @@ import './StarWars.css';
 const CardContainer = props => {
   return ;
 }
+
+export default CardContainer;
