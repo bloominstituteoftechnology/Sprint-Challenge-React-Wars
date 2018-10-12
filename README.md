@@ -4,7 +4,6 @@
 - Answers to your written questions will be recorded in _Answers.md_
 - This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
 
-
 ## Start by forking and cloning this repository.
 
 ## Questions
