@@ -143,3 +143,13 @@ body {
   text-shadow: 1px 1px 5px #fff;
   font-size: 3rem;
 }
+.character-card {
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
+  color: #000000;
+  border: 1px solid black;
+}
+.no-card {
+  display: none;
+}
