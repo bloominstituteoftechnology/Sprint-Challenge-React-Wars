@@ -1,0 +1,28 @@
+ul{
+    list-style:none;
+}
+.character-list-container{
+    width:75%;
+    border:2px solid #443E3E;
+    background-color: rgba(122, 41, 19, 0.726);
+    margin:20px auto;
+    border-radius:3px;
+
+}
+.character-list{
+    width:80%;
+    border:2px solid #443E3E;
+    background-color: rgba(210, 212, 216, 0.849);
+    margin:30px auto;
+    border-radius:3px;
+    padding:20px;
+    color:#443E3E;
+    font-family: 'Russo One', sans-serif;
+   
+    
+}
+.character-name{
+    font-size:32px;
+    font-family: 'Russo One', sans-serif;
+    padding-bottom:10px;
+}
