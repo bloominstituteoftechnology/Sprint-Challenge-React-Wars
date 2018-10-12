@@ -1,11 +1,12 @@
 import React from 'react';
-// import Card from './Card.js';
+import Card from './Card.js';
 import './StarWars.css';
 
-const CardContainer = props => {
+const CardContainer = () => {
   return (
-    <div class = 'card-container'>
-      <h2>card container placeholder</h2>
+    <div className = 'card-container'>
+      <h2 className = 'cc-placeholder'>card container placeholder</h2>
+      <card />
     </div>
   );
 };

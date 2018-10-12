@@ -1,7 +1,11 @@
-// import React from 'react';
+import React from 'react';
 
-// const Card = props => {
-//   return ;
-// }
+const Card = props => {
+  return (
+    <div className='card-div'>
+      <h2>Card Placeholder</h2>
+    </div>
+  );
+}
 
-// export default Card;
+export default Card;
