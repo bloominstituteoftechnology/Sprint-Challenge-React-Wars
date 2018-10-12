@@ -1,0 +1,11 @@
+li {
+  list-style-image: url('./if_R2-D2_15783\ \(1\).png');
+  max-width: 1000px;
+  background-color: rgba(49, 0, 128, 0.3);
+  color: rgb(226, 213, 27);
+  margin: 3%;
+}
+
+p {
+  color: white;
+}
