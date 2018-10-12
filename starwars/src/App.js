@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardContainer />
+        <CardContainer chars={this.state.starwarsChars} />
       </div>
     );
   }
