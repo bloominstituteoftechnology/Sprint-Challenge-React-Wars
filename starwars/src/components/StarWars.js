@@ -4,8 +4,10 @@ import './StarWars.css';
 const Starwars = (props) => {
     return (
         <div>
+             <div className = 'box'>
             {props.starwarsChars.map((info, index) => {
                 return (
+                   
                     <div className = 'character-info'>
                         <h2 key={index}>{info.name}</h2>
                         <p key={index}>Birth Year: {info.birth_year}</p>
@@ -18,9 +20,10 @@ const Starwars = (props) => {
                         <p key={index}>Mass: {info.mass}</p>
                     </div>
                     
+                    
                 )
             })}
-          
+          </div>
         </div>
     )
 }
