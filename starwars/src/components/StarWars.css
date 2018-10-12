@@ -1,0 +1,33 @@
+.character-info{
+    border: 3px solid purple;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    color:#6c6666;
+    /* text-shadow: 1px 1px 5px #fff; */
+    background-color: black;
+    border-radius: 15px;
+    /* opacity: .3; */
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    /* opacity: .1; */
+
+}
+.character-info p{
+    padding: 10px;
+    font-weight: bold;
+
+}
+.character-info h2{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    width: 85%;
+    border-radius: 15px;
+    background-color: purple;
+    margin-top: 5px;
+}
