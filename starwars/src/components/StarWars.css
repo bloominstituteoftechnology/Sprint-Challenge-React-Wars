@@ -1,9 +1,10 @@
 li {
+  align-self: center;
   list-style-image: url('./if_R2-D2_15783\ \(1\).png');
-  max-width: 1000px;
+  width: 50%;
   background-color: rgba(49, 0, 128, 0.3);
   color: rgb(226, 213, 27);
-  margin: 3%;
+  margin: 5%;
 }
 
 p {

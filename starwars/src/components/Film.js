@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Film = film => {
-  console.log(film)
   const url = film;
+  console.log(url)
   return (
-    <p>A movie</p>
+    <p>This movie: {film}</p>
   )
 }
 
