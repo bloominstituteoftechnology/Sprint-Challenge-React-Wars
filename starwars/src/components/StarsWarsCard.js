@@ -3,7 +3,7 @@ import React from 'react';
 const StarWarsChars = props => {
     return(
         <div>
-            <h1>Star Wars Characters</h1>
+            <h1>{props.characters.name}</h1>
         </div>
     )
 }

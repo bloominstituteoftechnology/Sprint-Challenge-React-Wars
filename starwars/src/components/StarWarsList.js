@@ -5,7 +5,12 @@ import StarWarsChars from './StarsWarsCard';
 const StarWarsList = props => {
     return(
         <div>
-            <StarWarsChars characters={props.characters}/>
+            {props.characters.map((char, index) => {
+                return(
+                   <StarWarsChars key={index.toString()} characters={char} index={index} />
+                )
+            })}
+           
         </div>
     )
 }
