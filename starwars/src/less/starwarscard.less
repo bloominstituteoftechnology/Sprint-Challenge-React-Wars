@@ -1,12 +1,54 @@
-.character-card{
-    max-width: 600px;
-    width: 100%;
-    padding: 25px;
-    color: #000000;
-    border: 1px solid black;
-    display: flex;
-}
 
-.no-card{
-    display: none;
+
+.card-container{
+   
+    width: 100%;
+    display: flex;
+    flex-flow: columns wrap;
+    align-items: center;
+
+
+
+    .character-title{
+        width: 390px;
+        margin: 20px;
+        padding: 20px 0;
+        font-family: 'Lalezar', cursive;
+        color: #ffd700;
+        font-size: 3rem;
+        text-shadow: 5px 5px 5px #000;
+        cursor: pointer;
+    }
+
+    .character-card{
+        max-width: 450px;
+        width: 100%;
+        margin: 30px 20px;
+        padding: 25px;
+        font-size: 2rem;
+        color: #000;
+        border: 3px solid  #ffd700;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #fff;
+        border-radius: 20px;
+
+        .char-attr{
+            width: 100%;
+            line-height: 2.5rem;
+        
+            .attr{
+                margin: 0 20px 20px 0;
+                color: #ffd700;
+                font-size: 2.5rem;
+                font-family: 'Lalezar', cursive;
+                text-shadow: 2px 3px 1px #000;
+            }   
+        }
+    }
+
+    .no-card{
+        display: none;
+    }
+   
 }

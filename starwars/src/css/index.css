@@ -4,6 +4,12 @@
   font-weight: 400;
   src: local('Archivo Black Regular'), local('ArchivoBlack-Regular'), url(https://fonts.gstatic.com/s/archivoblack/v7/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Lalezar';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lalezar'), local('Lalezar-Regular'), url(https://fonts.gstatic.com/s/lalezar/v4/zrfl0HLVx-HwTP82Yaf4Jg.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -138,7 +144,10 @@ table {
 }
 body {
   background-image: url('../imgs/star-wars-bg.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .App .header-title {
   width: 100%;
@@ -150,15 +159,48 @@ body {
   font-family: 'Archivo Black', sans-serif;
   font-size: 10rem;
   color: #ffd700;
+  text-shadow: 5px 5px 5px #000;
 }
-.character-card {
-  max-width: 600px;
+.card-container {
   width: 100%;
-  padding: 25px;
-  color: #000000;
-  border: 1px solid black;
   display: flex;
+  flex-flow: columns wrap;
+  align-items: center;
 }
-.no-card {
+.card-container .character-title {
+  width: 390px;
+  margin: 20px;
+  padding: 20px 0;
+  font-family: 'Lalezar', cursive;
+  color: #ffd700;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px #000;
+  cursor: pointer;
+}
+.card-container .character-card {
+  max-width: 450px;
+  width: 100%;
+  margin: 30px 20px;
+  padding: 25px;
+  font-size: 2rem;
+  color: #000;
+  border: 3px solid #ffd700;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.card-container .character-card .char-attr {
+  width: 100%;
+  line-height: 2.5rem;
+}
+.card-container .character-card .char-attr .attr {
+  margin: 0 20px 20px 0;
+  color: #ffd700;
+  font-size: 2.5rem;
+  font-family: 'Lalezar', cursive;
+  text-shadow: 2px 3px 1px #000;
+}
+.card-container .no-card {
   display: none;
 }
