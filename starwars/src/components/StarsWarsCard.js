@@ -16,8 +16,6 @@ class StarWarsChars extends React.Component{
         this.setState({
             isCollapse: false
         })
-        // isCollapse = false;
-        // console.log("working", isCollapse); 
         this.props.card(this.props.index)
     }
 

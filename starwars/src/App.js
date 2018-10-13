@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import StarWarsList from './components/StarWarsList';
 
 
+
 class App extends Component {
   constructor() {
     super();
@@ -51,7 +52,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className="header-title">
+            <h1 className="title">React Wars</h1>
+        </div>
         <StarWarsList characters={this.state.starwarsChars} card={this.showCharCard} classStyle={this.state.style}/>
       </div>
     );

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Black Regular'), local('ArchivoBlack-Regular'), url(https://fonts.gstatic.com/s/archivoblack/v7/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -131,14 +137,19 @@ table {
   border-spacing: 0;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background-image: url('../imgs/star-wars-bg.jpg');
+  background-size: cover;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-  font-size: 3rem;
+.App .header-title {
+  width: 100%;
+  display: flex;
+}
+.App .header-title .title {
+  width: 80%;
+  margin: 20px 10px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 10rem;
+  color: #ffd700;
 }
 .character-card {
   max-width: 600px;
