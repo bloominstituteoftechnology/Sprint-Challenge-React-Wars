@@ -1,11 +1,11 @@
 import React from 'react';
 
-const StarWarsChars = () => {
+const StarWarsChars = (props) => {
     return (
         <div>
         <ul>
             {props.chars.map((char, i) => {
-                return <li key- {i+1} >{char}</li>
+                return <li key = {i+1} >{char.name}</li>
             })};
         </ul>
         </div>
