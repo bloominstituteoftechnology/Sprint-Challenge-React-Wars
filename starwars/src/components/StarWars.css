@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid black;
+    width: 25%;
+    margin: 0.5%;
+    background: #DDD9CD95;
+    text-align: left;
+    line-height: 15px;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+.card:hover {
+    background: #DDD9CD;
+}
+
+.card .name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card .name p {
+    margin-top: 0;
+}
+
