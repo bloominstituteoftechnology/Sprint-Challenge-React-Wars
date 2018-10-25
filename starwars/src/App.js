@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharList';
 
 class App extends Component {
   constructor() {
@@ -7,6 +8,8 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    console.log(this.state.starwarsChars)
+
   }
 
   componentDidMount() {
@@ -23,16 +26,24 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(data.results)
+        console.log(this.state.starwarsChars)
+
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ul>
+        {(this.state.starwarsChars).map( item =>  
+          <CharList key={Math.random()} name={this.item} /> )};
+        </ul>
       </div>
     );
   }
