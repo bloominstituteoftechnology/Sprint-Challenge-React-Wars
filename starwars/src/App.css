@@ -1,8 +1,85 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: aurebesh;
+  src: url('./fonts/Heaven-the-Galactic-Basic.otf');
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+@font-face {
+  font-family: mandalorian;
+  src: url('./fonts/mandalor.ttf');
 }
+
+@font-face {
+  font-family: sith;
+  src: url('./fonts/sthproph.ttf');
+  font-size: 10px;
+}
+
+.coruscant-common{
+  font-family: 'VT323';
+  font-size: 2rem;
+}
+
+.aurebesh{
+  font-family: aurebesh;
+  font-size: 2rem;
+}
+
+.mandalorian{
+  font-family: mandalorian;
+  font-size: 2rem;
+}
+
+.sith{
+  font-family: sith;
+  font-size: 1.2rem;
+}
+
 /* write your parent styles in here for your App.js */
+.app-bg{
+  padding-top: 0;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  cursor: crosshair;
+}
+
+.app-container{
+  max-width: 880px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #33FF33;
+  position: relative;
+}
+
+.app-container .paging-btns{
+  position: absolute;
+  top: 35px;
+  height: 40px;
+  right: 0;
+  width: 100%;
+  padding-left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-container .paging-btns .page-btn{
+  border: 1px solid #33FF33;
+  color: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container .paging-btns .page-btn{
+  background: black;
+}

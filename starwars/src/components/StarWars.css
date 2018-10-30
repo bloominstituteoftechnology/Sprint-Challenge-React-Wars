@@ -1,0 +1,76 @@
+.font-menu{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.font-menu .font{
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+  height: 75px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-menu .font:hover{
+  background: black;
+}
+
+.character-list{
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.6);
+  border-radius: 5px;
+}
+
+.character-list .character {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #33FF33;
+  height: 15%;
+  width: 35%;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.character-list .character:hover{
+  background: black;
+}
+
+.character-full{
+  width: 80%;
+  height: 80%;
+  padding: 50px;
+  border: 1px solid #33FF33;
+  background: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  font-size: 3rem;
+}
+
+.character-full .deselect-btn{
+  border: 1px solid #33FF33;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-full .deselect-btn:hover{
+  background: black;
+}
