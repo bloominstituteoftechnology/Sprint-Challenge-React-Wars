@@ -4,18 +4,25 @@
   "description": "Main file for launching everyting",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/startboth.ps1"
+    "winstart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/startboth.ps1",
+    "wininstall": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/install.ps1",
+    "winfirst": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/firsttime.ps1",
+    "linstart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/startboth.ps1",
+    "lininstall": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/install.ps1",
+    "linfirst": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/firsttime.ps1",
+    "macstart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/startboth.ps1",
+    "macinstall": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/install.ps1",
+    "macfirst": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./scripts/firsttime.ps1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LambdaSchool/Sprint-Challenge-React-Wars.git"
+    "url": "git+https://github.com/FireInjun/Sprint-Challenge-React-Wars.git"
   },
-  "author": "fireinjun",
-  "license": "ISC",
+  "author": "FireInjun",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LambdaSchool/Sprint-Challenge-React-Wars/issues"
+    "url": "https://github.com/FireInjun/Sprint-Challenge-React-Wars/issues"
   },
-  "homepage": "https://github.com/LambdaSchool/Sprint-Challenge-React-Wars#readme",
+  "homepage": "https://github.com/FireInjun/Sprint-Challenge-React-Wars#readme",
   "dependencies": {}
 }

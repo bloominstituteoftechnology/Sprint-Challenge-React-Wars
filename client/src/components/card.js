@@ -58,3 +58,45 @@ class Bio extends Component {
   }
 }
 export default Bio;
+
+// import React from 'react';
+// import './StarWars.css';
+// const CardInfo = (props) => {
+//   return (
+//     <div className="card-info">
+//       <p className="name">{props.name}</p>
+//       <p>Height: {props.height} cm</p>
+//       <p>Mass: {props.mass} kg</p>
+//       <p>Hair Color: {props.hair_color}</p>
+//       <p>Skin Color: {props.skin_color}</p>
+//       <p>Eye Color: {props.eye_color}</p>
+//       <p>Birth Year: {props.birth_year}</p>
+//       <p>Gender: {props.gender}</p>
+//     </div>
+//   )
+// }
+// export default CardInfo;
+
+// import React from 'react';
+// import './StarWars.css';
+// import CardInfo from './CardInfo';
+// const Card = (props) => {
+//   return (
+//     <div className="card-container">
+//       {props.starwarsChars.map(data => {
+//         return <CardInfo
+//           key={data.created}
+//           name={data.name}
+//           height={data.height}
+//           mass={data.mass}
+//           hair_color={data.hair_color}
+//           skin_color={data.skin_color}
+//           eye_color={data.eye_color}
+//           birth_year={data.birth_year}
+//           gender={data.gender}
+//         />
+//       })}
+//     </div>
+//   )
+// }
+// export default Card;

@@ -15,10 +15,10 @@ class App extends Component {
   componentDidMount() {
     axios
       .get(Api.REACT_APP_CHAR)
-      .then((response) => {
+      .then(response => {
         this.setState(() => ({ starwarsChars: response.data }));
       })
-      .catch((error) => {
+      .catch(error => {
         console.error("Server Error", error);
       });
   }
