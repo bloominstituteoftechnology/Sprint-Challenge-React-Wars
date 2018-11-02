@@ -36,56 +36,53 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <Data state={this.state.starwarsChars} />
-        <Luke films={this.state.starwarsChars[0].films} />
       
-        
       </div>
     );
   }
 }
 
 
-const Luke = props => <div><Titles /></div>
-
-const Titles = props => <div className="titles" >{props.films}</div>
-
 
 
 const Data = props => <div className="data">
-{props.state.map(each => (
-  <Names names ={each.name} />
-))}
-{props.state.map(each =>(
-  <Gender gender={each.gender} />
-))}
-{props.state.map(each =>(
-  <Birth birth={each["birth_year"]} />
-))}
-{props.state.map(each =>(
-  <Created created={each.created} />
-))}
-{props.state.map(each =>(
-  <Edited edited={each.edited} />
-))}
-{props.state.map(each =>(
-  <Eye eye={each["eye_color"]} />
-))}
-{props.state.map(each =>(
-  <Hair hair={each["hair_color"]} />
-))}
-{props.state.map(each =>(
-  <Height height={each.height} />
-))}
-{props.state.map(each =>(
-  <Homeworld homeworld={each.homeworld} />
-))}
-{props.state.map(each =>(
-  <Mass mass={each.mass} />
-))}
-v
-{props.state.map(each =>(
-  <Skin skin={each["skin_color"]} />
-))}
+
+
+  {props.state.map(each => (
+    <Names names ={each.name} />
+  ))}
+  {props.state.map(each =>(
+    <Gender gender={each.gender} />
+  ))}
+  {props.state.map(each =>(
+    <Birth birth={each["birth_year"]} />
+  ))}
+  {props.state.map(each =>(
+    <Created created={each.created} />
+  ))}
+  {props.state.map(each =>(
+    <Edited edited={each.edited} />
+  ))}
+  {props.state.map(each =>(
+    <Eye eye={each["eye_color"]} />
+  ))}
+  {props.state.map(each =>(
+    <Hair hair={each["hair_color"]} />
+  ))}
+  {props.state.map(each =>(
+    <Height height={each.height} />
+  ))}
+  {props.state.map(each =>(
+    <Homeworld homeworld={each.homeworld} />
+  ))}
+  {props.state.map(each =>(
+    <Mass mass={each.mass} />
+  ))}
+  v
+  {props.state.map(each =>(
+    <Skin skin={each["skin_color"]} />
+  ))}
+
 </div>
 
 const Names = props => <div className="starring" >{props.names}</div>

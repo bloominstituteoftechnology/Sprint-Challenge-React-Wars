@@ -16,3 +16,10 @@ body {
   padding-top: 20px;
   margin: 0 auto;
 }
+
+
+/* // const Films = props => <div className="films" >{props.films}
+{props.data.map(each =>(
+  <Films films={each["films"]} />
+))}
+// </div> */
