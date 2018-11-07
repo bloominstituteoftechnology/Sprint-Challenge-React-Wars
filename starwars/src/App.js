@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from './components/card/card.js';
 import './App.css';
 
 class App extends Component {
@@ -30,9 +31,16 @@ class App extends Component {
   };
 
   render() {
+
+    const setCards = (arr) => {
+      let cards = arr.map((el, i) => <Card key={i} data={el}/>);
+      return cards;
+    }
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {setCards(this.state.starwarsChars)}
       </div>
     );
   }
