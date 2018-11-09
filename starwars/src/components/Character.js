@@ -4,13 +4,13 @@ const Character = props => {
     return (
         <div className='card'>
             <h3>{props.characterOnProps.name}</h3>
-            <p>Birth Year: {props.characterOnProps.birt_year}</p>
-            <p>Eye Color: {props.characterOnProps.eye_color}</p>
-            <p>Gender: {props.characterOnProps.gender}</p>
-            <p>Hair Color: {props.characterOnProps.hair_color}</p>
-            <p>Height: {props.characterOnProps.height}</p>
-            <p>Mass: {props.characterOnProps.mass}</p>
-            <p>Skin: {props.characterOnProps.skin_color}</p>
+            <p><span>Birth Year:</span> {props.characterOnProps.birth_year}</p>
+            <p><span>Eye Color:</span> {props.characterOnProps.eye_color}</p>
+            <p><span>Gender:</span> {props.characterOnProps.gender}</p>
+            <p><span>Hair Color:</span> {props.characterOnProps.hair_color}</p>
+            <p><span>Height:</span> {props.characterOnProps.height}</p>
+            <p><span>Mass:</span> {props.characterOnProps.mass}</p>
+            <p><span>Skin:</span> {props.characterOnProps.skin_color}</p>
             {/* <p>Films: {props.characterOnProps.films}</p> */}
             {/* <p>Homeworld: {props.characterOnProps.homeworld}</p> */}
             {/* <p>Species: {props.characterOnProps.species}</p> */}
