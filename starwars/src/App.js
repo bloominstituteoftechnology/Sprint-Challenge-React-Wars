@@ -1,6 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharCard from './components/CharCard';
+import styled from 'styled-components';
+
+const CardHolder = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const ButtonContainer = styled.div`
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+`
+const StyledButton = styled.h1`
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 5px 20px;
+`
 
 class App extends Component {
   constructor() {
@@ -34,17 +57,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 onClick={this.state.nextPage === null ? 
-          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
-        <h1 onClick={this.state.prevPage === null ? 
-        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</h1>
+      <AppContainer className="App">
 
-          
+      <ButtonContainer>
+        <StyledButton onClick={this.state.prevPage === null ? 
+        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</StyledButton>
+        <StyledButton onClick={this.state.nextPage === null ? 
+          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</StyledButton>
+      </ButtonContainer>
+
+        <CardHolder>
         {this.state.starwarsChars.map(char=> (
           <CharCard character={char} key={char.created}/>
-        ))}
-      </div>
+          ))}
+        </CardHolder>
+      </AppContainer>
     );
   }
 }
