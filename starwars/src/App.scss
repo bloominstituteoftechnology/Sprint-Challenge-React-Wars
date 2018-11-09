@@ -75,6 +75,24 @@
 
 }
 
+.page-links {
+
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+
+  p {
+
+    text-decoration: underline;
+    font-size: 2rem;
+    color: blue;
+    cursor: pointer;
+
+  }
+
+}
+
 .invisible {
 
   display: none;
