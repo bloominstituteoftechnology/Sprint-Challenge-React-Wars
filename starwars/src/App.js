@@ -10,12 +10,18 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       inputText : '',
-      sorted: false,
+      nextUrl: '',
     };
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+  }
+
+  componentDidUpdate() {
+    if (this.state.nextUrl) {
+      this.getCharacters(this.state.nextUrl);
+    }
   }
 
   getCharacters = URL => {
@@ -27,7 +33,10 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: [...this.state.starwarsChars, ...data.results],
+          nextUrl: data.next,
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -58,7 +67,7 @@ class App extends Component {
                 }
               )
              .map(
-                char => <Card key={Date.now() + Math.random()} char={char}/>
+                char => <Card key={generateID()} char={char}/>
               )
           }
         </div>
@@ -66,5 +75,11 @@ class App extends Component {
     );
   }
 }
+
+// helper function 
+const generateID = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter;}
+})();
 
 export default App;
