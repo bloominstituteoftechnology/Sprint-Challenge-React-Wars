@@ -19,7 +19,7 @@
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    color: #444;
+    color: #443e3e;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -29,6 +29,7 @@
 }
 
 .infoBox h2 {
+    text-shadow: 1px 1px 5px #fff;
     text-transform: uppercase;
     margin-bottom: 1rem;
     letter-spacing: 1px;
