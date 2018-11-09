@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 40%;
+  height: auto;
+  background: white;
+  margin: 10px;
+}
+
+.charlist {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
