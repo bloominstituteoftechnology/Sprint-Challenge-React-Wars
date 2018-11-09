@@ -1,17 +1,17 @@
 .character-grid {
     width: 90%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 90rem; 
 }
 
 .container { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
 }
 
 .character-grid {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .infoBox {
@@ -19,4 +19,17 @@
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    color: #444;
+}
+
+.infoBox h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+}
+
+.infoBox p {
+    line-height: 1.6;
+    font-size: 1.6rem;
 }
