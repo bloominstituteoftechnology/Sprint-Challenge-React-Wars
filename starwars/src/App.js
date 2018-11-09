@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterList from './components/CharacterList';
+import Buttons from './components/Buttons';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      nextPage:''
+      nextPage:'',
+      previous:''
     };
   }
   
@@ -25,10 +27,12 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data);
-        this.setState({ starwarsChars: data.results,
-        nextPage:data.next });
-        console.log(data.next);
+        // console.log(data);
+        this.setState({ 
+        starwarsChars: data.results,
+        nextPage:data.next,
+        previous:data.previous});
+        // console.log(data.next);
       })
       .catch(err => {
         throw new Error(err);
@@ -39,9 +43,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className = "Header">
-        <button className = "Header__button">Go Back</button>
+        <Buttons className = "Header__button" clickHandler={this.getCharacters} previous={this.state.previous}/>
         <h1 className="Header__text">React Wars</h1>
-        <button className = "Header__button" >NextPage</button>
+        <button className = "Header__button" onClick={()=> this.state.nextPage == null ? alert('This is the end') : this.getCharacters(this.state.nextPage)}>NextPage</button> 
         </div>
         <CharacterList listOfChar={this.state.starwarsChars}/>
       </div>
