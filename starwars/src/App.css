@@ -4,5 +4,10 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  display: flex;
+  justify-content: space-evenly;
 }
 /* write your parent styles in here for your App.js */
+.nextPrevPageButton {
+  margin: 10px;
+}

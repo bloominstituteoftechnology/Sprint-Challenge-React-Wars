@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
-import CharacterList from './components/CharacterList'
-import './App.css';
-import './components/StarWars.css'
+import React, { Component } from "react";
+import CharacterList from "./components/CharacterList";
+import "./App.css";
+import "./components/StarWars.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: null,
+      previous: null
     };
     localStorage.clear(); // website takes a while to load unless cache is cleared
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -25,34 +27,59 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
-  getHomeworld = (URL) => {
+  getHomeworld = URL => {
     fetch(URL)
       .then(res => {
         return res.json();
       })
-      .then(data => {
-        return data;
+      .then(homeworldObject => {
+        return homeworldObject;
       })
       .catch(err => {
         throw new Error(err);
       });
+  };
+
+  loadNextPage = () => {
+    if (this.state.next !== null) {
+      this.getCharacters(this.state.next);
+    }
+  };
+
+  loadPrevPage = () => {
+    if (this.state.previous !== null) {
+      this.getCharacters(this.state.previous);
+    }
   };
 
   render() {
     localStorage.clear(); // website takes a while to load unless cache is cleared
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className="Header">
+          <button className="nextPrevPageButton" onClick={this.loadPrevPage}>
+            Previous Page
+          </button>
+          <h1>React Wars</h1>
+          <button className="nextPrevPageButton" onClick={this.loadNextPage}>
+            Next Page
+          </button>
+        </div>
+
         <CharacterList
           characters={this.state.starwarsChars}
-          getHomeworld = {this.getHomeworld}
+          getHomeworld={this.getHomeworld}
         />
       </div>
     );
