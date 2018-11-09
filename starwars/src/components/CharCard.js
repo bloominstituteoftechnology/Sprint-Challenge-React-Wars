@@ -9,16 +9,17 @@ const StyledCard = styled.div`
     font-weight: bold;
     background-color: lightgray;
     opacity: 0.8;
-`
-const StyledH1 = styled.h1`
-    text-decoration: underline;
+
+    h1 {
+        text-decoration: underline;
+    }
 `
 
 
 const CharCard = (props) => {
     return (
         <StyledCard>
-            <StyledH1>{props.character.name}</StyledH1>
+            <h1>{props.character.name}</h1>
             <p>Height: {props.character.height}</p>
             <p>Mass: {props.character.mass}</p>
             <p>Gender: {props.character.gender}</p>

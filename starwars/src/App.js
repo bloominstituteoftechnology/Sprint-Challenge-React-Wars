@@ -17,15 +17,17 @@ const ButtonContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: space-between;
+
+  h1 {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px 20px;
+    background-color: lightgray;
+    opacity: 0.8;
+  }
 `
-const StyledButton = styled.h1`
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 7px;
-  padding: 5px 20px;
-  background-color: lightgray;
-  opacity: 0.8;
-`
+
 
 class App extends Component {
   constructor() {
@@ -62,10 +64,10 @@ class App extends Component {
       <AppContainer className="App">
       <h1>Star Wars Characters!</h1>
       <ButtonContainer>
-        <StyledButton onClick={this.state.prevPage === null ? 
-        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</StyledButton>
-        <StyledButton onClick={this.state.nextPage === null ? 
-          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</StyledButton>
+        <h1 onClick={this.state.prevPage === null ? 
+        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</h1>
+        <h1 onClick={this.state.nextPage === null ? 
+          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
       </ButtonContainer>
 
         <CardHolder>
