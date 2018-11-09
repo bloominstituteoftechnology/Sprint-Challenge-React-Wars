@@ -1,0 +1,18 @@
+.character {
+  /* width: 100px;
+  height: 100px; */
+  width: 300px;
+  margin: 10px;
+  background: yellow;
+  color: green;
+  border: 1px solid red;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100px;
+}
