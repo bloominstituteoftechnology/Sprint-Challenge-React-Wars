@@ -35,19 +35,24 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className='main-container'>
+
         <h1 className="Header">React Wars</h1>
 
-        {/* <StarWarsList 
-          characters={this.state.starwarsChars}
-          isDisplayed={this.active}
-        /> */}
+        <div className="App">
+          
 
-        <StarWarsForm 
-          characters={this.state.starwarsChars}
-          isDisplayed={this.active}
-        />
-        
+          {/* <StarWarsList 
+            characters={this.state.starwarsChars}
+            isDisplayed={this.active}
+          /> */}
+
+          <StarWarsForm 
+            characters={this.state.starwarsChars}
+            isDisplayed={this.active}
+          />
+
+        </div>
       </div>
     );
   }

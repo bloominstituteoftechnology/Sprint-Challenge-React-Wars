@@ -4,7 +4,7 @@ import StarWars from './StarWars';
 function StarWarsList(props) {
     // console.log(props.characters);
     return (
-        <div>
+        <div className='character-cards'>
             {props.characters.map( charSW => (
                 <StarWars 
                     key={charSW.created}
