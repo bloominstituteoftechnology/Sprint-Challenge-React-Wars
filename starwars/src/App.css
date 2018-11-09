@@ -1,8 +1,38 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-size: 50px;
+  text-shadow:  -5px 5px 1px rgba(255, 255, 255, 0.89),
+                -4px 4px 2px rgba(255, 255, 255, 0.788),
+                -3px 3px 3px rgba(255, 255, 255, 0.623),
+                -2px 2px 4px rgba(255, 255, 255, 0.541),
+                -1px 1px 5px rgba(255, 255, 255, 0.425);
 }
 /* write your parent styles in here for your App.js */
+.charContainer {
+  min-width: 30%;
+  width: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px;
+  height: 200px;
+  transition: all .5s ease-in-out;
+  background-image: linear-gradient(to top right, rgba(85, 49, 2, 0.808), rgba(204, 151, 38, 0.479))
+}
+
+.charContainer:hover {
+  transform: scale(1.5);
+  z-index: 1;
+  background-image: linear-gradient(to top right, rgb(145, 83, 3), rgb(204, 151, 38))
+} 
+
+.charContainer > h3,
+.charContainer > h5 {
+  text-shadow:  -2px 2px 2px rgba(255, 255, 255, 0.623),
+                -1px 1px 3px rgba(255, 255, 255, 0.541),
+                 0   0px 4px rgba(255, 255, 255, 0.425);
+}
