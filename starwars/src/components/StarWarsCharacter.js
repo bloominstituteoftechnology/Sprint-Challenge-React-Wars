@@ -1,9 +1,10 @@
 import React from 'react';
+import './StarWars.css';
 
 // Come back to this
 const StarWarsCharacter = props => {
     return (
-        <div>
+        <div className="infoBox">
             <h2>{props.character.name}</h2>
             <p>Born in: {props.character.birth_year}</p>
             <p>Eye Color: {props.character.eye_color}</p>
