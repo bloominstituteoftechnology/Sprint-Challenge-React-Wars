@@ -1,0 +1,42 @@
+.character-grid {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 90rem; 
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+}
+
+.character-grid {
+    padding: 4rem 0;
+}
+
+.infoBox {
+    background-color: #c0cacb;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #443e3e;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.infoBox:hover {
+    background-color: #cbd5d6;
+}
+
+.infoBox h2 {
+    text-shadow: 1px 1px 5px #fff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+.infoBox p {
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
