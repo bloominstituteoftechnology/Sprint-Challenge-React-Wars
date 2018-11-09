@@ -1,0 +1,38 @@
+
+.character-container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #222222;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 2px whitesmoke;
+}
+
+.character-name {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: .7;
+}
+
+.character-content {
+    /* width: 390px; */
+
+}
+
+.characters-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+}
+
+.character-stats {
+    width: 200px;
+    /* border: 1px solid green; */
+    margin: 10px 0;
+}
+
+.labels {
+    font-weight: bold;
+    background-color: #f3d192;
+    opacity: .7;
+}
