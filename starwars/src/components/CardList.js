@@ -5,7 +5,7 @@ const CardList = props => {
     return(
 
         <React.Fragment>
-            {props.itit.map((eachOneInMap, index) => (
+            {props.monkeys.map((eachOneInMap, index) => (
             <SWCard key={eachOneInMap.index} it={eachOneInMap} /> ))}
 
         </React.Fragment>
