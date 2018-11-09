@@ -36,8 +36,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map(c => {
-          return <Person person={c} />;
+        {this.state.starwarsChars.map((c, i) => {
+          return <Person person={c} key={i} />;
         })}
       </div>
     );
