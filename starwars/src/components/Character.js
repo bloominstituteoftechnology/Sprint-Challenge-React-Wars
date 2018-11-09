@@ -7,8 +7,8 @@ const Character = props => {
       <div className="character-card title">
         <div className="character-stats">
           <h3 className="character-name">{props.character.name}</h3>
-          <p className="">
-            <span className="bold-span">Birth Year: </span>
+          <p>
+            <span className="bold-span">Birth Year:</span>
             {props.character.birth_year}
           </p>
           <p>

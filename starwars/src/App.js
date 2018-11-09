@@ -9,6 +9,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: []
+      
     };
   }
 
@@ -22,10 +23,12 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
+        // console.log(res)
         return res.json();
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        // console.log(data)
       })
       .catch(err => {
         throw new Error(err);
@@ -40,6 +43,8 @@ class App extends Component {
           <div className="starwars">
             <div className="crawl">
               <CharacterList starwarsChars={this.state.starwarsChars} />
+              {this.getCharacters("https://swapi.co/api/people/?page=2"
+)}
             </div>
           </div>
         </div>
