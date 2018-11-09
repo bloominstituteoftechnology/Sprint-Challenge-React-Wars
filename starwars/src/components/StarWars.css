@@ -1,0 +1,21 @@
+.character {
+    width: 48%;
+    height: 200px;
+    border: 1px solid black;
+    margin-right: 1%;
+    background-color: #FFD700;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character.male {
+    background-color: #89cff0;
+    opacity: .8;
+}
+
+.character.female{
+    background-color: #ffb6c1;
+    opacity: .8;
+}
