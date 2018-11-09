@@ -36,8 +36,8 @@ h3 {
 p {
   font-size: 2.2rem;
   margin: 10px 0;
-  text-align: left;
-  padding: 0 20px 0 50px;
+  text-align: center;
+  padding: 0 10%;
   color: wheat;
   text-shadow: -3px 0 black, 0 3px black, 0px 0 black, 0 4px black;
   font-weight: bold;
