@@ -15,11 +15,17 @@
 }
 
 .infoBox {
-    background-color: #F0FFFF;
+    background-color: #c0cacb;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     color: #444;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.infoBox:hover {
+    background-color: #cbd5d6;
 }
 
 .infoBox h2 {
