@@ -44,6 +44,7 @@ const Character = props => {
             <p className="display-value">{props.character.mass}</p>
          </div>
         </div>
+        
     );
 }
 
