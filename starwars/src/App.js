@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Fragment } from 'react';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
@@ -31,11 +33,30 @@ class App extends Component {
 
   render() {
     return (
+      <Fragment>
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <h1>This is the beginning, the middle, and the end. GO HARD.</h1>
+        
       </div>
+      {/* <div>What's up boyyyyy!</div>  */}
+      </Fragment>
     );
   }
 }
 
 export default App;
+
+{/* <div className="App">
+        <h1>Welcome! Add in a few tasks here, friendo!</h1>
+        <TodoList 
+        todo={this.state.todo} 
+        changeTaskStatus={this.changeTaskStatus}/>
+        <TodoForm 
+        clearCompleted={this.clearCompleted}
+        addTodo={this.addTodo}
+        inputText={this.state.inputText}
+        handleChange={this.handleChange}
+        
+        />
+      </div> */}
