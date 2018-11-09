@@ -3,10 +3,12 @@ import Characters from "./Characters";
 
 const DisplayCards = props => {
   return (
-    <section className="card">
+    <section >
+     
       {props.characters.map(character => (
-        <Characters characters={character} />
+        <div className="card"> <Characters characters={character} />  </div>
       ))}
+     
     </section>
   );
 };
