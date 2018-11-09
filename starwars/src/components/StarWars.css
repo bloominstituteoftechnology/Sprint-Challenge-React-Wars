@@ -1,0 +1,41 @@
+.App{
+    border: 1px solid teal;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    margin-left: 150px; 
+}
+
+.display-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid purple;
+    /* margin-left: 50px; */
+}
+
+.display-grid .card {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;  
+}
+
+.char-card {
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin-top: 50px; 
+    border: 1px solid red;
+}
+
+p.films {
+    word-break: break-all;
+}
+
+span {
+    font-weight: bold;
+}
