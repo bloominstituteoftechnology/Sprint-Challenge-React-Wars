@@ -2,7 +2,7 @@ import React from "react";
 
 const Character = props => {
   return <div className="character-card">
-    <h1>{props.characterDetails.name}</h1>
+    <h3>{props.characterDetails.name}</h3>
     <div className="character-card-info">
       <p>Height: {props.characterDetails.height}</p>
       <p>Mass: {props.characterDetails.mass}</p>
