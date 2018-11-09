@@ -1,0 +1,25 @@
+.card {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 8px !important;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px !important;
+}
+
+.card-text {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 32px;
+    margin-bottom: 1rem !important;
+    text-shadow: 1px 1px 3px black;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
