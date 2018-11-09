@@ -1,0 +1,9 @@
+.char-card{
+    background: grey;
+    color: white;
+    width: 45%;
+    border-radius: 15px; 
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0 0 5px 5px;
+}
