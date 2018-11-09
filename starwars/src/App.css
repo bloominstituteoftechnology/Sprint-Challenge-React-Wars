@@ -13,7 +13,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding-bottom: 100px;
 }
@@ -40,4 +40,6 @@ p {
   padding: 0 20px 0 50px;
   color: wheat;
   text-shadow: -3px 0 black, 0 3px black, 0px 0 black, 0 4px black;
+  font-weight: bold;
 }
+
