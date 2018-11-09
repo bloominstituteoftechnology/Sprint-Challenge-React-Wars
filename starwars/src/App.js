@@ -44,11 +44,13 @@ class App extends Component {
           <AdvanceButton 
             getCharacters={this.getCharacters}
             destination={this.state.prevData}
+            name={'Previous'}
           />
           <h1 className="Header">React Wars</h1>
-          <AdvanceRutton 
+          <AdvanceButton 
             getCharacters={this.getCharacters}
             destination={this.state.nextData}
+            name={'Next'}
           />
         </header>
         <CharacterList 
