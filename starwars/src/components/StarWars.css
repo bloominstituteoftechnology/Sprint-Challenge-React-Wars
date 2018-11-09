@@ -1,8 +1,8 @@
 .character {
-    width: 48%;
+    width: 46%;
     height: 200px;
     border: 1px solid black;
-    margin-right: 1%;
+    margin: 1%;
     background-color: #FFD700;
     opacity: .8;
     display: flex;
