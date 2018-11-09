@@ -1,23 +1,26 @@
 h1 {
-  color: white;
+  color: black;
   font-size: 1.75rem;
+  text-shadow: 2px 2px 5px #fff;
 }
 
 ul {
   display: flex;
-  width: 50%;
+  width: 30%;
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
   border: 1px solid white;
   background-color:rgba(245, 240, 240, 0.3);
-  padding: 5%;
+  padding: 2.5%;
+  box-shadow: 5px -5px white;
 }
 
 li {
   width: 50%;
   color: black;
   text-align: center;
-  padding: 1% 0;
+  padding: 3% 0;
+  text-shadow: 2px 2px 5px #fff;
 }

@@ -8,12 +8,12 @@ const Character = props => {
       <h1>{char.name}</h1>
       <div className="basic-info">
         <ul>
-          <li>Birth Year {char.birth_year}</li>
+          <li>Birth Year: {char.birth_year}</li>
           <li>Eye Color: {char.eye_color}</li>
           <li>Gender: {char.gender}</li>
           <li>Hair Color: {char.hair_color}</li>
-          <li>Height {char.height}</li>
-          <li>Mass {char.mass}</li>
+          <li>Height: {char.height}</li>
+          <li>Mass: {char.mass}</li>
           <li>Skin Color: {char.skin_color}</li>
         </ul>
       </div>
