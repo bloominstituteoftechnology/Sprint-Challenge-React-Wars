@@ -39,9 +39,14 @@ class App extends Component {
   };
   nextPage = ev =>{
     ev.preventDefault();
-    this.getCharacters(this.next);
+    console.log(this.state);
+    this.getCharacters(this.state.next);
   }
-  
+  prevPage = ev =>{
+    ev.preventDefault();
+    console.log(this.state);
+    this.getCharacters(this.state.previous);
+  }
 
   render() {
     return (
@@ -49,6 +54,7 @@ class App extends Component {
       <div className="App">
         < Button 
           nextPage = {this.nextPage}
+          prevPage = {this.prevPage}
         /> 
         <h1 className="Header">React Wars</h1>
         <CharacterList 

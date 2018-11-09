@@ -2,10 +2,16 @@ import React from 'react';
 
 function Button(props){
     return(
-        <button onClick={
-            props.nextPage}>
-            next page
+        <div>
+            <button onClick={
+                props.prevPage}>
+                previous page
             </button>
+            <button onClick={
+                props.nextPage}>
+                next page
+            </button>
+        </div>
     )
 }
 
