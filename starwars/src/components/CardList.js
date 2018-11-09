@@ -4,11 +4,11 @@ import SWCard from './SWCard';
 const CardList = props => {
     return(
 
-        <div>
+        <React.Fragment>
             {props.itit.map((eachOneInMap, index) => (
             <SWCard key={eachOneInMap.index} it={eachOneInMap} /> ))}
 
-        </div>
+        </React.Fragment>
     );
 };
 

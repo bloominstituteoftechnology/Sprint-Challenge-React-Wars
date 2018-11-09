@@ -1,6 +1,6 @@
 .Container {
-    width: 100%;
-    border: 1px solid red;
+    max-width: 100%;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -8,8 +8,9 @@
 }
 
 .SWcard {
+    max-width: 47%;
     width: 30%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -17,6 +18,7 @@
 }
 
 .SWCard.d {
+    max-width: 100%;
     border: 2px solid goldenrod;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 8px;
@@ -42,11 +44,13 @@ h5,
 }
 
 .white:hover {
-    color: red;
+    color: rgba(104, 4, 4, 0.493);
 }
 
 .SWCard.d.w {
     background-color: black;
+    width: 85%;
+    align-content: center;
 }
 
 .SWCard.d.w:hover {
@@ -54,5 +58,5 @@ h5,
 }
 
 .SWCard.d.o:hover {
-    background-color: darkgrey;
+    background-color: rgba(117, 91, 91, 0.377);
 }
