@@ -17,6 +17,18 @@ export default class Character extends React.Component {
 
   componentDidMount() {
 
+    this.updateState();
+
+  }
+
+  componentDidUpdate() {
+
+    //this.updateState();
+
+  }
+
+  updateState() {
+
     fetch(this.props.data.homeworld).then(res => res.json()).then(data => {this.setState({homeworld: data.name})});
 
     fetch(this.props.data.species).then(res => res.json()).then(data => {this.setState({species: data.name, language: data.language})});
