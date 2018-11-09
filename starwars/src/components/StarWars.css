@@ -1,26 +1,43 @@
+.characterList {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.character-card {
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0px;
+  height: auto;
+  margin-bottom: 2%;
+  background-color:rgba(245, 240, 240, 0.5);
+  box-shadow: 5px -5px white;
+}
+
 h1 {
   color: black;
   font-size: 1.75rem;
   text-shadow: 2px 2px 5px #fff;
+  width: 100%;
 }
 
 ul {
   display: flex;
-  width: 30%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
   list-style-type: none;
   margin: 0 auto;
-  border: 1px solid white;
-  background-color:rgba(245, 240, 240, 0.3);
-  padding: 2.5%;
-  box-shadow: 5px -5px white;
+  padding: 2.5% 0;
 }
 
 li {
-  width: 50%;
+  width: 40%;
   color: black;
-  text-align: center;
-  padding: 3% 0;
+  text-align: start;
+  padding: 1% 0;
   text-shadow: 2px 2px 5px #fff;
 }

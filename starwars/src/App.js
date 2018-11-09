@@ -7,6 +7,7 @@ class App extends Component {
     super(props);
     this.state = {
       starwarsChars: [],
+      prev: "",
       next: ""
     };
   }
@@ -32,6 +33,7 @@ class App extends Component {
         console.log(data.next);
         this.setState({
           starwarsChars: [...this.state.starwarsChars, ...data.results],
+          prev: data.prev,
           next: data.next
         });
       })
