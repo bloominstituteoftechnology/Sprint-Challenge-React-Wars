@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterList from './components/CharacterList';
-
+import Button from './components/button';
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: '',
+      previous: ''
     };
   }
 
@@ -23,21 +25,37 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+         
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+        });
       })
+      
       .catch(err => {
         throw new Error(err);
       });
   };
+  nextPage = ev =>{
+    ev.preventDefault();
+    this.getCharacters(this.next);
+  }
+  
 
   render() {
     return (
+      
       <div className="App">
+        < Button 
+          nextPage = {this.nextPage}
+        /> 
         <h1 className="Header">React Wars</h1>
         <CharacterList 
           starwarsChars = {this.state.starwarsChars}
         />
       </div>
+      
     );
   }
 }
