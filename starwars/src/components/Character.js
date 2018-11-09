@@ -25,15 +25,15 @@ const Character = props => {
          </div>
          <div className="character-list__character-- eye-color">
             <p className="display-title">Eye Color:</p>
-            <p className="display-value"> {props.character.eye_color}</p>
+            <p className="display-value" style={{ color : props.character.eye_color }}> {props.character.eye_color}</p>
          </div>
          <div className="character-list__character-- hair-color">
             <p className="display-title">Hair Color:</p> 
-            <p className="display-value">{props.character.hair_color}</p>
+            <p className="display-value" style={{ color : props.character.hair_color }}> {props.character.hair_color}</p>
          </div>
          <div className="character-list__character-- skin-color">
             <p className="display-title">Skin Color:</p> 
-            <p className="display-value">{props.character.hair_color}</p>
+            <p className="display-value" style={{ color : props.character.skin_color }}> {props.character.skin_color}</p>
          </div>
          <div className="character-list__character-- height">
             <p className="display-title">Height: </p> 

@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
-    min-width: 180px;
+    min-width: 200px;
 }
 
 p {
@@ -33,11 +33,15 @@ p {
 }
 
 .display-value {
-    color: rgb(59, 235, 59)
+    color: rgb(141, 241, 58)
 }
 
 h4 {
     color: #d4d121;
-  
    font-size: 1.4rem;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: bold;
 }

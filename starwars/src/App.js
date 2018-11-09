@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import CharacterList from './components/CharacterList.js';
+import AdvanceButton from './components/AdvanceButton.js';
 
 import './App.css';
 
@@ -8,7 +9,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextData: '',
+      prevData: '',
     };
   }
 
@@ -25,19 +28,30 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, nextData: data.next, prevData: data.previous });
+        
       })
       .catch(err => {
         throw new Error(err);
       });
+      
   };
 
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <header >
+          <AdvanceButton 
+            getCharacters={this.getCharacters}
+            destination={this.state.prevData}
+          />
+          <h1 className="Header">React Wars</h1>
+          <AdvanceRutton 
+            getCharacters={this.getCharacters}
+            destination={this.state.nextData}
+          />
+        </header>
         <CharacterList 
-          className="character-list"
           characterList={this.state.starwarsChars}
         />
       </div>
