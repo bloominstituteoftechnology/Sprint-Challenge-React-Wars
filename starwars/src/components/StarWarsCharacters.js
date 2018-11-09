@@ -3,7 +3,7 @@ import Character from './Character'
 
 const StarWarsCharacters = props => {
     return (
-        <div className='character-card'>
+        <div className='cards-container'>
             {props.starwarsCharacters.map( characterInMap => (
                 <Character
                     characterOnProps={characterInMap} 
