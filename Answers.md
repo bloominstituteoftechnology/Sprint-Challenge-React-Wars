@@ -16,7 +16,9 @@ Thinking in React means to first Break the UI into components and subcomponents,
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-Stateful component can manage state while functional components only receives props from the parent component and can not manage state. Functional components are concern with how data is presented on the page while stateful is concerned with how things work on the page. 
+Stateful components can manage state and are concerned with how things work on the page.
+
+Functional components only receive props from the parent component, they can not manage state. Functional components are only concerned with how data is presented.
 
 4.  Describe state.
 State is reserved for data that changes over time. State determines how a component renders and behaves. It allows for dynamic and interactive components. It is private and fully controlled by the component it was declared in. 
