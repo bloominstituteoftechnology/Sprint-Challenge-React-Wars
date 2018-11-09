@@ -1,5 +1,6 @@
 import React from 'react';
 import AttributeList from './AttributeList';
+import Gender from './Gender';
 
 const Card = props => {
     const i = props.item;
@@ -8,7 +9,7 @@ const Card = props => {
             <h1>{i.name}</h1>
             <h2>{i.birth_year}</h2>
             <p>{i.eye_color}</p>
-            <AttributeList item={i.films} listStyle="ol" />
+            <AttributeList className="films" item={i.films} listStyle="ol" />
             <p>{i.gender}</p>
             <p>{i.hair_color}</p>
             <p>{i.height}</p>
