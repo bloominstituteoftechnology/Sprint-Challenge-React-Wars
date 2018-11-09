@@ -10,7 +10,19 @@
 
 .character {
 
-  width: 20%;
+  &:nth-child(1) {
+
+    width: 40%;
+
+  }
+
+  &:nth-child(2) {
+
+    width: 40%;
+
+  }
+
+  width: 315px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: rgba(147, 104, 16, 0.5);
@@ -36,6 +48,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     text-align: left;
+    margin-bottom: 10px;
 
     summary {
 

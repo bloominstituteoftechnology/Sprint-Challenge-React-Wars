@@ -7,8 +7,10 @@ export default class Character extends React.Component {
     super();
 
     this.state = {
-      homeworld: 'fetching from API...',
-      films: []
+      homeworld: 'fetching homeworld...',
+      films: [],
+      species: 'fetching species...',
+      language: 'fetching language...'
     }
 
   }
@@ -16,6 +18,8 @@ export default class Character extends React.Component {
   componentDidMount() {
 
     fetch(this.props.data.homeworld).then(res => res.json()).then(data => {this.setState({homeworld: data.name})});
+
+    fetch(this.props.data.species).then(res => res.json()).then(data => {this.setState({species: data.name, language: data.language})});
 
     for (let i = 0; i < this.props.data.films.length; i++) {
 
@@ -40,6 +44,8 @@ export default class Character extends React.Component {
         <h3>Birth Year: {this.props.data.birth_year}</h3>
         <h3>Gender: {this.props.data.gender}</h3>
         <h3>Home world: {this.state.homeworld}</h3>
+        <h3>Species: {this.state.species}</h3>
+        <h3>Language: {this.state.language}</h3>
         <details><summary>Films:</summary><ul>{this.state.films.map(film => <li>{film}</li>)}</ul></details>
 
       </div>
