@@ -3,9 +3,10 @@
   height: 100px; */
   width: 300px;
   margin: 10px;
-  background: yellow;
-  color: green;
-  border: 1px solid red;
+  background: #BCC8DE;
+  color: #4C596F;
+  border: 1px solid #658FBD;
+  opacity: .8;
 }
 
 .card-container {
