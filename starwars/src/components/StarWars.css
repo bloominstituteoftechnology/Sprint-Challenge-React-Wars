@@ -8,4 +8,8 @@
 }
 .name{
     text-decoration: underline;
+    font-size: 3rem;
+}
+.attributes{
+    letter-spacing:0.3rem;
 }

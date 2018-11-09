@@ -6,13 +6,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage:''
     };
   }
   
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
+
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -23,7 +25,10 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ starwarsChars: data.results,
+        nextPage:data.next });
+        console.log(data.next);
       })
       .catch(err => {
         throw new Error(err);
@@ -33,7 +38,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className = "Header">
+        <button className = "Header__button">Go Back</button>
+        <h1 className="Header__text">React Wars</h1>
+        <button className = "Header__button" >NextPage</button>
+        </div>
         <CharacterList listOfChar={this.state.starwarsChars}/>
       </div>
     );

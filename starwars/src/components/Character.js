@@ -6,7 +6,7 @@ const Characters = props => {
   return (
     <div className ="char">
       <h2 className="name">{props.name}</h2>
-      <p>
+      <p className="attributes">
         Height:{props.height} <br />
         Weight:{props.mass} <br />
         gender:{props.gender} <br />
