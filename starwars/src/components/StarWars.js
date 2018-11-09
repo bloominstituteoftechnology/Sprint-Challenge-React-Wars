@@ -4,7 +4,7 @@ import '../components/StarWars.css';
 function StarWars(props) {
     // console.log(props.character);
     return (
-        <div className='character-container'>                       
+        <div className={`character-container `}>                       
             <h2 className='character-name'>
             {props.character.name}            
             </h2> 

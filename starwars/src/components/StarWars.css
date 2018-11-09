@@ -36,3 +36,7 @@
     background-color: #f3d192;
     opacity: .7;
 }
+
+.display-character-card {
+    display: none;
+}

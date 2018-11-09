@@ -8,7 +8,8 @@ function StarWarsList(props) {
             {props.characters.map( charSW => (
                 <StarWars 
                     key={charSW.created}
-                    character={charSW}                 
+                    character={charSW}  
+                    isDisplayed={charSW}               
                 />
             ))}
         </div>        

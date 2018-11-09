@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import StarWarsList from './components/StarWarsList';
+import StarWarsForm from './components/StarWarsForm';
 
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -37,8 +38,14 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
 
-        <StarWarsList 
+        {/* <StarWarsList 
           characters={this.state.starwarsChars}
+          isDisplayed={this.active}
+        /> */}
+
+        <StarWarsForm 
+          characters={this.state.starwarsChars}
+          isDisplayed={this.active}
         />
         
       </div>
