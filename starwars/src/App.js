@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import CharacterList from './components/CharacterList';
+import Pages from './components/Pages';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: '',
     };
   }
-
+  
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -24,17 +27,26 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        this.setState({ next: data.next.results});
+        console.log(data.results)
+        console.log(data.next);
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+ 
+nextPage = ev => {
+  ev.preventDefault();
+  this.setState({ starwarsChars: this.next });
+}
 
   render() {
     return (
       <div className="App">
-
         <h1 className="Header">React Wars</h1>
+
+        <Pages nextPage={this.nextPage}  />
 
         <CharacterList
           charList={this.state.starwarsChars} 
