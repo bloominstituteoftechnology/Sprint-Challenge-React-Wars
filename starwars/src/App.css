@@ -3,6 +3,34 @@
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 2px 3px 5px #629bf7;
+  font-size: 64px;
 }
 /* write your parent styles in here for your App.js */
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  background: #8e3313;
+  opacity: 0.8;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+  padding-bottom: 20px;
+  border: 3px solid black;
+}
+.card p {
+  margin: 5px 10px;
+}
+
+.card h2 {
+  font-size: 32px;
+  color: #443e3e;
+  text-shadow: 1px 2px 5px #629bf7;
+}
