@@ -1,0 +1,23 @@
+h1 {
+  color: white;
+  font-size: 1.75rem;
+}
+
+ul {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color:rgba(245, 240, 240, 0.3);
+  padding: 5%;
+}
+
+li {
+  width: 50%;
+  color: black;
+  text-align: center;
+  padding: 1% 0;
+}
