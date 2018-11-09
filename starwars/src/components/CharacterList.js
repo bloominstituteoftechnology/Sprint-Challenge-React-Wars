@@ -4,7 +4,7 @@ import Characters from './Characters'
 
 const CharacterList = props => {
     return (
-    <div>
+    <div className = "starwars">
     {props.starwarsChars.map( roles => (
     <Characters key = {roles.name}
      charProps= {roles}/> 
