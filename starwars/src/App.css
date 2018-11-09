@@ -1,8 +1,16 @@
 .App {
   text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  overflow-x: scroll;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-bottom: 150px;
 }
 /* write your parent styles in here for your App.js */
+
+.main-container {
+  text-align: center;
+}

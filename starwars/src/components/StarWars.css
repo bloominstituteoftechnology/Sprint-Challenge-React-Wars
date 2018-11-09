@@ -1,0 +1,46 @@
+
+.character-container {
+    width: 800px;
+    min-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #222222;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 2px rgb(39, 55, 126);
+    background-color: #5a5c5c;
+}
+
+.character-name {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: .7;
+}
+
+.characters-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+}
+
+.character-stats {
+    width: 250px;
+    /* border: 1px solid green; */
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.labels {
+    font-weight: bold;
+    background-color: #302f2f;
+    opacity: .7;
+}
+
+.display-character-card {
+    display: none;
+}
+
+.character-cards {
+    display: flex;
+    justify-content: flex-start;
+}

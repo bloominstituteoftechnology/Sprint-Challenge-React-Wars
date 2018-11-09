@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarsList from './components/StarWarsList';
+import StarWarsForm from './components/StarWarsForm';
+
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
     };
   }
 
@@ -31,8 +35,24 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className='main-container'>
+
         <h1 className="Header">React Wars</h1>
+
+        <div className="App">
+          
+
+          {/* <StarWarsList 
+            characters={this.state.starwarsChars}
+            isDisplayed={this.active}
+          /> */}
+
+          <StarWarsForm 
+            characters={this.state.starwarsChars}
+            isDisplayed={this.active}
+          />
+
+        </div>
       </div>
     );
   }
