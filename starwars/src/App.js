@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CharactersList from './components/CharactersList';
+
 class App extends Component {
   constructor() {
     super();
@@ -33,9 +35,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharactersList
+          starwarsChars={this.state.starwarsChars}
+        />
       </div>
     );
   }
 }
 
 export default App;
+
+//1. Access the starwarsChars array
+//2. Access each index to display
+//3. Display each array
