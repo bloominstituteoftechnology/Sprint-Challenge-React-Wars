@@ -11,6 +11,7 @@ class App extends Component {
       starwarsChars: [],
       inputText : '',
       nextUrl: '',
+      page: 1,
     };
   }
 
@@ -49,14 +50,42 @@ class App extends Component {
     })
   }
 
+  onPrevious(e) {
+    if (this.state.page > 1) {
+      this.setState({ page: this.state.page - 1 })
+    }
+  }
+
+  onNext(e) {
+    if (this.state.page * 12 < this.state.starwarsChars.length) {
+      this.setState({page: this.state.page + 1})
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <input type="text" onChange={ e => this.onTextChange(e)} placeholder="Filter character" /><br/>
+        <div className="buttons">
+          <div
+            className="button"
+            onClick={ e => this.onPrevious(e) }
+            style={ this.state.page === 1 ? {display: 'none'} : {} }
+          >
+            {'<< Prev'}
+          </div>
+          <div
+            className="button"
+            onClick={ e => this.onNext(e) }
+            style={ this.state.page*12+1 > this.state.starwarsChars.length ? {display: 'none'} : {}}
+          >
+            {'Next >>'}
+          </div>
+        </div>
         <div className="card--container">
           { 
-            this.state.starwarsChars
+            this.state.starwarsChars.slice((this.state.page-1)*12, (this.state.page-1)*12 + 12)
               .filter(
                 char => {
                   return (
