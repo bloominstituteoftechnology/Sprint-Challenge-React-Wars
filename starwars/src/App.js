@@ -1,11 +1,45 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharCard from './components/CharCard';
+import styled from 'styled-components';
+
+const CardHolder = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px 20px;
+    background-color: lightgray;
+    opacity: 0.8;
+  }
+`
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage: null,
+      prevPage: null
     };
   }
 
@@ -22,7 +56,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, nextPage: data.next, prevPage: data.previous });
       })
       .catch(err => {
         throw new Error(err);
@@ -31,9 +65,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+      <AppContainer className="App">
+        <h1>Star Wars Characters!</h1>
+        <ButtonContainer>
+          <h1 onClick={this.state.prevPage === null ? 
+            console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage)}>Previous Page</h1>
+          <h1 onClick={this.state.nextPage === null ? 
+            console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
+        </ButtonContainer>
+
+          <CardHolder>
+            {this.state.starwarsChars.map(char=> (
+              <CharCard character={char} key={char.created}/>
+              ))}
+          </CardHolder>
+      </AppContainer>
     );
   }
 }
