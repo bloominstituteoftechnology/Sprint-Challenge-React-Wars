@@ -1,8 +1,26 @@
 .App {
   text-align: center;
+  box-sizing:border-box;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  line-height: 1.5;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size:4rem;
+  flex-basis:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
 }
 /* write your parent styles in here for your App.js */
+.Header__button{
+  border:1px solid black;
+  background:rgba(255, 255, 255, 0.8);
+}
+.Header__text{
+  margin:0 5rem;
+}

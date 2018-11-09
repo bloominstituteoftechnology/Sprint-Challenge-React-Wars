@@ -1,0 +1,19 @@
+.char{
+    border:5px solid black;
+    margin:2rem;
+    font-size:1.6rem;
+    color:rgba(255, 255, 255, 0.8);
+    background:rgba(0, 0, 0, 0.6);
+    padding:0 2rem;
+    transition: all .5s;
+}
+.char:hover{
+    transform: scale(1.1);
+}
+.name{
+    text-decoration: underline;
+    font-size: 3rem;
+}
+.attributes{
+    letter-spacing:0.3rem;
+}
