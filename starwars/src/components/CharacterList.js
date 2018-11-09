@@ -1,9 +1,9 @@
 import React from 'react';
 import Characters from './Character'
+import './StarWars.css';
+
 const CharacterList = (props) => {
-
     return(
-
         props.listOfChar.map((char,i) =>       
         <Characters 
         key = {i}
@@ -15,6 +15,8 @@ const CharacterList = (props) => {
         eyeColor = {char.eye_color}
         birthYear = {char.birth_year}
         gender = {char.gender}
+        created = {char.created}
+        edited = {char.edited}
         />
         )
     )
