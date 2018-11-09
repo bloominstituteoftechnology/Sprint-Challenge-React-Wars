@@ -1,0 +1,21 @@
+.container {
+    border: 5px solid white;
+    margin: 5px auto;
+    max-width: 800px;
+}
+
+
+.card {
+    width: 100%;
+    border: 3px solid aquamarine;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 5px pink;
+
+
+    
+}
+
+.array {
+    margin: 10px solid red;
+}
