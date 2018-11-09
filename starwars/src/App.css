@@ -3,8 +3,10 @@
 }
 
 .Header {
+    font-size: 3.8rem;
     color: #443e3e;
     text-shadow: 1px 1px 5px #fff;
+    margin-top: 10px;
 }
 
 
@@ -25,14 +27,14 @@
     margin-bottom: 20px;
     border: 1px solid #A16944;
     border-radius: 5px;
-    box-shadow: 5px 10px #CF753B;
+    box-shadow: 5px 10px #473730;
 }
 
 button {
     border-radius: 50%;
     background-color: #CF753B;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     height: 40px;
     box-shadow: 2px 3px #A16944;
 }
