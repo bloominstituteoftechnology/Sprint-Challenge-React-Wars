@@ -1,6 +1,8 @@
 .char-card {
-    background: #443e3e;
-    width: 200px;
+    /* background: #443e3e; */
+    background: linear-gradient(rgba(68,62,62, 1), rgba(68,62,62, .5));
+    /* opacity: .8; */
+    width: 250px;
     text-align: left;
     line-height: 30px;   
     margin: 40px;
@@ -8,7 +10,7 @@
 
 .char-card-contents {
     padding: 20px;
-    color: white;
+    color: #D4C3BD;
 }
 
 .char-card .char-card-contents h2 {
