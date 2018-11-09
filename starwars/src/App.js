@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    localStorage.clear(); // website takes a while to load unless cache is cleared
   }
 
   componentDidMount() {
@@ -31,12 +32,28 @@ class App extends Component {
       });
   };
 
+  getHomeworld = (URL) => {
+    fetch(URL)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        return data;
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
   render() {
-    console.log(this.state.starwarsChars)
+    localStorage.clear(); // website takes a while to load unless cache is cleared
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList characters={this.state.starwarsChars}/>
+        <CharacterList
+          characters={this.state.starwarsChars}
+          getHomeworld = {this.getHomeworld}
+        />
       </div>
     );
   }
