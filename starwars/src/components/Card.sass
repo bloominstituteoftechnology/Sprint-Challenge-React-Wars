@@ -1,0 +1,35 @@
+.card
+    border: 1px solid black
+    border-radius: 10px
+    height: 100%
+    position: relative
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    &:before 
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: url('../sw-bg.jpg');
+        filter: blur(10px)
+        background-size: cover
+        background-attachment: fixed
+        z-index: -1
+        
+
+// .card-glass
+//     width: 100%
+//     height: 100%
+//     
+//     
+//     
+//     filter: blur(1px)
+//     position: absolute
+//     z-index: 2
+//     left: 0
+//     top: 0
+
+.card-content
+    z-index: 1
+    

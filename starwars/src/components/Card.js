@@ -1,6 +1,7 @@
 import React from 'react';
 import AttributeList from './AttributeList';
-import Gender from './Gender';
+import DataItem from './DataItem';
+import './Card.sass';
 
 const Card = props => {
     const i = props.item;
@@ -10,8 +11,8 @@ const Card = props => {
             <h2>{i.birth_year}</h2>
             <p>{i.eye_color}</p>
             <AttributeList className="films" item={i.films} listStyle="ol" />
-            <p>{i.gender}</p>
-            <p>{i.hair_color}</p>
+            <DataItem item={i.gender} />
+            <DataItem item={i.hair_color} />
             <p>{i.height}</p>
             <p>{i.homeworld}</p>
             <p>{i.mass}</p>
