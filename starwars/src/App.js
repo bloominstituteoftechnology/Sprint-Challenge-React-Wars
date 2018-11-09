@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      current: 0,
     };
   }
 
@@ -30,11 +31,25 @@ class App extends Component {
       });
   };
 
+  prev = () => {
+    this.setState({
+      current: this.state.current !== 0 ? this.state.current - 1 : 0
+    })
+  }
+
+  next = () => {
+    this.setState({
+      current: this.state.current !== this.state.starwarsChars.length - 1 ? this.state.current + 1 : this.state.starwarsChars.length - 1
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Card testState={this.state.starwarsChars} />
+        <Card testState={this.state.starwarsChars} currentDisplay={this.state.current} />
+        <button onClick={this.prev}>prev</button>
+        <button onClick={this.next}>next</button>
       </div>
     );
   }

@@ -2,9 +2,9 @@ import React from 'react';
 import './StarWars.css'
 
 function CardCharacter(props) {
-  console.log(props.character, 'in card character')
+  console.log(props.currentDisplay, 'in card character')
   return (
-    <div className={`character`}>
+    <div className={`character ${props.currentDisplay}`}>
       <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMrXCq8FXWe7yBfw0fE3uhsU4xo3pnSIInGUXWTgXUVICytoxlA'}/>
       <h1 className={`character-name`}>{props.character.name}</h1>
       <p>birth year: {props.character.birth_year}</p>
