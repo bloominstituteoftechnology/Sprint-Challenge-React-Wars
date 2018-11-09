@@ -14,13 +14,14 @@
     margin: 5px;
     box-shadow: 1px 1px 5px #000;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .character-list__character-- {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
-    min-width: 200px;
+    min-width: 220px;
 }
 
 p {
