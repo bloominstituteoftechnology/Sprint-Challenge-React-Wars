@@ -5,3 +5,9 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+html {
+
+  font-size: 62.5%;
+
+}
