@@ -5,8 +5,8 @@ import './characterCard.css';
 const CharacterCard = props => {
     return(
         <div className='character-card'>
-            {props.starwarsChars.map(currentChar => (
-                <Character singleChar={currentChar}/>
+            {props.starwarsChars.map((currentChar, index) => (
+                <Character singleChar={currentChar} key={index}/>
             ))}
         </div>
     );
