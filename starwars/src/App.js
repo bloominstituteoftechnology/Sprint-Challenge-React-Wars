@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   onNext(e) {
-    if (this.state.page * 12 < this.state.starwarsChars.length) {
+    if (this.state.page * 9 < this.state.starwarsChars.length) {
       this.setState({page: this.state.page + 1})
     }
   }
@@ -78,14 +78,14 @@ class App extends Component {
           <div
             className="button"
             onClick={ e => this.onNext(e) }
-            style={ this.state.page*12+1 > this.state.starwarsChars.length ? {display: 'none'} : {}}
+            style={ this.state.page*9+1 > this.state.starwarsChars.length ? {display: 'none'} : {}}
           >
             {'Next >>'}
           </div>
         </div>
         <div className="card--container">
           { 
-            this.state.starwarsChars.slice((this.state.page-1)*12, (this.state.page-1)*12 + 12)
+            this.state.starwarsChars.slice((this.state.page-1)*9, (this.state.page-1)*9 + 9)
               .filter(
                 char => {
                   return (
