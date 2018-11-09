@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './StarWars.css';
+
 const Character = props => {
     return (
         <div 
@@ -8,28 +10,38 @@ const Character = props => {
             // id={props.todo.display ? null : 'display-none'}
             className="character-list__character"
         >
-         <div className="character-list__character--name">
-            <p>Name: </p>
-            <p>{props.character.name}</p>
+        <h4>Character Card</h4>
+         <div className="character-list__character-- name">
+            <p className="display-title">Name: </p>
+            <p className="display-value">{props.character.name}</p>
          </div>
-         <div className="character-list__character--birth-year">
-            <p>Year of Birth:</p> 
-            <p>{props.character.birth_year}</p>
+         <div className="character-list__character-- birth-year">
+            <p className="display-title">Birth:</p> 
+            <p className="display-value">{props.character.birth_year}</p>
          </div>
-         <div className="character-list__character--gender">
-            <p>Gender: </p>
-            <p>{props.character.gender}</p>
+         <div className="character-list__character-- gender">
+            <p className="display-title">Gender: </p>
+            <p className="display-value">{props.character.gender}</p>
          </div>
-         <div className="character-list__character--eye-color">
-            <p>Eye Color:</p>
-            <p> {props.character.eye_color}</p>
+         <div className="character-list__character-- eye-color">
+            <p className="display-title">Eye Color:</p>
+            <p className="display-value"> {props.character.eye_color}</p>
          </div>
-         <div className="character-list__character--hair-color">
-         <p>Hair Color:</p> 
-         <p>{props.character.name}</p>
+         <div className="character-list__character-- hair-color">
+            <p className="display-title">Hair Color:</p> 
+            <p className="display-value">{props.character.hair_color}</p>
          </div>
-         <div className="character-list__character--name">
-         Name {props.character.name}
+         <div className="character-list__character-- skin-color">
+            <p className="display-title">Skin Color:</p> 
+            <p className="display-value">{props.character.hair_color}</p>
+         </div>
+         <div className="character-list__character-- height">
+            <p className="display-title">Height: </p> 
+            <p className="display-value">{props.character.height}</p>
+         </div>
+         <div className="character-list__character-- weight">
+            <p className="display-title">Weight: </p> 
+            <p className="display-value">{props.character.mass}</p>
          </div>
         </div>
     );
