@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterContainer from './components/CharacterContainer';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
+      loading: true,
       starwarsChars: []
     };
   }
@@ -22,7 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, loading: false });
       })
       .catch(err => {
         throw new Error(err);
@@ -30,9 +32,14 @@ class App extends Component {
   };
 
   render() {
+    if(this.state.loading){
+      return <p>loading</p> 
+    }
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterContainer characters={this.state.starwarsChars} />
       </div>
     );
   }
