@@ -2,7 +2,19 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: greenyellow;
+  text-shadow: 0px 0px 5px #fff;
+  font-size: 50px;
+
+}
+button{
+  padding: 10px;
+border: 5px  double greenyellow;
+text-shadow: 0px 0px 5px #fff;
+box-shadow: 0px 0px 5px #fff;
+background: black;
+color: greenyellow;
+font-size: 18px;
+margin: 10px;
 }
 /* write your parent styles in here for your App.js */
