@@ -1,0 +1,36 @@
+.card
+    border: 1px solid black
+    border-radius: 10px
+    height: 100%
+    position: relative
+    color: white
+    box-shadow: 4px 4px 10px 3px rgba(1,1,1,0.4)
+    overflow: hidden
+    &:before 
+        content: ""
+        position: absolute
+        top: -5%
+        left: -5%
+        width: 110%
+        height: 110%
+        background-color: rgba(1,1,1,0.5)
+        filter: blur(10px)
+        z-index: -1
+        
+        
+
+// .card-glass
+//     width: 100%
+//     height: 100%
+//     
+//     
+//     
+//     filter: blur(1px)
+//     position: absolute
+//     z-index: 2
+//     left: 0
+//     top: 0
+
+.card-content
+    z-index: 1
+    
