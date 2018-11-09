@@ -1,0 +1,37 @@
+.characters {
+
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.invisible {
+
+  display: none;
+
+}
+
+.character {
+
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(147, 104, 16, 0.5);
+  margin: 10px 0px;
+
+  h2 {
+
+    color: yellow;
+
+  }
+
+  h3 {
+
+    color: white;
+
+  }
+
+}

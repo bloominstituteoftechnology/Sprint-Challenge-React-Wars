@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Character.scss';
+
 import Character from './Character';
 
 export default function StarwarsChars(props) {
