@@ -6,6 +6,7 @@ const StarWarsCharacters = props => {
         <div className='cards-container'>
             {props.starwarsCharacters.map( characterInMap => (
                 <Character
+                    key={characterInMap.name}
                     characterOnProps={characterInMap} 
                 />
             ))}
