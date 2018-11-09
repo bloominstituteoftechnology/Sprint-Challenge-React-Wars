@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const CardHolder = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 `
 const AppContainer = styled.div`
   display: flex;
@@ -62,19 +63,19 @@ class App extends Component {
   render() {
     return (
       <AppContainer className="App">
-      <h1>Star Wars Characters!</h1>
-      <ButtonContainer>
-        <h1 onClick={this.state.prevPage === null ? 
-        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</h1>
-        <h1 onClick={this.state.nextPage === null ? 
-          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
-      </ButtonContainer>
+        <h1>Star Wars Characters!</h1>
+        <ButtonContainer>
+          <h1 onClick={this.state.prevPage === null ? 
+            console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage)}>Previous Page</h1>
+          <h1 onClick={this.state.nextPage === null ? 
+            console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
+        </ButtonContainer>
 
-        <CardHolder>
-        {this.state.starwarsChars.map(char=> (
-          <CharCard character={char} key={char.created}/>
-          ))}
-        </CardHolder>
+          <CardHolder>
+            {this.state.starwarsChars.map(char=> (
+              <CharCard character={char} key={char.created}/>
+              ))}
+          </CardHolder>
       </AppContainer>
     );
   }
