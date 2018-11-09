@@ -4,4 +4,22 @@ body {
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.card--container {
+  width: 900px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
