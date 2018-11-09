@@ -23,6 +23,8 @@ const StyledButton = styled.h1`
   border: 1px solid black;
   border-radius: 7px;
   padding: 5px 20px;
+  background-color: lightgray;
+  opacity: 0.8;
 `
 
 class App extends Component {
@@ -58,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <AppContainer className="App">
-
+      <h1>Star Wars Characters!</h1>
       <ButtonContainer>
         <StyledButton onClick={this.state.prevPage === null ? 
         console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</StyledButton>

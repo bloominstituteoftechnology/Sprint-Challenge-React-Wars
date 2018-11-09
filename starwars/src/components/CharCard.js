@@ -7,6 +7,8 @@ const StyledCard = styled.div`
     border-radius: 10px;
     margin: 30px 3%;
     font-weight: bold;
+    background-color: lightgray;
+    opacity: 0.8;
 `
 const StyledH1 = styled.h1`
     text-decoration: underline;
