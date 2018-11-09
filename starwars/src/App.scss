@@ -7,6 +7,9 @@
   font-size: 5.2rem;
 }
 /* write your parent styles in here for your App.js */
+
+@import './variables';
+
 .next-button {
 
   position: fixed;
@@ -21,6 +24,12 @@
   &:hover {
 
     background-color: #ccc;
+
+  }
+
+  @media (max-width: $mobile) {
+
+    padding: 20px 10px;
 
   }
 
@@ -40,6 +49,12 @@
   &:hover {
 
     background-color: #ccc;
+
+  }
+
+  @media (max-width: $mobile) {
+
+    padding: 20px 10px;
 
   }
 

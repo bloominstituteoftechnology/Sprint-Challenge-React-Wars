@@ -1,3 +1,5 @@
+@import '../variables';
+
 .characters {
 
   width: 80%;
@@ -14,11 +16,23 @@
 
     width: 40%;
 
+    @media (max-width: $tablet) {
+
+      width: 70%;
+
+    }
+
   }
 
   &:nth-child(2) {
 
     width: 40%;
+
+    @media (max-width: $tablet) {
+
+      width: 70%;
+
+    }
 
   }
 
@@ -27,6 +41,12 @@
   border-radius: 10px;
   background-color: rgba(147, 104, 16, 0.5);
   margin: 10px 0px;
+
+  @media (max-width: $tablet) {
+
+    width: 70%;
+
+  }
 
   h2 {
 

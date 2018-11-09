@@ -45,7 +45,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className={this.state.nextURL ? 'next-button' : 'invisible'} onClick={() => this.getCharacters(this.state.nextURL)}>NEXT</div>
-        <div className={this.state.prevURL ? 'previous-button' : 'invisible'} onClick={() => this.getCharacters(this.state.prevURL)}>PREVIOUS</div>
+        <div className={this.state.prevURL ? 'previous-button' : 'invisible'} onClick={() => this.getCharacters(this.state.prevURL)}>PREV</div>
         {!this.state.loading ? <StarwarsChars data={this.state.starwarsChars} /> : <h2>Loading data...</h2>}
       </div>
     );
