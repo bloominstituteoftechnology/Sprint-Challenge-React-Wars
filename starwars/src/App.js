@@ -35,8 +35,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 onClick={()=>this.getCharacters(this.state.nextPage)}>Next Page</h1>
-        <h1 onClick={()=>this.getCharacters(this.state.prevPage)}>Previous Page</h1>
+        <h1 onClick={this.state.nextPage === null ? 
+          console.log('no next page listed') : ()=> this.getCharacters(this.state.nextPage)}>Next Page</h1>
+        <h1 onClick={this.state.prevPage === null ? 
+        console.log('no previous page listed') : ()=> this.getCharacters(this.state.prevPage) }>Previous Page</h1>
+
+          
         {this.state.starwarsChars.map(char=> (
           <CharCard character={char} key={char.created}/>
         ))}
