@@ -15,9 +15,12 @@ const AppContainer = styled.div`
   align-items: center;
 `
 const ButtonContainer = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 
   h1 {
     cursor: pointer;

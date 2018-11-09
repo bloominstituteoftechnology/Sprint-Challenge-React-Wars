@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const StyledCard = styled.div`
     border: 1px solid black;
     width: 27%;
+    min-width: 300px;
+    max-width: 500px;
     border-radius: 10px;
     margin: 30px 0;
     font-weight: bold;
