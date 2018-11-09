@@ -5,9 +5,10 @@ import './StarWars.css';
 const CharacterList = props => {
     return(
         <div className='cardList'>
-            {props.starwarsChars.map(char => (
+            {props.starwarsChars.map((char,index) => (
                 <Character
                     char={char}
+                    homeworld={props.homeworlds}
                 />
             ))}
         </div>

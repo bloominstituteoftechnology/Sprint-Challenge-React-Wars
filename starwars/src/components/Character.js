@@ -14,8 +14,7 @@ const Character = props => {
             <p><span>Eye Color:</span> {char.eye_color}</p>
             <p><span>Hair Color:</span> {char.hair_color}</p>
             <p><span>Skin Color:</span> {char.skin_color}</p>
-           
-
+            <p><span>HomeWorld:</span> <a href={char.homeworld}>{props.homeworld}</a></p>
             </div>
             
         </div>
