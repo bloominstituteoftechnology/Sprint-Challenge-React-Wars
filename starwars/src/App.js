@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CharacterList from './components/CharacterList';
 import Buttons from './components/Buttons';
+import SearchBar from './components/SearchBar';
 import './App.css';
 
 class App extends Component {
@@ -9,15 +10,26 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       nextPage:'',
-      previous:''
+      previous:'',
+      searchBarValue:''
     };
   }
   
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
+  
+searchHandler = event =>{
+  this.setState({
+    searchBarValue:event.target.value
+  })
+}
 
-
+  endHandler = event => {
+    this.setState({
+      starwarsChars: '',
+    });
+  }
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -42,6 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <SearchBar searchHandler={this.searchHandler}/>
         <div className = "Header">
         <Buttons className = "Header__button" clickHandler={this.getCharacters} previous={this.state.previous}/>
         <h1 className="Header__text">React Wars</h1>
