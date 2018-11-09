@@ -1,5 +1,15 @@
 .App {
+
   text-align: center;
+  /* height: 100vw; */
+  /* position: relative; */
+
+  /* bottom: 30px; */
+  /* background-color: green; */
+  /* width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center; */
 }
 .Header {
   color: #443e3e;
