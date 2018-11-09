@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Fragment } from 'react';
 import './App.css';
+import StarWarsCards from './components/StarWarsCards';
 
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <h1>This is the beginning, the middle, and the end. GO HARD.</h1>
+        <StarWarsCards starwarsChars= {this.state.starwarsChars} />
         
       </div>
       {/* <div>What's up boyyyyy!</div>  */}
