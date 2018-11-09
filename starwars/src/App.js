@@ -26,7 +26,10 @@ class App extends Component {
     })
     .then(data => {
       console.log(data)
-      this.setState({ starwarsChars: data.results, next: data.next, prev: data.previous });
+      this.setState({
+        starwarsChars: data.results,
+        next: data.next,
+        prev: data.previous });
     })
     .catch(err => {
       throw new Error(err);
@@ -54,7 +57,7 @@ class App extends Component {
           {this.state.previous === null ? null : ( <button className="pagination" onClick={this.loadPrevPage} loadPrevPage={this.loadPrevPage}>Previous Page</button> ) }
           {this.state.next === null ? null : ( <button className="pagination" onClick={this.loadNextPage} loadNextPage={this.loadPrevPage}>Next Page</button> ) }
         </div>
-        <h6>All data recieved from <a href="https://swapi.co/api/people">StarWars API</a></h6>
+        <h6>All data received from <a href="https://swapi.co/api/people">StarWars API</a></h6>
       </div>
     );
   }
