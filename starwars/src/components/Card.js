@@ -1,35 +1,29 @@
 import React from 'react';
 import './Card.css';
+import SubElement from './SubElement'
 
 function Card(props){
-    const newArray = []
-    for(let i in props.item){
-        if(!(i=== "homeworld" || i==="url" || i==="films" || i==="species" || i==="starships"|| i==="vehicles")){
-        newArray.push(`${i}: ${props.item[i]}`);
-        }
-    }
-    // function SubElement(props){
-    //     return(
-    //         <ul>
-    //             {
-    //                 for(let i in props.item){
-    //                     if(Array.isArray(props.item[i])){
-    //                         return props.item[i].map(a => {<li>{a}</li>})
-    //                     }
-    //                 }
-    //             }
-    //         </ul>
-    //     );
-        
-    // }
+
+    let {name,...rest} = props.item;
+
     return(
         <div className="indiv-card">
-        {
-            newArray.map(ele => {
-                return <p>{ele}</p>
-            })
-        }
-            {/* <SubElement /> */}
+            <h2 className="header">{name}</h2>
+            {
+                Object.keys(rest).map((keyName) => {
+                    if(keyName==="films" || keyName==="species" || keyName==="starships"|| keyName==="vehicles"){
+                        return( <SubElement arrayName={keyName} array={rest[keyName]}/> ); 
+                        
+                    } else if(!(keyName=== "homeworld" || keyName==="url" )){
+                        return (
+                            <React.Fragment>
+                                <p>{keyName}:{rest[keyName]}</p>
+                            </React.Fragment>
+                        );
+                    }
+                 })
+            }
+             
         </div>
     );
 }

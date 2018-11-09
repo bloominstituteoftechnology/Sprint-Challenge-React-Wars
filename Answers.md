@@ -1,7 +1,7 @@
 # Answers
 
 ### 1.  What is React JS and what problems does it try and solve?
-    React JS is a javascript library that allows a developer to make components, manage state, and manipulate the DOM effieciently.
+        React JS is a javascript library that allows a developer to make components, manage state, and manipulate the DOM effieciently.
 ### 2.  What does it mean to _think_ in react?
         Thinking in React means to think about compartmentalizing the DOM and building components from that model. 
 ### 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.

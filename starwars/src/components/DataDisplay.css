@@ -1,15 +1,7 @@
 .data-section {
-    width:800px;
+    width:100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     background:lightgray
-}
-
-.datam-section {
-    width:50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background:lightcoral;
 }

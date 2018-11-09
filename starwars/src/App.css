@@ -1,9 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: left; */
   margin:0 auto;
   max-width: 800px;
 }
 .Header {
+  text-align: center;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
