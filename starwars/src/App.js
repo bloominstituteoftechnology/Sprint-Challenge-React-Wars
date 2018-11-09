@@ -6,7 +6,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      nextPage: '',
+      prevPage: ''
     };
   }
 
@@ -23,7 +25,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, nextPage: data.next, prevPage: data.previous });
       })
       .catch(err => {
         throw new Error(err);
@@ -33,11 +35,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.starwarsChars.forEach(char=>console.log(char))}
+        <h1 onClick={()=>this.getCharacters(this.state.nextPage)}>Next Page</h1>
+        <h1 onClick={()=>this.getCharacters(this.state.prevPage)}>Previous Page</h1>
         {this.state.starwarsChars.map(char=> (
           <CharCard character={char} key={char.created}/>
         ))}
-        <h1 className="Header">React Wars</h1>
       </div>
     );
   }
