@@ -28,3 +28,5 @@ function StarwarsChar(props) {
     </div>
   );
 }
+
+export default StarwarsChar;
