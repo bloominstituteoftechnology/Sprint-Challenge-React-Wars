@@ -1,0 +1,28 @@
+.characterCard {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    width: 500px;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(8,209,200, .8);
+    position: relative;
+    cursor:url(normal.cur),auto;
+    
+    
+}
+
+.name {
+    margin: 0 7%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    color: #e15021;
+    text-shadow: 1px 4px black;
+}
+
+.information {
+    text-align: left;
+    margin-right: 5%;
+}
