@@ -44,12 +44,16 @@ class App extends Component {
         return res.json();
       })
       .then(homeWorldObject => {
-        // this.setState({
-        //   ...this.state.starwarsChars,
-        //   ...this.state.nextPage,
-        //   ...this.state.prevPage,
-        //   ...this.state.starwarsChars.homeworld = homeWorldObject
-        // });
+        let temp = {...this.state.starwarsChars} // use spread operator to clone it, so you don't mutate state on next line;
+        for (let character in temp) {
+          if (temp[character].homeworld === URL) {
+            temp[character].homeworld = homeWorldObject;
+          }
+        }
+        // console.log(temp);
+        this.setState({
+          starwarsChars: temp
+        });
       })
       .catch(err => {
         throw new Error(err);
