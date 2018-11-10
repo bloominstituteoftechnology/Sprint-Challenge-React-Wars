@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+// Components
+import Person from "./components/PersonComponents/Person";
 
 class App extends Component {
   constructor() {
@@ -10,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -29,10 +32,28 @@ class App extends Component {
       });
   };
 
+  getStarshipInfo = URL => {
+    fetch(URL)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        return data;
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((c, i) => {
+          return (
+            <Person person={c} key={i} getStarshipInfo={this.getStarshipInfo} />
+          );
+        })}
       </div>
     );
   }
