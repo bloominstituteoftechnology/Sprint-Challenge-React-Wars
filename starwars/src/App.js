@@ -36,9 +36,13 @@ class App extends Component {
       })
       .then(data => {
         console.log(data);
-        this.setState({ starwarsChars: data.results });
-        this.setState({ nextPage: data.next });
-        this.setState({ prevPage: data.prev });
+        this.setState({
+          starwarsChars: data.results,
+          nextPage: data.next,
+          prevPage: data.next
+        });
+        // this.setState({ nextPage: data.next });
+        // this.setState({ prevPage: data.prev });
       })
       .catch(err => {
         throw new Error(err);
