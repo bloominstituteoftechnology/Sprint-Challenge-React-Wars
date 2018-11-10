@@ -32,12 +32,27 @@ class App extends Component {
       });
   };
 
+  getStarshipInfo = URL => {
+    fetch(URL)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        return data;
+      })
+      .catch(err => {
+        throw new Error(err);
+      });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {this.state.starwarsChars.map((c, i) => {
-          return <Person person={c} key={i} />;
+          return (
+            <Person person={c} key={i} getStarshipInfo={this.getStarshipInfo} />
+          );
         })}
       </div>
     );
