@@ -8,8 +8,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      next: null,
-      previous: null
+      nextPage: null,
+      prevPage: null
     };
     localStorage.clear(); // website takes a while to load unless cache is cleared
   }
@@ -29,8 +29,8 @@ class App extends Component {
       .then(data => {
         this.setState({
           starwarsChars: data.results,
-          next: data.next,
-          previous: data.previous
+          nextPage: data.next,
+          prevPage: data.previous
         });
       })
       .catch(err => {
@@ -43,8 +43,13 @@ class App extends Component {
       .then(res => {
         return res.json();
       })
-      .then(homeworldObject => {
-        return homeworldObject;
+      .then(homeWorldObject => {
+        // this.setState({
+        //   ...this.state.starwarsChars,
+        //   ...this.state.nextPage,
+        //   ...this.state.prevPage,
+        //   ...this.state.starwarsChars.homeworld = homeWorldObject
+        // });
       })
       .catch(err => {
         throw new Error(err);
@@ -52,14 +57,14 @@ class App extends Component {
   };
 
   loadNextPage = () => {
-    if (this.state.next !== null) {
-      this.getCharacters(this.state.next);
+    if (this.state.nextPage !== null) {
+      this.getCharacters(this.state.nextPage);
     }
   };
 
   loadPrevPage = () => {
-    if (this.state.previous !== null) {
-      this.getCharacters(this.state.previous);
+    if (this.state.prevPage !== null) {
+      this.getCharacters(this.state.prevPage);
     }
   };
 
