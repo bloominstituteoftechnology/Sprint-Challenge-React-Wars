@@ -8,6 +8,7 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
+
       nextPage: null,
       prevPage: null
     };
@@ -32,6 +33,28 @@ class App extends Component {
           nextPage: data.next,
           prevPage: data.previous
         });
+        data.results.forEach(character => {
+          if (Object.keys(character).includes("homeworld")) {
+            // character.homeworld = this.getHomeworld(character.homeworld);
+            // console.log(character);
+            fetch(character.homeworld)
+              .then(res => res.json())
+              .then(obj => {
+                this.setState(prevState => ({
+                  starwarsChars: prevState.starwarsChars.map(char => {
+                    if (char.name === character.name) {
+                      return {
+                        ...char,
+                        homeworldObj: obj
+                      };
+                    }
+                    return char;
+                  })
+                }));
+              });
+          }
+        });
+        // console.log(this.state].homeworldObj);
       })
       .catch(err => {
         throw new Error(err);
@@ -39,25 +62,15 @@ class App extends Component {
   };
 
   getHomeworld = URL => {
+    let home;
     fetch(URL)
-      .then(res => {
-        return res.json();
-      })
+      .then(res => res.json())
       .then(homeWorldObject => {
-        let temp = {...this.state.starwarsChars} // use spread operator to clone it, so you don't mutate state on next line;
-        for (let character in temp) {
-          if (temp[character].homeworld === URL) {
-            temp[character].homeworld = homeWorldObject;
-          }
-        }
-        // console.log(temp);
-        this.setState({
-          starwarsChars: temp
-        });
-      })
-      .catch(err => {
-        throw new Error(err);
+        home = homeWorldObject;
+        // console.log(home); // home is an object
+        return home;
       });
+    // console.log(home); // why is home undefined?
   };
 
   loadNextPage = () => {
@@ -86,10 +99,7 @@ class App extends Component {
           </button>
         </div>
 
-        <CharacterList
-          characters={this.state.starwarsChars}
-          getHomeworld={this.getHomeworld}
-        />
+        <CharacterList characters={this.state.starwarsChars} />
       </div>
     );
   }
