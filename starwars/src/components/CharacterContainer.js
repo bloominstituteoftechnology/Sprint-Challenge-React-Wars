@@ -6,7 +6,7 @@ import CharacterCard from './CharacterCard';
 function CharacterContainer(props) {
   return (
      <div className="character-container">
-     	{props.characters.map(character => <CharacterCard key={character.name} character={character} />)}
+     	{props.characters.map(character => <CharacterCard key={character.name} character={character} planets={props.planets}/>)}
     </div>
   );
 }

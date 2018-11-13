@@ -160,3 +160,74 @@ body {
   padding: 0;
   font-size: 62.5%;
 }
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 1.8rem;
+  width: 100%;
+  background-color: lightgrey;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card-container {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin: 40px 0;
+  padding: 10px;
+}
+.card-container .header {
+  font-size: 3rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-container .bio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.card-container .bio-container p {
+  width: 50%;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-top: 5px;
+}
+.card-container .xenobiology-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-container .xenobiology-container div {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.card-container .starships-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-container .starships-container div {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.card-container .vechiles-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card-container .vechiles-container div {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.card-container .films-container {
+  width: 100%;
+}
+.card-container .films-container div {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.character-container {
+  width: 400px;
+  margin: 0 auto;
+}
