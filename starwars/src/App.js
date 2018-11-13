@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './components/CardList';
-import SWCard from './components/SWCard';
+
 
 
 import './App.css';
@@ -39,7 +39,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className = 'Container' >
-          <CardList monkeys={this.state.starwarsChars} />
+        <CardList monkeys={this.state.starwarsChars} />
         </div>
       </div>
     );
