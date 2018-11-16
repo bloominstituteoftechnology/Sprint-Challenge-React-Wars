@@ -7,10 +7,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      count: '',
+      next: '',
+      previous: '',
     };
   }
-
+//1. access the starwarsChar array
+//2. use that access to access the count, next, previous
+//3. make next button with onClick calls componentDidMount({this.state.starwarChars.next})
+//4. previous button with onClick calls ^^ .previous
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -24,7 +30,16 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        console.log(data.count);
+        console.log(data.next);
+        console.log(data.previous);
+        this.setState({
+          starwarsChars: data.results,
+          count: data.count,
+          next: data.next,
+          previous: data.previous,
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -34,6 +49,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className='page-buttons'>
+          <button>Previous Page</button>
+          <button>Next Page</button>
+        </div>
         <h1 className="Header">React Wars</h1>
         <CharactersList
           starwarsChars={this.state.starwarsChars}

@@ -7,6 +7,7 @@ const CharactersList = props =>{
       {props.starwarsChars.map(charactersInMap =>(
         <Characters
           charactersInProps={charactersInMap}
+          key={charactersInMap.created}
         />
       ))}
     </div>

@@ -6,3 +6,24 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+.characters{
+  border: 1px solid red;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+
+.data-visible{
+  display: flex;
+  flex-direction: column;
+}
+
+.data{
+  color: yellow;
+  font-weight: bold;
+}
