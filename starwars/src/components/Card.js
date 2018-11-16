@@ -13,7 +13,7 @@ class Card extends React.Component {
                 <p>Skin Color: {this.props.skin}</p>
               </div>
               <div className="img">
-                <img src={require("./vader.png")} alt="darth vader" />
+                <img src={require("./vader.png")} alt="" />
               </div>
             </div>
             <div className="select-button" onClick={this.props.clickHandler}>
