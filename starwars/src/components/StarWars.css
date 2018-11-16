@@ -1,0 +1,13 @@
+.character-card {
+    background-color: darkgoldenrod;    
+}
+.character-list {
+    
+    background-color: darkgoldenrod;
+    border: 5px solid;
+    border-bottom-color: black;
+    border-left-color: black;
+    border-top-color: crimson;
+    border-right-color: crimson;
+    
+}
