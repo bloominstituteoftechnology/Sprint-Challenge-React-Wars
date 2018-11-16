@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Data from './components/Data';
+
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Data />
       </div>
     );
   }
