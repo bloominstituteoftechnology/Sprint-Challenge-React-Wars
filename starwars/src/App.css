@@ -16,7 +16,7 @@
 /* write your parent styles in here for your App.js */
 
 .card {
-  margin: 50px;
+  margin: 50px 50px 150px 50px;
   padding:50px;
   background-image: url(https://topbackgroundwallpaper.com/wp-content/uploads/2018/04/star-wars-wallpaper-roll-a9814a5c67d3e973edd091ee41461526-star-wars-wallpaper-city-office.jpg);
 }
