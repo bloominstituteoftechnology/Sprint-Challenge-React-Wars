@@ -1,11 +1,11 @@
 .character-card {
-    opacity: 50%;
+    width: 350px;
+    margin: 2%;
     background-color: darkgoldenrod;    
     border: 5px solid;
     border-bottom-color: black;
     border-left-color: black;
     border-top-color: crimson;
     border-right-color: crimson;
-    display: flex;
-    flex-direction: column;
+    
 }
