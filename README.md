@@ -9,14 +9,43 @@
 ## Questions
 
 1. What is React JS and what problems does it try and solve?
+ReactJS is a JavaScript library that helps programmers build 
+large scale single page web applications. The library allows 
+us to write components that can be used to create interactive
+user interfaces. React uses a virtual DOM to help manipulate
+the DOM and keep it updated over time. This virtual DOM takes
+the work off the DOM by having each component manipulate 
+individual pieces of the DOM, thus creating a great experience
+for the user. Thus helping to solve the problem of "if a page 
+has a lot of data changing via likes and comments, how do we 
+update the DOM in a without having the page reload?"
 
-1. What does it mean to _think_ in react?
+2. What does it mean to _think_ in react?
+When building an app in react you have to think about how the
+app is created in react, so that you can build big fast Web apps
+in JavaScript. 1st - Start with a mock UI and break it down into its
+component hierarchy. 2nd - build a static version in React.
+3rd you will want to identify the minimal representation of UI state.
+4th - figure out where your state should live. Then finally the 5th thing
+to think about and then do is to add the inverse data flow. Follow these
+steps and you will begin thinking in react.
 
-1. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-1. Describe state.
+3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+First, your functional/presentational components should not have state, so if you do not have state just use a functional component.
+The functional components job is to be presentational and to display the data. Its job is to never manage the data. Likewise, the 
+job of the Class(stateful) component is to manage the data and have state if state is required. "If you are ever managing
+data and displaying data in the same component you are probably doing something wrong" -Dustin Myers
+TLDR - Class components give us state and __proto__ inheritance, functional components do not.
 
-1. Describe props.
+4. Describe state.
+State is just a "fancy" term for the data we can use in our application. In other words, it is the data required by our components,
+and gives the component access to the data that the component needs to display.
+
+5. Describe props.
+Props(properties) is a special property object on all react objects. When we use props, React builds us an object that we can use a 
+parameter inside a Functional component. Props are read only (immutable), the components receive them and use this props object as a parameter in order to display data.
+
 
 ## Project
 

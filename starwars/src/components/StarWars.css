@@ -1,0 +1,18 @@
+.character-card {
+    width: 350px;
+    margin: 2%;
+    opacity: .8;
+    background-color: darkgoldenrod;    
+    border: 5px solid;
+    border-bottom-color: black;
+    border-left-color: black;
+    border-top-color: crimson;
+    border-right-color: crimson;
+    
+}
+
+p {
+    
+    color: white;
+    font-weight: bolder;
+}
