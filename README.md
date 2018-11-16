@@ -9,6 +9,16 @@
 ## Questions
 
 1. What is React JS and what problems does it try and solve?
+ReactJS is a JavaScript library that helps programmers build 
+large scale single page web applications. The library allows 
+us to write components that can be used to create interactive
+user interfaces. React uses a virtual DOM to help manipulate
+the DOM and keep it updated over time. This virtual DOM takes
+the work off the DOM by having each component manipulate 
+individual pieces of the DOM, thus creating a great experience
+for the user. Thus helping to solve the problem of "if a page 
+has a lot of data changing via likes and comments, how do we 
+update the DOM in a without having the page reload?"
 
 1. What does it mean to _think_ in react?
 
