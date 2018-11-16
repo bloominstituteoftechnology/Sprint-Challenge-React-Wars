@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterCard from './components/CharacterCard';
-import CharacterList from "./components/CharacterList";
+import CharacterList from './components/CharacterList';
+
 
 class App extends Component {
   constructor() {
@@ -31,20 +32,22 @@ class App extends Component {
       });
   };
 
+ 
+
 
 
   render() {
-    
+    let starwarsChars = this.state.starwarsChars
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList
-        
-         />
-        <CharacterCard />
+        {starwarsChars.map(item =>
+          <CharacterList key={item.name} person={item} />)}
       </div>      
     );
   }
 }
+
+
 
 export default App;

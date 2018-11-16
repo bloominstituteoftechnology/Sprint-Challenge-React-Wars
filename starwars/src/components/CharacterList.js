@@ -4,7 +4,7 @@ import CharacterCard from "./CharacterCard";
 const CharacterList = props => {
     return (
         <div className='character-list'>           
-           I am character list 
+            <h2>{props.person.name}</h2>
         </div>
     );
 }
