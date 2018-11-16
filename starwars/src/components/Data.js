@@ -1,10 +1,10 @@
 import React from 'react';
 import './StarWars.css';
 
-const Data = () => {
+function Data(props) {
   return (
     <div>
-      hello
+      {props.getCharacters}
     </div>
   )
 }
