@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterCard from './components/CharacterCard';
-import CharacterList from './components/CharacterList';
+
 
 
 class App extends Component {
@@ -42,7 +42,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {starwarsChars.map(item =>
-          <CharacterList key={item.name} person={item} />)}
+          <CharacterCard key={item.name} person={item} />)}
       </div>      
     );
   }
