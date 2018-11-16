@@ -16,3 +16,7 @@ import Characters from './Characters';
 
 // export default CharacterList;
 
+const CharacterList = () => {
+    return <div className="Card">CARD IS WORKING</div>;
+  };
+
