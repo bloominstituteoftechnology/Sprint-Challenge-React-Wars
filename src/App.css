@@ -1,0 +1,39 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.Header {
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.reset,
+.previous,
+.next {
+    background-color: whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+    width: 10%;
+    opacity: .8;
+    border: 2px solid #443e3e;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.greyed {
+    cursor: not-allowed;
+    color: grey;
+    background-color: silver;
+}
+
+
+/* write your parent styles in here for your App.js */
