@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardList from './components/CardList';
 import './App.css';
 
 class App extends Component {
@@ -30,9 +31,11 @@ class App extends Component {
   };
 
   render() {
+    console.log("state", this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList data={this.state.starwarsChars}/>
       </div>
     );
   }

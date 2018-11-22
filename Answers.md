@@ -14,7 +14,7 @@
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-    Class components have access to all the elements of a JS class, like the __proto__ and __prototype__ object and in addition it allows us to use the state object.
+    Class components have access to all the functionality of a JS class, like the __proto__ and __prototype__ object and in addition it allows us to use the state object.
 
     Functional components are faster then the class components but it comes with less functionality. It does not have access to the state object directly, but only via props.
 

@@ -1,0 +1,14 @@
+.Card {
+    display: flex;
+    border: 1px solid sandybrown;
+    width: 10%;
+    flex-direction: column;
+}
+
+.Card_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
