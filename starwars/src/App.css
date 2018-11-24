@@ -16,3 +16,36 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.starwars-list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.starwars-card {
+  width: 500px;
+  background-color: white;
+  padding: 36px;
+  margin: 16px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.character-attributes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.attribute-name p{
+  font-weight: bold;
+  text-align: start;
+}
+
+.attributes {
+  /* text-align: end; */
+  position: relative;
+  bottom: 115px;
+}
