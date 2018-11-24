@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+// import listItems from './components/myData';
+// import Character from './components/Character';
+import StarWarsList from './components/StarWarsList';
+import StarWarsCharacter from './components/StarWarsCharacter';
 
 class App extends Component {
   constructor() {
@@ -7,10 +11,19 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    // this.random = this.random.bind(this);
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters('https://swapi.co/api/people/?page=2');
+    this.getCharacters('https://swapi.co/api/people/?page=3');
+    this.getCharacters('https://swapi.co/api/people/?page=4');
+    this.getCharacters('https://swapi.co/api/people/?page=5');
+    this.getCharacters('https://swapi.co/api/people/?page=6');
+    this.getCharacters('https://swapi.co/api/people/?page=7');
+    this.getCharacters('https://swapi.co/api/people/?page=8');
+    this.getCharacters('https://swapi.co/api/people/?page=9');
   }
 
   getCharacters = URL => {
@@ -22,7 +35,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        // console.log('data', data)
+        this.setState({ starwarsChars: [...this.state.starwarsChars, ...data.results]});
       })
       .catch(err => {
         throw new Error(err);
@@ -30,9 +44,15 @@ class App extends Component {
   };
 
   render() {
+  // console.log('this.state.starwarsChars', this.state.starwarsChars)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+          <div>
+            <StarWarsList starwarsChars={this.state.starwarsChars}/>
+            {/* <StarWarsCharacter /> */}
+          </div>
       </div>
     );
   }
