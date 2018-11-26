@@ -36,7 +36,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         {starwarsChars.map(item =>
-          <Card key={item.name} char={item} />
+          <Card key={item.name} character={item} />
         )}
       </div>
     );
