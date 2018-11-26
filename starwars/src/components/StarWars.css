@@ -1,0 +1,16 @@
+.character {
+  max-width: 500px;
+  height: auto;
+  border: 3px solid black;
+  background: gold;
+  opacity: .5;
+  margin: 10px;
+}
+h2 {
+  font-weight: bold;
+  color: blue;
+}
+p {
+  color: blue;
+  font-weight: bold;
+}

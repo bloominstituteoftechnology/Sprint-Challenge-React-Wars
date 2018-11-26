@@ -1,10 +1,10 @@
 import React from "react";
-import './StarWars.css';
+import "./StarWars.css";
 
 const Card = props => {
   return (
     <div className="character">
-      <h1>Name: {props.character.name}</h1>
+      <h2>Name: {props.character.name}</h2>
       <p>Birth Year: {props.character.birth_year}</p>
       <p>Gender: {props.character.gender}</p>
       <p>Height: {props.character.height}</p>
@@ -17,6 +17,7 @@ const Card = props => {
       <p>Starships: {props.character.starships}</p>
       <p>Vehichles: {props.character.vehicles}</p>
     </div>
-  )
-}
+  );
+};
+
 export default Card;
