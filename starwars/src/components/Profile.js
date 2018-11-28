@@ -1,7 +1,7 @@
 import React from 'react'
 import CharacterList from './CharacterList'
 
-const Display = props => {
+const CharProfile = props => {
   return (
     <div className = 'characterCard'>
       {props.characters.map(character => (
@@ -11,4 +11,4 @@ const Display = props => {
   )
 }
 
-export default Display
+export default CharProfile

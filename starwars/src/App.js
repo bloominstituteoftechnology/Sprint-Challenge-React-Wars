@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Display from './components/Display.js';
+import CharProfile from './components/Profile.js';
 import './App.css';
 
 //import CharacterList from './components/CharacterList'
@@ -38,7 +38,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
 
-        <Display characters={this.state.starwarsChars} />
+        <CharProfile characters={this.state.starwarsChars} />
       </div>
     );
   }
