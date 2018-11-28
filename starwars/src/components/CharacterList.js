@@ -1,30 +1,13 @@
 import React from 'react'
-import Name from './Name'
-import BirthYear from './BirthYear'
-import Created from './Created'
-import Edited from './Edited'
-import EyeColor from './EyeColor'
-import Films from './Films'
-import Gender from './Gender'
-import Hair from './HairColor'
-import Height from './Height'
-import HomeWorld from './HomeWorld'
-import Mass from './Mass'
-import SkinColor from './SkinColor'
-import Species from './Species'
-import Starships from './Starships'
-import Vehicles from './Vehicles'
 
 
-const CharacterList = props => {
+/* const CharacterList = props => {
   return (
     <div>
       {props.characters.map(profile => (
         <div>
-          <h2><Name profile={profile}/></h2>
+          <Name profile={profile}/>
           <BirthYear profile={profile}/>
-          <Created profile={profile}/>
-          <Edited profile={profile} />
           <EyeColor profile={profile} />
           <Films films={profile.films} />
           <Gender profile={profile}/>
@@ -41,6 +24,28 @@ const CharacterList = props => {
       ))}
     </div>
   )
-}
+} */
+
+const CharacterList = props => {
+  return (
+    <React.Fragment>
+      <h1>{props.profile.name}</h1>
+      <h3>
+        Birth Year: {props.profile.birth_year}<br/>
+        Eye Color: {props.profile.eye_color}<br/>
+        Films: <img src={`${props.profile.films}`} /><br/>
+        Gender {props.profile.gender}<br/>
+        Hair Color: {props.profile.hair_color}<br/>
+        Height: {props.profile.height}cm <br/>
+        Home World: {props.profile.homeworld}<br/>
+        Skin Color: {props.profile.skin_color}<br/>
+        Species: {props.profile.species}<br/>
+        Vehicles: {props.profile.vehicles}<br/>
+        Starships: {props.profile.starships}<br/>
+        Url: {props.profile.url}<br/>
+      </h3>
+    </React.Fragment>
+  );
+};
 
 export default CharacterList
