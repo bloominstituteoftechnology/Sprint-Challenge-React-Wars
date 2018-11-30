@@ -36,8 +36,6 @@ class App extends Component {
     this.setState({ inputText: event.target.value })
   }
 
-  
-
   render() {
     return (
       <div className="App container">
@@ -49,8 +47,7 @@ class App extends Component {
         <StarwarsList 
           starChar={this.state.starwarsChars}
           inputText ={this.state.inputText}
-        />
-        
+        />        
       </div>
     );
   }
