@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import StarwarsChars from './components/StarwarsChars';
 
+// Class component is a JS class that extends the base class and has a state object with lifecycle method.
 class App extends Component {
   constructor() {
     super();
@@ -10,6 +11,7 @@ class App extends Component {
     };
   }
 
+  // happens after rendering, in the mounting phase of the lifecycle
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -23,6 +25,8 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // set state is a part of the lifecycle because it's
+        // updating the component with the render method
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -31,10 +35,11 @@ class App extends Component {
   };
 
   render() {
+    const { starwarsChars } = this.state;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarwarsChars chars={this.state.StarwarsChars} />
+        <StarwarsChars chars={starwarsChars} />
       </div>
     );
   }
