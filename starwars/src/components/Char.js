@@ -4,7 +4,7 @@ import { Card, CardTitle, CardBody, CardText } from 'reactstrap';
 
 const Char = props => {
     return (
-        <Card>
+        <Card className="card-wrapper">
             <CardTitle>{props.char.name}</CardTitle>
             <CardBody>
                 <CardText>Birth Year - {props.char.birth_year}</CardText>

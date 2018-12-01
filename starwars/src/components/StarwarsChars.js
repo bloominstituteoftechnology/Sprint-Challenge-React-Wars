@@ -1,6 +1,6 @@
 import React from 'react';
 import Char from './Char';
-// import './StarWars.css'
+import './StarWars.css'
 
 //iterate over props.chars and return new array for the Virtual DOM
 
