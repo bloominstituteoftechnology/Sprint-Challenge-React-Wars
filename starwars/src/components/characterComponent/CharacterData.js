@@ -8,7 +8,7 @@ const CharacterData = props => {
         <ul key={film.toString()}value={film}>{film}</ul>
     ))
  return (
-     <ul>
+     <ul className="list">
         <h3>Name: {props.character.name}</h3>
         <p>Year Born: {props.character.birth_year}</p>
         <p>Gender: {props.character.gender}</p>

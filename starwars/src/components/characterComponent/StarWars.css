@@ -1,7 +1,10 @@
-
+.list{
+    background: white;
+    width: 50%;
+}
 
 p{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .character{
