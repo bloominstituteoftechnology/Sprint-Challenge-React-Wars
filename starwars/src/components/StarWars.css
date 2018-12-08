@@ -1,0 +1,33 @@
+.card {
+  background-color: #dddddd8c;
+  width: 45%;
+  margin: 10px auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+  padding: 0 0 5px;
+}
+
+.character-name {
+  background-color: #000;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 8px 0;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-shadow: 
+    -1px -1px 0 yellow,
+    1px -1px 0 yellow,
+    -1px 1px 0 yellow,
+    1px 1px 0 yellow;
+}
+.card p {
+  text-align-last: left;
+  margin-left: 40px;
+}
+
+.card p span {
+  font-weight: bold;
+}

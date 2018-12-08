@@ -5,14 +5,14 @@ import './StarWars.css';
 const StarWarsCard = props => {
   return (
     <div className="card">
-      <h2>{props.char.name}</h2>
-      <p>Birth-year: {props.char.birth_year}</p>
-      <p>Gender: {props.char.gender}</p>
-      <p>Height: {props.char.height}</p>
-      <p>Weight: {props.char.mass}</p>
-      <p>Hair color: {props.char.hair_color}</p>
-      <p>Eye color: {props.char.eye_color}</p>
-      <p>Skin color: {props.char.skin_color}</p>
+      <h2 className="character-name">{props.char.name}</h2>
+      <p><span>Birth-year:</span> {props.char.birth_year}</p>
+      <p><span>Gender:</span> {props.char.gender}</p>
+      <p><span>Height:</span> {props.char.height}</p>
+      <p><span>Weight:</span> {props.char.mass}</p>
+      <p><span>Hair color:</span> {props.char.hair_color}</p>
+      <p><span>Eye color:</span> {props.char.eye_color}</p>
+      <p><span>Skin color:</span> {props.char.skin_color}</p>
     </div>
   )
 }
