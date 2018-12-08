@@ -1,0 +1,12 @@
+.renderTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avatarStatBlock {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 18%;
+  margin: 5px;
+  background-color: rgba(111,111,111,.7)
+}
