@@ -8,15 +8,15 @@
 
 ## Questions
 
-1. What is React JS and what problems does it try and solve?
+1. What is React JS and what problems does it try and solve? - React is a UI library that uses the concept of components made up of small bits of the UI assembled together to render potentially feature rich completed UI.  React tries to solve the problem of feature rich constantly changing state and a way to render that state smoothly and efficiently.
 
-1. What does it mean to _think_ in react?
+1. What does it mean to _think_ in react? - Thinking in react means thinking in components.  Taking the programming problem and breaking it down into visual/functional components in order to solve the problem.  This requires passing props and state around, which is the complicated part of React.
 
-1. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+1. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component. - A class/stateful component is one that handles/manipulates state in some way.  A functional component does not handle state and can be used merely for presentational or logical reasons.  The Class/Stateful component will always have a render method for rendering state.
 
-1. Describe state.
+1. Describe state. - state is the dynamic data that is rendered and displayed to the screen and is subject to change at any moment as the user interacts with the UI.  State is merely data that is subject to change and has to be re-rendered to the screen.
 
-1. Describe props.
+1. Describe props. - props are like arguments that are passed.  They are properties passed into functions and also classes.  Props allow us to pass specific information into the class/function for processing.
 
 ## Project
 
