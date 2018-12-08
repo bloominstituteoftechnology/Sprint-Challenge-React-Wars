@@ -4,5 +4,7 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 7rem;
+  margin-bottom: 30px;
 }
 /* write your parent styles in here for your App.js */
