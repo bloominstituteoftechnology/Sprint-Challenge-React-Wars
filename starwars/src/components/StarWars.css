@@ -1,4 +1,4 @@
-.card {
+.starCard {
     width: 250px;
     height: auto;
     border: 1px solid black;
@@ -7,7 +7,7 @@
     
 }
 
-.cardContainer {
+.starContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
