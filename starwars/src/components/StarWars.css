@@ -20,8 +20,16 @@
   background: #DDD3CA;
 }
 
+.charsList .character:hover {
+  background-color: #cbb59d;
+}
+
 .character h3 {
   display: inline-block;
   width: 30%;
   font-weight: bold;
+}
+
+.character .info {
+  margin-top: 10px; 
 }

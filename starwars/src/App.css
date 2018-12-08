@@ -8,3 +8,23 @@
   margin-bottom: 30px;
 }
 /* write your parent styles in here for your App.js */
+
+.App button {
+  width: 30%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 2rem;
+  margin: 20px;
+  border: 1px solid #D68250;
+  color: #443e3e;
+  border-radius: 10px;
+}
+
+.App button:hover {
+  background-color: #443e3e;
+  color: white;
+}
+
+.App button:focus {
+  outline: none;
+}
