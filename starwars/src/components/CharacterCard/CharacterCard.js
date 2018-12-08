@@ -57,7 +57,7 @@ import './CharacterCard.css';
                     <p><span>Born:</span> {this.state.birth_year}</p>
                     <p><span>Gender:</span> {this.state.gender}</p>
                     <p><span>Species:</span> {this.state.species}</p>
-                    <p><span>Species:</span> {this.state.height}</p>
+                    <p><span>Height:</span> {this.state.height}</p>
                     <p><span>Mass:</span> {this.state.mass}</p>
                     <p><span>Hair/Skin/Eye Color:</span> {this.state.hair_color} / {this.state.skin_color} / {this.state.eye_color}</p>
                     <p><span>Homeworld:</span> {this.state.homeworld}</p>
