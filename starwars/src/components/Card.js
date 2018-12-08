@@ -11,7 +11,7 @@ const Card = props => {
       flipOnHover={true}
       ref={(r) => this.flippy = r}
     >
-    <FrontSide style={{border: '1px solid black', 'border-radius': '10px', margin: '10px', width: '400px', height: '800px' }} className="FrontSide">
+    <FrontSide style={{border: '1px solid black', 'border-radius': '10px', margin: '10px', width: '400px', height: '800px', background: 'black', color: 'white', 'line-height': '800px', 'font-size': '2rem' }} className="FrontSide">
       {character.name}
     </FrontSide>
     <BackSide style={{color: 'white',
