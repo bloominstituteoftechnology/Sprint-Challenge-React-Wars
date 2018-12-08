@@ -40,3 +40,12 @@
   background-color: #fff;
   margin-bottom: 20px;
 }
+
+.char-list{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+}
