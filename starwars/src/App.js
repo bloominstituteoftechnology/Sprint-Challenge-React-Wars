@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import './components/charCard';
 
 class App extends Component {
   constructor() {
@@ -36,20 +36,20 @@ class App extends Component {
     const starwarsChars = this.state.starwarsChars.map(el => {
       return <article className="charCard"> 
         <h2>{el.name}</h2>
-        <h3>Birth Year<h4>{el.birth_year}</h4></h3>
-        <h3>Created<h4>{el.created}</h4></h3>
-        <h3>Edited<h4>{el.edited}</h4></h3>
-        <h3>Eye Color<h4>{el.eye_color}</h4></h3>
-        {/* <h3>Films<ul>{[el.films]}</ul></h3> */}
-        <h3>Gender<h4>{el.gender}</h4></h3>
-        <h3>Hair Color<h4>{el.hair_color}</h4></h3>
-        <h3>Height<h4>{el.height}</h4></h3>
-        <h3>Homeworld<h4>{el.homeoworld}</h4></h3>
-        <h3>Mass<h4>{el.mass}</h4></h3>
-        <h3>Species<h4>{el.species}</h4></h3>
-        <h3>Skin Color<h4>{el.skin_color}</h4></h3>
-        {/* <h3>Starships<ul>{el.starships}</ul></h3> */}
-        <h3>Vehicles<ul>{el.vehicles}</ul></h3>
+        <h3>Birth Year<p>{el.birth_year}</p></h3>
+        <h3>Created<p>{el.created}</p></h3>
+        <h3>Edited<p>{el.edited}</p></h3>
+        <h3>Eye Color<p>{el.eye_color}</p></h3>
+        <h3>Films<p className="api">{[el.films]}</p></h3>
+        <h3>Gender<p>{el.gender}</p></h3>
+        <h3>Hair Color<p>{el.hair_color}</p></h3>
+        <h3>Height<p>{el.height}</p></h3>
+        <h3>Homeworld<p className="api">{el.homeoworld}</p></h3>
+        <h3>Mass<p>{el.mass}</p></h3>
+        <h3>Species<p className="api">{el.species}</p></h3>
+        <h3>Skin Color<p>{el.skin_color}</p></h3>
+        <h3>Starships<p className="api">{el.starships}</p></h3>
+        <h3>Vehicles<p className="api">{el.vehicles}</p></h3>
       </article>
 
     });

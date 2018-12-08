@@ -2,27 +2,54 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-}
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-  border-bottom: 50px;
-  border-color: 3px dashed blue;
-}
-
-.charCard{
-  background: white;
-  max-width: 850px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border: 10px 50px 150px 50px;
-  border-color: 3px dashed red;
-  padding: 25px 50px;
+  justify-content: center;
 }
 
 #root {
   background: gray;
   max-width: 850px;
+  /* border-color: 3px dashed red; */
+}
+.Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  
+}
+
+.charCard{
+  background-image: url('https://topbackgroundwallpaper.com/wp-content/uploads/2018/04/star-wars-wallpaper-roll-a9814a5c67d3e973edd091ee41461526-star-wars-wallpaper-city-office.jpg');
+  background-size: cover;
+  border-color: 3px solid black;
+  max-width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 10px 50px 150px 50px;
+  
+  padding: 25px 50px;
+}
+
+
+
+h2, h3, h4, p {
+  font-family: 'Geostar Fill', cursive;
+}
+
+h2{
+  font-size: 28px;
+  text-shadow: 1px 1px 5px #fff;
+  border-bottom: 3px groove #443e3e;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p{
+  font-size: 18px;
+}
+
+.api{
+  font-size: 8px;
 }
 /* write your parent styles in here for your App.js */
