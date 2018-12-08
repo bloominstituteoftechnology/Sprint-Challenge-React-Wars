@@ -9,7 +9,10 @@ import './CharacterCard.css';
      }
     componentDidMount(){
          for (let key in this.props.character){
-             if (Array.isArray(this.props.character[key])){
+             if (key === 'url'){
+                 this.setState({ [key]: this.props.character[key] });
+             }
+             else if (Array.isArray(this.props.character[key])){
                  this.setState({[key]: []},() => {
                      this.props.character[key].forEach(x => {
                         fetch(x)
@@ -19,7 +22,7 @@ import './CharacterCard.css';
                         });
                  });
                 }
-             else if (/^http:/gi.test(this.props.character[key])){
+             else if (/^http/gi.test(this.props.character[key])){
                  fetch(this.props.character[key])
                  .then(res => res.json())
                  .then(data => this.setState({ [key]: data.name }))
@@ -34,7 +37,15 @@ import './CharacterCard.css';
             <div className="character-card">
                 <p><span>Name:</span> {this.state.name}</p>
                 <p><span>Born:</span> {this.state.birth_year}</p>
+                <p><span>Gender:</span> {this.state.gender}</p>
+                <p><span>Species:</span> {this.state.species}</p>
+                <p><span>Species:</span> {this.state.height}</p>
+                <p><span>Mass:</span> {this.state.mass}</p>
                 <p><span>Hair/Skin/Eye Color:</span> {this.state.hair_color} / {this.state.skin_color} / {this.state.eye_color}</p>
+                <p><span>Homeworld:</span> {this.state.homeworld}</p>
+                <p><span>Films:</span> {(this.state.films||[]).join(', ')}</p>
+                <p><span>Vehicles:</span> {(this.state.vehicles||[]).length ? (this.state.vehicles||[]).join(', ') : 'None'}</p>
+                <p><span>Starships:</span> {(this.state.starships||[]).length ? (this.state.starships||[]).join(', ') : 'None'}</p>
             </div>
         );
      }

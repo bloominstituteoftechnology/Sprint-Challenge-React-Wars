@@ -1,7 +1,18 @@
 .character-card {
-    width: 26%;
-    height: 200px;
-    background: red;
-    border: 1px solid black;
+    width: 25%;
+    background: #eee;
+    border: 1px solid #222;
+    border-radius: 5px;
     margin-bottom: 50px;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.character-card span {
+    font-weight: bold;
+}
+.character-card p {
+    margin-bottom: 5px;
+}
+.character-card p:last-of-type {
+    margin-bottom: 0;
 }
