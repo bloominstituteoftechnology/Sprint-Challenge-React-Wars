@@ -1,10 +1,12 @@
+
+
 .myCard{
     color:white;
     font-size: 18px;
     margin-left:10px;
     margin-top: 10px;
     margin-right:10px;
-    width:450px;
+    width:456px;
     height:595px;
     border:1px solid black;
     text-align: left;
@@ -55,4 +57,19 @@
     font-size: 40px;
     color:blue;
 
+}
+
+.buttons {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    width: 100px;
 }
