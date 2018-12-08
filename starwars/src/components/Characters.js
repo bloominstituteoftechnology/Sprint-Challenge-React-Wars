@@ -3,11 +3,11 @@ import React from 'react';
 const Characters = props =>{
     return (
     <React.Fragment>
-        
+        <div className="cardDisplay">
       <h1 className="name"> {props.characters.name}<br/></h1>  
       <h3 className="bio">
       Gender: {props.characters.gender},
-      Hair color: {props.characters.hair_color},
+      Hair Color: {props.characters.hair_color},
       Height: {props.characters.hight},
       Mass: {props.characters.mass}kg,
       Skin Color: {props.characters.skin_color},
@@ -37,6 +37,7 @@ const Characters = props =>{
       Url: {props.characters.url}
       <br/>
       </h3>
+      </div>
       </React.Fragment>  
     )
 }
