@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Header {
+  margin: 1rem;
+}
+.card {
+  flex: 0 1 auto;
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+  &__body {
+    ul {
+      text-align: left;
+      list-style-type: none;
+    }
+    li {
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+
+.disabled {
+  color: rgba(85, 85, 85, 0.514);
+  cursor: default;
+}
