@@ -32,12 +32,11 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <h2>Rebel Alliance Database</h2>
-        <CardContainer state={this.state.starwarsChars}/>
+        <h1 className="Header">Rebel Alliance Database</h1>
+        <h2>DataBase ID Cards</h2>
+        <CardContainer char={this.state.starwarsChars}/>
       </div>
     );
   }

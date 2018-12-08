@@ -1,0 +1,21 @@
+.card-container {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.card-container__card {
+  border: 1px solid red;
+  width: 30%;
+  margin: 50px 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
