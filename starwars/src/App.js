@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import DisplayCharList from './components/DisplayCharList'
+
 import './App.css';
 
 class App extends Component {
@@ -10,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.co/api/people/');
   }
 
   getCharacters = URL => {
@@ -22,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // console.log(data.results)
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -33,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <DisplayCharList characters={this.state.starwarsChars} />
       </div>
     );
   }
