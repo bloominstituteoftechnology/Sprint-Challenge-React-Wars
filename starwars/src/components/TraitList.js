@@ -10,13 +10,16 @@ const TraitList= props=>{
             return typeof e[1] !== typeof [] && !e[1].includes('https')
         })
     }
-
     const traits = filterCharacteristics(props.character)
 
+    const capFirstCharacter = text=>{
+        return text.charAt(0).toUpperCase() + text.substring(1)
+    }
 
     return(
         <ul>{traits.map((trait,i)=>{
-            return <li key={i}>{trait[0]} : {trait[1]}</li>
+            /*capitalize the first character and replace underscores with spaces */
+            return <li key={i}>{capFirstCharacter(trait[0]).replace('_',' ')} : {trait[1]}</li>
         })}</ul>
     )
     
