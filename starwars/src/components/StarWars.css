@@ -57,8 +57,20 @@
   position: absolute;
   top: 25px;
   right: 35px;
+  animation: rotate 15s linear 0s infinite;
 }
+
 
 .large-card img {
   height: 500px;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes grow {
+  from {font-size: 28px;}
+  to {font-size: 29px;}
 }
