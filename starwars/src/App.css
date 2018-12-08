@@ -1,8 +1,28 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  border-bottom: 50px;
+  border-color: 3px dashed blue;
+}
+
+.charCard{
+  background: white;
+  max-width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 10px 50px 150px 50px;
+  border-color: 3px dashed red;
+  padding: 25px 50px;
+}
+
+#root {
+  background: gray;
+  max-width: 850px;
 }
 /* write your parent styles in here for your App.js */
