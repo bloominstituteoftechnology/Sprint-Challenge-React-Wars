@@ -1,21 +1,23 @@
 .charsList {
   border: 5px solid #684C36;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   align-items: center;
   padding-top: 10px;
 }
 
 .charsList .character {
-  width: 80%;
+  width: 45%;
   padding: 20px;
+  margin: 20px;
   border: 2px solid #D68250;
   margin-bottom: 20px;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   background: #DDD3CA;
 }
@@ -26,7 +28,7 @@
 
 .character h3 {
   display: inline-block;
-  width: 30%;
+  width: 35%;
   font-weight: bold;
 }
 
