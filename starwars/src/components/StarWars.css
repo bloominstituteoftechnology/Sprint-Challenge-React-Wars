@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Rye');
+
+
+
 /*CSS RESET*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -52,24 +56,59 @@ table {
 
 /*END CSS RESET*/
 
+h1 {
+    font-family: 'Rye', cursive;
+    font-size: 50px;
+    border-bottom: 2px solid #F4F7F5;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    text-align: left;
+    text-decoration: underline #F4F7F5;
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Rye', cursive;
+    font-size: 18px;
+    padding-top: 5px;
+    border-top: 2px solid #F4F7F5;
+}
+
+p {
+    text-align: left;
+}
+
 .wantedCard {
-    padding-top: 50px;
-    width: 90%;
+    padding-top: 40px;
+    width: 95%;
     height: auto;
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #474647;
 
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 15px;
     grid-template-columns: auto auto auto auto auto;
 }
 
 .individualPosters {
-    width: 50%;
-    padding: 30px 40px;;
+    padding: 10px 40px;;
     display: inline-grid;
 
-    border: 2px solid black;
+    /* border: 2px solid #474647; */
     border-radius: 15px;
+    background-color: #78E3FD;
+    box-shadow: 5px 3px #F4F7F5;
 }
+

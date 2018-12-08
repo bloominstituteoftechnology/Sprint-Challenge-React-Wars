@@ -22,7 +22,7 @@ import './StarWars.css';
                         hair={obj.hair_color}
                         eyes={obj.eye_color}  
                         height={obj.height}
-                        weight={obj.weight}
+                        weight={obj.mass}
                         born={obj.birth_year}          
                     />
                 })}

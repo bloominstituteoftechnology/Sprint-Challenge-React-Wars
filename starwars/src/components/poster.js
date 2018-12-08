@@ -20,6 +20,7 @@ function Poster(props) {
             <h3>Description:</h3>
 
             <p>Suspect is a {props.skin} skinned {props.gender} with {props.hair} hair and {props.eyes} eyes. Approximately {props.height}cm tall and weighs approximately {props.weight}lbs. Suspect is believed to have been born in {props.born}</p>
+            <h4>Reward $$$ Dead or Alive!</h4>
         </div>
     )
 }
