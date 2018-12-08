@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import App from '../App.js';
+import React from 'react';
 import Card from './Card.js';
 
 const CardCont = (props) => {
