@@ -15,14 +15,15 @@
   padding: 10px;
   font-size: 2rem;
   margin: 20px;
-  border: 1px solid #D68250;
-  color: #443e3e;
+  border: 2px solid #D68250;
   border-radius: 10px;
+  background-color: #443e3e;
+  color: white;
 }
 
 .App button:hover {
-  background-color: #443e3e;
-  color: white;
+  background-color: white;
+  color: #443e3e;
 }
 
 .App button:focus {

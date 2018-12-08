@@ -33,5 +33,11 @@
 }
 
 .character .info {
-  margin-top: 10px; 
+  margin: 10px 0; 
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
