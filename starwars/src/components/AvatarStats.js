@@ -7,29 +7,36 @@ const AvatarStats = props => {
       {props.data.map(item => {
         return (
           <div className="avatarStatCard">
-            <h2 className="renderName">Name: {item.name}</h2>
+            <div>
+              <h2 className="renderName">Name: {item.name}</h2>
+              <div
+                onLoad={e => {
+                  if (e.target.innerText == item.name)
+                  e.target.style.content = `./${item.name}.png`;
+                }}
+              />
+            </div>
             <div className="cardTray">
-              <div class="subCard">
+              <div className="subCard">
                 <h3 className="renderHeader">Birth year:</h3>
                 <p className="embolden">{item.birth_year}</p>
               </div>
-              <div class="subCard">
+              <div className="subCard">
                 <h3 className="renderHeader">Gender:</h3>
                 <p className="embolden">{item.gender}</p>
               </div>
-              <div class="subCard">
+              <div className="subCard">
                 <h3 className="renderHeader">Eye color:</h3>
                 <p>{item.eye_color}</p>
               </div>
-              <div class="subCard">
+              <div className="subCard">
                 <h3 className="renderHeader">Hair color:</h3>
                 <p>{item.hair_color}</p>
               </div>
-              <div class="subCard">
+              <div className="subCard">
                 <h3 className="renderHeader">Height:</h3>
                 <p>{item.height}</p>
               </div>
-
             </div>
           </div>
         );

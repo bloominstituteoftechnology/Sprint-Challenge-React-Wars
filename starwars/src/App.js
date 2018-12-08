@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      
     };
   }
 
@@ -29,6 +30,10 @@ class App extends Component {
         throw new Error(err);
       });
   };
+
+  // onLoadHandler = event => {
+
+  // };
 
   render() {
     return (
