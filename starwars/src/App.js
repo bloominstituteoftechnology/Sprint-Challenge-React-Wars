@@ -33,6 +33,18 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div class="characters">
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+           <div class="card"></div>
+        </div>
       </div>
     );
   }
