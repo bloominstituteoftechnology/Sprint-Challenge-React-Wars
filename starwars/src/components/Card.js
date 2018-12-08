@@ -8,7 +8,7 @@ class Card extends React.Component {
 
   render() {
     return(
-      <div className="card-container__card">
+      <div className="card-container__card" onClick={this.props.enlargeCard}>
         <img src="#" alt="placeholder" />
         <div className="card__bio">
           <p><strong>NAME:</strong> {this.props.state.name}</p>

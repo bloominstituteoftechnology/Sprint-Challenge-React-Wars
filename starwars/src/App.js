@@ -30,13 +30,16 @@ class App extends Component {
       });
   };
 
+  enlargeCard = event => {
+    event.target.classList.toggle('large-card');
+  }
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">Rebel Alliance Database</h1>
         <h2 className="Sub-Header">DataBase ID Cards</h2>
-        <CardContainer char={this.state.starwarsChars}/>
+        <CardContainer char={this.state.starwarsChars} enlargeCard={this.enlargeCard.bind(this)}/>
       </div>
     );
   }

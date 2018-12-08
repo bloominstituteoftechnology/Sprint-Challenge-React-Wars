@@ -8,7 +8,8 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 75px;
+
+  position: relative;
 }
 
 .card-container__card {
@@ -23,4 +24,18 @@
 
   align-items: center;
   justify-content: space-around;
+}
+
+.large-card {
+  width: 80%;
+  height: 80vh;
+
+  background-color: black;
+  margin: 0;
+  font-size: 28px;
+
+  position: fixed;
+  top: 7%;
+  left: 50;
+
 }
