@@ -8,9 +8,11 @@ const CharacterList = props => {
             {props.starwarsChars.map(character => {
                 return (
                     <Character 
+                        key={character.created}
                         name={character.name}
-                        key={character.id}
                         character={character}
+                        height={character.height}
+                        gender={character.gender}
                     />
                 ) 
             })}
