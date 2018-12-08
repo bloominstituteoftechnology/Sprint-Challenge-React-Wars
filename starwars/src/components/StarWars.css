@@ -1,0 +1,51 @@
+.char-card{
+  margin: 0 auto;
+  border: 1px solid #2ff923;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.char-data{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.name{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  color: #ffe81f;
+}
+
+.darth{
+  margin: 0 auto;
+  border: 1px solid #990000;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.char-list{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+}
