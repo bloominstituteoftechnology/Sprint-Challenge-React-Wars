@@ -14,7 +14,7 @@ const Card = props => {
     <FrontSide style={{border: '1px solid black', 'border-radius': '10px', margin: '10px', width: '400px', height: '800px', background: 'black', color: 'white', 'line-height': '800px', 'font-size': '2rem' }} className="FrontSide">
       {character.name}
     </FrontSide>
-    <BackSide style={{color: 'white',
+    <BackSide style={{width: '400px', height: '800px', color: 'white',
       background: 'rgba(5,5,5,0.7)',
       'border-radius':'10px' }}>
         <h1> {character.name} </h1>
