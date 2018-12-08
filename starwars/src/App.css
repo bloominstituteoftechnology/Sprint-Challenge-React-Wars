@@ -3,6 +3,23 @@
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px yellow;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  color: yellow;
+  text-shadow: 3px 3px 2px rgb(76, 76, 76);
+  margin: 50px;
+  font-size: 150%;
+  border: 5px solid oldlace;
+  border-radius: 15px;
+  max-width: 300px;  
+}
+
+.cardCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
