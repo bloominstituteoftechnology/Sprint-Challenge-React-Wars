@@ -1,0 +1,15 @@
+ul{
+    list-style:none;
+    padding:0px;
+}
+
+
+.character-card{
+    border: 2px solid #A9C7E3;
+    margin: 1rem;
+    padding: 0rem .5rem;
+
+    text-align:left;
+
+    background-color: rgb(192,176,160)
+}
