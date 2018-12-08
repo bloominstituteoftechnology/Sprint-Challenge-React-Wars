@@ -11,13 +11,35 @@
   background: rgba(5,5,5,0.7);
   margin: 10px;
   padding: 10px;
-  width: 250px;
+  width: 400px;
   border-radius: 10px;
 }
 
 .Card h2, p{
   text-align: left;
 }
+
+.Card h2{
+  font-size: 1.7rem;
+}
+
+.Card p{
+  font-size: 1.1rem;
+}
 .Card p span{
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+.Film_Title:hover{
+  background: white;
+}
+
+.Film_Link:hover{
+  color: black;
+}
+
+.Film_Link{
+  text-decoration: none;
+  color: white;
 }

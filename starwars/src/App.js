@@ -20,9 +20,11 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
+        console.log(res)
         return res.json();
       })
       .then(data => {
+        console.log(data)
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
