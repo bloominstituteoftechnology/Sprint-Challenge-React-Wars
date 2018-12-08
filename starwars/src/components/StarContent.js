@@ -3,7 +3,7 @@ import StarCard from "./StarCard";
 
 const StarContent = () => {
   return (
-    <div><StarCard /></div>
+    <div><StarCard data={this.state.starwarsChars} /></div>
 
   )};
 
