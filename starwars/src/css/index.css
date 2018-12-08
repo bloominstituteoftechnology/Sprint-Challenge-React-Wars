@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,4 +34,42 @@ body {
 }
 .card__body li {
   padding: 0.25rem 0;
+}
+.pill {
+  position: relative;
+  user-select: none;
+  padding: 0.25rem;
+  background: white;
+  display: inline-block;
+}
+.pill:before {
+  background: white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.pill:after {
+  background: white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.disabled {
+  color: rgba(85, 85, 85, 0.514);
+}
+.nextPrev {
+  cursor: pointer;
+  padding: 0 0.5rem;
 }
