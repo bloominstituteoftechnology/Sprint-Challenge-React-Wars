@@ -25,4 +25,8 @@ passed to them through props changes. Mainly used for presentation purposes.
 
 4.  Describe state.
 
+State is where a class component's data is stored. It is an immutable object, so
+state can not be changed directly, only with the setState() method. state data
+can be passed down to other components in the form of props.
+
 5.  Describe props.
