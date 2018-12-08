@@ -3,7 +3,8 @@ import React from 'react';
 const Characters = props =>{
     return (
     <React.Fragment>
-      <h1 className="name"> {props.characters.name}</h1>  
+        
+      <h1 className="name"> {props.characters.name}<br/></h1>  
       <h3 className="bio">
       Gender: {props.characters.gender},
       Hair color: {props.characters.hair_color},

@@ -6,3 +6,24 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #59f442;
+  margin: 1%;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px #fff;
+}
+ h3 {
+  color: black;
+  font-size: 1rem;
+ }

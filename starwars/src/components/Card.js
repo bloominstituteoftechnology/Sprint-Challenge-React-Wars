@@ -2,14 +2,14 @@ import React from 'react';
 
 import Characters from "./Characters"
 
-const Card = (props) =>{
+const Card = props =>{
     return (
-        <section>
-     {props.characters.map(character =>(
-        <div className="card"><Characters characters={character} /> </div>
+       <div className="container">
+        {props.characters.map(character =>(
+        <Characters characters={character} />
      )
      )} 
-     </section>
+     </div>
     )
 }
 
