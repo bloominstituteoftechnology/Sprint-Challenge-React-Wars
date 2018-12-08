@@ -62,6 +62,8 @@ class App extends Component {
           >
             PREV
           </span>
+        </div>
+        <div className="pill">
           <span
             className={`nextPrev ${
               this.state.current < 9 ? "active" : "disabled"

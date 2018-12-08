@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.Header {
+  margin: 1rem;
+}
 .card {
   flex: 0 1 auto;
   background: white;
@@ -23,6 +26,7 @@
   }
 }
 .pill {
+  margin: 0 1.5rem;
   position: relative;
   user-select: none;
   padding: 0.25rem;
@@ -33,10 +37,10 @@
     content: "";
     position: absolute;
     z-index: -1;
-    left: -10px;
+    left: -12px;
     top: 0;
     bottom: 0;
-    width: 20px;
+    width: 25px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
   }
@@ -45,18 +49,20 @@
     content: "";
     position: absolute;
     z-index: -1;
-    right: -10px;
+    right: -12px;
     top: 0;
     bottom: 0;
-    width: 20px;
+    width: 25px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
   }
 }
-.disabled {
-  color: rgba(85, 85, 85, 0.514);
-}
+
 .nextPrev {
   cursor: pointer;
   padding: 0 0.5rem;
+}
+.disabled {
+  color: rgba(85, 85, 85, 0.514);
+  cursor: default;
 }
