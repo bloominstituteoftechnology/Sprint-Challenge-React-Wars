@@ -1,12 +1,15 @@
 .character {
 margin: 0 auto;
+margin-top: 10px;
 border: 1px dashed rgb(9, 228, 75);
-width: 40%;
-
+width: 30%;
+background-color: rgb(167, 36, 36, 0.7);
+/* background-image: linear-gradient(to bottom right, rgb(167, 36, 36, 0.7, rgba(242, 245, 65, 0.7); */
+padding: 10px 0px;
 }
 
 .characters {
 display: flex;
-
+flex-wrap: wrap;
 
 }
