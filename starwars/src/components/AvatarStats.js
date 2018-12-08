@@ -6,19 +6,31 @@ const AvatarStats = props => {
     <div className="renderTable">
       {props.data.map(item => {
         return (
-          <div className="avatarStatBlock">
-            <p className="renderData">Name: {item.name}</p>
-            <hr />
-            <p className="renderData">Birth year: {item.birth_year}</p>
-            <p className="renderData">Gender: {item.gender}</p>
-            <p className="renderData">Eye color: {item.eye_color}</p>
-            <p className="renderData">Hair color: {item.hair_color}</p>
-            <p className="renderData">Skin color: {item.skin_color}</p>
-            <p className="renderData">Height: {item.height}</p>
-            <p className="renderData">Mass: {item.mass}</p>
-            <hr />
-            <p className="renderData">Created: {item.created}</p>
-            <p className="renderData">Edited: {item.edited}</p>
+          <div className="avatarStatCard">
+            <h2 className="renderName">Name: {item.name}</h2>
+            <div className="cardTray">
+              <div class="subCard">
+                <h3 className="renderHeader">Birth year:</h3>
+                <p className="embolden">{item.birth_year}</p>
+              </div>
+              <div class="subCard">
+                <h3 className="renderHeader">Gender:</h3>
+                <p className="embolden">{item.gender}</p>
+              </div>
+              <div class="subCard">
+                <h3 className="renderHeader">Eye color:</h3>
+                <p>{item.eye_color}</p>
+              </div>
+              <div class="subCard">
+                <h3 className="renderHeader">Hair color:</h3>
+                <p>{item.hair_color}</p>
+              </div>
+              <div class="subCard">
+                <h3 className="renderHeader">Height:</h3>
+                <p>{item.height}</p>
+              </div>
+
+            </div>
           </div>
         );
       })}

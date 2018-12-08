@@ -1,12 +1,38 @@
 .renderTable {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  border: 3px inset rgba(111,111,111,.7)
 }
 
-.avatarStatBlock {
+.avatarStatCard {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  flex: 1 0 18%;
-  margin: 5px;
-  background-color: rgba(111,111,111,.7)
+  align-content: center;
+  align-items: flex-start; 
+  border-bottom: 2px outset red;
+  /* background-color: rgba(111,111,111,.7); */
+  background-image: linear-gradient(to left top, rgba(111, 111, 111, 1) 0%, rgba(40, 40, 40, 1) 75%);
+}
+
+
+.cardTray {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.subCard {
+  border: 1px solid red;
+  border-right: unset;
+  width: 20%;
+}
+.subCard:first-child {
+  border-left: unset;
 }
