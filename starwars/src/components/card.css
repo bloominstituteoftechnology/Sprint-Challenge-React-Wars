@@ -1,0 +1,58 @@
+.myCard{
+    color:white;
+    font-size: 18px;
+    margin-left:10px;
+    margin-top: 10px;
+    margin-right:10px;
+    width:450px;
+    height:595px;
+    border:1px solid black;
+    text-align: left;
+    background-color: darkred;
+    padding-top: 10px;
+    border-radius:5%;
+}
+
+.each{
+    margin-top: 5px;
+
+    width:100%;
+    height:44px;
+    border-bottom:1px dashed green;
+    display: flex;
+}
+.eachLast {
+    margin-top: 5px;
+
+    width:100%;
+    height:44px;
+
+    display: flex;
+}
+
+.left {
+    padding-left: 15px;
+    padding-top: 7px;
+    width:120px;
+    color:black;
+    color: yellow;
+}
+
+.right {
+    display: inline-block;
+    padding-top: 7px;
+    width: 250px;
+}
+
+.classList {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Header{
+
+    font-size: 40px;
+    color:blue;
+
+}
