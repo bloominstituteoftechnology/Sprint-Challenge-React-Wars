@@ -5,8 +5,6 @@ const CardBody = props => {
     <div className="card__body">
       <ul>
         <li>Date of Birth: {props.characters.birth_year}</li>
-        <li>Created: {props.characters.created}</li>
-        <li>Edited: {props.characters.edited}</li>
         <li>Eye Color:{props.characters.eye_color}</li>
         {/* {props.characters.films.map((e, i) => (
           <li key={i}>{e}</li>
@@ -21,6 +19,8 @@ const CardBody = props => {
         {/* <li>{props.characters.starships}</li> */}
         {/* <li>{props.characters.url}</li> */}
         {/* <li>{props.characters.vehicles}</li> */}
+        <li>Created: {props.characters.created}</li>
+        <li>Edited: {props.characters.edited}</li>
       </ul>
     </div>
   );
