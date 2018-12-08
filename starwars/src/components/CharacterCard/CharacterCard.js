@@ -5,7 +5,10 @@ import './CharacterCard.css';
  class CharacterCard extends React.Component {
      constructor(props){
          super(props);
-         this.state = {};
+         this.state = {
+             myRef: React.createRef(),
+             flipped: false,
+         };
      }
     componentDidMount(){
          for (let key in this.props.character){
@@ -32,20 +35,41 @@ import './CharacterCard.css';
              }
          }
      }
+     flip = e => {
+         const target = this.state.myRef.current;
+            target.classList.add('flip-vertical-left')
+            target.style.color = 'transparent';
+            setTimeout(() => {
+                target.classList.remove('flip-vertical-left');
+                this.setState((prevState) => { return { flipped: !prevState.flipped } });
+                target.style.color = '#222';
+            }, 400);
+     }
+     
+     // componentDidUpdate method should be set in place to check for changes and repeat process above if changed.
+
      render(){
          return (
-            <div className="character-card">
-                <p><span>Name:</span> {this.state.name}</p>
-                <p><span>Born:</span> {this.state.birth_year}</p>
-                <p><span>Gender:</span> {this.state.gender}</p>
-                <p><span>Species:</span> {this.state.species}</p>
-                <p><span>Species:</span> {this.state.height}</p>
-                <p><span>Mass:</span> {this.state.mass}</p>
-                <p><span>Hair/Skin/Eye Color:</span> {this.state.hair_color} / {this.state.skin_color} / {this.state.eye_color}</p>
-                <p><span>Homeworld:</span> {this.state.homeworld}</p>
-                <p><span>Films:</span> {(this.state.films||[]).join(', ')}</p>
-                <p><span>Vehicles:</span> {(this.state.vehicles||[]).length ? (this.state.vehicles||[]).join(', ') : 'None'}</p>
-                <p><span>Starships:</span> {(this.state.starships||[]).length ? (this.state.starships||[]).join(', ') : 'None'}</p>
+            <div className="character-card" onClick={this.flip} ref={this.state.myRef}>
+            {this.state.flipped ? (
+                <div className="flipped-true">
+                    <p><span>Name:</span> {this.state.name}</p>
+                    <p><span>Born:</span> {this.state.birth_year}</p>
+                    <p><span>Gender:</span> {this.state.gender}</p>
+                    <p><span>Species:</span> {this.state.species}</p>
+                    <p><span>Species:</span> {this.state.height}</p>
+                    <p><span>Mass:</span> {this.state.mass}</p>
+                    <p><span>Hair/Skin/Eye Color:</span> {this.state.hair_color} / {this.state.skin_color} / {this.state.eye_color}</p>
+                    <p><span>Homeworld:</span> {this.state.homeworld}</p>
+                    <p><span>Vehicles:</span> {(this.state.vehicles||[]).length ? (this.state.vehicles||[]).join(', ') : 'None'}</p>
+                    <p><span>Starships:</span> {(this.state.starships||[]).length ? (this.state.starships||[]).join(', ') : 'None'}</p>
+                    <p><span>Films:</span> {(this.state.films||[]).join(', ')}</p>
+                </div>
+            ) : (
+                <div className="flipped-false">
+                    <h2>{this.state.name}</h2>
+                </div>
+            )}
             </div>
         );
      }

@@ -55,6 +55,7 @@ body,
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -63,8 +64,13 @@ html {
   text-align: center;
 }
 .Header {
+  display: inline-block;
+  background: #d6d6d6;
   color: #443e3e;
+  border: 1px solid #222;
+  padding: 10px;
   text-shadow: 1px 1px 5px #fff;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 50px;
+  margin-top: 10px;
 }
