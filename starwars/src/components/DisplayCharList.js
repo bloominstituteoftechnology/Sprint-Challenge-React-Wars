@@ -12,8 +12,7 @@ function DisplayCharList(props) {
 							characterName ={char.name}
 							birthday = {char.birth_year}
 							mass = {char.mass}
-							height = {char.height}
-							hairColor = {char.hair_color}/>
+							height = {char.height}/>
 
 			})}
 		</ul>

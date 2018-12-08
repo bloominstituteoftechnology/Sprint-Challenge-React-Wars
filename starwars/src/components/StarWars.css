@@ -1,9 +1,86 @@
 .displayCard {
-	background:gray;
+	background-color: rgba(0,0,0,0.5);
+	margin: 50px 15px 0px 15px;
+	padding: 10px;
+	width: 400px;
+
+
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
 }
+
+	.displayCard h2 {
+		color:black;
+		text-shadow: -1px 0px 10px #FFFBF5;
+
+	}
 
 
 .cardUL {
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
+
+.shake-crazy {
+  display: inherit;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-crazy:hover,
+.shake-trigger:hover .shake-crazy {
+  animation-play-state: running; }
+
+@keyframes shake-crazy {
+  10% {
+    transform: translate(19px, 17px) rotate(1deg);
+    opacity: 0.4; }
+  20% {
+    transform: translate(17px, 9px) rotate(9deg);
+    opacity: 0.25; }
+  30% {
+    transform: translate(-16px, -7px) rotate(-9deg);
+    opacity: 0.79; }
+  40% {
+    transform: translate(17px, -3px) rotate(-5deg);
+    opacity: 0.06; }
+  50% {
+    transform: translate(13px, 5px) rotate(9deg);
+    opacity: 0.7; }
+  60% {
+    transform: translate(20px, 20px) rotate(10deg);
+    opacity: 0.57; }
+  70% {
+    transform: translate(13px, 4px) rotate(6deg);
+    opacity: 0.94; }
+  80% {
+    transform: translate(-8px, 15px) rotate(-8deg);
+    opacity: 0.66; }
+  90% {
+    transform: translate(3px, 13px) rotate(7deg);
+    opacity: 0.85; }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-crazy:hover,
+.shake-trigger:hover .shake-crazy, .shake-crazy.shake-freeze, .shake-crazy.shake-constant {
+  animation-name: shake-crazy;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
