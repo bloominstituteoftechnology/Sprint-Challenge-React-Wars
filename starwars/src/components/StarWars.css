@@ -1,18 +1,23 @@
 .card-container {
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
+  box-shadow: 0px 0px 8px 10px rgba(255, 255, 255, 0.1),
+              0px 0px 12px 15px lightblue;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 80%;
-
   margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .card-container__card {
-  border: 1px solid red;
+  border: 6px ridge rgba(100, 100, 100, 1);
+  background-color: rgba(0, 0, 0, 0.75);
   width: 30%;
   margin: 50px 0;
+
+  color: silver;
 
   display: flex;
 

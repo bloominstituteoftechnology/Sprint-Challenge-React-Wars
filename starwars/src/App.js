@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">Rebel Alliance Database</h1>
-        <h2>DataBase ID Cards</h2>
+        <h2 className="Sub-Header">DataBase ID Cards</h2>
         <CardContainer char={this.state.starwarsChars}/>
       </div>
     );

@@ -1,8 +1,14 @@
 .App {
   text-align: center;
 }
-.Header {
+.Header, .Sub-Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 70px;
+}
+
+
+.Sub-Header {
+  font-size: 50px;
 }
 /* write your parent styles in here for your App.js */
