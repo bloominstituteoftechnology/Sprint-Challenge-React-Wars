@@ -24,6 +24,7 @@
 
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .large-card {
@@ -38,4 +39,14 @@
   top: 7%;
   left: 50;
 
+  cursor: default;
+}
+
+.large-card:after  {
+  content: "X";
+  cursor: pointer;
+
+  position: absolute;
+  top: 25px;
+  right: 35px;
 }
