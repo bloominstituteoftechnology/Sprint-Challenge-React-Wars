@@ -1,0 +1,12 @@
+.character {
+margin: 0 auto;
+border: 1px dashed rgb(9, 228, 75);
+width: 40%;
+
+}
+
+.characters {
+display: flex;
+
+
+}
