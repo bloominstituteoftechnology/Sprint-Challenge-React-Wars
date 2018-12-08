@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import AvatarStats from "./components/AvatarStats";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -29,10 +31,15 @@ class App extends Component {
       });
   };
 
+  // onLoadHandler = event => {
+
+  // };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <AvatarStats data={this.state.starwarsChars} />
       </div>
     );
   }
