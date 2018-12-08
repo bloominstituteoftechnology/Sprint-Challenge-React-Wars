@@ -1,14 +1,3 @@
-.character-container {
-  width: 80%;
-  padding: 10px;
-  margin: 0 auto;
-  border: 1px solid white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .character {
   background-color: brown;
   display: flex;
@@ -18,6 +7,7 @@
   padding: 10px 2%;
   opacity: 0.75;
   border-radius: 5px;
+  width: 25%;
 }
 
 hr {
@@ -31,6 +21,8 @@ hr {
 .character-name {
   width: 100%;
   opacity: 1;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .character-data {
