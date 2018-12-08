@@ -9,6 +9,7 @@
     font-size: 1.6rem;
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 .flipped-true {
     box-sizing: content-box;
