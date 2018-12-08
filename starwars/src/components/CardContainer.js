@@ -7,7 +7,7 @@ class CardContainer extends React.Component {
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.props.state[0])
     return(
       <div className='card-container'>
         <h2>DataBase ID Card</h2>
