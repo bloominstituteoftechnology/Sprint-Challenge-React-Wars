@@ -6454,6 +6454,11 @@ react-error-overlay@^4.0.0:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
   integrity sha512-FlsPxavEyMuR6TjVbSSywovXSEyOg6ZDj5+Z8nbsRl9EkOzAhEIcS+GLoQDC5fz/t9suhUXWmUrOBrgeUvrMxw==
 
+react-flippy@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-flippy/-/react-flippy-0.1.2.tgz#8055c9be3f4c530831ef2920e16f005e61d18eec"
+  integrity sha512-ldShzh+XC3ts15DOwuYl9QJQ03bn6k6QcDwUHQcuui8l47vH5B7gxpBYLg3ybtj+0li/4Zc4UUr8VwdDX7G/bQ==
+
 react-scripts@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.4.tgz#d5c230e707918d6dd2d06f303b10f5222d017c88"
