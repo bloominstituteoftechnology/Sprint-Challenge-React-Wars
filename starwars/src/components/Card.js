@@ -6,11 +6,11 @@ const Card = (props) =>{
     return (
         <section>
      {props.characters.map(character =>(
-        <div className="card">Characters caracters={character} /> </div>
+        <div className="card"><Characters characters={character} /> </div>
      )
      )} 
      </section>
     )
 }
 
-export default Characters;
+export default Card;
