@@ -1,0 +1,8 @@
+.character-card {
+  width: 50%;
+}
+
+.character-stats {
+  display: flex;
+  flex-direction: column;
+}
