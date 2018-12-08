@@ -30,3 +30,7 @@ state can not be changed directly, only with the setState() method. state data
 can be passed down to other components in the form of props.
 
 5.  Describe props.
+
+Props are information that is passed into React components. In JSX, they read
+like HTML attributes. They are how data is moved between components. They can
+be displayed by React through a process known as interpolation.
