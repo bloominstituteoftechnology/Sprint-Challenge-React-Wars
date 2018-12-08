@@ -1,7 +1,8 @@
 .card {
   background-color: #dddddd8c;
-  width: 45%;
-  margin: 10px auto;
+  width: 20%;
+  margin: 10px 2.5%;
+  min-width: 275px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
   padding: 0 0 5px;
 }
@@ -23,6 +24,13 @@
     -1px 1px 0 yellow,
     1px 1px 0 yellow;
 }
+
+.character-info{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
 .card p {
   text-align-last: left;
   margin-left: 40px;
