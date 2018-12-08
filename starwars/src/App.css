@@ -8,9 +8,9 @@
 
 .App {
   width: 80%;
-  padding: 10px;
-  margin: 0 auto;
-  border: 1px solid white;
+  padding: 20px;
+  margin: 20px auto;
+  border: 30px solid white;
   display: flex;
   flex-direction: column;
 }
