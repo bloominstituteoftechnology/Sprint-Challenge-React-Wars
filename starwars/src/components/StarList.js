@@ -1,12 +1,12 @@
 import React from 'react';
 import Character from './Character';
 
-const StarList = props => {
+const StarList = (props) => {
   const { starwars } = props;
 
   return (
     <div>
-      {starwars.map(character =>
+      {starwars && starwars.map(character =>
         <Character
           character={character}
         />)}
