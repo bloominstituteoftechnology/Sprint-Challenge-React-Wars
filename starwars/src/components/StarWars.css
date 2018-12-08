@@ -1,0 +1,13 @@
+.container {
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
