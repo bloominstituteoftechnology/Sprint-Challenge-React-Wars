@@ -8,7 +8,7 @@ const Character = (props) => {
       <div>Gender: {props.character.gender}</div>
       <div>Hair Color: {props.character.hair_color}</div>
       <div>Eyes: {props.character.eye_color}</div>
-      <div>Height: {props.character.height} inches</div>
+      <div>Height: {props.character.height} cm</div>
       <div>Mass: {props.character.mass} kg</div>
     </div>
   )
