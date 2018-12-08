@@ -1,0 +1,7 @@
+.character-card {
+    width: 26%;
+    height: 200px;
+    background: red;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
