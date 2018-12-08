@@ -14,7 +14,6 @@ class Character extends React.Component {
         <p>Mass: {this.props.mass}</p>
         <p>Skin Color: {this.props.skinColor}</p>
       </div>
-    
     )
   }
 }

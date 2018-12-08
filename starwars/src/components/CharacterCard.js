@@ -3,7 +3,6 @@ import Character from './Character';
 
 class CharacterCard extends React.Component {
   render() {
-    // console.log(this.props.characters)
     return (
       <div className="character-container">
         {this.props.characters.map(character => 
@@ -12,7 +11,7 @@ class CharacterCard extends React.Component {
           key={character.created}
           birthYear={character.birth_year}
           eyeColor={character.eye_color}
-          gender={character.hair_color}
+          gender={character.gender}
           hairColor={character.hair_color}
           height={character.height}
           mass={character.mass}
