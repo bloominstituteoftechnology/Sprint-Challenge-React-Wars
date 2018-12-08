@@ -7,8 +7,7 @@ class CardContainer extends React.Component {
   }
 
   render() {
-    console.log(this.props.enlargeCard)
-    const cards = this.props.char.map(character => <Card state={character} key={Math.random()} enlargeCard={this.props.enlargeCard}/>)
+    const cards = this.props.char.map(character => <Card state={character} key={Math.random()} enlargeCard={this.props.enlargeCard} imgs={this.props.imgs}/>)
     return(
       <div className='card-container'>
         {cards}
