@@ -11,8 +11,8 @@ return(
     </div>
     <div className="extra content">
       <div className="ui two buttons">
-        <button className="nextButton">Next</button>
-        <button className="previousButton">Previous</button>
+        {/* <button className="nextButton">Next</button>
+        <button className="previousButton">Previous</button> */}
       </div>
     </div>
   </div>
