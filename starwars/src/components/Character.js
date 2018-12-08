@@ -5,19 +5,19 @@ const Character = (props) => {
   const { character } = props;
 
   return (
-    <div className="card">
-      <h3>{character && character.name}</h3>
-      <p>{character && character.birth_year}</p>
-      <p>{character && character.hair_color}</p>
-      <p>{character && character.eye_color}</p>
-      <p>{character && character.gender}</p>
-      <p>{character && character.mass}</p>
-      <p>{character && character.skin_color}</p>
-      <p>{character && character.created}</p>
-      <p>{character && character.edited}</p>
-      <p>{character && character.height}</p>
-      <p>{character && character.homeworld}</p>
-      <p>{character && character.url}</p>
+    <div className="charCard">
+      <h2>{character.name}</h2>
+      <p><span>Birth Year:</span>{character.birth_year}</p>
+      <p><span>Date Created: </span>{character.created}</p>
+      <p><span>Date Edited: </span>{character.edited}</p>
+      <p><span>Gender: </span>{character.gender}</p>
+      <p><span>Mass: </span>{character.mass}</p>
+      <p><span>Hair Color: </span>{character.hair_color}</p>
+      <p><span>Eye Color: </span>{character.eye_color}</p>
+      <p><span>Skin Color: </span>{character.skin_color}</p>
+      <p><span>Height: </span>{character.height}</p>
+      <p><span>Homeworld: </span>{character.homeworld}</p>
+      <p><span>URL: </span>{character.url}</p>
     </div>
   );
 }

@@ -28,11 +28,10 @@ class App extends Component {
   };
 
   render() {
-    const { starwars } = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarList starwars={starwars} />
+        <StarList starwars={this.state.starwarsChars} />
       </div>
     );
   }

@@ -1,6 +1,15 @@
-.card {
+.charCard {
   background-color: #fefefe;
-  padding: 15px;
-  width: 100px;
-  height: 100px;
+  padding: 10px;
+  width: 350px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+span {
+  font-weight: bold;
 }
