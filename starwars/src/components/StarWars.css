@@ -25,10 +25,12 @@
     1px 1px 0 yellow;
 }
 
-.character-info{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+.character-info {
+  /* background-image: url('./../images/Luke Skywalker.jpeg'); */
+}
+
+.card-back {
+  height: 300px;
 }
 
 .card p {

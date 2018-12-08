@@ -15,6 +15,9 @@ const StarWarsCard = props => {
         <p><span>Eye color:</span> {props.char.eye_color}</p>
         <p><span>Skin color:</span> {props.char.skin_color}</p>
       </div>
+      <div className="card-back">
+        <img src={require(`./../images/${props.char.name}.jpeg`)} alt="" />
+      </div>
     </div>
   )
 }
