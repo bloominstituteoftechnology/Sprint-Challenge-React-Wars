@@ -1,9 +1,9 @@
 import React from 'react';
 import './StarWars.css';
+import Films from './Films';
 
 const Card = props => {
   const character = props.character;
-  console.log(character)
   return (
     <div className="Card">
       <h1> {character.name} </h1>
@@ -17,7 +17,15 @@ const Card = props => {
       <p> <span>Skin Color:</span> {character.skin_color.charAt(0).toUpperCase() + character.skin_color.slice(1)}</p>
       <p><span>Mass:</span> {character.mass}</p>
 
+      <h1> Films</h1>
 
+      <div className="FilmList">
+        {character.films.map((film,index) =>(
+          <Films
+          key = {index}
+          film= {film} />
+        ))}
+      </div>
     </div>
   );
 }

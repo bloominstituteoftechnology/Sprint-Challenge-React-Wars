@@ -1,12 +1,21 @@
 import React from 'react';
 import './StarWars.css';
 
-const Films = props =>{
-  return (
-    <div>
-    Films
-    </div>
-  )
+class Films extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      films: []
+    };
+  }
+  render(){
+    console.log(this.props)
+    return (
+      <div>
+        <a href={this.props.film}><p> {this.props.film}</p></a>
+      </div>
+    )
+  }
 }
 
 export default Films;
