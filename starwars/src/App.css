@@ -1,8 +1,30 @@
+@font-face {
+  font-family: Star Jedi Hollow;
+  src: url(./components/fonts/starjhol-webfont.woff);
+}
+
+@font-face {
+  font-family: Star Jedi;
+  src: url(./components/fonts/starjedi-webfont.woff);
+}
+
 .App {
   text-align: center;
+  font-size: 1.6rem;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+h1 {
+  font-size: 5rem;
+  font-family: Star Jedi Hollow;
+}
+h2{
+  font-size: 1.6rem;
+}
