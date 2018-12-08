@@ -16,11 +16,9 @@ class Films extends React.Component{
   getFilm = URL =>{
     fetch(URL)
       .then(res => {
-        console.log(res)
         return res.json();
       })
       .then(data => {
-        console.log(data)
         this.setState({film: data});
       })
       .catch(err => {
@@ -29,7 +27,6 @@ class Films extends React.Component{
   };
 
   render(){
-    console.log(this.state)
     return (
       <div className="Film_Title">
         <a className="Film_Link" href={this.props.film}><p> {this.state.film.title}</p></a>

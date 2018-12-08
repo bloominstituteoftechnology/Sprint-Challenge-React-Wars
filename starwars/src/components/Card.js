@@ -1,6 +1,7 @@
 import React from 'react';
 import './StarWars.css';
 import Films from './Films';
+import Species from './Species';
 
 const Card = props => {
   const character = props.character;
@@ -16,6 +17,13 @@ const Card = props => {
       <p> <span>Hair Color:</span> {character.hair_color.charAt(0).toUpperCase() + character.hair_color.slice(1)}</p>
       <p> <span>Skin Color:</span> {character.skin_color.charAt(0).toUpperCase() + character.skin_color.slice(1)}</p>
       <p><span>Mass:</span> {character.mass}</p>
+      <div className="species">
+        {character.species.map((res, index) => (
+          <Species
+            key={index}
+            species = {res} />
+        ))}
+      </div>
 
       <h1> Films</h1>
 
