@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const StarBanner = () => {
+const StarHeader = () => {
   return (
     <h1 className="Header">React Wars</h1>
   );
 };
 
-export default StarBanner;
+export default StarHeader;

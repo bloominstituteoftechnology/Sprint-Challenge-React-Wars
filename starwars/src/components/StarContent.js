@@ -1,9 +1,9 @@
 import React from "react";
-
+import StarCard from "./StarCard";
 
 const StarContent = () => {
   return (
-    <div>Some Content</div>
+    <div><StarCard /></div>
 
   )};
 

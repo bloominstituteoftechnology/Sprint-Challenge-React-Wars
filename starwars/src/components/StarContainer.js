@@ -5,7 +5,7 @@ import StarHeader from "./StarHeader";
 
 const StarContainer = () => {
   return (
-    <div className="banner-wrapper">
+    <div>
       <StarHeader />
       <StarContent />
     </div>
