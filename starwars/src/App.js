@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters('https://swapi.co/api/people');
   }
 
   getCharacters = URL => {
@@ -28,7 +28,7 @@ class App extends Component {
   };
 
   render() {
-    const { starwars } = this.state;
+    const { starwars } = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
