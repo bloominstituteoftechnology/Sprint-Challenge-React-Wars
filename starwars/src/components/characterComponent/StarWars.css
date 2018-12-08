@@ -1,0 +1,15 @@
+
+
+p{
+    font-size: 20px;
+}
+
+.character{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    background: #bec5cb;
+  }
+

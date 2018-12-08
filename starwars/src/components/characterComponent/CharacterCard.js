@@ -1,5 +1,6 @@
 import React from "react";
 import CharacterData from './CharacterData';
+import '../characterComponent/StarWars.css'
 
 const CharacterCard = props => {
 return (

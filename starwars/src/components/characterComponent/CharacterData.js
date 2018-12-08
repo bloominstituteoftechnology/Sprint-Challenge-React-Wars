@@ -1,18 +1,18 @@
 import React from "react";
+import '../characterComponent/StarWars.css'
 
 const CharacterData = props => {
-    console.log("hello")
-    console.log(props.character.films)
     const films = props.character.films;
     console.log(films)
     const filmArray = films.map( film => (
-        <li key={film.toString()}value={film}>{film}</li>
+        <ul key={film.toString()}value={film}>{film}</ul>
     ))
  return (
      <ul>
         <h3>Name: {props.character.name}</h3>
-        <p>age: {props.character.age}</p>
-        <p>films: {filmArray}</p>
+        <p>Year Born: {props.character.birth_year}</p>
+        <p>Gender: {props.character.gender}</p>
+        <p class="films">Films: {filmArray}</p>
      </ul>
  )
 }

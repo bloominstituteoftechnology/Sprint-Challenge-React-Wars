@@ -34,10 +34,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="container">
         <h1 className="Header">React Wars</h1>
         <CharacterCard 
         character={this.state.starwarsChars}
         />
+        </div>
       </div>
     );
   }
