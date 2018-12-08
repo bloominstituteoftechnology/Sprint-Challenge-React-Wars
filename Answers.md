@@ -16,6 +16,13 @@ to the user dynamically.
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+A Class/Stateful component holds special data called state. These components
+are the key to creating a dynamic interface for the user. Class components
+have access to all of the React.Component methods.
+
+Functional components are relatively static, and change only if the data that is
+passed to them through props changes. Mainly used for presentation purposes.
+
 4.  Describe state.
 
 5.  Describe props.
