@@ -11,10 +11,12 @@
 
 .card {
   color: yellow;
-  text-shadow: 3px 3px 2px rgb(76, 76, 76);
+  text-shadow: 3px 3px 2px rgb(10, 10, 10);
   margin: 50px;
+  padding: 10px;
   font-size: 150%;
-  border: 5px solid oldlace;
+  border: 5px solid yellow;
+  background-color: rgba(76, 76, 76, 0.6);
   border-radius: 15px;
   max-width: 300px;  
 }
