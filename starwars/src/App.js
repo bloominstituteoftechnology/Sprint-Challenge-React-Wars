@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardItem from './CardItem';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    
   }
 
   componentDidMount() {
@@ -33,18 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div class="characters">
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-           <div class="card"></div>
-        </div>
+        <CardItem starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }

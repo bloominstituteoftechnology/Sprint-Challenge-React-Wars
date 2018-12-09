@@ -13,7 +13,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  height: 100%;
   border: 2px solid black;
   justify-content: center;
   margin: 0 auto;
@@ -23,7 +22,7 @@
   display: flex;
   width: 18%;
   height: 350px;
-  margin: 5px;
+  margin: 10px 5px;
   border: 1px solid blue;
 }
 /* write your parent styles in here for your App.js */
