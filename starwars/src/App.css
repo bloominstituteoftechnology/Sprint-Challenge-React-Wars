@@ -54,5 +54,30 @@
   flex-wrap: wrap;
 }
 
+.previous {
+  background-color: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.previous:hover {
+  cursor: pointer;
+}
+
+.next {
+  background-color: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.next:hover {
+  cursor: pointer;
+}
 /* 
 /* write your parent styles in here for your App.js */
