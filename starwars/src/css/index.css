@@ -33,6 +33,9 @@ body {
 .card:nth-child(n+3):nth-child(odd):nth-child(-n+9) {
   background-color: grey;
 }
+.card:nth-child(n+3):nth-child(even):nth-child(-n+8) {
+  background-color: #CA6C3F;
+}
 
 .card__title {
   margin-bottom: 0.8rem;
