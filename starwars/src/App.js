@@ -31,29 +31,11 @@ class App extends Component {
       });
   };
 
-  next = _ => {
-    if (this.state.current < 9) {
-      this.getCharacters(
-        `https://swapi.co/api/people/?page=${this.state.current + 1}`
-      );
-      this.setState(prevState => ({ current: prevState.current + 1 }));
-    }
-  };
-
-  prev = _ => {
-    if (this.state.current > 1) {
-      this.getCharacters(
-        `https://swapi.co/api/people/?page=${this.state.current - 1}`
-      );
-      this.setState(prevState => ({ current: prevState.current - 1 }));
-    }
-  };
-
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        
+
         {this.state.starwarsChars[0] ? (
           <Card characters={this.state.starwarsChars} />
         ) : (

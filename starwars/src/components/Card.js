@@ -2,12 +2,8 @@ import React from "react";
 import CardBody from "./CardBody";
 
 const Card = props => {
-  const divStyle = rand => {
-    return { backgroundColor: `hsl(${rand},20%,40%)` };
-  };
-  
   return (
-    
+
     <div className="container">
       {props.characters.map((x, i) => {
         return (
