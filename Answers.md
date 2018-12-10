@@ -2,20 +2,23 @@
 
 1.  What is React JS and what problems does it try and solve?
 
-    - React JS is a javascript library to make creating functional websites intuitive, and make them fast and modular.
+    React JS is a tool for developers thats focuses on building out User Interfaces. You can use React to create reusable
+    components.
 
 1.  What does it mean to _think_ in react?
 
-    - Thinking in react means to think about how to pass around data between components and other tools to get your desired result.
+    To _think_ in React is to think about how to pass data through different components.
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-    - A Stateful component has a state, and is used to modify the dom, where presentational components are just that, they present information.
+    A Stateful component has a state or input which can then be used to modify the DOM and set changes. A presentational component are concerned with how things look though they can contain other components within them.
 
 1.  Describe state.
 
-    - State is a private class only prop like resource that is used to modify the virtual dom
+    State is used to store data that your current page needs in your view-controller. Data within the State is mutable.
+    You can think of State as the Data Structure. 
 
 1.  Describe props.
 
-    - Props are values that are passed from one component or class into another to be used as data.
+    Props which are short for 'properties' make up a components configuration. You can use Props to
+    pass data and event handlers down to child components. Props are immutable
