@@ -24,12 +24,16 @@ body {
 }
 .card {
   flex: 0 1 auto;
-  background: white;
+  background: #DABCA5;
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
   opacity: .75;
 }
+.card:nth-child(n+3):nth-child(odd):nth-child(-n+9) {
+  background-color: grey;
+}
+
 .card__title {
   margin-bottom: 0.8rem;
 }

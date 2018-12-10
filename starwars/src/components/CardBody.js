@@ -12,9 +12,9 @@ const CardBody = props => {
         <li>Skin Color: {props.characters.skin_color}</li>
         <li>Date of Birth: {props.characters.birth_year}</li>
         <li>Eye Color:{props.characters.eye_color}</li>
-        
-        
-       
+
+
+
       </ul>
     </div>
   );
