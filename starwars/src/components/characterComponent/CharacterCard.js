@@ -7,7 +7,7 @@ return (
     <div className="character">
     {props.character.map(char => 
         <CharacterData 
-            key={char.id}
+            key={char.created}
             character={char}
         />
         )}</div>

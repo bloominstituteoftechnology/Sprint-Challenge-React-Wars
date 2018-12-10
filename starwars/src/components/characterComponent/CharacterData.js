@@ -12,7 +12,7 @@ const CharacterData = props => {
         <h3>Name: {props.character.name}</h3>
         <p>Year Born: {props.character.birth_year}</p>
         <p>Gender: {props.character.gender}</p>
-        <p class="films">Films: {filmArray}</p>
+        <ul className="films">Films: {filmArray}</ul>
      </ul>
  )
 }

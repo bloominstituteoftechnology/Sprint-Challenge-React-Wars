@@ -24,12 +24,3 @@
  background: #bf9c74;
  opacity: 0.5;
 }
-
-.character{
-  display: flex;
-  align-items: center;
-  width: 90%;
-  justify-content: center;
-  flex-direction: column;
-  background: #bec5cb;
-}
