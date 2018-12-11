@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Rye');
+
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+  background-color: #13262F;
   background-size: cover;
 }

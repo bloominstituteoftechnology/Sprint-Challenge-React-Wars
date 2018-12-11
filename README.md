@@ -10,13 +10,31 @@
 
 1. What is React JS and what problems does it try and solve?
 
-1. What does it mean to _think_ in react?
+  *A library for building better user interfaces; 
+	*The virtual DOM solves a huge performance issue,
+	*The normal DOM is sluggish and has to reload the page and reload EVERYTHING all over again. React’s virtual DOM renders the UI to a virtual DOM and only re-renders what changes. This greatly improves the performance of your web application.
 
-1. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
-1. Describe state.
 
-1. Describe props.
+2. What does it mean to _think_ in react?
+
+  For me, I think it means to think about the entirety 	of the application and break it into smaller components and learn to think about when/where you would NEED a component. Also, thinking about what data each component is gunna need
+
+
+3. Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+  class/stateful components have state and functional/presentational components do not. 
+
+
+4. Describe state.
+  State is basically just the data we need; also Immutable
+
+
+
+5. Describe props.
+  Props is short for properties and it is how we send data to our different components.
+
+
 
 ## Project
 
@@ -26,6 +44,11 @@
 1. **cd into starwars** and run `yarn install or npm install` to retrieve all the needed dependencies.
 1. Once you have installed all the _node_modules_ you should be able to run `yarn start or npm start` to get your server up and running.
 1. Once your server is up and running open Chrome and head over to `localhost:3000` to see your beautiful app. Ok, maybe it's not THAT pretty yet, but it's your goal to ensure this project becomes a thing of beauty.
+
+
+
+
+
 
 ### If you notice inside of `App.js` we're calling an open sourced **API** from within `componentDidMount()` and saving the results of that API on state.
 
@@ -38,6 +61,15 @@
 - Your goal here is to build an app that displays the data provided in whatever way you see fit! Don't worry about the fields whose values are URLs. You'll figure out what to do with data like that later on in the course.
 - For now, just build a react app that displays this fun Star Wars data. Build a card for each object in the starwars array.
 - I suggest building **function over form** at first. Then take time to style your app after.
+
+
+
+
+
+
+
+
+
 
 ## Stretch Problems
 

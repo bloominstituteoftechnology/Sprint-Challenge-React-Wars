@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CreateWantedPosters from './components/wanted';
 
 class App extends Component {
   constructor() {
@@ -9,6 +10,7 @@ class App extends Component {
     };
   }
 
+  /*Don't pay attention to this. This is not the code your looking for*/
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
@@ -28,11 +30,22 @@ class App extends Component {
         throw new Error(err);
       });
   };
+  /*Start working here, seriously don't even look right here */
+
+
+  createLicense = () => {
+    let starwarsChars = this.state.starwarsChars.slice();
+
+  }
+
 
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Bounty Hunter Board</h1>
+        <CreateWantedPosters
+          infoNeeded = {this.state.starwarsChars}
+        />
       </div>
     );
   }
