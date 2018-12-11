@@ -1,37 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterCard from './components/characterComponent/CharacterCard';
-import Nav from "./components/nav/Nav";
-
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
-      currentPage: 'https://swapi.co/api/people/',
-      nextPage: '',
-      previousPage: ''
+      currentPage: 'https://swapi.co/api/people/'
     };
   }
 
-  nextPage = () => {
-    if(this.state.nextPage) {
-    this.setState({ 
-      currentPage: this.state.nextPage
-    })
-    this.getCharacters(this.state.nextPage);
-    } 
-  }
-
-  previousPage = () => {
-    if(this.state.previousPage) {
-    this.setState({ 
-      currentPage: this.state.previousPage
-    })
-    this.getCharacters(this.state.previousPage);
-  }
-  }
 
   componentDidMount() {
     this.getCharacters(this.state.currentPage);
@@ -63,10 +42,6 @@ class App extends Component {
       <div className="App">
         <div className="container">
         <h1 className="Header">React Wars</h1>
-        <Nav 
-          next={this.nextPage} 
-          previous={this.previousPage}
-        />
         <CharacterCard 
           character={this.state.starwarsChars}
         />
