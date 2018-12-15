@@ -8,7 +8,7 @@ import Character from './Character'
     <div className="card-container">
 
       {props.characterRoster.map(character => (
-        <Character character={character} key={character.id} />
+        <Character character={character} key={character.name} />
       ))}
 
     </div>

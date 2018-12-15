@@ -1,0 +1,31 @@
+.card-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1600px;
+    }
+
+     .character-card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 20%;
+        height: 140px;
+        margin: 10px 10px;
+        color: white;
+        font-style: bold;
+        background: rgba(255, 0, 0, 0.6);
+        border: 2px solid black;
+        border-radius: 10px;
+    } 
+        span {
+            width: 100%;
+        }
+
+            .character-name {
+                font-size: 1.8rem;
+                text-decoration: underline;
+            }
