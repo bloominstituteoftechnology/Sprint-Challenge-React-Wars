@@ -9,7 +9,10 @@ import "./components/StarWars.css";
       <div className="character-data">
         Birth Year: {props.character.birth_year}
       </div>
+      <div className= "character-data">Eye color:{props.character.eye_color}</div>
+      <div className= "character-data">Height:{props.character.height}</div>
     </div>
+    
   );
 };
  export default Character;
