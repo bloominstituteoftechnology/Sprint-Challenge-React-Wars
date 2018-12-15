@@ -1,0 +1,43 @@
+html {
+    font: 62.5%;
+}
+.App {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #222222;
+}
+
+.Header {
+    color: rgb(147,29,37);
+    font-size: 3rem;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.toon {
+    display: flex;
+    color: white;
+    background-color: rgb(147,29,37);;
+    border: 2px solid darkgrey;
+    margin: 10px auto;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.toon:hover {
+    color:rgb(147,29,37);
+    background: white;
+}
+
+h4 {
+    color: darkgrey;
+    font-size: 1.5rem;
+}
