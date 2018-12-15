@@ -1,0 +1,12 @@
+import React from 'react';
+
+
+const LukesCard = props => {
+    return(
+        <div>
+
+        </div>
+    );
+}
+
+export default LukesCard;
