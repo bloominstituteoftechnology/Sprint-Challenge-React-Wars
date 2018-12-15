@@ -5,7 +5,9 @@
       It tries to solve making DOM manipulation more efficient and less tedious
 
 1.  What does it mean to _think_ in react?
-      It's a way of breaking things into smaller components 
+      It's a way of breaking things into smaller components which allows each component to be updated when needed.
+      It also brings in the idea of how to create these components in the most efficient way.
+      
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
       Class has access to State and a life cycle method. 
