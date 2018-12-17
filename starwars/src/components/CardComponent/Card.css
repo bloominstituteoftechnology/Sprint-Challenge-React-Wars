@@ -1,0 +1,17 @@
+.card-container {
+
+}
+
+.card-content {
+  margin: 0 auto;
+  display: inline-flex;
+  width: 600px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.card-content li {
+  width: 500px;
+  display: flex;
+  flex-flow: row wrap;
+}
