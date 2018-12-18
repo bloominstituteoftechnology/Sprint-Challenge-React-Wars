@@ -6,8 +6,7 @@ const Characters = props => {
         <div>
             {props.data.map(item => 
                 <Character characterData={item} />
-            )
-            }    
+            )}    
         </div>
     );
 };
