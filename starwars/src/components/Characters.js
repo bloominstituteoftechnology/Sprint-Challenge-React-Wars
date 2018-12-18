@@ -1,12 +1,13 @@
 import React from 'react';
 import Character from './Character'
 
-const Characters = (props) => {
-    var characterData = [props.data];
+const Characters = props => {
     return (
         <div>
-            {characterData.map}
-            <Character />
+            {props.data.map(item => 
+                <Character characterData={item} />
+            )
+            }    
         </div>
     );
 };
