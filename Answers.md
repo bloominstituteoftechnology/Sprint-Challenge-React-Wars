@@ -14,3 +14,8 @@ Functional - Has no state or lifecycle methods that takes props and returns a re
 This is the key to the component and determines how the component renders and behaves. This is what lets you create components that are dynamic and can update on the fly.
 
 1.  Describe props.
+Data that is passed down through props is used to render components with dynamic data. In other words props are the same as passing parameters that can be used, manipulated etc. An example use of props would be to display data in a title as shown below:
+
+```
+<h1>{this.props.title}</h1>
+```
