@@ -10,8 +10,7 @@ I think it helps you break down your architecture into smaller reusable componen
 Class - Has state and lifecycle methods and a new instance of a class component is generated each time it's rendered.
 Functional - Has no state or lifecycle methods that takes props and returns a react component.
 
-
-
 1.  Describe state.
+This is the key to the component and determines how the component renders and behaves. This is what lets you create components that are dynamic and can update on the fly.
 
 1.  Describe props.
