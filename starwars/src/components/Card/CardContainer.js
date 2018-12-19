@@ -3,7 +3,7 @@ import "../StarWars.css";
 import CharacterStats from "./CharacterStats";
 
 const CardContainer = props => {
-  console.log(props.character);
+  // console.log(props.character);
   return props.character.map(item => {
     return (
       <div key={item.url} className="character-card">
