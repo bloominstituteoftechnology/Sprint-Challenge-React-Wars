@@ -1,0 +1,7 @@
+.card-style {
+    border: 2px solid red;
+    font-weight: bold;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
