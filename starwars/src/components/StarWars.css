@@ -1,6 +1,11 @@
 .chars {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30px;
     border: 10px solid rgb(67, 144, 216);
-    background: rgb(206, 129, 62);
+    background: rgb(206, 129, 62, 0.6);
     border-radius: 25px;
-    margin: 0 100px 20px;
+    margin: 0 41% 20px;
+    width: 300px;
 }
