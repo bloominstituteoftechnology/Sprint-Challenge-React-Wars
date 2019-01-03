@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import CreateWantedPosters from './components/wanted';
+import AllCards from './components/AllCards';
 
 class App extends Component {
   constructor() {
@@ -24,6 +24,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(this.state)
       })
       .catch(err => {
         throw new Error(err);
@@ -33,10 +34,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">Bounty Hunter Board</h1>
-        <CreateWantedPosters
-          infoNeeded = {this.state.starwarsChars}
-        />
+        <h1 className="header">Intelligence Reports</h1>
+        <AllCards 
+         person={this.state.starwarsChars}/>
       </div>
     );
   }

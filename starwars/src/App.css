@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Rye');
-
-
-
-.App {
-  text-align: center;
+.app {
+  margin-left: 50px;
 }
-.Header {
-  color: #F4F7F5;
-  font-size: 50px;
-  padding-top: 20px;
-  font-family: 'Rye', cursive;
+
+.header {
+  color: red;
+  font-size: 48px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+}
+
+.allCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 10px auto;
+
+}
+
+.card {
+  border: 2px dashed white;
+  border-radius: 10px;
+  width: 40%;
+  margin: 20px;
+  text-align: center;
 }
 /* write your parent styles in here for your App.js */
