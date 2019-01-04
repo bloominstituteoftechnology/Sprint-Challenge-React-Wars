@@ -26,7 +26,6 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data);
         this.setState({ starwarsChars: data.results,
                         next: data.next,
                         prev: data.previous
@@ -38,7 +37,6 @@ class App extends Component {
   };
 
   nextPage = () => {
-    console.log("click");
     if (this.state.next === null) return;
     else this.getCharacters(this.state.next);
   }

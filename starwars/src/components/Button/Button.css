@@ -1,0 +1,10 @@
+.page-change {
+  padding: 10px 20px;
+  font-size: 2.0rem;
+  margin: 20px;
+  background-color: #3756f9;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #dd1616;
+  cursor: pointer;
+}

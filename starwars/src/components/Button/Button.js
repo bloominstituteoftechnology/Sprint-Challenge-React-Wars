@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 
 const Button = props => {
-  return <button onClick={props.clickHandler}>{props.text}</button>;
+  return <button className={"page-change"} onClick={props.clickHandler}>{props.text}</button>;
 };
 
 export default Button;
