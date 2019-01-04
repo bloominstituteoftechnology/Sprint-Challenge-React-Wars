@@ -10,9 +10,16 @@
 
 2.  What does it mean to _think_ in react?
 
-    - React makes building web pages easier by breaking down each section and sub section into components which give websites a modular-like build which in itself required a very different way of thinking when building web apps compared to our conventional form of building a website through HMLT, CSS and JavaScript. React allows us to pick up and drop components anywhere on the web page and te HTML, CSS and JS that's with it stays encapsulated and is never compromised. Keeping all that in mind as you build your web app is thinking in React!
+    - React makes building web pages easier by breaking down each section and sub section into components which give websites a modular-like build which in itself required a very different way of thinking when building web apps compared to our conventional form of building a website through HMLT, CSS and JavaScript. React allows us to pick up and drop components anywhere on the web page and the HTML, CSS and JS that's with it stays encapsulated and is never compromised. Keeping all that in mind as you build your web app is thinking in React!
 
 3.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+- Class/Stateful component:
+    - Syntax: The differences are big. You will need to extend from React.Component and create a render function which will return a React element.       This process, though longer, will have perks that make it so worth it.
+    - State and setState() will be used and central to a Class/Stateful Component to spread data throughout all the components. 
+
+  - Functional/Presentational component:
+    - Syntax: This will simply be just standard JavaScript, normally a function which takes a prop as a parameter and will return a React element.
 
 4.  Describe state.
 
