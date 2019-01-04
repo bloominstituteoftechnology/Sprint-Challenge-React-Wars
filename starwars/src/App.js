@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import CardContainer from "./components/Card/CardContainer";
+import Button from "./components/Button/Button";
 import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: "",
+      prev: ""
     };
   }
 
@@ -23,12 +26,27 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ starwarsChars: data.results,
+                        next: data.next,
+                        prev: data.previous
+                      });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
+
+  nextPage = () => {
+    console.log("click");
+    if (this.state.next === null) return;
+    else this.getCharacters(this.state.next);
+  }
+
+  prevPage = () => {
+    if (this.state.prev === null) return;
+    else this.getCharacters(this.state.prev);
+  }
 
   render() {
     return (
@@ -37,6 +55,8 @@ class App extends Component {
         <div className="characters-container">
           <CardContainer character={this.state.starwarsChars} />
         </div>
+        <Button text="&lt;" clickHandler={this.prevPage}/>
+        <Button text="&gt;" clickHandler={this.nextPage}/>
       </div>
     );
   }
