@@ -1,11 +1,11 @@
 import React from 'react';
-import StarWarsData from './StarWarsData';
+import App from './App.js';
 import './StarWars.css';
 
 function StarWarsList (props) {
     return(
         <div>
-            {props.StarWarsData.map(chars => 
+            {props.chars.map(chars => 
                 <StarWarsData key={chars.name} chars={chars} />
             )}
         </div>
