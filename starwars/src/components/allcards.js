@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from './Card';
+import Card from './card';
 
 class AllCards extends React.Component {
     constructor (props) {

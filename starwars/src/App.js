@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import AllCards from './components/AllCards';
+import allCards from './components/allCards';
 
 class App extends Component {
   constructor() {
