@@ -39,13 +39,13 @@ Follow these steps to set up and work on your project:
 - [ ] Create a fork this copy of the project.
 - [ ] Add PM as collaborator on Github.
 - [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b <firstName-lastName>.
+- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin <firstName-lastName>.
+- [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
