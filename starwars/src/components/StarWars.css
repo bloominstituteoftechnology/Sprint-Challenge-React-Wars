@@ -1,15 +1,18 @@
 
 .main-character {
-    width: 30%;
+    width: 35%;
     height: 270px;
     background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     margin: 0 auto;
     padding: .4rem;
     margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 13px 5px -2px rgba(0,0,0,0.75);
 }
 
 .char-name {
-    text-align: center;
+    text-align: left;
+    margin-left: 11%;
     font-family: 'Audiowide', cursive;
     font-size: 2.2rem;
     color: #5E4133;
@@ -17,9 +20,9 @@
 
 .stat {
     text-align: left;
-    margin-left: 12%;
+    margin-left: 14%;
     color:#CFB594;
     font-family: 'Sarala', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: .2;
 } 
