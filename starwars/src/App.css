@@ -6,3 +6,23 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.App {
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.Header {
+  font-size: 48px;
+  font-family: "rig-solid-bold-reverse", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.nav-buttons {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 50%;
+  justify-content: space-between;
+  padding: 15px;
+}
