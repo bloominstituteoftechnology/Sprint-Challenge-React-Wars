@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+import CardComponent from './components/CardComponent';
+import PreviousButton from './components/PreviousButton';
+import NextButton from './components/NextButton';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      data: {}
     };
   }
 
@@ -29,10 +34,27 @@ class App extends Component {
       });
   };
 
+  Next = () => {
+    if (this.state.data.next !== null) {
+      return this.getCharacters(this.state.data.next)
+    }
+  }
+
+  Previous = () => {
+    if (this.state.data.previous !== null) {
+    return this.getCharacters(this.state.data.previous)
+  }
+}
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <cardComponent starwarsChars={this.state.starwarsChars} />
+        <div className="nav-buttons">
+        <PreviousButton onClick={this.Previous} />
+        <NextButton onClick={this.Next} />
+        </div>
       </div>
     );
   }
