@@ -7,8 +7,8 @@ const CharacterList = (props) => {
         {props.characters.map((character, index) => {
             return <Character 
                 character = {character}
-                // componentDidMount = {props.componentDidMount}
-                // getCharacters = {props.getCharacters}
+                componentDidMount = {props.componentDidMount}
+                getCharacters = {props.getCharacters}
                 key = {index}
         />
     })}

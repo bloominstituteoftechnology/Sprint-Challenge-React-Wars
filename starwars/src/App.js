@@ -8,11 +8,15 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+   
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
   }
+
+  
+  
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -37,13 +41,16 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList
-        // componentDidMount = {this.componentDidMount}
-        // getCharacters = {this.getCharacters}
+        componentDidMount = {this.componentDidMount}
+        getCharacters = {this.getCharacters}
         characters = {this.state.starwarsChars}
         />
+        <button id='button'>Next-Page</button>
       </div>
     );
   }
 }
+
+
 
 export default App;
