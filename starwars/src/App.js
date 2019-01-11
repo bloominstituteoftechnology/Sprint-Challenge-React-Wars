@@ -23,6 +23,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data)
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -36,8 +37,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList
-        componentDidMount = {this.componentDidMount}
-        getCharacters = {this.getCharacters}
+        // componentDidMount = {this.componentDidMount}
+        // getCharacters = {this.getCharacters}
         characters = {this.state.starwarsChars}
         />
       </div>
