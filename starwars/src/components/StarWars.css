@@ -1,0 +1,23 @@
+.characterList {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.characterCard {
+    border: 2px solid gray;
+    width: 35%;
+    margin: 10px;
+    background-color:  rgba(99,105,50, .7);
+    color: white;
+}
+
+.characterCard:hover {
+    color: rgba(99,105,50, .7);
+    background-color: rgba(255,255,255, .6);
+}
+
+.characterImage {
+    width: 100%;
+}
