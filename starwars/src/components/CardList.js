@@ -1,10 +1,11 @@
 import React from 'react';
+import StarWars from './StarWars.css'
 
 import Card from './Card'
 
 function CardList(props) {
     return (
-        <div className="card-list">
+        <div>
             {
                 props.character.map(starwarsChars => {
                     return <Card character={starwarsChars} />
