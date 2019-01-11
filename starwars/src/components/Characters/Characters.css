@@ -1,0 +1,33 @@
+.character-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.character{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.character h1{
+    margin: 5px 0;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.attribute-list{
+    margin: 15px 0;
+}
+
+.character p{
+    font-weight: bold;
+    margin: 10px 0;
+}

@@ -2,17 +2,17 @@ import React from 'react';
 
 const Character = props => {
     return(
-        <div>
+        <div className="character">
             <h1>{props.charData.name}</h1>
-            <ul>
-                <li>Born : {props.charData.birth_year}</li>
-                <li>Gender : {props.charData.gender}</li>
-                <li>Height : {props.charData.height}</li>
-                <li>Mass : {props.charData.mass}</li>
-                <li>Eye Color : {props.charData.eye_color}</li>
-                <li>Hair Color : {props.charData.hair_color}</li>
-                <li>Skin Color : {props.charData.skin_color}</li>
-            </ul>
+            <div className="attribute-list">
+                <p>Born : {props.charData.birth_year}</p>
+                <p>Gender : {props.charData.gender}</p>
+                <p>Height : {props.charData.height}</p>
+                <p>Mass : {props.charData.mass}</p>
+                <p>Eye Color : {props.charData.eye_color}</p>
+                <p>Hair Color : {props.charData.hair_color}</p>
+                <p>Skin Color : {props.charData.skin_color}</p>
+            </div>
         </div>
     )
 }
