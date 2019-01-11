@@ -1,3 +1,20 @@
-.characterList{
-    border: 2px solid yellow;
+.ListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.CharacterList{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    width: 50%;
+
+}
+
+.WantedProps{
+    align-content: center;
+}
+
+.Name{
+    font-family: 'Star Jedi', CenturyGothic;
+    text-shadow: 1px 1px 5px #fff;
 }

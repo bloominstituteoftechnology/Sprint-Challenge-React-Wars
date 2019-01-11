@@ -5,7 +5,7 @@ import StarWarsCharacters from './StarWarsCharacters';
 
 const StarWarsList = (props) => {
     return(
-        <div>
+        <div className="ListContainer">
             {props.starwarsChars.map(character =>{
                 return <StarWarsCharacters 
                 key={character.name}
