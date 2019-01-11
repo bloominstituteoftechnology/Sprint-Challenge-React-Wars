@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
+import CharCard from './components/CharCard';
 
 class App extends Component {
   constructor() {
