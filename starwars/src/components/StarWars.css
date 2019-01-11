@@ -1,0 +1,14 @@
+.starCard {
+    width: 300px;
+    height: auto;
+    border: 1px dashed darkgray;
+    margin: 25px;
+    background: rgba(186, 190, 206, 0.4);
+}
+
+.warsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
