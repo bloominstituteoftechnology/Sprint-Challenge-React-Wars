@@ -2,3 +2,12 @@
     border: 1px solid black;
     text-align: start;
 }
+p {
+    color: red;
+}
+.card-list {
+    border: 1px solid red;
+}
+.character-card p {
+    color: red;
+}

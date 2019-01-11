@@ -4,10 +4,10 @@ import Card from './Card'
 
 function CardList(props) {
     return (
-        <div>
+        <div className="card-list">
             {
-                props.starwarsChars.map(starwarsChars => {
-                    return <Card characters={starwarsChars} />
+                props.character.map(starwarsChars => {
+                    return <Card character={starwarsChars} />
                 })
             }
         </div>
