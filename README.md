@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+  It's basically a JS library for building UIs. It is a tool for building components that can be reused to build apps more efficiently. For example, in the Todo List project we kept reusing components to add to the list.
+
 - [ ] What does it mean to _think_ in react?
+
+  It refers to the how you think about apps as you build them. It's basically the thought process behind the structure of the app and how you break everything down.
 
 - [ ] Describe state.
 
+  State is the data that the components have access to.
+
 - [ ] Describe props.
+
+  Props is short for properties. It's the data that is passed around to build components.
 
 ## Project Set Up
 
