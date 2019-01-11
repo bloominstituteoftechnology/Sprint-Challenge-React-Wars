@@ -1,8 +1,24 @@
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Audiowide', cursive;
+font-family: 'Sarala', sans-serif; */
+
+
+
 .App {
   text-align: center;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+
 }
 /* write your parent styles in here for your App.js */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
