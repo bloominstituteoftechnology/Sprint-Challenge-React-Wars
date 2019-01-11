@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       nextURL: '',
-      prevURL: ''
+      prevURL: '',
     };
   }
 
@@ -35,14 +35,18 @@ class App extends Component {
   };
 
   nextPage = (e) => {
-    this.getCharacters(this.state.nextURL);
+    if(this.state.nextURL === null){
+      alert('You are already on the last page')
+    }else {
+      this.getCharacters(this.state.nextURL);
+    }
   }
 
   previousPage = (e) => {
     if(this.state.prevURL === null){
       alert('You are already on the first page')
     }else{
-      this.getCharacters('https://swapi.co/api/people');
+      this.getCharacters(this.state.prevURL);
     }
   }
 
@@ -50,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Pages next={this.nextPage} previous={this.previousPage}/>
+        <Pages next={this.nextPage} previous={this.previousPage} currentPage={this.state.currentPage}/>
         <h1 className="Header">React Wars</h1>
         <Characters charData={this.state.starwarsChars}/>
       </div>
