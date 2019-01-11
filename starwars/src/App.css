@@ -6,3 +6,12 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.container{
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.486);
+  border: 1px solid darkgray;
+  box-shadow: 1px 2px 4px #0000003d;
+  width: 880px;
+}

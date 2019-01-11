@@ -1,0 +1,28 @@
+
+.fact{
+    border: 1px solid darkgray;
+    width: 290px;
+}
+.fact h1{
+    font-family: Roboto;
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    text-align: start;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
