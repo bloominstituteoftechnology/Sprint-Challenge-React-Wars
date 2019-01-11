@@ -1,0 +1,33 @@
+.character {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 2%;
+  padding: 10px 2%;
+  opacity: 0.75;
+  border-radius: 5px;
+  width: 15%;
+}
+
+hr {
+  width: 90%;
+  border-top: 1px solid white;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.character-name {
+  width: 100%;
+  opacity: 1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.character-data {
+  width: 100%;
+  padding: 1%;
+  opacity: 1;
+  text-align: left;
+}
