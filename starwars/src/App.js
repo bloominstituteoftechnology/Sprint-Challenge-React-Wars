@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CharacterList from './components/CharacterList';
-
+import Pagination from './components/Pagination';
 
 const characterImages = [
   {
@@ -54,10 +54,12 @@ class App extends Component {
       starwarsChars: [],
       characterImages: characterImages
     };
+    
   }
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
+    
   }
 
   getCharacters = URL => {
@@ -69,18 +71,32 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+        });
+        console.log(data)
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handleClick = e => {
+    if(e.target.textContent === 'next') {
+      this.getCharacters(this.state.next)
+    } else if (e.target.textContent === 'prev') {
+      this.getCharacters(this.state.prev)
+    } 
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <CharacterList characterImages={this.state.characterImages} starwarsChars={this.state.starwarsChars}/>        
+        <Pagination handleClick={this.handleClick} />
       </div>
     );
   }

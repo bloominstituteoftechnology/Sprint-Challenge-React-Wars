@@ -4,5 +4,19 @@
 .Header {
   color: rgba(99,105,50, .8);
   text-shadow: 1px 1px 5px #ffff;
+  margin-top: 20px;
 }
 /* write your parent styles in here for your App.js */
+.paginationButton {
+  font-size: 30px;
+  padding: 20px;
+  color: darkgreen;
+  background-color: ghostwhite;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.paginationButton:hover {
+  background-color: darkgreen;
+  color: ghostwhite;
+}
