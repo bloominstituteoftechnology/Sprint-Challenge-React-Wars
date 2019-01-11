@@ -1,0 +1,16 @@
+.character-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: start;
+    width: 500px;
+    margin: 30px 0px;
+    opacity: 0.7;
+    background: grey;
+}
+h2 {
+    text-decoration: underline;
+}
+p {
+    font-weight: bold;
+}
