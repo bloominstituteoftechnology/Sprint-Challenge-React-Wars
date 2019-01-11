@@ -1,3 +1,8 @@
+h1 {
+    color: #443e3e;
+    text-shadow: 1px 1px 3px #fff;
+}
+
 .starCard {
     width: 300px;
     height: auto;
@@ -7,6 +12,8 @@
 }
 
 .warsContainer {
+    font-weight: 900;
+    color: #443e3e;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
