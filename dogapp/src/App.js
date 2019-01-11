@@ -34,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Breeds</h1>
         {console.log(this.state.dogBreeds)}
         <Dogs breeds={this.state.dogBreeds}/>
       </div>
