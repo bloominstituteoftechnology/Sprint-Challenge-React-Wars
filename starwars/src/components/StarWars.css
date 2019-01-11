@@ -1,0 +1,43 @@
+.char-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.character {
+    background-color: #3F51B5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 2%;
+    padding: 10px 2%;
+    opacity: 0.75;
+    border-radius: 5px;
+    width: 15%;
+  }
+
+  .character-name {
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #54ff41;
+    font-weight: bold;
+    font-family: cursive;
+  }
+   .character-data {
+    width: 100%;
+    padding: 1%;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .character-data span{
+    font-family: cursive;
+    color: #54ff41;
+  }
+
+  .character-data{
+    border: 1px solid #f5b8b8;
+    border-radius: 18px;
+  }
