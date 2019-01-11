@@ -1,0 +1,76 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  box-shadow: 0px 0px 8px 10px rgba(255, 255, 255, 0.1),
+              0px 0px 12px 15px lightblue;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 75px;
+
+
+  position: relative;
+}
+
+.card-container__card {
+  border: 6px ridge rgba(100, 100, 100, 1);
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 30%;
+  margin: 50px 0;
+
+  color: silver;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.card-container__card img {
+  height: 200px;
+  width: 40%;
+}
+
+.large-card {
+  width: 80%;
+  height: 80vh;
+  min-height: 500px;
+
+  background-color: black;
+  margin: 0;
+  font-size: 28px;
+
+  position: fixed;
+  top: 7%;
+  left: 50;
+
+  cursor: default;
+}
+
+.large-card:after  {
+  content: "X";
+  cursor: pointer;
+
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  animation: rotate 15s linear 0s infinite;
+}
+
+
+.large-card img {
+  height: 500px;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes grow {
+  from {font-size: 28px;}
+  to {font-size: 29px;}
+}
