@@ -6,13 +6,15 @@
 
 .CharacterList{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
     width: 50%;
     margin-bottom: 2%;
 }
 
 .WantedProps{
-    background-image: url('./starwars/src/Redstarbird.png');
+    background-image: url('./starwars/src/starbird-centersize.png');
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 input{
