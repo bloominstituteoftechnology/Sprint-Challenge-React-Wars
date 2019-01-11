@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'; //making a comment here to get started
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      test: test;
     };
   }
 
