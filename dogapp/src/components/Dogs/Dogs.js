@@ -1,10 +1,11 @@
 import React from 'react';
+import Dog from './Dog'
 
 const Dogs = (props) => {
     return (
         <div>
             {Object.keys(props.breeds).map(breed => {
-                return <h1>{breed}</h1>
+                return <Dog dog={props.breeds[breed]} dogName={breed} />
             })}
         </div>
     )
