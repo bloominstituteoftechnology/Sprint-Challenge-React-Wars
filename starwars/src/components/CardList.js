@@ -6,8 +6,8 @@ function CardList(props) {
     return (
         <div>
             {
-                props.starwarsChars.map(id => (
-                    <Card key={id.name} character={id} />
+                props.starwarsChars.map(starwarsChars => (
+                    <Card starwarsChars={starwarsChars.name} character={starwarsChars} />
                 ))
             }
         </div>
