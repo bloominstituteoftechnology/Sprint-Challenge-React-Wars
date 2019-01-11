@@ -8,7 +8,10 @@ function Card(props) {
             <p>Birth Year: {props.character.birth_year}</p>
             <p>Gender: {props.character.gender}</p>
             <p>Height: {props.character.height}</p>
-            <p>Starships: <a href={props.character.starships}>{props.character.starships}</a></p>
+            <p>Starships: {props.character.starships.map(ship => (
+                <p>{props.character.starships}</p>
+            ))}
+            </p>
             <p>Vehicles: <a href={props.character.vehicles}>{props.character.vehicles}</a></p>
         </div>
     )
