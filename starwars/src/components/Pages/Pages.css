@@ -1,0 +1,27 @@
+.pages{
+    margin: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pages button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.pages button:active{
+    color: white;
+    background-color: grey;
+    border: 1px solid white;
+}
