@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PreviousButton =(props) => {
+const PreviousButton = (props) => {
     return (
-        <div className="previous-button" onClick={props.previous}>Previous</div>
+        <div className="previous-button" onClick={props.onClick}>Previous</div>
     )
 }
 

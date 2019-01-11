@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+ }
 
 .character-card {
     flex: 0 1 20%;
@@ -15,7 +15,7 @@
 }
 
 h2 {
-    font-family: "montserrat", sans-serif;
+    font-family: "montserrat",sans-serif;
     font-style: normal;
     font-weight: 900;
     text-align: center;

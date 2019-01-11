@@ -18,6 +18,10 @@ class App extends Component {
     this.getCharacters('https://swapi.co/api/people');
   }
 
+  componentDidUpdate() {
+    ReactDOM.findDOMNode(this).scrollIntoView();
+  }
+
   getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -27,7 +31,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, data: data });
       })
       .catch(err => {
         throw new Error(err);
@@ -42,18 +46,18 @@ class App extends Component {
 
   Previous = () => {
     if (this.state.data.previous !== null) {
-    return this.getCharacters(this.state.data.previous)
+      return this.getCharacters(this.state.data.previous)
+    }
   }
-}
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <cardComponent starwarsChars={this.state.starwarsChars} />
+        <CardComponent starwarsChars={this.state.starwarsChars}/>
         <div className="nav-buttons">
-        <PreviousButton onClick={this.Previous} />
-        <NextButton onClick={this.Next} />
+          <PreviousButton onClick={this.Previous} />
+          <NextButton onClick={this.Next} />
         </div>
       </div>
     );

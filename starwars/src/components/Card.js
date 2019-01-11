@@ -1,7 +1,7 @@
 import React from 'react';
 import './StarWars.css';
 
-const Card =(props) => {
+const Card = (props) => {
     return (
         <div>
             <h2 className="character-name">{props.char.name}</h2>
@@ -16,8 +16,6 @@ const Card =(props) => {
             <p><strong># of Vehicles</strong>: {props.char.vehicles.length}</p>
             <p><strong># of Starships</strong>: {props.char.starships.length}</p>
             <p><strong># of Species</strong>: {props.char.species.length}</p>
-            <p><strong>Created</strong>: {props.char.created}</p>
-            <p><strong>Modified</strong>: {props.char.edited}</p> 
         </div>
     )
 }
