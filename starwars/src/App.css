@@ -1,8 +1,34 @@
-.App {
-  text-align: center;
-}
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px rgb(3, 220, 248);
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  margin: 20px auto;
 }
+
+h2 {
+  font-size: 3.2rem;
+  margin: 5px auto;
+}
+
 /* write your parent styles in here for your App.js */
+
+.App {
+  width: 80%;
+  height: fit-content;
+  padding: 20px;
+  padding-bottom: 45px;
+  margin: 50px auto;
+  border: 10px solid rgb(252, 252, 252);
+  border-radius: 50%;
+  background-color: rgba(185, 47, 47, 0.404);
+  display: flex;
+  flex-direction: column;
+}
+
+.App div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
