@@ -9,7 +9,9 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      searchedChars: []
+      searchedChars: [],
+      currentPage: 1,
+      charsPerPage: 4
     };
   }
 

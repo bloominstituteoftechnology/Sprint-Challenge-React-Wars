@@ -7,6 +7,10 @@
 
 .HeaderContainer{
   border: 5px solid yellow;
+  /* background-image: url('./galactic-resize.jpg');
+  background-position: center;
+  background-repeat: no-repeat; */
+
 }
 
 .Header {
