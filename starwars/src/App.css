@@ -4,5 +4,80 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 4rem;
 }
+
+.charContainer {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.characters {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.characters:hover {
+  cursor: pointer;
+}
+
+.container {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.keys {
+  width: 48%;
+  font-size: 2rem;
+}
+
+.values {
+  width: 48%;
+  font-size: 2rem;
+}
+
+.theKeys {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.theValues {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.previous {
+  background-color: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.previous:hover {
+  cursor: pointer;
+}
+
+.next {
+  background-color: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.next:hover {
+  cursor: pointer;
+}
+/* 
 /* write your parent styles in here for your App.js */
