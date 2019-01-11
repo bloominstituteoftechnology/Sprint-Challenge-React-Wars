@@ -7,7 +7,8 @@ function Card(props) {
             <p>Birth Year: {props.character.birth_year}</p>
             <p>Gender: {props.character.gender}</p>
             <p>Height: {props.character.height}</p>
-            <p></p>
+            <p>Starships: {props.character.starships}</p>
+            <p>Vehicles: {props.character.vehicles}</p>
         </div>
     )
 }

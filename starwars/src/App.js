@@ -33,11 +33,10 @@ class App extends Component {
   };
 
   render() {
-    const starwarsChars = this.state.starwarsChars;
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CardList />
+        <CardList character={this.id} />
       </div>
     );
   }

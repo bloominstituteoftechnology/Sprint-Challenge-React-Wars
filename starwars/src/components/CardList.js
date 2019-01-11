@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from "../App";
+
+import Card from './Card'
 
 function CardList(props) {
     return (
