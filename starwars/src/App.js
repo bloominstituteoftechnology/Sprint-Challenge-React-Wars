@@ -55,8 +55,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div className="HeaderContainer">
         <h1 className="Header">WANTED</h1>
         <h2 className="Subtitle">For Crimes Against The Empire</h2>
+        </div>
         <SearchChars 
         inputText={this.state.searchText}
         charSearchChange={this.searchCharacters}

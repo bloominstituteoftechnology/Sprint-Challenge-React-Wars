@@ -2,9 +2,22 @@
   text-align: center;
   max-width: 1220px;
   margin: 0 auto;
+  font-family: 'Star Jedi', Phosphate
 }
+
+.HeaderContainer{
+  border: 5px solid yellow;
+}
+
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  font-size: 58px;
+  text-shadow: 1px 1px 5px yellow;
+  margin-bottom: 0;
+}
+
+.Subtitle{
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 /* write your parent styles in here for your App.js */
