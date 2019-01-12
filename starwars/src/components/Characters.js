@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import App from '../App';
 
-class Characters extends React.Component {
+class Characters extends Component {
     constructor() {
         super();
-        this.state = {};
+        this.state = {
+
+        };
     }
+   
     render() {
         return (
             <div className="Characters">
