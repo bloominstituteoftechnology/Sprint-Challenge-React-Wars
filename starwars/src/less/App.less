@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.App {
+  text-align: center;
+}
+
+.Header {
+  margin: 1rem;
+  color: #443e3e;
+  text-shadow: 1px 1px 5px rgba(#fff, 0.5);
+}
+.card {
+  flex: 0 1 auto;
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+  &__body {
+    ul {
+      text-align: left;
+      list-style-type: none;
+    }
+    li {
+      padding: 0.25rem 0;
+    }
+  }
+}
+.pill {
+  margin: 0 1.5rem;
+  position: relative;
+  user-select: none;
+  padding: 0.25rem;
+  background: white;
+  display: inline-block;
+  &:before {
+    background: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -12px;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  &:after {
+    background: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -12px;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+.nextPrev {
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.disabled {
+  color: rgba(85, 85, 85, 0.514);
+  cursor: default;
+}
