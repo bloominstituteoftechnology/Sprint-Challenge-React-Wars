@@ -3,7 +3,22 @@ import { Card, CardContent, Typography, withStyles } from '@material-ui/core'
 
 const styles = {
  card: {
-  maxWidth: 225
+  maxWidth: 225,
+  marginBottom: 25,
+  border: '2px solid green',
+  opacity: '0.8',
+  background: 'DarkGray',
+ },
+ div: {
+  display: 'flex',
+  flexDirection: 'column',
+  flexWrap: 'wrap',
+  justifyContent: 'space-evenly',
+  border: '2px solid red'
+ },
+ typography : {
+  color: 'black',
+  fontSize: 16
  }
 }
 class StarWarsCard extends React.Component {
@@ -20,13 +35,13 @@ class StarWarsCard extends React.Component {
   }
 
   return(
-   <div>
+   // <div className={classes.div} >
     <Card className={classes.card}>
      <CardContent>
-      <Typography>
+      <Typography className={classes.typography}>
        {this.props.character.name}
       </Typography>
-      <Typography>
+      <Typography className={classes.typography}>
        {this.props.character.gender}
       </Typography>
       <Typography>
@@ -35,7 +50,7 @@ class StarWarsCard extends React.Component {
       {JSON.stringify(`${this.props.character}`, replacer)}
      </CardContent>
     </Card>
-   </div>
+   // </div>
   )
  }
 }

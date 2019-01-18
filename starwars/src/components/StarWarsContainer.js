@@ -4,11 +4,21 @@ import { Paper, withStyles } from "@material-ui/core" ;
 
 const styles = {
  paper: {
-  maxWidth: 450 
+  maxWidth: '90%',
+  minWidth: 600,
+  height: '100%',
+  // display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap'
  },
- div : {
+ div: {
   display: 'flex',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  border: '2px solid black',
+  height: '100%'
+ },
+ card: {
+  marginBottom: 20
  }
 }
 class StarWarsContainer extends React.Component {
