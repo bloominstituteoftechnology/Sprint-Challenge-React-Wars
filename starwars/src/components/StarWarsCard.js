@@ -1,16 +1,5 @@
 import React from "react"
-
-// class StarWarsCard extends React.Component{
-
-
-//     render(){
-//         return(
-//             <div>
-//             <p>{this.props.starwarsChars}</p>
-//             </div>
-//         )
-//     }
-// }
+import { Card, CardContent, Typography } from '@material-ui/core'
 
 class StarWarsCard extends React.Component {
     render(){
@@ -27,11 +16,16 @@ class StarWarsCard extends React.Component {
               
     return(
         <div>
-        <div>{this.props.character.gender}
-        {this.props.character.name}
-        {this.props.character.height}
-        {JSON.stringify(`${this.props.character}`, replacer)}
-        </div>
+         <Card>
+          <CardContent>
+           <Typography>
+            {this.props.character.name}
+           </Typography>
+           {this.props.character.gender}
+           {this.props.character.height}
+           {JSON.stringify(`${this.props.character}`, replacer)}
+          </CardContent>
+         </Card>
         </div>
     )
 // }

@@ -1,15 +1,18 @@
 import React from "react"
 import StarWarsCard from "./StarWarsCard";
+import { Paper } from "@material-ui/core" ;
 
 class StarWarsContainer extends React.Component {
     render(){
 // const StarWarsContainer = (props) => {
     return (
         <div>
+         <Paper>
           {this.props.starwarsChars.map(character =>
             <StarWarsCard
               character={character}
               key={character.name} />)}
+            </Paper>
         </div>
       );
 // }
