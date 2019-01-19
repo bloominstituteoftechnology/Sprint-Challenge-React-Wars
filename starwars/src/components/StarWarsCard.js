@@ -45,7 +45,10 @@ class StarWarsCard extends React.Component {
        {this.props.character.gender}
       </Typography>
       <Typography className={classes.typography}>
-       {this.props.character.height}
+       Height {this.props.character.height} {' '}
+       Mass: {this.props.character.mass} {' '}
+       Eye Color: {this.props.character.eye_color} {' '}
+       Last Edited: {this.props.character.edited}
       </Typography>
       {JSON.stringify(`${this.props.character}`, replacer)}
      </CardContent>
