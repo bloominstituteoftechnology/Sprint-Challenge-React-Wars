@@ -4,17 +4,18 @@ import { Paper, withStyles } from "@material-ui/core" ;
 
 const styles = {
  paper: {
-  maxWidth: '90%',
-  minWidth: 600,
+  maxWidth: '50%',
+  // minWidth: 600,
   height: '100%',
   // display: 'flex',
   flexDirection: 'row',
-  flexWrap: 'wrap'
+  flexWrap: 'wrap',
+  justifyContent: 'space-evenly',
+  background: 'DarkGray'
  },
  div: {
   display: 'flex',
   justifyContent: 'center',
-  border: '2px solid black',
   height: '100%'
  },
  card: {

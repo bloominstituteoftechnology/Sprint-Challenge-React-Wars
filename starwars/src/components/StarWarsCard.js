@@ -18,7 +18,7 @@ const styles = {
  },
  typography : {
   color: 'black',
-  fontSize: 16
+  fontSize: 20
  }
 }
 class StarWarsCard extends React.Component {
@@ -38,13 +38,13 @@ class StarWarsCard extends React.Component {
    // <div className={classes.div} >
     <Card className={classes.card}>
      <CardContent>
-      <Typography className={classes.typography}>
+      <Typography className={classes.typography} variant='h2'gutterBottom>
        {this.props.character.name}
       </Typography>
       <Typography className={classes.typography}>
        {this.props.character.gender}
       </Typography>
-      <Typography>
+      <Typography className={classes.typography}>
        {this.props.character.height}
       </Typography>
       {JSON.stringify(`${this.props.character}`, replacer)}
