@@ -11,7 +11,7 @@ const styles = {
  },
  div: {
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   border: '2px solid red'

@@ -5,9 +5,9 @@ import { Paper, withStyles } from "@material-ui/core" ;
 const styles = {
  paper: {
   maxWidth: '50%',
-  // minWidth: 600,
+  minWidth: 600,
   height: '100%',
-  // display: 'flex',
+  display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
