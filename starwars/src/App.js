@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWarsContainer style={{border: '2px solid red'}} starwarsChars={this.state.starwarsChars}/>
+        <StarWarsContainer starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }

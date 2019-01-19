@@ -4,14 +4,15 @@ import { Paper, withStyles } from "@material-ui/core" ;
 
 const styles = {
  paper: {
-  maxWidth: '50%',
-  minWidth: 600,
+  maxWidth: '73%',
+  // minWidth: 400,
   height: '100%',
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
-  background: 'DarkGray'
+  background: 'DarkGray',
+  // border: "2px solid black"
  },
  div: {
   display: 'flex',
