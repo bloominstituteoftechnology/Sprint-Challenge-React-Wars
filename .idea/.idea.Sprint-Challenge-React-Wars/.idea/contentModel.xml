@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\seanw\.Rider2018.2\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\seanw\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\seanw\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Sprint-Challenge-React-Wars.1510837655.00" t="ExcludeRecursive" />
-    <e p="C:\Users\seanw\Desktop\Lambda School\6_React\Sprint-Challenge-React-Wars" t="IncludeFlat" />
+    <e p="C:\Users\seanw\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\seanw\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Sprint-Challenge-React-Wars.1510837655.00" t="ExcludeRecursive" />
+    <e p="C:\Users\seanw\Desktop\Lambda School\6_React\Sprint-Challenge-React-Wars" t="IncludeFlat">
+      <e p="starwars\node_modules" t="ExcludeRecursive">
+        <e p="react" t="IncludeRecursive" />
+        <e p="react-dom" t="IncludeRecursive" />
+        <e p="react-scripts" t="IncludeRecursive" />
+      </e>
+    </e>
   </component>
 </project>

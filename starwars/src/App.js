@@ -1,13 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import CharacterNameButton from './components/CharacterNameButton';
+import Character from "./components/Character";
 
 class App extends Component {
     constructor() {
         super();
         this.state = {
             starwarsChars: []
-            //this.keys = Object.keys(starwarsChars[0]);
         };
     }
 
@@ -24,22 +23,20 @@ class App extends Component {
                 return res.json();
             })
             .then(data => {
-                this.setState({starwarsChars: data.results});
+                this.setState({starwarsChars: data.results });
             })
             .catch(err => {
                 throw new Error(err);
             });
     };
-
-    // tester = () => {
-    //     console.log('testing')
-    // };
+    
+    
 
     render() {
         return (
             <div className="App">
                 <h1 className="Header">React Wars</h1>
-                <CharacterNameButton data={this.state.starwarsChars} onClick={this.tester}/>
+                <Character data={this.state.starwarsChars}/>
             </div>
         );
     }
