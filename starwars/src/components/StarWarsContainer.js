@@ -4,7 +4,7 @@ import { Paper, withStyles } from "@material-ui/core" ;
 
 const styles = {
  paper: {
-  maxWidth: '73%',
+  maxWidth: '100%',
   // minWidth: 400,
   height: '100%',
   display: 'flex',
