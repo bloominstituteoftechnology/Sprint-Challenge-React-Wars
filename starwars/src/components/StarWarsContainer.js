@@ -1,18 +1,16 @@
 import React from "react"
 import StarWarsCard from "./StarWarsCard";
-import { Paper, withStyles } from "@material-ui/core" ;
+import { Paper, withStyles, AppBar, Toolbar, Typography } from "@material-ui/core" ;
 
 const styles = {
  paper: {
   maxWidth: '100%',
-  // minWidth: 400,
   height: '100%',
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   background: 'DarkGray',
-  // border: "2px solid black"
  },
  div: {
   display: 'flex',
@@ -21,6 +19,9 @@ const styles = {
  },
  card: {
   marginBottom: 20
+ },
+ header: {
+  fontSize: 20
  }
 }
 class StarWarsContainer extends React.Component {
@@ -28,11 +29,22 @@ class StarWarsContainer extends React.Component {
      const { classes } = this.props
     return (
         <div className={classes.div}>
+        <AppBar>
+        <Toolbar>
+         <Typography className={classes.header}>
+          React Wars
+         </Typography>
+        </Toolbar>
+           </AppBar>
          <Paper className={classes.paper}>
           {this.props.starwarsChars.map(character =>
+          
+          
             <StarWarsCard
               character={character}
-              key={character.name} />)}
+              key={character.name} />
+              
+              )}
             </Paper>
         </div>
       );
