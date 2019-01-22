@@ -1,0 +1,4 @@
+[build]
+base = "starwars/"
+publish = "starwars/build/"
+command = "yarn build"
