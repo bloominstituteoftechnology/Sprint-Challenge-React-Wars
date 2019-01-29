@@ -1,16 +1,43 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Cards from './components/Cards';
+import Navigation from './components/Navigation/Navigation'
+
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentPage: 'https://swapi.co/api/people',
+      nextPage: '',
+      previousPage: ''
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters(this.state.currentPage);
+  }
+
+  nextPage = () => {
+    if (this.state.nextPage) {
+    this.setState({ 
+      currentPage: this.state.nextPage
+    })
+
+    this.getCharacters(this.state.nextPage);
+    } 
+  }
+
+  previousPage = () => {
+    if (this.state.previousPage) {
+    this.setState({ 
+      currentPage: this.state.previousPage
+    })
+
+    this.getCharacters(this.state.previousPage);
+    }
   }
 
   getCharacters = URL => {
@@ -21,9 +48,15 @@ class App extends Component {
       .then(res => {
         return res.json();
       })
+
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results, 
+          nextPage: data.next, 
+          previousPage: data.previous
+        });
       })
+
       .catch(err => {
         throw new Error(err);
       });
@@ -32,7 +65,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Navigation
+          next={this.nextPage}
+          previous={this.previousPage}
+          />
+
+        <Cards 
+          characters={this.state.starwarsChars}
+          />
       </div>
     );
   }

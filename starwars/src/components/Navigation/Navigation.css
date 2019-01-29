@@ -1,0 +1,55 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.navigation .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #34282C;
+    margin: 0 20px;
+    transition: color .2s, background-color .1s;
+    cursor: pointer;
+}
+
+.navigation .button:hover {
+background-color: black;
+color: lightblue;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .navigation h1 {
+        order: 0;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .navigation .button {
+        order: 1;
+        position: fixed; 
+        width: 40px;
+        top: 33%;
+    }
+
+    .navigation .button.next {
+        right: 4%;
+    }
+
+    .navigation .button.previous {
+        left: 4%;
+    }
+}
