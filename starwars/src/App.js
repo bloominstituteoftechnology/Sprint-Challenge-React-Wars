@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Characters from './components/Characters.js'
+import CurrentCharacter from './components/CurrentCharacter'
+import CharacterList from './components/CharacterList'
 
 class App extends Component {
   constructor() {
@@ -28,13 +31,37 @@ class App extends Component {
         throw new Error(err);
       });
   };
+        
+  showCurrentCharacter = name => {
+    const currentCharacter = this.state.starwarsChars.find(char => char.name === name);
+    console.log(currentCharacter);
+    this.setState({ currentCharacter: currentCharacter });
+  }
+
+  returnToList = event => {
+    this.setState({currentCharacter: null})
+  }
+
 
   render() {
+    if (this.state.currentCharacter === null) {
     return (
+        
+      
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterList chars={this.state.starwarsChars} showCurrentCharacter={this.showCurrentCharacter}/>
       </div>
     );
+  } else {
+    return (
+      <div className="container">
+      < CharacterList 
+      chars={this.state.starwarsChars} 
+      currentChar={this.state.currentChar} />
+      </div>
+    )
+  }
   }
 }
 
