@@ -3,6 +3,28 @@
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 50px #c1a283;
 }
 /* write your parent styles in here for your App.js */
+
+.App {
+  text-align: center;
+  font-size: 1.6rem;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #ffffff;
+}
+/* write your parent styles in here for your App.js */
+
+h1 {
+  font-size: 5rem;
+  font-family: Star Jedi Hollow;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
