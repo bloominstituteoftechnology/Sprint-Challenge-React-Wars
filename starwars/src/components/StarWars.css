@@ -1,0 +1,57 @@
+ .character-card {
+     width: 20%;
+     background-color: black;
+     margin-bottom: 25px;
+     border-radius: 5px;
+     border: 10px solid black;
+ }
+
+ .character-card .card-container {
+    background-color: whitesmoke;
+     padding: 25px 15px;
+     border-radius: 3px;
+ }
+
+ .character-card h2 {
+     height: 4rem;
+ }
+
+ .character-card p {
+    font-size: 14px;
+ }
+
+ .character-card .appearance {
+     margin-top: 10px;
+ }
+
+ .character-card .appearance hr {
+    margin-bottom: 10px;
+}
+
+.character-card .meta hr {
+    margin: 10px 0;
+}
+
+.character-card .meta p {
+    font-size: 12px;
+    color: lightslategray;
+}
+
+@media only screen and (max-width: 1000px) {
+.character-card {
+    width: 25%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .character-card {
+        width: 33%;
+    }
+    }
+
+@media only screen and (max-width: 600px) {
+    .character-card {
+        max-width: 250px;
+        width: 55%;
+    }
+    }
