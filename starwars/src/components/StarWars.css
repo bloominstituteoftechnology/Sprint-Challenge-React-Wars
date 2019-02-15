@@ -23,3 +23,7 @@
 .profile h2 {
     font-weight: bold;
 }
+
+.details li {
+    padding: 5px;
+}

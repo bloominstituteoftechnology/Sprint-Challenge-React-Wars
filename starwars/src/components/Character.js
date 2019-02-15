@@ -9,10 +9,10 @@ const Character = props => {
             </div>
             <div className="details">
                 <ul>
-                    <li>Birth Year: {props.character.birth_year}</li>
-                    <li>Eye Color: {props.character.eye_color}</li>
-                    <li>Hair Color: {props.character.hair_color}</li>
-                    <li>Skin Color: {props.character.skin_color}</li>
+                    <li><strong>Birth Year</strong>: {props.character.birth_year}</li>
+                    <li><strong>Eye Color</strong>: {props.character.eye_color}</li>
+                    <li><strong>Hair Color</strong>: {props.character.hair_color}</li>
+                    <li><strong>Skin Color</strong>: {props.character.skin_color}</li>
                     {/* <ul>Ships: {props.character.starships.map(ship => {
                         return <li>{ship}</li>
                     })}</ul> */}

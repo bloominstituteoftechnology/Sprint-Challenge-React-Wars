@@ -18,3 +18,7 @@
   padding: 20px 0;
 }
 /* write your parent styles in here for your App.js */
+
+strong {
+  font-weight: bold;
+}
