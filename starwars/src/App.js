@@ -7,12 +7,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      page: 'https://swapi.co/api/people',
+      starwarsChars: [],
+      next: ''
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters(this.state.page);
+  }
+
+  nextPage = () => {
+    const nextPage = this.state.next;
+    this.setState({
+      page: nextPage
+    })
+    this.componentDidMount()
   }
 
   getCharacters = URL => {
@@ -24,7 +34,9 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data)
+        this.setState({ starwarsChars: data.results })
+        this.setState({ next: data.next })
       })
       .catch(err => {
         throw new Error(err);
@@ -36,6 +48,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <StarWarsCharacters characters={this.state.starwarsChars}/>
+        <button onClick={this.nextPage}>Next Page</button>
       </div>
     );
   }
