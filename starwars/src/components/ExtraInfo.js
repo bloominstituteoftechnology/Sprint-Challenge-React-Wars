@@ -3,8 +3,10 @@ import Species from "./Species";
 import StarsShips from "./StarsShips"
 import Vehicules from "./Vehicules"
 const ExtraInfo = (props)=>{
+
+  
     return (
-        <div>
+        <div >
                 {props.list.edited}
               <h4>Hair color : {props.list.hair_color}</h4>
               <h4>height : {props.list.height}</h4>

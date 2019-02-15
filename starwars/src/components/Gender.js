@@ -4,7 +4,7 @@ const Gender = (props)=>{
     return (
 
         <div>
-               <h4>{props.list.gender}</h4>
+              Gender : <h4>{props.list.gender}</h4>
         </div>
     )
 }
