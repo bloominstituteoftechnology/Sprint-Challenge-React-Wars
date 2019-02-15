@@ -1,0 +1,15 @@
+.Styling {
+    background: yellow;
+    border: 3px solid blue;
+    font-weight: bold;
+    height: 100px;
+    width: 1500px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align:center;
+  }
+
+  button {
+      margin: 10px;
+  }
+  
