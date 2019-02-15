@@ -1,28 +1,23 @@
 import React from "react"
-
-const ExtraInfo=(props)=>{
+import Species from "./Species";
+import StarsShips from "./StarsShips"
+const ExtraInfo = (props)=>{
     return (
-            <div>
-                  {/*<p>{props.list.hair_color}</p>
-                    <p>{props.list.height}</p>
-                    <p>{props.list.homeworld}</p>
-                    <p>{props.list.mass}</p>
-                    <p>{props.list.name}</p>
-                    <p>{props.list.skin_color}</p>
-                    <div>
-                            {props.list.species.map(specy=>{
-                                return <h6>{specy}</h6>
-                            })}
-                    </div>
-                    <div>
-                            {props.list.starships.map(starship=>{
-                                return <h6>{starship}</h6>
-                            })}
-                    </div>
-                        */}
-            </div>
+        <div>
+                {props.list.edited}
+              <h4>Hair color : {props.list.hair_color}</h4>
+              <h4>height : {props.list.height}</h4>
+              <h4>Homeworld : {props.list.homeworld}</h4>
+              <h4>Mass : {props.list.mass}</h4>
+              <h4>Name : {props.list.name}</h4>
+              <h4>Skin Color : {props.list.skin_color}</h4>
+              <Species key={new Date() } species={props.list.species} />
+              <StarsShips key={new Date() } starships={props.list.starships} />
+              <h4>url : {props.list.url} </h4>
 
+              
+        </div>
     )
 }
 
-export default ExtraInfo
+export default ExtraInfo;
