@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import DisplayChar from './components/characters';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
     };
@@ -22,17 +23,24 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
-      });
+      })
   };
+
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className='container'>
+        <DisplayChar
+        starwarsChars={this.state.starwarsChars}
+        />
+        </div>
       </div>
     );
   }
