@@ -1,6 +1,7 @@
 import React from "react"
 import Species from "./Species";
 import StarsShips from "./StarsShips"
+import Vehicules from "./Vehicules"
 const ExtraInfo = (props)=>{
     return (
         <div>
@@ -14,6 +15,7 @@ const ExtraInfo = (props)=>{
               <Species key={new Date() } species={props.list.species} />
               <StarsShips key={new Date() } starships={props.list.starships} />
               <h4>url : {props.list.url} </h4>
+              <Vehicules key={new Date()} vehicles={props.list.vehicles} />
 
               
         </div>
