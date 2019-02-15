@@ -1,0 +1,25 @@
+.Character {
+  background-color: #9c6262;
+  width: 24%;
+  border-radius: 5px;
+  margin: 10px;
+  color: thistle;
+}
+.Character p {
+  color: white;
+  font-size: 20px;
+}
+.Character h3 {
+  color: wheat;
+}
+
+.Character h2 {
+  font-size: 30px;
+  color: black;
+  text-decoration: underline;
+}
+.Characters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
