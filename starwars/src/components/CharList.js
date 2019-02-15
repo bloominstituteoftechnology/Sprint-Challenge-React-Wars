@@ -7,7 +7,12 @@ const CharList = props => {
       <div className="list-background" />
       <div className="list-foreground">
         {props.starwarsChars.map((char, index) => (
-          <Char listNumber={index + 1} char={char} key={char.created} />
+          <Char
+            listNumber={index + 1}
+            char={char}
+            key={char.created}
+            moreInfo={props.moreInfo}
+          />
         ))}
       </div>
     </div>

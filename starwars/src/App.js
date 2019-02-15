@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import CharList from "./components/CharList";
-import "./css/main.css";
 import CharCard from "./components/CharCard";
+import "./css/main.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      moreCharInfo: {}
     };
   }
 
@@ -31,13 +32,25 @@ class App extends Component {
       });
   };
 
+  moreInfo = e => {
+    e.preventDefault();
+    console.log("test");
+    const index = this.state.starwarsChars.findIndex(
+      char => char.created === e.target.created
+    );
+    this.setState({ moreCharInfo: this.state.starwarsChars[index] });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className="characters">
-          <CharList starwarsChars={this.state.starwarsChars} />
-          <CharCard starwarsChars={this.state.starwarsChars} />
+          <CharList
+            starwarsChars={this.state.starwarsChars}
+            moreInfo={this.moreInfo}
+          />
+          <CharCard moreCharInfo={this.state.moreCharInfo} />
         </div>
       </div>
     );

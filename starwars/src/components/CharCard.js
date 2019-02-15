@@ -4,7 +4,7 @@ const CharCard = props => {
   return (
     <div className="char-card">
       <div className="card-background" />
-      <div className="card-foreground">{props.char}</div>
+      {/* <div className="card-foreground">{props.moreCharInfo.name}</div> */}
     </div>
   );
 };
