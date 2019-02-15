@@ -13,7 +13,7 @@ const StarWarsCharsBio = props => {
                 <p> <strong>Birth year:</strong> {props.characteristic.birth_year}</p>
                 <p> <strong>Gender:</strong> {props.characteristic.gender}</p>
                 <p> <strong>Hair color:</strong> {props.characteristic.hair_color}</p>
-                <p> <strong>Birth year:</strong> {props.characteristic.eye_color}</p>
+                <p> <strong>Eye color:</strong> {props.characteristic.eye_color}</p>
 
                 {/* {props.characteristic.films.map((eachFilm, index) => (
           <CharFilms key={index} filmArray={eachFilm} />
