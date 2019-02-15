@@ -8,7 +8,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      // imgUrls: ['https://i.redd.it/2qmnb44sbt7z.jpg', ]
+      imgUrls: [{img: 'https://i.redd.it/2qmnb44sbt7z.jpg'}, {img: '2'}, {img: '3'}, {img: '4'}, {img: '5'}, 
+      {img: '6'}, {img: '7'}, {img: '8'}, {img: '9'}, {img: '10'}]
     };
   }
 
@@ -40,6 +41,9 @@ class App extends Component {
         {this.state.starwarsChars.map((eachStarChar, index) => (
           <StarWarsCharsBio key={index} characteristic={eachStarChar} />
         ))}
+        {/* {this.state.imgUrls.map((eachImgUrl, index) => (
+          <StarWarsCharsBio characteristic={eachImgUrl} />
+        ))} */}
         </div>
       </div>
     );
