@@ -1,0 +1,21 @@
+.App {
+    /* border: 1px solid red; */
+    width: 250px;
+    margin: 0 auto;
+}
+
+.char-container {
+    border: 2px solid firebrick;
+    margin-bottom: 30px;
+    background: tan;
+    opacity: 0.7;;
+}
+
+.name {
+    color: crimson;
+}
+
+.charcs {
+    color: saddlebrown;
+    font-weight: bold;
+}
