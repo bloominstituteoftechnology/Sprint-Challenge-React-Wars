@@ -129,18 +129,55 @@ table {
 body {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
   font-family: sans-serif;
   background-image: url("../sw-bg.jpg");
   background-size: cover;
 }
 .App {
-  text-align: center;
+  text-align: left;
 }
 .Header {
+  font-size: 10vw;
+  margin: 20px 0 15px 15px;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.char-list {
+  width: 45%;
+  position: relative;
+  margin-left: 20px;
+}
+.char-list:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  opacity: 0.75;
+  border-radius: 0 10px 10px 0;
+}
+.foreground {
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .char {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.75vw;
+  line-height: 1.4;
+}
+.char-text {
   display: flex;
 }

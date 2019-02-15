@@ -3,8 +3,11 @@ import React from "react";
 function Char(props) {
   return (
     <div className="char">
-      <p className="list-number">{props.listNumber}.&nbsp;</p>
-      <p>{props.char.name}</p>
+      <div className="char-text">
+        <p className="list-number">{props.listNumber}.&nbsp;</p>
+        <p className="char-name">{props.char.name}</p>
+      </div>
+      {/* <button>More Info</button> */}
     </div>
   );
 }

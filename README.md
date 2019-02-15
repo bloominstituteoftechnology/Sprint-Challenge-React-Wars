@@ -24,13 +24,31 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [ ] What is React JS and what problems does it try to solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+  ReactJS is a library for JavaScript created by software engineers at FaceBook. It's primary purpose is to aid in programming and maintaining web apps that must process and render large amounts of data coming from numerous disparate sources. Facebook itself must manage content feeds, comments, likes, links, status updates, advertisements, and tracking lots of user behavior (apparently). Changes in any of these components could come from numerous places on the web, different versions of the Facebook phone app, Instagram, Facebook itself, etc. ReactJS provides a framework and a paradigm for managing all that data and rendering just the changes, which it tracks by diffing the browser's DOM and its own virtual DOM (a process called reconciliation). Like any library, React cannot actually make JavaScript do anything that JavaScript cannot do on its own. Practically speaking, however, React helps so much with speed and efficiency that some apps and pages would be very, very difficult to write and maintain without it.
 
 - [ ] What does it mean to _think_ in react?
 
-- [ ] Describe state.
+  As mentioned above, React is designed to intake and display lots of data very quickly. React provides the tools for developers to make this happen, but the developer must employ those tools properly–that is, React developers must learn to think in React. Roughly, thinking in React means:
+
+  - Reusable components: A component with an input field and a button might be reusable, but it’s not as versatile as an input field component and a button component separately.
+
+  - Single-task components: A component with one job is more likely to be reusable, and it’s also easier to comprehend. Good readability makes a component easier to debug, as well as to pass on to other developers.
+
+  - Minimize state: Identify the minimum (but complete) set of mutable data you’ll need to for your project to run. Don’t store data in state that could be calculated from the state you’re already storing. For example, if you stored an array of grocery items in state that included each item’s type (fruit, vegetable, grain) and color (red, green, brown), you would not want to store a boolean tracking whether each item was a red fruit or not—that can be be calculated from the data already stored.
+
+  - Lift up state: At a minimum, state should be stored on a component that is high enough in the component hierarchy that all components that need props delivered from that state are a descendant of the stateful component. I’m not sure if there are downsides to lifting state even higher, but it might be best to store state on or close to the highest level component (App.js in our projects so far).
+
+  - Data flows downward from state by way of props: With state stored appropriately high up, props can open channels so data can now flow downward to any descendant components that need it. See answers 3 and 4 for more detail.
+
+* [ ] Describe state.
+
+  State is a vanilla JS object that is defined within a React Class component. The state object is special in react, however, because it allows data to be stored and changed over time (though not by mutation, as I understand it...). Any update to state triggers the render() method (found on all class components in React) which displays any visible state-changes to the user. Importantly, state-changes are batched and are asynchronous, so care must be taken when attempting to make calculations based on data stored in state. Finally, React apps are easier to write, debug, and manage when state is “lifted up” to the appropriate level. To use an example based on a React tutorial, let’s say we’re writing a chess game in React. Each piece and the board itself could all be components (along with a display and a few other components). One might think to store a piece’s board position within the piece itself, but in React this is short-sighted. If each piece’s position is stored in the board component, then the board component will be ready to evaluate when one piece captures another, and when the game is over. The pieces can have their position passed down to them as props.
 
 - [ ] Describe props.
+
+  Like state, props are each a vanilla JS object. In the React paradigm, they are the means by which information flows downward from a stateful component to its (generally) stateless children. While state can be updated with changes in data, props are entirely immutable. In the chess example above, each piece’s position is passed down from the stateful board component to each stateless piece—but there’s no good reason to stop with position. The color and type of each piece could also be passed down, as well an “in-play” boolean property that is set to false when a piece is captured. The props I’ve described so far have been simple values, but functions can also be passed down (and they must be if one is to use React at its full strength). For example, a movement function could be passed down to each piece so that the board component’s state is properly updated when a piece is moved. The fact that props are immutable helps us understand what data is being changed, and where. The piece does not and cannot update its own position. Rather, it carries a function (delivered by props through every component between the piece component and the board component) that updates the board’s state regarding that piece’s position. This state change then triggers a render which will send the new piece position to the piece (again, through props) and React will redraw only the pixels needed to show the piece travel to its new position.
 
 ## Project Set Up
 
@@ -43,15 +61,15 @@ Follow these steps to set up and work on your project:
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+      Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 Please note:
 
