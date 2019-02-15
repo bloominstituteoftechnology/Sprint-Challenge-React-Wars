@@ -1,8 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 .App {
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 3%;
+  font-family: sans-serif;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0;
 }
 /* write your parent styles in here for your App.js */
