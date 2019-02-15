@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// import './components/StarWarsCharsBio';
+import StarWarsCharsBio from './components/StarWarsCharsBio';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      // imgUrls: ['https://i.redd.it/2qmnb44sbt7z.jpg', ]
     };
   }
 
@@ -37,11 +38,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <div className='characterList'>
         {this.state.starwarsChars.map((eachStarChar, index) => (
-          // <StarWarsCharsBio key={index} characteristic={eachStarChar} />
-          <div>
-            {eachStarChar.name}
-          </div>
-
+          <StarWarsCharsBio key={index} characteristic={eachStarChar} />
         ))}
         </div>
       </div>
