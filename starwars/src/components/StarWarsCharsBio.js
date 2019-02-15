@@ -1,5 +1,7 @@
 import React from 'react';
 
+// import CharsImages from './CharsImages';
+
 // import CharFilms from './CharFilms';
 
 const StarWarsCharsBio = props => {
@@ -12,8 +14,17 @@ const StarWarsCharsBio = props => {
                 <p> <strong>Gender:</strong> {props.characteristic.gender}</p>
                 <p> <strong>Hair color:</strong> {props.characteristic.hair_color}</p>
                 <p> <strong>Birth year:</strong> {props.characteristic.eye_color}</p>
+
                 {/* {props.characteristic.films.map((eachFilm, index) => (
           <CharFilms key={index} filmArray={eachFilm} />
+        ))} */}
+
+        {/* {this.state.imgUrls.map((eachImgUrl, index) => (
+          <StarWarsCharsBio characteristic={eachImgUrl} />
+        ))} */}
+
+        {/* {props.imgUrlFromApp.map((eachImgUrl, index) => (
+            <CharsImages key={index} images={eachImgUrl} />
         ))} */}
                 
             </div>

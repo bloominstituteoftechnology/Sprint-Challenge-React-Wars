@@ -39,7 +39,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         <div className='characterList'>
         {this.state.starwarsChars.map((eachStarChar, index) => (
-          <StarWarsCharsBio key={index} characteristic={eachStarChar} />
+          <StarWarsCharsBio key={index} characteristic={eachStarChar} imgUrlFromApp={this.state.imgUrls}/>
         ))}
         {/* {this.state.imgUrls.map((eachImgUrl, index) => (
           <StarWarsCharsBio characteristic={eachImgUrl} />

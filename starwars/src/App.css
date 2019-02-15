@@ -36,3 +36,11 @@
   width: 100px;
   border-radius: 100%;
 }
+
+
+.charInfo h2 {
+  background: maroon;
+  color: #ffe1e6;
+  padding: 10px;
+  border-radius: 50px;
+}
