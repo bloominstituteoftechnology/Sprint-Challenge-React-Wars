@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// import './components/StarWarsCharsBio';
+
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +35,15 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className='characterList'>
+        {this.state.starwarsChars.map((eachStarChar, index) => (
+          // <StarWarsCharsBio key={index} characteristic={eachStarChar} />
+          <div>
+            {eachStarChar.name}
+          </div>
+
+        ))}
+        </div>
       </div>
     );
   }
