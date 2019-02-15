@@ -1,0 +1,68 @@
+.hide{
+    display: none;
+}
+
+.char-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.card, .splash{
+    background: #ADD5E58d;
+    border-radius: 5px;
+    padding: 0 15px 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 25px #EBD2447d, -3px -3px 25px #EBD2447d;
+    
+}
+
+
+
+.img-container{
+    height: 320px;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.splash{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+button{
+    background: #ADD5E58d;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px #EBD2447d, -3px -3px 25px #EBD2447d;
+}
+.card:hover, .splash:hover, button:hover{
+    background: #ADD5E5;
+    box-shadow: 7px 7px 29px #EBD244, -7px -7px 29px #EBD244;
+}
+.darkside{
+    background: #ff00008d;
+}
+
+.darkside:hover{
+    background: #ff0000;
+}
