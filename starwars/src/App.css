@@ -1,7 +1,14 @@
 .App {
+  
   text-align: center;
+  position: absolute;
+  
 }
 .Header {
+  /* border: 2px solid red; */
+  /* margin: 0 auto; */
+  width: 100%;
+  margin-left: 50%;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
