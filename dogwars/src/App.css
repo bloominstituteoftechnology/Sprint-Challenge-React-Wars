@@ -59,3 +59,25 @@
   border-radius: 10px;
   color: #fff;
 }
+
+.dogWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dogNext {
+  background-color: #443e3e;
+  width: 200px;
+  height: 65px;
+  border: 2px solid  #eee;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.dogPic {
+  width: 75%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
