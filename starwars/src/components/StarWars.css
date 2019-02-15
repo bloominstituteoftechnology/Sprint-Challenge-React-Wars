@@ -18,6 +18,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
     outline: 3px solid transparent;
     justify-content: space-between;
+    border-radius: 5px;
+}
+
+.character:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
 
 .profile h2 {
