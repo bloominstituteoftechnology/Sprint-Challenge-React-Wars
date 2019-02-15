@@ -144,6 +144,10 @@ body {
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.characters {
+  display: flex;
+  justify-content: space-between;
+}
 .char-list {
   width: 45%;
   position: relative;
@@ -154,7 +158,35 @@ body {
   display: block;
   padding-top: 100%;
 }
-.background {
+.list-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  opacity: 0.75;
+  border-radius: 10px 0 0 10px;
+}
+.list-foreground {
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.char-card {
+  width: 45%;
+  position: relative;
+  margin-right: 20px;
+}
+.char-card:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.card-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +196,7 @@ body {
   opacity: 0.75;
   border-radius: 0 10px 10px 0;
 }
-.foreground {
+.card-foreground {
   height: 90%;
   width: 90%;
   padding: 10px;
