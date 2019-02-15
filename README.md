@@ -24,17 +24,29 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a user-interface library that is used by many developers to build web applications - particularly web applications that have lots of changes to data - this can be from user interaction or input or 3p updates to the database where the application pulls from.
 
-- [ ] What does it mean to _think_ in react?
+Developed and supported by the facebook web team, React JS has become popular because of its component-focused approach to building web application - in short, this means that the base unit of a React application is a component. The beauty of the component-focused approach is that each component "owns" its own part of the DOM. 
 
+Components re-render when the state of the component changes via React's virtual DOM and a process called reconciliation which is a diffing process where React compares two React DOM elements, keeps the nodes that have not been changed and only updates the changed attributes. This diffing process makes things extremely efficient and takes a lot of work off the actual DOM because the shallow merging is done by React's engine before the DOM is re-rendered.
 
-- [ ] Describe state.
+Components are also extremely useful because of their reusability. Modern web application teams frequently work with designers to establish component libraries. Creating components reduces the cost of onboarding new engineers and the cost of frequent decision-making related to behavior of components, etc. For all developers, this is means that they have a set of go-to UI paradigms they can plug-and-play as the application expands and that there is one source of truth to consider if there are missing components or components that need to be updated.
 
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+Thinking in React means that a developer needs to consider why React JS was developed - to develop and scale data-rich and UI-intensive web applications. The benefits of React, as described above, include reusability, efficiency, and general scalability through the use of components. 
 
+Keeping in mind that we are always going to be component-focused in React, a developer will consider things very seriously the single-responsibility principle which states that web components should be really good at doing its one job. Another key consideration of thinking in React will then be thinking through which components need to hold its own state and which components will be stateless - simply put, how is data going to be flowing through the application and which components will be consistently be reacting to user interaction. 
+
+It should follow that a React project should have many components that do their respective jobs really will and can be compiled (like Lego blocks) into a larger structure. 
+
+- [x] Describe state.
+State was described in our Training Kit as the heart of an application. I think that is a great, but potentially confusing analogy. State is indeed a central repository of data that we want a component to hold onto and "pump" to other stateless components. An extremely important characteristic of state is that when it changes, our React app will re-render. In this way, our components that have access to the state in some manner (will be described below in discussion of props) will be able to "react" to changes to the state of the application.
+
+- [x] Describe props.
+Using the analogy of the circulatory system, props would then be like the arteries that carry blood (the data) from state to another component. Props is an object that will allow state-carrying components to pass data to other components. Something really important remember is that data flows top-down typically in this bottom and then responses will go bottom-up back to the state when a component triggers some change in state. 
 
 ## Project Set Up
 
