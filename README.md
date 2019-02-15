@@ -26,20 +26,20 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-* React is a library for creating interactive UIs. It uses components, DOM manipulation 
+- React is a library for creating interactive UIs. It uses components, DOM manipulation
 
 - [x] What does it mean to _think_ in react?
 
-* "to think" in any programming language, framework, library, etc is to leverage its strong points and patterns to accomplish your goals. Thinking in React requires you break the UI into well encapsulated components, you would generally then build a static version of your application using props, then add interactivity.
-* * [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+- "to think" in any programming language, framework, library, etc is to leverage its strong points and patterns to accomplish your goals. Thinking in React requires you break the UI into well encapsulated components, you would generally then build a static version of your application using props, then add interactivity.
+- -  [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 - [x] Describe state.
 
-* State is managed inside a component. State cannot be changed by a parent component. 
+- State is managed inside a component. State cannot be changed by a parent component.
 
 - [x] Describe props.
 
-* Properties (props is a dumb abbreviation) are objects that get passed to the component, and are immutable from the perspective of the component. Can be modified by its parent.
+- Properties (props is a dumb abbreviation) are objects that get passed to the component, and are immutable from the perspective of the component. Can be modified by its parent.
 
 ## Project Set Up
 
@@ -58,7 +58,7 @@ Follow these steps for completing your project.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's  Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
 - [ ] PM then will count the HW as done by  merging the branch back into master.
 
