@@ -24,13 +24,22 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+* React is a library for creating interactive UIs. It uses components, DOM manipulation 
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+* "to think" in any programming language, framework, library, etc is to leverage its strong points and patterns to accomplish your goals. Thinking in React requires you break the UI into well encapsulated components, you would generally then build a static version of your application using props, then add interactivity.
+* * [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
+- [x] Describe state.
+
+* State is managed inside a component. State cannot be changed by a parent component. 
+
+- [x] Describe props.
+
+* Properties (props is a dumb abbreviation) are objects that get passed to the component, and are immutable from the perspective of the component. Can be modified by its parent.
 
 ## Project Set Up
 
