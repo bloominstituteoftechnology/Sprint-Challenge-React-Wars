@@ -34,11 +34,12 @@ class App extends Component {
 
   moreInfo = e => {
     e.preventDefault();
-    console.log("test");
-    const index = this.state.starwarsChars.findIndex(
-      char => char.created === e.target.created
-    );
-    this.setState({ moreCharInfo: this.state.starwarsChars[index] });
+    // sets to Luke for now
+    this.setState({ moreCharInfo: this.state.starwarsChars[0] });
+    // const index = this.state.starwarsChars.findIndex(
+    //   char => char.created === e.target.created
+    // );
+    // this.setState({ moreCharInfo: this.state.starwarsChars[index] });
   };
 
   render() {
