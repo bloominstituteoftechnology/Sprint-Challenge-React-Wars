@@ -1,8 +1,101 @@
 .App {
   text-align: center;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 36px;
 }
 /* write your parent styles in here for your App.js */
+
+.prev-next-btns {
+  background-color: #DDD;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.prev-next-btns:hover {
+  background-color: black;
+  color: white;
+}
+
+.no-page-div-style {
+  width: 30%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+}
+
+.top-btn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.6); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 25px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.top-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+
+/* Animations */
+
+.appear {
+  -webkit-animation-name: appear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: appear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+
+/* Standard syntax */
+@keyframes appear-anim {
+  from {font-size: 1px; height: 1px;}
+  to {font-size: 16px; height: auto;}
+}
+
+.disappear {
+  -webkit-animation-name: disappear-anim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: disappear-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
+}
+
+/* Standard syntax */
+@keyframes disappear-anim {
+  from {font-size: 16px; height: auto;}
+  to {font-size: 1px; height: 1px;}
+}
