@@ -1,5 +1,4 @@
 import React from "react";
-import "./Char.css";
 
 function Char(props) {
   return (
