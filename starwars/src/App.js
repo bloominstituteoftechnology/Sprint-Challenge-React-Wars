@@ -1,19 +1,23 @@
-import React, { Component } from 'react';
-import './App.css';
-import CardContainer from './components/CardComponents/CardContainer.js'
+import React, { Component } from "react";
+import "./App.css";
+import CardContainer from "./components/CardComponents/CardContainer.js";
+import SearchForCharacter from "./components/CardComponents/SearchForCharacter";
+import { getPreviousPage, getNextPage } from "./paginationFunctions";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       starwarsChars: [],
-      nextPage: '',
-      previousPage: '',
+      nextPage: "",
+      previousPage: "",
+      searchInput: "",
+      singleCharacter: '',
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people/");
   }
 
   getCharacters = URL => {
@@ -25,39 +29,61 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log(data)
-        this.setState({ starwarsChars: data.results, nextPage: data.next, previousPage: data.previous});
+        console.log(data);
+        this.setState({
+          starwarsChars: data.results,
+          nextPage: data.next,
+          previousPage: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  changeHandler = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
-  getNextPage = () => {
-    if(this.state.nextPage === null) {
-      this.getCharacters("https://swapi.co/api/people/")
-    }
-    if(this.state.nextPage !== null)
-    this.getCharacters(this.state.nextPage)
+  getSingleCharacter = (e) => {
+    e.preventDefault()
+    fetch(`https://swapi.co/api/people/?search=${this.state.searchInput}`)
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      this.setState({singleCharacter: data.results[0]})
+    })
+    .catch(err => {
+      throw new Error(err);
+    });
   }
-
-  getPreviousPage = () => {
-    if(this.state.previousPage === null) {
-      this.getCharacters("https://swapi.co/api/people/?page=9")
-    }
-    if(this.state.previousPage !== null)
-    this.getCharacters(this.state.previousPage)
-  }
-
 
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <button onClick={this.getPreviousPage}>Previous Page</button>
-        <button onClick={this.getNextPage}>Next Page</button>
-        <CardContainer swData={this.state.starwarsChars}/>
+        <SearchForCharacter
+          searchInput={this.state.searchInput}
+          changeHandler={this.changeHandler}
+          getSingleCharacter={this.getSingleCharacter}
+          singleCharacter={this.state.singleCharacter}
+        />
+        <br />
+        <br />
+        <button
+          onClick={() =>
+            getPreviousPage(this.state.previousPage, this.getCharacters)
+          }
+        >
+          Previous Page
+        </button>
+        <button
+          onClick={() => getNextPage(this.state.nextPage, this.getCharacters)}
+        >
+          Next Page
+        </button>
+        <CardContainer swData={this.state.starwarsChars} />
       </div>
     );
   }
