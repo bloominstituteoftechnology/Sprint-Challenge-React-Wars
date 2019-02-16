@@ -52,7 +52,7 @@ class App extends Component {
       return res.json()
     })
     .then(data => {
-      this.setState({singleCharacter: data.results[0]})
+      this.setState({singleCharacter: data.results[0], searchInput: ''})
     })
     .catch(err => {
       throw new Error(err);
