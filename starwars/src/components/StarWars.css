@@ -1,0 +1,13 @@
+html {
+  background: rgb(73, 23, 73);
+}
+
+.starwars {
+  width: 60%;
+  margin: 0 auto;
+  background: lightgray;
+  border: solid rgb(177, 157, 177);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

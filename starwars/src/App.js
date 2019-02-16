@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import StarWarsList from "./components/starwarslist.js";
+import StarWars from "./components/starwars.js";
 
 class App extends Component {
   constructor() {
@@ -10,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -33,9 +35,18 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+        <StarWarsList characters={this.state.starwarsChars} />
       </div>
     );
   }
 }
 
 export default App;
+// <ToDoForm
+//   // toggleItem = {this.toggleItem}
+//   clearCompleted={this.clearCompleted}
+//   addToDo={this.addToDo}
+//   name={this.state.name}
+//   handleChanges={this.handleChanges}
+// />
