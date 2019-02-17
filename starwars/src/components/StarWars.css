@@ -1,0 +1,43 @@
+.container {
+    text-align: center; 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-content: flex-start; 
+    width: 35%; 
+    border: 2px solid rgb(179, 55, 24);
+    border-radius: 20%; 
+    background: #0a0600;
+    color: rgb(255, 169, 136);
+    letter-spacing: 1.3px;  
+    margin: 30px; 
+    padding: 15px 0px; 
+    font-weight: 700; 
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.container:hover{
+    color: rgb(255, 83, 40); 
+    font-weight: 700;
+    transition: 1.4s;
+    filter: invert(100%); 
+    border: 5px solid teal; 
+}
+
+div{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.character-name{
+    font-weight: bold; 
+    text-decoration: underline; 
+    font-size: 27px; 
+    color: rgb(179, 55, 24); 
+    text-shadow: 1px 1px 3px #fff;
+}
+
+.Header{
+    font-size:45px; 
+}
