@@ -1,7 +1,7 @@
-import React from "react";
-import './StartWars.css';
+import React from 'react';
+import './StarWars.css';
 
-function Character(props) {
+function Character(props){
     return (
         <div>
             <h3>{props.char.name}</h3>
