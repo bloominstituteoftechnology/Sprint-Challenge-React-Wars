@@ -1,11 +1,13 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
-
+> React is a UI Libary it is not a framework. It gives a developer tools to create components  within an application.  React allows a developer to scale their application software larger.  When having to deal with multiple peices of a site React will allow us to use a vast libary to make each part of the site a bit more controlled and easier to manage.
+> Some of the answers I have read so far have been that it provides a smother experiance for users. It make it easier to scale applications, and it shorten the code after compiling which makes it faster to run. I find that react lets a developer break down different pieces of the application and which make the software more focused in those areas. It easier to find and fix issues when they arise.
 1.  What does it mean to _think_ in react?
-
+> When you say _think_ in react it how we determine if we are building the component. You begin to section your app up based on how you know it needs to be a component. Components allow us to make it easier for us to break down an application. So a rule of thumb is teh Single responsibility principle. That principle states that if every class or module should have power over a single part of functionality provided to the application.
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-
+> We know that Class componets are almost always statefull components. Even if state is not always used. Class componenets allow for optimize performance with lifecycle hooks. Where as Functional/Presentational maybe great for testing and allows you to not have to use this and only use props. It great for simple javascript codeing.
 1.  Describe state.
-
+> State to me is what determines what the app can do. It allows you to update and mutate it. However you never want to mutate state directly. We can change the state of the application by using props to pass the data to different methods or other components. Which alow React to magically change or update the state of the application.
 1.  Describe props.
+> Props can be short for properties. Props can not change their simply just away to pass the data around thats been handed to them from state. Basically Props is like a input, you input the data it accepts it and then process the data and outputs it in some magical code called JSX.

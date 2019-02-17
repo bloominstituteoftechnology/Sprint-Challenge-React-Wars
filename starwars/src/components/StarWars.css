@@ -1,0 +1,107 @@
+.card-container {
+    display: inline;
+    perspective: 700;
+}
+
+
+.card-content {
+    display: inline-block;
+    border: 1px solid rgba(51, 51, 51, 0.13);
+    background: linear-gradient( to bottom, rgba(208, 230, 173, 0.664), rgba(255, 68, 0, .789));
+    width: 300px;
+    height: 350px;
+    padding: 1px 1px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 1px 1px 20px 1px #333;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card-content:hover {
+    background-color: rgba(255, 255, 255, 0.699);
+    transform: rotateY(180deg);
+}
+
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    backface-visibility: hidden;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-left: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    top: 160px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+.R2 {
+  margin:60px;
+  right:22px;
+  width: 50px;
+  height:50px;
+}
+img {
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius:10px;
+    right: 1px;
+    width: 120%;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prev {
+    position: fixed;
+    top: 20%;
+    right: 85%;
+    cursor: pointer;
+    font-size: 100px;
+    height: 35px;
+    width: 100px;
+    color: #333;
+}
+
+.next {
+    position: fixed;
+    text-align: center;
+    top: 20%;
+    left: 85%;
+    cursor: pointer;
+    font-size: 100px;
+    height: 35px;
+    width: 100px;
+    color: #333;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+    color: black;
+}
