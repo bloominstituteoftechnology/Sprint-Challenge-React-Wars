@@ -1,0 +1,12 @@
+.characterlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character {
+    width: 45%;
+    height: 40vh;
+    border: 1px solid black;
+    margin: 5% auto;
+    
+}
