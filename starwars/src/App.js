@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import StarWarsList from './components/StarWarsList';
+
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      style: "no-card"
     };
   }
+ 
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people');
@@ -29,10 +33,29 @@ class App extends Component {
       });
   };
 
+  showCharCard = index => {
+    console.log("card launched", index);
+    this.setState({
+      starwarsChars: this.state.starwarsChars.map((char, idx)=> {
+        if(index !== idx){
+          return char;
+        }else{
+          return {
+            ...char,
+            style: char.style === "character-card" ?  "no-card" : "character-card"
+          }
+        }
+      })
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className="header-title">
+            <h1 className="title">React Wars</h1>
+        </div>
+        <StarWarsList characters={this.state.starwarsChars} card={this.showCharCard} classStyle={this.state.style}/>
       </div>
     );
   }
