@@ -1,0 +1,54 @@
+.character-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+.character-card {
+    flex: 0 1 20%;
+    min-width: 300px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.589);
+    padding: 5px;
+    margin: 10px 0px;
+    box-shadow: 5px 10px rgb(0, 0, 0);
+}
+
+h2 {
+    font-family: "montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-family: "montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 0px 5px;
+}
+
+strong {
+    font-size: 14px;
+    font-family: "montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.previous-button, .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.767);
+    font-size: 14px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
