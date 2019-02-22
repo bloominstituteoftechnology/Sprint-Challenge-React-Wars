@@ -1,0 +1,25 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    color: purple;
+    border: 2px solid chocolate;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 5px;
+    background-image: URL('https://github.com/marcthuo/Sprint-Challenge-React-Wars/blob/master/starwars/src/sw-bg.jpg?raw=true');
+    opacity: 0.7;
+}
+
+.card:hover {
+    background: transparent; 
+    color: blue;
+}    
+
+
+
+
