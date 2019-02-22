@@ -1,0 +1,21 @@
+.character-profile {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    background-
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+h2 {
+    width: 100%;
+    border: 1px solid slateblue;
+}
+
+.info-box {
+    width: 100%;
+    height: auto;
+    border: 1px solid cadetblue;
+}
