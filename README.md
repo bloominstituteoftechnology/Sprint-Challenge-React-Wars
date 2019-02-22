@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+[React JS is a library of components all designed to make it easier to create multiple user interfaces in a repeatable way as the components can be reused, i.e. each othe projects we have worked on have the same basic code with the only differences being the individual projects' related classNames and titles]
+
 - [ ] What does it mean to _think_ in react?
+
+[to think in react simply mmeans that while working with react we need to be able to be reactive, meaning that if we need the code to do something in particular we need to set something up to make that change happen, the core component is the same but it can change into something new at any point. For instance, in much the same way we can see an event and think about it in one way something new can be added to our view changiing our thought of it but the event is still the same event we started with it's just that it different and new in some way. ]
 
 - [ ] Describe state.
 
+[When making components in React we need a way to change things if we need to at any point thats where state comes in. States are attached to the component to alter what we need it to do at any given time. If for example a pizza is the component then the state would be the size of the pizza dough we can change it and depending on that it will either be thin or thick crust but still a pizza]
+
 - [ ] Describe props.
+
+[props stands for properties, these properties can be passed around from one component to another giving the component that attribute that can't change into something else. Think of it like components as the pizza and props are the toppings added to it to change the look and taste but its still essentially a pizza and the toppings can't change from one thing to another.]
 
 ## Project Set Up
 
