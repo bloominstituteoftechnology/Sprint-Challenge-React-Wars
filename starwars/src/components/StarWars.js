@@ -12,7 +12,7 @@ const StarWars = props => {
                 <p>Birth Year: {char.birth_year}</p>
                 <p>Gender: {char.gender}</p>
                 <p>Homeworld: {char.homeworld}</p>
-            
+                <p></p>
             </div>
         
         )})}
