@@ -1,5 +1,56 @@
+// import React, { Component } from 'react';
+// import './App.css';
+// import Character from './components/Character';
+
+
+
+// class App extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       starwarsChars: []
+//     };
+//   }
+
+//   componentDidMount() {
+//     this.getFilms('https://swapi.co/api/people/');
+//   }
+
+//   getFilms = URL => {
+//     fetch(URL)
+//       .then(res => {
+//         return res.json();
+//       })
+//       .then(data => {
+//         this.setState({ starwarsChars: data.results });
+//       })
+//       .catch(err => {
+//         throw new Error(err);
+//       });
+//   };
+
+//   render() {
+//     return (
+//       <div className="App">
+//         <h1 className="Header">React Wars</h1>
+//         <Character starwars={this.state.starwarsChars}/>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+
+
+
+
+
+
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/Character'
+
 
 class App extends Component {
   constructor() {
@@ -33,6 +84,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Character starwars={this.state.starwarsChars} />
+
       </div>
     );
   }

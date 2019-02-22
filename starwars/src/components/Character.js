@@ -5,11 +5,11 @@ const Character = props => {
     <div className='character-card'>
     {props.starwars.map(movie => {
       return (
-        <div className='card' key={movie.title}>
-        <h2>{movie.title}</h2>
-        <p>Director: {movie.title}</p>
-        <p>Producer: {movie.title}</p>
-        <p>Release Date: {movie.release_date}</p>
+        <div className='card' key={movie.name}>
+        <h2>{movie.name}</h2>
+        <p>Gender: {movie.gender}</p>
+        {/* <p>Eye Color: {movie.eye_color}</p> */}
+        <p>Birth Year: {movie.birth_year}</p>
 
         </div>
       )
@@ -19,4 +19,4 @@ const Character = props => {
   );
 }
 
-export default Character
+export default Character;
