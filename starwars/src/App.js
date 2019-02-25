@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarCards from './components/StarCards';
 
+
+const characterImages = {"Luke Skywalker": window.location.origin + '/lukepic.jpeg' }
 class App extends Component {
   constructor() {
     super();
@@ -33,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarCards className="StarCards" characters={this.state.starwarsChars} images={characterImages}/>
       </div>
     );
   }
