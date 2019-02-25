@@ -3,7 +3,7 @@ import CharCard from './CharCard.js';
 
 const CharList = props => {
     return(
-        <div className = "char-list">
+    <div className = "char-list">
         {props.starwarsChars.map( char => 
           <CharCard
         name={char.name} 
@@ -14,8 +14,8 @@ const CharList = props => {
            eyeColor={char.eye_color} 
            birthYear={char.birth_year} 
            gender={char.gender}
-           />)}            
-        </div>
+        />)}            
+    </div>
     );
 };
 

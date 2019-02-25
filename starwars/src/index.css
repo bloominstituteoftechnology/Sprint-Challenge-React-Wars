@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./small.jpeg');
-  background-size: cover;
+  background-image: url('./sw-bg.jpg');
+  background-attachment: fixed;
+  background-position: bottom center;
 
 }

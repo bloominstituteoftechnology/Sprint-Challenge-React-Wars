@@ -1,20 +1,72 @@
-.App {
-  text-align: center;
-}
+
 .Header {
-  color:yellow;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
   font-family: 'Audiowide', cursive;
   font-size: 40px;
+  text-align: center;
 }
 /* write your parent styles in here for your App.js */
 
 .char-card {
- font-family: 'Space Mono', monospace;
-  font-weight: bold;
-  font-size:30px;
-  color:yellow;
-  border: 2px solid yellow;
+  border: 3px dotted black;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 5px;
+  margin: 10px auto;
+  background-color: yellow;
+  display: flex;
+  flex-direction:column; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-weight: normal; 
+  font-style: normal;
+  font-size: 25px;
+  font-family: 'Space Mono', monospace;
+  color: black;
+  cursor: pointer;
 }
+
+
+
+.clickme {
+font-size: 12px;
+}
+
+.char-card .title h3{
+  text-align: center;
+  margin: 10px 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  font-family: 'Space Mono', monospace;
+  font-size:30px;
+  color:black;
+  font-weight: bolder; 
+  margin-left: 15px;
+}
+
+.info-inner{
+  font-size: 20px;
+  font-family: 'Space Mono', monospace;
+  color: black;
+  height:0px;
+  width: 76%;
+  margin: 10px auto 20px;
+  overflow:hidden;
+  border-radius: 15px;
+  text-align: center;
+ 
+}
+
+.info-inner h6 {
+  margin: 3px;
+  padding: 0px;
+}
+
+.open {
+  height:200px;
+}
+
+
 
 
