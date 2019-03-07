@@ -1,0 +1,22 @@
+.card {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.card h2 {
+    width: 100%;
+    text-align: left;
+}
+.stats {
+    display: flex;
+}
+.vitals {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.bottom {
+    width: 50%;
+}
