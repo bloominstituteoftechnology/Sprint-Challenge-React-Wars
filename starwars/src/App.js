@@ -9,7 +9,8 @@ class App extends Component {
     super();
     this.state = {
       starwarsChars: [],
-      starwarsChar: ""
+      nextURL: '',
+      previousURL: ''
     };
   }
 
@@ -26,20 +27,27 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, nextURL:data.next, previousURL: data.previous });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
-  
+  handlePrevious = () => {
+    this.getCharacters(this.state.previousURL);
+  }
+
+  handleNext = () => {
+    this.getCharacters(this.state.previousURL);
+  }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Button />       
+        <Button prev={this.handlePrevious} next={this.handleNext}/>       
         <Cards stats={this.state}/>
 
       </div>
