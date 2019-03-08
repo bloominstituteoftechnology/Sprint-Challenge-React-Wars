@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.character-cards {
+    margin: 10px 10px;
+    background-color: #F5F5F5;
+    width: 300px;
+    height: 250px;
+    border-radius: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline-start: 0px;
+} 
