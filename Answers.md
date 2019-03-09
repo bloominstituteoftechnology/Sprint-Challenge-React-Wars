@@ -1,6 +1,7 @@
 # Answers
 
 1.  What is React JS and what problems does it try and solve?
+    React.js is a means to overcome performance-expensive DOM operations by using a virtial DOM to streamline 
 
 1.  What does it mean to _think_ in react?
 
