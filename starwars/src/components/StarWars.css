@@ -1,0 +1,22 @@
+.characterBox {
+    height: auto;
+    width: 30%;
+    margin: 5px auto;
+    border: 1px solid lightgray;
+    background-color: rgba(211, 211, 211, 0.7);
+    border-radius: 5px;
+    
+}
+
+.characterBox h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.characterBox p {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+}
