@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      viewName: 'default'
     };
   }
 
@@ -40,7 +41,10 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <ViewSettings />
-        <CharList />
+        <CharList 
+          characterList={this.state.starwarsChars}
+          viewName={this.state.viewName}
+        />
 
       </div>
     );
