@@ -1,0 +1,42 @@
+.ListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.CharacterList{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.WantedProps{
+    background-image: url('./starwars/src/starbird-centersize.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input{
+    margin-right: 1%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    width: 20%;
+    height: 24px;
+    padding-left: .5%;
+    font-size: 14px;
+}
+
+button{
+    margin-top: 2%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+}
+
+.WantedProps{
+    align-content: center;
+}
+
+.Name{
+    font-family: 'Star Jedi', CenturyGothic;
+    text-shadow: 1px 1px 5px yellow;
+}
