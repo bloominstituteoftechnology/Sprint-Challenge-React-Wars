@@ -6,17 +6,13 @@ import Character from './character'
 function CharList(props) {
     const { characterList , viewName}  = props;
     return (
-        <div className='characterList-container'>
-            <p>Hello from inside charList</p>
-            
+        <div className='characterList container'>
             {characterList.map(item => (
                 <Character 
                     item={item}
                     viewName={viewName}
                 />
             ))}
-
-            
         </div>
         
     )

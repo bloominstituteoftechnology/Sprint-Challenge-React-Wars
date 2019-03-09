@@ -5,10 +5,10 @@ function FilteredData(props) {
     const { eye_color, gender, height, mass }  = props;
     return (
         <div className='filteredData container'>
-            <p>{eye_color}</p>
-            <p>{gender}</p>
-            <p>{height}</p>
-            <p>{mass}</p>
+            <p>Eye Color: {eye_color}</p>
+            <p>Gender: {gender}</p>
+            <p>Height: {height}</p>
+            <p>Mass: {mass}</p>
         </div>
     )
 }
