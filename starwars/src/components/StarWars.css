@@ -1,0 +1,13 @@
+
+.viewSettings {
+    border: 1px solid black;
+    color: white
+}
+
+.characterList-container {
+    border: 1px dashed black;
+}
+
+.character {
+    border: 1px dashed yellow;
+}
