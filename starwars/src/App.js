@@ -41,7 +41,6 @@ class App extends Component {
       <div className="App">
         <div className="header container">
           <h1>React Wars</h1>
-          <ViewSettings />
         </div>
         <div className='content container'>
           <CharList 

@@ -6,7 +6,7 @@ function GeneralData(props) {
     return (
         <div className='generalData container'>
             <h2>{item.name}</h2>
-            <p>Birth Year: {item.birth_year}</p>
+            <div>Birth Year: {item.birth_year}</div>
             {/* <p>Species: {item.species}</p> */}
         </div>
     )

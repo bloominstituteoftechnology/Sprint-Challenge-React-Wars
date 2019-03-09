@@ -4,18 +4,18 @@
 .characterList,
 .character,
 .generalData, .filteredData {
-    display: flex; 
-    
+    display: flex;  
+}
+
+.App {
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     flex-direction: column;
     justify-content: center; /* CHANGE TO BE 100% of viewport */
     width: 25%;
-}
-
-.content {
-
 }
 
 .characterList {
@@ -25,7 +25,15 @@
 
 .character {
     flex-direction: column;
-    width: 33%; 
+    width: 33%;
+}
+
+.character:hover {
+    background: grey;
+}
+
+.character:hover .filteredData {
+    color:white
 }
 
 .generalData, .filteredData {
@@ -33,6 +41,20 @@
 }
     .generalData {
         border: 1px dashed teal;
+        font-family: 'Sirin Stencil', cursive;
+    }
+
+    .filteredData {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        color: rgb(70, 70, 70);
+        font-family: 'Space Mono', monospace;
+    }
+    .filteredData div {
+        width: 50%
     }
 
 

@@ -7,8 +7,6 @@ import FilteredData from './filteredData'
 function Character(props) {
     const { item , viewName}  = props;
 
-    if (viewName === 'default') {
-        
         return (
             <div className='character'>
                 <GeneralData item={item}/>
@@ -20,10 +18,6 @@ function Character(props) {
                 />
             </div>
         )
-    } else if (viewName === 'admin') {
-        
-    }
-
 }
 
 export default Character 
