@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Character from "./components/Character";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -10,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people/");
   }
 
   getCharacters = URL => {
@@ -22,7 +23,12 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log("DATA:", data);
+        /* SORT data.results by name*/
+        const sorted = data.results.sort((charA, charB) =>
+          charA.name > charB.name ? 1 : charB.name > charA.name ? -1 : 0
+        );
+        this.setState({ starwarsChars: sorted });
       })
       .catch(err => {
         throw new Error(err);
@@ -33,6 +39,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="container">
+          {this.state.starwarsChars.map(item => (
+            <Character key={item.name} character={item} />
+          ))}
+        </div>
       </div>
     );
   }
