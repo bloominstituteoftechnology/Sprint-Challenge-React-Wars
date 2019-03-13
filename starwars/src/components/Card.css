@@ -1,0 +1,57 @@
+.starwars-card {
+  list-style-type: none;
+  border: 1px solid grey;
+  margin: 5%;
+  font-size: 10px;
+  width: 32%;
+  word-wrap: break-word;
+  padding: 1%;
+  background: linear-gradient(to right, orange, yellow);
+  box-shadow: 0 19px 38px rgba(0,0,0,.3), 0 19px 38px rgba(0,0,0,.3) ,0 19px 38px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.22);
+
+}
+
+
+/*
+updateChars = (prevOrNext) => {
+  // We only have 9 pages of character info
+  let newPage = this.state.page;
+  if(prevOrNext === 'prev'){
+    newPage - 1 < 1 ? newPage = 9 : newPage--;
+  }
+  else{
+    newPage + 1 > 9 ? newPage = 1 : newPage++;
+  }
+  this.setState({page: newPage});
+}
+
+render() {
+  return (
+    <div className="App">
+      <h1 className="Header">React Wars</h1>
+      <button onClick={this.updateChars('prev')}>previous</button> <button onClick={this.updateChars('next')}>next</button>
+      <CardList charsList={this.state.starwarsChars} />
+    </div>
+  );
+}
+} */
+
+
+/*   <h4>Character Name: {props.charInfo.name}</h4>
+      <p>Species: {props.charInfo.species}</p>
+      <p>Gender: {props.charInfo.gender}</p>
+      <p>Hair Color: {props.charInfo.hair_color}</p>
+      <p>Home World: {props.charInfo.homeworld}</p>
+      <p>Birth Year: {props.charInfo.birth_year}</p>
+      <p>Star Ships: {props.charInfo.starships}</p>
+      <p>Vehicles: {props.charInfo.vehicles}</p>
+      <p>Mass: {props.charInfo.mass}</p>
+      <p>Skin color: {props.charInfo.skin_color}</p>
+      <p>Birth Year: {props.charInfo.birth_year}</p>
+      <p>Films: {props.charInfo.films}</p>
+      <p>Created: {props.charInfo.created}</p>
+      <p>Edited: {props.charInfo.edited}</p>
+      <p>Eye Color: {props.charInfo.eye_color}</p>
+      <p>Height: {props.charInfo.height}</p>
+      <p>URL: {props.charInfo.url}</p>
+*/
