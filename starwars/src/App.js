@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CardDisplay from './components/CardDisplay.js'
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,8 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.getNewCharacters = this.getNewCharacters.bind(this);
   }
 
   componentDidMount() {
@@ -22,17 +25,46 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        let newData = data.results.map((datum) => {
+          let dataCopy = Object.assign({hidden: true}, datum);
+          return dataCopy;
+        });
+        newData[3].hidden = false;
+        this.setState({ 
+          starwarsChars: newData,
+          nextURL: data.next,
+          previousURL: data.previous
+         });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+
+
+ handleClick (event) {
+    let id = event.currentTarget.attributes.id.value;
+    let charArr = this.state.starwarsChars;
+    let newCharArr = charArr.map((char) => {
+      let newChar = Object.assign({}, char);
+      if (newChar.name === id) {
+        newChar.hidden = !newChar.hidden;
+      }
+      return newChar;
+    });
+    this.setState( {starwarsChars: newCharArr});
+  };
+
+  getNewCharacters () {
+    this.getCharacters(this.state.nextURL);
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Meet</h1>
+        <CardDisplay chars={this.state.starwarsChars} handleClick={this.handleClick} getNewCharacters={this.getNewCharacters} />
       </div>
     );
   }
