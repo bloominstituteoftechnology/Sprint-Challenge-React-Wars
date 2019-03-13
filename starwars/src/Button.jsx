@@ -4,8 +4,8 @@ import './starwars.css';
 const Button = (props) => {
     return (
         <div>
-            <button onClick={props.displayCard}>Prev</button>
-            <button onClick={props.displayCard}>Next</button>
+            <button onClick={props.prev}>Prev</button>
+            <button onClick={props.next}>Next</button>
         </div>
     )
 }
