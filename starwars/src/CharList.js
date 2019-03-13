@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardTitle, CardSubtitle, CardBody } from 'reactstrap';
 
+
 const CharList = props => {
     return (
         <div className="character-wrapper">
