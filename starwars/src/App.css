@@ -6,3 +6,31 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cardDisplay{
+border: 1px solid black;
+padding: 5%;
+margin: 10px; 
+background: url("https://i.kinja-img.com/gawker-media/image/upload/s--XmzvrxQF--/c_scale,f_auto,fl_progressive,q_80,w_800/17i2v0if033qdjpg.jpg");
+background-repeat: no-repeat;
+background-size:100% 100%;
+}
+h1 {
+  color: #59f442;
+  margin: 1%;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px #fff;
+}
+ h3 {
+  color: Red;
+  font-size: 1rem;
+ }
