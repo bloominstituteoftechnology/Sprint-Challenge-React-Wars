@@ -1,0 +1,11 @@
+.charSheet {
+  width: 280px;
+  background: solid black;
+  border: 3px solid darkgray;
+}
+
+.list {
+  width: 100%;
+  color: blue;
+}
+
