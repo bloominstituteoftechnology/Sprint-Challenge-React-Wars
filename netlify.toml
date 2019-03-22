@@ -1,7 +1,6 @@
 
 [Settings]
-ID = 
-"38d048e2-761f-45f5-8622-46e9e5cc610c"
+ID = "38d048e2-761f-45f5-8622-46e9e5cc610c"
 
 
 # Settings in the [build] context are global and are applied to all contexts unless otherwise overridden by more specific contexts.  
