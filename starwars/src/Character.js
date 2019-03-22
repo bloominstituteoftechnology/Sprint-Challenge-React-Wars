@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Character from './CharInfo'
+import CharInfo from './CharInfo'
 
 const Character= props => {
     return (
