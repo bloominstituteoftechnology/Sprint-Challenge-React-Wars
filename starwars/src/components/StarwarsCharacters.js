@@ -1,10 +1,10 @@
 import React from 'react';
-import Characters from './components/Characters';
+import Characters from './Characters';
 
 const lukeSkywalker = {
     name: 'Harry Potter',
     identity: 'The Chosen One',
-}
+};
 
 function StarwarsCharacters() {
     return (

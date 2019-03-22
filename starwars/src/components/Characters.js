@@ -14,3 +14,5 @@ function Characters(props) {
         </div>
     )
 }
+
+export default Characters;
