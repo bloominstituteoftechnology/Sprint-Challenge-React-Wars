@@ -6,3 +6,14 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+ul {
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0; */
+}
+
+li {
+  text-align: left;
+}
