@@ -13,6 +13,11 @@ const CharInfo = props => {
             <p className="CharStats">Gender: {props.characterData.gender}</p>
             <p className="CharStats">Mass: {props.characterData.mass}</p>
             <p className="CharStats"> Skin Color: {props.characterData.skin_color}</p>
+            <p className="CharStats"> Height: {props.characterData.height}</p>
+            <p className="CharStats"> hair Color: {props.characterData.hair_color}</p>
+           
+            
+            
 
             </div>
             </div>
