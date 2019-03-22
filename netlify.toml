@@ -1,0 +1,13 @@
+[Settings]
+ID = "ce030e5b-a54d-4dc0-8222-a48d761ab027"
+
+# Settings in the [build] context are global and are applied to all contexts unless otherwise overridden by more specific contexts.  
+
+[build]
+  # This is the directory to change to before starting a build.
+  base    = "starwars/"
+  # NOTE: This is where we will look for package.json/.nvmrc/etc, not root.
+  # This is the directory that you are publishing from (relative to root of your repo)
+  publish = "starwars/build/"
+  # This will be your default build command
+  command = "yarn build"
