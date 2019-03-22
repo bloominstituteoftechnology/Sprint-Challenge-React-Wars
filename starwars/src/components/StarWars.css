@@ -1,0 +1,38 @@
+.CardList{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.BackSide h2, p{
+  text-align: left;
+}
+
+.BackSide h2{
+  font-size: 1.7rem;
+}
+
+.BackSide p{
+  font-size: 1.1rem;
+}
+
+.BackSide p span{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.Film_Title:hover{
+  background: white;
+}
+
+.Film_Link:hover{
+  color: black;
+}
+
+.Film_Link{
+  text-decoration: none;
+  color: white;
+}
