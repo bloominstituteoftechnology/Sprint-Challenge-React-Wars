@@ -2,7 +2,7 @@ import React from 'react';
 import Characters from './Characters';
 import ListFrom from './ListForm';
 
-const lukeSkywalker = {
+const starwarsChars = {
     name: 'Luke Skywalker',
     identity: 'The Chosen One',
 };
@@ -11,15 +11,27 @@ class StarwarsCharacters extends React.Component {
     constructor() {
         super();
         this.state = {
-            characterList: characters,
+            characterList: starwarsChars,
             name: ''
         };
     }
 
-//     this.setState({
-//         characterList: [...this.state.characterList, newCharacter]
-//     });
-// };
+    updateList = event => {
+        event.preventDefault();
+        const newCharacter = {
+          name: this.state.name,
+          birthYear: this.state.birthYear,
+          gender: this.state.gender,
+          height: this.state.height,
+          mass: this.state.mass
+        };
+
+    this.setState({
+        characterList: [...this.state.characterList, newCharacter]
+    });
+};
+
+
 
     render() {
     return (
