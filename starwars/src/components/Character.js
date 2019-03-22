@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const Card = styled.div`
   border-radius: 0.25rem;
@@ -51,12 +50,3 @@ const Character = props => {
 };
 
 export default Character;
-
-Character.propTypes = {
-  name: PropTypes.string,
-  height: PropTypes.number,
-  mass: PropTypes.number,
-  hair_color: PropTypes.string,
-  skin_color: PropTypes.string,
-  eye_key: PropTypes.string
-};

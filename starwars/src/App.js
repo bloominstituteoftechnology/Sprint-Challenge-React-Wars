@@ -101,7 +101,6 @@ const Container = styled.div`
 `;
 
 const Grid = styled.div`
-  /* background: #bada55; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
