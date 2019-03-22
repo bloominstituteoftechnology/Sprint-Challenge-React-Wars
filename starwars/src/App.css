@@ -10,7 +10,6 @@
   background: black;
   width:400px;
   border:4px solid slategray;
-  /* border-radius:5px; */
   margin-bottom:20px;
 }
 .App{
@@ -33,11 +32,9 @@ body{
 }
 .miniWrap{
   background:#990000;
-  
   margin:20px;
   padding:30px;
   border-radius:8px;
-  
 }
 .StatStyle{
   display:flex;
