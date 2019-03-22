@@ -1,0 +1,69 @@
+.character-card {
+    width: 25%;
+    height: 200px;
+    overflow: hidden;
+    background: #d6d6d6;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.flipped-true {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 100px;
+}
+.flipped-false {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.character-card span {
+    font-weight: bold;
+}
+.character-card p {
+    margin-bottom: 5px;
+}
+.character-card p:last-of-type {
+    margin-bottom: 0;
+}
+.character-card h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Vertical-left flip animation from http://animista.net */
+
+.flip-vertical-left {
+	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  @keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  
