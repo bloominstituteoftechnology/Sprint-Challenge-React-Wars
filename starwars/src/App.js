@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
+import Character from './components/Character';
+import styled from 'styled-components';
 import './App.css';
 
-class App extends Component {
+const API = 'https://swapi.co/api/people';
+
+export default class extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      page: 1
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    const { page } = this.state;
+    this.getCharacters(page);
   }
 
-  getCharacters = URL => {
+  getCharacters = PAGE => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
-    fetch(URL)
+    fetch(API)
       .then(res => {
         return res.json();
       })
@@ -30,12 +36,37 @@ class App extends Component {
   };
 
   render() {
+    const { starwarsChars, page } = this.state;
+    const { prevPage, nextPage } = this;
+
+    const StarWarsCharacters = () =>
+      starwarsChars.map((char, index) => <Character key={index} {...char} />);
+
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <Container>
+          <h1 className="Header">React Wars</h1>
+          <Grid>
+            <StarWarsCharacters />
+          </Grid>
+        </Container>
       </div>
     );
   }
 }
 
-export default App;
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+`;
+
+const Grid = styled.div`
+  /* background: #bada55; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin: 1rem;
+`;
