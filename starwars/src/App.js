@@ -35,6 +35,40 @@ export default class extends Component {
       });
   };
 
+  nextPage = () => {
+    const { page } = this.state;
+    fetch(`${API}?page=${page + 1}`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ starwarsChars: data.results, page: page + 1 });
+      })
+      .catch(err => {
+        console.log(err);
+        throw new Error(err);
+      });
+  };
+
+  prevPage = () => {
+    const { page } = this.state;
+    if (page !== 1)
+      fetch(`${API}?page=${page - 1}`)
+        .then(res => {
+          return res.json();
+        })
+        .then(data => {
+          this.setState({
+            starwarsChars: data.results,
+            page: page - 1
+          });
+        })
+        .catch(err => {
+          console.log(err);
+          throw new Error(err);
+        });
+  };
+
   render() {
     const { starwarsChars, page } = this.state;
     const { prevPage, nextPage } = this;
@@ -46,6 +80,10 @@ export default class extends Component {
       <div className="App">
         <Container>
           <h1 className="Header">React Wars</h1>
+          <Pagination>
+            {page === 1 ? '' : <button onClick={prevPage}>PREV</button>}
+            <button onClick={nextPage}>NEXT</button>
+          </Pagination>
           <Grid>
             <StarWarsCharacters />
           </Grid>
@@ -69,4 +107,29 @@ const Grid = styled.div`
   gap: 1rem;
   justify-content: space-evenly;
   margin: 1rem;
+`;
+
+const Pagination = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  button,
+  span {
+    background: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    border-style: none;
+  }
+
+  *:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  *:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-right: 1rem;
+  }
 `;
