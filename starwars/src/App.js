@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+// import Card from './Card';
+import Button from './Button';
+import Cards from './Cards';
 
 class App extends Component {
   constructor() {
@@ -22,17 +25,30 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ starwarsChars: data.results, nextURL:data.next, previousURL: data.previous });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  handlePrevious = () => {
+    this.getCharacters(this.state.previousURL);
+  }
+
+  handleNext = () => {
+    this.getCharacters(this.state.nextURL);
+  }
+
   render() {
+    // console.log(this.state)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Button prev={this.handlePrevious} next={this.handleNext}/>       
+        <Cards stats={this.state}/>
+
       </div>
     );
   }
