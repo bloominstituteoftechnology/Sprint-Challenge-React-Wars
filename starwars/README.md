@@ -22,24 +22,20 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 -----------------------------
 
-
- 
- 
- 
- What is React JS and what problems does it try and solve?
-ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps
+What is React JS and what problems does it try and solve?
+ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps.
 
 What does it mean to think in react?
-Thinking in react is the process of how you are encouraged to think about your apps as you are building them, and how each piece is affecting the overall app itself. We break this down by compartmentalizing our components and breaking out content down into smaller manageable pieces.
+Thinking in react mens to think about the application as you are building them. It means also to visualize how to build manageable smaller but useful apps.
 
 Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
-The first major difference between a class component and a functional component is the syntax used to write one or the other. A functional component is basically a JavaScript function, that can take in a prop. Meanwhile, a class component have a property called state, which can be changed in order to render our components.
+The syntax. A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element. A class component requires you to extend from React.Component and create a render function which returns a React element.
 
 Describe state.
-State is the heart of all React components, it contains the data we are using, and it is what determines how our components behave. State is what allows us as developers to create dynamic components, and is very similar to the scope of our functions.
+an object that determines how that component renders & behaves. The heart iof every React component. 
 
 Describe props.
-Props are the component attributes, that get passed between parent and child components in order to render out our application. We use 'this' to access our props throughout our application. Props are then used to change the state of our components, they are what make components reusable
+props are single values or objects containing a set of values that are passed to React Components on creation using a naming convention similar to HTML-tag attributes.
 ---------------------------
 
 
