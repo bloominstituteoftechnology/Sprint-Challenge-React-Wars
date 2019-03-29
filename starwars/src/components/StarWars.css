@@ -12,7 +12,6 @@
     width: 25%;
     margin: auto;
     margin-bottom: 15px;
-    animation: glow 1500ms infinite;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
