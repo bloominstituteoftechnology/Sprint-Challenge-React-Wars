@@ -1,0 +1,27 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.sw-data {
+  width: 800px;
+  height: 500px;
+  background-image: url('http://1.bp.blogspot.com/-IUGU-kusCHQ/U0albNgIcKI/AAAAAAAAAQA/lD2eVdjwLT0/s1600/Vader-Wallpaper-darth-vader-13703202-1024-768%5b1%5d.jpg');
+  background-size: cover;
+  margin: 50px;
+  line-height: 25px;
+  color:darkred;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 1px 1px 5px #fff;
+}
