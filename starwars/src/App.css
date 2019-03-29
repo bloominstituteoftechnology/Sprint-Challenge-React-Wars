@@ -1,8 +1,49 @@
 .App {
+  max-width: 1050px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  /* border: 3px dashed red; */
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin: 25px;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  margin: 50px 50px 150px 50px;
+  padding:50px;
+  background-image: url(https://topbackgroundwallpaper.com/wp-content/uploads/2018/04/star-wars-wallpaper-roll-a9814a5c67d3e973edd091ee41461526-star-wars-wallpaper-city-office.jpg);
+}
+
+.para{
+  border: 3px dashed blue;
+}
+
+p{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  background-color: gray;
+  color: black;
+  font-size: 24px;
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.5
+  
+
+}
+
+
+
+.ship{
+  /* border: 3px dashed red; */
+  flex-direction: row;
+  margin: 50px;
+}
