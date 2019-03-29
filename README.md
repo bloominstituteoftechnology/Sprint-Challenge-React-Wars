@@ -26,12 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+  React is a JS Library for building user interfaces.
+
+  React is founded on the idea that DOM manipulation is an expensive operation and should be minimized. It also recognizes that doing optimizing DOM manipulation by hand will result in a lot of "boilerplate" code, which is error-prone, boring and repetitive. 
+  React solves this by giving the developer a virtual DOM to render to instead of the actual DOM, which it then diffs with the real DOM, and does the minimum number of DOM operations needed to achieve the new state.
+
+  This allows you (at least in theory) to completely forget about DOM performance, and you can simply re-render the entire page all the time, as soon as your state changes. This almost always results in much smaller and simpler code base, which leads to less bugs.
+
 - [ ] What does it mean to _think_ in react?
+
+  How to think about building components and applications.
 
 - [ ] Describe state.
 
+  The heart of every React component is its “state”, an object that determines how that component renders & behaves. In other words, “state” is what allows you to create components that are dynamic and interactive.
+
 - [ ] Describe props.
 
+  A way of passing data from parent to child.
+  
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
