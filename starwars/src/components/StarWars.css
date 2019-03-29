@@ -1,0 +1,45 @@
+.characterList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ 
+ .character {
+    background: rgb(178,102,255);
+    border: 5px solid silver;
+    border-radius: 15px;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 15px;
+    animation: glow 1500ms infinite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ /* @keyframes glow {
+    0% { box-shadow: 0 0 20px green; }
+    50% { box-shadow: 0 0 20px red; }
+    100% { box-shadow: 0 0 20px blue; }
+ } */
+ 
+ .character h1 {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+ }
+ 
+ .characterDetails {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 80%;
+ }
+ 
+ .characterDetails div{
+    margin-bottom: 5px;
+ }
