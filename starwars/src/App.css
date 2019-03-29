@@ -1,8 +1,26 @@
 .App {
-  text-align: center;
+  text-align: lect;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid red;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.App .age {
+  align-content: left;
+  margin-left: 5px;
+
+}
+
+.App .char {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.App .char .name {
+  margin-left: 5px;
 }
 /* write your parent styles in here for your App.js */

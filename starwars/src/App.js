@@ -10,7 +10,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+   console.log(this.getCharacters('https://swapi.co/api/people/'));
+
   }
 
   getCharacters = URL => {
@@ -23,6 +24,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(data.results);
       })
       .catch(err => {
         throw new Error(err);
@@ -33,6 +35,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map(char => (
+          <div className="char" key={char.created}>
+          <h2 className="name">Name: {char.name}</h2>
+          <h3 className="age">Born: `{char.birth_year}`</h3>
+          </div>
+        ))};
       </div>
     );
   }
