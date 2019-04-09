@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import CardList from './components/cardlist'
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       starwarsChars: []
+      
     };
+    
   }
 
   componentDidMount() {
@@ -33,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardList starwars={this.state.starwarsChars} />
       </div>
     );
   }

@@ -1,8 +1,71 @@
 .App {
-  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 4rem;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 40px 0;
 }
 /* write your parent styles in here for your App.js */
+
+.allstarwarscards{
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 600px){
+  .allstarwarscards{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+  }
+}
+
+.starwarCard{
+  margin: 10px 10% 0 10%;
+  padding: 10px 5% 10px 5%;
+  background-color: #fff;
+  opacity: .4;
+  width: 30%;
+}
+
+@media (max-width: 600px){
+  .starwarCard{
+    width: 80%;
+    margin: 10px 10% 0 10%;
+    padding: 10px 5% 10px 5%;
+  }
+}
+
+.starwarCard:hover{
+  opacity: 1;
+  background-image: url(http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/star-wars-new-trilogy-rian-johnson.jpg?itok=zdfNe0BM);
+  color: white;
+}
+
+
+.starwarCard h2{
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+.starwarCard h4{
+  font-size: 1.4rem;
+  padding: 3px 0;
+  text-shadow: 1px 1px 5px #fff;
+}
