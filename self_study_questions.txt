@@ -1,0 +1,21 @@
+1. What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+1 answer: React JS is a JavaScript library for Front End Web user interface built by Facebook Engineers. It solves the problem of DOM (Document Object Model) operations
+slowing down web browser speed. For example, in Twitter, Quora, Facebook, Instagram that have to show newer feeds DOM operations have to go on constantly in the background.
+And when thousands to millions of people are using the apps at once then DOM updates have to be very fast. React solves this problem, without needing to have the page reload.
+It has a virtual DOM, where a page is rendered using React, the state of the DOM tree structure/hierarchy is stored, and when there any updates to be made to the UI, it does 
+a diff on the previous (old) DOM tree with the new one, and updates only the ones that have changed. In this way, lots of DOM operations/refreshes are reduced, improving 
+performance speed. So any app with state that changes a lot will benefit from React. 
+
+2. What does it mean to think in react?
+
+2 answer: Thinking in React mean you will think about how you will build your apps from top down, and how you will structure each part and each component of your app. 
+You approach the data flow by using props to pass data around and lifting state up therefore making each part of your web app reusable. 
+
+3. Describe state.
+
+3 answer: State in React is the heart of React. State determines how a functional component or class component renders and behaves. State allows you to make 
+components that are dynamic and interactive. 
+
+4. Describe props.
+4an. Props is the blood in React. Props are all the different parameters that allow us to customize all the functional components and class components in React. 

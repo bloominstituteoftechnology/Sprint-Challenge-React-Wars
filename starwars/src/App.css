@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -6,3 +8,41 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.characterList {
+  width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between; 
+
+}
+
+
+.eachCharCard {
+  width: 390px;
+  background: #ffe1e6;
+  color: maroon;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid maroon;
+  border-radius: 100%;
+  margin: 15px 25px;
+  padding: 20px;
+}
+
+.eachCharCard img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+
+.charInfo h2 {
+  background: maroon;
+  color: #ffe1e6;
+  padding: 10px;
+  border-radius: 50px;
+}
