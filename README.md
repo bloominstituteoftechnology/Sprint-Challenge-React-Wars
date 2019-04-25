@@ -38,7 +38,7 @@ Follow these steps to set up and work on your project:
 
 - [ ] Create a forked copy of this project.
 - [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
 - [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
@@ -50,13 +50,13 @@ Follow these steps for completing your project.
 Follow these steps for completing your project:
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
+- [ ] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by  merging the branch back into master.
 
 Please note:
 
-- `componentDidMount()` calls an open sourced API inside of `App.js` and saves the results of that API on state.
-- Upon opening the `App.js` file you'll see that there is code written out that looks like this:
+- In `App.js`'s `componentDidMount()` method we call the public Star Wars API, which stores the result in the component state.
+- Here's an excerpt of that logic:
 
 ```js
 componentDidMount() {
@@ -77,14 +77,13 @@ getCharacters = URL => {
 };
 ```
 
-- You don't need to understand what that code is doing fully, other than the fact that it is setting your state with Star Wars Character Data.
+- At a high level, this code is a common way to automatically load data from a remote server into a component.
 - View your `App` component's `state` by opening the Chrome `React Dev Tools` to peek at the data set. At this point you will know what to do from here.
 
 Your data set will look like this:
 
 ![Star Wars state data](starwars_data.png)
 
-- Based on knowledge gained over the past Sprint
 
 ## Minimum Viable Product
 
@@ -92,15 +91,24 @@ Your finished project must include all of the following requirements:
 
 - [ ] A list of Star Wars Characters rendered to the screen.
 - [ ] You must have at least one list element for each star wars character in the data set.
-- [ ] The list elements must all be styled beyond the basic
+- [ ] The list elements must all be minimally styled. (Don't rely on browser default styles.)
 
-In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts to much and does not.
+Required best practices:
+
+- [ ] Consistent naming. Examples: variables, functions, classes, and files.
+- [ ] Consistent Spacing. Examples: line breaks, around arguments and before/after functions.
+- [ ] Consistent Quotation usage.
+- [ ] Spell-check.
+- [ ] Schedule time to review, refine and reassess your work.
+
+
+It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
 
 - [ ] Build a pagination system that will allow you to load the next page of data
 
-- Take note on the data that's coming back from the server call in our `getCharacters`
+- Take note on the data that's coming back from the server call in our `getCharacters()`.
 - console.log() the data coming back from the server.
 - Notice that there are `next` `previous` fields that give you a URL.
 - You have a function that will get chars called `getCharacters` you'll want to just call this function and supply it with the proper fields. You'll need to set this up on state to do this.
