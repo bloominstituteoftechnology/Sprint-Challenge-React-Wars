@@ -10,7 +10,16 @@ return(
        <p>Height:{props.data.height}</p>
        <p>Skin Color:{props.data.skin_color}</p>
        <p>Date of Birth:{props.data.birth_year}</p>
+       <p>Films:{props.data.films}</p>
+       <p>Species:{props.data.species}</p>
+       <p>Vecicles:{props.data.vechicles}</p>
+       <p>Edited:{props.data.edited}</p>
+       <p>Created:{props.data.created}</p>
+       <p>Vecicles:{props.data.starships}</p>
+       <p></p>
        
    </div>
 )
 }
+
+export default Cards;
