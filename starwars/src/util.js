@@ -83,6 +83,8 @@ export const pipe = (...fns) => i => fns.reduce((acc, fn) => fn(acc), i)
 
 export const compose = (...fns) => i => fns.reduceRight((acc, fn) => fn(acc), i)
 
+export const head = xs => xs[0]
+
 
 
 /**
