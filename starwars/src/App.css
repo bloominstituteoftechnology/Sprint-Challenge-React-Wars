@@ -8,3 +8,11 @@
   font-size: 2.5rem;
 }
 /* write your parent styles in here for your App.js */
+.M2-container{
+  width: 80%;
+  /* height: 500px; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid green; */
+}

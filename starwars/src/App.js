@@ -43,7 +43,7 @@ class App extends Component {
         {/* <StarWarChars starwarsChars={this.state.starwarsChars}/> */}
         
         {/* Component Method 2 */}
-        <SWMap starwarsChars={this.state.starwarsChars}/>
+        <section className="M2-container"><SWMap starwarsChars={this.state.starwarsChars}/></section>
       </div>
     );
   }

@@ -1,0 +1,38 @@
+.m2container2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+}
+
+.sw-list-container{
+    width: 20%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+
+.ul-names{
+    width: 100%;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.char-names{
+    font-size: 1rem;
+    color: red;
+    background-color: black;
+    /* border: 1px solid red; */
+}
+
+.char-att{
+    padding: 0 .5rem;
+    font-size: .8rem;
+    color: green;
+    background-color: silver;
+    text-align: start
+}
+
+.char-att strong{
+    color: black;
+}

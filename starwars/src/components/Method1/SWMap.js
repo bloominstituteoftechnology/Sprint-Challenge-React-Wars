@@ -1,12 +1,12 @@
 import React from 'react';
 import SWChar from './SWChar';
-import '../StarWars.css'
+import '../StarWars2.css'
 
 
 const SWMap = (props) => {
     console.log(props)
     return (
-        <section>
+        <section className="m2container2">
             {props.starwarsChars.map((char) => (
                 <SWChar 
                 name={char.name} 
