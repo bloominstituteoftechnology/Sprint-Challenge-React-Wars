@@ -1,8 +1,14 @@
 .App {
+  font-family: 'Vollkorn', serif;
   text-align: center;
+  width: 100%;
+  min-width: 600px
 }
+
 .Header {
+  font-family: 'Cinzel', serif;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 3rem;
 }
 /* write your parent styles in here for your App.js */
