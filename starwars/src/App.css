@@ -1,8 +1,47 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .Header {
   color: #443e3e;
+  font-size: 45px;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.characters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 18%;
+  height: 400px;
+  margin: 10px 5px;
+  border: 2px solid black;
+  background: white;
+  opacity: 0.75;
+}
+
+.card h1 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: rgb(63, 62, 62);
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 25px;
 }
 /* write your parent styles in here for your App.js */
