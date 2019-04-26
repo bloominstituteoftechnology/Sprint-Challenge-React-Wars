@@ -24,6 +24,12 @@ Summarization:
 
 	App.js data[props]=> CharacterList takes data[props], creates stored list[state], passes data into => Character, takes data from CharacterList[props], renders it into a class card. BOOYAH! I GET IT! GODDAMN!
 
+	[App]
+	[CharacterList]
+	[Character]
+
+Hindsight 20/20 I should have put Character.js in another folder for better visual representation.
+
 */
 
     return (
