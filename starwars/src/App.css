@@ -32,23 +32,3 @@
     margin: 2rem;
     padding: 1rem;
 }
-
-.scoreboard {
-  padding: .5rem;    
-}
-
-
-
-/* ---- ids ---- */
-
-  
-#p1 {
-  color: blue;
-  margin-right: 2rem
-
-}
-
-#p2 {
-  color: red;
-  margin-left: 2rem;
-}
