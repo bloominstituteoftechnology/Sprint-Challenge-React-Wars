@@ -1,9 +1,12 @@
 import React from "react";
+import Character from "./Character";
 
-export default function Character(props) {
+export default function StarwarsCharList(props) {
   return (
-    <div className="classNames">
-      <h3>{props.character.name}</h3>
+    <div>
+      {props.characters.map((character, index) => (
+        <Character key={index} character={character} />
+      ))}
     </div>
   );
 }
