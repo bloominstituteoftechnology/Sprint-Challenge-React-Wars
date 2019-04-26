@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
+import StarWarsMemes from './components/StarComponent1';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      active: false,
+
     };
   }
 
@@ -29,10 +33,33 @@ class App extends Component {
       });
   };
 
+  changeHandler = event => {
+    console.log(event.target.name);
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
+
+  addNewClass = (id) => {
+    const currentState = this.state.active;
+    
+        this.setState({   
+          active: !currentState
+        })
+
+//active: !currentState
+  }
+
   render() {
+    console.log(this.state.starwarsChars);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <StarWarsMemes 
+        starInfo = {this.state.starwarsChars}
+        starToggle = {this.state.active}
+        addNewClass = {this.addNewClass}
+        changeHandler = {this.changeHandler}
+        />
       </div>
     );
   }
