@@ -1,0 +1,62 @@
+.Container {
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SWcard {
+    max-width: 47%;
+    width: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SWCard.d {
+    max-width: 100%;
+    border: 2px solid goldenrod;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 95px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+{
+    display: inline;
+}
+
+.white {
+    color: white;
+    text-decoration-style: wavy;
+}
+
+.white:hover {
+    color: rgba(104, 4, 4, 0.493);
+}
+
+.SWCard.d.w {
+    background-color: black;
+    width: 85%;
+    align-content: center;
+}
+
+.SWCard.d.w:hover {
+    background-color: goldenrod;
+}
+
+.SWCard.d.o:hover {
+    background-color: rgba(117, 91, 91, 0.377);
+}
