@@ -15,8 +15,10 @@ function Item(props){
         </p>
 
         <p>
-        <strong>Eye Color:</strong> {props.item.eye_color}
+        <strong>Height:</strong> {props.item.height}
         </p>
+
+      
         </div>
     </div>
     )
