@@ -97,7 +97,7 @@ Required best practices:
 
 - [ ] Consistent naming. Examples: variables, functions, classes, and files.
 - [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
+- [ ] Consistent quotyaation usage.
 - [ ] Spell-check.
 - [ ] Schedule time to review, refine and reassess your work.
 
