@@ -1,0 +1,23 @@
+.profileCard {
+    width: 40%;
+    height: auto;
+    background: white;
+    padding: 15px;
+    margin: 20px;
+}
+.cardCollection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.characterName {
+    font-size: 20px;
+    font-weight: bold;
+    color:saddlebrown;
+}
+
+.infoLabel {
+    font-weight: bold;
+}
