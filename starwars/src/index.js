@@ -25,13 +25,17 @@ try {
   blowUpAppAfter(5000) // this app will crash in 5 seconds
   
 } catch(e) {
+
     try {
         console.error(e)
-        render(<App />, document.getElementById('backup'));
+        render(<App />, document.getElementById('root'));
+        // render(<App />, document.getElementById('backup'));
     }  catch(e) {
         console.error(e)
-        render(<Whoops status={501} />, document.getElementById('fireSquad'))
+        render(<Whoops status={501} />, document.getElementById('root'))
+        // render(<Whoops status={501} />, document.getElementById('fireSquad'))
     }
+    
 }
 
 
