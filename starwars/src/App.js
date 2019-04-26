@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import { pluck, compose } from '../src/util'
+import FilterableTable from './components/FilterableTable'
+import { map, compose, pluck, head } from '../src/util'
+
 
 class App extends Component {
   constructor() {
     super()
     this.state = { 
-      starwarsChars: [] 
+      loading: true,
+      allCharacterData: []
     }
   }
 
@@ -25,7 +28,11 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ 
-          allStarwarsChars: Object.values(data.results)
+          loading: false,
+          count: data.count,
+          allCharacterData: Object.entries(data)
+            .filter( ([k,v]) => k === 'results')
+            .flatMap(([k, v]) => v)
         })
       })
       .catch(err => {
@@ -60,14 +67,32 @@ class App extends Component {
           <header>
             <h2 style={this.styles.h2}>All The Things!</h2>
             <p style={this.styles.p}>Check the console!</p>
+            <div style={this.styles.p}>
+              {
+                (this.state.loading) 
+                  ? <span>'Loading...'</span> 
+                  : <span>Count: {this.state.count}</span>
+              }
+            </div>
           </header>
 
+
+              {/* Logging State to the console! */}
           {
-            (this.state.allStarwarsChars)
-              ? this.state.allStarwarsChars.forEach(
-                (dataField, i) => console.log(dataField)
-              )
-              : <p style={this.styles.p}>Loading...</p>
+            (this.state.loading)
+              ? <p style={this.styles.p}>...</p>
+              // : <FilterableTable id="results">
+              : <div>
+              {
+                this.state.allCharacterData
+                  .map(({name, mass}, i) => ( 
+                    <div className="board" key={i}>
+                      <h1>Name: {name}</h1>
+                      <h1>Mass: {mass}</h1>
+                    </div>   
+                  ))               
+                  }
+              </div>
           }
         </aside>
       </div>
