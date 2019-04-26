@@ -6,49 +6,41 @@
   text-shadow: 1px 1px 5px #fff;
 }
 
-
-
-/*---- Board (Container) Styles ----*/
-
-
 .board {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  border-bottom: 1px solid rgba(147, 187, 187, 0.8);
-}
+  border: 21px solid red; // TEST: REPLACE ME WITH BOARD STYLES IN APP.CSS
 
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
-}
 
-.board-status {
+  &-row:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  
+  &-status {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     box-shadow: 1px 2px 1px rgba(200,200,200,0.8);
     margin: 2rem;
     padding: 1rem;
+  }
 }
+
 
 .scoreboard {
-  padding: .5rem;    
-}
+  padding: .5rem;
 
+  #p1 {
+      color: blue;
+      margin-right: 2rem
+  }
 
-
-/* ---- ids ---- */
-
-  
-#p1 {
-  color: blue;
-  margin-right: 2rem
-
-}
-
-#p2 {
-  color: red;
-  margin-left: 2rem;
+  #p2 {
+      color: red;
+      margin-left: 2rem;
+  }
 }
