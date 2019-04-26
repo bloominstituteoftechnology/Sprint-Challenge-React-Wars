@@ -1,0 +1,26 @@
+.page {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    font-size: 2.5rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+.list {
+    background: gray;
+    padding: 50px;
+}
+
+.charcter-preview {
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 20px 10%;
+    padding: 10px;
+}
+
+
+.charList {
+    padding: 20px;
+}

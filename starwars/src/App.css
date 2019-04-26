@@ -1,8 +1,32 @@
 .App {
   text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  font-weight: bold;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.charList {
+  background: gray;
+}
+
+.return {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+charList {
+  cursor: pointer;
+}
+.character-preview {
+  cursor: pointer;
+}
