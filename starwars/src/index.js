@@ -10,33 +10,35 @@ import Whoops from './components/Whoops';
 
 
 
-// Create a client engine instance
-const engine = new Styletron();
+// // Create a client engine instance
+// const engine = new Styletron();
 
-try {
-    // Provide the engine to the app
-    render(
-    <StyletronProvider value={engine}>
-      <App />
-    </StyletronProvider>
-  );
+// try {
+//     // Provide the engine to the app
+//     render(
+//     <StyletronProvider value={engine}>
+//       <App />
+//     </StyletronProvider>
+//   );
 
-  console.warn('countdown till explosion: 5 seconds', )
-  blowUpAppAfter(5000) // this app will crash in 5 seconds
+//   console.warn('countdown till explosion: 5 seconds', )
+//   blowUpAppAfter(5000) // this app will crash in 5 seconds
   
-} catch(e) {
+// } catch(e) {
 
-    try {
-        console.error(e)
-        render(<App />, document.getElementById('root'));
-        // render(<App />, document.getElementById('backup'));
-    }  catch(e) {
-        console.error(e)
-        render(<Whoops status={501} />, document.getElementById('root'))
-        // render(<Whoops status={501} />, document.getElementById('fireSquad'))
-    }
-    
-}
+//     try {
+//         console.error(e)
+//         render(<App />, document.getElementById('root'));
+//         // render(<App />, document.getElementById('backup'));
+//     }  catch(e) {
+//         console.error(e)
+//         render(<Whoops status={501} />, document.getElementById('root'))
+//         // render(<Whoops status={501} />, document.getElementById('fireSquad'))
+//     }
+
+// }
+
+render(<App />, document.getElementById('root'))
 
 
 function blowUpAppAfter(ms) {

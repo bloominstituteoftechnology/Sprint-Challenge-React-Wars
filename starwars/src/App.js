@@ -2,8 +2,21 @@ import React, { Component } from 'react'
 import './App.css'
 
 import FilterableTable from './components/FilterableTable'
-import { map, compose, pluck, head } from '../src/util'
+import { map, compose, curry, reduceObj, trace } from '../src/util'
 
+// const renderFilterableTable = curry(
+//   (allData, cellData) => <FilterableTable data={allData} columns={cellData} />
+// )
+
+const renderBox = (x, i) => <div className="box" key={i*100}>{x}</div>
+
+const renderCharacterBoard = curry(
+  (data, i) => (
+    <div className="board" key={i}>
+      { map(renderBox, Object.values(data[0])) }
+    </div>   
+  )
+)
 
 class App extends Component {
   constructor() {
@@ -57,6 +70,10 @@ class App extends Component {
   }
 
   render() {
+    const renderDataInBoard = compose(
+      renderCharacterBoard(this.state.allCharacterData),
+      Object.keys
+    )
     return (
       <div className="App">
         <header>
@@ -76,22 +93,12 @@ class App extends Component {
             </div>
           </header>
 
-
-              {/* Logging State to the console! */}
           {
             (this.state.loading)
               ? <p style={this.styles.p}>...</p>
               // : <FilterableTable id="results">
               : <div>
-              {
-                this.state.allCharacterData
-                  .map(({name, mass}, i) => ( 
-                    <div className="board" key={i}>
-                      <h1>Name: {name}</h1>
-                      <h1>Mass: {mass}</h1>
-                    </div>   
-                  ))               
-                  }
+                { map(renderDataInBoard, this.state.allCharacterData) }             
               </div>
           }
         </aside>
