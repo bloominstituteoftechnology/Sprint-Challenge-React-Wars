@@ -1,15 +1,15 @@
 import React from 'react';
-import Character from './Character';
+import Character from './Character'
 import './StarWars.css';
 
 
-const CharacterList = props => {
-    console.log(props.starwarsChars)
+const CharacterList = props => { //props is data
+    console.log(props.starwarsChars) //is it working?
     return (
 
-        <div className="characters-list-wrapper">
-            {props.starwarsChars.map(character => (
-                <div className="character-card"><Character key={character.name}
+        <div className="char-wrapper">
+            {props.starwarsChars.map( character => (
+                <Character key={character.name}
                 characterData={character}/>
 
             ))};
@@ -23,4 +23,4 @@ const CharacterList = props => {
 
 
 
-export default CharacterList; 
+export default CharacterList;

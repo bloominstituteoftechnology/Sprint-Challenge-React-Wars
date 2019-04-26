@@ -1,6 +1,5 @@
 import React from 'react';
 import './StarWars.css';
-import { Link } from "react-router-dom";
 
 
 const Character = props => {
@@ -8,7 +7,7 @@ const Character = props => {
         <div>
             <div className="char-header">
                 <h1>
-                {props.characterOnProps.name}
+                {props.characterData.name}
                 </h1>
             </div>
             <div className="char-body">
