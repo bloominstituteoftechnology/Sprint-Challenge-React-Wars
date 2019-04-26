@@ -6,7 +6,7 @@ import './StarWars.css';
 const CharacterList = props => { //props is data
     console.log(props.starwarsChars) //is it working?
 /*
-   1.) You take in the data from props, which is passed in from the constructor's initial state*SINGLE SOURCE OF TRUTH) from App.js. This is the first data flow. Flow #1! 
+   1.) You take in the data from props, which is passed in from the constructor's initial state(SINGLE SOURCE OF TRUTH) from App.js. This is the first data flow. Flow #1! 
 
    The map() method creates a new array explicity here(explicit means not defaulted within the environment), calling the provided function for every array element. This map in particular takes every element from each object and returns it inside the Character component with the key(assigned unique ids to avoid duplication bugs) being the object literal property, .name. If you do not declare a way for unique ids it defaults to index(which creates problems if you pass in the same input string).
 
