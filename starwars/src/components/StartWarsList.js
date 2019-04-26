@@ -1,16 +1,18 @@
 import React from 'react';
 import Cards from './Cards';
+import './StarWars.css';
 
 
-const StarWarsLists = props =>{
+
+const StarWarsLists = ({ data }) => {
     return (
-        <div className = 'cardlist'>
-            {props.data.map( (item, index) => {
+        <div className='cardlist'>
+            {data.map((item, index) => {
                 return (
-                     <Cards index={index} key={index} data={item} />
-                   )
-                })}
+                    <Cards  key={index} data={item} />
+                )
+            })}
         </div>
     )
 }
- export default StarWarsLists;
+export default StarWarsLists;
