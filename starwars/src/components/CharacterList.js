@@ -22,7 +22,7 @@ itemsofPropsListFromParent.mapEvaluates(eachItemofPropsListFromParent [passes th
 
 Summarization:
 
-	App.js data[props]=> CharacterList takes data[props], creates stored list[state], passes data into => Character, takes data from Character[props], renders it into a class card. BOOYAH! I GET IT! GODDAMN!
+	App.js data[props]=> CharacterList takes data[props], creates stored list[state], passes data into => Character, takes data from CharacterList[props], renders it into a class card. BOOYAH! I GET IT! GODDAMN!
 
 */
 
