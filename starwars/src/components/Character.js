@@ -4,12 +4,12 @@ import './StarWars.css';
 
 const Character = props => {
     return (
-        <div>
+        <div className="char-card">
             <div className="char-header">
                 <h1>
                 {props.characterData.name}
                 </h1>
-        
+
             </div>
             <div className="char-body">
                 <h3>Birth Year: {props.characterData.birth_year}</h3>

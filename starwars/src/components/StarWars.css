@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Vollkorn');
+
+font-family: 'Cinzel', serif;
+font-family: 'Vollkorn', serif;
+
+.App {
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  width: 100%;
+}
+
+
+.char-wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.char-card {
+  width: 30%;
+  height:50vh;
+
+}
+
+.char-header{
+	font-family: 'Cinzel', serif;
+}
