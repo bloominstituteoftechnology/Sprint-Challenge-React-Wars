@@ -2,7 +2,7 @@
   "name": "starwars",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://mosessupposes.github.io/react-wars",
+  "homepage": "http://mosessupposes.github.io/react-wars",
   "dependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "7.4.3",
