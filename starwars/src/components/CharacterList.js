@@ -12,7 +12,7 @@ const CharacterList = props => { //props is data
                 <Character key={character.name}
                 characterData={character}/>
 
-            ))};
+            ))}
         </div>
 
 
