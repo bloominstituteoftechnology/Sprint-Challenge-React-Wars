@@ -48,15 +48,18 @@ function tick(countdown) {
         switch(counter) {
             case 3000:
             case 3: 
-            console.warn('3')
+                console.warn('3')
+                break
 
             case 2000:
             case 2: 
-            console.warn('1')
+                console.warn('2')
+                break
 
             case 1000:
             case 1: 
-            console.warn('1')
+                console.warn('1')
+                break
 
             default: 
                 console.log('eminent death approaching...')
