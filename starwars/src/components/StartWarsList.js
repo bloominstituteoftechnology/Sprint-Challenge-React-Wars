@@ -9,7 +9,7 @@ const StarWarsLists = ({ data }) => {
         <div className='cardlist'>
             {data.map((item, index) => {
                 return (
-                    <Cards  key={index} data={item} />
+                    <Cards index={index} key={index} data={item} />
                 )
             })}
         </div>
