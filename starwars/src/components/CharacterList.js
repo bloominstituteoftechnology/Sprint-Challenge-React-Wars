@@ -18,7 +18,7 @@ Example:
 
 This method translates to:
 
-itemsofPropsListFromParent.map(eachItemofPropsListFromParent [passes into =>] <ChildComponentThatTakesInMapDataAsProps key={unique.id} stateDataTurnedChildProp={dataFromMap}) 
+itemsofPropsListFromParent.mapEvaluates(eachItemofPropsListFromParent [passes the data into =>] <theChildComponent key={unique.id} ItemsFromThisComponent={willBeDataFromMap}) 
 
 Summarization:
 
