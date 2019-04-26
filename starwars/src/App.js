@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import StarWarChars from './components/StarWarChars'
+// import StarWarChars from './components/StarWarChars'
+import SWMap from './components/SWMap'
 
 class App extends Component {
   constructor() {
@@ -38,7 +39,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWarChars starwarsChars={this.state.starwarsChars}/>
+        {/* Component Method 1 */}
+        {/* <StarWarChars starwarsChars={this.state.starwarsChars}/> */}
+        
+        {/* Component Method 2 */}
+        <SWMap starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }
