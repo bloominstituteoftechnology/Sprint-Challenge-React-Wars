@@ -1,0 +1,35 @@
+.character-card {
+    display: inline-block;
+    border: 1px solid #443e3e;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    width: 25%;
+    padding: 0px 15px 10px 15px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.selected {
+    display: none;
+}
+
+img {
+    height: 100%;
+}
+
+.select-button {
+    background-color: #443e3e;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
