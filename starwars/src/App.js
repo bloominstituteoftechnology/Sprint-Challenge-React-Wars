@@ -5,9 +5,9 @@ import CharacterList from './components/CharacterList';
 class App extends Component {
   constructor() {
     super();
-    this.state = {
+    this.state = { //props, single source of truth of which flows down unidirectionally
       starwarsChars: []
-    };
+    }; //default/initial state for constructor
   }
 
   componentDidMount() {
