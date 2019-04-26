@@ -6,3 +6,15 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+	
+.character-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  justify-content: space-between;
+  opacity: .8;
+ }
+ .char-info {
+  margin: 2% 5%;
+}
