@@ -1,15 +1,9 @@
 import React from "react";
-import Character from "./Character";
 
-class StarwarsCharList extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      starWarsChars: starWarsChars,
-      starWarsChars: {
-        name: ""
-      }
-    };
-  }
+export default function Character(props) {
+  return (
+    <div className="classNames">
+      <h3>{props.character.name}</h3>
+    </div>
+  );
 }

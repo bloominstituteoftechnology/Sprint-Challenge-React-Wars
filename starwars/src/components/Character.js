@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Character(params) {
+
+export default function StarwarsCharList(props) {
   return (
-    <div className="box">
-      <div className="character-info">
-        <h3>{props.starwarsChars.name}</h3>
-      </div>
+    <div className="starwars-char-list box">
+        <p className="character-name">{props.character.name}</p>
     </div>
   );
 }
+
