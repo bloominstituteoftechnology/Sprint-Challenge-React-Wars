@@ -9,6 +9,7 @@ const Character = props => {
                 <h1>
                 {props.characterData.name}
                 </h1>
+        
             </div>
             <div className="char-body">
                 <h3>Birth Year: {props.characterData.birth_year}</h3>
