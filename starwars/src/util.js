@@ -140,3 +140,7 @@ export const filter9000 = (pred, [head, ...tail]) => head === undefined ? [] : (
       [head, ...filter9000(pred, tail)] : [...filter9000(pred, tail)]
 )
 
+export const trace = (x) => {
+    console.log(x)
+    return x
+}
