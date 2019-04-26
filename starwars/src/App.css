@@ -1,8 +1,62 @@
-.App {
-  text-align: center;
+html{
+  font-size:62.5%;
+  box-sizing: border-box;
+}
+
+/* write your parent styles in here for your App.js */
+.container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column;
+  margin:0 auto;
+  max-width: 1140px;
+  width: 100%;
+  /* border:1px solid black; */
 }
 .Header {
+  align-self: center;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size:3.0rem;
+  font-family: Arial, Helvetica, sans-serif
 }
-/* write your parent styles in here for your App.js */
+
+.main{
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.action{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top:20px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px 15px 20px 0px;
+
+}
+
+
+.disabled {
+  opacity: 0.23; 
+  cursor: not-allowed;
+}
