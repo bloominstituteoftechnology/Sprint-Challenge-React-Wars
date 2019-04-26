@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
-
+import { pluck, compose } from '../src/util'
 
 class App extends Component {
   constructor() {
@@ -24,17 +24,52 @@ class App extends Component {
         return res.json()
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results })
+        this.setState({ 
+          allStarwarsChars: Object.values(data.results)
+        })
       })
       .catch(err => {
         throw new Error(err)
       })
   }
 
+  styles = {
+    defaultFontStyles: {
+      fontFamily: 'Helvetica, sans-serif, serif'
+    },
+
+    p: {
+      ...this.defaultFontStyles,
+      color: 'white'
+    },
+
+    h2: {
+      ...this.defaultFontStyles,
+      color: 'white'
+    }
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <header>
+          <h1 className="Header">React Wars</h1>
+        </header>
+
+        <aside>
+          <header>
+            <h2 style={this.styles.h2}>All The Things!</h2>
+            <p style={this.styles.p}>Check the console!</p>
+          </header>
+
+          {
+            (this.state.allStarwarsChars)
+              ? this.state.allStarwarsChars.forEach(
+                (dataField, i) => console.log(dataField)
+              )
+              : <p style={this.styles.p}>Loading...</p>
+          }
+        </aside>
       </div>
     )
   }
