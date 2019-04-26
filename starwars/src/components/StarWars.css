@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    height: 500px;
+    width: 30%;
+    margin: 20px auto;
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: white;
+    background-image: url('../star-wars-space.png');
+    opacity: 0.75;
+    background-size: 100%;
+   
+  }
+  
+  .content {
+      width: 100%;
+      font-size: 16px;
+      line-height: 2;
+      
+  }
+
+  .url {
+      display: none;
+  }
