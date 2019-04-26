@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-stage-1": "^7.0.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "^3.0.0"
