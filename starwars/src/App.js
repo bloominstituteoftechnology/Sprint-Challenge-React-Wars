@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import StarWarChars from './components/StarWarChars'
-import SWMap from './components/SWMap'
+import StarWarChars from './components/Method2/StarWarChars'
+import SWMap from './components/Method1/SWMap'
 
 class App extends Component {
   constructor() {

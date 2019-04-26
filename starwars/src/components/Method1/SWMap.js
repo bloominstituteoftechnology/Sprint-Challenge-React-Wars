@@ -1,6 +1,6 @@
 import React from 'react';
 import SWChar from './SWChar';
-import './StarWars.css'
+import '../StarWars.css'
 
 
 const SWMap = (props) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './StarWars.css'
+import '../StarWars.css'
 
 
 const StarWarChars = (props) => {
