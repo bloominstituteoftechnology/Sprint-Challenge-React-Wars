@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import CardsComponent from './components/CardsComponent'
 import './App.css';
+
+/*
+  Build an app that displays the data provided.
+  Build a card for each object in the starwars array.
+*/
 
 class App extends Component {
   constructor() {
@@ -33,6 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CardsComponent cards={this.state.starwarsChars}/>
       </div>
     );
   }
