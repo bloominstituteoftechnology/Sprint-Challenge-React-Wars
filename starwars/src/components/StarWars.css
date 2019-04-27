@@ -1,10 +1,19 @@
 .item-card{
-    border-top: 1px dashed white;
-    border-bottom: 1px dashed white;
     
     
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
     
 }
 h3{
   color: dodgerblue;
+}
+.item-info{
+  width: 400px;
+  background-color: white;
+  border: 1px dashed gray;
+  border-radius: 5px;
+  
 }
