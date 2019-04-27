@@ -9,11 +9,14 @@
 }
 h3{
   color: dodgerblue;
+  font-family: 'Luckiest Guy';
+  font-size: 24px;
 }
 .item-info{
   width: 400px;
   background-color: white;
   border: 1px dashed gray;
   border-radius: 5px;
+  font-family: 'Fredoka One';
   
 }

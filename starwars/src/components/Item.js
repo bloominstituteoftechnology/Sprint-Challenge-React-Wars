@@ -18,9 +18,7 @@ function Item(props){
         <strong>Height:</strong> {props.item.height}
         </p>
 
-      <p>
-        
-      </p>
+     
       
         </div>
     </div>
