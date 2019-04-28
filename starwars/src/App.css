@@ -1,8 +1,33 @@
-.App {
-  text-align: center;
-}
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  text-align: center;
 }
+.Body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+ .Boxes {
+   border: dotted 2px brown;
+   width: 380px;
+   text-align: center;
+   border-radius: 40px;
+   background: rgba(0, 0, 0, 0.47);
+   color: yellowgreen;
+ }
+
+ .CharName {
+   text-decoration: underline;
+   font-weight: bold;
+   color: orangered;
+   margin: 10px 0;
+ }
+
+ .CharSkin {
+   margin-bottom: 20px;
+ }
 /* write your parent styles in here for your App.js */
