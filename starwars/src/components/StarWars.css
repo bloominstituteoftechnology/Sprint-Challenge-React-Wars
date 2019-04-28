@@ -1,0 +1,11 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .card {
+    border: 1px solid black;
+    margin: 10px;
+    width: 500px;
+    background-color: lightgray;
+}
