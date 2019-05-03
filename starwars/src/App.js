@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharacterCard from './components/CharacterCard'
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log("total chars", this.state.starwarsChars)
       })
       .catch(err => {
         throw new Error(err);
@@ -33,6 +35,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {this.state.starwarsChars.map((char, i) => 
+          <CharacterCard key={i} char={char} /> 
+        )}
+        
       </div>
     );
   }
