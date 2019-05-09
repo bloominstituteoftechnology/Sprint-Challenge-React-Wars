@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+
+body {
+  margin: 0 auto;
+  padding: 30px;
+  font-family: sans-serif;
+  background-image: url('./sw-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 2000px;
+  width: 100%;
+}
+
+.header {
+  font-size: 72px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Rammetto One', cursive;
+}
+.App-wars {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.char-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.char-card {
+  height: auto;
+  width: 20%;
+  background: blanchedalmond;
+  margin: 20px;
+}
+
+.char-card h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  color: ivory;
+  padding: 10px;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+}
+
+.char-stats {
+  background: ivory;
+  padding: 20px;
+  margin: 10px;
+}
