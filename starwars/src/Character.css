@@ -1,11 +1,20 @@
 .card{
     width: 300px;
-    height: 300px;
+    height: auto;
     
 }
 .card-wrapper{
-    display: inline-flex;
     flex-wrap: wrap;
     margin: 10px;
     border: 2px solid darkolivegreen;
+    height: auto;
+}
+
+.card h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.card p {
+    padding: 0px 20px;
 }

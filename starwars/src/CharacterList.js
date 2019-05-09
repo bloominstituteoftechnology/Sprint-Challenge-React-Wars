@@ -1,13 +1,12 @@
 import React from 'react';
-
-//this will be a state-less component that will iterate over the characters in the API
-//we want to use map because we are returning a new array of elements **NEW COMPONENT**
 import Character from './Character';
+import "./CharacterList.css";
 const CharacterList = props => {
+    console.log(props, 'charList');
     return (
-    <div>
+    <div className="char-list-container">
         {props.chars.map (char => {
-            return <Character char = {char} />
+            return <Character char = { char } />
         })}
     </div>
     )};

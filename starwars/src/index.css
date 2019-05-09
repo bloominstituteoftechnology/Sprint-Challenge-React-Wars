@@ -1,7 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 20px auto;
+  padding: 20px;
   font-family: sans-serif;
   background-image: url('./sw-bg.jpg');
+  background-attachment: fixed;
   background-size: cover;
+  width: 100%;
 }

@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .Header {
+  padding: 20px;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }

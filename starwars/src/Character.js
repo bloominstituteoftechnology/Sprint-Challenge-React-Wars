@@ -1,31 +1,18 @@
 import React from 'react';
 import './Character.css';
-import {
-    Card,
-    CardText,
-    CardBody,
-    CardTitle,
-    CardSubtitle,
-    Button
-  } from "reactstrap";
-
-
-  //we are not setting state here because we are setting state in the App. There is no need to
-  //set state here. So we will just declare a const here. 
-  const Character = ({char}) => {
+  const Character = (props) => {
+      console.log(props, "char");
       return (
         <div className = "card-wrapper">
-            <Card className ="card">
-                <CardBody>
-                <CardTitle>Name: {char.name}</CardTitle>
-                <CardText>Eye Color: {char.eye_color}</CardText>
-                <CardText>Hair color: {char.hair_color}</CardText>
-                <CardText>Gender: {char.gender}</CardText>
-                <CardText>Mass: {char.mass}kg</CardText>
-                <CardText>Height: {char.height}cm</CardText>
-                <CardText>Birth Year: {char.birth_year}</CardText>
-                </CardBody>
-            </Card>
+            <div className ="card">
+                <h2>{props.char.name}</h2>
+                <p>Eye Color: {props.char.eye_color}</p>
+                <p>Hair color: {props.char.hair_color}</p>
+                <p>Gender: {props.char.gender}</p>
+                <p>Mass: {props.char.mass}kg</p>
+                <p>Height: {props.char.height}cm</p>
+                <p>Birth Year: {props.char.birth_year}</p>
+            </div>
         </div>
       );
   };
