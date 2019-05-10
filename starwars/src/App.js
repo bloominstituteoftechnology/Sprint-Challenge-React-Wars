@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Item from './components/Item';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
@@ -28,14 +30,21 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
+  
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+         {this.state.starwarsChars.map(item =>(
+          <Item item={item} key={item.name}/>
+        ))} 
+        
+        
+        
       </div>
     );
   }
+  
 }
 
 export default App;
