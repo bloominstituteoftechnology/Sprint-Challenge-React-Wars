@@ -1,0 +1,23 @@
+
+
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Akronim', cursive;
+  margin: 20px 20%;
+  border: solid 4px #fde89f;
+  padding: 40px;
+  color: #fde89f;
+  font-size: 1.6em;
+}
+
+.square {
+}
+
+.char-names{
+  margin: 0 5%;
+}
+
+.eyes {
+  margin: 0 5%;
+}
