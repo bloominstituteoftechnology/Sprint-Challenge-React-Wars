@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;
+    padding-top:10px;
+}
+li{
+    margin-top:50px;
+}
+.cards_container{
+    margin:0 auto;
+    width:75%;
+    background:#90caf9;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.character{
+    margin:0 auto;
+    background: #5d99c6;
+    width:75%;
+    border-radius: 10px;
+
+
+}
