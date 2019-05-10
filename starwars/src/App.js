@@ -37,7 +37,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
       <div className="names">
-        <h1>{this.state.starwarsChars.map(char => `${char.name} ${char.eye_color} `)}</h1>
+        <h1>{this.state.starwarsChars.map(char => `${char.name}'s eyes are ${char.eye_color}. `)}</h1>
+
       </div>
       </div>
     );
