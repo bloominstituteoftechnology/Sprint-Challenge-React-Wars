@@ -6,3 +6,19 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.App {
+  display:flex;
+  flex-wrap:wrap;
+  margin:20px;
+  opacity: 0.7;
+}
+div {
+  margin:20px;
+  background:white; 
+}
+h1{
+  display:flex;
+  justify-content: center;
+  margin:0 auto;
+  align-items:center;
+}
