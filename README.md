@@ -25,12 +25,16 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  ~ReactJS is a javascript library created by facebook. React is the V in model view controller. You are able to design all of your front end applications. It renders in a virtual DOM and renders only that component which you created and not the entire code that you have created. 
 
 - [ ] What does it mean to _think_ in react?
-
+  ~Thinking in react basically means to break down your application that your are attempting to create in five distinct parts. 1. Break your UI into a component hierarchy, 2. Build a static version	in react, 3. Identify the minimal representation of UI state, 4. Identify where your state should live, 5. Then add inverse data flow. 
 - [ ] Describe state.
+  ~In React, State is an object that represents the parts of the app that can change. Every component has its own state and lives in an object called this.state. State changes only when you tell it to change by using this.setState. 
+
 
 - [ ] Describe props.
+  ~In React, components and props go hand in hand. Components allow the user to think in React by splitting the UI into independent, reusable pieces in isolation. Those independent pieces are passed inputs called props. 
 
 ## Project Set Up
 
