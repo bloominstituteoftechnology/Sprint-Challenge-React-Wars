@@ -6,3 +6,21 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+button {
+  border: 1px solid black;
+  background: lightblue;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  opacity: .8;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+button:active {
+  transform: scale(1);
+}

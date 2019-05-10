@@ -1,0 +1,34 @@
+.character {
+  /* width: 100px;
+  height: 100px; */
+  width: 300px;
+  margin: 10px auto;
+  background: #BCC8DE;
+  color: #4C596F;
+  border: 1px solid #658FBD;
+  opacity: .8;
+  
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: block;
+}
+
+
+
+.character:first-child {
+  background: orange;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100px;
+}
