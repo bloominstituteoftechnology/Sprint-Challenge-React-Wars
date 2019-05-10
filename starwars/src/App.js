@@ -1,194 +1,217 @@
 import React, { Component } from 'react';
+import React, {CharsList} from 'react';
+import React, {StarwarsChars} from 'react';
 import './App.css';
+import StarwarsChars from './components/StarwarsChars';
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars:CharsList
-      starwarsChars: [
+const CharsList = [
         {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
           vehicles: Array[]
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+        {
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
         }
         {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-        {
-          birth_year: "placeholder"
-          created:"placeholder"
-          edited: "placeholder"
-          eye_color: "placeholder"
-          films: Array[]
-          gender: "placeholder"
-          hair_color: "placeholder"
-          height: "placeholder"
-          homeworld: "placeholder"
-          mass: "placeholder"
-          name: "placeholder"
-          skin_color: "placeholder"
-          species: Array[]
-          starships: Array[]
-          url: "placeholder"
-          vehicles: Array[]
-        }
-      ]
-      starwarsChars: ''
+          birth_year: "placeholder",
+          created:"placeholder",
+          edited: "placeholder",
+          eye_color: "placeholder",
+          films: Array[],
+          gender: "placeholder",
+          hair_color: "placeholder",
+          height: "placeholder",
+          homeworld: "placeholder",
+          mass: "placeholder",
+          name: "placeholder",
+          skin_color: "placeholder",
+          species: Array[],
+          starships: Array[],
+          url: "placeholder",
+          vehicles: Array[],
+        },
+      ];
+
+class starwarsChars extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            starwarsChars:CharsList,
+
+            birth_year: "",
+            created:"",
+            edited: "",
+            eye_color: "",
+            films: "",
+            gender: "",
+            hair_color: "",
+            height: "",
+            homeworld: "",
+            mass: "",
+            name: "",
+            skin_color: "",
+            species: "",
+            starships: "",
+            url: "",
+            vehicles: "",
+
+
+     
     };
   }
 
@@ -252,8 +275,32 @@ class App extends React.Component {
           <CharsList charsList={CharsList}/>
         ))}
       </div>
+
+     <CharsList
+        addStarwarsChars={this.addStarwarsChars}
+        changeHandler={this.changeHandler}
+        birth_year={this.birth_year }
+        created={this.created}
+        edited={this.edited}
+        eye_color={this.eye_color}
+        films={this.films}
+        gender={this.gender}
+        hair_color={this.hair_color}
+        height={this.height}
+        homeworld={this.homeworld}
+        mass={this.mass}
+        name={this.name}
+        skin_color={this.skin_color}
+        species={this.species}
+        starships={this.starships}
+        url={this.url}
+        vehicles={this.vehicles}
+      />
     );
   }
 }
 
 export default App;
+
+
+
