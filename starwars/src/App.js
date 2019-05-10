@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './components/StarWars.css';
+import EyeColor from './components/EyeColor.js';
 
 class App extends Component {
   constructor() {
@@ -37,7 +38,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
       <div className="names">
-        <h1>{this.state.starwarsChars.map(char => `${char.name}'s eyes are ${char.eye_color}. `)}</h1>
+        <div>{this.state.starwarsChars.map(char => <EyeColor eyes={char} />)}</div>
       </div>
       </div>
     );
