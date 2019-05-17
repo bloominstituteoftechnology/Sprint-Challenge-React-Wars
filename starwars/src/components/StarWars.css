@@ -1,0 +1,19 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    opacity: .5;
+} 
+
+strong{
+    color: maroon;
+    font-size: 1.1rem;
+
+}
+
+h1{
+    color: silver;
+    font-size: 2rem;
+}
