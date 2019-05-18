@@ -8,8 +8,11 @@ const CharList = props => {
         <div>
          <h2>Character List</h2>
          {props.chars.map (char => {
-             return <Character key = {char.created} stuff ={char} name ={props.chars.name}/>
+             return <Character key = {char.created}
+              stuff ={char} name ={props.chars.name}
+              />
          })}
+        
 
         </div>
     )
