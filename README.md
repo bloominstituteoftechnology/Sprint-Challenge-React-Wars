@@ -24,13 +24,18 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+-
+[ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React JS is a JavaScript library for building user interfaces. React solves the problem of multiple DOM refreshes due to updates. The Ui is compartmentalized so when there is a update that component refreshes instea 
 
 - [ ] What does it mean to _think_ in react?
-
+to _think_ in react means breaking down UI into components. 
 - [ ] Describe state.
-
+States are variables managed by each component.
 - [ ] Describe props.
+properties are variables inherited from its parent component.
+
 
 ## Project Set Up
 
