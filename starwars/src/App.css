@@ -5,4 +5,10 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.element---wrapper {
+  width: 50%;
+  margin: 20px;
+}
+
 /* write your parent styles in here for your App.js */
