@@ -1,0 +1,27 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    color: rgb(12, 211, 5);
+    font-size: 20px;
+    border: 2px double chocolate;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    background-image: URL('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNh9wBs3Ag5AHHwOwJR2hcQCiMc1jIP6bitH-9Zp8WKZSlKCKnSw');
+    opacity: 0.6;
+}
+
+.card:hover {
+    background: transparent; 
+    color: blue;
+    border: 2px double chocolate;
+}    
+
+
+
+
