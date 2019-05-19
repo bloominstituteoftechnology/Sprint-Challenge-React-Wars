@@ -2,8 +2,10 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    margin: 15%;
+    /* justify-content: space-between; */
     
 }
 .character{
@@ -12,5 +14,7 @@ height: 200px;
     color: red;
     background: white;
     border: 2px solid red;
+    margin: 5%;
+    font-family: fantasy;
 
 }
