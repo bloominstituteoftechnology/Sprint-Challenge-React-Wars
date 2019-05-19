@@ -1,0 +1,16 @@
+.starwarsChars{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    
+}
+.character{
+width: 200px;
+height: 200px;
+    color: red;
+    background: white;
+    border: 2px solid red;
+
+}
