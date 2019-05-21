@@ -1,16 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, {
+  Component
+} from 'react'
+import './App.css'
+
+import CardsContainer from './components/CardsContainer'
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      starwarsChars: []
-    };
+      starwarsChars: [],
+      previous: null,
+      next: null
+    }
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters('https://swapi.co/api/people')
   }
 
   getCharacters = URL => {
@@ -19,23 +25,52 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
-        return res.json();
+        return res.json()
       })
-      .then(data => {
-        this.setState({ starwarsChars: data.results });
+      .then(({
+        results,
+        previous,
+        next
+      }) => {
+        this.setState({
+          starwarsChars: results,
+          previous,
+          next
+        })
       })
       .catch(err => {
-        throw new Error(err);
-      });
-  };
+        throw new Error(err)
+      })
+  }
+
+  navigate = direction => {
+    if (direction) {
+      this.getCharacters(direction)
+    }
+  }
 
   render() {
-    return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
-    );
+    const {
+      starwarsChars,
+      previous,
+      next
+    } = this.state
+    const {
+      navigate
+    } = this
+
+    return ( <
+      div className = "App" >
+      <
+      h1 className = "Header" > React Wars < /h1> <
+
+      CardsContainer chars = {
+        starwarsChars
+      }
+      /> < /
+      div >
+    )
   }
 }
 
-export default App;
+export default App
