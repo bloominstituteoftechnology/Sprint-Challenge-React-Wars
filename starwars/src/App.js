@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DisplayCharacter from './components/DisplayCharacters';
 import './App.css';
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -33,6 +35,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className='card-container'>
+          {this.state.starwarsChars.map(character => {
+            return <DisplayCharacter key={character.created} characterProps={character} />
+          })}
+        </div>
       </div>
     );
   }
