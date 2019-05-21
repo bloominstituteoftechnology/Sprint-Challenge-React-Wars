@@ -1,54 +1,76 @@
 import React, {
   Component
-} from 'react';
-import SWContainer from './Components/SWContainer/SWContainer';
+} from 'react'
+import './App.css'
 
-import './App.css';
+import CardsContainer from './components/CardsContainer'
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      starwarsChars: []
-    };
+      starwarsChars: [],
+      previous: null,
+      next: null
+    }
   }
+
   componentDidMount() {
+    this.getCharacters('https://swapi.co/api/people')
+  }
+
+  getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
-    fetch('https://swapi.co/api/people')
+    fetch(URL)
       .then(res => {
-        return res.json();
+        return res.json()
       })
-      .then(data => {
+      .then(({
+        results,
+        previous,
+        next
+      }) => {
         this.setState({
-          starwarsChars: data.results
-        });
+          starwarsChars: results,
+          previous,
+          next
+        })
       })
       .catch(err => {
-        throw new Error(err);
-      });
+        throw new Error(err)
+      })
   }
+
+  navigate = direction => {
+    if (direction) {
+      this.getCharacters(direction)
+    }
+  }
+
   render() {
+    const {
+      starwarsChars,
+      previous,
+      next
+    } = this.state
+    const {
+      navigate
+    } = this
+
     return ( <
       div className = "App" >
       <
       h1 className = "Header" > React Wars < /h1> <
-      div className = "element--wrapper" > {
-        this.state.starwarsChars.map((content, i) => {
-          return <SWContainer key = {
-            i
-          }
-          content = {
-            content
-          }
-          />
-        })
-      } <
-      /div> <
-      /div>
-    );
+
+      CardsContainer chars = {
+        starwarsChars
+      }
+      /> < /
+      div >
+    )
   }
 }
 
-export default App;
+export default App
