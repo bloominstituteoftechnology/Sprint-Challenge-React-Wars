@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/StarWarsList'
-import StarWarsList from './components/StarWarsList';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      dogs: {}
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getdogs('https://dog.ceo/api/breeds/image/random');
   }
 
-  getCharacters = URL => {
+  getdogs = URL => {
     fetch(URL)
       .then(res => {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ dogs: data.message });
+        console.log(this.state)
       })
       .catch(err => {
         throw new Error(err);
@@ -35,8 +35,9 @@ class App extends Component {
 render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <StarWarsList starwarsChars ={this.state.starwarsChars} />
+        <h1 className="Header">Dog App</h1>
+        <img src={this.state.dogs} alt="dogs"></img>
+   
       </div>
     );
   }
