@@ -1,0 +1,15 @@
+.char-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attr {
+    display: flex;
+    align-items: center;
+}
+
