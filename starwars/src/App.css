@@ -6,3 +6,32 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  background: white;
+  width: 70%;
+  color: pink;
+
+  padding-left: 20px;
+  
+}
+
+h1 {
+  color: grey;
+}
+
+h2 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.list {
+  align-items: center;
+}
+
+.Characterlist {
+  display: flex;
+  justify-content: center;
+
+
+}
