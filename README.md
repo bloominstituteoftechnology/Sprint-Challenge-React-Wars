@@ -24,13 +24,26 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+What is React JS and what problems does it try and solve? 
 
-- [ ] What does it mean to _think_ in react?
+-- React JS a javascript library that allows developers to manipulate the DOM indirectly via the virtual Dom using JSX. ReactJs solves the issue for re-rendering a whole web page for just one item by making functional and class components that can be updated directly. --
 
-- [ ] Describe state.
+What does it mean to think in react?
 
-- [ ] Describe props.
+-- to think in react is breaking down a large application into smaller chunks called components that can be easily updated and managed. 
+
+Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
+
+-- state components are deals more with the management/state of data and functional components allows us to show our data. 
+
+Describe state.
+
+-- state is the state of the data that is giving it is was persist -- 
+
+Describe props.
+
+-- props also us to pass data down through properties. It is the bridge between a components and main app. 
+
 
 ## Project Set Up
 

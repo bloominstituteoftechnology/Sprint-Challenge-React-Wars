@@ -1,0 +1,46 @@
+
+.App {
+    text-align: center;
+    width:100%;
+    
+  
+    
+  }
+  .Header {
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+  }
+  /* write your parent styles in here for your App.js */
+  
+  .card-header{
+    text-align: center;
+    color: darkslategray;
+    border-bottom: slategray 1px solid;
+    
+  }
+  .characterCard {
+      font-family: Arial, Helvetica, sans-serif;
+
+    background: rgba(255,255,255, 0.3);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    margin: 20px; 
+    padding: 1rem;
+    width: 400px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .k{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  
+  
+  }
+  .character-list{
+    width:100%;
+  
+  }
+  
