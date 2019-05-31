@@ -1,0 +1,13 @@
+import React from 'react';
+import './StarWars.css';
+
+
+const LukesCard = props => {
+    return (
+        <div>
+            <p>Lukes Card</p>
+        </div>
+    );
+};
+
+export default LukesCard;
