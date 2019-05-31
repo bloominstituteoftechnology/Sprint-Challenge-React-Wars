@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterMap from './components/CharacterMap';
 
 class App extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -30,9 +32,11 @@ class App extends Component {
   };
 
   render() {
+   
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharacterMap characters={this.state.starwarsChars}/>
       </div>
     );
   }

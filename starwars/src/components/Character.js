@@ -32,7 +32,7 @@ const Character = props => {
     return(
         <div className="character">
             <h3>{props.character.name}</h3>
-            <img>{pics[props.id]}</img>
+            <img src={pics[props.id]}/>
             <ul>
                 <li>Gender: {props.character.gender}</li>
                 <li>Mass: {props.character.mass}</li>
