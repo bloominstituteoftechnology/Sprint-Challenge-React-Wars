@@ -1,0 +1,7 @@
+.makers-container {
+    border: 3px solid red;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+}
+
