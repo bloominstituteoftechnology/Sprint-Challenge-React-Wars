@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Character from './character';
+import CharList from './charList';
+ 
+ 
 class App extends Component {
   constructor() {
     super();
@@ -28,14 +31,20 @@ class App extends Component {
         throw new Error(err);
       });
   };
-
-  render() {
-    return (
+   render() {
+    // console.log(this.state)
+    console.log()
+     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-      </div>
-    );
-  }
+         <CharList chars = {this.state.starwarsChars}
+               cars = {this.state.starwarsChars.vehicles}/>
+                       console.log(this.state.starwarsChars.vehicles)
+
+        </div>
+     );
+  }     
+
 }
 
-export default App;
+  export default App;
