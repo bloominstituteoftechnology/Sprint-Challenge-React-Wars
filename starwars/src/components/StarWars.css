@@ -1,0 +1,32 @@
+.cardlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    widows: 100%;
+    justify-content: center;
+  }
+
+  .cards {
+    /* background-color:#FFFFE0; */
+    background-color: 	#D3D3D3 ;
+    border:2px solid black;
+    border-radius: 10%;
+    margin: 20px;
+    width: 40%;
+    text-align: left;
+  }
+
+  
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #686862;
+    text-shadow: 1px, 1px, 5px #fff;
+    text-decoration-line: underline;
+  }
+
+  .listItem {
+    color: #41413C;
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+  }
