@@ -1,0 +1,21 @@
+.MainChar {
+    width: 30%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.447);
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.MainName {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.MainStat {
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+}
