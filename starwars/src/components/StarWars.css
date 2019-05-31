@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+
+.container {
+    display: flex;
+    border: 2px solid white;
+    padding: 10px;
+    margin:20px;
+    background: rgba(162, 185, 169, 0.486);
+}
+
+h3{
+    font-family: 'Nova Flat', cursive;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(17, 17, 17);
+}
+
+p {
+    font-weight: bold;
+    font-family: 'Nova Flat', cursive;
+}
