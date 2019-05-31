@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CharCard from './components/CharCard';
+
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: null,
+      prev: null,
     };
   }
 
@@ -22,17 +27,34 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        console.log(data);
+        this.setState({ 
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  loadNextPage = () => {
+    this.getCharacters(this.state.next);
+  }
+
+  loadPrevPage = () => {
+    this.getCharacters(this.state.previous);
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharCard data={this.state.starwarsChars} />
+        <div className='pagination-container'>
+          {this.state.previous === null ? null : (<button className='pagination' onClick={this.loadPrevPage}>Previous</button>)}
+          {this.state.next === null ? null : (<button className='pagination' onClick={this.loadNextPage}>Next</button>)}
+        </div>
       </div>
     );
   }
