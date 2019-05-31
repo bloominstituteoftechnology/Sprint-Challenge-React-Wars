@@ -6,20 +6,17 @@ const StarWarsCharData = props => {
     <div className="starWarsCharContent">
       <h1>{props.character.name}</h1>
       <div className="charContentDetails">
-        <div>BIRTHDAY:{props.character.birth_year}</div>
-        <div>CREATED:{props.character.created}</div>
-        <div>EDITED:{props.character.edited}</div>
-        <div>EYE COLOR:{props.character.eye_color}</div>
-        <div>GENDER:{props.character.gender}</div>
-        <div>HAIR COLOR:{props.character.hair_color}</div>
-        <div>HEIGHT: {props.character.height}</div>
-        <div>HOMEWORLD: {props.character.homeworld}</div>
-        <div>MASS: {props.character.mass}</div>
-        <div>SKING COLOR: {props.character.skin_color}</div>
-        <div>SPECIES: {props.character.species}</div>
-        <div>STARSHIPS: {props.character.starships}</div>
-        <div>URL: {props.character.url}</div>
-        <div>VEHICLES: {props.character.vehicles}</div>
+        <div className="charDetail">BIRTHDAY:{props.character.birth_year}</div>
+        <div className="charDetail">EYE COLOR:{props.character.eye_color}</div>
+        <div className="charDetail">GENDER:{props.character.gender}</div>
+        <div className="charDetail">
+          HAIR COLOR:{props.character.hair_color}
+        </div>
+        <div className="charDetail">HEIGHT: {props.character.height}</div>
+        <div className="charDetail">MASS: {props.character.mass}</div>
+        <div className="charDetail">
+          SKING COLOR: {props.character.skin_color}
+        </div>
       </div>
     </div>
   );

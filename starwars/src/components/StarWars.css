@@ -1,0 +1,21 @@
+.charList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.starWarsCharContent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+  background: white;
+  box-shadow: 2px 2px 2px 2px grey;
+  color: #443e3e;
+  margin: 20px 0px 20px;
+}
+
+.charDetail {
+  margin: 10px;
+}
