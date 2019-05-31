@@ -1,23 +1,28 @@
 import React from "react";
+import "./StarWars.css";
 
 const StarWarsCharData = props => {
-  <div className="starWarsCharContent">
-    <h1>{props.character.name}</h1>
-    <div className="charContentDetails">
-      <div>Birthday:{props.character.birth_year}</div>
-      <div>created:{props.character.created}</div>
-      <div>edited:{props.character.edited}</div>
-      <div>eyeColor:{props.character.eye_color}</div>
-      <div>gender:{props.character.gender}</div>
-      <div>hairColor:{props.character.hair.color}</div>
-      <div>height:{props.character.height}</div>
-      <div>homeworld:{props.character.homeworld}</div>
-      <div>mass:{props.character.mass}</div>
-      <div>skingColor:{props.character.skin_color}</div>
-      <div>species:{props.character.species}</div>
-      <div>starships:{props.character.starships}</div>
-      <div>url:{props.character.url}</div>
-      <div>vehicles:{props.character.vehicles}</div>
+  return (
+    <div className="starWarsCharContent">
+      <h1>{props.character.name}</h1>
+      <div className="charContentDetails">
+        <div>BIRTHDAY:{props.character.birth_year}</div>
+        <div>CREATED:{props.character.created}</div>
+        <div>EDITED:{props.character.edited}</div>
+        <div>EYE COLOR:{props.character.eye_color}</div>
+        <div>GENDER:{props.character.gender}</div>
+        <div>HAIR COLOR:{props.character.hair_color}</div>
+        <div>HEIGHT: {props.character.height}</div>
+        <div>HOMEWORLD: {props.character.homeworld}</div>
+        <div>MASS: {props.character.mass}</div>
+        <div>SKING COLOR: {props.character.skin_color}</div>
+        <div>SPECIES: {props.character.species}</div>
+        <div>STARSHIPS: {props.character.starships}</div>
+        <div>URL: {props.character.url}</div>
+        <div>VEHICLES: {props.character.vehicles}</div>
+      </div>
     </div>
-  </div>;
+  );
 };
+
+export default StarWarsCharData;
