@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarWarChars from './components/Method2/StarWarChars'
+import SWMap from './components/Method1/SWMap'
 
 class App extends Component {
   constructor() {
@@ -22,17 +24,26 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // console.log(data.results);
         this.setState({ starwarsChars: data.results });
+        // console.log(this.state.starwarsChars)
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+
   render() {
+    // let retrieveSWName = this.state.starwarsChars.map(char => char.name)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {/* Component Method 1 */}
+        {/* <StarWarChars starwarsChars={this.state.starwarsChars}/> */}
+        
+        {/* Component Method 2 */}
+        <section className="M2-container"><SWMap starwarsChars={this.state.starwarsChars}/></section>
       </div>
     );
   }

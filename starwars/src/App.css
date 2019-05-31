@@ -1,8 +1,18 @@
 .App {
   text-align: center;
+  font-size: 62.5%;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 2.5rem;
 }
 /* write your parent styles in here for your App.js */
+.M2-container{
+  width: 80%;
+  /* height: 500px; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid green; */
+}
