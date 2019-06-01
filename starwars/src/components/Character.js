@@ -4,7 +4,7 @@ function Character(props) {
     return (
         <div className='star-card'>
             <div className='star-info'>
-                <h3>{props.char.name}</h3>
+                <h2>{props.char.name}</h2>
                 <p>
                     <strong>Gender: </strong> {props.char.gender}
                 </p>
