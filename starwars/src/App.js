@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+// import Character from './components/Character';
+import CharacterList from "./components/CharacterList";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: []
+      
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people");
   }
 
   getCharacters = URL => {
@@ -19,10 +23,12 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
+        // console.log(res)
         return res.json();
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        // console.log(data)
       })
       .catch(err => {
         throw new Error(err);
@@ -31,8 +37,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
+      <div>
+        <div className="App ">
+          <div className="fade" />
+          <div className="starwars">
+            <div className="crawl">
+              <CharacterList starwarsChars={this.state.starwarsChars} />
+              {this.getCharacters("https://swapi.co/api/people/?page=2"
+)}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
