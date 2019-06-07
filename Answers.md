@@ -2,6 +2,9 @@ Marco Guzman Sprint Challenge answers
 
 # Answers
 
+
+
+
 1. What is React JS? How does it differ from other JavaScript frameworks?
 
 React is a JavaScript Library.  Its purpose is to built powerful applications and React tries to solve the problem of providing a smooth experience for users as well as the ease of construction and deployment for developers.
