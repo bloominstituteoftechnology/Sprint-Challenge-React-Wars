@@ -1,8 +1,25 @@
+body{
+  display:flex;
+  justify-content: center;
+}
 .App {
   text-align: center;
+  width:500px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  text-decoration: underline;
 }
 /* write your parent styles in here for your App.js */
+.card-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card{
+  background:rgba(250, 202, 31, 0.5);
+  width:40%;
+  border-bottom:2px solid rgba(0, 0, 0, 0.37);
+}
