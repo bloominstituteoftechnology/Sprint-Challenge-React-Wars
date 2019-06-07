@@ -1,14 +1,41 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from "./components/Character"
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      open: false ,
     };
   }
 
+  openHandler = (cardId) =>{
+    this.setState({
+      starwarsChars: this.state.starwarsChars.map(character =>{
+        if(character.created===cardId){
+          return{
+            open: !character.open,
+            openHandler : character.openHandler,
+            key : character.created,
+            id : character.created,
+            name: character.name,
+            birth_year: character.birth_year,
+            eye_color: character.eye_color,
+            gender: character.gender,
+            hair_color: character.hair_color,
+            height: character.height,
+
+          }
+
+        } else{
+          return character
+        }
+      })
+    })
+
+  }
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
   }
@@ -33,6 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <Character starwarsChars ={this.state.starwarsChars} openHandler={this.openHandler} open={this.state.open} />
       </div>
     );
   }
