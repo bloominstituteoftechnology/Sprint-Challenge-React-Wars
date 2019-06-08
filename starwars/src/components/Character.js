@@ -5,10 +5,10 @@ const Character = (props) => {
         <div className="character">
             <h2>{props.character.name}</h2>
             <div className="traits">
-                <p>Race: {props.character.race}</p>
                 <p>Gender: {props.character.gender}</p>
-                <p>Birth Planet: {props.character.planet}</p>
-                <p>Specialty: {props.character.specialty}</p>
+                <p>Height: {props.character.height} cm</p>
+                <p>Eye Color: {props.character.eye_color}</p>
+                <p>Birth Year: {props.character.birth_year}</p>
             </div>
         </div>
     )
