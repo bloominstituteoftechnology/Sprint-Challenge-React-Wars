@@ -1,0 +1,11 @@
+.characters {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    color: navy;
+}
+
+.allCharacters {
+    margin: 0 auto;
+    border: 1px solid;
+    width: 50%;
+}
