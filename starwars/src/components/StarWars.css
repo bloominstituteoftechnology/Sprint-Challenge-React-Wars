@@ -12,15 +12,10 @@ body, html {
     
 }
 
-container {
-    margin-bottom: 20px;
-}
-
 .character {
     background-image: url('../sw-bg.jpg');
-    display: flex;
-    flex-direction: column;
-    width: 28%;
+    flex-direction: column wrap;
+    width: 25%;
     font-size: 0.9rem;
     color: #3D2B1A;
     line-height: 0rem;
