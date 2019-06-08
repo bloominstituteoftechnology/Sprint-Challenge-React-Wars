@@ -8,7 +8,7 @@ const CharacterCard = props => {
             {props.starwarsChars.map(character =>
                 <CharacterList key={character.name} character={character} />
             )}
-        </div>
+         </div>
     );
 };
 
