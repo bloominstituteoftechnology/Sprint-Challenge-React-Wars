@@ -1,0 +1,29 @@
+h2{
+    width: 100%;
+    box-shadow: 6px 5px 10px black;
+}
+
+.character{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.traits{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.characters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
