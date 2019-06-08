@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a library designed to streamline the process of DOM operations via a virtual DOM. Rather than rendering the page for every data change, React JS uses components that are updated in this virtual DOM.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React entails breaking down a large application by thinking about exactly how it works and creating smaller, separate parts (components). It frees you from having to think about how you transition from one state to another, and then to another, and so on, because data travels directly from parent to child.
 
 - [ ] Describe state.
 
+State is data a component may change to trigger an UI update, in response to an event.
+
 - [ ] Describe props.
+
+Props are immutable properties passed to a child component that can hold many data types (e.g. array, object, number, function, others).
 
 ## Project Set Up
 

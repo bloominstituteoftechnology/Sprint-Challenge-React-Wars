@@ -20,4 +20,4 @@ State is data a component may change to trigger an UI update, in response to an 
 
 1.  Describe props.
 
-Props are immutable properties passed to a child component that can hold many data types (e.g. array, object, number, function, others)
+Props are immutable properties passed to a child component that can hold many data types (e.g. array, object, number, function, others).
