@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Characters from './components/Characters'
+import CharacterList from './components/CharacterList'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       starwarsChars: [],
-      next: "",
-      previous: ""
     };
   }
 
@@ -26,7 +24,7 @@ class App extends Component {
       })
       .then(data => {
         this.setState({
-          starwarsChars: data.results,
+          starwarsChars: data.results
         });
       })
       .catch(err => {
@@ -38,8 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Characters 
-          starwarsChars = {this.state.starwarsChars}
+        <CharacterList starwarsChars = {this.state.starwarsChars}
         />
       </div>
     );

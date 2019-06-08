@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Characters = (props) => {
+const Character = (props) => {
     return (
         <div className="character">
             <h2>{props.character.name}</h2>
@@ -14,4 +14,4 @@ const Characters = (props) => {
     )
 }
 
-export default Characters;
+export default Character;
