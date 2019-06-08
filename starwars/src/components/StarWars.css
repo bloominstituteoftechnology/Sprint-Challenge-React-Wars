@@ -1,0 +1,17 @@
+.characters {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 20px;
+}
+
+p:first-child {
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+}
+
+.allCharacters {
+    margin: 0 auto;
+    border: 1px solid white;
+    width: 50%;
+}
