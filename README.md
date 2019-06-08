@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a Javascript library that does one thing very well ... UI. It solves the problem of how to create scalable UI with changing data without predefined rules on how to create. React is a fast, single use Javascript API.
+
 - [ ] What does it mean to _think_ in react?
+
+The creators of React feel that React is the fastest way to build scalable web apps in Javascript, but to 'think' in react means to think in components, to hink reusable, and this makes the app scalable.
 
 - [ ] Describe state.
 
+State is the current state or the current data the the UI is curretnly using. The state is how the app 'reacts' to change in data, or change in state.
+
 - [ ] Describe props.
+
+Props are simply stated, properties that can be used in React and the JSX.
 
 ## Project Set Up
 
@@ -43,15 +51,15 @@ Follow these steps to set up and work on your project:
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+      Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 Please note:
 
@@ -84,7 +92,6 @@ Your data set will look like this:
 
 ![Star Wars state data](starwars_data.png)
 
-
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
@@ -100,7 +107,6 @@ Required best practices:
 - [ ] Consistent quotation usage.
 - [ ] Spell-check.
 - [ ] Schedule time to review, refine and reassess your work.
-
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
