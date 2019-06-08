@@ -6,3 +6,39 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.CharacterWrapper{
+  background: black;
+  width:400px;
+  border:4px solid slategray;
+  margin-bottom:20px;
+}
+.App{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  min-width: 515px;
+}
+.CharacterName{
+  text-decoration: underline;
+  color:white;
+}
+.CharStats{
+  color:white;
+  font-size:20px;
+  
+}
+.miniWrap{
+  background:#990000;
+  margin:20px;
+  padding:30px;
+  border-radius:8px;
+}
+.StatStyle{
+  display:flex;
+  flex-direction: column;
+  background:#660000;
+  border-radius: 9px;
+}
