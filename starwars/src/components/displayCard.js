@@ -2,11 +2,11 @@ import React from 'react';
 import Char from './char.js';
 
 const DisplayCard = props => {
-    console.log("displayCard props:", props);
+    const starwarsChars = props.starwarsChars;
     return (
-        <div key={props.starwarsChars.created}>
-        {props.starwarsChars.map(char => {
-            return <Char props={props.starwarsChars} />
+        <div className="centered">
+        {starwarsChars.map(char => {
+            return <Char char={char} />
         })}
         </div>    
         );
