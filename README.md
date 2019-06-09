@@ -124,3 +124,4 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 
 - Be mindful of the `fetch API` that is now built into most modern browsers [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).
 - Your data coming back from Dogs should be formatted in JSON format.
+initial commit
