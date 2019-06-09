@@ -1,8 +1,36 @@
 .App {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 .Header {
-  color: #443e3e;
+  color: #e00e2a;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.star-card {
+  background: rgb(135, 74, 192);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px black; 
+}
+
+.charThings {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width:100%;
+}
+
+.star-info {
+  text-align:end;
+  padding-left: 25px;
+}
