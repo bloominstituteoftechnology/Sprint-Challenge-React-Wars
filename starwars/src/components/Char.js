@@ -1,14 +1,13 @@
 import React from 'react';
 
-const CharacterList = props => {
+const Char = props => {
     return (
         <div>
-            
+            <p>{props.random.name}</p>
         </div>
     );
 };
 
 
 
-
-export default CharacterList;
+export default Char;
