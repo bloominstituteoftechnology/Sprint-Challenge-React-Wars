@@ -52,8 +52,8 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
 
-        <CharacterList value={this.state.starwarsChars} />
-        
+        {/* <CharacterList value={this.state.starwarsChars} /> */}
+
         <button className={this.state.previous ? null : "hide" }  onClick={this.previousHandler}>Previous</button>
         <button className={this.state.next ? null : "hide" } onClick={this.nextHandler}>Next</button>
       </div>

@@ -1,0 +1,55 @@
+.card-container {
+    width:40%;
+    margin-right:0;
+    margin-bottom: 25px;
+    padding:15px;
+    -webkit-box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+}
+
+.card-container h1 {
+    color:darkred;
+    -webkit-box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 51px 16px rgba(0,0,0,0.75);
+}
+
+#list-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.attribute {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.attributes .char-name {
+    font-weight:bold;
+    font-size:24px;
+    font-style: italic;
+    font-family: fantasy;
+    margin-right:5px;
+}
+
+.attributes h3 {
+    font-size:20px;
+    color:darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right:5px;
+}
+
+.attributes .attribute {
+    color:green;
+    background-color:blanchedalmond;
+    font-size:18px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.attributes .skin {
+    background-color:whitesmoke;
+}
