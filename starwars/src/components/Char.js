@@ -2,8 +2,11 @@ import React from 'react';
 
 const Char = props => {
     return (
-        <div>
-            <p>{props.random.name}</p>
+        <div className='list'>
+            <h1 className='name'>{props.character.name}</h1>
+            <p>Birthday: {props.character.birth_year}</p>
+            <p>{props.character.gender}</p>
+        
         </div>
     );
 };

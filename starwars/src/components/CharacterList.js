@@ -1,22 +1,16 @@
-import React from 'react';
-import Char from './Char';
-
-
+import React from "react";
+import Char from "./Char";
 
 const CharacterList = props => {
-    return (
-        <div>
-            {props.chars.map(char => {
-                return <Char 
-                key = {char.created} 
-                random={char} 
-                name = {props.chars.name}
-                />
-            })}
-        </div>
-    );
-}
-
-
+  return (
+    <div className='list'>
+      {props.chars.map(char => {
+        return (
+          <Char character={char} />
+        );
+      })}
+    </div>
+  );
+};
 
 export default CharacterList;
