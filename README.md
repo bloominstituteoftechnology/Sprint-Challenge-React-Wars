@@ -25,12 +25,16 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS is a JavaScript language that helps create interactive UIs. You can build small reusable pieces of UI that can be easily put together to make a large scale application.
 
 - [ ] What does it mean to _think_ in react?
+React is component based. You build encapsulated compenents that manage their own state, then compose them to make complex UIs. Each component ideally should only do one thing.  Thinking in react basically means breaking down the app into components.
 
 - [ ] Describe state.
+In the React sense, “state” is an object that represents the pRarts of the app that can change. Each component can maintain its own state, which lives in an object called this.state.
 
 - [ ] Describe props.
+Props stand for properties. When we give a component some ‘attribute-looking’ data on our JSX, we’re essentially telling React to build us out an object that we can consume as a parameter inside of a Functional Component. Props are immutable (or Read only) meaning we cannot mutate props in any fashion. We simple receive them in our components and use them to display data to the user.
 
 ## Project Set Up
 
