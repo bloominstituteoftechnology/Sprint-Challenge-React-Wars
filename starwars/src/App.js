@@ -30,15 +30,18 @@ class App extends Component {
       });
   };
 
+
+
   render() {
+    // console.log(this.getCharacters)
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.componentDidMount}
-        <StarWarsList />
+         <StarWarsList starwarsChars={this.state.starwarsChars}/>
       </div>
     );
   }
 }
 
 export default App;
+

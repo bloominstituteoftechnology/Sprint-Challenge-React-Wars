@@ -13,8 +13,7 @@ const Character = (props) => {
                 </p>
             </div>
         </div>
-       
-       
+
     )
 }
 
