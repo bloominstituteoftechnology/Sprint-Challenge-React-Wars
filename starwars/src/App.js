@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Mapstar from './components/MapStar'
+import Star from './components/Star'
 
 class App extends Component {
   constructor() {
@@ -20,6 +20,7 @@ class App extends Component {
     // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
+        console.log(res)
         return res.json();
       })
       .then(data => {
@@ -34,10 +35,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <Mapstar charaterInfo={this.state} />
+        <Star charaterInfo={this.state} />
       </div>
     );
-  }
+    }
 }
 
 export default App;
