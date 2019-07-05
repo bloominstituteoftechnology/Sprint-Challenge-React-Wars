@@ -1,0 +1,8 @@
+
+.character-cards {
+    display: flex; 
+}
+
+.character .content {
+    width: 25%; 
+}
