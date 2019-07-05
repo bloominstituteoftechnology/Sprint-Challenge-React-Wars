@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharList from './components/CharList.js';
+
 
 class App extends Component {
   constructor() {
@@ -8,6 +10,7 @@ class App extends Component {
       starwarsChars: []
     };
   }
+  
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -29,10 +32,26 @@ class App extends Component {
       });
   };
 
+  // toggleExpand = (name) => {
+  //   console.log(name);
+  //   this.setState(prevState => {
+  //     return {
+  //       starwarsChars: prevState.starwarsChars.map(char => {
+  //         if (name === char.name) {
+  //           return {
+  //             ...char, expand: !char.expand
+  //           }
+  //         } else return char
+  //       })
+  //     }
+  //   });
+  // }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharList starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }

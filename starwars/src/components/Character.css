@@ -1,0 +1,17 @@
+.char-container {
+    height: 300px;
+    width: 225px;
+    border: 1px solid salmon;
+    margin: 4px;
+    background: lightgrey;
+    opacity: .5;
+}
+.char-container h3 {
+    background: black;
+    color: aliceblue;
+}
+
+.stats {
+    text-align: left;
+    padding: 3px;
+}
