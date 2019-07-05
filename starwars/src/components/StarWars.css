@@ -1,0 +1,29 @@
+.allChars {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+    margin: auto;
+}
+
+.cards{
+    width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    font-size: 0.8rem;
+    background: lightgray;
+    opacity: 0.5;
+    padding: 1rem;
+    overflow: hidden;
+}
+.cards:hover{
+    opacity:1;
+    font-weight: bold;
+    font-size: 1rem;
+    background: whitesmoke;
+}
+
+.cards div{
+    padding: 0.3rem;
+}
