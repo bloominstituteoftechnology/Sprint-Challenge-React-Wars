@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .Header {
   color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 2px 2px 8px #fff;
+  font-size: 54px;
 }
 /* write your parent styles in here for your App.js */
+
