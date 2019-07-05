@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import DataList from './components/DataList';
 
 class App extends Component {
   constructor() {
@@ -33,9 +34,13 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <DataList starwarslist={this.state.starwarsChars}/>>
+     
       </div>
     );
   }
 }
 
 export default App;
+
+//pull init
