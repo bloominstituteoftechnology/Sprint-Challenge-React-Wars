@@ -6,3 +6,17 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button{
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 auto;
+  background-color: brown;
+  border-radius: 10%;
+}
