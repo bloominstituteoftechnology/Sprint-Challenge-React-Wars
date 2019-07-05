@@ -1,0 +1,11 @@
+.character-card-demo {
+    border: 3px solid grey;
+    margin: 5% 0%;
+    padding: 5% 0%;
+    width: 400px;
+    align-content: center;
+    background: grey;
+    opacity: .7;
+    border-radius: 20px;
+}
+
