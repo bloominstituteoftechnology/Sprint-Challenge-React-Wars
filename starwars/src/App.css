@@ -6,3 +6,20 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.closed{
+  display: none;
+}
+.containerDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myCards{
+  height: 220px;
+  width: 200px;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.myCards p{
+  line-height: .5;
+}
