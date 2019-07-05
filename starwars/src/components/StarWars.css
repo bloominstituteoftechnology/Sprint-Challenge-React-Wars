@@ -1,0 +1,10 @@
+.cardContainer {
+    width: 50%;
+    margin: auto;
+    border: 1px solid red;
+    background: lightblue;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
