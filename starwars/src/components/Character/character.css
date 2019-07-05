@@ -1,0 +1,30 @@
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    }
+
+.character {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    cursor: pointer;
+}
+    
+.character:hover {
+    opacity: 0.9;
+}
+    
+.character-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.character-name {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    
+}
+
