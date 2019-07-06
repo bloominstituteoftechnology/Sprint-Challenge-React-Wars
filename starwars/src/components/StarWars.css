@@ -1,0 +1,29 @@
+.characters {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.character {
+    border: 5px inset black;
+    color: white; 
+    width: 400px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.character:hover{
+    background: white;
+    color: black;
+}
+
+button{
+    margin:2px;
+}
+button:hover {
+    cursor:pointer;
+}
+
+
+

@@ -1,8 +1,21 @@
 .App {
   text-align: center;
+  width:900px;
+  margin: 0 auto;
+  
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+#myVideo {
+  min-width: 100%; 
+  min-height: 100%; 
+}
 /* write your parent styles in here for your App.js */
+
+
+/* .pages {
+  margin-top: 25px;
+} */
