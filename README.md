@@ -60,12 +60,13 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Featch A list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
-- [ ] Set the data you fetch to state, and pass the state as props to the child component. Map over the list and render a each character on the page.
-- [ ] You must have at least one element for each star wars character in the data set.
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles.
-- [ ] Finally, add at least two snapshot tests.
+- [ ] Set the data you fetch to state
+- [ ] Map over the list and render a component for each character on the page
+- [ ] You must have at least one element for each star wars character in the data set
+- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
+- [ ] Finally, add at least two snapshot tests
 
 Required best practices:
 
@@ -81,8 +82,8 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 ## Stretch Problems
 
 - [ ] Build a pagination system that will allow you to load the next page of data
-  - console.log() the data coming back from the server.
-  - Notice that there are `next` `previous` fields that give you a URL.
-  - You can build a function that will get chars called `getCharacters` that you can use dynamically to get the next or previous pages. You would need to supply it with the proper fields, and you'll need to set up more state to do this.
+  - console.log() the data coming back from the server
+  - Notice that there are `next` and `previous` fields that give you a URL
+  - You can build a function that will get characters called `getCharacters` that you can use dynamically to get the next or previous set of characters. You would need to supply it with the proper fields, and you'll need to set up more state to do this
 
 - [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
