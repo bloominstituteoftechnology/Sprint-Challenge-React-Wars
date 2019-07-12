@@ -1,4 +1,5 @@
 import React from "react";
+import {Card} from 'semantic-ui-react'
 
 const Character = ({character}) => {
     const {name, gender, birth_year, height, mass, hair_color, eye_color} = character 

@@ -1,11 +1,12 @@
 import React from 'react';
 import Character from '../components/Character';
+import {Grid} from 'semantic-ui-react'
 
 const CharacterList = ({characters}) => {
     return (
-        <div>
+        <Grid container divided centered>
             {characters.map((char, i) => <Character character={char} key={i} />)}
-        </div>
+        </Grid>
     );
 };
 
