@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 
 const Character = ({ character }) => {
   const {
@@ -14,6 +14,7 @@ const Character = ({ character }) => {
   return (
     <Card>
       <Card.Content>
+        <Icon name="user outline" />
         <Card.Header>Name: {name}</Card.Header>
         <Card.Meta>
           Height: {height} - Mass: {mass}
