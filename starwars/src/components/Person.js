@@ -2,15 +2,26 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-const PersonDiv = styled.div`
+const MaleDiv = styled.div`
     display: flex;
     flex-direction: column;
-    color: black;
+    color: yellow;
     border: solid black 1px;
     border-radius: 15px;
     width: 100%;
+    background-color: blue;
+    box-shadow: 5px 5px black;
+    padding: 0px 10px;
+    height: 100%;
+`;
+const FemaleDiv = styled(MaleDiv)`
+    color: black;
+    border-radius: 15px;
     background-color: tomato;
-    box-shadow: 5px 5px 1px;
+`;
+const ThingDiv = styled(MaleDiv)`
+    color: black;
+    background-color: yellow;
 `;
 
 function Person (props) {
@@ -26,9 +37,16 @@ function Person (props) {
 
       
     return (
-        <PersonDiv>
+        props.person.gender === "male" ? (<MaleDiv>
             <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
-        </PersonDiv>
+        </MaleDiv>) : (
+            props.person.gender === "female" ? ( <FemaleDiv>
+                <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
+            </FemaleDiv>) : <ThingDiv>
+            <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
+        </ThingDiv>
+        ) 
+        
     )
 }
 

@@ -4,16 +4,19 @@ import styled from 'styled-components';
 
 const PeopleDiv = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    border: solid green 1px;
-    width: 25vw;
+    width: 75vw;
     margin: auto;
+    justify-content: space-evenly;
 `;
 
 const PersonDiv = styled.div`
-    width: 100%;
+    width: 16%;
     margin-bottom: 10px;
+    margin: 5px 10px;
+    height: 90px;
 `;
 
 
