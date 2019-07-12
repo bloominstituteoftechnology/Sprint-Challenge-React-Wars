@@ -8,9 +8,11 @@ const App = () => {
   const [state, setState] = useState({
     characters: [],
     nextPage: null,
-    previousPage: null
+    previousPage: null,
+    loading: false
   });
   const getCharacters = URL => {
+    setState({...state, loading: true})
     fetch(URL)
       .then(res => {
         return res.json();
@@ -19,6 +21,7 @@ const App = () => {
         console.log(data);
         setState({
           ...state,
+          loading: false,
           characters: data.results,
           nextPage: data.next,
           previousPage: data.previous
@@ -32,7 +35,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterList characters={state.characters} />
+      <CharacterList characters={state.characters} loading={state.loading}/>
 
       <Button.Group>
         <Button disabled={state.previousPage === null ? true: false} onClick={() => getCharacters(state.previousPage)}>Previous</Button>
