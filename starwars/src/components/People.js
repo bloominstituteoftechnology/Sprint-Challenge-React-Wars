@@ -1,17 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 import Person from "./Person";
+import styled from 'styled-components';
+
+const PeopleDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid green 1px;
+    width: 25vw;
+    margin: auto;
+`;
+
+const PersonDiv = styled.div`
+    width: 100%;
+    margin-bottom: 10px;
+`;
+
+
 
 function People (props) {
+
+    // useEffect(() => {
+    //     axios.get(props.person.homeworld)
+    //       .then (res => console.log(res) //why can't I console.log before this setPeople?
+    //       )
+    //       .catch (err => console.log(err))
+    //   }, [])
+
     return (
-        <div>
+        <PeopleDiv>
             {props.people.map(person => {
                 return (
-                    <div key = {Math.random()}>
+                    <PersonDiv key = {Math.random()}>
                         <Person person = {person}/>
-                    </div>
+                    </PersonDiv>
                 )
             })}
-        </div>
+        </PeopleDiv>
     )
 }
 
