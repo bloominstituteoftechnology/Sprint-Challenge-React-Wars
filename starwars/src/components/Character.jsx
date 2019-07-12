@@ -1,24 +1,30 @@
 import React from "react";
-import {Card} from 'semantic-ui-react'
+import { Card } from "semantic-ui-react";
 
-const Character = ({character}) => {
-    const {name, gender, birth_year, height, mass, hair_color, eye_color} = character 
+const Character = ({ character }) => {
+  const {
+    name,
+    gender,
+    birth_year,
+    height,
+    mass,
+    hair_color,
+    eye_color
+  } = character;
   return (
-    <div>
-      <h3>Name: {name}</h3>
-      <h5>Gender: {gender}</h5>
-      <h5>Born: {birth_year}</h5>
-      <div>
-        <p>
-          Height: {height} - Mass:{" "}
-          {mass}
-        </p>
-        <p>
-          Hair Color: {hair_color} - Eye-Color:{" "}
-          {eye_color}
-        </p>
-      </div>
-    </div>
+    <Card>
+      <Card.Content>
+        <Card.Header>Name: {name}</Card.Header>
+        <Card.Meta>
+          Height: {height} - Mass: {mass}
+        </Card.Meta>
+        <Card.Meta>
+          Hair Color: {hair_color} - Eye-Color: {eye_color}
+        </Card.Meta>
+        <Card.Description>Gender: {gender}</Card.Description>
+        <Card.Description>Born: {birth_year}</Card.Description>
+      </Card.Content>
+    </Card>
   );
 };
 
