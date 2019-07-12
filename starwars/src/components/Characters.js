@@ -5,8 +5,7 @@ const Characters = props => {
     return (
         <div>
             {console.log(props.characters)}
-            {props.characters.map(character => <Character character={character} />)
-        }
+            {props.characters.map(character => <Character character={character} />)}
         </div>
     )
 }
