@@ -15,7 +15,7 @@ it('matchesSnapApp', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('matchesSnapCharcters', () => {
+it('matchesSnapCharacters', () => {
   const trees = renderer.create(<Characters />).toJSON();
   expect(trees).toMatchSnapshot();
 });

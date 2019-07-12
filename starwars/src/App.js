@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1>testing</h1>
+      <h1>React Wars</h1>
       <Characters characters={characters} />
     </div>
   );
