@@ -10,12 +10,12 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('matchesSnapApp', () => {
+it('matchesApp', () => {
   const tree = renderer.create(<App />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-it('matchesSnapCharacters', () => {
+it('matchesCharacters', () => {
   const trees = renderer.create(<Characters />).toJSON();
   expect(trees).toMatchSnapshot();
 });
