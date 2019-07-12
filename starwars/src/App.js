@@ -14,7 +14,12 @@ const App = () => {
         return res.json();
       })
       .then(data => {
-        setState(data.results);
+        setState({
+          ...state,
+          characters: data.results,
+          nextPage: data.next,
+          previousPage: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
@@ -24,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterList characters={state}/>
+      <CharacterList characters={state.characters} />
     </div>
   );
 };
