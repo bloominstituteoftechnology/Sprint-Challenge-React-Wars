@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 // import styled from 'styled-components'
 import DisplayChars from "./DisplayChars";
 
@@ -17,11 +18,11 @@ export default function GetChars() {
   }, [pageStart]);
 
   return !charList ? (
-    <div>"Loading..."</div>
-  ) : (
     <div>
-      <p>List returned.</p>
-      <div>{<DisplayChars charList={charList.results} />}</div>
+      <p>Loading...</p>
+      <Loader type="ThreeDots" color="#00BFFF" height="100" width="100" />
     </div>
+  ) : (
+    <div>{<DisplayChars charList={charList.results} />}</div>
   );
 }
