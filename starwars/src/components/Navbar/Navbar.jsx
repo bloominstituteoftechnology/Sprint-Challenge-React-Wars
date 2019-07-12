@@ -13,7 +13,7 @@ const Navbar = () => {
             width="90px"
             opacity="2"
             fontWeight="bolder"
-            height="42px"
+            height="41.707px"
             viewBox="5.222 537.035 90 41.707"
           >
             <path

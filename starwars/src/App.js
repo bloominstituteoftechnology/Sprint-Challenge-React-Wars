@@ -1,6 +1,8 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import React from 'react'
+import './App.css'
+import Navbar from './components/navbar/Navbar';
+import GetCharacters from './components/Characters/GetCharacters'
+import '../src/Animation.css'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,7 +15,10 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header slideRight">React Wars</h1>
+      <div>
+      <GetCharacters />
+      </div>
     </div>
   );
 }

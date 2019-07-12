@@ -1,9 +1,9 @@
 .nav {
     text-align: center;
-    opacity: .7;
+    opacity: .5;
     width: 100vw;
     height: 4em;
-    background: #000;
+    background: #7e7a8f;
 }
 
 .nav-item {
@@ -11,4 +11,5 @@
     text-align: center;
     opacity: 1 !important;
     margin-top: .7rem;
+    cursor: pointer;
   }
