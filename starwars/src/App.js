@@ -2,18 +2,10 @@ import React, { useState, useEffect} from 'react';
 import './App.css';
 
 const App = () => {
-  constructor() {
-    super();
-    this.state = {
-      starwarsChars: []
-    };
-  }
 const [state, setState] = useState([])
-  componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
-  }
 
-  getCharacters = URL => {
+
+  const getCharacters = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
@@ -29,6 +21,8 @@ const [state, setState] = useState([])
         throw new Error(err);
       });
   };
+
+  useEffect(() => getCharacters('https://swapi.co/api/people/'), [])
 
     return (
       <div className="App">
