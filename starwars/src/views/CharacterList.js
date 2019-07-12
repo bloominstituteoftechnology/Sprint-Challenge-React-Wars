@@ -1,9 +1,10 @@
 import React from 'react';
+import Character from '../components/Character';
 
-const CharacterList = props => {
+const CharacterList = ({characters}) => {
     return (
         <div>
-            
+            {characters.map((char, i) => <Character character={char} key={i} />)}
         </div>
     );
 };
