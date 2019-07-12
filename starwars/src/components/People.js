@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Person from "./Person";
 import styled from 'styled-components';
 
@@ -20,14 +19,6 @@ const PersonDiv = styled.div`
 
 
 function People (props) {
-
-    // useEffect(() => {
-    //     axios.get(props.person.homeworld)
-    //       .then (res => console.log(res) //why can't I console.log before this setPeople?
-    //       )
-    //       .catch (err => console.log(err))
-    //   }, [])
-
     return (
         <PeopleDiv>
             {props.people.map(person => {

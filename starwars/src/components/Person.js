@@ -27,8 +27,7 @@ function Person (props) {
       
     return (
         <PersonDiv>
-            <p>{props.person.name} whose eyes were </p>
-            <p>{props.person.eye_color} as snow on {homeworld} </p>
+            <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
         </PersonDiv>
     )
 }

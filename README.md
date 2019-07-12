@@ -24,15 +24,32 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+  React is a library that allows for the compartmentalization of code into individual components such that code can be
+  broken up into manageable chunks.
 
-- [ ] Describe state.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+
+  Thinking in react is thinking of code in individual chunks and the flow of data from component to component via props, state, and importing/exporting that is necessary for a program written with React to function properly.
+
+
+- [x] Describe state.
+
+  State is an object that stores data to be used by a class component and its children. 
+
+
+- [x] Describe props.
+
+  Props is an object that acts as the carrier of all a parent's chosen functions and data necessary for its child component(s)
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects affect code outside of the function that's being executed. We sync effects by the second argument that we pass into the useEffect() function.
+        __ = updates constantly
+        [] = update on mount only
+       [x] = update when x changes
 
 ## Project Set Up
 
@@ -65,7 +82,7 @@ Your finished project must include all of the following requirements:
 - [x] Set the data you fetch to state
 - [x] Map over the list and render a component for each character on the page
 - [x] You must have at least one element for each star wars character in the data set
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
+- [x] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
 - [ ] Finally, add at least two snapshot tests
 
 Required best practices:
