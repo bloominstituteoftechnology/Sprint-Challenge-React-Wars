@@ -10,6 +10,8 @@ To think in React means to take a high level look at the application you are try
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+Stateful Components previously needed a render() method that takes the return of the JSX. They are also classes so if you need to reference the props that were passsed to it you need to use this.props. Functional components didn't have state but can access the state of it's parent if that parent is a class component. Now with the introduction of hooks we can have state in functional components and can even simulate behaviors that were only accessible with classical components.
+
 1.  Describe state.
 
 State is the current state of the react component. It is managed and can only be used on a class component. State can be changed using the 'setState' method. When the components state changes it re renders the component to reflect the new state.
