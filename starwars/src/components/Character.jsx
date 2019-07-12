@@ -1,19 +1,20 @@
 import React from "react";
 
-const Character = () => {
+const Character = ({character}) => {
+    const {name, gender, birth_year, height, mass, hair_color, eye_color} = character 
   return (
     <div>
-      <h3>Name: {character.name}</h3>
-      <h5>Gender: {character.gender}</h5>
-      <h5>Born: {character.birth_year}</h5>
+      <h3>Name: {name}</h3>
+      <h5>Gender: {gender}</h5>
+      <h5>Born: {birth_year}</h5>
       <div>
         <p>
-          Height: {character.height} - Mass:{" "}
-          {character.mass}
+          Height: {height} - Mass:{" "}
+          {mass}
         </p>
         <p>
-          Hair Color: {character.hair_color} - Eye-Color:{" "}
-          {character.eye_color}
+          Hair Color: {hair_color} - Eye-Color:{" "}
+          {eye_color}
         </p>
       </div>
     </div>
