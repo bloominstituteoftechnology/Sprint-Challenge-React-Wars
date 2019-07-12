@@ -6,7 +6,11 @@
     "axios": "^0.19.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-test-render": "^1.1.1",
+    "react-test-renderer": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "test": "^0.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

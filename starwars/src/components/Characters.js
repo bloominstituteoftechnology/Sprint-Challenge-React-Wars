@@ -2,11 +2,10 @@ import React from 'react';
 import Character from './Character';
 
 const Characters = props => {
-  console.log(props.characters);
   return (
     <div>
-      {props.characters.map(character => (
-        <Character character={character} />
+      {props.characters.map((character, index) => (
+        <Character character={character} key={index} />
       ))}
     </div>
   );
