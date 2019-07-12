@@ -3,7 +3,11 @@ import "./App.css";
 import CharacterList from "./views/CharacterList";
 
 const App = () => {
-  const [state, setState] = useState([]);
+  const [state, setState] = useState({
+    characters: [],
+    nextPage: null,
+    previousPage: null
+  });
   const getCharacters = URL => {
     fetch(URL)
       .then(res => {
