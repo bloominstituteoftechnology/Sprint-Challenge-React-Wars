@@ -23,6 +23,14 @@ export default function GetChars() {
       <Loader type="ThreeDots" color="#00BFFF" height="100" width="100" />
     </div>
   ) : (
-    <div>{<DisplayChars charList={charList.results} />}</div>
+    <div>
+      <div>{<DisplayChars charList={charList.results} />}</div>
+      <div>
+      {pageStart===1
+        ? <button>Next Page</button>
+        : <button>Next Page</button><button>Previous Page</button>
+}
+      </div>
+    </div>
   );
 }
