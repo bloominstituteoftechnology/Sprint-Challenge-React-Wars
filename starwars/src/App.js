@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Navbar />
       <h1 className="Header">React Wars</h1>
     </div>
   );
