@@ -12,9 +12,7 @@ function App() {
       .catch(err => console.log(err));
   }, []);
 
-  return <div className='App'>
-    
-  </div>;
+  return <div className='App' />;
 }
 
 export default App;
