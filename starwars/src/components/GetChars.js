@@ -6,7 +6,7 @@ import DisplayChars from "./DisplayChars";
 
 export default function GetChars() {
   const [charList, updateCharList] = useState();
-  const [pageStart, updatePageStart] = useState(1);
+  const [pageStart, updatePageStart] = useState(2);
   console.log(charList);
 
   useEffect(() => {
@@ -17,6 +17,18 @@ export default function GetChars() {
       .catch(err => console.log(err));
   }, [pageStart]);
 
+  function nextPage() {
+    console.log("In next page!");
+    updatePageStart(pageStart + 1);
+  }
+
+  function prevPage() {
+    console.log("In prev page!");
+    pageStart === 1
+      ? updatePageStart(pageStart)
+      : updatePageStart(pageStart - 1);
+  }
+
   return !charList ? (
     <div>
       <p>Loading...</p>
@@ -26,10 +38,37 @@ export default function GetChars() {
     <div>
       <div>{<DisplayChars charList={charList.results} />}</div>
       <div>
-      {pageStart===1
-        ? <button>Next Page</button>
-        : <button>Next Page</button><button>Previous Page</button>
-}
+        {pageStart === 1 ? (
+          <button
+            type="submit"
+            onClick={() => {
+              updatePageStart(pageStart + 1);
+            }}
+          >
+            Next Page
+          </button>
+        ) : (
+          <>
+            <button
+              type="submit"
+              onClick={() => {
+                pageStart === 1
+                  ? updatePageStart(pageStart)
+                  : updatePageStart(pageStart - 1);
+              }}
+            >
+              Previous Page
+            </button>
+            <button
+              type="submit"
+              onClick={() => {
+                updatePageStart(pageStart + 1);
+              }}
+            >
+              Next Page
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
