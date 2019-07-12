@@ -4,7 +4,7 @@ import { Container, Segment, Card } from 'semantic-ui-react'
 import CharacterCard from './CharacterCard'
 
 const CharacterList = (props) => {
-  const [homeworld, setHomeworld] = useState([])
+  const [homeworld, setHomeworld] = useState()
 
   useEffect( () => {
     axios
@@ -12,14 +12,11 @@ const CharacterList = (props) => {
     .then(res => {console.log('Planet Data', res.data.results)
       setHomeworld(res.data.results)})
   }, [])
+  if(!homeworld) return <h1>Loading...</h1>
   return (
     <Segment>
       <Card.Group itemsPerRow={3}>
-        {props.characters.map(char => {
-          return (
-            <CharacterCard planets={homeworld} characterInfo={char}/>
-          )
-        })}
+        {props.characters.map(char => <CharacterCard planets={homeworld} characterInfo={char}/>)}
       </Card.Group>
     </Segment>
   )
