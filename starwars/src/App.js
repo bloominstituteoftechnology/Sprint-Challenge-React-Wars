@@ -14,6 +14,7 @@ const App = () => {
         return res.json();
       })
       .then(data => {
+        console.log(data)
         setState({
           ...state,
           characters: data.results,
@@ -30,6 +31,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharacterList characters={state.characters} />
+      <button onClick={() => getCharacters(state.previousPage)}>Previous</button>
+      <button onClick={() => getCharacters(state.nextPage)}>Next</button>
     </div>
   );
 };
