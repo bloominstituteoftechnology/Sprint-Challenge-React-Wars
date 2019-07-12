@@ -8,7 +8,7 @@ const App = () => {
       starwarsChars: []
     };
   }
-
+const [state, setState] = useState([])
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
   }
