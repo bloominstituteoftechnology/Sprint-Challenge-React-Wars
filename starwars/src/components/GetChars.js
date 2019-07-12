@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import styled from 'styled-components'
-
 import DisplayChars from "./DisplayChars";
 
 export default function GetChars() {
@@ -15,11 +14,14 @@ export default function GetChars() {
       .then(res => updateCharList(res.data))
 
       .catch(err => console.log(err));
-  }, []);
+  }, [pageStart]);
 
-  return (
-      charList.map(char=>{
-          <DisplayChar charList={charList}/>
-      })
-  )>;
+  return !charList ? (
+    <div>"Loading..."</div>
+  ) : (
+    <div>
+      <p>List returned.</p>
+      <div>{<DisplayChars charList={charList.results} />}</div>
+    </div>
+  );
 }
