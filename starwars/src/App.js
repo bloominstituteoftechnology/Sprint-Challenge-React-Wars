@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import CharacterList from "./views/CharacterList";
 
 const App = () => {
   const [state, setState] = useState([]);
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <CharacterList characters={state}/>
     </div>
   );
 };

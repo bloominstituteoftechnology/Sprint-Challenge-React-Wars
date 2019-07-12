@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CharacterList = () => {
+const CharacterList = props => {
     return (
         <div>
             
