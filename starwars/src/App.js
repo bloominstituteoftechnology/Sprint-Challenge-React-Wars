@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import CharacterList from "./views/CharacterList";
+import {Grid} from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css'
+
 
 const App = () => {
   const [state, setState] = useState({
