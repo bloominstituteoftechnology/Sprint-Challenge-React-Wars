@@ -1,24 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Segment, Card } from 'semantic-ui-react'
+import { Segment, Card, Placeholder } from 'semantic-ui-react'
 
 const CharacterCard = (props) => {
   return (
     <Card>
       <Card.Content>
+        <Placeholder style={{ height: 150, width: 320 }}>
+          <Placeholder.Image />
+        </Placeholder>
         <Card.Header>{props.characterInfo.name}</Card.Header>
         <Card.Meta>{props.characterInfo.gender}</Card.Meta>
-        <Card.Meta>{useEffect( () => {
-    axios
-    .get('https://swapi.co/api/planets')
-    .then(res => {console.log('Planet Data', res.data.results)
-      return(
-        <div>
-          {res.data.results}
-        </div>
-      )})
-  }, [])}</Card.Meta>
-
+        <Card.Description>Height: {props.characterInfo.height} cm</Card.Description>
+        <Card.Description>Hair Color: {props.characterInfo.hair_color}</Card.Description>
+        <Card.Description>Eye Color: {props.characterInfo.eye_color}</Card.Description>
       </Card.Content>
     </Card>
   )
