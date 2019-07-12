@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.2.0",
+    "react-test-renderer": "^16.8.6",
+    "test": "^0.6.0"
+  }
+}

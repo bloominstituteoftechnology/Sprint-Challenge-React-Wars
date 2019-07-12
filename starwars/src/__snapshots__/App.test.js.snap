@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="Header"
+  >
+    React Wars
+  </h1>
+  <div />
+</div>
+`;
+
+exports[`matches snapshot 2 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="Header"
+  >
+    React Wars
+  </h1>
+  <div />
+</div>
+`;
