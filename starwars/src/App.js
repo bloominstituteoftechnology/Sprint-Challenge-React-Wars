@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import CharacterList from "./views/CharacterList";
-import 'semantic-ui-css/semantic.min.css'
-
+import { Button } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
 
 const App = () => {
   const [state, setState] = useState({
@@ -16,7 +16,7 @@ const App = () => {
         return res.json();
       })
       .then(data => {
-        console.log(data)
+        console.log(data);
         setState({
           ...state,
           characters: data.results,
@@ -33,8 +33,13 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharacterList characters={state.characters} />
-      <button onClick={() => getCharacters(state.previousPage)}>Previous</button>
-      <button onClick={() => getCharacters(state.nextPage)}>Next</button>
+
+      <Button.Group>
+        <Button disabled={state.previousPage === null ? true: false} onClick={() => getCharacters(state.previousPage)}>Previous</Button>
+        <Button.Or />
+        <Button disabled={state.nextPage === null ? true: false} onClick={() => getCharacters(state.nextPage)}>Next</Button>
+      </Button.Group>
+
     </div>
   );
 };
