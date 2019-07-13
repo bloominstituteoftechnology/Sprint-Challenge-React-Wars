@@ -53,7 +53,7 @@ export default function GetCharacters() {
       <div>{<DisplayCharacters charList={charList.results} />}</div>
       <div>
         {pageStart === 1 ? (
-          <button
+          <button style ={{width: "100px", background: "yellow"}}
             type="submit"
             onClick={() => {
               updatePageStart(pageStart + 1);
@@ -63,7 +63,7 @@ export default function GetCharacters() {
           </button>
         ) : (
           <>
-          // Previous Page Button
+          
             <button variant="contained" color="secondary" 
               type="submit"
               onClick={() => {
