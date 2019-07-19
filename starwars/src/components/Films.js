@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import { List } from 'semantic-ui-react'
 
-const Films = (props) => {
+const Films = props => {
   return (
- <li>
-   <a href={props.films}>My film</a>
-</li>
+    <List bulleted horizontal>
+    {props.films.map(i => <List.Item><a href={i}>Film</a></List.Item>)}
+      </List>
   );
-
 };
 
 export default Films;
