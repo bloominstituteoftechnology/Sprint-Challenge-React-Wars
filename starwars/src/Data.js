@@ -55,7 +55,7 @@ function Data() {
 
     return (
         <div>
-            <Card name={name}/>
+            <Card name={name} height={height} mass={mass} hairColor={hairColor} eyeColor={eyeColor} skinColor={skinColor} birthYear={birthYear} gender={gender} homeWorld={homeWorld}/>
         </div>
     )
 }
