@@ -4,7 +4,9 @@ import styled from "styled-components";
 import StarWarsCard from "./StarWarsCard";
 const MainCard = styled.div`
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  margin: 10px auto;
 `;
 
 function StarWars() {
@@ -25,8 +27,6 @@ function StarWars() {
   return (
     <div className="App">
       <MainCard>
-        <h1 className="Header">React Wars</h1>
-
         {data.map(data => {
           return (
             <StarWarsCard

@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Body = styled.div`
-  max-width: 300px;
+  width: 300px;
   background-color: white;
-
+  margin: 30px;
+  flex-direction: column;
   border-radius: 25px;
   padding-bottom: 20px;
 `;
@@ -30,7 +31,6 @@ function StarWarsCard(props) {
         <p>Mass: {props.mass}kg</p>
         <p>Skin Color: {props.skin}</p>
         <p>Birth Year: {props.birth}</p>
-        <p>HomeWorld: {props.home}</p>
       </Body>
     </div>
   );
