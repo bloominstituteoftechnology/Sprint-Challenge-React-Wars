@@ -1,4 +1,6 @@
 import React from 'react'
+import './characterCard.scss'
+import { Card } from 'semantic-ui-react'
 
 
 
@@ -14,7 +16,7 @@ console.log('props', props)
 
     return(
 
-        <div>
+        <Card className="card">
             <img src={props.character.image} />
             <p>name: {props.character.name}</p>
             <p>height: {props.character.height}</p>
@@ -22,7 +24,7 @@ console.log('props', props)
             <p>gender: {props.character.gender}</p>
             <p>hair color: {props.character.hair_color}</p>           
             
-        </div>
+        </Card>
     )
 }
 
