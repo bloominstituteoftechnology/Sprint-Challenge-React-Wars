@@ -29,17 +29,17 @@ export default function Grid({ limit }) {
 }
 
 // useEffect(() => {
-//     axios.get(`https://swapi.co/api/people/`)
+//     axios.get(`https://henry-mock-swapi.herokuapp.com/api`)
 //     .then(res => {
+//         // const name = res.result.name
+
+        
 //         // const name = res.data.results.name
-//         console.log('coming from name.js ', res.data.results[0].name);
-
-//         var nameArray = res.data.results
-//         var myMap = new Map(nameArray)
-//         myMap.get(name);
-//         console.log(name);
-
-
+//         // console.log('coming from name.js ', res.data.results[0].name);
+//         // var nameArray = res.data.results
+//         // var myMap = new Map(nameArray)
+//         // myMap.get(name);
+//         // console.log(name);
 //         // const name =  res.data.results[0].name
 //         // setName(name)
 //     })

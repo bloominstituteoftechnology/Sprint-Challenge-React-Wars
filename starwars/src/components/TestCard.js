@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Card, Icon, Image } from 'semantic-ui-react'
-import Name1 from './Name1'
+import Name1 from './Name'
 import Name2 from './Name2'
 import DOB from './DOB'
 import DOB2 from './DOB2'
 import MiscIdentifires from './MiscIdentifiers'
-import 'semantic-ui-css/semantic.min.css'
+// import 'semantic-ui-css/semantic.min.css'
+
 
 
 

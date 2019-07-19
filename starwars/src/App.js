@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import TestCard from './components/TestCard'
-import TestCard2 from './components/TestCard2'
 import { Container } from 'semantic-ui-react'
+import Name from './components/Name'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,13 +14,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <Container>
-      <h1 className="Header">React Wars</h1>
+      <Container >
+        <Name/>
+
+      {/* <h1 className="Header">React Wars</h1>
       <TestCard />
-      <TestCard2 />
+      <TestCard2 /> */}
+
       </Container>
     </div>
-
   );
 }
 
