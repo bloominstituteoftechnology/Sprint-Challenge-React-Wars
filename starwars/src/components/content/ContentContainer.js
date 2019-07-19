@@ -7,10 +7,15 @@ import SkinColor from './SkinColor'
 import BirthYear from './BirthYear'
 import Gender from './Gender'
 import HomeWorld from './HomeWorld'
+import styled from 'styled-components'
+
+const ContentContainerProps = styled.div`
+    text-align: left;
+`
 
 const ContentContainer = ({height, mass, hairColor, eyeColor, skinColor, birthYear, gender, homeWorld}) => {
     return (
-        <div>
+        <ContentContainerProps>
             <Height height={height}/>
             <Mass mass={mass}/>
             <HairColor hairColor={hairColor}/>
@@ -19,7 +24,7 @@ const ContentContainer = ({height, mass, hairColor, eyeColor, skinColor, birthYe
             <BirthYear birthYear={birthYear}/>
             <Gender gender={gender}/>
             <HomeWorld homeWorld={homeWorld}/>
-        </div>
+        </ContentContainerProps>
     )
 }
 

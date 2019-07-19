@@ -1,13 +1,22 @@
 import React from 'react'
 import Name from './components/Name'
 import ContentContainer from './components/content/ContentContainer'
+import styled from 'styled-components'
+
+const CardProps = styled.div`
+    background-color: white;
+    border-radius: 25px;
+    max-width: 300px;
+    padding: 10px;
+    opacity: 0.8;
+`
 
 const Card = ({name, height, mass, hairColor, eyeColor, skinColor, birthYear, gender, homeWorld}) => {
     return (
-        <div>
+        <CardProps>
             <Name name={name}/>
             <ContentContainer height={height} mass={mass} hairColor={hairColor} eyeColor={eyeColor} skinColor={skinColor} birthYear={birthYear} gender={gender} homeWorld={homeWorld}/>
-        </div>
+        </CardProps>
     )
 }
 
