@@ -32,10 +32,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
     To me, it means setting your mind to be aware of the possibilities that react can do and also balancing what react does (for example, keeping in mind that it incorporates styling, html, and normal react)
 - [ ] Describe state.
 
-    state is ...
+    state is a way of setting variables but with added functionality since when we "set state" we can set a variable and we can also set a function that has the ability to update the said variable.
 - [ ] Describe props.
-
+    props is an object that contains properties. This is used to pass information (or data) from one componenet to another. 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    side effects are a way to add more funcitonality to our app. For example, we can sync effects with state or prop changes by passing a dependency array as the second argument to the effect hook.
 
 ## Project Set Up
 
