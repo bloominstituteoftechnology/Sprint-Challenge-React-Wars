@@ -25,14 +25,29 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS makes it easy to make reusable "view components" that "encapsulate" logic and HTML into a class and makes it easier to build module applications. 
 
 - [ ] What does it mean to _think_ in react?
 
+Step 1: Break The UI Into A Component Hierarchy
+The first thing you’ll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names. If you’re working with a designer, they may have already done this, so go talk to them! Their Photoshop layer names may end up being the names of your React components!
+Step 2: Build A Static Version in React- The easiest way is to build a version that takes your data model and renders the UI but has no interactivity. It’s best to decouple these processes because building a static version requires a lot of typing and no thinking, and adding interactivity requires a lot of thinking and not a lot of typing
+Step 3: Identify The Minimal (but complete) Representation Of UI State
+Step 4: Identify Where Your State Should Live
+Step 5: Add Inverse Data Flow
 - [ ] Describe state.
+To make your UI interactive, you need to be able to trigger changes to your underlying data model. React makes this easy with state.
+
+
 
 - [ ] Describe props.
+Is it passed in from a parent
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+The Effect Hook lets you perform side effects in function components:
+There are two common kinds of side effects in React components: those that don’t require cleanup, and those that do. Let’s look at this distinction in more detail.
+Sometimes, we want to run some additional code after React has updated the DOM. Network requests, manual DOM mutations, and logging are common examples of effects that don’t require a cleanup.
+
 
 ## Project Set Up
 
