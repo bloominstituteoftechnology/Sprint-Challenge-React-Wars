@@ -4,24 +4,26 @@ import axios from "axios";
 
 import styled from "styled-components"
 
-export default function PersonGrid() {
-  const [data, setData] = useState([])
+export default function PersonGrid(props) {
+  console.log('Person Gird', props);
+{/*}  const [data, setData] = useState([])
+  const [page, setpage] = useState(1)
+
 
   useEffect(() => {
-  axios.get('https://swapi.co/api/people/?page=1&format=json')
+  axios.get(`https://swapi.co/api/people/?page=${2}&format=json`)
     .then(response => {
       const data = response.data.results;
-      console.log('data:',data);
       setData(data);
-
+      console.log('data', data);
     });
 }, []);
 
-
+*/}
   return (
     <div className = "imageGridWrapper">
       <div className="imageGrid">
-        {data.map((data, index) =>
+        {props.charData.map((data, index) =>
           <PersonCard
             key={index}
             name={data.name}

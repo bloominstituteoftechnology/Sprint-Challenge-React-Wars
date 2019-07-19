@@ -6,16 +6,29 @@ const StyledPersonCard = styled.div`
   margin: 20px;
 `;
 
+const StyledH1 = styled.h1`
+  text-shadow: white 0px 0px 10px;
+`;
+
+const StyledH2 = styled.h2`
+  text-shadow: white 0px 0px 10px;
+`;
+
+const StyledP = styled.p`
+  text-shadow: white 0px 0px 10px;
+  font-size: 20px;
+`;
+
 export default function PersonCard(props) {
-  console.log(props);
+
   return (
     <StyledPersonCard>
-      <h1>{props.name}</h1>
-      <h2>About</h2>
-      <p>Born: {props.birthYear}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Height: {props.height}</p>
-      <p>Weight: {props.weight}</p>
+      <StyledH1>{props.name}</StyledH1>
+      <StyledH2>About</StyledH2>
+      <StyledP>Born: {props.birthYear}</StyledP>
+      <StyledP>Gender: {props.gender}</StyledP>
+      <StyledP>Height: {props.height}</StyledP>
+      <StyledP>Weight: {props.weight}</StyledP>
     </StyledPersonCard>
 
   )
