@@ -2,9 +2,9 @@ import React from 'react';
 
 const Films = (props) => {
   return (
- <div>
-    <p>{props.films}</p>
-  </div>
+ <li>
+   <a href={props.films}>My film</a>
+</li>
   );
 
 };
