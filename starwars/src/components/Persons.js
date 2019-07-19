@@ -1,18 +1,21 @@
 import React from "react" 
 import './StarWars.css'
-// import styled from 'styled-components';
-import { StyledH2 } from './PersonsStyles.js'
+import styled from 'styled-components';
+import { StyledH2, StyledH3, Container, StyleP } from './PersonsStyles.js'
 
 const Persons = (props) => {
     return (
+        
         <div>
-            <StyledH2>{props.name}</StyledH2>
-            <div>
-                <h3>About Me</h3>
-                    <p>Eye Color: {props.eye}</p>
-                    <p>Birth Year: {props.birthday}</p>
-                    <p>Height: {props.height}</p>
-            </div>
+            <Container >
+                <StyledH2>{props.name}</StyledH2>
+                <div>
+                    <StyledH3>About Me</StyledH3>
+                        <StyleP>Eye Color: {props.eye}</StyleP>
+                        <StyleP>Birth Year: {props.birthday}</StyleP>
+                        <StyleP>Height: {props.height}</StyleP>
+                </div>
+            </Container>
         </div>
     )
 }
