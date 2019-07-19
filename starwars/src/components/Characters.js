@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
+import CharacterCard from './CharacterCard.js';
+
+
 
 function Characters () {
 
-    return (
-        <div>
-            <h1>Hello</h1>
-        </div>
-    )
+    const [characterData, setCharacterData] = useState();
+
+    useEffect(() => {
+        axios.get('https://swapi.co/api/people')
+    
+        .then(res => {
+            setCharacterData(res.data.results)
+        })
+        .catch(err => console.log(err));
+    
+    },[])
+
+    console.log(characterData)
+
+    if (!characterData){
+        return <h1>Loading...</h1>
+    }else {
+        return (
+            <div>
+                {characterData.map((character, index) => <CharacterCard character={character} key={index} />)}
+            </div>
+        );
+    }
+
+        
 }
 
 
