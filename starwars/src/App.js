@@ -9,17 +9,23 @@ const App = () => {
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
+  // eslint-disable-next-line
   const [data, setData] = useState([])
 
   const fetchData = () => {
-    axios.get('https://swapi.co/api/people/?format=api')
+    axios.get('https://swapi.co/api/people/?format=json')
+    // 'https://swapi.co/api/people/{number}/?format=api'
     .then(response => {
-      setData(response.data.data)
+      setData(response.data.results)
     })
     .catch(error =>{console.log('error in api request :(')})
   }
 
-  useEffect(fetchData, [])
+  
+    useEffect(fetchData, [])
+
+    console.log(data);
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
