@@ -3,7 +3,6 @@ import './App.css';
 import axios from 'axios';
 import Card from "./components/Card";
 
-
 const App = () => {
 
   const [charaData, setCharaData] = useState([])
@@ -29,7 +28,7 @@ const App = () => {
 
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">Star Wars Body Mass Index (BMI)</h1>
 
         {charaData.map(chara => <Card source={chara} />)}
       </div>
