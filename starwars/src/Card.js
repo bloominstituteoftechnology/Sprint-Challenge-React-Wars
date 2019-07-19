@@ -8,7 +8,8 @@ const CardProps = styled.div`
     border-radius: 25px;
     max-width: 300px;
     padding: 10px;
-    opacity: 0.8;
+    margin: 20px;
+    opacity: 0.6;
 `
 
 const Card = ({name, height, mass, hairColor, eyeColor, skinColor, birthYear, gender, homeWorld}) => {
