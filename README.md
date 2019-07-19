@@ -26,10 +26,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React JS is a library but acts like a framework. It tries to solve issues that can come across as a business is scaling. React is also useful for data management.
 - [ ] What does it mean to _think_ in react?
 
+    To me, it means setting your mind to be aware of the possibilities that react can do and also balancing what react does (for example, keeping in mind that it incorporates styling, html, and normal react)
 - [ ] Describe state.
 
+    state is ...
 - [ ] Describe props.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
