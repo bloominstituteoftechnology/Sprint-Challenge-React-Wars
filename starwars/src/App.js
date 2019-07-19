@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import Persons from './components/Persons'
 import './App.css';
 
 const App = () => {
@@ -13,8 +14,10 @@ const App = () => {
   const [data, setData] = useState([])
 
   const fetchData = () => {
-    axios.get('https://swapi.co/api/people/?format=json')
+    axios.get('https://henry-mock-swapi.herokuapp.com/api')
     // 'https://swapi.co/api/people/{number}/?format=api'
+    
+    //https://swapi.co/api/people/?format=json
     .then(response => {
       setData(response.data.results)
     })
@@ -22,13 +25,23 @@ const App = () => {
   }
 
   
-    useEffect(fetchData, [])
+  useEffect(fetchData, [])
 
-    console.log(data);
+  console.log(data);
+
+// iterating through data variable
+  data.map(rebelname => {
+    setData(rebelname.name)
+  })
+
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <div>
+        <h1>The Rebels</h1>
+        <Persons n = {data.name}/>
+      </div>
     </div>
   );
 }
