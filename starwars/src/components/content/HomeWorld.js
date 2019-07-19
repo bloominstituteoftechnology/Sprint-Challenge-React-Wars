@@ -1,7 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
+import axios from 'axios'
 
 const HomeWorld = ({homeWorld}) => {
-    return <p>Home World: {homeWorld}</p>
+    const [name, setName] = useState('')
+
+    axios.get(`${homeWorld}`)
+    .then(response=>{
+        setName(response.data.name)
+    })
+    .catch(error => {
+        console.log('API retrieval failed:', error)
+    })
+
+    return <p>Homeworld: {name}</p>
 }
 
 export default HomeWorld
