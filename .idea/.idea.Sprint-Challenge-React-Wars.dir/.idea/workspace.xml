@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c388ee5-66b8-4986-9a33-3b5c4330638e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Answers.md" beforeDir="false" afterPath="$PROJECT_DIR$/Answers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starwars/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sprint-Challenge-React-Wars.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sprint-Challenge-React-Wars.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/starwars/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-383">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +46,17 @@
               <item name="" type="161ac34:FileSystemExplorerRootNode" />
               <item name="Sprint-Challenge-React-Wars" type="34e6ba20:FileSystemExplorerNode" />
             </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Sprint-Challenge-React-Wars" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="starwars" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Sprint-Challenge-React-Wars" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="starwars" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -49,6 +67,12 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -74,12 +98,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563551175029</updated>
-      <workItem from="1563551178634" duration="1602000" />
+      <workItem from="1563551178634" duration="2429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1602000" />
+    <option name="totallyTimeSpent" value="2429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -91,17 +115,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="0" width="942" height="1087" extended-state="0" />
+    <frame x="56" y="-8" width="1872" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24829932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12079427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Unit Tests" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32991803" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32958034" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -133,5 +158,16 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/starwars/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
