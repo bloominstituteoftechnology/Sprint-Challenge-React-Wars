@@ -6,20 +6,7 @@ import styled from "styled-components"
 
 export default function PersonGrid(props) {
   console.log('Person Gird', props);
-{/*}  const [data, setData] = useState([])
-  const [page, setpage] = useState(1)
 
-
-  useEffect(() => {
-  axios.get(`https://swapi.co/api/people/?page=${2}&format=json`)
-    .then(response => {
-      const data = response.data.results;
-      setData(data);
-      console.log('data', data);
-    });
-}, []);
-
-*/}
   return (
     <div className = "imageGridWrapper">
       <div className="imageGrid">

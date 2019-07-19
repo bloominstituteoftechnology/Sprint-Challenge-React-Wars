@@ -15,17 +15,16 @@ const App = () => {
   // sync up with, if any.
 
   const [data, setData] = useState([])
-  const [page, setPage] = useState(3)
-  const [previousPage, setPreviousPage] = useState([])
-  const [nextPage, setNextPage] = useState([])
+  const [page, setPage] = useState(1)
+
 
   const pageUp = () => {
     setPage(page => page + 1);
-    alert('Page Up')
+    console.log('Page Up');
   }
   const pageDown = () => {
     setPage(page => page - 1);
-    alert('Page Down')
+    console.log('Page Down');
   }
 
   useEffect(() => {
@@ -34,18 +33,15 @@ const App = () => {
       const charData = response.data.results;
       setData(charData);
       console.log('chardata', charData);
-      const nextPageLink = response.data.next;
-      setNextPage(nextPageLink);
-      const previousPageLink = response.data.previous;
-      setPreviousPage(previousPageLink);
+
 
     });
-}, []);
+}, [page]);
 
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header">React Wars ({page})</h1>
       <PersonGrid
         charData={data}
        />
