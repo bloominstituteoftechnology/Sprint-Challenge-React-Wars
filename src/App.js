@@ -3,27 +3,37 @@ import './App.css';
 import axios from "axios";
 import "./components/App.scss"
 import PhotoCard from './components/PhotoCard';
+//import {  Image, Grid } from 'semantic-ui-react';
+
 
 // const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
-function App() {
-    
-// let data = 
-//   <div>
-//     test data, yo.
-//   </div>
+function App(props) {
+  
+const [data, setData] = useState([]);
 
-const [cardData, setCardData] = useState([]);
 useEffect(() => {
   console.log("first render");
-  axios.get("https://swapi.co/api/people/?format=json")
+  axios.get("https://swapi.co/api/people")
     .then(res => {
-     
-      setCardData(res.data);
-      console.log('App.js -> %cres.data:', 'color: green', cardData)
+      let  data = res.data
+      setData(res.data.results);
+
+    //data = Object.entries(data);
+    console.log('App.js -> %cdata:', 'color: blue', data)
+    
+
+
+    // .catch(error => {
+    //   console.error("index.js -> %c\"There's a data issue:", "color: red", error);
+    // });
+
+
+      console.log('App.js -> %cres.data:', 'color: green', data)
     });
     
+
 }, [] );
 
 
@@ -34,40 +44,30 @@ useEffect(() => {
   // sync up with, if any.
   return (
     <div className="App">
-    <div className="cards">
-        {cardData.map(data => (
+    <div className="photoCards">
+        {Array.from(data).map((data, key) => (
           
-          <PhotoCard name={cardData.name} 
-                            gender={cardData.gender} 
-                            homeworld = {cardData.homeworld}
-                     
-                            
-                             url={cardData.url} /> 
+
+          
+
+ 
+          <PhotoCard name={data.name} 
+                            gender={data.gender} 
+                            species = {data.species}
+                            url={data.url} /> 
                   
         ))}
       </div>
       : <div>Loading...</div> 
     </div>
+
+
+    
   );
+
+  
+
 }
 
 export default App;
  
-//       <div className="App">
-  
-//  <PhotoCard name={cardData.name} 
-//                   gender={cardData.gender} 
-//                   homeworld = {cardData.homeworld}
-//                 // name={cardData.name}
-                  
-//                    url={cardData.url} /> 
-//       : <div>Loading...</div> 
-
-    
-//   </div>
-
-// );
-
-//   }
-
-// export default App;
