@@ -1,18 +1,19 @@
 import React from 'react';
 
- function Name(props) {
+ function Character(props) {
 
-     return (
+    return (
         <div> 
-             <h1>  {props.info.name}</h1>
-            <h2> height: {props.info.height}</h2>
-            <h2> mass: {props.info.mass}</h2>
-            <h2> gender: {props.info.gender}</h2>
-             <h2> hair:{props.info.hair_color}</h2>
-             <h2> eye_color:  {props.info.eye_color}</h2>
-             <h2> birth year:   {props.info.birth_year}</h2>
+             <h1>  Name: (props.info.name === "XYZ") ?
+            {props.info.name}
+            :
+            {props.info.name} </h1>
+            <h2> Height:{props.info.height}</h2>
+            <h2> Gender:{props.info.gender}</h2>
+             <h2> Hair Color:{props.info.hair_color}</h2>
+             <h2> Eye Color:{props.info.eye_color}</h2>
+             <h2> Birth Year:{props.info.birth_year}</h2>
         </div>
     );
 };
-
-  export default Name; 
+  export default Character; 

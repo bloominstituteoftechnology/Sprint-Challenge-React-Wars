@@ -1,7 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-import List from './components/NameList.js'
 import Names from './components/Names.js'
 
 
@@ -14,11 +13,11 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [data, setData] = useState([])
+  const [character] = useState([])
   useEffect (() => {axios.get('https://swapi.co/api/people/')
 
-  .then(res => {setData(res.data);
-                data(res);
+  .then(res => {character(res.data);
+                
   })
 
   .catch( err => console.log("error message :", err))
@@ -28,8 +27,13 @@ const App = () => {
 return (
  <div className="App">
    <h1 className="Header">React Wars</h1>
- 	         <List Names = {Names}/>
- 	</div>
+   <div className="app"{...App}/>   
+  
+  {console.log(character)}
+      <Names info={character}/>
+    </div>
+
+
 
 );
 }  
