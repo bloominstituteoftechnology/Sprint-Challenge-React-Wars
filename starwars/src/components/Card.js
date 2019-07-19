@@ -2,8 +2,10 @@ import React from 'react';
 import Films from './Films';
 
 const Card = (props) => {
+  console.log("Card receiving", props)
+
   return (
-    <div></div>
+    <Films films={props.source.films} />
   );
 }
 

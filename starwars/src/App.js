@@ -21,11 +21,20 @@ const App = () => {
 
   console.log(charaData)
 
-  return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
-  );
+  if (!charaData) { 
+    return (
+    <h1>Loading...</h1>
+    )
+  } else {
+
+    return (
+      <div className="App">
+        <h1 className="Header">React Wars</h1>
+
+        {charaData.map(chara => <Card source={chara} />)}
+      </div>
+    );
+  }
 }
 
 export default App;
