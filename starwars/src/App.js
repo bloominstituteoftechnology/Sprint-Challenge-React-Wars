@@ -33,8 +33,6 @@ const App = () => {
       const charData = response.data.results;
       setData(charData);
       console.log('chardata', charData);
-
-
     });
 }, [page]);
 
