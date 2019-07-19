@@ -14,7 +14,7 @@ const App = () => {
   const [data, setData] = useState([])
 
   const fetchData = () => {
-    axios.get('https://henry-mock-swapi.herokuapp.com/api')
+    axios.get('https://swapi.co/api/people/?format=json')
     // 'https://swapi.co/api/people/{number}/?format=api'
     
     //https://swapi.co/api/people/?format=json
@@ -29,18 +29,15 @@ const App = () => {
 
   console.log(data);
 
-// iterating through data variable
-  data.map(rebelname => {
-    setData(rebelname.name)
-  })
-
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <div>
-        <h1>The Rebels</h1>
-        <Persons n = {data.name}/>
+        <h2>The Rebels</h2>
+        {data.map((rebels, index) => {
+          return <Persons name={rebels.name} key={index} height={rebels.height} birthday={rebels.birth_year} eye={rebels.eye_color}/>
+        })}
       </div>
     </div>
   );
