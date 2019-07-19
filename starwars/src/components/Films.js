@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Films = (props) => {
-  console.log("Films receiving", props)
   return (
-    <div></div>
+ <div>
+    <p>{props.films}</p>
+  </div>
   );
-}
+
+};
 
 export default Films;

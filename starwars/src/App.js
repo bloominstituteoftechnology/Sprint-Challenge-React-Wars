@@ -18,8 +18,6 @@ const App = () => {
     fetchData();
   }, [])
 
-  console.log(charaData)
-
   if (!charaData) { 
     return (
     <h1>Loading...</h1>
