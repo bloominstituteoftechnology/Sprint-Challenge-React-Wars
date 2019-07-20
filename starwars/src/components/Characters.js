@@ -1,17 +1,28 @@
 import React from 'react'
-import './Characters.css'
+import './CharCard.css'
+
+import { Card } from 'semantic-ui-react'
 
 export default function Characters(props) {
 
 return (
-<div>
-    <Characters />
-    <h3>{props.name}</h3>
-    <h3>{props.birth_year}</h3>
-    <h3>{props.hair_color}</h3>
-    <h3>{props.height}</h3>
-    <h3>{props.eye_color}</h3>
-    <h3>{props.gender}</h3>
-</div>
+
+    <div className= "Card">
+     <Card.Group>
+    <Card>
+      <Card.Content>
+        <Card.Header>{props.name}</Card.Header>
+        <Card.Meta>{props.birth_year}</Card.Meta>
+        <Card.Description>{props.hair_color}</Card.Description>
+        <Card.Description>{props.height}</Card.Description>
+        <Card.Description>{props.eye_color}</Card.Description>
+        <Card.Description>{props.gender}</Card.Description>
+
+      </Card.Content>
+    </Card>
+  </Card.Group>
+    </div>
+
     )
 }
+

@@ -5,4 +5,13 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+  border: purple solid 1px
+  
+}
 /* write your parent styles in here for your App.js */
