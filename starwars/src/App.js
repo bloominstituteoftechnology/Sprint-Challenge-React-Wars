@@ -4,6 +4,7 @@ import axios from "axios";
 import CharacterCard from "./components/CharacterCard";
 import "semantic-ui-css/semantic.min.css";
 import { WrapperDiv } from "./components/NewStyles";
+import ScrollText from "./components/ScrollText";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -29,6 +30,7 @@ const App = () => {
 
   return (
     <WrapperDiv>
+      <ScrollText />
       <h1 className="Header">React Wars</h1>
       <CharacterCard characters={starChar} />
     </WrapperDiv>

@@ -15,10 +15,10 @@ const CharacterCard = ({ characters }) => (
 
           <Card.Content extra>
             <div className="ui two buttons">
-              <Button basic color="#522D96">
+              <Button basic color="green">
                 DaForce
               </Button>
-              <Button basic color="#0A0613">
+              <Button basic color="red">
                 DarkSide
               </Button>
             </div>
