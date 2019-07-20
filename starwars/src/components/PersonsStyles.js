@@ -16,6 +16,7 @@ export const StyledH3 = styled.h3`
 export const Container = styled.div`
     border: 1px solid white;
     width: 100%;
+    heigth: 85%;
 
 `;
 

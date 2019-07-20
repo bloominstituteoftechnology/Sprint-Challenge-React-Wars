@@ -6,4 +6,32 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.PageButtons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 25px;
+  
+}
+
+
+.ButtonPreview{
+  border: 2px solid darkred;
+  margin-left: 30px;
+  width: 8%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.ButtonNext{
+  border: 2px solid darkred;
+  margin-right: 30px;
+  width: 8%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+  font-size: 15px;
+}
 

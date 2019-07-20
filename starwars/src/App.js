@@ -9,6 +9,7 @@ const AppContainer = styled.div `
   flex-wrap: wrap;
   justify-content:space-evenly;
   width: 100%;
+  height: 500px;
 `;
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -49,8 +50,9 @@ const App = () => {
         })}
       </AppContainer>
       <div className="PageButtons">
-        <button className="ButtonNext" onClick={() => setPage(page + 1)}>Next</button>
         <button className="ButtonPreview" onClick={() => setPage(page - 1)}>Previous</button>
+        
+        <button className="ButtonNext" onClick={() => setPage(page + 1)}>Next</button>
       </div>
     </div>
   );
