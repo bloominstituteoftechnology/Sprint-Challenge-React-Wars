@@ -43,7 +43,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <h2>The Rebels</h2>
+      <h2 className="Crew">The Crew</h2>
       <AppContainer> 
         {data.map((rebels, index) => {
           return <Persons name={rebels.name} key={index} height={rebels.height} birthday={rebels.birth_year} eye={rebels.eye_color}/>
@@ -51,7 +51,7 @@ const App = () => {
       </AppContainer>
       <div className="PageButtons">
         <button className="ButtonPreview" onClick={() => setPage(page - 1)}>Previous</button>
-        
+
         <button className="ButtonNext" onClick={() => setPage(page + 1)}>Next</button>
       </div>
     </div>
