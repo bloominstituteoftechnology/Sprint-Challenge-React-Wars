@@ -19,13 +19,14 @@ const App = () => {
   // sync up with, if any.
   // eslint-disable-next-line
   const [data, setData] = useState([])
+  // eslint-disable-next-line
   const [page, setPage] = useState(1)
 
   const fetchData = () => {
-    axios.get(`https://swapi.co/api/people/${page}/?format=json`)
-    // 'https://swapi.co/api/people/{number}/?format=api'
+    axios.get(`https://swapi.co/api/people/?page=${page}&format=json`)
+    // 'https://swapi.co/api/people/2/?format=api'
     
-    //https://swapi.co/api/people/?format=json
+    // 'https://swapi.co/api/people/?format=json'
     .then(response => {
       setData(response.data.results)
     })
@@ -43,10 +44,14 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
       <h2>The Rebels</h2>
       <AppContainer> 
-          {data.map((rebels, index) => {
-            return <Persons name={rebels.name} key={index} height={rebels.height} birthday={rebels.birth_year} eye={rebels.eye_color}/>
-          })}
+        {data.map((rebels, index) => {
+          return <Persons name={rebels.name} key={index} height={rebels.height} birthday={rebels.birth_year} eye={rebels.eye_color}/>
+        })}
       </AppContainer>
+      <div className="PageButtons">
+        <button className="ButtonNext" onClick={() => setPage(page + 1)}>Next</button>
+        <button className="ButtonPreview" onClick={() => setPage(page - 1)}>Previous</button>
+      </div>
     </div>
   );
 }

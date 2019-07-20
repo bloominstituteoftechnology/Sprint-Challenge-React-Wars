@@ -15,12 +15,13 @@ export const StyledH3 = styled.h3`
 
 export const Container = styled.div`
     border: 1px solid white;
+    width: 100%;
 
-    margin: 20px;
 `;
 
 export const StyleP = styled.p`
-    color: white;
+    color: lightgray;
 `;
+
 
 

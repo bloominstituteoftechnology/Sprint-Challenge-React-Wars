@@ -1,0 +1,7 @@
+.ContainerComp {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    width: 18%;
+    margin: 10px;
+}
