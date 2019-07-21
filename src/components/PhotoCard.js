@@ -1,51 +1,54 @@
 import React from 'react';
 //import App from '../App'
 // import {cardData} from '../App'
-import {  Image, Grid } from 'semantic-ui-react';
+import "./Photocard.scss"
+import {Card} from 'semantic-ui-react';
 
-// import { StyledH2 } from '../Styles.js';
+
 
 
 
 function PhotoCard(props) {
-  console.log(props);
+  //console.log(props);
+  console.log('PhotoCard.js -> %cphotocard-props:', 'color: red', props)
   return (
-    // <Card className="photo-card">
-    //   <Image src={props.url} />
-    //   <h2 color="red">{props.name}</h2>
-    //   <Card.Content>
-    //     <div>{props.gender}</div>
-    //     <Card.Description className="content">
-    //       {props.species}
-    //     </Card.Description>
-    //   </Card.Content>
-    // , GridColumn, GridProps
-    // </Card>
+ <section>
+    
+<Card>
+    
+    <Card.Content>
+      <Card.Header>{props.name}</Card.Header>
+     
+      
+     <ul>
+     <li> {props.name} is about {props.height} feet tall, give or take a few inches.</li>
+     <li> Hair: {props.hair} </li>
+     <li> Eyes are {props.eyes}, in the right light. </li>
+     <li> 
+         Near as we can tell, {props.name} was born or came into being on {props.birthYear}</li>
+  
+     </ul>
+  </Card.Content>
+  
+  
+  </Card>
+  {/* <Pagination>
+  boundaryRange={1}
+  defaultActivePage={props[0]}
+  ellipsisItem={10}
+  firstItem={props[0]}
+  lastItem={props[10]}
+  siblingRange={1}
+  totalPages={10}
+  </Pagination> */}
 
+</section>
+   
+  )
 
-<Grid celled>
-<Grid.Row>
-  <Grid.Column width={3}>
-    <Image  src={props.url} />
-  </Grid.Column>
-  <Grid.Column width={10}>
-  <h2 color="red">{props.name}</h2>
-  <p>{props.species}</p>
-  </Grid.Column>
-  <Grid.Column width={3}>
-    <Image src={props.homeworld} />
-  </Grid.Column>
-</Grid.Row>
-</Grid>
-  );
-}
-
+  }
 export default PhotoCard;
 
-  
-// <PhotoCard title={cardData.title} 
-// gender={cardData.gender} 
-// homeworld = {cardData.homeworld}
-// name={cardData.name}
 
-//  url={cardData.url} /> 
+        
+

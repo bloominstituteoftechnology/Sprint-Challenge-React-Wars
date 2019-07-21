@@ -1,0 +1,35 @@
+.CardGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.CardGroup .Card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 300px;
+  max-width: 100%;
+  background-color: lightblue;
+}
+
+.CardGroup .Card .header {
+  margin-top: 0;
+  padding-top: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ffffff));
+  background: linear-gradient(#f8f8f8, #ffffff);
+  color: blue;
+}
+
+.CardGroup .Card .content {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: blue;
+}
+/*# sourceMappingURL=Photocard.css.map */

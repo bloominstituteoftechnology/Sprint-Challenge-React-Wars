@@ -1,0 +1,20 @@
+{
+  "name": "jkroso-type",
+  "description": "less broken typeof",
+  "version": "1.1.1",
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "jkroso/assert",
+    "serve": "jkroso/serve",
+    "babel-core": "*",
+    "hydro-html": "1",
+    "hydro-bdd": "0",
+    "hydro-dot": "2",
+    "hydro": "0"
+  },
+  "transpile": [["{index,test/*}.js", "!sourcegraph/babel->js"]],
+  "keywords": ["typeof", "type", "utility"],
+  "files": ["index.js"],
+  "repository": "jkroso/type",
+  "license": "MIT"
+}

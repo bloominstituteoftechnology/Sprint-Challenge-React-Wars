@@ -1,23 +1,26 @@
-.photo-cards {
-    .photo-card {
+.CardGroup {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .Card {
+        display: inline-flex;
+        
         width: 300px;
         max-width: 100%;
         background-color: lightblue;
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        h2 {
+       
+        .header {
             margin-top: 0;
             padding-top: 25px;
             background: linear-gradient(#f8f8f8, #ffffff);
+            color:blue;
         }
         .content {
             font-size: 0.8rem;
             line-height: 1.5;
+            color:blue;
         }
     }
 }
