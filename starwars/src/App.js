@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import { Grid } from 'semantic-ui-react';
 
 import CharactersList from './components/CharactersList/CharactersList';
 import Button from './components/NavigationButton/NextButton';
@@ -11,6 +10,7 @@ const App = () => {
   // the state properties here.
   const [data, setData] = useState('');
   const [url, setUrl] = useState('https://swapi.co/api/people/')
+  const [nextUrl, setNextUrl] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
@@ -20,8 +20,8 @@ const App = () => {
   useEffect(() => {
     axios.get(url)
       .then(res => {
-        console.log(res);
-        setData(res.data.results)
+        setData(res.data.results);
+        setNextUrl(res.data.next);
         setIsLoading(false);
       })
       .catch(err => {
@@ -33,7 +33,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharactersList data={data} isLoading={isLoading} />
-      <Button />
+      <Button setUrl={setUrl} nextUrl={nextUrl} />
     </div>
   );
 }
