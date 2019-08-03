@@ -1,5 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const HairColor = styled.h3`
+  color: white;
+`;
 
 export default function CharacterHairColor(props) {
-  return <h3>Hair Color: {props.haircolor}</h3>;
+  return <HairColor>Hair Color: {props.haircolor}</HairColor>;
 }

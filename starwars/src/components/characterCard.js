@@ -11,13 +11,17 @@ const StyledCards = styled.div`
   border: 1px solid black;
   width: 400px;
   margin: 20px auto;
+  background: rgba(123, 163, 13, 0.3);
+`;
+const StyledNames = styled.h3`
+  color: red;
 `;
 
 export default function CharacterCards(props) {
   console.log("card: props: ", props);
   return (
     <StyledCards>
-      <h3>Name: {props.people.name}</h3>
+      <StyledNames>Name: {props.people.name}</StyledNames>
       <CharacterGender gender={props.people.gender} />
       <CharacterBirthYear birthyear={props.people.birth_year} />
       <CharacterHairColor haircolor={props.people.hair_color} />

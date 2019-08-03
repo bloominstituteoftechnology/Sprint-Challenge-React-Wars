@@ -1,5 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const EyeColor = styled.h3`
+  color: brown;
+`;
 
 export default function CharacterEyeColor(props) {
-  return <h3>EyeColor: {props.eyecolor}</h3>;
+  return <EyeColor>EyeColor: {props.eyecolor}</EyeColor>;
 }
