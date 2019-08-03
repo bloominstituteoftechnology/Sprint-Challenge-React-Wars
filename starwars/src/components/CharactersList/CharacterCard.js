@@ -8,7 +8,8 @@ export default function(props) {
         <Card style={{margin: '2rem'}}>
             <Card.Content>
                 <Card.Header>{character.name}</Card.Header>
-                <Card.Meta>{character.homeworld}</Card.Meta>
+                <Card.Meta>Height: {character.height}</Card.Meta>
+                <Card.Meta>Weight: {character.mass}</Card.Meta>
                 <Card.Description>A {character.species} weighing {character.mass}</Card.Description>
             </Card.Content>
         </Card>
