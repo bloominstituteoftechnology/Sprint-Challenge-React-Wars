@@ -5,7 +5,7 @@ import CharacterCard from './CharacterCard';
 
 export default function(props) {
     return(
-        <Grid>
+        <Grid centered>
             <Grid.Row>
                 {!props.isLoading? 
                     props.data.map(character => {
