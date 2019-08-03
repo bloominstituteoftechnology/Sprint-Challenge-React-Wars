@@ -7,9 +7,11 @@ export default function(props) {
     return(
         <Grid>
             <Grid.Column>
-                {data.map(character => {
-                    return <h2>{character.name}</h2>
-                })}
+                {!props.isLoading? 
+                    props.data.map(character => {
+                        return <h2>{character.name}</h2>
+                    }) : null
+                }
             </Grid.Column>
         </Grid>
     )
