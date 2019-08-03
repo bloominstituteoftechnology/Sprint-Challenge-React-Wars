@@ -5,7 +5,7 @@ export default function(props) {
     const character = props.character;
 
     return(
-        <Card>
+        <Card style={{margin: '2rem'}}>
             <Card.Content>
                 <Card.Header>{character.name}</Card.Header>
                 <Card.Meta>{character.homeworld}</Card.Meta>
