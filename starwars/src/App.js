@@ -15,17 +15,15 @@ const App = () => {
     axios
       .get("https://swapi.co/api/people/")
       .then(resolve => {
-        console.log(resolve.data.results);
         setStarWarsPeople(resolve.data.results);
-        console.log("starWarsPeople: ", starWarsPeople);
       })
       .catch(error => console.log(error));
   }, []);
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {starWarsPeople.map(people => {
-        return <CharacterCards key={people} people={people} />;
+      {starWarsPeople.map((people, index) => {
+        return <CharacterCards key={index} people={people} />;
       })}
     </div>
   );
