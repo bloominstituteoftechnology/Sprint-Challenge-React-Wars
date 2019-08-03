@@ -6,13 +6,13 @@ import CharacterCard from './CharacterCard';
 export default function(props) {
     return(
         <Grid>
-            <Grid.Column>
+            <Grid.Row>
                 {!props.isLoading? 
                     props.data.map(character => {
                         return <CharacterCard character={character} />
                     }) : null
                 }
-            </Grid.Column>
+            </Grid.Row>
         </Grid>
     )
 }
