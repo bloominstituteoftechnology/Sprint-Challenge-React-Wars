@@ -4,6 +4,7 @@ import './App.css';
 import { Grid } from 'semantic-ui-react';
 
 import CharactersList from './components/CharactersList/CharactersList';
+import Button from './components/NavigationButton/NextButton';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -19,6 +20,7 @@ const App = () => {
   useEffect(() => {
     axios.get(url)
       .then(res => {
+        console.log(res);
         setData(res.data.results)
         setIsLoading(false);
       })
@@ -31,6 +33,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharactersList data={data} isLoading={isLoading} />
+      <Button />
     </div>
   );
 }
