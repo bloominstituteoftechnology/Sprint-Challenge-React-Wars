@@ -11,7 +11,7 @@ const CardDisplay = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   margin: 50px auto;
   
  `;
@@ -24,16 +24,25 @@ const PageButtonContainer = styled.span`
 const CharacterCards = () => {
 
     const [personArr, setPersonArr] = useState([]);
-    const [count, setCount] = useState(0);
+    const [prevPage, setPrevPage] = useState('');
+    const [nextPage, setNextPage] = useState('');
+    const [api, setApi] = useState(`https://swapi.co/api/people/`);
+
+    // const buttons = document.querySelectorAll('.button')
 
     useEffect(() => {
-        axios.get(`https://swapi.co/api/people/`)
+        axios.get(api)
             .then(res => {
                 setPersonArr(res.data.results)
-                setCount((Math.floor(res.data.count / 10)) + 1)
+                setPrevPage(res.data.previous)
+                setNextPage(res.data.next)
+                console.log(res)
             })
             .catch(err => console.log(err))
-    }, []);
+    }, [api]);
+
+    const prevPageHandler = () => setApi(prevPage)
+    const nextPageHandler = () => setApi(nextPage)
 
 
     const cards = personArr.map(person => {
@@ -53,7 +62,6 @@ const CharacterCards = () => {
         const homeworld = (
             <a href={person.homeworld}>Home Planet</a>
         )
-        console.log(count)
 
 
         return (
@@ -67,7 +75,7 @@ const CharacterCards = () => {
         )
     })
 
-    if (!personArr)
+    if (personArr === [])
         return <div>Loading...</div>
 
     return (
@@ -78,8 +86,9 @@ const CharacterCards = () => {
                 {cards}
             </Card.Group>
             <PageButtonContainer>
-                <PageButtons centered raised
-                    pageNum={count}
+                <PageButtons
+                    prevPage={prevPageHandler}
+                    nextPage={nextPageHandler}
                 />
             </PageButtonContainer>
         </CardDisplay>

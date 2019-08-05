@@ -1,21 +1,11 @@
 import React from 'react'
-import { Pagination } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 
-const PageButtons = (props) => {
-
-
-    return (
-        <Pagination
-            boundaryRange={0}
-            defaultActivePage={1}
-            ellipsisItem={null}
-            firstItem={null}
-            lastItem={null}
-            siblingRange={0}
-            totalPages={props.pageNum}
-
-        />
-    )
-}
+const PageButtons = (props) => (
+    <div>
+        <Button content='Prev' icon='left arrow' labelPosition='left' onClick={props.prevPage} floated='left' />
+        <Button content='Next' icon='right arrow' labelPosition='right' onClick={props.nextPage} floated='right' />
+    </div>
+)
 
 export default PageButtons
