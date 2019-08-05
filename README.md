@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a javascript library for building UI (the view layer) for single page applications that are heavy on (re)rendering. React creates a vitrual DOM to store and manage the state of the app. React does not manipulate DOM directly but makes it's changes to the virtual DOM and then once that is finished, determines what elements on the actual DOM need to be rerendered.
+
 - [ ] What does it mean to _think_ in react?
+
+To think in components. Components are self-contained modules of output. In React, your UI elements are built out of reusable, composable cpmonents, that can also be made up of other components.
 
 - [ ] Describe state.
 
+State is the description of the details of a React application at a point in time. To make an analogy, if you were to describe the "state" of yourself at this moment: Are you sitting or standing? Hungry or not? Tired or not? Pants or shorts? etc. In order for you to recreate the "state" of yourself at that particular moment you would have to exactly match all of those details.
+
 - [ ] Describe props.
 
+Props, or properties, are the configurable details of a component that allow us to change and determine the state of that component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are effects that happen outside of the scope of the function being called. One example is the effect Hook. The effect Hook takes to parameters: a callback function, and the the prop (or props) in the dependancy array to watch as a signal to fire the call back function.
 
 ## Project Set Up
 
