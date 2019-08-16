@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Card.Group>
+      <Card.Group className="cardgroup">
       {(results)? results.map((item,index)=>{
         return <Character person={item} key={item.name} />
       }) : "Loading..."}

@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  /* display:flex;
+  flex-direction: center;
+  margin: 0 auto;
+  border: 1px solid blue;
+  align-content: center;
+  align-items: center; */
+}
+.cardgroup{
+  border:1px solid blue;
+  display:flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .Header {
   color: #443e3e;
