@@ -4,6 +4,7 @@ import './App.scss';
 
 
 
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -17,7 +18,11 @@ const App = () => {
       
       <h1 className="Header">React Wars</h1>
 
+      
       <Characters />
+      
+      
+      
     </div>
   );
 }
