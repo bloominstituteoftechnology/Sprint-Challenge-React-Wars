@@ -37,17 +37,15 @@ const Characters = props => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.co/api/people")
+      .get(`https://swapi.co/api/people/?page=${props.pageNumber}`)
       .then(response => {
         const data = response.data.results;
         setCharacters(data);
-        console.log(characters);
-        console.log(data);
       })
       .catch(err => {
         console.log(err);
       });
-  }, []);
+  }, [props.pageNumber]);
 
   return (
     <>
@@ -57,8 +55,13 @@ const Characters = props => {
             <Card key={key}>
               <Name>{item.name}</Name>
               <Content>
+                <p>Gender: {item.gender}</p>
                 <p>Birth Year: {item.birth_year}</p>
                 <p>Height: {item.height}cm</p>
+                <p>Mass: {item.mass}kg</p>
+                <p>Hair Color: {item.hair_color}</p>
+                <p>Skin Color: {item.skin_color}</p>
+                <p>Eye Color: {item.eye_color}</p>
               </Content>
             </Card>
           );

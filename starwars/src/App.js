@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Characters from "./components/Characters";
+import PageButton from "./components/PageButton";
 import styled from "styled-components";
 import "./App.scss";
 
@@ -10,6 +11,8 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+  const [pageNumber, setPageNumber] = useState(1);
+
   const Container = styled.div`
     width: 100%;
     max-width: 1024px;
@@ -19,13 +22,15 @@ const App = () => {
   const Title = styled.h1`
     font-family: "Star Jedi", sans-serif;
     font-size: 3.5rem;
+    margin: 1.5rem 0;
   `;
 
   return (
     <Container>
       <div className="App">
         <Title className="Header">React Wars</Title>
-        <Characters />
+        <Characters pageNumber={pageNumber} />
+        <PageButton pageNumber={pageNumber} setPageNumber={setPageNumber} />
       </div>
     </Container>
   );
