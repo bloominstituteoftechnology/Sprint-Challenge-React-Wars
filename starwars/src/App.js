@@ -3,10 +3,13 @@ import './App.css';
 import axios from 'axios';
 // import 'semantic-ui-css/semantic.min.css';
 import styled from "styled-components";
+import Cards from "./components/StarWarsCards";
 
 const App = () => {
     const [toon, setToon] = useState();
     const [movie, setMovie] = useState();
+    const [height, setHeight] = useState();
+    const [weight, setWeight] = useState();
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -14,8 +17,11 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.'
 
+
+
     const NameStuff = styled.div`
-      font-size: 2rem;
+      font-size: 1.3rem;
+      line-height: 1.2;
       color: white;
 `;
 
@@ -48,7 +54,7 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
         <div className = "Container">
             <NameStuff>
-                {(toon)?toon.map(i => (<p key = {i.name}>{i.name}<br />{i.height}</p>)):null}
+                {(toon)?toon.map(i => (<div key = {i.name}>Name: {i.name}<br />Height: {i.height}<br /> Weight: {i.mass}<br/><br/></div>)):null}
             </NameStuff>
             {/*<div className = "MovieStuff">*/}
             {/*    {(movie)?movie.map(i=>(<p key={i.title}> {i.title}</p>)):null}*/}
