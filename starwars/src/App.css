@@ -7,3 +7,24 @@
 }
 /* write your parent styles in here for your App.js */
 
+*{
+  box-sizing: border-box
+}
+
+.ui.text.container{
+  display:flex;
+  flex-wrap: wrap;
+}
+.ui.card{
+  height: 100px;
+  width:350px;
+  background-color:white;
+  opacity: .7;
+  margin: 2%;
+  padding: 2%;
+}
+
+.ui.card .header{
+  margin-bottom: 1%;
+  font-weight: bolder;
+}
