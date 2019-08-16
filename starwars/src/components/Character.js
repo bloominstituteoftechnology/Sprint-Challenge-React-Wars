@@ -11,13 +11,16 @@ const Character = (props) => {
           <Card.Header>{person.name}</Card.Header>
           <Card.Meta>Born in {person.birth_year}</Card.Meta>
           <Card.Description>
-            Daniel is a comedian living in Nashville.
+            <p>Eye Color: {person.eye_color}</p>
+            <p>Gender: {person.gender}</p>
+            <p>Height: {person.height}</p>
+            
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
           <a>
             <Icon name='user' />
-            {`Appeared in ${props.person.films.length} film\(s\)`}
+            {`Appeared in ${person.films.length} film\(s\)`}
           </a>
         </Card.Content>
       </Card>
