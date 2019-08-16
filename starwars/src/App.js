@@ -26,9 +26,9 @@ const App = () => {
   }, [] 
   )
 
+
   function Jedi(obj) {
     return <Char 
-
         name={obj.name}
         mass={obj.mass}
         height={obj.height}
@@ -38,23 +38,26 @@ const App = () => {
   }
 
   return (
-<StyledPage>
-        <Styledh1>Star Wars Characters</Styledh1>
-        <p>Here's a few facts about my favorite Star Wars character</p>
-        <StyledContain>
+    <StyledPage>
+      <Styledh1>Star Wars API</Styledh1>
+        <StyledP>Here's a few facts about my favorite Star Wars <br />characters fetched from the Star Wars API.</StyledP>
+      <StyledContain>
         {data.map(Jedi)}
-        </StyledContain>
-</StyledPage>
+      </StyledContain>
+      <StyledName>Built by <a href="https://github.com/lccarrier">LC Carrier</a></StyledName>
+    </StyledPage>
   )
 }
 
 export default App;
 
+
+// Styling with styled components
 const StyledPage = styled.div`
   width: 100vh;
   height: 100%;
+  margin-left: 15px;
 `
-
 
 const StyledContain = styled.div`
     background-color: white;
@@ -73,6 +76,7 @@ const Styledh1 = styled.div`
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 10px 0px 5px 0px;
 
 `
 
@@ -83,5 +87,18 @@ const StyledP = styled.p`
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400l
+  font-weight: 400;
+  margin-bottom: 10px;
 `
+
+const StyledName = styled.p`
+  font-size: 16px;
+  line-height: 24px;
+  color: #00adbf;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 15px 0px 15px 5px;
+`
+

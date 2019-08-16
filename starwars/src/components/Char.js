@@ -3,22 +3,22 @@ import styled from 'styled-components';
 
 export default function Yolo(props) { 
   return (
-
         <StyledChar>
             <StyledH>{props.name} </StyledH>
-            <StyledP>{props.gender}, {props.mass} lbs, {props.height} meters </StyledP>
+            <StyledP>{props.mass} lbs, {props.height} meters, born in {props.year}, {props.skin_color} eyes </StyledP>
         </StyledChar>
-   
   );
 }
 
+
+// Styling with styled components
 const StyledH = styled.div`
     font-size: 16px;
     line-height: 24px;
     margin: 5px 0px;
     font-family: system-ui;
     font-weight: 600;
-    padding: 10px 0px 0px 10px;
+    padding: 5px 0px 0px 10px;
     background-color: white;
     color: #222b34;
 `
@@ -39,6 +39,10 @@ const StyledChar = styled.div`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white; 
+
+    :nth-last-child() {
+        display: none;
+    }
 
     
 `
