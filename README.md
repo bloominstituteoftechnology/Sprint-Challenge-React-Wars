@@ -64,7 +64,7 @@ Your finished project must include all of the following requirements:
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
-- [ ] You must have at least one element for each star wars character in the data set.
+- [ ] You must display at least one element for each star wars character in the data set.
 - [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles.
 
 #### Required best practices:
