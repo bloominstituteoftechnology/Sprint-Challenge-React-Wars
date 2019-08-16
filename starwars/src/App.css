@@ -1,14 +1,15 @@
 .App {
   text-align: center;
-  /* display:flex;
+  display:flex;
   flex-direction: center;
   margin: 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   align-content: center;
-  align-items: center; */
+  align-items: center;
+  max-width: 60%;
 }
 .cardgroup{
-  border:1px solid blue;
+  /* border:1px solid blue; */
   display:flex;
   margin: 0 auto;
   justify-content: center;

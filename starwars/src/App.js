@@ -24,6 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
+      
       <Card.Group className="cardgroup">
         {results
           ? results.map((item, index) => {
