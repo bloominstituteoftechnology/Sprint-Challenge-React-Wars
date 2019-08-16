@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from "react";
 import './App.css';
+import axios from 'axios';
+// import 'semantic-ui-css/semantic.min.css';
+import styled from "styled-components";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,6 +17,6 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
     </div>
   );
-}
+};
 
 export default App;
