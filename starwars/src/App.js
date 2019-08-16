@@ -12,11 +12,11 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [page, setPage] = useState("https://swapi.co/api/people/?page=1");
+  const [page, setPage] = useState(1);
   const [results, setResults] = useState();
 
   useEffect(() => {
-    axios.get('https://swapi.co/api/people/?page=1').then(response => {
+    axios.get(`https://swapi.co/api/people/?page=${page}`).then(response => {
       console.log(response.data);
       setResults(response.data.results);
     });
