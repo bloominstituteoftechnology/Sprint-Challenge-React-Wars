@@ -23,13 +23,19 @@ const App = () => {
   }, [page]);
 
   const getCharacters = (num) =>{
-
+    if(num > 0){
+      setPage(page+num);
+    } else {
+      if(page>1){
+        setPage(page+num)
+      }
+    }
   }
 
   return (
     <div className="App">
       <div className="buttons">
-      <Button icon labelPosition="left">
+      <Button icon labelPosition="left" >
         <Icon name="left arrow" />
         Previous
       </Button>
