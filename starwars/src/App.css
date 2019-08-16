@@ -4,9 +4,14 @@
   flex-direction: center;
   margin: 0 auto;
   /* border: 1px solid blue; */
+  margin-top: 40px;
   align-content: center;
   align-items: center;
   max-width: 60%;
+  flex-direction: column;
+}
+.buttons{
+  margin-bottom: 20px;
 }
 .cardgroup{
   /* border:1px solid blue; */
