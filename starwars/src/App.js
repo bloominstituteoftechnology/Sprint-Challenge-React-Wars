@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Char from "./components/Char"
-import styled from "styled-components";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Char from './components/Char'
+import styled from 'styled-components';
 
 
 const App = () => {
@@ -38,27 +38,50 @@ const App = () => {
   }
 
   return (
-
- <StyledPage>
-    <StyledLayout>
+<StyledPage>
+        <Styledh1>Star Wars Characters</Styledh1>
+        <p>Here's a few facts about my favorite Star Wars character</p>
+        <StyledContain>
         {data.map(Jedi)}
-    </StyledLayout>
- </StyledPage>
-
+        </StyledContain>
+</StyledPage>
   )
 }
 
 export default App;
 
-const StyledLayout = styled.div`
-  background-color: blue;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50%;
+const StyledPage = styled.div`
+  width: 100vh;
+  height: 100%;
 `
 
-const StyledPage = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
+
+const StyledContain = styled.div`
+    background-color: white;
+    border: 1px solid #DBDFE2;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+   
+`
+
+const Styledh1 = styled.div`
+  font-size: 24px;
+  color: #222b34;
+  line-height: 30px;
+  font-weight: 900;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+`
+
+const StyledP = styled.p`
+  font-size: 16px;
+  line-height: 24px;
+  color: #58626d;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400l
 `
