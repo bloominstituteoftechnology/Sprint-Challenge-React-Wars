@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import CardDisplay from "./components/CardDisplay.js"
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       
- <CardDisplay limit ={5} />
+ <CardDisplay limit ={10} />
     </div>
   );
 }

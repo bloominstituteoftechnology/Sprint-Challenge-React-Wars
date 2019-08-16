@@ -23,7 +23,8 @@ import { Container, Grid } from "semantic-ui-react"
 
   return (
     <Container>
-         <Grid columns={3} divided="vertically">
+         <Grid relaxed columns={1} divided>
+        <Grid.Row>
       
      {cardInfo.map(cardInfo => {
        return(
@@ -35,7 +36,7 @@ import { Container, Grid } from "semantic-ui-react"
           />
      )
       } )}
-    
+    </Grid.Row>
       </Grid>
       </Container>
       )
