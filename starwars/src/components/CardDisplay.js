@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card"
-import { Container } from "semantic-ui-react"
+import { Container, Grid } from "semantic-ui-react"
 
 
  function CardDisplay({ limit }) {
@@ -23,7 +23,8 @@ import { Container } from "semantic-ui-react"
 
   return (
     <Container>
-       
+         <Grid columns={3} divided="vertically">
+      
      {cardInfo.map(cardInfo => {
        return(
          <Card 
@@ -34,6 +35,8 @@ import { Container } from "semantic-ui-react"
           />
      )
       } )}
+    
+      </Grid>
       </Container>
       )
     }
