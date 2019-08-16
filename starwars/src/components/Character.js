@@ -2,12 +2,14 @@ import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 const Character = (props) => {
+    const person = props.person
+
     return ( 
         <Card>
-        <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
+        {/* <Image src={`https://picsum.photos/200?random=${props.index}`} wrapped ui={false} /> */}
         <Card.Content>
-          <Card.Header>Daniel</Card.Header>
-          <Card.Meta>Joined in 2016</Card.Meta>
+          <Card.Header>{person.name}</Card.Header>
+          <Card.Meta>Born in {person.birth_year}</Card.Meta>
           <Card.Description>
             Daniel is a comedian living in Nashville.
           </Card.Description>
@@ -15,7 +17,7 @@ const Character = (props) => {
         <Card.Content extra>
           <a>
             <Icon name='user' />
-            10 Friends
+            {`Appeared in ${props.person.films.length} film\(s\)`}
           </a>
         </Card.Content>
       </Card>

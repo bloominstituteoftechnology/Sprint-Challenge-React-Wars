@@ -29,7 +29,7 @@ const App = () => {
     <div className="App">
       <Card.Group className="cardgroup">
       {(results)? results.map((item,index)=>{
-        return <Character person={item} key={item.name} />
+        return <Character person={item} key={item.name} random={index} />
       }) : "Loading..."}
       </Card.Group>
     </div>
