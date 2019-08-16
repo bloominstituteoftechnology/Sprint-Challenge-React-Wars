@@ -17,7 +17,6 @@ const App = () => {
 
   useEffect(() => {
     axios.get(`https://swapi.co/api/people/?page=${page}`).then(response => {
-      console.log(response.data);
       setResults(response.data.results);
     });
   }, [page]);

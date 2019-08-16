@@ -26,8 +26,10 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 React JS is a javascript library. It helps build single page web applications. 
+
 - [ ] What does it mean to _think_ in react?
 Thinking in terms of components, state, and props. How data flow is achieved with efficiency.
+
 - [ ] Describe state.
 State is information that is private to it's respective component.
 
