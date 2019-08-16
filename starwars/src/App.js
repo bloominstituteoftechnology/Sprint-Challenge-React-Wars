@@ -12,22 +12,26 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [page, setPage] = useState("https://swapi.co/api/people");
+  const [page, setPage] = useState("https://swapi.co/api/people/?page=1");
   const [results, setResults] = useState();
 
   useEffect(() => {
-    axios.get(page).then(response => {
-      console.log(response.data.results);
+    axios.get('https://swapi.co/api/people/?page=1').then(response => {
+      console.log(response.data);
       setResults(response.data.results);
     });
   }, [page]);
+
+  const getCharacters = (num) =>{
+
+  }
 
   return (
     <div className="App">
       <div className="buttons">
       <Button icon labelPosition="left">
-        <Icon name="pause" />
-        Pause
+        <Icon name="left arrow" />
+        Previous
       </Button>
       <Button icon labelPosition="right">
         Next
