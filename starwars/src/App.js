@@ -35,11 +35,11 @@ const App = () => {
   return (
     <div className="App">
       <div className="buttons">
-      <Button icon labelPosition="left" >
+      <Button icon labelPosition="left" onClick={()=>{getCharacters(-1)}}>
         <Icon name="left arrow" />
         Previous
       </Button>
-      <Button icon labelPosition="right">
+      <Button icon labelPosition="right" onClick={()=>{getCharacters(1)}}>
         Next
         <Icon name="right arrow" />
       </Button>
