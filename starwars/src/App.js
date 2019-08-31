@@ -1,9 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Header from './components/Header';
+import PeopleStats from './components/PeopleStats';
 import './App.css';
-import { Button } from 'reactstrap';
+// import { Button } from 'reactstrap';
 
-const App = () => {
+function App () {
+  const [data, setData] = useState(["name", "birth_year", "gender", "eye_color", "hair_color"]);
+  const [query, setQuery] = useState('');
+  
+  useEffect(() => {
+    console.log('first render');
+
+  axios.get("http https://swapi.co/api/people/")
+  .then(response => {
+    console.log(response.data);
+    setData(response.data)
+    })
+  }, [data]);
+
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -13,7 +29,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header">React Wars - Star Wars</h1>
+      <Header />
+      <PeopleStats />
     </div>
   );
 }
