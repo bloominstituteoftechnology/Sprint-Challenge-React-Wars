@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
 import './App.css';
+import axios from 'axios'
 import Person from './components/Person';
 
-const App = () => {
+function App() {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -16,9 +16,10 @@ const App = () => {
     const fetchData = () => {
       axios
         .get("https://swapi.co/api/people/")
-        .then(res => updateData(res.data));
+        .then(res => updateData(res))
     }
     fetchData();
+
   }, []);
   console.log(data);
 
