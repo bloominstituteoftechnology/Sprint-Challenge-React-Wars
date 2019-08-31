@@ -10,18 +10,18 @@ function App() {
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
-  const [data, updateData] = useState({});
+  const [data, updateData] = useState([]);
 
   useEffect(() => {
     const fetchData = () => {
       axios
         .get("https://swapi.co/api/people/")
-        .then(res => updateData(res))
+        .then(res => updateData(res.data.results))
+        
     }
     fetchData();
 
   }, []);
-  console.log(data);
 
   return (
     <div className="App">
