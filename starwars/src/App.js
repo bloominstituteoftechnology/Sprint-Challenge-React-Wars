@@ -1,4 +1,5 @@
 import React from 'react';
+import CharacterCard from './components/CharacterCard/CharacterCard';
 import './App.css';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <CharacterCard />
     </div>
   );
 }
