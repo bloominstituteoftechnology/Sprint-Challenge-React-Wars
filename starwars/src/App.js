@@ -2,21 +2,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './components/Header';
-import PeopleStats from './components/PeopleStats';
+import Name from './components/Name';
+import Birthday from './components/Birthday';
+import Gender from './components/Gender';
 import './App.css';
 // import { Button } from 'reactstrap';
 
 function App () {
-  const [data, setData] = useState(["name", "birth_year", "gender", "eye_color", "hair_color"]);
-  const [query, setQuery] = useState('');
+  const [data, setData] = useState([]);
+  // const [count, setCount] = useState('starwarsChars');
   
   useEffect(() => {
     console.log('first render');
 
-  axios.get("http https://swapi.co/api/people/")
+    axios.get("https://swapi.co/api/people/")
   .then(response => {
     console.log(response.data);
     setData(response.data)
+  // .catch(error => console.log(error));
     })
   }, [data]);
 
@@ -31,7 +34,9 @@ function App () {
     <div className="App">
       <h1 className="Header">React Wars - Star Wars</h1>
       <Header />
-      <PeopleStats />
+      <Name />
+      <Birthday />
+      <Gender />
     </div>
   );
 }
