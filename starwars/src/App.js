@@ -4,6 +4,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 import Navigation from './components/Navigation.js';
 import MakeCard from './components/MakeCard.js';
+import {render, fireEvent} from '@testing-library/react'
 /* Questions:
 Thinking in react is thinking in an environment where the DOM is not re rendered every time there is a change, instead 
 you are updating one small element at a time so it is more effective and you are able through State, to re render various 
