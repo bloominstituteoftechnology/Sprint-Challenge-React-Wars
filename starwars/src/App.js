@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Name from './components/Name';
-import Birthday from './components/Birthday';
-import Gender from './components/Gender';
-import { data } from '../Data';
+import Card from './components/Card';
+import Crawl from './components/Crawl';
 import './App.css';
 
 
-
-const url = 'https://swapi.co/api/people/'
 function App () {
   const [data, setData] = useState([{}]);
-  // const [count, setCount] = useState('starwarsChars');
   
   useEffect(() => {
     // setData(array);
     // console.log(data)
-    axios.get(url)
+    axios.get('https://swapi.co/api/people/?page=1')
   .then(response => {
     console.log(response.data);
-    setData(response.data)
+    setData(response.data.results)
     })
     .catch(error => console.log(error))
   }, []);
@@ -32,20 +27,17 @@ function App () {
   // sync up with, if any.
 
     return (
+      <React.Fragment>
+        <Crawl />
     <div className="App">
       <h1 className="Header">React Wars - Star Wars</h1>
     
           {data.map(item => {
-           return (
-             <div>
-            <Name name={item.name} />
-            <Birthday birth_year={item.birth_year} />
-            <Gender gender={item.gender} />
-            </div>
-            )
+           return <Card name={item.name} birth_year={item.birth_year} gender={item.gender} url={item.url} />
         })}
     </div>
+    </React.Fragment>
      );
  }
 
-    export default App;
+   export default App;
