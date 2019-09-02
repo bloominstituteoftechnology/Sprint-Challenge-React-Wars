@@ -3,10 +3,10 @@ import axios from 'axios';
 import Name from './components/Name';
 import Birthday from './components/Birthday';
 import Gender from './components/Gender';
-// import Data from './Data';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { data } from '../Data';
 import './App.css';
-// import { Button } from 'reactstrap';
+
+
 
 const url = 'https://swapi.co/api/people/'
 function App () {
@@ -21,7 +21,7 @@ function App () {
     console.log(response.data);
     setData(response.data)
     })
-    // .cath(error => console.log(error))
+    .catch(error => console.log(error))
   }, []);
 
   // Try to think through what state you'll need for this app before starting. Then build out
