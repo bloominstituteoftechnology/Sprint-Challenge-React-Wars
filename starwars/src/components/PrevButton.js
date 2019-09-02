@@ -1,11 +1,11 @@
 import React from "react";
 
-const GenderButton = (props) => {
+const PrevButton = (props) => {
     return (
         <button onClick={() => props.addStats(props.text)}>
-            {props.starwarsChars}
+            {props.starwars.Chars}
         </button>
     );
 };
 
-export default GenderButton;
+export default PrevButton;

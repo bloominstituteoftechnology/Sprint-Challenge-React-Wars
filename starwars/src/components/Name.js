@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-import NameButton from './NameButton';
+import PrevButton from './PrevButton';
+import NextButton from './NextButton';
 
 const Name = (props) => {
     const [stats, setStats] = useState([])
+
+ return <Name key={stats} text={stats} setStats={props.setStats} />;
     
-    return (
-        <div>
-            {stats.map(stat => {
-                return <Name key={stat} text={stat} addStats={props.addStats.starwars.Chars} />;
-            })}
-        </div>
-    )
 }
 
 export default Name;

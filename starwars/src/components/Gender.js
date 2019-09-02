@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-import GenderButton from './GenderButton';
+import PrevButton from './PrevButton';
+import NextButton from './NextButton';
 
 const Gender = (props) => {
     const [stats, setStats] = useState([])
 
-    return (
-        <div>
-            {stats.map(stat => {
-                return <Gender key={stat} text={stat} addStats={props.addStats.starwars.Chars} />;
-            })}
-        </div>
-    )
+    return <Gender key={stats} text={stats} setStats={props.setStats} />;
+
 }
 
 export default Gender;

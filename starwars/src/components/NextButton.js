@@ -1,11 +1,11 @@
 import React from "react";
 
-const NameButton = (props) => {
+const NextButton = (props) => {
     return (
         <button onClick={() => props.addStats(props.text)}>
-            {props.starwarsChars}
+            {props.starwars.Chars}
         </button>
     );
 };
 
-export default NameButton;
+export default NextButton;

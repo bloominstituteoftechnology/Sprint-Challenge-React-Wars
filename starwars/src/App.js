@@ -1,27 +1,28 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Header from './components/Header';
 import Name from './components/Name';
 import Birthday from './components/Birthday';
 import Gender from './components/Gender';
+// import Data from './Data';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './App.css';
 // import { Button } from 'reactstrap';
 
+const url = 'https://swapi.co/api/people/'
 function App () {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([{}]);
   // const [count, setCount] = useState('starwarsChars');
   
   useEffect(() => {
-    console.log('first render');
-
-    axios.get("https://swapi.co/api/people/")
+    // setData(array);
+    // console.log(data)
+    axios.get(url)
   .then(response => {
     console.log(response.data);
     setData(response.data)
-  // .catch(error => console.log(error));
     })
-  }, [data]);
+    // .cath(error => console.log(error))
+  }, []);
 
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -30,15 +31,21 @@ function App () {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  return (
+    return (
     <div className="App">
       <h1 className="Header">React Wars - Star Wars</h1>
-      <Header />
-      <Name />
-      <Birthday />
-      <Gender />
+    
+          {data.map(item => {
+           return (
+             <div>
+            <Name name={item.name} />
+            <Birthday birth_year={item.birth_year} />
+            <Gender gender={item.gender} />
+            </div>
+            )
+        })}
     </div>
-  );
-}
+     );
+ }
 
-export default App;
+    export default App;
