@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Descriptions = styled.h4`
   padding: 25px; 
-  color: white;
+  color: aqua;
   background-color: black;
   width: 400px;
   height: 80px;
