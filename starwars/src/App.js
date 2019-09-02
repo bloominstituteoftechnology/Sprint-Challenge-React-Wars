@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import People from './components/people'
 
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -21,8 +22,8 @@ const App = () => {
   
   return (
     <div className='container'>
-      <div>REACT WARS</div>
-    <People name={data} /></div>
+      <h1>REACT WARS</h1>
+    <People info={data} /></div>
   )
 }
 
