@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import CharacterList from './components/CharacterList';
 import styled from 'styled-components'
-import { Alert } from 'reactstrap';
+
+
+const CustomH1 = styled.h1({
+  backgroundColor: '#9A887A',
+  color: 'white',
+  width:800,
+  marginLeft:200,
+  marginTop: 20,
+})
 
 class App extends Component {
   constructor() {
@@ -35,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <CustomH1>React Wars</CustomH1>
         <CharacterList starwarsChars={this.state.starwarsChars} />
       </div>
     );
