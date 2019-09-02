@@ -16,9 +16,11 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 `;
 /* Create a div container to hold the persons pulled from API data */
 const Persons = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -42,8 +44,7 @@ useEffect(() => {
   }, [])
 /* Return in () the div where React Wars will be the class App and rendered 
   Fetched characters from the star wars api in an effect hook. */
-  return (
-
+  return (  
     <div className='App'>
 {/* style content div and .map data below to return an array of characters to be rendered in Content Persons*/} 
 {/* Pull (via return statement) in data with keys to be passed as props to the MakeCard default function generating an array in Persons */}
@@ -54,7 +55,7 @@ useEffect(() => {
           return (
               <Persons className='person' key={index}>
               <Navigation key={index} name={character.name} />
-              <MakeCard key={index} name={character.name} height={character.height} mass={character.mass} />
+              <MakeCard key={index} name={character.name} location={character.url} age={character.birth_year} species={character.species}/>
               </Persons>
             )
           }
