@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const CustomH1 = styled.h1({
   backgroundColor: '#9A887A',
-  color: 'white',
+  color: 'white', 
   width:800,
   marginLeft:200,
   marginTop: 20,
