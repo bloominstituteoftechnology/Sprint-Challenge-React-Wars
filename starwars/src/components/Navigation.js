@@ -21,11 +21,13 @@ const Header = styled.h2`
     background: black;
     color: white;
     border-shadow: 2px 2px #aaa;
+    border-radius: 4px;
 `;
 
 function Navigation(props){
 	return (
         <div>
+        <Logo>React Wars</Logo>
 		<Header> {props.name} </Header>
 		</div>
 		)
