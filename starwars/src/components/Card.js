@@ -7,8 +7,10 @@ const Card = (props) => {
     <Div 
     key={props.url}> 
     <H1>{props.name} </H1>
-    <H3>{props.birth_year} </H3>
-    <H3>{props.gender} </H3>
+    <H3>Birth-year: {props.birth_year} </H3>
+    <H3>Gender: {props.gender} </H3>
+    <H3>Eye-color: {props.eye_color} </H3>
+    
 
     </Div>
     )

@@ -33,7 +33,7 @@ function App () {
       <h1 className="Header">React Wars - Star Wars</h1>
     
           {data.map(item => {
-           return <Card name={item.name} birth_year={item.birth_year} gender={item.gender} url={item.url} />
+           return <Card name={item.name} birth_year={item.birth_year} gender={item.gender} eye_color={item.eye_color} url={item.url} />
         })}
     </div>
     </React.Fragment>

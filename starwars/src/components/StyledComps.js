@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 export const H1 = styled.h1`
-font-size: 1.8rem;
+font-size: 4.0rem;
 color:  rgb(185, 19, 46);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-border-bottom: 2px dashed black;
+justify-content: column;
+line-spacing: 1.5;
 `
 ;
 
 export const H3 = styled.h3`
-font-size: 4.0rem;
+font-size: 1.8rem;
 color: rgb(4, 10, 46);
 font - family: Verdana, Geneva, Tahoma, sans - serif;
 `
@@ -17,15 +18,20 @@ font - family: Verdana, Geneva, Tahoma, sans - serif;
 
 
 export const Div = styled.div`
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: rgb(4, 10, 46);
-font-size: 1.2rem;
+border-radius: 5px;
+border-bottom: 1px dashed black;
+box-shadow:
+    0 0 0 5px hsl(0, 0%, 80%),
+    0 0 0 10px hsl(0, 0%, 90%);
+    background-color: rgb(61, 170, 34);
+    opacity: 0.6;
+    width: 85%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 `
 ;
 
-// function card (props) {
-//     return (
-//         <card key{props.url}.
-//         <H1> {props.name} </H1>
-//         <H3>{props.birth_year}</H3>
-// >
