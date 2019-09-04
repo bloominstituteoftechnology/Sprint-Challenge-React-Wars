@@ -34,6 +34,10 @@ function App () {
     
           {data.map(item => {
            return <Card name={item.name} birth_year={item.birth_year} gender={item.gender} eye_color={item.eye_color} url={item.url} />
+
+          //  <Button variant="success">Next</Button>
+          //  <Button variant="danger">Prev</Button>
+
         })}
     </div>
     </React.Fragment>

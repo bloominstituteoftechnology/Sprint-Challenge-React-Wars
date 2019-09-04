@@ -10,8 +10,6 @@ const Card = (props) => {
     <H3>Birth-year: {props.birth_year} </H3>
     <H3>Gender: {props.gender} </H3>
     <H3>Eye-color: {props.eye_color} </H3>
-    
-
     </Div>
     )
 }

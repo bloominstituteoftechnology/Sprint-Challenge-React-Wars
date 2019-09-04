@@ -5,8 +5,8 @@ import 'react-star-wars-crawl/lib/index.css';
 export default function crawl() {
     return (
         <Crawl 
-        title="Star Wars React Sprint"
-        subTitle="Lambda Students webpt 8"
+        title="Star Wars - React Sprint"
+        subTitle="Lambda Students WEB-PT8"
         text="Several fighters have broken off from the main group. Come with me! Pull in! Luke...pull in! Watch your back, Luke! Watch your back! Fighter's above you, coming in! I'm hit, but not bad. Artoo, see what you can do with it. Hang on back there. Red Six... Can you see Red Five? There's a heavy fire zone on this side. Red Five, where are you? I can't shake him! I'm on him, Luke! Hold on! Blast it! Wedge where are you? Thanks, Wedge. Good shooting, Wedge!
 
 Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!
