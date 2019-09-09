@@ -1,5 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import axios from 'axios';
+import styled from 'styled-components';
+import TheForce from './components/theForce';
+
+
+
+const AppDiv = styled.div `
+  font-family:sans-serif;
+  text-align:center
+`;
+const Header1Style = styled.h1 `
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+`;
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -8,34 +23,34 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   useEffect(() => {
-    const fetchCharacter = (id) =>
-    fetch(`https://swapi.co/api/people/${id}`)
-      // .get('https://swapi/co/api/people')
-      .then(res => res.json())
+    axios.get('https://swapi.co/api/people/')
       .then(res => {
-        console.log(res)
+        console.log(res.data)
         setcharacters(res.data.results)
       })
-      fetchCharacter(characters)
-  }, [characters])
+      .catch(err => console.log(err))
+    },[])
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-      </div>
-    <div>
-      {characters.map(person => {
-        // {operators.map(operator => <OperatorButton operator={operator} addOperator={props.addOperator}/>)}
-        return <
-          key = {person.name}
-          name = {person.name}
-          mass = {person.mass}
-          skinColor = {person.skin_color}
-          height = {person.height}
-          homeWorld = {person.homeworld} />}
-          )
-      }
-    </div>
+    <AppDiv>
+      <Header1Style className="Header">React Wars</Header1Style>
+    
+    
+    {characters.map(person => ( 
+        <TheForce type='theForce' key={person.name}>
+          <h2>
+            Name: {person.name}
+          </h2>
+          <p>
+            Eye color: {person.eye_color}
+          </p>
+          <p>
+           Birth Year : {person.birth_year}
+           
+          </p>
+        </TheForce>
+      ))}
+    </AppDiv>
     
   );
 }
