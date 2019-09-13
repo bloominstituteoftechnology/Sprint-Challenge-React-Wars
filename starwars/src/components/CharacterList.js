@@ -28,7 +28,7 @@ export default function CharacterList() {
     return(
         <CharacterContainer>
             {characters.map(object => {
-                return <CharacterCard key = {object.name} name = {object.name} birth_year = {object.birth_year} gender = {object.gender} hair_color = {object.hair_color} eye = {object.eye} heigh = {object.height} mass = {object.mass} />;
+                return <CharacterCard key = {object.name} name = {object.name} birth_year = {object.birth_year} gender = {object.gender} hair_color = {object.hair_color} eye_color = {object.eye_color} height = {object.height} mass = {object.mass} />;
             })}
         </CharacterContainer>
     );
