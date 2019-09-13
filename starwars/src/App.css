@@ -16,9 +16,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid black;
   box-sizing: border-box;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
