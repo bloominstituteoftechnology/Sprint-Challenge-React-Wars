@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is library that allows you to use components to build user interfaces. It solves problems with state management and it makes parts of the webpage reusable.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in react means determining all of the components and subcomponents a webpages needs and how to put them together.
 
 - [ ] Describe state.
 
+In react, state is data owned by a component on which changes to the webpage are based on.
+
 - [ ] Describe props.
 
+Properties are data passed from one component to a child component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+In React, side effects are events that happen after the rendering of the component. To sync effects to a state or property change, you can add the identifier of the variable to an array as the second parameter of the call to the useEffect hook.
 
 ## Project Set Up
 
