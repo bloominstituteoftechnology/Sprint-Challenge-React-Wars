@@ -4,13 +4,27 @@ exports[`<App /> should match snapshot 1`] = `
 <div
   className="App"
 >
-  <h1
-    className="Header"
-  >
+  <h1>
     React Wars
+  </h1>
+  <h1>
+    React Wars - Star Wars
   </h1>
   <div
     className="sc-bxivhb bdbxJs"
   />
+</div>
+`;
+
+exports[`<App /> should match snapshot 2`] = `
+<div
+  className="App"
+>
+  <h1>
+    React Wars
+  </h1>
+  <h1>
+    React Wars - Star Wars
+  </h1>
 </div>
 `;
