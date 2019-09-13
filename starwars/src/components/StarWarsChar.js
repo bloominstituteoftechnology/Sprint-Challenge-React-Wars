@@ -4,12 +4,11 @@ import styled from "styled-components";
 const StarWarsChars = styled.div`
   width: 40%;
   height: 300px;
-  background-color: #e8bcbebd;
   margin: 50px;
   color: white;
-  background-color: #df4e0b;
+  background-color: #B6450D;
   border: 5px solid grey;
-  border-radius: 50%;
+  border-radius:10%;
 `;
 const UL = styled.ul`
   list-style-type: none;
