@@ -9,8 +9,8 @@ const CardContainer = styled.div `
     width: 900px
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
-    margin-top: 15px
+    margin-bottom: 30px;
+    margin-top: 20px
     border-radius: 5px;
 `
 
@@ -21,7 +21,10 @@ const CardContainer = styled.div `
 
 
 const CharacterName = styled.h1 `
-color: mediumturquoise;
+color: darkturquoise;
+margin-top:30px;
+margin-bottom: 0px;
+font-size: 45px;
 `
 
 const CharacterInfo = styled.div `
@@ -39,8 +42,8 @@ font-size: 18px;
 
 const Bold = styled.span `
 font-weight: bold;
-
-text-decoration: underline;
+// text-decoration: underline;
+color: powderblue;
 `
 
 
@@ -56,8 +59,8 @@ const CharacterCard = props => {
                     <Property><Bold>Gender:</Bold> {props.gender}</Property>
                     <Property><Bold>Hair Color:</Bold> {props.hair_color}</Property>
                     <Property><Bold>Eye Color:</Bold> {props.eye_color}</Property>
-                    <Property><Bold>Height:</Bold> {props.height}</Property>
-                    <Property><Bold>Weight:</Bold> {props.mass}</Property>
+                    <Property><Bold>Height:</Bold> {props.height} cm</Property>
+                    <Property><Bold>Weight:</Bold> {props.mass} lbs</Property>
                 </CharacterInfo>
             </CardContainer>
     );
