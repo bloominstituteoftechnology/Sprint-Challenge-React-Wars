@@ -8,22 +8,30 @@ exports[`<App /> should match snapshot 1`] = `
     className="sc-bwzfXH jRhgJK"
   >
     <li>
-      <li
-        className="sc-htpNat iecJDb"
+      <h1
+        className="sc-htpNat gtBTPD"
       >
         Manju
-      </li>
+      </h1>
     </li>
-    <li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
       Birth Year: 
     </li>
-    <li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
       Eye Color: 
     </li>
-    <li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
       Height: 
     </li>
-    <li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
       Mass: 
     </li>
   </ul>

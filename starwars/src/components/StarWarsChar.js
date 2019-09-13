@@ -15,10 +15,12 @@ const UL = styled.ul`
   padding: 0;
   padding-left: 40px;
 `;
-const H1 = styled.li`
+const H1 = styled.h1`
   font-size: 1.8rem;
   margin-top: 100px;
+  
 `;
+const LI = styled.li``
 
 function StarWarsChar(props) {
   return (
@@ -27,10 +29,10 @@ function StarWarsChar(props) {
         <li>
           <H1>{props.char.name}</H1>
         </li>
-        <li>Birth Year: {props.char.birth_year}</li>
-        <li>Eye Color: {props.char.eye_color}</li>
-        <li>Height: {props.char.height}</li>
-        <li>Mass: {props.char.mass}</li>
+        <LI>Birth Year: {props.char.birth_year}</LI>
+        <LI>Eye Color: {props.char.eye_color}</LI>
+        <LI>Height: {props.char.height}</LI>
+        <LI>Mass: {props.char.mass}</LI>
       </UL>
     </StarWarsChars>
   );

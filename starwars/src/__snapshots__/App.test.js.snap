@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> should match snapshot 1`] = `
+exports[`<App /> renders without crashing 1`] = `
 <div
   className="App"
 >
@@ -11,12 +11,12 @@ exports[`<App /> should match snapshot 1`] = `
     React Wars - Star Wars
   </h1>
   <div
-    className="sc-bxivhb bdbxJs"
+    className="sc-ifAKCX dHcTOt"
   />
 </div>
 `;
 
-exports[`<App /> should match snapshot 2`] = `
+exports[`<App /> renders without crashing 2`] = `
 <div
   className="App"
 >
