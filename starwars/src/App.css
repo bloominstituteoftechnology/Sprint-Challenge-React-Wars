@@ -1,8 +1,60 @@
+/* @import url(http://allfont.net/allfont.css?fonts=star-jedi); */
+
 .App {
   text-align: center;
+  text-emphasis: bold;
+  text-anchor: middle;
+  text-size-adjust: 24px;
+  font-weight: bold;
+  /* font-family: 'Star Jedi', arial; */
+  border: 20px outset rgb(223, 9, 126);
+  border-radius: 25px 100px;
+  margin: 3%;
+  box-shadow: 5px 5px;
+  color: rgb(128, 4, 230);
+  border-bottom: 5px solid rgb(133, 20, 238);
+  padding-bottom: 6%;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  text-align: center;
+  color: #ec8e00;
+  text-shadow: 5px 6px 5px rgb(94, 10, 230);
+  font-weight: bold;
+  font-size: 100px;
+  /* font-family: 'Star Jedi', arial;
+  text-decoration: 'Star Jedi', arial; */
+  border-bottom: 5px solid rgb(37, 11, 180);
+  padding-bottom: 5%;
+  /* <!-- tried to change the font on header but style is not taking --> */
+}
+
+.div {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  font-family: 'Star Jedi', arial;
+  padding: 50px;
+  
+}
+
+
+
+.characterCard{
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(128, 128, 128);
+  margin: 10px auto;
+  width:100%;
+  text-shadow: rgb(11, 233, 11) 1px 0 10px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 134, 52);
+  padding-bottom: 10px;
+}
+
+.LukeSkywalker{
+  background-color: azure;
 }
 /* write your parent styles in here for your App.js */
