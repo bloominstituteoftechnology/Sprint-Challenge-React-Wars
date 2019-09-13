@@ -1,0 +1,23 @@
+Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
+
+ What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+    react js is defined in it's name, it was facebooks attempt to handle large amounts of data changing frequently, the webpages thus react to the data
+
+ What does it mean to think in react?
+ 
+ it means that you think about data(state) and flow(props) and the speed at which you want the page to render and react
+
+
+ Describe state.
+
+data that can be passed via props and when the when the page renders and state is changed only it shows the chage
+
+
+ Describe props.
+
+ props allow state to be passed down only and allow functions to be more dynamic
+
+ What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+refers to function that modifies things, one requrie cleanup and some dont'
