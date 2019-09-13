@@ -2,14 +2,14 @@ import React, { useState, useEffect} from "react";
 import axios from "axios"
 import PersonCard from "./components/PersonCard.js"
 
-// import styled from "styled-components"
+import styled from "styled-components"
 import "./App.css";
 
-// const StyledDiv = styled.div`
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-evenly;
-// `
+const StyledDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`
 
 const App = () => {
   const [persons, setPersonState] = useState([])
@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div>
+      <StyledDiv>
         {persons.map((person, index) => {
           return (
           <PersonCard 
@@ -38,7 +38,7 @@ const App = () => {
             hairColor={person.hair_color}/> 
           )
         })}
-      </div>
+      </StyledDiv>
       </div>
   );
 }
