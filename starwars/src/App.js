@@ -16,7 +16,7 @@ const App = () => {
     axios.get(`https://swapi.co/api/people/`)
     .then(resp => {
       setStarWarsChar(resp.data.results);
-      console.log(resp.data.results)
+      console.log(resp.data.results);
     })
 
   },[])
@@ -24,8 +24,10 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <StarWarsChar/>
-    </div>
+      {starWarschar.map(char => {
+            return <StarWarsChar char={char} key={char.name} />
+          })}
+      </div>
   );
 }
 
