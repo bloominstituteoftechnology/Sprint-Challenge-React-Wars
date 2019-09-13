@@ -1,15 +1,17 @@
 import react from "react";
-import CharacterList from "./CharacterList";
 
-const CharacterCard = props => {
-    const {name, height, mass} = props; 
-    console.log(name, height, mass);
-    return (    
-        <>
-            <div>{character}</div>
-        </>
-    )
-    }
+const CharacterCard = (props) => {
+    const {characters} = props;
+        console.log(props);
+        return (  
+                <>  
+                <div>{name}</div>
+                <div>{mass}</div>
+                <div>{height}</div>
+                </>
+            );
+        };
 
-export default CharacterCard;
+
+        export default CharacterCard;
 

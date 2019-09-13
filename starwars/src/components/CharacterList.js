@@ -1,22 +1,20 @@
 import React from "react";
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "react"
 // import styled from "styled-components"
 
-
-const CharacterList = (props) => {
-    const {characters} = props;
-        console.log(props);
-    
+const CharacterList = props => {
+    const {character} = props; 
+    console.log(characters);
+   
     return (
-        <div>
-        hello world
+        <>
         {
             characters.map(character => {
                return <CharacterCard character = {character}/> 
             })
-        }
-        </div>
-    );
-}
+        })
+        </>
+        )
+    }
 
-export default CharacterList
+    export default CharacterList

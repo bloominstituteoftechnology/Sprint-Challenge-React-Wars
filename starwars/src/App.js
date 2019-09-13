@@ -16,7 +16,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [Characters, setChar] = useState({
+  const [character, setChar] = useState({
     data:[]
   })
 
@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterList characters={Characters}/> 
+      <CharacterList character={character.data}/> 
     </div>
   );
 }
