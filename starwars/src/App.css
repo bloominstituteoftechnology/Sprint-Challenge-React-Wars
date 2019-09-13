@@ -1,8 +1,63 @@
 .App {
   text-align: center;
 }
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.peopleCard span {
+  font-weight: bold;
+}
+
+.cardDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* .cardDisplay::after {
+  content: "";
+  flex: auto;
+} */
+
+/* @media(min-width: 801px) { */
+  .peopleCard:last-child {
+    float: left;
+  }
+/* } */
+
+.peopleCard {
+  border: 1px solid black;
+  background-color: white;
+  text-align: left;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+
+@media(max-width: 800px) {
+  .cardDisplay {
+    width: 85%;
+  }
+  .peopleCard {
+    width: 48%;
+  }
+}
+
+@media(max-width: 500px) {
+  .cardDisplay {
+    width: 95%;
+  }
+  .peopleCard {
+    width: 100%;
+  }
+}
