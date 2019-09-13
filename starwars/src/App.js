@@ -1,9 +1,9 @@
 import React, { useState, useEffect }  from 'react';
-
+import axios from "axios";
 import './App.css';
 
 const App = () => {
-  const [char, setChar] = useState({})
+  const [starWarschar, setStarWarsChar] = useState([])
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -12,8 +12,11 @@ const App = () => {
   // sync up with, if any.
 
   useEffect(() => {
-    axios.get(`"https://swapi.co/api/people/"`)
-    
+    axios.get(`https://swapi.co/api/people/`)
+    .then(resp => {
+      setStarWarsChar(resp.data.results);
+      console.log(resp.data.results)
+    })
 
   },[])
 
