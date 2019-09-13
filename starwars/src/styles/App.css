@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Open+Sans&display=swap");
+
+.App {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Audiowide", cursive;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.none {
+  display: none;
+}
