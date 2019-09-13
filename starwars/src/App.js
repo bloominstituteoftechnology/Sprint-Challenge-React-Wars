@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import InfoCards from "./components/InfoCards";
+import Card from "./components/Card";
 import axios from "axios";
 
 
@@ -10,7 +11,8 @@ const App = () => {
   const [people, starPeople] = useState([]);
 
   useEffect(() =>
-    axios .get("https://swapi.co/api/people/")
+    axios 
+    .get("https://swapi.co/api/people/")
     .then(response => {
     console.log(response);
     const allPeople = response.data.results;
@@ -20,6 +22,16 @@ const App = () => {
       console.log("No data returned", error)
       )
 ,[]);
+
+// return (
+//   <div>
+//    {people.map (item => {
+//        return <Card key = {item} name ={item.name}/>
+//    })}
+
+//   </div>
+// )
+
   
   // const [hasError, setErrors] = useState(false);
   // const [planets, setPlanets] = useState({});
@@ -39,6 +51,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <InfoCards />
+      <Card />
     </div>
   );
 }

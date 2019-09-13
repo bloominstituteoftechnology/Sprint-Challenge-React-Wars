@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-
+import React from "react";
+import Card from './Card';
 
 // export default function StarWars() {
 
@@ -38,28 +37,49 @@ import axios from "axios";
 //     }
 //       )
 
-export default function InfoCards() {
+// export default function InfoCards() {
 
-    const [wars, setWars]= useState([]);
+//     const [wars, setWars]= useState([]);
 
-    useEffect(()=> {
-        axios.get(`https://swapi.co/api/people/`)
-        .then(response => {
-            const starWars = response.data.message;
-            console.log(starWars);
-            setWars(starWars);
-        })
-        .catch(error => {
-            console.log("No data returned", error);
-        });
+//     useEffect(()=> {
+//         axios.get(`https://swapi.co/api/people/`)
+//         .then(response => {
+//             const starWars = response.data.message;
+//             console.log(starWars);
+//             setWars(starWars);
+//         })
+//         .catch(error => {
+//             console.log("No data returned", error);
+//         });
 
         
 
-    })
-    return(
+//     })
+//     return(
+//         <div>
+//             <p>Hello</p>
+//         </div>
+//     )
+// }
+// const InfoCards = (props) => {
+//     return (
+//         <div className="card-container">
+//             <div>{props.chars.map(char => 
+//             return <Card obj={item} key={chars.created}/>)}</div>
+//         </div>
+//     )
+// }
+
+const InfoCards = props => {
+
+    return (
         <div>
-            <p>Hello</p>
+         {props.InfoCards.map (item => {
+             return <Card key = {item} name ={props.item.name}/>
+         })}
+
         </div>
     )
 }
 
+export default InfoCards
