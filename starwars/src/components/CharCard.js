@@ -1,7 +1,51 @@
 import React from "react";
 import styled from "styled-components";
 
+const Card = styled.div`
+  border: 4px solid #054a91;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
+    0 6px 20px 0 rgba(255, 255, 255, 0.3);
+  width: 15rem;
+  min-width: 300px;
+  background-color: #81a4cd;
+  margin: 1rem;
 
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    box-shadow: none;
+    border-radius: none;
+  }
+
+  h2 {
+    background-color: #685369;
+    color: #dddcd7;
+    text-align: center;
+    border-radius: 1px 1px 0px 0px;
+    margin: 0;
+    padding: 1rem;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+      border-radius: none;
+    }
+  }
+
+  .stats {
+    color: #b02e0c;
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  div:hover {
+    background-color: black;
+    color: white;
+  }
+`;
 
 export default function CharCard(props) {
   console.log(props);
