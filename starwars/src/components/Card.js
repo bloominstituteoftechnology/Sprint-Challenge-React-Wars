@@ -1,19 +1,18 @@
-import React from 'react';
-import InfoCards from './InfoCards';
+// import React from 'react';
 
-const Card = (props) => {
-    return (
-        <div className="card-container">
-            <div className="char-name">{props.Character.name}</div>
-            <div className="char-birth">{props.Character.birth_year}</div>
-            <div className="char-eye">{props.Character.eye_color}</div>
-            <div className="char-gender">{props.Character.gender}</div>
-            <div className="char-hair">{props.Character.hair_color}</div>
-            <div className="char-height">{props.Character.height}</div>
-            <div className="char-mass">{props.Character.mass}</div>
-            <div className="char-skin">{props.Character.skin_color}</div>
-        </div>
-    )
-}
+// const Card = (props) => {
+//     return (
+//         <div className="card-container">
+//             <div className="char-name">{props.name}</div>
+//             <div className="char-birth">{props.birth_year}</div>
+//             <div className="char-eye">{props.eye_color}</div>
+//             <div className="char-gender">{props.gender}</div>
+//             <div className="char-hair">{props.hair_color}</div>
+//             <div className="char-height">{props.height}</div>
+//             <div className="char-mass">{props.mass}</div>
+//             <div className="char-skin">{props.skin_color}</div>
+//         </div>
+//     )
+// }
 
-export default Card;
+// export default Card;

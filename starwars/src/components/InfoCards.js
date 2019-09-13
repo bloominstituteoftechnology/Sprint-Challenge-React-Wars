@@ -1,85 +1,60 @@
-import React from "react";
-import Card from './Card';
+import React, { useState, useEffect } from "react";
+import { Card, CardTitle, CardText } from 'reactstrap';
+import styled from 'styled-components';
+import axios from "axios";
 
-// export default function StarWars() {
 
-//     const [wookie, setWookie]= useState({});
+const StyledDiv = styled.div`
+    display:flex;
+    width: 500px;
+    align-items: space-around;
+    justify-content:center;
+`
 
-//     useEffect(()=> {
+const StyledCard = styled(Card)`
+    height: 250px;
+    width: 40%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+`
 
-//     axios.get(`https://swapi.co/api/people/`)
-//     .then(response => {
-//         const wookie = response.data
-//         console.log(`new data`, wookie);
-//         setWookie(wookie);
-//     })
-//     .catch(error=> {
-//         console.log("No data returned, error");
-//     });
-//     },[]);
-// }
+export default function StarWarsList() {
 
-// export default function fetchPerson(id){
+const [people, setPeople]= useState([{}]);
 
-//     fetch(`http://swapi.co/api/people/${id}`)
-//       .then( function(response){
-//         return response.json()
-//       })
-//       .then(function(json){
-//         console.log("data", json)
-  
-//         if (!json.name){
-//           return;
-//         }
-  
-//         const name = json.name;
-//         const birth_year = json.birth_year
-//     }
-//       )
+  useEffect(()=> {
+      axios
+      .get("https://swapi.co/api/people/")
+      .then((response) => {
+          console.log(response);
+          const characterArray = response.data.results;
+          setPeople(characterArray);
+      })
+      .catch(error => {
+          console.log("No data returned", error)
+      
+      });
+  },[]);
 
-// export default function InfoCards() {
-
-//     const [wars, setWars]= useState([]);
-
-//     useEffect(()=> {
-//         axios.get(`https://swapi.co/api/people/`)
-//         .then(response => {
-//             const starWars = response.data.message;
-//             console.log(starWars);
-//             setWars(starWars);
-//         })
-//         .catch(error => {
-//             console.log("No data returned", error);
-//         });
-
-        
-
-//     })
-//     return(
-//         <div>
-//             <p>Hello</p>
-//         </div>
-//     )
-// }
-// const InfoCards = (props) => {
-//     return (
-//         <div className="card-container">
-//             <div>{props.chars.map(char => 
-//             return <Card obj={item} key={chars.created}/>)}</div>
-//         </div>
-//     )
-// }
-
-const InfoCards = props => {
-
-    return (
-        <div>
-         {props.InfoCards.map (item => {
-             return <Card key = {item} name ={props.item.name}/>
-         })}
-
-        </div>
-    )
+  return (
+    <div className="App">
+      {people.map(char => {
+          return <StyledDiv>
+              <StyledCard>
+            <CardTitle></CardTitle>{char.name}
+            <CardText>
+                Weight: {char.mass}kg
+            </CardText>
+            <CardText>
+                Height: {char.height}m
+            </CardText>
+            <p>Birth year: {char.birth_year}</p>
+            <p>Hair: {char.hair_color}</p>
+            <p>Skin Color: {char.skin_color}</p>
+            <p>Gender: {char.gender}</p>
+          </StyledCard>
+    </StyledDiv> 
+    })}
+    </div>
+  )
 }
-
-export default InfoCards
