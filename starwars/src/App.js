@@ -1,8 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import InfoCards from "./components/InfoCards";
+import axios from "axios";
+
+
 
 const App = () => {
+
+  const [people, starPeople] = useState([]);
+
+  useEffect(() =>
+    axios .get("https://swapi.co/api/people/")
+    .then(response => {
+    console.log(response);
+    const allPeople = response.data.results;
+    starPeople(allPeople)
+    })
+    .catch(error =>
+      console.log("No data returned", error)
+      )
+,[]);
+  
+  // const [hasError, setErrors] = useState(false);
+  // const [planets, setPlanets] = useState({});
+
+  // useEffect(() =>
+  //   fetch("https://swapi.co/api/people/")
+  //     .then(response => {
+  //     .catch(() => this.setState({ hasErrors: true }))
+  // );
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
