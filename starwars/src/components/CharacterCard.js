@@ -1,24 +1,15 @@
 import react from "react";
+import CharacterList from "./CharacterList";
 
-return (
+const CharacterCard = props => {
+    const {name, height, mass} = props; 
+    console.log(name, height, mass);
+    return (    
+        <>
+            <div>{character}</div>
+        </>
+    )
+    }
 
-<div>
-</div>
+export default CharacterCard;
 
-)
-
-
-
-// const CharList(props) =>
-// {
-//     char.map(
-//         (char) => (
-//             <Card
-//                 name = {char.name}
-//                 height = {char.height}
-//                 mass = {char.mass}
-//                 />
-//         ))
-//     }
-
-// export default CharList;
