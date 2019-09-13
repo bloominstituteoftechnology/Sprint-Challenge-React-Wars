@@ -1,44 +1,45 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
-
-import Cards from './components/card';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import axios from 'axios';
+import People from './components/Character'
+
 
 const App = () => {
 
-  const [characters, setCharacters] = useState([]);
+  const [characters, setcharacters] = useState([]);
 
   useEffect(() => {
-  
-    const dataFetched = axios.get('https://lambda-github-api-server.herokuapp.com/');
-
-    dataFetched
-      .then(response => {
-        console.log('data', response.data);
-        console.log('results', response.data.results);
-      
-        setCharacters(response.data.results);
-      })     
-      .catch(error => {
-        console.log('unable to complete the request');
-      })
-  },[])
-
-
+    axios
+    .get("https://lambda-github-api-server.herokuapp.com/")
+    .then(response  => {
+      for (let key in response.data.results) {
+        setcharacters(response.data.results[key])
+        console.log(response.data.results[key])
+    }
+    }, [])
+    .catch(error => {
+        console.log("Error!", error);
+    })
+  }, []);
 
   return (
     <div className="App">
-      <h1 className="Header">Star Wars Characters </h1>
-        {
-          characters.map(char => {
-            return <Cards data={char}/>
-          })
-        }
-      <h2> {characters} </h2>
-      <footer/>
-
+      <h1 className="Header">React Wars</h1>
+        {characters.map(person => {
+          return < People
+              key = {person.name}
+              name = {person.name}
+              mass = {person.mass}
+              skinColor = {person.skin_color}
+              height = {person.height}
+              homeWorld = {person.homeworld}
+          />
+        })}
     </div>
   );
 }
+
+
+
 
 export default App;

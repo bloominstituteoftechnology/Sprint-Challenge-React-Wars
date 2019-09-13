@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Character = (props) => {
+const People = ({name, mass, skinColor, height}) => {
     return (
-        <div> 
-            <h2>{props.name}</h2>
-            <p className='birth_year'> birth year: {props.birth} </p>
-        </div>
-    )  
-};
+            <h1>Starwars Character</h1>
+            <h2>Name : {name}</h2>
+                <p> {mass}</p>
+                <p>: {skinColor}</p>
+                <p>: {height}</p>
+    )
+} 
 
-export default Character;
+
+export default People;
