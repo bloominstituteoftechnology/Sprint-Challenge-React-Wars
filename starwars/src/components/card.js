@@ -1,14 +1,13 @@
-import React from 'react'
-import Character from './Character'
+import React from 'react';
+
+import Character from './Character';
 
 const Cards = (props) => {
+    const {data} = props;
+
     return(
         <div className='cards'>
-        {Array.from(props.characters).map((i) => {
-            let name=i['name'];
-            let birth_year=i['birth_year'];
-
-            return <Character name={name} birth_year={birth_year} />;})}
+            <Character name={data.name} birth={data.birth_year} />
         </div>
     )
 }

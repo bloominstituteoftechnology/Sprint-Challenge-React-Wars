@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Character = (props) => (
-    <div className='character'> 
-      <div className='characterName'>{props.name}</div>
-      <div className='birth_year'> birth year: {props.birth_year} </div>
-    </div>
- )
+const Character = (props) => {
+    return (
+        <div> 
+            <h2>{props.name}</h2>
+            <p className='birth_year'> birth year: {props.birth} </p>
+        </div>
+    )  
+};
 
-    export default Character
+export default Character;
