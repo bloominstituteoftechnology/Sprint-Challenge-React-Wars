@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
   
-    axios.get('https://swapi.co/api/people/')
+    axios.get('https://lambda-github-api-server.herokuapp.com/')
     
     // to log the results if completed 
     .then(success => {
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Star Wars Characters </h1>
-      <h2> setCharacters={characters} </h2>
+      <h2> {characters} </h2>
       <footer/>
 
     </div>

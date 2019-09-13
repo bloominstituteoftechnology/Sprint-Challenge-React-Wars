@@ -4,7 +4,7 @@ import Character from './Character'
 const Cards = (props) => {
     return(
         <div className='cards'>
-        {Array.from(props.charactersCollection).map((i) => {
+        {Array.from(props.characters).map((i) => {
             let name=i['name'];
             let birth_year=i['birth_year'];
 
