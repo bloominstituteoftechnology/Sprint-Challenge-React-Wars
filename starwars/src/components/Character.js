@@ -2,9 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 const CardStyle = styled.div`
-width: auto;
+width: 100%;
 font-size: 1.5em;
 color: black;
+text-align:center;
 margin-right:5px;
 flex-direction: row;
 justify-content: space-between;
