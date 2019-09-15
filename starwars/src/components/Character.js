@@ -25,7 +25,7 @@ function Character(props) {
             <p>Eyes color: {props.eye_color}</p>
             <p>Height: {props.height}''</p>
             <p>Mass : {props.mass}</p>
-            <p>{props.gender ? props.gender : "It's a robot"}</p>
+            <p>Gender : {props.gender ? props.gender : "It's a robot"}</p>
       </CardStyle>
     )
 }
