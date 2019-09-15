@@ -26,13 +26,29 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is one of the most popular libraries out there for building applications. It helps us build user interfaces that interact with ever-changing data. In a process called “reconciliation”, React will detect that the state of the app has changed. Then it will update the virtual DOM, taking note of which nodes have changed due to the state changes. Finally, once it knows which nodes have changed, it will update only those specific nodes on the actual DOM. This takes a lot of pressure off of our browsers and it’s why React is as powerful as it is.
+
 - [ ] What does it mean to _think_ in react?
+
+Think in react means to think in term of components. A developper need to folllow the 5 steps described below :
+
+- Step 1: Break The UI Into A Component Hierarchy
+- Step 2: Build A Static Version in React
+- Step 3: Identify The Minimal (but complete) Representation Of UI State
+- Step 4: Identify Where Your State Should Live
+- Step 5: Add Inverse Data Flow
 
 - [ ] Describe state.
 
+“state” is what allows us to create components that are dynamic and interactive. It's similar to props.
+
 - [ ] Describe props.
+props are properties you used to customize your Components, once they have been created.
+
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+A side effect is anything that affects something outside the scope of the function being executed. For example use useEffect is a side effect use to harness the power of APIs within React components.
+
 
 ## Project Set Up
 
