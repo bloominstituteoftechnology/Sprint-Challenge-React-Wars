@@ -48,6 +48,7 @@ const App = () => {
               eye_color={personnage.eye_color}
               hair_color={personnage.hair_color}
               height={personnage.height}
+              gender={personnage.gender}
               mass={personnage.mass}
               />
             )}
