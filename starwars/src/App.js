@@ -26,21 +26,21 @@ const App = () => {
     })
   }, []);
 
-  const Structure = styled.div`
-  border: 5px solid red;
-  width: 80vw;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: black;
-`
+//   const Structure = styled.div`
+//   border: 5px solid red;
+//   width: 80vw;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   background: black;
+// `
 
   return (
     <div>
     <Header>
     </Header>
-    <Structure>
+    {/* <Structure> */}
     {Personnage.map((personnage) =>
             <Character
               name={personnage.name}
@@ -52,7 +52,7 @@ const App = () => {
               mass={personnage.mass}
               />
             )}
-    </Structure>
+    {/* </Structure> */}
     <Footer>
     </Footer>
     </div>

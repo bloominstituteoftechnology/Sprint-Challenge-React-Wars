@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 
 const CardStyle = styled.div`
-width: 100%;
+width: auto;
 font-size: 1.5em;
 color: black;
 margin-right:5px;
 flex-direction: row;
-justify-content: space-evenly;
-background: black;
+justify-content: space-between;
+background: white;
 `
 const Title = styled.h3`
 font-weight: bold;
@@ -25,17 +25,8 @@ function Character(props) {
             <p>Eyes color: {props.eye_color}</p>
             <p>Height: {props.height}''</p>
             <p>Mass : {props.mass}</p>
-            <p>Gender: {props.gender} </p>
-            </CardStyle>
-
-        // function DisplayGender (props){
-        //     return (
-        //     if ({props.gender}!== null)
-        //         <p>Gender: {props.gender} </p>
-        //         else
-        //         <p> Gender: It's a robot</p>
-        //     )
-        // }    
+            <p>{props.gender ? props.gender : "It's a robot"}</p>
+      </CardStyle>
     )
 }
 
