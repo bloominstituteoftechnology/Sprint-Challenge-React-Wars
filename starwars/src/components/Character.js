@@ -1,20 +1,25 @@
-import React from 'react';
-import {Card, ListGroup} from 'react-bootstrap'
+import React from 'react'
+import styled from 'styled-components';
 
-const People = ({name, mass, skinColor, height}) => {
+const Paragraph = styled.span`
+font-size: 1.1em;
+color: black;
+`
+
+
+
+function Character(props) {
     return (
-            <Card border="danger" bg ='info' style={{ width: '19rem'}}>
-                <Card.Header>Starwars Character</Card.Header>
-                <Card.Body>
-                <Card.Title>Name : {name}</Card.Title>
-                <ListGroup bg = 'danger' variant="flush">
-                    <ListGroup.Item>Mass: {mass}</ListGroup.Item>
-                    <ListGroup.Item>Skin Color: {skinColor}</ListGroup.Item>
-                    <ListGroup.Item>Height: {height}</ListGroup.Item>
-                </ListGroup>
-                </Card.Body>
-            </Card>
-    )
-} 
+        
+        <Paragraph>
+           <p> Personnage: {props.name}</p> 
+           <p> Birthday {props.birth_year}</p>
+           <p> Description : <br>
+           </br> {props.name} is a {props.gender} Star Wars character, with {props.eye_color} eyes. Her/his height is {props.height}'' and his/her mass is {props.mass}</p>
 
-export default People
+        </Paragraph>
+        
+    )
+}
+
+export default Character ;

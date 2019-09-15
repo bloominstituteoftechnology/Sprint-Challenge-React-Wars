@@ -1,45 +1,49 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
 import axios from 'axios';
-import People from './components/Character'
 
+import Character from './components/Character';
+import styled from 'styled-components';
 
+// starwarsapi="https://lambda-github-api-server.herokuapp.com/";
 const App = () => {
-
-  const [characters, setcharacters] = useState([]);
-
+  const [Personnage, setPersonnage] = useState([]);
+  
   useEffect(() => {
     axios
     .get("https://lambda-github-api-server.herokuapp.com/")
     .then(response  => {
-      for (let key in response.data.results) {
-        setcharacters(response.data.results[key])
-        console.log(response.data.results[key])
-    }
+    setPersonnage(response.data.results)
+
+    console.log(response.data.results);
+
     }, [])
+
     .catch(error => {
-        console.log("Error!", error);
+        console.log("Error", error);
     })
   }, []);
 
+  const Structure = styled.div`
+  width: 80vw;
+  margin: 0 auto;
+  `
+  
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-        {characters.map(person => {
-          return < People
-              key = {person.name}
-              name = {person.name}
-              mass = {person.mass}
-              skinColor = {person.skin_color}
-              height = {person.height}
-              homeWorld = {person.homeworld}
-          />
-        })}
+    <div>
+    <Structure>
+    {Personnage.map((personnage) =>
+            <Character
+              name={personnage.name}
+              birth_year={personnage.birth_year}
+              eye_color={personnage.eye_color}
+              hair_color={personnage.hair_color}
+              height={personnage.height}
+              mass={personnage.mass}
+              />
+            )}
+    </Structure>
     </div>
   );
 }
-
-
-
 
 export default App;
