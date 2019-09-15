@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Card = styled.div`
+const CardStyle = styled.div`
+width: 100%;
 font-size: 1.5em;
 color: black;
+margin-right:5px;
 flex-direction: row;
 justify-content: space-evenly;
 background: black;
@@ -17,23 +19,23 @@ justify-content: space-evenly;
 
 function Character(props) {
     return (
-            <Card>
-             <Title> {props.name}  </Title> 
-            <p> Birthday: {props.birth_year}</p>
+            <CardStyle>
+            <Title> {props.name} </Title> 
+            <p>Birthday: {props.birth_year}</p>
             <p>Eyes color: {props.eye_color}</p>
-            <p> height: {props.height}''</p>
+            <p>Height: {props.height}''</p>
             <p>Mass : {props.mass}</p>
             <p>Gender: {props.gender} </p>
-            </Card>
+            </CardStyle>
+
         // function DisplayGender (props){
-        //     return
-        //     if {props.gender}!=== null
-        //     <p>Gender: {props.gender} </p>
-        //     else
-        //     <p> Gender: It's a robot</p>
-        // }
-            
-           
+        //     return (
+        //     if ({props.gender}!== null)
+        //         <p>Gender: {props.gender} </p>
+        //         else
+        //         <p> Gender: It's a robot</p>
+        //     )
+        // }    
     )
 }
 
