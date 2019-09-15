@@ -24,8 +24,10 @@ function Character(props) {
             <p>Birthday: {props.birth_year}</p>
             <p>Eyes color: {props.eye_color}</p>
             <p>Height: {props.height}''</p>
-            <p>Mass : {props.mass}</p>
-            <p>Gender : {props.gender ? props.gender : "It's a robot"}</p>
+            <p>Mass: {props.mass}</p>
+            <p>Gender: {props.gender === "n/a" 
+                ? "It's a robot, duh!" 
+                : props.gender }</p>
       </CardStyle>
     )
 }
