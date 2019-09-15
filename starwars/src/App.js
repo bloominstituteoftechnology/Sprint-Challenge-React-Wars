@@ -2,9 +2,12 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 import Character from './components/Character';
+import Footer from './components/footer';
+import Header from './components/header';
 import styled from 'styled-components';
 
 // starwarsapi="https://lambda-github-api-server.herokuapp.com/";
+
 const App = () => {
   const [Personnage, setPersonnage] = useState([]);
   
@@ -14,7 +17,7 @@ const App = () => {
     .then(response  => {
     setPersonnage(response.data.results)
 
-    console.log(response.data.results);
+    // console.log(response.data.results);
 
     }, [])
 
@@ -24,12 +27,19 @@ const App = () => {
   }, []);
 
   const Structure = styled.div`
+  border: 5px solid red;
   width: 80vw;
   margin: 0 auto;
-  `
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: black;
+`
+
   return (
     <div>
+    <Header>
+    </Header>
     <Structure>
     {Personnage.map((personnage) =>
             <Character
@@ -42,6 +52,8 @@ const App = () => {
               />
             )}
     </Structure>
+    <Footer>
+    </Footer>
     </div>
   );
 }
