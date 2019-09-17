@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 62.5%;
+  background-color: #231f20;
+  background-image: url("./sw-bg.jpg");
+  background-size: cover;
+  border: 15px #054a91 solid;
+  border-radius: 10px;
+}
