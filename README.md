@@ -25,14 +25,20 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+Ans React allows us to create apps with dynamic components that allow information to be passed in, re-rendering only the changed component, instead of the entire page.
 
 - [ ] What does it mean to _think_ in react?
+ To think in react I think means to use the advantages of having css, html, and js all in one spot to maximize reusability.
 
 - [ ] Describe state.
-
+ Mutable data that is held in a components memory.
+ 
 - [ ] Describe props.
+ Non-mutable data that is held in a components memory, however, it must be passed down from a parents state memory.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    Side effects are things that happen every time the page mounts, and can be given parameters inside of an array to listen for changes to, whether they are props or state.
+
 
 ## Project Set Up
 

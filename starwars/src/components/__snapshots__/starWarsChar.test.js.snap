@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="sc-bdVaJa bbrPbh"
+>
+  <ul
+    className="sc-bwzfXH jRhgJK"
+  >
+    <li>
+      <h1
+        className="sc-htpNat gtBTPD"
+      >
+        Manju
+      </h1>
+    </li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
+      Birth Year: 
+    </li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
+      Eye Color: 
+    </li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
+      Height: 
+    </li>
+    <li
+      className="sc-bxivhb bUZGRr"
+    >
+      Mass: 
+    </li>
+  </ul>
+</div>
+`;
