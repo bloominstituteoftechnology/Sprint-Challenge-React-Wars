@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is a framework that allows us to create apps that using modular, reusable components all while reducing load on the browser.
+
 - [ ] What does it mean to _think_ in react?
+
+    To think of an application in smaller pieces (components) and how those components present data on a page (hierarchies).
 
 - [ ] Describe state.
 
+    Data in component memory that changes.
+
 - [ ] Describe props.
 
+    Read only data in component memory (passed from parent state memory).
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are anything that affects something outside the scope of the function being executed. You can sync effects in a React component by passing in a dependency array.
 
 ## Project Set Up
 
