@@ -3,11 +3,11 @@ import axios from 'axios';
 
 const CharacterList = () => {
 
-  const [chars, setChars] = useState(0);
+  const [chars, setChars] = useState([]);
 
   useEffect(() => {
     axios.get("https://swapi.co/api/people/")
-      .then((reponse) => {
+      .then((response) => {
         setChars(response.data.results);
       })
       .catch((err) => {
