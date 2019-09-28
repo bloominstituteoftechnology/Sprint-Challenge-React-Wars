@@ -35,6 +35,12 @@ return (
         <StyleP>Eye Color: {props.eye_color}</StyleP>
         <StyleP>Birth Year: {props.height}</StyleP>
         <StyleP>Height: {props.mass}</StyleP>
+        <StyleP>Gender: {props.gender}</StyleP>
+        <StyleP>Hair Color: {props.hair_color}</StyleP>
+        <StyleP>Mass: {props.mass}</StyleP>
+
+
+
 
 </Container>
 
