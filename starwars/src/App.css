@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .Header {
   color: #443e3e;
