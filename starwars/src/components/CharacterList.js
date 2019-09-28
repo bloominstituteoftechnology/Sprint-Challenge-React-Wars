@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import CharacterCard from './CharacterCard.js'
 
 const CharacterList = () => {
 
@@ -8,6 +9,7 @@ const CharacterList = () => {
   useEffect(() => {
     axios.get("https://swapi.co/api/people/")
       .then((response) => {
+        console.log(response);
         setChars(response.data.results);
       })
       .catch((err) => {
@@ -17,8 +19,8 @@ const CharacterList = () => {
 
   return (
     <div className='chars'>
-      {chars.map(char => {
-        console.log(char);
+      {chars.map(item => {
+        return <CharacterCard />;
       })}
     </div>
   )
