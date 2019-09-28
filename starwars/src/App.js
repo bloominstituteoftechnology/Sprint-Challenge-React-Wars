@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import styled from 'styled components';
+import axios from 'axios';
+import People from './components/People.js'
 import './App.css';
 
 const App = () => {
