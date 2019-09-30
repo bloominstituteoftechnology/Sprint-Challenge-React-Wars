@@ -10,7 +10,7 @@ const CharacterList = () => {
     axios.get("https://swapi.co/api/people/")
       .then((response) => {
         console.log(response);
-        setChars(response.data.results);
+        setChars(response.data.results.item);
       })
       .catch((err) => {
         console.log(err)
@@ -18,12 +18,12 @@ const CharacterList = () => {
   }, []);
 
   return (
-    <div className='chars'>
+    <div>
       {chars.map(item => {
-        return <CharacterCard />;
+        return <CharacterCard name={name}/>;
       })}
     </div>
-  )
+  );
 
 }
 
