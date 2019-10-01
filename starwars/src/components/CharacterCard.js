@@ -1,9 +1,10 @@
 import React from 'react';
-import CharacterList from './CharacterList.js';
 
-const CharacterCard = () => {
+const CharacterCard = props => {
   return (
-    <CharacterList />
+    <div key={props.id}>
+      <h2>name: {props.name}</h2>
+    </div>
   );
 };
 
