@@ -31,7 +31,7 @@ const PeopleCard = (props) => {
                 <CardBody>
                     <CardTitle>{props.name}</CardTitle>
                     <CardSubtitle>{props.bDay}</CardSubtitle>
-                    <CardText>The character is {props.height}cm tall, weights {props.mass} kgs, has {props.hairColor}
+                    <CardText>The character is {props.height}cm tall, weights {props.mass} kgs, has {props.hairColor} 
                     hair color, has {props.skinColor} skin, and {props.eyeColor} eyes. </CardText>
                 </CardBody>
             </CardBox>

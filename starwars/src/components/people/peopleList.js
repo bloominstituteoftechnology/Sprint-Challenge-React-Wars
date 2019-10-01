@@ -24,11 +24,11 @@ export function PeopleList (){
 
   return(
     <Row>
-       {people.map(item => { 
-        return(
-        <Col xs="6" sm="4" >
+       {people.map((item, index) => { 
+        return (
+        <Col xs="6" sm="4" key={index} >
             <PeopleCard 
-                key={item.id}
+                
                 name ={item.name}
                 sex ={item.gender}
                 bDay= {item.birth_year}
