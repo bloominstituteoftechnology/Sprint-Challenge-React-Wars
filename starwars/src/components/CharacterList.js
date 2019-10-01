@@ -7,9 +7,10 @@ const CharacterList = () => {
   const [chars, setChars] = useState([]);
 
   useEffect(() => {
-    axios.get("https://swapi.co/api/people/1")
+    axios.get("https://swapi.co/api/people/")
       .then((response) => {
         const chars = response.data;
+        console.log(chars);
         setChars(chars);
       })
       .catch((err) => {
@@ -22,9 +23,8 @@ const CharacterList = () => {
       {chars.map(char => {
         return (
           <CharacterCard
-            name={char.name}
             key={char.id}
-          />
+            name={char.name} />
         )
       })}
     </div>
