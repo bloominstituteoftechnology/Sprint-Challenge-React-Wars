@@ -1,5 +1,5 @@
 import React from 'react';
-import CharacterList from './components/CharacterList.js';
+import CharacterCard from './components/CharacterCard.js';
 import './App.css';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterList />
+      <CharacterCard />
     </div>
   );
 }

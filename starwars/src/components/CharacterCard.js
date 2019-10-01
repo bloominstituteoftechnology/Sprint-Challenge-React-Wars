@@ -1,11 +1,9 @@
 import React from 'react';
+import CharacterList from './CharacterList.js';
 
-const CharacterCard = props => {
-  console.log("here", props)
+const CharacterCard = () => {
   return (
-    <div>
-      <h2>{props.name}</h2>
-    </div>
+    <CharacterList />
   );
 };
 

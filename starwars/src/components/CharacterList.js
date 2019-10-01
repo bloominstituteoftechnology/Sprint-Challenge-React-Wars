@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import CharacterCard from './CharacterCard.js'
 
 const CharacterList = () => {
 
   const [chars, setChars] = useState([]);
 
-  useEffect(() => {
+  useEffect((props) => {
     axios.get("https://swapi.co/api/people/")
       .then((response) => {
-        console.log(response);
-        setChars(response.data.results.item);
+        console.log(response.data.results.name);
+        setChars(response.data.results);
       })
       .catch((err) => {
         console.log(err)
@@ -19,8 +18,8 @@ const CharacterList = () => {
 
   return (
     <div>
-      {chars.map(item => {
-        return <CharacterCard name={name}/>;
+      {chars.map(name => {
+        return name;
       })}
     </div>
   );
