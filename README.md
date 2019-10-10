@@ -79,15 +79,15 @@ Your finished project must include all of the following requirements:
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
-
-- [ ] Add at least one test using a testing tool:
-  - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
-  - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
+- [ ] Next week we will be looking at React forms. Look a head and try to create a search form that will filter through the data displayed from your characters. 
 
 - [ ] Build a pagination system that will allow you to load the next page of data.
   - `console.log()` the data coming back from the server.
   - Notice that there are `next` and `previous` fields that give you a URL.
   - You can build a function that will get characters called `getCharacters` that you can use dynamically to get the next or previous set of characters. You would need to supply it with the proper fields, and you'll need to set up more state to do this.
+  - [ ] Add at least one test using a testing tool:
+  - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
+  - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
 
 <!--
 - [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
