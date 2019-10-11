@@ -34,7 +34,23 @@ const App = () => {
     return (
         <div className="App">
             <h1 className="Header">React Wars</h1>
-            <PersonCard />
+            {people.map(person => {
+                return (
+                    <PersonCard
+                        key={person.name}
+                        name={person.name}
+                        height={person.height}
+                        mass={person.mass}
+                        hairColor={person.hair_color}
+                        skinColor={person.skin_color}
+                        eyeColor={person.eye_color}
+                        birthYear={person.birth_year}
+                        gender={person.gender}
+                        films={person.films.length}
+                        starships={person.starships.length}
+                    />
+                );
+            })}
         </div>
     );
 };
