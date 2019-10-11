@@ -28,7 +28,7 @@ export default function MakeCharacter(){
  return(
      <CardHolder>
          {dude.map((d,index)=>(
-             <StarCard key = {index} name = {d.name}/>
+             <StarCard key = {index} name = {d.name} birth = {d.birth_year} height = {d.height} mass = {d.mass}/>
          ))}
      </CardHolder>
  )
