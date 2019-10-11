@@ -25,15 +25,15 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+-React is a library that allows you to predefine your components and a build out webpages in JavaScript faster than with plain JavaScript
 - [ ] What does it mean to _think_ in react?
-
+-Thinking in a hierachial structure and how properties are passed to and from them
 - [ ] Describe state.
-
+-State is a variable that can be changed or set dynamically
 - [ ] Describe props.
-
+-Properties are read only, and are used to pass data from parent to child
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+-By using UseEffect, you can have triggers for functions to run
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
