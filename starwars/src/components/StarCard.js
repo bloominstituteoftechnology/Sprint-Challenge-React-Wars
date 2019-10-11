@@ -3,9 +3,9 @@ import {Card, CardTitle, CardText
 } from 'reactstrap';
 const StarCard = props => {
 
-     console.log(props.character)
-     console.log(props.howTall)
-     console.log(props.weight)
+     // console.log(props.character)
+     // console.log(props.howTall)
+     // console.log(props.weight)
 
     return(
          <div key = {props.character}>
