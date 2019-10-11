@@ -1,11 +1,20 @@
 import React from 'react';
 import './App.css';
 import StarWarsCharacters from './components/StarWarsCharactersList';
+import styled from 'styled-components';
+
+const Header = styled.h1`
+padding:6px 10px;
+margin: 5px;
+border: none;
+border-radius:1px;
+color: blue;
+text-align: center;`
 
 const App = () => {
   return (
     <div>
-      <h1 className="Header">React Wars</h1>
+      <Header>React Wars</Header>
       <StarWarsCharacters/>
       </div>
   );

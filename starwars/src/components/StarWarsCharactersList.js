@@ -5,7 +5,6 @@ import CharacterCard from "./CharacterCard";
 export default function StarWarsCharacters(){
     const [characters, setCharacters] = useState([])
 
-
 useEffect(() => {
     axios.get('https://swapi.co/api/people')
     .then(response => {
