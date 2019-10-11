@@ -1,18 +1,21 @@
 import React,{useState} from 'react';
-
+import {Card} from "../components/Styled";
 
 export const StarCard = (props)=> {
      
       return (
-        <div key = {props.key}>
-          <div>
-            <div>
+        <Card key = {props.key}>
+            <h1>{props.name}</h1>
                 <p>
-                    {props.name} weres the data
+                   Birth Year: {props.birth} 
                 </p>
-            </div>
-          </div>
-        </div>
+                <p>
+                   Height: {props.height} 
+                </p>
+                <p>
+                   Mass: {props.mass} 
+                </p>
+        </Card>
       );
     
   }
