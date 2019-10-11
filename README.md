@@ -26,14 +26,18 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+react makes a copy of the dom and changes things as needed instead of having the dom reload after everychange i.e a comment on a post
+
 - [ ] What does it mean to _think_ in react?
+react means components think means moe components and well think components
 
 - [ ] Describe state.
+a way for us to create dif components from one data pull. we can change the state and app;y the same styling to every differetn created component
 
 - [ ] Describe props.
-
+props are the paramaters we create to manipulate or customize different components
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+a function that tries to manipulate anything outside of its intended scope. i dont really know that last part maybe talking about how you never change you state you have a setState parameter that get changed and called to manipulate things...
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
