@@ -26,7 +26,7 @@ return (
     <Container>
        
             {characterInfo.map(( item) => {
-                return <CharacterCard key = {item.index} name={item.name} birth_year={item.birth_year} gender={item.gender} height={item.height} mass={item.height} ></CharacterCard>
+                return <CharacterCard key = {item.index} name={item.name} birth_year={item.birth_year} gender={item.gender} height={item.height} mass={item.mass} ></CharacterCard>
             })}
         
     </Container>
