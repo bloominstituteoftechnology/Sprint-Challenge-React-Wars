@@ -30,9 +30,6 @@ font-size: 1.5rem;
 `;
 
 
-
-
-
 const CharacterCard = props => {
     
     return(

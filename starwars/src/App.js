@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Character from './components/Character';
+import {Next} from './components/Button'
+
 
 
 const App = () => {
@@ -15,7 +17,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <Character />
-      
+      <Next onClick={}
     </div>
   );
 }
