@@ -1,21 +1,27 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
 
-export default function Button(){
-    
+{/* <Next onClick={()=>{   
+        
     useEffect(() =>{
         axios
-        .get('https://swapi.co/api/people')
+        .get('https://swapi.co/api/people/?page=2')
         .then(response => {
-                setCharacterInfo(response.data.results)
+                console.log(response.data.results)
         })
         .catch(error => {
             console.log('Data was not returned', error)
         })
         }, []);
+
+       return null;
+       
 }
 }
+/> */}
+
       
 
     

@@ -3,7 +3,7 @@ import axios from 'axios';
 import CharacterCard from './CharacterCard';
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
 display: flex;
 flex-flow: row wrap;
 `;
@@ -34,4 +34,3 @@ return (
 
 }
 
-export const 
