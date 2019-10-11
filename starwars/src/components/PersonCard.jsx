@@ -1,6 +1,6 @@
-// import React, useEffect, and useState
+// Import React, useEffect, and useState
 import React from "react";
-// import Styled Components
+// Import Styled Components
 import styled from "styled-components";
 
 const Card = styled.div`
