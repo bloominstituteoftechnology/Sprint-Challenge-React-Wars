@@ -23,7 +23,7 @@ export default function StarsData() {
     
 return(
         <div>{heros.map(item => {
-
+            
             //  console.log(item.name)
              console.log(item.mass)
             return(
