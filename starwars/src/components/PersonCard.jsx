@@ -22,17 +22,17 @@ const Card = styled.div`
 const PersonCard = props => {
     return (
         <Card>
-            <h2>{props.name}</h2>
-            <h5>A little about "{props.name}"</h5>
-            <p>Height: {props.height}</p>
-            <p>Mass: {props.mass}</p>
-            <p>Hair Color: {props.hairColor}</p>
-            <p>Skin Color: {props.skinColor}</p>
-            <p>Eye Color: {props.eyeColor}</p>
-            <p>Birth Year: {props.birthYear}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Films: {props.films}</p>
-            <p>Starships: {props.starships}</p>
+            <h2>{props.character.name}</h2>
+            <h5>A little about "{props.character.name}"</h5>
+            <p>Height: {props.character.height}</p>
+            <p>Mass: {props.character.mass}</p>
+            <p>Hair Color: {props.character.hairColor}</p>
+            <p>Skin Color: {props.character.skinColor}</p>
+            <p>Eye Color: {props.character.eyeColor}</p>
+            <p>Birth Year: {props.character.birthYear}</p>
+            <p>Gender: {props.character.gender}</p>
+            <p>Films: {props.character.films.length}</p>
+            <p>Starships: {props.character.starships.length}</p>
         </Card>
     );
 };
