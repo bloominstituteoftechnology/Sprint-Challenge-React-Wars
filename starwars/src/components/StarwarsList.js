@@ -10,8 +10,8 @@ export default function StarwarsList() {
     axios
       .get(`https://swapi.co/api/people/`)
       .then(response => {
-        console.log("Star Wars People", response.data);
-        setPeople(response.data);
+        console.log("Star Wars People", response.data.results);
+        setPeople(response.data.results);
       })
       .catch(error => {
         console.log("The data was not returned", error);
@@ -24,11 +24,11 @@ export default function StarwarsList() {
       {people.map(person => {
         return (
           <StarwarsCard
-            key={person.id}
-            title={person.title}
-            description={person.description}
-            director={person.director}
-            release_date={person.release_date}
+            name = {person.name}
+            DOB = {person.birth_year}
+            gender = {person.gender}
+            weight = {person.mass}
+            eyes = {person.eye_color}
           />
         );
       })}
