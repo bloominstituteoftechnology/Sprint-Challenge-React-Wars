@@ -1,23 +1,26 @@
 import React , { useState , useEffect } from 'react';
 import axios from 'axios'
+import reactstrap, { Button } from 'reactstrap';
+
 import './App.css';
  
 
 function Character(props) {
   const [name, setName] = useState('')
-
-  axios.get(`https://swapi.co/api/people/${props.item}`)
-  .then( res => {
-    const person = res.data
-    setName(person.name)
-  })
-  .catch( err => {
-    console.log("Error:", err);
-  })
-   
+  useEffect(() => {
+    axios.get(`https://swapi.co/api/people/${props.item}`)
+    .then( res => {
+      const person = res.data
+      setName(person.name)
+    })
+    .catch( err => {
+      console.log("Error:", err);
+    })
+  },[])
+    
   return(
     <li>
-        <h2>{name}</h2>
+        <Button color='danger' style={{color:'blue'}} >{name}</Button>
     </li>)
 }
 
@@ -30,13 +33,9 @@ const App = () => {
   // sync up with, if any.
   const nums = [...Array(7).keys()];
 
-console.log(nums)
   const listItems = nums.map((item, index) => {
     return( <Character key={index} item={item+1}/> )
   })
-  useEffect(() => {
-    console.log("Hello from the effect hook!");
-  },[])
 
   return (
     <div className="App">
