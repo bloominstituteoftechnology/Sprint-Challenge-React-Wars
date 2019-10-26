@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 
 const StyledCard = styled.div``;
 const StyledName = styled.h1``;
-const StyledStat = styled.div``;
+const StyledStat = styled.p``;
 
 const CharCard = (props) => {
-    // console.log(props.name);
+    // console.log("index: ", props.index);
+    console.log(props.name);
     // console.log(props.gender);
     // console.log(props.birth_year);
     // console.log(props.hair_color);
@@ -18,6 +19,10 @@ const CharCard = (props) => {
     // console.log("");
 
     return(
+        // <div>
+        //     <h2>CharCard Return</h2>
+        //     <p>{props.name}</p>
+        // </div>
     <StyledCard>
         <StyledName>{props.name}</StyledName>
         <StyledStat>Gender: {props.gender}</StyledStat>
