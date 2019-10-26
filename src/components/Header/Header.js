@@ -18,7 +18,8 @@ const Header = (props) => {
             <Logo src={logo} alt=""/>
 
             <h3>Character Lookup</h3>
-            <Pagination 
+            <Pagination
+            page={props.page} 
             pageUp={props.pageUp}
             pageDown={props.pageDown}/>
         </HeaderDiv>

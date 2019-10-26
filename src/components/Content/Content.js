@@ -51,7 +51,7 @@ const Content = (props) => {
                 })
             }
 
-            
+            <h1 className="text">The Last Jedi was AWFUL</h1>
         </ContentDiv>
     );
 }

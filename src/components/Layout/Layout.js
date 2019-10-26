@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const LayoutDiv = styled.div `
 width: 100%;
 height: 100%;
-border: 1px solid pink;
 `
 
 const Layout = (props) => {
@@ -41,6 +40,7 @@ const Layout = (props) => {
     return (
         <LayoutDiv>
             <Header
+            page={page}
             pageUp={pageUpHandler}
             pageDown={pageDownHandler} />
             <Content 
