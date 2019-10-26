@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import './App.css';
 import SwList from "./SwList";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 function App() {
