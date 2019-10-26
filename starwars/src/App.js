@@ -1,4 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
+import { Container } from "semantic-ui-react";
+import People from "./components/People";
+import Header from "./components/Header";
+import Pages from "./components/Page";
+import "semantic-ui-css/semantic.min.css";
+
 import './App.css';
 
 const App = () => {
