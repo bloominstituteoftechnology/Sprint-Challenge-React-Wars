@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../img/logo.jpg';
 import styled from 'styled-components';
+import Pagination from '../Pagination/Pagination'
 
 const HeaderDiv = styled.div `
 
@@ -11,12 +12,15 @@ const Logo = styled.img`
 width: 30%;
 `
 
-const Header = () => {
+const Header = (props) => {
     return (
         <HeaderDiv>
             <Logo src={logo} alt=""/>
 
             <h3>Character Lookup</h3>
+            <Pagination 
+            pageUp={props.pageUp}
+            pageDown={props.pageDown}/>
         </HeaderDiv>
     );
 }

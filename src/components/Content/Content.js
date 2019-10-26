@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from './Card/Card';
+import Pagination from '../Pagination/Pagination';
 
 const ContentDiv = styled.div`
 display: flex;
@@ -28,16 +29,16 @@ padding: .25em;
 font-size: 1.3em;
 margin-top: 1em;
 color: white;
-
-
 `
+
 
 const Content = (props) => {
     console.log(props.data)
     return (
         <ContentDiv>
-            <Search />
-            <SearchButton>Search!</SearchButton>
+            
+            {/* <Search />
+            <SearchButton>Search!</SearchButton> */}
             {
                 props.data.map((item,i) => {
                     return <Card 
@@ -49,6 +50,7 @@ const Content = (props) => {
                      />
                 })
             }
+
             
         </ContentDiv>
     );

@@ -13,10 +13,20 @@ border: 1px solid pink;
 const Layout = (props) => {
 
     const [data,updateData] = useState([]);
+    let [page, changePage] = useState(1);
+
+    const pageUpHandler= () => {
+        changePage(page += 1);
+        console.log(page)
+    }
+    const pageDownHandler= () => {
+        changePage(page -= 1);
+        console.log(page)
+    }
 
     useEffect(() => {
         axios
-        .get('https://swapi.co/api/people')
+        .get(`https://swapi.co/api/people/?page=${page}`)
         .then(res => {
             console.log(res.data.results);
             console.log(res.data)
@@ -27,11 +37,15 @@ const Layout = (props) => {
             console.log(err);
         })
 
-    }, [])
+    }, [page])
     return (
         <LayoutDiv>
-            <Header />
-            <Content data={data} />
+            <Header
+            pageUp={pageUpHandler}
+            pageDown={pageDownHandler} />
+            <Content 
+            data={data}
+             />
         </LayoutDiv>
     );
 }
