@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CharGenerator from './components/charGenerator';
+import CharGenerator from './components/CharGenerator';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,6 +11,7 @@ const App = () => {
   // sync up with, if any.
 
   CharGenerator();
+  console.log("test from APP");
 
   return (
     <div className="App">
