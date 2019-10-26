@@ -10,7 +10,7 @@ const CharGenerator = () => { // make the results state
         axios.get("https://swapi.co/api/people/")
         .then(response => {
         //   console.log(response);
-        const swChars = response.data.results;
+        // const swChars = response.data.results;
 
             setSWChars(response.data.results);
         // console.log(swChars);
@@ -24,14 +24,13 @@ const CharGenerator = () => { // make the results state
     },[]) // useEffect
 
     return(
-    swChars.map(char => {
-        // console.log(char.gender);
-        // console.log(char.name);
-        // console.log(CharCard(char));
+        swChars.map(char => {
+            // console.log(char.gender);
+            // console.log(char.name);
+            // console.log(CharCard(char));
 
-        return CharCard(char);
-    })
-
+            return CharCard(char);
+        })
     )
 
     // console.log("outside");
