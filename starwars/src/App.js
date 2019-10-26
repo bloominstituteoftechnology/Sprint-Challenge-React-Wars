@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from "axios";
+import axios from "axios"
 import StarWars from "./components/StarWars";
 import Header from "./components/Header";
 import { Container } from "semantic-ui-react";
