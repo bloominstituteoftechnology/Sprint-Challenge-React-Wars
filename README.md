@@ -24,15 +24,25 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React is a UI library. It allows us to set data to state, under the expectation that it will frequently change. As the technology was invented by Facebook, we can use a Facebook status as an example. It will always be displayed in the same place (i.e. component), but the content itself will change frequently. 
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+To think in React means to build your application is small, manageable components, so that you can easily track and reuse chunks of code.
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x] Describe state.
+
+When we use useState, we essentially declare a mutable variable, which can be passed an initial value or not. It’s a placeholder whose values can be easily changed. 
+
+- [x] Describe props.
+
+Props are an object that you pass from a parent component to a child component. They are often used to pass down slices of state.
+
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side effect is anything that affects something outside the scope of the function being executed. Fetching data from an API, timers, logging, and manually manipulating the DOM are all examples of side effects. To sync effects in a React component to state or prop changes, we use the effect hook called useEffect.
 
 ## Project Set Up
 
