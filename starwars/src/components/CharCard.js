@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import Img from 'react-image';
 
 
 const StyledCard = styled.div`
@@ -23,16 +22,18 @@ text-shadow: 3px 2px black;`;
 const StyledStat = styled.p`
 color: gainsboro;
 text-shadow: 2px 2px black;`;
-const StyledImg = styled.img``;
+const StyledImg = styled.img`
+width: 13rem;`;
 
 const CharCard = (props) => {
 
     console.log(props.name);
-
+    const imgPath=("{require("+`../img/${props.name}.jpg`+")}");
+    console.log(imgPath);
 
     return(    
         <StyledCard className="charCard">
-            <StyledImg src={"starwars\src\components\Luke.jpg"} />
+            <StyledImg src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg>
             <StyledName className="charName">{props.name}</StyledName>
             <StyledStat className="stat">Gender: {props.gender}</StyledStat>
             <StyledStat className="stat">Birth Year: {props.birth_year}</StyledStat>
@@ -46,6 +47,5 @@ const CharCard = (props) => {
     )
 }
 
-{/* <Img src="https://starwars-visualguide.com/assets/img/characters/1.jpg" /> */}
-//<StyledImg src={"./Luke.jpg"} />
+
     export default CharCard;
