@@ -15,25 +15,30 @@ const StyledCard = styled.div`
         .stat {
             color: lightyellow;
         }
+        .image {
+            opacity: 1;
+        }
     }`;
 const StyledName = styled.h3`
-color: white;
-text-shadow: 3px 2px black;`;
+color: silver;
+text-shadow: 2px 2px black;`;
 const StyledStat = styled.p`
 color: gainsboro;
 text-shadow: 2px 2px black;`;
 const StyledImg = styled.img`
-width: 13rem;`;
+width: 13rem;
+border-radius: 1rem 1rem 0 0;
+opacity: .1;`;
 
 const CharCard = (props) => {
 
-    console.log(props.name);
-    const imgPath=("{require("+`../img/${props.name}.jpg`+")}");
-    console.log(imgPath);
+    // console.log(props.name);
+    // const imgPath=("{require("+`../img/${props.name}.jpg`+")}");
+    // console.log(imgPath);
 
     return(    
         <StyledCard className="charCard">
-            <StyledImg src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg>
+            <StyledImg className="image" src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg>
             <StyledName className="charName">{props.name}</StyledName>
             <StyledStat className="stat">Gender: {props.gender}</StyledStat>
             <StyledStat className="stat">Birth Year: {props.birth_year}</StyledStat>
