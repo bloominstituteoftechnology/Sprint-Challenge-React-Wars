@@ -9,10 +9,6 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharacterInfoPro />
-      <CharacterInfoPro />
-      <CharacterInfoPro />
-      <CharacterInfoPro />
-      <CharacterInfoPro />
     </div>
   );
 };
