@@ -22,9 +22,10 @@ return(
     <div>
         {dataArr.map(character => {
             return(
+
                 <CharCard 
                 name={character.name}
-                gender = {character.gender}
+                gender ={character.gender}
                 />
             )
         })}

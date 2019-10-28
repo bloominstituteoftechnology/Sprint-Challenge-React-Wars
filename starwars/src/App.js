@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import CharCard from './components/CharCard';
-import CharCont from './components/CharCont'
+import CharCont from './components/CharCont';
+import BigCont from './components/BigCont';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -15,7 +15,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharCont />
+      <BigCont>
+        <CharCont />
+      </BigCont>
     </div>
   );
 }

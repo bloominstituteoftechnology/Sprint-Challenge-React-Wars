@@ -1,11 +1,14 @@
 import React from 'react';
+import CardCont from './CardCont';
+import NameCont from './NameCont';
+import GenderCont from './GenderCont';
 
 const CharCard = (props) => {
     return (
-        <div>
-            <h2>{props.name}</h2>
-            <p>{props.gender}</p>
-        </div>
+        <CardCont>
+            <NameCont>{props.name}</NameCont>
+            <GenderCont>Gender: {props.gender}</GenderCont>
+        </CardCont>
     )
 };
 
