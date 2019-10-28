@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import CardUi from "./components/CardUI";
 import CharacterInfoPro from './components/CharacterInfoPro'
+import { Header } from 'semantic-ui-react'
 
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharacterInfoPro />
+
     </div>
   );
 };
