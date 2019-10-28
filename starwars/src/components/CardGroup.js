@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 const CardGroupContainer = styled.div`
     max-width: 900px;
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
 `; 
 

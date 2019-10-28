@@ -2,18 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CardBox = styled.div`
-    width: 200px;
-    height: 300px;
+    width: 80%;
+    height: 200px;
     padding: 10px;
     background: white;
     border-radius: 20px;
     box-shadow: 10px 10px 20px black;
-    margin: 10px;
+    margin: 10px auto;
     overflow: hidden;
+    transition: 1s;
 
     &:hover{
-        width: 400px;
-        height: 95%;
+        width: 100%;
+        height: 100%;
         transition: 1s;
         z-index: 1;
     }
