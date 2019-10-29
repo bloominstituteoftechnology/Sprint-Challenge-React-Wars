@@ -21,6 +21,6 @@ const CharGenerator = () => { // make the results state
             return CharCard(char);
         })
     ) // outside return
-} // CharGenerator
+} // CharGenerator 
 
     export default CharGenerator;
