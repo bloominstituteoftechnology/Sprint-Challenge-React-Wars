@@ -5,32 +5,30 @@ import axios from 'axios';
 
 const CharCont = () => {
 
-const [dataArr, setDataArr] = useState([]);
+// const [dataArr, setDataArr] = useState([]);
 
 
-useEffect(() => {
-    axios.get('https://swapi.co/api/people/')
-    .then((res) => {
-        setDataArr(res.data.results);
-    })
-    .catch(err => {
-        console.log(err);
-    })
-},[]);
+// useEffect(() => {
+//     axios.get('https://swapi.co/api/people/')
+//     .then((res) => {
+//         setDataArr(res.data.results);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     })
+// },[]);
 
 return(
     <div>
-        {dataArr.map(character => {
+        {/* {dataArr.map(character => {
             return(
-
                 <CharCard 
                 name={character.name}
-                gender ={character.gender}
+                gender={character.gender}
                 />
             )
-        })}
+        })} */}
     </div>  
-)
-} 
+)};
 
 export default CharCont;
