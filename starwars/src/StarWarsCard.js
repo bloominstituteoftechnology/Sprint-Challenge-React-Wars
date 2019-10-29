@@ -1,17 +1,21 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle, Col, Button } from "reactstrap";
+import { CardText, CardBody, CardSubtitle, Col, } from "reactstrap";
 import styled from 'styled-components';
 
-const StyledCard = styled.div`
+    const StyledCard = styled.div`
     
-    width: 100%;
-    margin: 0 auto;   
+    width: 80%;
+    margin: 0 auto;  
+    border-bottom: 1px solid ghostwhite; 
+    text-shadow: 1px 2px 5px #fff;
     
-`;
+    `;
 
 
 const Title = styled.h1`
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        text-shadow: 2px 2px 3px #EE00FF;
+        color: #443e3e;
 `;
 
 export default function StarWarsCard(props) {
@@ -26,7 +30,7 @@ export default function StarWarsCard(props) {
                     <CardText>Eye Color: {props.eyes}</CardText>
                     <CardText>Hair Color: {props.hair}</CardText>
                     {/* <Button className='text-left'>More</Button> */}
-                    <hr />
+                    {/* <hr /> */}
                 </CardBody>
             </StyledCard>
 
