@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from "axios";
+import CharacterCard from './components/CharacterCard';
 import './App.css';
 
 const App = () => {
@@ -19,10 +20,13 @@ const App = () => {
         console.log("You have an error!", err);
       });
   }, []);
-  //.........................................Build out Renderer next....
+  
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+        {Object.keys(character).map(currentValue => {
+        return <CharacterCard data={character[currentValue]} key={currentValue} />;
+      })}
     </div>
   );
 }
