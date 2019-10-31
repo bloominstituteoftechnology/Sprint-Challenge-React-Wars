@@ -4,7 +4,7 @@ import axios from "axios";
 
 const CharacterInfoPro = props => {
   const [starWarsData, setStarWarsData] = useState([]);
-  const [refreshCard, setRefreshCard] = useState();
+  const [refreshCard, setRefreshCard] = useState([]);
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
