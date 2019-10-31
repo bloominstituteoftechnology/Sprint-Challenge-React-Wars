@@ -28,6 +28,7 @@ const randomCharList = starWarsData[Math.floor(Math.random() * starWarsData.leng
         <Image src="https://www.fillmurray.com/400/600" wrapped ui={false} />
         <Card.Content>
           <Card.Header>
+            {isLoading && <h3>Loading</h3>}
             {randomCharList.name}
           </Card.Header>
           <Card.Meta>
