@@ -21,10 +21,14 @@ const CharacterInfoPro = props => {
 
   //Map not needed 
   const charName = starWarsData.map(name => {
-    return `${name.name}`;
+    return name.name;
   });
 
   const randomChar = charName[Math.floor(Math.random() * charName.length)];
+
+  const randomCharList = starWarsData[Math.floor(Math.random() * starWarsData.length)]
+  // console.log(randomCharList.name)
+  
 
   return (
     <Container style={{ margin: 20 }}>
