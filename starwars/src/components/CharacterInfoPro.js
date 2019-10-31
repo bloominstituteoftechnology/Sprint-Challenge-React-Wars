@@ -5,10 +5,8 @@ import axios from "axios";
 const CharacterInfoPro = props => {
   const [starWarsData, setStarWarsData] = useState([]);
   const [refreshCard, setRefreshCard] = useState();
-  // const [isLoadingIam, setIsLoadingIam] = useState("false");
 
   useEffect(() => {
-    // setIsLoadingIam(true);
 
     axios
       .get("https://swapi.co/api/people")
@@ -27,7 +25,15 @@ const CharacterInfoPro = props => {
   const randomChar = charName[Math.floor(Math.random() * charName.length)];
 
   const randomCharList = starWarsData[Math.floor(Math.random() * starWarsData.length)]
-  // console.log(randomCharList.name)
+
+  useEffect(() => {
+
+    console.log(`useEffect radomCharList: ${randomCharList}`)
+
+  }, [starWarsData])
+
+
+  console.log(randomCharList)
   
 
   return (
@@ -36,11 +42,6 @@ const CharacterInfoPro = props => {
         <Image src="https://www.fillmurray.com/400/600" wrapped ui={false} />
         <Card.Content>
           <Card.Header>
-            {/* {isLoadingIam && (
-              <Dimmer active>
-                <Loader>Loading</Loader>
-              </Dimmer>
-            )} */}
             {randomChar}
           </Card.Header>
           <Card.Meta>
@@ -52,10 +53,6 @@ const CharacterInfoPro = props => {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          {/* <a>
-      <Icon name='user' />
-      22 Friends
-    </a> */}
           <Button
             onClick={() => {
               setRefreshCard(refreshCard + 1);
