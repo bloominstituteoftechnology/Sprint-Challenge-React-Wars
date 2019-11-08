@@ -13,7 +13,7 @@ function CharCard({character}) {
   const {name, height, mass, hair_color, skin_color, eye_color, birth_year, gender} = character;
 
   return (
-    <SCol className="col-3">
+    <SCol className="col-6">
       <Card>
         <CardBody>
           <CardTitle>{name}</CardTitle>
