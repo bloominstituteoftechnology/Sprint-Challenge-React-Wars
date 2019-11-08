@@ -2,31 +2,35 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-// import Card from './Card';
+import Card from "./components/Card";
+
 
 function App() {
-  const [peoples, setPeoples] = useState([]);
+  const [person, setPerson] = useState([]);
 
   useEffect(() => {
     console.log('React Wars');
 
     axios
       .get('https://swapi.co/api/people/')
-      .then(response => {
-        console.log(response.data.results);
-        setPeoples(response.data.results);
+      .then(success => {
+        console.log(success);
+        setPerson(success.data.results);
       })
-      .catch(error => {
-        console.log('display this messsage when there is an error', error);
+      .catch(fail => {
+        console.log('this is an error message', fail);
       });
-
   }, []);
-
 
   return (
     <div className="App">
        <h1 className="Header">React Wars</h1>
-      {/* <Card peoples={peoples} /> */}
+       {person.map((human, id ) => {
+         return(
+          <Card key={id} human={human}/> 
+         )
+       })
+      }
     </div>
   );
 }
