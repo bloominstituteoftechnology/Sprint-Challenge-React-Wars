@@ -28,11 +28,11 @@ const CharacterList = () => {
                     // console.log(arr)
                     return (
                         <CharacterCard
-                            key={index}
+                            index={index+1}
                             name={character.name}
                             birth_year={character.birth_year}
                             eye_color={character.eye_color}
-                            url={`https://starwars-visualguide.com/assets/img/characters/${index}.jpg`}
+                            // url={`https://starwars-visualguide.com/assets/img/characters/${index}.jpg`}
                             // release_date={character.release_date}
                         />
                     );
