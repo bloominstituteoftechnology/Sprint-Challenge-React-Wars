@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {Card, CardImg, CardText, CardBody,
 CardTitle, CardSubtitle, Button, Collapse} from 'reactstrap'
 
@@ -37,3 +37,5 @@ const StarWarsCard = props => {
     )
     
 }
+
+export default StarWarsCard
