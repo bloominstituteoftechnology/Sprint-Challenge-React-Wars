@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {InputGroup, InputGroupAddon, Input} from 'reactstrap';
 
@@ -10,7 +10,7 @@ const SInputGroup = styled(InputGroup)`
   width: 90%;
 `;
 
-function CharSearch({names, setName, data}) {
+function CharSearch({name, setName, data}) {
 //names should be an array with objects containing 3 properties: name, page, index
 
 //match search with api data logic below, incomplete
@@ -24,6 +24,12 @@ function CharSearch({names, setName, data}) {
       })
     })
   }
+
+  useEffect(() => {
+    checkData("luke skywalker");
+    console.log(name);
+    console.log(name.name);
+  }, []);
   return (
     <>
     <SInputGroup>
