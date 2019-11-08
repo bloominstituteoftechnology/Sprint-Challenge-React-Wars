@@ -5,9 +5,9 @@ import styled from "styled-components"
 
 const Card = styled.div`
     width: 100%;
-    margin: 1%;
+    margin: 5%;
     color: green;
-    padding: 2rem 0;
+    padding: 2% 0;
     position: relative;
     border-radius: 10px;
     background-color: gray;
