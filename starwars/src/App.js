@@ -1,24 +1,21 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
-import {Container, Jumbotron, Row} from 'reactstrap';
+import {Jumbotron} from 'reactstrap';
 import './App.css';
 
 import CharDisplay from './components/Char/CharDisplay';
+import Pages from './components/Char/Pages';
 
 // styling
 
-const SContainer = styled(Container)`
-
-`;
-
 const SJumbotron = styled(Jumbotron)`
-
+  opacity: .8;
+  background: #008080;
+  margin: 10px;
 `;
+// figure out how to make opacity work
 
-const SRow = styled(Row)`
-
-`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -30,6 +27,7 @@ const App = () => {
 
   const [page, setPage] = useState("1");
   const [data, setData] = useState([]);
+  const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     Axios.get(`https://swapi.co/api/people`)
@@ -76,7 +74,9 @@ const App = () => {
 
   }, [page])
 
-  console.log(data); // data[0], [1], [2], etc === arrays of characters
+  // console.log(data); // data[0], [1], [2], etc === arrays of characters
+
+
 
   return (
     <>
@@ -84,16 +84,15 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
     </div>
     <SJumbotron>
-
       {
         data.map((d, i) => (
 
-            <CharDisplay data={d} key={i} />
+            <CharDisplay data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
 
         ))
       }
-
     </SJumbotron>
+    <Pages current={current} setCurrent={setCurrent} data={data} />
 
     </>
   );

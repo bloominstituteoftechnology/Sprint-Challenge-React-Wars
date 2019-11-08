@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Col, Card, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
+import { Col, Card, CardTitle, CardBody, ListGroup, ListGroupItem } from 'reactstrap';
 
 export default CharCard;
 
 //styles
 const SCol = styled(Col)`
-
+  margin-bottom: 10px;
 `;
 
 function CharCard({character}) {
@@ -16,10 +16,11 @@ function CharCard({character}) {
     <SCol className="col-3">
       <Card>
         <CardBody>
-
+          <CardTitle>{name}</CardTitle>
           <ListGroup>
-            <ListGroupItem>{name}</ListGroupItem>
+
             <ListGroupItem>{height}</ListGroupItem>
+            <ListGroupItem>{mass}</ListGroupItem>
             <ListGroupItem>{hair_color}</ListGroupItem>
             <ListGroupItem>{skin_color}</ListGroupItem>
             <ListGroupItem>{eye_color}</ListGroupItem>

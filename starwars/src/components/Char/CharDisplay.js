@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import { Row } from 'reactstrap';
+import { Row, Collapse } from 'reactstrap';
 
 import CharCard from './CharCard';
 
@@ -12,16 +12,26 @@ const SRow = styled(Row)`
 
 `;
 
-function CharDisplay({data}) {
+function CharDisplay({data, i, current}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if(parseInt(i) === parseInt(current)) {
+      setIsOpen(true);
+    } else {
+      console.log(i, current);
+      setIsOpen(false);
+  }}, [current])
 
   return (
-    <SRow>
-  {  
-    data.map((d, i) => {
-      console.log(d, "mapped data");
-      return <CharCard character={d} key={i} />
-    })}
+    <Collapse isOpen={isOpen}>
+      <SRow>
+        {  
+        data.map((d, i) => {
+          return <CharCard character={d} key={i} />
+        })}
 
-    </SRow>
+      </SRow>
+    </Collapse>
   )
 }
