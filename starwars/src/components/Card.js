@@ -2,6 +2,7 @@ import React from 'react';
 import StyledComponents from './StyledComponents';
 import HeadingName from './StyledComponents';
 
+
 const Chars = (props) => {
     return(
         <HeadingName className="peopleCard">
