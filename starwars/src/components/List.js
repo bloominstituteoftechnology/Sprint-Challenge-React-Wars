@@ -25,8 +25,6 @@ export default function List() {
             <CharCard
               key={char.index}
               name={char.name}
-              gender={char.gender}
-              films={char.films}
               homeworld={char.homeworld}
             />
           );

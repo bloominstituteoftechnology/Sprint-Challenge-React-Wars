@@ -21,6 +21,7 @@ const CharCard = props => {
         console.log(`The planet data was not returned; ${error}`);
       });
   }, []);
+  
   return (
     <Col xs="12" s="4" md="6">
     <Card style={{margin: '2% auto', boxShadow: '0px 4px 10px 3px rgba(10, 10, 10, 0.4)'}}>
