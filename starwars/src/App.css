@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .Header {
   color: #443e3e;
