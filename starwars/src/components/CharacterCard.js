@@ -4,8 +4,8 @@ import {
     // CardImg,
     // CardText,
     CardBody,
-    CardTitle,
-    // CardSubtitle,
+    // CardTitle,
+    CardSubtitle,
     // Button,
     Col
 } from "reactstrap";
@@ -17,15 +17,14 @@ const CharacterCard = props => {
                 {/* <CardImg
                     top
                     width="100%"
-                    src="https://source.unsplash.com/random"
-                    alt="Card image cap"
+                    src={`https://starwars-visualguide.com/assets/img/characters/1.jpg`}
+                    // alt={props.name}
                 /> */}
                 <CardBody>
-                    <CardTitle>Name: {props.name}</CardTitle>
-                    {/* <CardText>{props.description}</CardText>
-                    <CardSubtitle>Director: {props.director}</CardSubtitle>
-                    <CardSubtitle>Release Date:{props.release_date}</CardSubtitle>
-                    <Button>Button</Button> */}
+                    <CardSubtitle>Name: {props.name}</CardSubtitle>
+                    <CardSubtitle>Birth year: {props.birth_year}</CardSubtitle>
+                    <CardSubtitle>Eye Color: {props.eye_color}</CardSubtitle>
+                    
                 </CardBody>
             </Card>
         </Col>

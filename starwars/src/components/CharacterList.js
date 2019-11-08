@@ -6,6 +6,7 @@ import { Container, Row } from 'reactstrap';
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState([]);
+    // let arr = [];
 
     useEffect(() => {
         axios
@@ -22,14 +23,16 @@ const CharacterList = () => {
     return (
         <Container>
             <Row>
-                {characters.map(character => {
-                    console.log(character)
+                {characters.map((character, index) => {
+                    // arr.push ={index}
+                    // console.log(arr)
                     return (
                         <CharacterCard
-                            key={character.name}
-                            title={character.name}
-                            // description={character.description}
-                            // director={character.director}
+                            key={index}
+                            name={character.name}
+                            birth_year={character.birth_year}
+                            eye_color={character.eye_color}
+                            url={`https://starwars-visualguide.com/assets/img/characters/${index}.jpg`}
                             // release_date={character.release_date}
                         />
                     );
