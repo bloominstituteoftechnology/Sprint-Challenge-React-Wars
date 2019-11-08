@@ -14,7 +14,7 @@ function App() {
     axios
       .get('https://swapi.co/api/people/')
       .then(success => {
-        console.log(success);
+        console.log(success.data.results);
         setPerson(success.data.results);
       })
       .catch(fail => {
@@ -25,10 +25,11 @@ function App() {
   return (
     <div className="App">
        <h1 className="Header">React Wars</h1>
-       {person.map((human, id ) => {
+       {
+         person.map((human, id ) => {
          return(
-          <Card key={id} human={human}/> 
-         )
+        <Card key={id} human={human}/> 
+      )
        })
       }
     </div>

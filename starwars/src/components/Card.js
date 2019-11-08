@@ -1,11 +1,13 @@
 import React from 'react';
+import StyledComponents from './StyledComponents';
+import HeadingName from './StyledComponents';
 
 const Chars = (props) => {
     return(
-        <div className="peopleCard">
-            <h3>Name:{props.person.name}</h3>
-            <h2>Age:{props.person.birth_year}</h2>
-        </div>
+        <HeadingName className="peopleCard">
+            <h2>Name:{props.human.name}</h2>
+            <h3>Age:{props.human.birth_year}</h3>
+        </HeadingName>
  );
 }
-export default Chars
+export default Chars; 
