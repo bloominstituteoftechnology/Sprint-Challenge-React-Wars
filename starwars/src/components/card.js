@@ -1,6 +1,20 @@
 import React, {useState} from "react"
-import {Card, CardImg, CardText, CardBody,
+import { CardText, CardBody,
 CardTitle, CardSubtitle, Button, Collapse} from 'reactstrap'
+import styled from "styled-components"
+
+const Card = styled.div`
+    width: 100%;
+    margin: 1%;
+    color: green;
+    padding: 2rem 0;
+    position: relative;
+    border-radius: 10px;
+    background-color: gray;
+    border: solid 3px green;
+
+
+`;
 
 
 const StarWarsCard = props => {
@@ -10,7 +24,6 @@ const StarWarsCard = props => {
     return (
         <div>
       <Card>
-        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
         <CardBody>
         <CardTitle>{props.character.name}</CardTitle>
         <CardSubtitle>Birth Year: {props.character.birth_year}</CardSubtitle>
@@ -19,14 +32,11 @@ const StarWarsCard = props => {
           <div>
       <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>More Info</Button>
       <Collapse isOpen={isOpen}>
-        <Card>
           <CardBody>
           <CardText>Eye Color: {props.character.eye_color}</CardText>
           <CardText>Mass: {props.character.mass}</CardText>
           <CardText>Skin Color: {props.character.skin_color}</CardText>
-
-          </CardBody>
-        </Card>
+            </CardBody>
       </Collapse>
     </div>
         </CardBody>
