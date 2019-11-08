@@ -1,17 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
-import {Jumbotron} from 'reactstrap';
+import {Jumbotron, Container} from 'reactstrap';
 import './App.css';
 
 import CharDisplay from './components/Char/CharDisplay';
 import Pages from './components/Char/Pages';
+import CharSearch from './components/Char/CharSearch';
 
 // styling
+const SContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const SJumbotron = styled(Jumbotron)`
   opacity: .8;
-  background: #008080;
+  background: #FFC0CB;
   margin: 10px;
 `;
 // figure out how to make opacity work
@@ -28,11 +34,13 @@ const App = () => {
   const [page, setPage] = useState("1");
   const [data, setData] = useState([]);
   const [current, setCurrent] = useState(0);
+  const [names, setNames] = useState([]);
+  // needs to contain name, data-page, index
 
   useEffect(() => {
     Axios.get(`https://swapi.co/api/people`)
       .then(res => {
-
+        console.log(res.data.results);
         setData([...data, res.data.results]);
 // change & save page logic
         if (res.data.next !== null) {
@@ -79,22 +87,22 @@ const App = () => {
 
 
   return (
-    <>
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
-    <SJumbotron>
-      {
-        data.map((d, i) => (
+    <SContainer>
+      <div className="App">
+        <h1 className="Header">React Wars</h1>
+      </div>
+      <Pages current={current} setCurrent={setCurrent} data={data} />
+      <CharSearch names={names} />
+      <SJumbotron>
+        {
+          data.map((d, i) => (
 
-            <CharDisplay data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
+              <CharDisplay data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
 
-        ))
-      }
-    </SJumbotron>
-    <Pages current={current} setCurrent={setCurrent} data={data} />
-
-    </>
+          ))
+        }
+      </SJumbotron>
+    </SContainer>
   );
 }
 

@@ -1,7 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
+import PageItem from './PageItem';
+
 export default Pages;
+
+const SPageLink = styled(PaginationLink)`
+  color: #20B2AA;
+
+`;
 
 // functional pieces below
 function Pages(props) {
@@ -10,10 +18,10 @@ function Pages(props) {
   return (
     <Pagination aria-label="Page navigation example">
       <PaginationItem>
-        <PaginationLink first href="#" onClick={()=>setCurrent(0)} />
+        <SPageLink first href="#" onClick={()=>setCurrent(0)} />
       </PaginationItem>
       <PaginationItem>
-        <PaginationLink previous href="#" onClick={() => {
+        <SPageLink previous href="#" onClick={() => {
           if (current > 0) {
             setCurrent(current - 1);
           }
@@ -21,36 +29,20 @@ function Pages(props) {
       </PaginationItem>
       {
         data.map((d, i) => (
-          <PaginationItem>
-            <PaginationLink href="#" onClick={() => setCurrent(i)}>
-              {i+1}
-            </PaginationLink>
-          </PaginationItem>
+          <PageItem setCurrent={setCurrent} key={i} i={i} />
         ))
       }
 
       <PaginationItem>
-        <PaginationLink next href="#" onClick={() => {
+        <SPageLink next href="#" onClick={() => {
           if (current < data.length - 1) {
             setCurrent(current + 1);
           }
         }} />
       </PaginationItem>
       <PaginationItem>
-        <PaginationLink last href="#" onClick={()=>setCurrent(data.length-1)}/>
+        <SPageLink last href="#" onClick={()=>setCurrent(data.length-1)}/>
       </PaginationItem>
     </Pagination>
   );
 }
-
-// const previousPg = () => {
-//   if (current > 0) {
-//     setCurrent(current-1);
-//   }
-// }
-
-// const nextPg = () => {
-//   if (current < data.length - 1) {
-//     setCurrent(current+1);
-//   }
-// }

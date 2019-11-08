@@ -19,7 +19,6 @@ function CharDisplay({data, i, current}) {
     if(parseInt(i) === parseInt(current)) {
       setIsOpen(true);
     } else {
-      console.log(i, current);
       setIsOpen(false);
   }}, [current])
 
