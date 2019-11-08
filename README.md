@@ -28,11 +28,30 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What does it mean to _think_ in react?
 
+        Step 1 − Creating a simple mock service
+
+        Step 2 − Break the functionality into smaller components
+
+        Step 3 − If possible start by making a simple static version
+
+        Step 4 − Identifying the Minimal representation of UI state
+
+        Step 5 − Identify where the state should live −
+
 - [ ] Describe state.
+
+     State takes in an initial value to be later changed when passed through a component
+
 
 - [ ] Describe props.
 
+     Props pretty much act as a parameter for a child component passed in from a parent component
+
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+     Side effects are anything that affects something outside of the function scope. To sync effects, we use useEffect() to trigger the side effect after the ReactDOM has been rerendered.
+
 
 ## Project Set Up
 
