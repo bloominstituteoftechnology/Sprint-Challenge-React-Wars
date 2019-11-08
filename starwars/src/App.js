@@ -17,7 +17,7 @@ const SContainer = styled(Container)`
 
 const SJumbotron = styled(Jumbotron)`
   opacity: .8;
-  background: #FFC0CB;
+  background: #696969;
   margin: 10px;
 `;
 // figure out how to make opacity work
@@ -34,8 +34,8 @@ const App = () => {
   const [page, setPage] = useState("1");
   const [data, setData] = useState([]);
   const [current, setCurrent] = useState(0);
-  const [names, setNames] = useState([]);
-  // needs to contain name, data-page, index
+  const [name, setName] = useState({});
+  // needs to contain name, page, index
 
   useEffect(() => {
     Axios.get(`https://swapi.co/api/people`)
@@ -82,9 +82,7 @@ const App = () => {
 
   }, [page])
 
-  // console.log(data); // data[0], [1], [2], etc === arrays of characters
-
-
+  // console.log(data, "data format"); // data[0], [1], [2], etc === arrays of characters
 
   return (
     <SContainer>
@@ -92,7 +90,7 @@ const App = () => {
         <h1 className="Header">React Wars</h1>
       </div>
       <Pages current={current} setCurrent={setCurrent} data={data} />
-      <CharSearch names={names} />
+      <CharSearch name={name} setName={setName} data={data} />
       <SJumbotron>
         {
           data.map((d, i) => (

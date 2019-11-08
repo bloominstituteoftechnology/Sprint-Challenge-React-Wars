@@ -27,6 +27,7 @@ function Pages(props) {
           }
         }} />
       </PaginationItem>
+
       {
         data.map((d, i) => (
           <PageItem setCurrent={setCurrent} key={i} i={i} />
