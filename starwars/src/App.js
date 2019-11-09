@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
-import axios from "axios";
-import "./App.css";
-import styled from "styled-components";
-import SWCard from "./components/SWCard";
+import StarWList from "./components/StarWList";
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -14,8 +12,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <SWCard />
+      {/* <div className="parents"> */}
+      <StarWList />
     </div>
+
+    // </div>
   );
 };
 
