@@ -10,11 +10,10 @@ const SInputGroup = styled(InputGroup)`
   width: 90%;
 `;
 
-function CharSearch({data, names, search, setNames, setSearch}) {
+function CharSearch({setSearch, setInput}) {
 //names should be an array with objects containing 3 properties: name, page, index
 
 //match search with api data logic below, incomplete
-  const [input, setInput] = useState("");
 
   const handleChange = (e) => {
     setSearch(true);
@@ -23,14 +22,6 @@ function CharSearch({data, names, search, setNames, setSearch}) {
       setSearch(false);
     }
   }
-
-  useEffect(() => {
-    setNames(data.forEach((characters) => {
-      characters.filter((character) => {
-        return character.name.toLowerCase().includes(input.toLowerCase());
-      })
-    }))
-  }, [input])
 
   return (
     <>

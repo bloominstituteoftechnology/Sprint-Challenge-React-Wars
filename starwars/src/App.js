@@ -37,6 +37,7 @@ const App = () => {
 
   const [names, setNames] = useState({});
   const [search, setSearch] = useState(false);
+  const [input, setInput] = useState("");
 
   // needs to contain name, page, index
 
@@ -95,13 +96,13 @@ const App = () => {
 
       <Pages current={current} setCurrent={setCurrent} data={data} />
 
-      <CharSearch data={data} names={names} setNames={setNames} search={search} setSearch={setSearch} />
+      <CharSearch setSearch={setSearch} setInput={setInput} />
 
       <SJumbotron>
         {
           data.map((d, i) => (
 
-            <CharDisplay search={search} data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
+            <CharDisplay search={search} data={d} key={i} i={i} current={current} setCurrent={setCurrent} input={input} />
 
           ))
         }

@@ -10,22 +10,21 @@ const SCol = styled(Col)`
 `;
 
 function CharCard({character}) {
-  const {name, height, mass, hair_color, skin_color, eye_color, birth_year, gender} = character;
 
   return (
     <SCol className="col-6">
       <Card>
         <CardBody>
-          <CardTitle>{name}</CardTitle>
+          <CardTitle>{character.name}</CardTitle>
           <ListGroup>
 
-            <ListGroupItem>{height}</ListGroupItem>
-            <ListGroupItem>{mass}</ListGroupItem>
-            <ListGroupItem>{hair_color}</ListGroupItem>
-            <ListGroupItem>{skin_color}</ListGroupItem>
-            <ListGroupItem>{eye_color}</ListGroupItem>
-            <ListGroupItem>{birth_year}</ListGroupItem>
-            <ListGroupItem>{gender}</ListGroupItem>
+            <ListGroupItem>{character.height}</ListGroupItem>
+            <ListGroupItem>{character.mass}</ListGroupItem>
+            <ListGroupItem>{character.hair_color}</ListGroupItem>
+            <ListGroupItem>{character.skin_color}</ListGroupItem>
+            <ListGroupItem>{character.eye_color}</ListGroupItem>
+            <ListGroupItem>{character.birth_year}</ListGroupItem>
+            <ListGroupItem>{character.gender}</ListGroupItem>
           </ListGroup>
 
         </CardBody>
