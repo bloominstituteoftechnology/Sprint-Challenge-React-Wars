@@ -10,31 +10,33 @@ const SInputGroup = styled(InputGroup)`
   width: 90%;
 `;
 
-function CharSearch({name, setName, data}) {
+function CharSearch({data, names, search, setNames, setSearch}) {
 //names should be an array with objects containing 3 properties: name, page, index
 
 //match search with api data logic below, incomplete
-  function checkData(person) {
-    data.forEach((d, pg) => {
-      
-      d.forEach((item, i) => {
-         if(person.toLowerCase() === item.name.toLowerCase()) {
-           setName({name: person, page: pg, index: i})
-         }
-      })
-    })
+  const [input, setInput] = useState("");
+
+  const handleChange = (e) => {
+    setSearch(true);
+    setInput(e.target.value);
+    if (e.target.value === "") {
+      setSearch(false);
+    }
   }
 
   useEffect(() => {
-    checkData("luke skywalker");
-    console.log(name);
-    console.log(name.name);
-  }, []);
+    setNames(data.forEach((characters) => {
+      characters.filter((character) => {
+        return character.name.toLowerCase().includes(input.toLowerCase());
+      })
+    }))
+  }, [input])
+
   return (
     <>
     <SInputGroup>
       <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-      <Input placeholder="search" />
+      <Input placeholder="search" onChange={handleChange} />
     </SInputGroup>
     <InfoCard />
     </>

@@ -12,23 +12,31 @@ const SRow = styled(Row)`
 
 `;
 
-function CharDisplay({data, i, current}) {
+function CharDisplay({data, i, current, search}) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if(parseInt(i) === parseInt(current)) {
+
+    if (search) {
+      setIsOpen(false);
+    } else if(parseInt(i) === parseInt(current)) {
       setIsOpen(true);
     } else {
       setIsOpen(false);
-  }}, [current])
+    }
+  }, [current, search])
 
   return (
     <Collapse isOpen={isOpen}>
       <SRow>
-        {  
-        data.map((d, i) => {
-          return <CharCard character={d} key={i} />
-        })}
+        {
+
+          data.map((d, i) => {
+            return <CharCard character={d} key={i} />
+          })
+
+        }
+
 
       </SRow>
     </Collapse>

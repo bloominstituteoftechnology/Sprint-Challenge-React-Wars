@@ -34,7 +34,10 @@ const App = () => {
   const [page, setPage] = useState("1");
   const [data, setData] = useState([]);
   const [current, setCurrent] = useState(0);
-  const [name, setName] = useState({});
+
+  const [names, setNames] = useState({});
+  const [search, setSearch] = useState(false);
+
   // needs to contain name, page, index
 
   useEffect(() => {
@@ -89,13 +92,16 @@ const App = () => {
       <div className="App">
         <h1 className="Header">React Wars</h1>
       </div>
+
       <Pages current={current} setCurrent={setCurrent} data={data} />
-      <CharSearch name={name} setName={setName} data={data} />
+
+      <CharSearch data={data} names={names} setNames={setNames} search={search} setSearch={setSearch} />
+
       <SJumbotron>
         {
           data.map((d, i) => (
 
-              <CharDisplay data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
+            <CharDisplay search={search} data={d} key={i} i={i} current={current} setCurrent={setCurrent} />
 
           ))
         }
