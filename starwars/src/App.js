@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import StarWarsList from "./components/StarWarsList"
+
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,9 +14,12 @@ const App = () => {
   // sync up with, if any.
 
   return (
+
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <StarWarsList></StarWarsList>
     </div>
+    
   );
 }
 
