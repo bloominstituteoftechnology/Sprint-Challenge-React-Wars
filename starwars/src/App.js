@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
 import StarWarsList from "./components/StarWarsList"
+import styled from "styled-components"
 
+const Header = styled.h1`
+color: blue;
+`
 
 
 
@@ -16,7 +20,7 @@ const App = () => {
   return (
 
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Header>React Wars</Header>
       <StarWarsList></StarWarsList>
     </div>
     

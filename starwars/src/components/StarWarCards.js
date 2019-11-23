@@ -3,6 +3,9 @@ import styled from "styled-components"
 
 const Cont_box= styled.section`
 border: solid-black;
+margin: 50px;
+text-align: center;
+
 `
 
 
