@@ -1,8 +1,31 @@
 .App {
   text-align: center;
+  width: 100%; 
 }
+
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  opacity: 85%;
 }
 /* write your parent styles in here for your App.js */
+.parentcard {
+  width: 40%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px;
+  margin: 0 auto;
+
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  opacity: 10;
+}
+
+
