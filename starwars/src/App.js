@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {PeopleList} from './components/people/peopleList.js';
+// import SearchBox from "./components/people/searchH.js"
 // import {Container, Row, Col} from 'reactstrap';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      {/* <SearchBox/> */}
       <PeopleList />
     </div>
   );

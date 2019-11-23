@@ -7,23 +7,10 @@ border:1px solid;
 width:50%;
 margin-bottom:10px;
 margin:0 25% 2% 25%;
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 `
-
-//  export function PeopleCardOLD(props){
-// return(
-//     <div  key={props.id}>
-//         <h2>{props.name}</h2>
-//         <h3>{props.sex} </h3>
-//         <h3>{props.bDay} </h3>
-//         <h3>{props.height} </h3>
-//         <h3>{props.mass} </h3>
-//         <h3>{props.hairColor} </h3>
-//         <h3>{props.skinColor} </h3>
-//         <h3>{props.eyeColor} </h3>
-//     </div>
-//     )
-// }
 const PeopleCard = (props) => {
+console.log(props);
     return (
       <div>
         <Card>
