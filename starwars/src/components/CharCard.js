@@ -10,7 +10,7 @@ const CharCard = props => {
         <Card>
         <CardBody>
             <h1>{props.name}</h1>
-                <CardSubtitle>STATS:</CardSubtitle>
+                <CardText>STATS:</CardText>
                 <CardText>Gender: {props.gender}</CardText> 
                 <CardText>Hair Color: {props.hair}</CardText>
                 <CardText>Eye Color: {props.eyes}</CardText>

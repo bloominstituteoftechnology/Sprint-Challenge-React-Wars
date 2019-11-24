@@ -6,7 +6,7 @@
 .Header {
   color: #f3f707;
   text-shadow: 3px 6px 5px rgb(27, 26, 26);
-  font-size: 6rem;
+  font-size: 7rem;
   font-family: 'Bungee', cursive;
 }
 /* write your parent styles in here for your App.js */
@@ -26,7 +26,15 @@
 
 }
   
+.card-body h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
 
+.card-body .card-text {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 1.5rem;
+}
 
 .SWCard {
   width: 25%;
@@ -46,9 +54,6 @@
   margin-bottom: 7px;
 }
 
-.container .h1 {
-  font-family: 'Permanent Marker', cursive !important;
-}
 
 /* font-family: 'Bungee', cursive;
 font-family: 'Permanent Marker', cursive;
