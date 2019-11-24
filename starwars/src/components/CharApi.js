@@ -36,7 +36,7 @@ function CharApi() {
                             skinColor={char.skin_color}  
                             />
                        );
-                   }, [5])};
+                   }, [])};
                   </div>
                 </div>
                 );
