@@ -10,7 +10,6 @@ margin:0 25% 2% 25%;
 background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 `
 const PeopleCard = (props) => {
-console.log(props);
     return (
       <div>
         <Card>
