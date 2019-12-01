@@ -30,8 +30,7 @@ font-size: 1.5rem;
 `;
 
 
-const CharacterCard = props => {
-    
+const CharacterCard = props => {    
     return(
         <CardBorder key={props.key}>
             <CardTitle><Name>{props.name}</Name></CardTitle>
