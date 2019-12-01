@@ -4,17 +4,19 @@ import PeopleCard from "./peopleCard.js";
 import {Row, Col} from 'reactstrap';
 import '../StarWars.css';
 import {FormGroup, Input, Button} from 'reactstrap';
-import { prependOnceListener } from "cluster";
 
-
-
+function searchingFor (term){
+  return function(x){
+    return x.name.toLowerCase().includes(term.toLowerCase()) ||!term;
+  }
+}
 
 export function PeopleList (){
   const [people, setPeople]= useState([]);
   const [page, setPage]= useState("https://swapi.co/api/people/");
   const [next, setNext] = useState("");
   const [previous, setPrevious] = useState("");
- const [searchName, setSearchName] =useState("")
+  const [term, setTerm ]= useState("");
 
   useEffect(()=>{
     axios
@@ -34,33 +36,25 @@ export function PeopleList (){
     });
   }, [page]);
 
-  const handleSubmit = (e) => {
-   
-    // console.log(searchName);
-    // setSearchName(searchName);
-    // people.map((hero) => {
-    // console.log(hero.name);
-    //   return
-    //  // ( hero.name === searchName ? <PeopleCard/> : "No such hero!")
-    // })
-  }
-  const handleChange = (event) =>{
-   setSearchName({setName, [event.currentTarget.name] : event.currentTarget.value})
-  }
-
+ 
   const SearchBox =() => {
+
+    let searchHandler = (event=> {
+      setTerm(event.target.value)
+      })
+      searchHandler = searchHandler.bind();
+      
     return (
         <div>
-          <FormGroup onSubmit={handleSubmit}>
+          <FormGroup>
             <Input
-              type="search"
               name="search"
               id="exampleSearch"
-              placeholder="Search Warrier"
-              onChange={handleChange}  
-              value ='Search Warrier'
+              placeholder="Search Warrier"  
+              type ="text"
+              onChange={searchHandler}
             />
-            <Button  type="submit" >Search</Button>
+            <Button type="submit" >Search</Button>
           </FormGroup>
         </div>
     )
@@ -73,7 +67,7 @@ export function PeopleList (){
     <Button onClick = {() => setPage(previous)} disabled={previous === null ? true : false}> Previous page</Button>
     <Button onClick = {() => setPage(next)}  disabled={next === null ? true : false}>Next page</Button>
       
-       {people.map((item, index) => { 
+       {people.filter(searchingFor(term)).map((item, index) => { 
         return (
         <Col col-xs="6" col-sm="4" key={index} >
             <PeopleCard 
