@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PeopleCard from "./peopleCard.js";
-import {Row, Col} from 'reactstrap';
+import {Row, Container, Col, FormGroup, Input, Button} from 'reactstrap';
 import '../StarWars.css';
-import {FormGroup, Input, Button} from 'reactstrap';
 
 function searchingFor (term){
   return function(x){
@@ -43,48 +42,52 @@ export function PeopleList (){
       setTerm(event.target.value)
       })
       searchHandler = searchHandler.bind();
-      
+       
     return (
         <div>
           <FormGroup>
             <Input
+              className="input"
               name="search"
               id="exampleSearch"
               placeholder="Search Warrier"  
               type ="text"
               onChange={searchHandler}
             />
-            <Button type="submit" >Search</Button>
+            <Button 
+            onClick={searchHandler}
+            type="submit" >Search</Button>
           </FormGroup>
         </div>
     )
   };
 
   return(
-    <div>
-    <Row>
-    <SearchBox ></SearchBox>
-    <Button onClick = {() => setPage(previous)} disabled={previous === null ? true : false}> Previous page</Button>
-    <Button onClick = {() => setPage(next)}  disabled={next === null ? true : false}>Next page</Button>
-      
-       {people.filter(searchingFor(term)).map((item, index) => { 
-        return (
-        <Col col-xs="6" col-sm="4" key={index} >
-            <PeopleCard 
-                name ={item.name}
-                sex ={item.gender}
-                bDay= {item.birth_year}
-                height={item.height}
-                mass={item.mass}
-                hairColor={item.hair_color}
-                skinColor={item.skin_color}
-                eyeColor={item.eye_color}
-            />
-          </Col>
-          );
-        })}
-      </Row>   
-      
-      </div>
+    <Container class="container">
+       <SearchBox  ></SearchBox>
+        <Button onClick = {() => setPage(previous)} disabled={previous === null ? true : false}> Previous page</Button>
+        <Button onClick = {() => setPage(next)}  disabled={next === null ? true : false}> Next page</Button>
+      <Row>
+        {people.filter(searchingFor(term)).map((item, index) => { 
+            return (
+                <Col s={12} s={6} md={4} l={2}
+                key={index} >
+                   <PeopleCard 
+                     name ={item.name}
+                     sex ={item.gender}
+                     bDay= {item.birth_year}
+                     height={item.height}
+                     mass={item.mass}
+                     hairColor={item.hair_color}
+                     skinColor={item.skin_color}
+                     eyeColor={item.eye_color}
+                     />
+                </Col>
+              );
+            })}
+        </Row>   
+        <Button onClick = {() => setPage(previous)} disabled={previous === null ? true : false}> Previous page</Button>
+        <Button onClick = {() => setPage(next)}  disabled={next === null ? true : false}> Next page</Button>
+    </Container>
   );
 }
