@@ -60,9 +60,10 @@ return (
             })}            
         </Container>
         <div className="buttons">
-            <button onClick={handleNext}>Next</button>
+            
             {previous && previous.length!==0 ?
             <button onClick={handlePrevious}>Previous</button> :null }   
+            <button onClick={handleNext}>Next</button>
         </div> 
     </>
 )
