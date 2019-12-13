@@ -1,7 +1,11 @@
+
+
 .App {
   text-align: center;
+  color: midnightblue;
 }
 .Header {
+  font-size: 5.5rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
