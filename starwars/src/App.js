@@ -13,7 +13,7 @@ justify-content: center;
 
 .Header{
   width: 100%;
-
+  
 }
 `
 

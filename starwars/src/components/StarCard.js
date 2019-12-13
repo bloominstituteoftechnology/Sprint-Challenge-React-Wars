@@ -8,8 +8,7 @@ const CardStyle = styles.div`
 // flex-wrap:wrap;
 // justify-content:center;
 // line-height: 1rem;
-background: black;
-width:100%;
+//background: black;
 
 .card{
     //width:30%;
