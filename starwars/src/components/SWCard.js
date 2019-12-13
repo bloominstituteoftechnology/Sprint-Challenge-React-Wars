@@ -15,38 +15,39 @@ const CardContainer = styled.div`
 const SWCard = () => {
     const [swcharacters, setSWCharacters] = useState([]);
 
-
     useEffect(() => {
         axios
             .get(`https://swapi.co/api/people`)
             .then(response => {
-                console.log(`successful request = `, response);
-                // console.log(`object value`, Object.values(peeps))
                 setSWCharacters(response.data.results)
-                
                 
             })
             .catch(error => {
                 console.log(`Error is: `, error);
             });
-        }, [])
-
+    }, [])
     
-    return (
-        
-        <CardContainer>
-            {swcharacters.map((character, index) => {
+    if(!swcharacters){
+        return <div>Loading...</div>
+    } else {
+
+    return (  
+        <CardContainer> {            
+            swcharacters.map((character, index) => {
+                const robot = () => character.gender === "n/a" ? "ROBOT" : character.gender;              
                 return (
                     <InfoCard 
                     key={index}
                     name={character.name}
-                    gender={character.gender}
+                    gender={robot()}
                     height={character.height}
                     mass={character.mass} />
-                );
-            })} 
-        </CardContainer>
-    )
+                    );
+                })
+            } </CardContainer>
+        )
+    }
+
 }
 
 export default SWCard
