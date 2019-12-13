@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+  background: url('./img/stars.jpg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
