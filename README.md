@@ -25,25 +25,11 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
-    React is a JavaScript library designed to assist developers build large scale applications effectively.
-
+   
 - [x] What does it mean to _think_ in react?
-
-    it makes you think about apps as you build them, to make the build as effecient and scalable as possible, emphasising components. https://reactjs.org/docs/thinking-in-react.html
-
 - [x] Describe state.
-
-
-    State refers the status of an object, component or program in javascript. Like a light can be on or off, jsavascript variables have similar functionality. E.g. the user “logged in” vs being logged out. 
-
 - [x] Describe props.
-
-    Props refers to properties, meaning a date set with particular keys and values that are passed to React components using a similar naming conventions as HTML-tag attributes.
-
 - [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
-    A side effect refers to a function that attempts to influence code outside of it’s original scope or body. The “useEffect” is used to sync the state or prop changes, by executing it’s code block after the DOM has rendered.
 
 ## Project Set Up
 
@@ -73,18 +59,18 @@ Your finished project must include all of the following requirements:
 
 - [x] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
 - [x] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
-- [ ] Set the data you fetch to state.
-- [ ] Map over the list and render a component for each character on the page.
-- [ ] You must display at least one element for each star wars character in the data set.
+- [x] Set the data you fetch to state.
+- [x] Map over the list and render a component for each character on the page.
+- [x] You must display at least one element for each star wars character in the data set.
 - [x] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
 
 #### Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
