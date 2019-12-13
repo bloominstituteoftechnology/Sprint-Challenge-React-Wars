@@ -13,13 +13,38 @@ const StyledContainer = styled.div`
 
 `
 
-function StarPeople() {
+const ButtonBox = styled.div`
 
-  const [person, setPerson] = useState([])
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+`
+
+const BackButton = () => {
+  return (
+    <button>
+      {'<'}
+    </button>
+  )
+}
+
+const ForwardButton = () => {
+  return (
+    <button>
+      {'>'}
+    </button>
+  )
+}
+
+function StarPeople(props) {
+
+  const [person, setPerson] = useState([]);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
 
-    axios.get("https://swapi.co/api/people/")
+    axios.get(`https://swapi.co/api/people/?page=${count}`)
     .then(response => {
       console.log(response);
       setPerson(response.data.results);
@@ -32,6 +57,10 @@ function StarPeople() {
 
   return (
     <div>
+      <ButtonBox>
+        <BackButton onClick={() => setCount(count > 1 ? count - 1 : count)}/>
+        <ForwardButton onClick={() => setCount(count + 1)}/>
+      </ButtonBox>
       <StyledContainer>
         {person.map(person => {
           return <StarCard name={person.name} height={person.height} mass={person.mass} birth_year={person.birth_year}/>})}
