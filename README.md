@@ -24,15 +24,28 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React JS is a javascript library that allow developers to compile large applications easily and effectively. It is used to make user interfaces and single page applications.
+React can be an easy to use small piece of code that allows developers to put together large application for a webpage. React can be added to various other web packages and plugins. The main advantage of react is that it is easy to use and the code can be divided into components which can be linked together to create an interactive webpage. Since the code is divided into parts and avoids repetition it can be changed easily later on and updated if needed.   
 
-- [ ] Describe state.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+React allows a webpage to be divided into parts or components. This is referred to think in react. This allows the developer to think how data can be divided and structured before writing code. The components can be structured ahead of time and then effectively coded.
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x] Describe state.
+A state is part of a react component. It is usually a javascript object where we can store property values that belong to react component. When this state object changes the component is rerendered.
+
+- [X] Describe props.
+When we want to pass information from one component to another we use props. props helps us also to keep our data flow clean and organized.
+
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
+In react, side effects are anything that can effect outside the scope of the function. Some examples of side effect are when we want to fetch data from an API, timers and logging in. Side effects also allow manipulating DOM manually.
+By using the effect hook in react we can state or prop changes the following code is used:
+useEffect(() => {
+  console.log("Hello from the effect hook!");
+});
+
 
 ## Project Set Up
 
