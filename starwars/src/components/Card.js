@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react';
-// import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardText, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
 
-const CharCard = ({ name }) => {
+const CharCard = ({ name, year, films }) => {
   return (
-    <div>
-      I am working! {name}
-    </div>
+    <Card>
+      <CardBody>
+        <CardTitle>{name}</CardTitle>
+        <CardSubtitle>Born: {year}</CardSubtitle>
+        <CardText>Number of Films: {films}</CardText>
+      </CardBody>
+    </Card>
   );
 }
 

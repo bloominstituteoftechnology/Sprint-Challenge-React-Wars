@@ -65,7 +65,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       {chars.map((char, index) => {
-        return (<CharCard key={index} name={char.name} />);
+        return (<CharCard key={char.name} name={char.name} year={char.birth_year} films={char.films.length} />);
       })}
     </div>
   );
