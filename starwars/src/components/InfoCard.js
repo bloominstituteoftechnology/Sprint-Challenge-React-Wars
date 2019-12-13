@@ -31,3 +31,5 @@ import MainCard from "./components/MainCard";
 // //     </div>
 // //  );
 // }
+
+export default InfoCard

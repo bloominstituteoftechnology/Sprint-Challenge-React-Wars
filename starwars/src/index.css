@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap"); */
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
-#root {
+/* #root {
   width: 100vw;
   height: 100vh;
   color: #2a2223;
@@ -45,11 +45,11 @@ p {
 }
 p:nth-child(2) {
   padding: 10px;
-  font-size: 18px;
-  display: block; /* or inline-block */
-  text-overflow: ellipsis;
+  font-size: 18px; */
+  /* display: block; or inline-block */
+  /* text-overflow: ellipsis;
   word-wrap: no-wrap;
   overflow: hidden;
   max-height: 10em;
   line-height: 1.2em;
-}
+} */
