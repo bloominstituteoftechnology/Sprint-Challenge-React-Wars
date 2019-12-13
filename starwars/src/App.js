@@ -1,4 +1,5 @@
 import React from 'react';
+import StarwarsList from "./components/StarwarsList"
 import './App.css';
 
 const App = () => {
@@ -12,8 +13,14 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+
+
+      <StarwarsList/>
     </div>
+
   );
+
+
 }
 
 export default App;

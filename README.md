@@ -28,11 +28,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What does it mean to _think_ in react?
 
+    Using libraries to grab data and re-rendering reusable components to get an updated interface.
+
+
 - [ ] Describe state.
 
+    State is the data that the user will be interacting with and when changes happen in state, it renders the change in the actual DOM.
+
 - [ ] Describe props.
+    Props are read only and are used whenever we want to pass values into components to be processed inside the component. Kinda like a parameter that links the parent component to the child.
+
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are anything that affects things from outside the scope of a function being executed such as grabbing data from an api or manually manipulating the dom. 
+
+
+
+
 
 ## Project Set Up
 

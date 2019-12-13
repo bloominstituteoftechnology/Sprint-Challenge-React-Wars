@@ -5,3 +5,15 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.card {
+margin-bottom:5%;
+box-shadow:  8px 8px rgb(236, 180, 229), -1em 0 .4em rgb(250, 240, 185);
+}
+
+
+.text-center{
+  background-color: rgb(248, 232, 232); 
+  font-size: 18px;
+}
+
