@@ -1,0 +1,15 @@
+.body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  color: dodgerblue;
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  color: #2a2223;
+  margin: 0;
+}
