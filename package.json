@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "botstrap": "^0.20.1",
+    "reactstrap": "^8.1.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "cmd",
+  "type": "command",
+  "info": {
+    "description": "Example command.",
+    "usage": "dosomething [arguments...]"
+  }
+}
