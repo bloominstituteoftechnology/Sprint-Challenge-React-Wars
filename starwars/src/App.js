@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
+import StarWarsList from "./components/StarWarsList";
+import NavBar from "./components/Navbar";
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
-
-  // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
-
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <NavBar />
+      <div className="navbar-spacer"></div>
+      <h1 className="main-header">Character Profiles</h1>
+      <StarWarsList />
+      <div className="footer">
+        <p className="footer-text">Copyright &copy; KJ MAGILL 2019.<br />All rights reserved. In Association with Lambda School.</p>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,79 @@
 .App {
   text-align: center;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+.nav-bar-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
-/* write your parent styles in here for your App.js */
+
+.nav-bar {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.navbar-spacer {
+  height: 75px;
+}
+
+.logo {
+  margin-left: 1.5%;
+  width: 10%;
+}
+
+.main-header {
+  color: #333A40;
+  -webkit-text-stroke: 2px #FFCB6B;
+  text-shadow: 1px 1px 5px #fff;
+  margin-top: 3%;
+  font-size: 3.6rem;
+  letter-spacing: 0.05rem;
+  font-family: 'Kanit', sans-serif;
+}
+
+.starwars-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 94%;
+  margin: 2% auto;
+  text-align: left;
+}
+
+.each-card-container {
+  width: 300px;
+  margin: 1%;
+}
+
+.card {
+  box-shadow: 0 2px 5px 1px #636363;
+  background-color: #E4DDD7;
+  border-radius: 12px;
+  padding: 0 2%;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 2% 0;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  margin: 2% 0;
+}
+
+.footer {
+  background-color: #333A40;
+  bottom: 0;
+  padding: 2% 0 0.5% 0;
+  margin-top: 5%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.footer-text {
+  color: #E4DDD7;
+  font-size: 1.6vw;
+}
