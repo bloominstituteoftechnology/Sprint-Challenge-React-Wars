@@ -26,13 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React.js is a JavaScript framework supporting the development of user interfaces. It was created for large applications that have temporal data changes. The data in such applications is not static so it changes over time.
+
 - [ ] What does it mean to _think_ in react?
+
+“Thinking” in React can basically be broken down into six parts: 1) creating a simple mock service, 2) breaking the functionality into smaller components, 3) making a simple static version, 4) identifying the minimal representation of UI state, 5) identifying where the state should live, and 6) adding two way data flow, when required.
 
 - [ ] Describe state.
 
+“State” is an object that represents the parts of an app that can change.
+
 - [ ] Describe props.
 
+“Props” are arguments passed into React components via HTML attributes.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects affect something outside of the scope of the current function that’s being executed. You can sync effects in a component to state or prop changes via useEffect().
+
 
 ## Project Set Up
 
