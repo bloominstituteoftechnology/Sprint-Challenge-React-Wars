@@ -1,19 +1,66 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
 import './App.css';
+import { Row, Col, Button } from 'reactstrap';
+import Character from './components/Character';
+
+
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
 
-  // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+const [endpoint, setEndpoint] = useState ('https://swapi.co/api/people/')
+const [apiData, setApiData] = useState(null);
+
+
+useEffect(() => {
+  axios
+  .get(endpoint)
+  .then(response => {
+    console.log(response.data);
+    setApiData(response.data);
+  })
+  .catch(err => console.log(err));
+}, [endpoint]); 
+
+
+
+// Transport Buttons functionality
+const next = () => {
+  console.log(apiData.next);
+  setEndpoint(apiData.next);
+};
+
+const previous = () => {
+  if (apiData.previous) {
+    setEndpoint(apiData.previous);
+  } else {
+    console.log("no previous page exists");
+  }
+};
+
+
+
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-    </div>
+      <Row className="justify-content-center">
+        <Col sm="6" md="5" lg="3" xl="2">
+        <Button color="success" onClick={() => previous()} className="m-5">Prev page</Button>
+        </Col>
+        <Col sm="6" md="5" lg="3" xl="2">
+        <Button color="success" onClick={() => next()} className="m-5"  >Next Page</Button>
+        </Col>
+      </Row>
+   
+  
+
+
+      
+    </div >
   );
 }
+
+
 
 export default App;
