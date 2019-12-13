@@ -6,3 +6,20 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.cardParent{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: blue;
+
+}
+.container{
+
+  width: 100%;
+  height: 5%;
+  padding: 5% 5% 5% 5%;
+  margin: 5% 5% 5% 5%;
+  background-color: yellowgreen;
+
+} 
