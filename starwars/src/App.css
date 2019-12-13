@@ -6,3 +6,27 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.card-border{
+  margin: 10px 25%;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px rgba(119, 136, 153, );
+  background-color: rgba(119, 136, 153, .5);
+  border-radius: 10px;
+}
+
+.card-img{
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5),
+  3px 3px 3px 3px rgba(0, 0, 0, .5),
+  -3px -3px 3px 3px rgba(0, 0, 0, .5),
+  -3px -3px 3px 3px rgba(0, 0, 0, .5);
+  border: 2px solid rgba(255,215,0, 0.6);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.card-body{
+  background-color: rgba(119, 136, 153, 0.5);
+  border-radius: 10px;
+  padding: 10px 0
+}
