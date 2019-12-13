@@ -7995,6 +7995,7 @@ react-dev-utils@^9.0.4:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
+
 react-dom@^16.10.0:
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.0.tgz#319356767b5c044f3c016eef28518ef7726dce84"
