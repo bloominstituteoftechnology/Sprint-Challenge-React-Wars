@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import './App.css';
+import CharCard from './components/Card';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,23 +13,60 @@ const App = () => {
 
   // * * * STATE PROPERTIES
 
+  const [chars, setChars] = useState([]);
+
   // * * * USE EFFECT
 
-  const [selection, setSelection] = useState([]);
-
   useEffect(() => {
-    axios.get('https://swapi.co/api/people')
-    .then(response => {
-      console.dir(response.data);
-    })
-    .catch(error => {
-      console.log('Data not returned', error);
-    });
+    const getData = () => {
+      axios.get('https://swapi.co/api/people')
+      .then(response => {
+        // console.dir(response.data);
+        // console.dir(response.data.results);
+
+        let selection = [];
+
+        response.data.results.forEach(char => {
+          selection.push(char);
+        });
+
+        // console.log(selection);
+
+        selection = selection.flat();
+
+        setChars(selection);
+
+        // console.dir(chars);
+      })
+      .catch(error => {
+        console.log('Data not returned', error);
+      });
+    };
+
+    getData();
   }, []);
+  
+  // let flatArr = chars.flat();
+  // console.dir(flatArr);
+  
+  console.dir(chars);
+
+  // let flattenedArr = chars.flat();
+  // setChars([flattenedArr]);
+  // console.log(chars);
+
+  // const componentArr = chars.map((char, index) => {
+  //   return (<CharCard key={index} name={char.name} />);
+  // })
+
+  // console.dir(componentArr);
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      {chars.map((char, index) => {
+        return (<CharCard key={index} name={char.name} />);
+      })}
     </div>
   );
 }
