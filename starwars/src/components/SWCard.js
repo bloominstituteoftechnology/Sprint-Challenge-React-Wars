@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 import InfoCard from "./InfoCard";
 
-const [swcharacters, setSWCharacters] = useState([]);
 
 
 const SWCard = () => {
-    
+    const [swcharacters, setSWCharacters] = useState([]);
+
 
     useEffect(() => {
         axios
             .get(`https://swapi.co/api/people`)
             .then(response => {
-                console.log(`PEEPS = `, peeps);
+                console.log(`successful request = `, response.data.results);
                 // console.log(`object value`, Object.values(peeps))
-                setSWCharacters(response.results)
+                setSWCharacters(response.data.results)
 
             })
             .catch(error => {
@@ -26,7 +26,19 @@ const SWCard = () => {
 
     
     return (
-        <InfoCard name={swcharacters.name}/>
+        
+        <div>
+            {swcharacters.map((character, index) => {
+                return (
+                    <InfoCard 
+                    key={index}
+                    name={character.name} />
+                );
+
+
+            })}
+            
+        </div>
     )
 
 }

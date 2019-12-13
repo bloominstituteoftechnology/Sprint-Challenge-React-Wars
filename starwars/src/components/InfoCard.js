@@ -10,7 +10,7 @@ const Card = styled.div`
 const InfoCard = props => {
     return (
         <Card>
-            <h3>asd</h3>
+            <h3>{props.name}</h3>
         </Card>
     )
 }
