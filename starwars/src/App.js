@@ -1,18 +1,44 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import StarCard from './components/StarCard';
+import axios from 'axios';
+import styles from 'styled-components';
+
+const PageDiv = styles.div`
+display:flex;
+color:white;
+flex-wrap:wrap;
+align-items:center;
+justify-content: center;
+
+.Header{
+  width: 100%;
+
+}
+`
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+  const [starList, setStarList] = useState([]);
 
-  // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+  useEffect(() => {
+    axios.get('https://swapi.co/api/people/')
+    .then(res => {
+        setStarList(res.data.results);
+        console.log(res.data.results);
+        // setStarList(person);
+    })
+    .catch(err => {
+        console.log('Something is wrong', err);
+    })
+}, []);
 
   return (
-    <div className="App">
+    <PageDiv className="App">
       <h1 className="Header">React Wars</h1>
-    </div>
+      {starList.map(e => (
+        <StarCard card={e} />
+      ))}
+    </PageDiv>
   );
 }
 
