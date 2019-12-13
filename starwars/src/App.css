@@ -1,8 +1,60 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: #f3f707;
+  text-shadow: 3px 6px 5px rgb(27, 26, 26);
+  font-size: 7rem;
+  font-family: 'Bungee', cursive;
 }
 /* write your parent styles in here for your App.js */
+.container {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100%;
+  margin-bottom: 30%;
+
+}
+
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+
+}
+  
+.card-body h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+.card-body .card-text {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 1.5rem;
+}
+
+.SWCard {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.card-deck {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 7px;
+}
+
+
+/* font-family: 'Bungee', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Open Sans Condensed', sans-serif; */
