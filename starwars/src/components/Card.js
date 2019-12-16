@@ -1,8 +1,7 @@
 import React from 'react'
-import StarWars from './StarWars.css'
 
 const Card = (props) => {
-  console.log("Card:", props.char)
+  // console.log("Card:", props.char)
     return (
         <div className="character-card">
             <h2>Name: {props.char.name}</h2>
