@@ -15,13 +15,14 @@ const App = () => {
       .get("https://swapi.co/api/people/")
       .then(res => {
         console.log("Response:", res.data)
-        setSwData(res.data)
+        setSwData(res.data.results)
       })
   }, []);
-  
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <CardList swData={swData} />
     </div>
   );
 }

@@ -3,14 +3,13 @@ import StarWars from './StarWars.css'
 
 import Card from './Card'
 
-function CardList(props) {
+const CardList = (props) => {
+    console.log("CardList:", props.char)
     return (
         <div>
-            {
-                props.character.map(starwarsChars => {
-                    return <Card character={starwarsChars} />
-                })
-            }
+          {props.swData.map((char, index) => {
+            return <Card key={index} char={char} />
+          })}
         </div>
     )
 }
