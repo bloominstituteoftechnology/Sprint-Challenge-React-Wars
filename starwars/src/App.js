@@ -62,10 +62,11 @@ class App extends Component {
         <div className="content" ref={this.content}>
           <h1 className="title">Lambda School - WEB26, Jessica Wolff </h1>
           <h2 className="subtitle">THE REACT WAR AWAKENS</h2>
-          <p>The Development Team Lead, Jess has vanished. In her absence, the sinister FUNCTIONAL BUG has risen from the ashes of the CI Tool and will not rest until the last developer has been destroyed.
+          <p>It's a period of civil war.  The Zoom Daddies spaceship, striking from a hidden base, have won their first victory against the evil CodePen Empire.
           </p>
-          <p>With the support of the QA TEAM, the Software Developer leads a brave RESISTANCE. He is desperate to find his Lead and gain her help in restoring peace and justice to the repository.
+          <p>During the battle, Daddy spies managed to steal secret plans to the Empire's ultimate weapon, the Fun Bus, an armored space vehicle that reappears every Unit. 
           </p>
+          <p>Pursued by the Empire's sinister agents, Princess Lilian races home aboard her starship, custodian of the stolen plans that can save her Daddies, and restore freedom to the galaxy...</p>
         
         </div>
       </section>
