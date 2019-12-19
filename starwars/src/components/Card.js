@@ -1,18 +1,18 @@
 import React from 'react'
-import StarWars from './StarWars.css'
 
-function Card(props) {
+const Card = (props) => {
     return (
         <div className="character-card">
-            <h2>Name: {props.character.name}</h2>
-            <p>Birth Year: {props.character.birth_year}</p>
-            <p>Gender: {props.character.gender}</p>
-            <p>Height: {props.character.height}</p>
-            <p>Starships: {props.character.starships.map(ship => (
-                <p>{props.character.starships}</p>
-            ))}
-            </p>
-            <p>Vehicles: <a href={props.character.vehicles}>{props.character.vehicles}</a></p>
+            <h2>Name: {props.char.name}</h2>
+            <p>Birth Year: {props.char.birth_year}</p>
+            <p>Gender: {props.char.gender}</p>
+            <p>Height: {props.char.height}</p>
+            <p>Shatships: {props.char.starships.map((s, index) => {
+              return <li><a key={index} href={s}>{s}</a></li>
+            })}</p>
+            <p>Vehicles: {props.char.vehicles.map((v, index) => {
+              return <li><a key={index} href={v}>{v}</a></li>
+            })}</p>
         </div>
     )
 }

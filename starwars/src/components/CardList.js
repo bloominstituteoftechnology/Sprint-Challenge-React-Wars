@@ -1,16 +1,13 @@
 import React from 'react';
-import StarWars from './StarWars.css'
 
 import Card from './Card'
 
-function CardList(props) {
+const CardList = (props) => {
     return (
-        <div>
-            {
-                props.character.map(starwarsChars => {
-                    return <Card character={starwarsChars} />
-                })
-            }
+        <div className="characters">
+          {props.swData.map((char, index) => {
+            return <Card key={index} char={char} />
+          })}
         </div>
     )
 }
