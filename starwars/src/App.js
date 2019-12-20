@@ -2,7 +2,17 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
 import Characters from './components/Character';
-import styled from 'styled-components';
+import styled,  { keyframes } from 'styled-components';
+import {lightSpeedIn } from 'react-animations';
+
+let bounceAnimation = keyframes`${lightSpeedIn}`;
+
+const BouncyDiv = styled.h1`
+  animation: 20s ${bounceAnimation};
+  text-align: center;
+color: blue;
+font-size:55px
+`;
 
 const StyledContainer = styled.div`
   display: flex;
@@ -10,11 +20,11 @@ const StyledContainer = styled.div`
   justify-content: center;
 `;
 
-const Header = styled.h1`
-text-align: center;
-color: black;
-font-size:;
-`;
+// const Header = styled.h1`
+// text-align: center;
+// color: black;
+
+// `;
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -26,6 +36,7 @@ const App = () => {
   // sync up with, if any.
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
+    
     .then(response  => {
       setCharacters(response.data.results)
     })
@@ -35,7 +46,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header className="Header">React Wars</Header>
+      <BouncyDiv className="Header">Star Wars</BouncyDiv>
       <StyledContainer>
         {characters.map(characters => <Characters props={characters} />)}
       </StyledContainer>
