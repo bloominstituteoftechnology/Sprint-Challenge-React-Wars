@@ -6,3 +6,15 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+/* h1, h2, h3, h4, h5, p {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+} */
+
+
+h3{
+  font-family: 'Courier New', Courier, monospace;
+}
+
