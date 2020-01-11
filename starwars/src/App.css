@@ -10,11 +10,15 @@
   font-size: 2rem;
 }
 
-/* .card-columns {
+.card-columns {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-} */
+  flex: center;
+  /* width: 50%; */
+  padding-left: 30%;
+  padding-right: 30%
+}
 
 
 /* write your parent styles in here for your App.js */
