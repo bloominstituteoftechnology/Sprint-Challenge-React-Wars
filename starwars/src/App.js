@@ -17,7 +17,7 @@ const App = () => {
         setPeople(res.data.results)
         console.log(res.data.results);
       })
-      .catch(err=> console.log(`This is in error: `, err));
+      .catch(err=> console.log(`This is giving me a error: `, err));
   }, []);
 
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
