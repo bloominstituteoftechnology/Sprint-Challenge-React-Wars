@@ -9,4 +9,12 @@
 .name {
   font-size: 2rem;
 }
+
+/* .card-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+
 /* write your parent styles in here for your App.js */
