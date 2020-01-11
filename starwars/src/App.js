@@ -1,7 +1,8 @@
 import React, {useState, useEffect } from 'react';
 import './App.css';
-import Card from './components/Card'
 import axios from 'axios'
+import LandingPage from './components/LandingPage';
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,7 +15,7 @@ const App = () => {
   useEffect(() => {
     axios
     .get('https://swapi.co/api/people/')
-    .then(res => setData(res.data))
+    .then(res => setData(res.data.results))
     .catch(err => console.log(err))
     
   }, [])
@@ -23,7 +24,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Card/>
+      <LandingPage data={data}/>
     </div>
   );
 }
