@@ -1,19 +1,20 @@
 import React from "react";
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 const PersonCard = props => {
     return (
-        <div className="person-card">
-            <h2 className="name">Name: {props.name}</h2>
-            <div className="height">
+        <Card className="person-card">
+            <CardTitle className="name">Name: {props.name}</CardTitle>
+            <CardSubtitle className="height">
                 <p>Height: {props.height}</p>
-            </div>
-            <div className="mass">
+            </CardSubtitle>
+            <CardSubtitle className="mass">
                 <p>Mass: {props.mass}</p>
-            </div>
-            <div className="birth_year">
+            </CardSubtitle>
+            <CardSubtitle className="birth_year">
                 <p>Birth Year: {props.birth_year}</p>
-            </div>
-        </div>
+            </CardSubtitle>
+        </Card>
     )
 
 };
