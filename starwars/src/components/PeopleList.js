@@ -20,12 +20,13 @@ export default function PeopleList(){
 
     return (
         <div className="person">
-            {personData.map((person, index) => {
+            {personData.map((personData, index) => {
                 return <PersonCard 
                 key={index}
                 name={personData.name}
                 height={personData.height}
                 mass={personData.mass}
+                birth_year={personData.birth_year}
                 />
             })}
 
