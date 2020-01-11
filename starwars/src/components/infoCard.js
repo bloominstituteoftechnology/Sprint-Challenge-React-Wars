@@ -1,15 +1,15 @@
 import React from 'react';
-import card from './card';
+import Card from './Card';
 import './StarWars.css';
 
-const infoCard = props => {
+const InfoCard = props => {
     return (
         <div className="infoCard">
             {props.starwarsChars.map(character => {
-                return <card key={character.created} characterInfo={character}/>
+                return <Card key={character.created} characterInfo={character}/>
             })}
         </div>
     );
 };
 
-export default infoCard;
+export default InfoCard;
