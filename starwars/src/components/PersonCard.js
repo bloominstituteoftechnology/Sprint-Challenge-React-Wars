@@ -8,9 +8,6 @@ const PersonCard = props => {
 
 
     return (
-     
-
-
 
         <CardColumns className="card-columns">
             <Card style={{ backgroundColor: '#ffffff00', borderColor: '#333' }} className="person-card">
