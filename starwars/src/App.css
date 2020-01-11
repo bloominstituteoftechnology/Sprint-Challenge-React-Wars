@@ -1,8 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
+
+.App h1 {
+  background: black;
+  padding: 20px 0;
+  font-size: 50px;
+}
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: black;
+  text-shadow: 1px 2px 9px #fddb3a;
 }
 /* write your parent styles in here for your App.js */
