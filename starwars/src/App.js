@@ -2,6 +2,12 @@ import React, {useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
 import LandingPage from './components/LandingPage';
+import styled from 'styled-components';
+
+const StyledTitle = styled.h1`
+  margin-bottom: 3%;
+  font-size: 80px;
+`;
 
 
 const App = () => {
@@ -23,7 +29,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <StyledTitle className="Header">React Wars</StyledTitle>
       <LandingPage data={data}/>
     </div>
   );
