@@ -41,6 +41,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       Props are basically parameters in React. They are used to pass down data.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+      Side effects are functions can perform more than one task.
 
 ## Project Set Up
 
