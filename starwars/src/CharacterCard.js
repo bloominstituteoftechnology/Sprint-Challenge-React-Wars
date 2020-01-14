@@ -12,7 +12,7 @@ const Names = styled.div`
 	color: black;
 	display: flex;
 	align-items: center;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	padding: 1%;
 `;
@@ -21,9 +21,9 @@ const Data = styled.div`
 	color: #ad7d37;
 	display: flex;
 	box-sizing: content-box;
-	width: 30%;
+	width: 25%;
 	border: solid #7e7863;
-	font-size: 24px;
+	font-size: 25px;
 	border-radius: 25px;
 	padding: 1%;
 	background: #2e557c;
