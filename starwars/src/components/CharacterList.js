@@ -9,8 +9,8 @@ export default function CharacterList () {
         axios
         .get('https://swapi.co/api/people')
         .then(response => {
-           setPeople(response.data); 
-           console.log(response);
+           setPeople(response.data.results); 
+           console.log(response.data.results[0]);
             
         })
         .catch(error => console.log(error));
@@ -20,9 +20,11 @@ export default function CharacterList () {
 
     
     
-        const CharacterList = props => {
-            return <div className="cast">{this.people.map()}</div>;
-          }; 
-           return <CharacterCard key people={people}/>
-       
+    return (
+		<div>
+			{people.map((attr) => {
+				return <CharacterCard attr={attr} />;
+			})}
+		</div>
+	);
 }

@@ -19,8 +19,10 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Star Wars Characters</h1>
 <CharacterList />
-    </div>
-  );
+</div>
+     );
+   
 }
 
-export default App;
+
+export default App
