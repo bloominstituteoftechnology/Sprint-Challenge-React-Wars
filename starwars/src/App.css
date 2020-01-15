@@ -2,7 +2,59 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
+  color: dodgerblue;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+#root{
+  width: 100w;
+  height: 100vh;
+  color: #2a2223;
+  margin: 0;
+  padding: 20px;
+}
+h1{
+  color:#474747;
+  font-size: 25px;
+  background: sandybrown; 
+  padding: 10px;
+}
+
+.cast{
+  display: grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 20px auto;
+  max-width: 900px;
+}
+.people-list{
+  background: beige; 
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.3)
+ 
+}
+p{
+  padding: 10px;
+}
+p:nth-child(){
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  text-overflow: ellipsis;
+  flex-wrap: no-wrap;
+  overflow: hidden;
+  max-height: 10em;
+  line-height: 1.2em;
+}
+@media (max-width: 580px) {
+  .people-list{
+    justify-content: center;
+    align-self: center;
+    font-size: 0.9rem;
+    margin: 0 5rem;
+    width: 300px;
+
+  }
+}
