@@ -21,7 +21,12 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <InfoCard starwarsChars={this.state.starwarsChars} />
+      {character.map((char, id) => {
+        console.log(char.birth_year)
+        return (
+          <InfoCard starwarsChars={starwarsChars} />
+        )
+      })}
     </div>
   );
 
