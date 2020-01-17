@@ -24,16 +24,12 @@ const App = () => {
       {character.map((char, id) => {
         console.log(char.birth_year)
         return (
-          <InfoCard starwarsChars={starwarsChars} />
+          <InfoCard starwarsChars={starwarsChars}/>
         )
       })}
     </div>
   );
 
-  
-  
 }
-
-
 
 export default App;
