@@ -24,7 +24,7 @@ const App = () => {
       {character.map((char, id) => {
         console.log(char.birth_year)
         return (
-          <InfoCard starwarsChars={starwarsChars}/>
+          <InfoCard key={id} starwarsChars={char} />
         )
       })}
     </div>
