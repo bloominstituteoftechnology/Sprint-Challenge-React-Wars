@@ -4,7 +4,7 @@ import './StarWars.css';
 
 const CharacterList = ((props) => {
     return (
-        <div>
+        <div className="card">
             <Card data={props}/>
         </div>
     );
