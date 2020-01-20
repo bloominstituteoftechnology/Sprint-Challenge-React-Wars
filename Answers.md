@@ -10,7 +10,7 @@
 
 1. Describe state.
 
-    -State is what a component is or isnt. I usually reference a traffic light, a traffic light has three different states: red, yellow and green. Similarily to Facebook, if a user want to change something in their bio, theyre changing the state of it. 
+    --State is what a component is or isnt. I usually reference a traffic light, a traffic light has three different states: red, yellow and green. Similarily to Facebook, if a user want to change something in their bio, theyre changing the state of it. 
 
 1. Describe props.
 
