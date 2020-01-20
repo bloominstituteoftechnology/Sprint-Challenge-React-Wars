@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <Container className="App">
-      <Col xs="3">
+      <Col xs="3" >
         <h1 className="Header">React Wars</h1>
           {character.map((characteristic, id) => {
             return (
