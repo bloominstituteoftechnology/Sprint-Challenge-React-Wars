@@ -9,15 +9,15 @@ import styled from "styled-components"
 const Style = styled.div`
     width: 100%;
     color: black;
-    background-color: transparent;
+    background-color: peru;
     border: solid 1px black;
 `;
 
 const Card = props => {
     return (
         <Style>
-            <Row className="body"> 
-                <CardBody >
+            <Row> 
+                <CardBody>
                     <CardImg className="image" src="https://www.redwolf.in/image/cache/catalog/artwork-Images/sweatshirts/star-wars-logo-sweatshirt-artwork-128x128.png" alt="Card image cap" />
                     <CardTitle>{props.data.setCharacter.name}</CardTitle>
                     <CardSubtitle>Height: {props.data.setCharacter.height}</CardSubtitle>

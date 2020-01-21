@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
 import CharacterList from './components/CharacterList';
-import {Container, Col} from 'reactstrap';
-
+import {Container, Col, Row} from 'reactstrap';
 
 const App = () => {
   const [character, setCharacter] = useState([])
@@ -24,14 +23,15 @@ const App = () => {
 
   return (
     <Container className="App">
-      <Col xs="3" >
-        <h1 className="Header">React Wars</h1>
-          {character.map((characteristic, id) => {
-            return (
-              <CharacterList key={id} setCharacter={characteristic} />
-            )
-          })}
-        </Col>
+      <h1 className="Header">React Wars</h1>
+      <Row>
+          
+            {character.map((characteristic, id) => {
+              return (
+                <Col style={{ marginBottom: "20px", marginTop: "70px "}} xs="3"> <CharacterList key={id} setCharacter={characteristic} /> </Col>
+              )
+            })}
+        </Row>
     </Container>
   );
 }
