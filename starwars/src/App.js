@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
-import styled from "styled-components";
+import styled from "styled-components"; 
 
 
 const App = () => {

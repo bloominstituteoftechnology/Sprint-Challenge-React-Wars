@@ -15,7 +15,8 @@ box-shadow: 3px 3px 1px black;
 `;
 const H2Style = styled.h2`
 line-height: 2rem;
-`
+`;
+
 
 const CharacterCard = props => {
     return (
