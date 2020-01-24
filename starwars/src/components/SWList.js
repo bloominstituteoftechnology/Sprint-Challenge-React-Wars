@@ -10,7 +10,7 @@ export default function SWList(){
         axios
             .get('https://swapi.co/api/people/')
             .then(response => {
-                console.log("axios", response.data.results);
+                console.log("axios", response);
                 setDetails(response.data.results);
                 
             })
