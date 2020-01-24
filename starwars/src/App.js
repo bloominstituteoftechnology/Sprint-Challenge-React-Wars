@@ -15,19 +15,21 @@ const App = () => {
   const [Data, setData] = useState([])
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
-    .then(res => {console.log(res.data.results)
-    setData(res.data)})
+    .then(res => {console.log(res)
+    setData(res)})
     .catch(error => {console.log('no data', error)})
   },[]);
 
   return (
+    
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterContainer charData = {Data.results} />
+      <CharacterContainer charData = {Data} />
       
 
     </div>
   );
 }
+
 
 export default App;

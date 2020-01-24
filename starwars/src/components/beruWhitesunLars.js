@@ -7,7 +7,7 @@ const Beru = props => {
 
     return (
         <div>
-            <h2>{props.beruProps.name}</h2>
+            <h2>{props.beruProp}</h2>
         </div>
     )
 }
