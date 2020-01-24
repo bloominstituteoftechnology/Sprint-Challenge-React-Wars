@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const CardDiv = styled.div`
 background-color:black;
-text-align:center;
 width:50%;
 opacity:75%;
 display:flex;
