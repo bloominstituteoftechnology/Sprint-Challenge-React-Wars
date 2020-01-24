@@ -1,3 +1,6 @@
+// note to self: this project is broken because starwars won't let me access their api. Do not refer to this for future projects.
+
+
 import React  from 'react';
 import './App.css';
 import StarWarsContainer from './components/StarWarsContainer';

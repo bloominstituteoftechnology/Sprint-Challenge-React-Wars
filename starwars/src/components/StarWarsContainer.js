@@ -1,5 +1,12 @@
+// note to self: this project is broken because starwars won't let me access their api. Do not refer to this for future projects.
+
+
 import React, {useState, useEffect}  from 'react';
 import axios from 'axios';
+import StarWars from './StarWars';
+
+
+
 export default function StarWarsContainer () {
     const [character, setCharacter] = useState([]);
     useEffect(() => {
@@ -14,7 +21,20 @@ export default function StarWarsContainer () {
     
     return (
             <div>
-                {/* {character.map(c => {
+              
+                   
+                        <StarWars
+                        key={3}
+                        name={'Luke Skywalker'}
+                        height={'5-11'}
+                        hair={'brown'}
+                        skin={'light'}
+                        eyes={'blue'}
+                        dob={'2023'}
+                        gender={'Male'}
+                        />
+                   
+                   {/* {character.map(c => {
                     return (
                         <StarWars
                         key={c.mass}
@@ -27,7 +47,8 @@ export default function StarWarsContainer () {
                         gender={c.gender}
                         />
                     );
-                })} */}
+                })}  */}
+              
             </div>
         );
 }
