@@ -1,26 +1,17 @@
-import React, {useEffect, useState} from "react";
-import StarWarsCard from "./StarWarsCards";
-import axios from "axios"
-import {Card, CardText, CardBody, CardTitle, Button, Col} from "reactstrap";
+import React from "react";
+// import {Card, CardText, CardBody, CardTitle, Button, Col} from "reactstrap";
 
-let StarWars = ({people}) => {
+const StarWars = (props) => {
 
-    return (
-        <Col xs="12" md="6" xl="3">
-            <Card>
-                <CardBody>
-                    <CardTitle>{people.name}</CardTitle>
-                    <CardText>
-                    {people.height}
-                    {people.birth_year}
-                    {people.gender}
-                    {people.species}
-                    {people.films.length}
-                    </CardText>
-                    <Button>Button</Button>
-                </CardBody>
-            </Card>
-        </Col>
+    return(
+        <div>
+        {props.name}
+        {props.height}
+        {props.birth_year}
+        {props.gender}
+        {props.species}
+        {props.films.length} 
+        </div>
     )
 }
 

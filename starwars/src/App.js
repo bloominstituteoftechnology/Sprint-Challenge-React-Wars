@@ -17,7 +17,7 @@ const App = () => {
             .get("https://swapi.co/api/people")
             .then(response => {
                 console.log(response);
-                setSWdata(response.data.request)
+                setSWdata(response.data.results)
             })
             .catch(error =>{
                 console.log("error found", error);
@@ -27,18 +27,18 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {swData.map(people => {
-        return (
+      {swData.map(people => (
+        console.log(people)
           <StarWars
           name = {people.name}
           height = {people.height}
           birthDate = {people.birth_year}
           gender = {people.gender}
           species = {people.species}
-          films = {people.films.length}
+          // // films = {people.films.length}
           />
         )
-      })}
+      )}
     </div>
   );
 }
