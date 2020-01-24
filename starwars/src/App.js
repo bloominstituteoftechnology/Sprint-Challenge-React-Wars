@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import styled from "styled-components"
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -28,6 +30,7 @@ const App = () => {
       {data.map(character =>{
         return(
       <CharacterCard 
+      key = {1234}
       name = {character.name}
       birth = {character.birth_year}
       eyes = {character.eye_color}
