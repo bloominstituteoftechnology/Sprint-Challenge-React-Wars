@@ -5,17 +5,17 @@ import {
     CardTitle,
     CardSubtitle,
     Col
-} from "reactstrap"
+} from "reactstrap";
 
 
 const CharacterCard = (props) => {
-
+    console.log('in props',props);
     return (
         <Col xs="6" md="3" xl="2">
             <Card>
-                <CardTitle>{props.name}</CardTitle>
-                <CardText>{props.url}</CardText>
-                <CardSubtitle>{props.species}</CardSubtitle>
+                <CardTitle>{props.card.name}</CardTitle>
+                <CardText>{props.card.url}</CardText>
+                <CardSubtitle>{props.card.species}</CardSubtitle>
             </Card>        
         </Col>
     )

@@ -19,8 +19,11 @@ export default function CharacterList(props) {
         <Container>
             <Row>
             {card.map(card => {
+                console.log(card);
+
             return (
-                <CharacterCard key={card}
+                <CharacterCard key={card.name}
+                card={card}
                 />
             );
         })}
