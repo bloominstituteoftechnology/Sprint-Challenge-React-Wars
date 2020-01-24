@@ -23,13 +23,11 @@ useEffect(() => {
 return(
 
 <div className="App">
-      <h1>className="Header">React Wars</h1>
+      <h1 className="Header">React Wars</h1>
     </div>
     
 );
 }
-
-
 
 
 export default SWList;
