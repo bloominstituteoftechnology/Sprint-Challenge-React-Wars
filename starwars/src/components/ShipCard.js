@@ -6,27 +6,24 @@ const Card = styled.div`
 
     width: 200px;
     background: rgba(225,225,225, 0.7);
-    padding: 4% 0;
+    padding: 4% 2%;
     border: 1px solid grey;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     font-size: 2rem;
 `; 
 
-const CharacterCard = props => {
+const ShipCard = props => {
 //console.log(props);
   return (
     <Card>
       <h2>{props.name}</h2>
-      <p>Year born: {props.birthyear}</p>
+      <p>Model: {props.model}</p>
       <p>
-        Height and weight: {props.height}cm, {props.mass}kg
+        Made by: {props.manufacturer}
       </p>
-      <p>
-        Attributes: {props.hair} hair, with {props.eyes} eyes
-      </p>
-      <p>Gender: {props.sex}</p>
+      <p>Gender: Robot</p>
     </Card>
   );
 };
 
-export default CharacterCard;
+export default ShipCard;
