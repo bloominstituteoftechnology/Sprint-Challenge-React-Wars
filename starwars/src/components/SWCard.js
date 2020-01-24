@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
-import {
-  Card, CardBody, CardTitle, CardSubtitle
+import { Card, CardBody, CardTitle, CardSubtitle
 } from 'reactstrap';
 
 
@@ -26,6 +25,7 @@ background-color: #000000;
 
 const SWCard = (props) => {
   return (
+
     <ContentContainer>
         
          <Card>
@@ -41,6 +41,7 @@ const SWCard = (props) => {
         </CardBody>
         </Card>
     </ContentContainer>
+
   );
 };
 
