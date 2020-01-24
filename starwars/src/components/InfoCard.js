@@ -19,10 +19,10 @@ const StyledInfo = styled.h5`
 const InfoCard = props => {
 return (
  <Card>
-<SWName>{props.name}</SWName>
-<StyledInfo>Gender: {props.gender}</StyledInfo>
-<StyledInfo>Height: {props.height}cm</StyledInfo>
-<StyledInfo>Weight: {props.mass}kg</StyledInfo>            
+<SWName> {props.name} </SWName>
+<StyledInfo>Gender: {props.gender} </StyledInfo>
+<StyledInfo>Height: {props.height} cm</StyledInfo>
+<StyledInfo>Weight: {props.mass} kg </StyledInfo>            
  </Card>
     )
 }
