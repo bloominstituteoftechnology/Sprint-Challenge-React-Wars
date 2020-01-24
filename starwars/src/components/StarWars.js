@@ -15,9 +15,16 @@ const Header = styled.div`
 
 `;
 
+const CardContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+`
+
 const CharacterCard = styled.div` 
 background: orange;
-width: 200px;
+width: 300px;
 max-height: 300px;
 display: flex;
 align-items: center;
@@ -33,16 +40,18 @@ const StarWars = props => {
         <div>
             <CharacterCard>
              <Card>
-             <CardBody>
-            <CardTitle><Header>{props.name}</Header></CardTitle>
-            <CardText>
-                <p>Gender: {props.gender}</p>
-                <p>DOB: {props.dob}</p>
-                <p>Height: {props.height}</p>
-                <p>Hair: {props.hair}</p>
-                <p>Skin: {props.skin}</p>
-                <p>Eye Color: {props.eyes}</p>
-                </CardText>
+                <CardBody>
+                    <CardContent>
+                    <CardTitle><Header>{props.name}</Header></CardTitle>
+                    <CardText>
+                    <p>Gender: {props.gender}</p>
+                    <p>DOB: {props.dob}</p>
+                    <p>Height: {props.height}</p>
+                    <p>Hair: {props.hair}</p>
+                    <p>Skin: {props.skin}</p>
+                    <p>Eye Color: {props.eyes}</p>
+                    </CardText>
+                    </CardContent>
                 </CardBody>
                 </Card>
             </CharacterCard>
