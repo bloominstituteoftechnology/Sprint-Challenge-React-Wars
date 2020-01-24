@@ -1,35 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 const Card = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+display: inline-block;
 background: lightgray;
-color: white;
+color: black;
 width: 200px;
 max-height: 300px;
 margin: 5%;
-padding: 1%;
+padding: 15px 5px;
 opacity: 45%;
-
+overflow: hide;
+line-height: 1rem;
+`;
+const H2Style = styled.h2`
+line-height: 2rem;
 `
 
 const CharacterCard = props => {
     return (
         <Card>
-<h1>{props.name}</h1>
-<h2>{props.birth}</h2>
-<h2>{props.eyes}</h2>
-<h2>{props.gender}</h2>
-<h2>{props.hair}</h2>
-<h2>{props.height}</h2>
-<h2>{props.mass}</h2>
-<h2>{props.skin}</h2>
-<h2>{props.home}</h2>
-<h2>{props.films}</h2>
-<h2>{props.species}</h2>
-<h2>{props.starships}</h2>
-<h2>{props.vehicles}</h2>
+<H2Style>Character: <br/> {props.name}</H2Style>
+<p>Character born: {props.birth}</p>
+<p>Character gender: {props.gender}</p>
+<p>Character hair: {props.hair}</p>
+<p>Character height: {props.height}</p>
+<p>Character mass: {props.mass}</p>
+<p>Character skin: {props.skin}</p>
         </Card>
 
     );

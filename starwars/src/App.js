@@ -30,7 +30,6 @@ const App = () => {
       {data.map(character =>{
         return(
       <CharacterCard 
-      key = {1234}
       name = {character.name}
       birth = {character.birth_year}
       eyes = {character.eye_color}
