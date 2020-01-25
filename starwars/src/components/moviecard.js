@@ -19,6 +19,7 @@ return (
 <h1>{props.name}</h1>
 <p>height: {props.height},</p>
 <p>Mass: {props.mass},</p>
+<p>birth: {props.birth}</p>
 </div>
 </CardDiv>
 )}
