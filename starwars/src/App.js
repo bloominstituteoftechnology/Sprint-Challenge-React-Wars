@@ -26,7 +26,6 @@ function App() {
     <div className="App">
        <h1 className="Header">React Wars</h1>
        {!person.length && <h2>Loading…</h2>}
-       
        {
          person.map((human, id ) => {
          return(
