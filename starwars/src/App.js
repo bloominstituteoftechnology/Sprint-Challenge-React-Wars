@@ -8,7 +8,10 @@ import SWList from "./components/SWList";
 //import styles
 import styled from "styled-components";
 
-
+const StyledHeader = styled.h1`
+ text-align: center;
+  margin: 0 auto;
+`
 
 
 function App() {
@@ -28,14 +31,14 @@ function App() {
 
   return (
     <div className="App">
-      <styled>
+      <StyledHeader>
       <header>
         <h1 className="Header">React Wars</h1>
       </header>
       <SWList />
       {/*<Reactstrap />*/}
 
-      </styled>
+      </StyledHeader>
     
     </div>
   );
