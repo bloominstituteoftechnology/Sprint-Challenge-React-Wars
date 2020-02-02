@@ -1,15 +1,14 @@
 {
-  "name": "starwars",
-  "version": "0.1.1",
+  "name": "style-with-styled-components",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/runtime": "^7.8.3",
-    "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.0",
-    "reactstrap": "^8.4.1",
+    "react-scripts": "3.3.0",
     "styled-components": "^5.0.0"
   },
   "scripts": {
