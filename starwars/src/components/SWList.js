@@ -20,24 +20,24 @@ function SWList() {
   return (
     <div className="character-list">
       {people.map(people => {
-        return (
+       return (
+
+
           <CharacterCard
             key={people.index}
             name={people.name}
             height={people.height}
             mass={people.mass}
             eye={people.eye}
-            hair
-            ={people.hair}
-            skin
-            ={people.skin}
+            hair={people.hair}
+            skin={people.skin}
             birth_year={people.birth_year}
             gender={people.gender}
             homeworld={people.homeworld}
           />
         );
       })}
-    </div>
+    //</div>
   );
 }
 

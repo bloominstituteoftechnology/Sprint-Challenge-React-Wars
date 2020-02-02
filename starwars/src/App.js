@@ -31,11 +31,12 @@ function App() {
 
   return (
     <div className="App">
+       
       <StyledHeader>
       <header>
         <h1 className="Header">React Wars</h1>
       </header>
-      <SWList />
+      <SWList/>
       {/*<Reactstrap />*/}
 
       </StyledHeader>
