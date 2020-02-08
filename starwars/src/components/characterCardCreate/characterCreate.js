@@ -2,12 +2,16 @@ import React from 'react'
 import CardAssemble from "./CardAssemble"
 import {CardContainer, Card} from './cardStyle'
 
-
-const CardCreate = props => {
+//declaring constructor CardsCreate passing props from dataGet
+const CardsCreate = props => {
 
 console.log(props.character)
+//selecting CardContainer from ./cardStyle.js
+//then mapping trhough aray of characters and passing it through CardAssemble
 return(
+
   <CardContainer>
+
   {props.character.map(character =>{
     return(
       <CardAssemble character = {character}/>
@@ -18,8 +22,8 @@ return(
 
 
 }
-
-export default CardCreate;
+//exporting constructor
+export default CardsCreate;
 // return (
 // <CardContainer>
 // {props.character.map(character =>{

@@ -1,18 +1,18 @@
 import React from "react";
 import {CardContainer} from '../characterCardCreate/cardStyle'
-import CardCreate from '../characterCardCreate/characterCreate'
+import CardsCreate from '../characterCardCreate/characterCreate'
 
 
-//declaring function PageCreate passin
+//declaring function PageCreate
 const PageCreate = () => {
-  //checking to make sure targeting works
+
 
 //returning desired result
   return(
-    //passing data through props targeting to fill in information.
-    <CardContainer>
-      <CardCreate></CardCreate>
-    </CardContainer>
+
+  //returning completed cards
+      <CardsCreate></CardsCreate>
+
   )
 };
 //exporting PageCreate to be used in dataGet.js, but completed.

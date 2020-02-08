@@ -5,6 +5,7 @@ import {CardContainer, Card} from './cardStyle'
 const CardAssemble = props => {
 
 console.log(props.character)
+//assembling cards passing info through props
 return(
 <Card>
 <h3>{props.character.name}</h3>

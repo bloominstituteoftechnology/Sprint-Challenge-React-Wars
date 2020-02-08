@@ -13,9 +13,19 @@ width: 1000px;
 export const Card = styled.div`
 
 background-color: white;
-width: 400px;
-height: 400px;
+width: 300px;
+height: 250px;
 margin: 20px;
+padding: 40px;
+& > h3{
+  text-align: center;
+}
+& > p{
+  text-align: left;
+}
+&:hover{
+
+}
 
 
 `;
