@@ -24,14 +24,7 @@ return (
     <div className="character">
         {people.map(star => {
             return (
-                <CharacterCard
-                    key={star.name}
-                    name={star.name}
-                    height={star.height}
-                    mass={star.mass}
-                    hair_color={star.hair_color}
-                    skin_color={star.skin_color}
-                />
+                <CharacterCard  key={star.name}  name={star.name} height={star.height} mass={star.mass} />
             );    
         })}
     </div>
