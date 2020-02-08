@@ -18,6 +18,9 @@ const CharCardCont = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
+  const [ shipSearch, setShipSearch] = useState("");
+  const [shipResult, setShipResults] = useState([]);
+
   function handleChanges(event){
     setSearchTerm(event.target.value)
   };
@@ -46,18 +49,27 @@ const CharCardCont = () => {
     axios
     .get("https://swapi.co/api/starships/")
     .then(response => {
+      console.log(response.data.next)
+      const lowerCaseShips = response.data.results.filter(element => 
+          element.name.toLowerCase().includes(shipSearch.toLowerCase())
+    );
+        setShipResults(lowerCaseShips);
         setShip(response.data.results);
 
   }).catch(error => {
       console.log("The data was not returned", error);
   })
 
-  }, []);
-  console.log(searchResults)
+  }, [shipSearch]);
+  
+  function handleShipChanges(event){
+    setShipSearch(event.target.value)
+  };
 
   return (
     <CardContainer>
         <section>
+        <h3>Characters</h3>
           <input
           type="text"
           placeholder="Search"
@@ -78,7 +90,14 @@ const CharCardCont = () => {
       ))}
       </section>
       <section>
-      {ship.map((whip, index) => (
+        <h3>Ships</h3>
+        <input 
+          type="text"
+          placeholder="Search"
+          value={shipSearch}
+          onChange={handleShipChanges}
+        />
+      {shipResult.map((whip, index) => (
         <ShipCard 
          key={index}
          name={whip.name}
