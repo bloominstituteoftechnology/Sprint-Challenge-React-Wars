@@ -12,11 +12,11 @@ import styled from "styles";
                     <Col xs="6" sm="4">
                         <div>
                             <Card>
-                                <CardBody>
-                                        <CardTitle>Card title</CardTitle>
-                                        <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardBody className="card">
+                                        <CardTitle className="character-name">{props.name}</CardTitle>
+                                        <CardSubtitle>Character Biography</CardSubtitle>
                                         <CardText>
-                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                            
                                         </CardText>
                                 </CardBody>
                             </Card>

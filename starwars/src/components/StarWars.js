@@ -2,50 +2,40 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import CharacterCard from './characterCard';
 
-
-const StarWars = () => {
-    const [data] = useState("");
-     
-     
+export default function StarWars () {
+    const [people, setPeople] = useState ([])
 
 
-    useEffect(() => {
-        function getPeople() {
+useEffect(() => {
+    function getPeople() {
         axios
-            .get(
-            'https://swapi.co/api/people/'
-            
-            )
-            .then(response => {
-                console.log(response.data.results);   
-            })
-            .catch (error => console.log(error));
-        }
-        getPeople();
-    } ,[]);
+        .get(`https://swapi.co/api/people/`)
+        .then(response => {
+        console.log(response.data.results);
+        setPeople(response.data.results);
+        })
+        .catch(error => {console.log("Error Message", error);
+          });
+    };
+getPeople();    
+}, []);
 
-    
-    return (
+return (
+    <div className="character">
+        {people.map(star => {
+            return (
+                <CharacterCard
+                    key={star.name}
+                    name={star.name}
+                    height={star.height}
+                    mass={star.mass}
+                    hair_color={star.hair_color}
+                    skin_color={star.skin_color}
+                />
+            );    
+        })}
+    </div>
+);
+}
 
-        <section className="container">
-            <div className = "topSection">
-                <h1 className = "mainHeader">
-                     React Wars
-                </h1>
-                <CharacterCard />
-            </div>
-            <div className = "pictureCard">
-            {/*     <h2>
-                    {name}
-                </h2>
-                <h3>
-                    {gender}
-                </h3> */}
-                 
-                
-            </div>
-        </section>
-    )
-};
-
-export default StarWars;
+ 
