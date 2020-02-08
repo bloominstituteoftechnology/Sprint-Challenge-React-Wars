@@ -52,21 +52,28 @@ const App = () => {
     e.preventDefault()
     const res_search = data.filter((person) => person.name.toLowerCase().includes(search.toLowerCase()))
     const res = res_search.filter((person) => person.gender.toLowerCase() === gender.toLowerCase())
+    setPage(1)
     setPeople(res)
   }
 
   const handlePageChange = (n) => {
-    let newPage = page + n
-    if (newPage < 1) {
-      newPage = 1
-    } else if (newPage > data.length /2) {
-      newPage = data.length /2
+    if (n === 'n' || n === 'p') {
+      n = n === 'n' ? 1 : -1
+      let newPage = page + n
+      if (newPage < 1) {
+        newPage = 1
+      } else if (newPage > data.length /2) {
+        newPage = data.length /2
+      }
+      setPage(newPage)
+    } else {
+      setPage(n)
     }
-    setPage(newPage)
+
   }
 
   const currentPage = (currentPage) => {
-    return data.slice(currentPage - 1, currentPage + 1)
+    return people.slice(currentPage - 1, currentPage + 1)
   }
 
   return (
@@ -83,7 +90,7 @@ const App = () => {
           <p>loading</p>
         }
       </CardDiv>
-      <Paginator handlePageChange={handlePageChange} page={page} people={people} />
+      {people !== [] ? <Paginator handlePageChange={handlePageChange} page={page} data={data} /> : <p>loading</p>}
     </Container>
   );
 }
