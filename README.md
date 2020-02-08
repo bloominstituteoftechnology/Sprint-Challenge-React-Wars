@@ -26,13 +26,34 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    - React is a user interface component library, and ti's solve and manage all the data without running down the DOM or the web browser.  The HTML components will be given to the search engine, the virtual DOM, and then react will take it, and it will show on your screen after it's compiled. After, the DOM is updated and it takes notes of what has been changed, thus taking strain off the browser, making all smooth.
+
 - [ ] What does it mean to _think_ in react?
+
+    - 1) Once you have hierarchy, after breaking down the UI, make sure every component and subcomponent have a drawn box,. Then, you would use the "single responsibility component, which should only be in charge of one thing. 
+
+      2) nEXT, You will want to include a static version, and add components to reuse other compnents and pass data threw, the app using "props".  Now, state is reserved so that it is interactive, meaning you can build it top-to-bottom OR bottom-to-top.  
+      3) Next, you'll want to identify the representation of the UI state, and you can make it interactive by changes triggered by the underlying data. 
+      4) Now, you will want to idetify where the sates live.  Look at each component or it's own state. 
+      5) Lastly, add inverse daata flow. 
+
 
 - [ ] Describe state.
 
+    - A state is plain JavaScript, and it's managed with the component, it's kind of like variables that are declared into a function. And, states are the object that represents the part of the app that changes. 
+
 - [ ] Describe props.
 
+    - The Props are also plain Javascrot, that are passed threw componests, but it's equivlant to the function parameters.  Props are just arguments passes within the React components threw the HTML
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    - 1) The side effect is anything the would affect something, outside of the scope, and functions.  An example of a side effect would be it retreaving data from the API, and manually ajusting the DOM
+
+    2) THere would be 2 main side effects in React, first, the side effect that would be ones that need clean up, and the other ones that wouldn't.  yOU Would need to use a hook, to find and preform the side effets in the functions componensts. 
+
+    3) And React syncing to the DOM wed use our current proprs and statesl  it would be similat to the usEffect.  And this lets use syncrhtonise things to the outside of React.  The only updates parts will the the changed ones, and using dependency  in the effect hook, will allow each state or prop to be effected, and synced with. 
+
 
 ## Project Set Up
 
