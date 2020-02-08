@@ -12,8 +12,14 @@ const Card = styled.div`
     font-size: 2rem;
 `; 
 
+const shipPics = styled.img`
+
+    width: 100px;
+    height 100px;
+`;
+
 const ShipCard = props => {
-//console.log(props);
+
   return (
     <Card>
       <h2>{props.name}</h2>
@@ -22,6 +28,8 @@ const ShipCard = props => {
         Made by: {props.manufacturer}
       </p>
       <p>Gender: Robot</p>
+      <img src={props.url}/>
+      
     </Card>
   );
 };

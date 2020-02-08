@@ -10,23 +10,36 @@ const CardContainer = styled.div`
     justify-content: space-between;
 `;
 
+
 const CharCardCont = () => {
   const [character, setCharacter] = useState([]);
   const [ship, setShip] = useState([]);
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  function handleChanges(event){
+    setSearchTerm(event.target.value)
+  };
 
   // pull from Star Wars people API
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people/")
       .then(response => {
+        const results = response.data.results.filter(element => 
+            element.name.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+
+        setSearchResults(results);
         setCharacter(response.data.results);
-        console.log(response.data.results);
+        
       })
       .catch(error => {
         console.log("The data was not returned", error);
       });
 
-  }, []);
+  }, [searchTerm]);
   
   // pull from Star Wars starships API
   useEffect(() => {
@@ -34,18 +47,24 @@ const CharCardCont = () => {
     .get("https://swapi.co/api/starships/")
     .then(response => {
         setShip(response.data.results);
-      //  console.log(response.data.results);
+
   }).catch(error => {
       console.log("The data was not returned", error);
   })
 
   }, []);
-  
+  console.log(searchResults)
 
   return (
     <CardContainer>
         <section>
-      {character.map((person, index) => (
+          <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleChanges}
+          />
+      {searchResults.map((person, index) => (
         <CharacterCard
           key={index}
           name={person.name}
