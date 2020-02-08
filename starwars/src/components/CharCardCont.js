@@ -12,20 +12,16 @@ const CardContainer = styled.div`
 
 
 const CharCardCont = () => {
-  const [character, setCharacter] = useState([]);
-  const [ship, setShip] = useState([]);
 
+  // ======== pull from Star Wars people API ========
+  const [character, setCharacter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-
-  const [ shipSearch, setShipSearch] = useState("");
-  const [shipResult, setShipResults] = useState([]);
 
   function handleChanges(event){
     setSearchTerm(event.target.value)
   };
 
-  // pull from Star Wars people API
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people/")
@@ -44,15 +40,23 @@ const CharCardCont = () => {
 
   }, [searchTerm]);
   
-  // pull from Star Wars starships API
+  // ======== pull from Star Wars starships API ========
+  const [ship, setShip] = useState([]);
+  const [page, setPage] = useState(2)
+  const [ shipSearch, setShipSearch] = useState("");
+  const [shipResult, setShipResults] = useState([]);
+
+  function handleShipChanges(event){
+    setShipSearch(event.target.value)
+  };
+
   useEffect(() => {
     axios
-    .get("https://swapi.co/api/starships/")
+    .get(`https://swapi.co/api/starships/?page=${page}`)
     .then(response => {
-      console.log(response.data.next)
       const lowerCaseShips = response.data.results.filter(element => 
           element.name.toLowerCase().includes(shipSearch.toLowerCase())
-    );
+          );
         setShipResults(lowerCaseShips);
         setShip(response.data.results);
 
@@ -61,10 +65,6 @@ const CharCardCont = () => {
   })
 
   }, [shipSearch]);
-  
-  function handleShipChanges(event){
-    setShipSearch(event.target.value)
-  };
 
   return (
     <CardContainer>
@@ -91,6 +91,9 @@ const CharCardCont = () => {
       </section>
       <section>
         <h3>Ships</h3>
+        <button onClick={() => setPage(1)}>1</button>
+        <button onClick={() => setPage(2)}>2</button>
+        <button onClick={() => setPage(3)}>3</button>
         <input 
           type="text"
           placeholder="Search"

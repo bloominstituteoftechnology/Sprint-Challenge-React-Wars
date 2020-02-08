@@ -13,7 +13,7 @@ const Card = styled.div`
 `; 
 
 const CharacterCard = props => {
-//console.log(props);
+
   return (
     <Card>
       <h2>{props.name}</h2>
