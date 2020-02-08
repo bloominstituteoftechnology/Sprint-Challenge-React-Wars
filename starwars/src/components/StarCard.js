@@ -13,7 +13,7 @@ const StarCard = props => {
 
            <Card body>
            <CardTitle>{props.character}</CardTitle>
-           <CardText>` Height! {props.howTall}, Weight! {props.weight}``.</CardText>           
+                  
             </Card>
 
            </div>
