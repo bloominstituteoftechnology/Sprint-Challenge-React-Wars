@@ -15,6 +15,7 @@ const CharCardCont = () => {
 
   // ======== pull from Star Wars people API ========
   const [character, setCharacter] = useState([]);
+  const [characterPage, setCharacterPage] = useState(2)
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -24,8 +25,9 @@ const CharCardCont = () => {
 
   useEffect(() => {
     axios
-      .get("https://swapi.co/api/people/")
+      .get(`https://swapi.co/api/people/?page=${characterPage}`)
       .then(response => {
+        console.log(response.data.results)
         const results = response.data.results.filter(element => 
             element.name.toLowerCase().includes(searchTerm.toLowerCase())
           );
@@ -38,7 +40,7 @@ const CharCardCont = () => {
         console.log("The data was not returned", error);
       });
 
-  }, [searchTerm]);
+  }, [searchTerm, characterPage]);
   
   // ======== pull from Star Wars starships API ========
   const [ship, setShip] = useState([]);
@@ -64,12 +66,17 @@ const CharCardCont = () => {
       console.log("The data was not returned", error);
   })
 
-  }, [shipSearch]);
+  }, [shipSearch, page]);
 
   return (
     <CardContainer>
         <section>
         <h3>Characters</h3>
+        <button onClick={() => setCharacterPage(1)}>1</button>
+        <button onClick={() => setCharacterPage(2)}>2</button>
+        <button onClick={() => setCharacterPage(3)}>3</button>
+        <button onClick={() => setCharacterPage(4)}>4</button>
+        <br></br>
           <input
           type="text"
           placeholder="Search"
@@ -94,6 +101,8 @@ const CharCardCont = () => {
         <button onClick={() => setPage(1)}>1</button>
         <button onClick={() => setPage(2)}>2</button>
         <button onClick={() => setPage(3)}>3</button>
+        <button onClick={() => setPage(4)}>4</button>
+        <br></br>
         <input 
           type="text"
           placeholder="Search"
