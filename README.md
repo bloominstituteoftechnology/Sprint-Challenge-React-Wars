@@ -24,11 +24,11 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
     - React is a user interface component library, and ti's solve and manage all the data without running down the DOM or the web browser.  The HTML components will be given to the search engine, the virtual DOM, and then react will take it, and it will show on your screen after it's compiled. After, the DOM is updated and it takes notes of what has been changed, thus taking strain off the browser, making all smooth.
 
-- [ ] What does it mean to _think_ in react?
+- [x] What does it mean to _think_ in react?
 
     - 1) Once you have hierarchy, after breaking down the UI, make sure every component and subcomponent have a drawn box,. Then, you would use the "single responsibility component, which should only be in charge of one thing. 
 
@@ -38,15 +38,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       5) Lastly, add inverse daata flow. 
 
 
-- [ ] Describe state.
+- [x] Describe state.
 
     - A state is plain JavaScript, and it's managed with the component, it's kind of like variables that are declared into a function. And, states are the object that represents the part of the app that changes. 
 
-- [ ] Describe props.
+- [x] Describe props.
 
     - The Props are also plain Javascrot, that are passed threw componests, but it's equivlant to the function parameters.  Props are just arguments passes within the React components threw the HTML
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
     - 1) The side effect is anything the would affect something, outside of the scope, and functions.  An example of a side effect would be it retreaving data from the API, and manually ajusting the DOM
 
@@ -68,12 +68,12 @@ Follow these steps to set up and work on your project:
 <!-- - [x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty. -->
 Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+<!-- - [x] Push commits: `git push origin <firstName-lastName>`. -->
 
 Follow these steps for completing your project:
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
+<!-- - [x] Add your Project Manager as a Reviewer on the Pull-request. -->
 - [ ] TL then will count the HW as done by merging the branch back into master.
 
 
