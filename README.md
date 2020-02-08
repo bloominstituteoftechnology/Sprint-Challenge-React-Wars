@@ -1,38 +1,18 @@
-# Sprint Challenge: React - Star Wars
-
-This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
-
-## Instructions
-
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
-
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
-
-You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency with ReactJS Fundamentals and your command of the concepts and techniques in the Functional Components.
-
-You have three hours to complete this challenge. Plan your time accordingly.
-
-## Commits
-
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons and your Team Lead.
-
-## Description
-
-In this challenge, create a web page that presents a styled list of Star Wars characters. Being able to render out data to a web page is a large part of what JavaScript developers do, this challenge assesses your ability to achieve such a task.
-
 ## Self-Study/Essay Questions
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+    - React JS is a library for JavaScript and it solves the problem that teams of developers face when it comes to putting together each developer's code efficiently. React revolves around creating components, which are like building blocks of the application. Their ability to pass down props improves their reusability and their versatility when plugging into other components. React has a process that allows it to rerender based on the change of state (a variable essentially), and it will reach out to the specific node that is affected by the change and then rerenders it. This rerender is only affects the component that is affected by the change of state and therefore, react is not only a coding paradigm that is easy to assemble in a team, it is also a performant library that could improve user's experience.
 - [ ] What does it mean to _think_ in react?
+    - Coding in react requires a different thought process when it comes to coding with it. You have to think of each feature and part of a web app as an assembly of components all housed by the main component (App in most cases). And each of those components could be even smaller components. You would continually build components to make components until you get to the most simple feature. Doing so would allow you to build out the app to be scalable because the components will have reusability and it will abstract all the relevant code within each component.
 
 - [ ] Describe state.
-
+    - State is basically a variable specific to the component it is declared it. The react component would watch the state carefully and would rerender if the state is involved in triggering changes in the virtual dom. State cannot be directly mutated via "=" assignment.
 - [ ] Describe props.
-
+    -   Props are values that are passed down from parent component to child component. They are passed down by assigning attributes of child components with the value from the parent component. This feature highlights a react way of thinking where data flow is unidirectional (goes one way, top to bottom).
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    - Side effects is the react hooks version of life component cycle. THis allows developers to perform tasks that is out of the class scope such as window events (timers, eventlisteners), or API calls. Side effects are triggered once on load after the page renders completely, and could trigger again on change (depends on what is passed into the second args array). Side effects could also cleanup accumulation of objects and listeners by declaring a return with a function call within the useEffect function.
 
 ## Project Set Up
 
