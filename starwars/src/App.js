@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 
 import CharCard from './components/charCard';
+import Searchbar from './components/searchbar'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
@@ -31,18 +32,31 @@ const App = () => {
   // sync up with, if any.
 
   const [ people, setPeople ] = useState([])
+  const [ search, setSearch ] = useState("")
+  const [ gender, setGender ] = useState("Male")
+  const [ data, setData ] = useState([])
+
   useEffect(() => {
     axios.get("https://swapi.co/api/people/")
       .then((res) => {
-        console.log(res.data.results)
+        console.log(res.data)
+        setData(res.data.results)
         setPeople(res.data.results)
       })
       .catch(err => console.log(err))
   }, [])
 
+  const activateSearch = (e) => {
+    e.preventDefault()
+    const res_search = data.filter((person) => person.name.toLowerCase().includes(search.toLowerCase()))
+    const res = res_search.filter((person) => person.gender.toLowerCase() === gender.toLowerCase())
+    setPeople(res)
+  }
+
   return (
     <Container className="App">
       <h1 className="Header">React Wars</h1>
+      <Searchbar activateSearch={activateSearch} setSearch={setSearch} setGender={setGender} />
       <CardDiv>
         {
           people !== []

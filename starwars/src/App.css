@@ -10,4 +10,8 @@
   width: 300px;
   margin-bottom: 20px;
 }
+
+.searchbar {
+  font-size: 35px;
+}
 /* write your parent styles in here for your App.js */
