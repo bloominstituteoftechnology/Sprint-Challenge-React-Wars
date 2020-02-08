@@ -3,7 +3,8 @@ import './App.css';
 import axios from 'axios';
 
 import CharCard from './components/charCard';
-import Searchbar from './components/searchbar'
+import Searchbar from './components/searchbar';
+import Paginator from './components/paginator';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
@@ -35,6 +36,7 @@ const App = () => {
   const [ search, setSearch ] = useState("")
   const [ gender, setGender ] = useState("Male")
   const [ data, setData ] = useState([])
+  const [ page, setPage ] = useState(1)
 
   useEffect(() => {
     axios.get("https://swapi.co/api/people/")
@@ -53,6 +55,20 @@ const App = () => {
     setPeople(res)
   }
 
+  const handlePageChange = (n) => {
+    let newPage = page + n
+    if (newPage < 1) {
+      newPage = 1
+    } else if (newPage > data.length /2) {
+      newPage = data.length /2
+    }
+    setPage(newPage)
+  }
+
+  const currentPage = (currentPage) => {
+    return data.slice(currentPage - 1, currentPage + 1)
+  }
+
   return (
     <Container className="App">
       <h1 className="Header">React Wars</h1>
@@ -61,11 +77,13 @@ const App = () => {
         {
           people !== []
             ?
-          people.map((person, i) => <CharCard key={i} {...person} />)
+          currentPage(page).map((person, i) => <CharCard key={i} {...person} />)
+          
             :
           <p>loading</p>
         }
       </CardDiv>
+      <Paginator handlePageChange={handlePageChange} page={page} people={people} />
     </Container>
   );
 }
