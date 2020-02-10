@@ -1,0 +1,25 @@
+.row {
+  max-width: 800px;
+}
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  background-color: black;
+}
+
+.card-title,
+.card-subtitle,
+.card-subtitle,
+.card-text {
+  color: #ffe81f;
+}
+
+button img {
+  height: 100px;
+}
+.button-count {
+  color: #ffe81f;
+}
