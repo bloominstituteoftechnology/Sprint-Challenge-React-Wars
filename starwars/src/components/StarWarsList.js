@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StarWarsCard from "./StarWarsCard";
+import axios from "axios";
 
 function StarWarsList() {
     const [list, setList] = useState([])
@@ -8,8 +9,8 @@ function StarWarsList() {
         axios
         .get('https://swapi.co/api/people')
         .then(response => {
-            setList(response.data)
-            console.log(response.data)
+            setList(response.data.results)
+            console.log(response.data.results)
         })
         .catch(error => {
             console.log("the data was not returned", error)

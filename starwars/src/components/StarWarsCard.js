@@ -1,12 +1,13 @@
 import React from "react";
+import { CardTitle, CardText, Card } from "reactstrap"
 
 function StarWarsCard(props) {
     return (
-        <div>
-            <h2>Name: {props.name}</h2>
-            <p>Birth Year: {props.birth_year}</p>
-            <p>Gender: {props.gender}</p>
-        </div>
+        <Card>
+            <CardTitle>Name: {props.name}</CardTitle>
+            <CardText>Birth Year: {props.birth_year}</CardText>
+            <CardText>Gender: {props.gender}</CardText>
+        </Card>
     )
 }
 
