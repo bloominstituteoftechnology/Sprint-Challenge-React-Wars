@@ -5,10 +5,10 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
   max-width: 300px;
   min-width: 300px;
-  padding-top: 20px;
+  padding: 20px 20px 0 0;
   display: flex;
   flex-direction: column;
-  //   justify-content: space-between;
+  justify-content: space-between;
 `;
 const StarWars = props => {
   //   console.log(props);
