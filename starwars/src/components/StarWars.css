@@ -1,15 +1,16 @@
 .card {
     display: flex;
-    width: 80%; 
-    justify-content:
+    width: 40%; 
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .cardholder {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80%;
-    justify-content: center;
+    max-width: 100%;
+    justify-content: space-between;
     align-items: center;
-    
+    margin: 100px;
 
 }
