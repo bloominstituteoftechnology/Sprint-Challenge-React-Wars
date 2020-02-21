@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is built off vanilla javascript. React JS makes it easier to create an app and saves time. It also solves the problem of data flow by making it easier to pass data around.
+
 - [ ] What does it mean to _think_ in react?
+
+To think in react means to think the react pattern when creating an app using components.
 
 - [ ] Describe state.
 
+State is information that can change. For example water as a liquid is a state and water as ice is a state. 
+
 - [ ] Describe props.
 
+Props is short for properties and can be passed to different components.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side effect is code that runs after the page renders. You set the effect to state using the second item in the useState array, a function commonly called "set". 
 
 ## Project Set Up
 
