@@ -24,56 +24,61 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [✔] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+        React JS is a library built by facebook that aims to allow developers to build reusable components in a more readble and functional way via JSX
 
-- [ ] What does it mean to _think_ in react?
+- [✔] What does it mean to _think_ in react?
+      Thinking in react means breaking down all of your ideas and designs into reusable components
 
-- [ ] Describe state.
+- [✔] Describe state.
+      State is current well state of a piece of data or object with react that can be manipulated or changed 
 
-- [ ] Describe props.
+- [✔] Describe props.
+      props are pieces of data that can be pulled from parent components 
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [✔] What are side effects, and how do you sync effects in a React component to state or prop changes?
+      Side Effects are anything that happens to things outside of scope of a function currently being run. As for how you would sync effects in a react component you would use useEffect I believe. 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [✔] Create a forked copy of this project.
+- [✔] Add TL as collaborator on Github.
+- [✔] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [✔] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [✔] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [✔] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
+- [✔] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [✔] Implement the project on this Branch, **committing progress & changes often.**
+- [✔] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] TL then will count the HW as done by merging the branch back into master.
+- [✔] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [✔] Add your Project Manager as a Reviewer on the Pull-request.
+- [✔] TL then will count the HW as done by merging the branch back into master.
 
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
-- [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
-- [ ] Set the data you fetch to state.
-- [ ] Map over the list and render a component for each character on the page.
-- [ ] You must display at least one element for each star wars character in the data set.
-- [ ] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
+- [✔] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [✔] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
+- [✔] Set the data you fetch to state.
+- [✔] Map over the list and render a component for each character on the page.
+- [✔] You must display at least one element for each star wars character in the data set.
+- [✔] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
 
 #### Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [✔] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [✔] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [✔] Consistent quotation usage.
+- [✔] Spell-check.
+- [✔] Schedule time to review, refine and reassess your work.
 
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
