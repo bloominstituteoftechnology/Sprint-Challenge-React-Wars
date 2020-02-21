@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Card from "./components/Card";
+import Card1 from "./components/Card1";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -16,7 +16,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Card/>
+      
+      <Card1 />
      
     </div>
   );

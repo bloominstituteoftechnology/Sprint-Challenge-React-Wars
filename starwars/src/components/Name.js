@@ -3,7 +3,12 @@ import React from "react";
 function Name (props) {
 
 
-return null
+return (
+
+    <p>
+        {props.name}
+    </p>
+)
 
 }
 

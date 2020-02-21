@@ -1,19 +1,28 @@
 import React from "react";
-import Name from "./Name";
+import FilmsCont from "./FilmsCont";
+import {
+    Card, CardBody,
+    CardTitle, CardSubtitle
+  } from 'reactstrap';
+  import "./StarWars.css";
 
 
-function CardData (props) {
+  const CardData = (props) => {
 
-    
-    
-    console.log(props.data)
+    console.log(props)
+
     return (
-       <Name name={props.data.name}/>
+        <Card className="card">
+          <CardBody>
+    <CardTitle>{props.data.name}</CardTitle>
+    <CardSubtitle>{props.data.height}</CardSubtitle>
+    <FilmsCont films={props.data.films} />
+           
+          </CardBody>
+        </Card>
+
 
     )
-
-
-    
-};
+  };
 
 export default CardData;

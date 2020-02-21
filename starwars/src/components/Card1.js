@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import CardData from "./CardData"
-
-;
-
+import CardData from "./CardData";
+import "./StarWars.css";
 
 
-function Card () {
+
+function Card1 () {
 
     const [data, setData ] = useState([]);
 
@@ -20,13 +19,12 @@ useEffect(() => {
 }, [] );
 
 
-console.log();
 
     return(
-        <div>
+        <div className="cardholder">
             
             { data.map( item => 
-            <CardData data={item} />
+            <CardData key={item.name} data={item} />
             )}
           
             
@@ -36,4 +34,4 @@ console.log();
     )
 }
 
-export default Card;
+export default Card1;
