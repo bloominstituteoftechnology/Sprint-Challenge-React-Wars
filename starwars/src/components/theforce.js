@@ -87,12 +87,12 @@ export default function TheForce() {
 // };
 
   return (
-    <Container>
-      <Row>
-        {pod.map(people => {
-          return (<Cards key={people.id} people={people.name} people={people.mass} />);
+   <div>
+     {pod.map(people => {
+          return (<Cards key={people.id} people={people.name} mass={people.mass} />);
         })}
-      </Row>
-    </Container>
+   </div>
+        
+    
   );
 }
