@@ -4,8 +4,8 @@ import styled from "styled-components";
 const CharCard = styled.div`
   background: white;
   color: black;
- width:80%;
- margin: auto;
+  width:80%;
+  margin: auto;
   max-height: 300px;
   margin-botom: 20px;
 `;
