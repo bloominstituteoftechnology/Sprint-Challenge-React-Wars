@@ -26,13 +26,22 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS, solves a lot of extra work getting calls and just making a real app. I really like that its basically objected oriented and so much cleaner to just through the different components on seperate pages.
+
 - [ ] What does it mean to _think_ in react?
+
+I think that thinking in react is like object oriented. Where you create a componenet that can be reused yet still in the same place≥
 
 - [ ] Describe state.
 
+State is that moment in time where the page is loaded. Changing the state would be like triggered event changing the state to be updated with something new.
+
 - [ ] Describe props.
+Props, or Properties allows apis to travel down through the children and simplify passing informaiton.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are both good and bad. For instnance in useEffect if you keep the array open after the catch. This will permantly leaves the state of the website how it is. When we need different properties we can use a side effect to make the property information updated.
 
 ## Project Set Up
 
