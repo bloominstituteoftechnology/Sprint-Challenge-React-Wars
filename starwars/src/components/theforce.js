@@ -89,7 +89,7 @@ export default function TheForce() {
   return (
    <div>
      {pod.map(people => {
-          return (<Cards key={people.id} people={people.name} mass={people.mass} />);
+          return (<Cards key={people.id} name={people.name} birth={people.height} mass={people.mass} />);
         })}
    </div>
         

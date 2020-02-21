@@ -17,7 +17,7 @@ const Cards = props => {
       <Card>
         <CardBody>
           <CardText>{props.name}</CardText>
-          <CardText>{props.birth_year}</CardText>
+          <CardText>{props.height}</CardText>
           <CardText>{props.mass}</CardText>
         </CardBody>
       </Card>
