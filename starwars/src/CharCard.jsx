@@ -1,13 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const CharHeader = styled.h1 `
+background-color: silver;
+color: black;
+`
+const Cards = styled.div `
+background-color: grey;
+color: white;
+width: 500px;
+margin-left: 33%;
+`
 
 const CharCard = props => {
     console.log(props.state)
     return (
-        <div> 
-            <h1>Character</h1>
-            <h2>Name: {props.state.name}</h2>
-            <h3>Birth Year: {props.state.birth_year}</h3>
-        </div>
+        <Cards> 
+            <CharHeader>Character</CharHeader>
+            <h2>Name: {props.name}</h2>
+            <h3>Birth Year: {props.birth}</h3>
+        </Cards>
     )
 }
 

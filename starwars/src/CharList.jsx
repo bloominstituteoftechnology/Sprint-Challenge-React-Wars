@@ -7,10 +7,11 @@ const [state, setState] = useState([])
 
 useEffect(() => {
     axios
-        .get("https://swapi.co/api/people/1/")
+        .get("https://swapi.co/api/people/?page=1")
         .then( response => {
-            setState(response.data);
-            console.log(response);
+            setState(response.data.results);
+            console.log(response.data);
+           // console.log(state)
         })
         .catch(error =>{
             console.log("Error", error )
@@ -19,7 +20,12 @@ useEffect(() => {
 
 return (
     <div>
-     <CharCard state={state}/>
+         {state.map(character => { 
+         return <CharCard name={character.name} birth={character.birth_year}/>;
+       })}
+    
     </div>
 )
 }
+
+//<CharCard state={state}/>
