@@ -26,13 +26,28 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a UI library.It helps to make easier building more complex single page web apps whose data is always changing. Facebook and other social media platforms
+are good examples, with high rates of constant updates. ReactJS changes the virtual DOM when someone posts. Big applications like social media platforms can be modulized to make it easier to build
+and maintain. 
+
 - [ ] What does it mean to _think_ in react?
+
+ To critically analyze how the app will work, consume data and what can be re-usable code. Break down the app in hierarchical order and components,and how to manage the state. 
+
 
 - [ ] Describe state.
 
+State is the data displayed by components. One example is an image in an image tag. One state is a image of a light bulb that is off. You could dynamiclly
+ change the state of that tag to an image of the bulb on.
+
 - [ ] Describe props.
 
+Props is short for properties. Props help write re-usable code, by making one component to be used in multiple places.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+ Side effects are anything that affects something that is outside of the function's scope.Some examples are getting data from an API an manually manipulating the DOM.
+ The useEffect hook is used inside a component to tell it to perform an action after the render, not during or before
 
 ## Project Set Up
 
