@@ -1,27 +1,32 @@
 import React from "react";
+import styled from "styled-components";
 import {
   Card,
-  CardHeader,
-  CardFooter,
-  CardBody,
-  CardTitle,
   CardText,
-  Col
+  Row
 } from "reactstrap";
+
+const JediBox = styled.div`
+  background-color: #FFBA58;
+  margin: 3% 20%;
+  padding: 2%;
+  border: 3px orange solid;
+`;
 
 const Cards = props => {
     
-
   return (
-    <Col xs="6" md="4" xl="3">
-      <Card>
-        <CardBody>
-          <CardText>{props.name}</CardText>
-          <CardText>{props.height}</CardText>
-          <CardText>{props.mass}</CardText>
-        </CardBody>
-      </Card>
-    </Col>
+    <Row>
+      <JediBox>
+        <Card>
+          <CardText>Name: {props.name}</CardText>
+          <CardText>Gender: {props.gender}</CardText>
+          <CardText>Height: {props.height}cm</CardText>
+          <CardText>Mass: {props.mass}kg</CardText>
+        </Card>
+      </JediBox>
+    </Row>
   );
 };
+
 export default Cards;
