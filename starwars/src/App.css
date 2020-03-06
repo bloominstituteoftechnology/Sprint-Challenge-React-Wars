@@ -5,4 +5,15 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+.flex-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  flex-grow: 1;
+  height: auto;
+  padding: 50px;
+  margin: 20px
+}
 /* write your parent styles in here for your App.js */
