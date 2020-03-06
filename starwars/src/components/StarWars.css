@@ -1,0 +1,28 @@
+.infoCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #fddb3a;
+    border-radius: 5px;
+    max-width: 450px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    color: white;
+}
+
+.ard:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    text-align: left;
+    text-transform: capitalize;
+    margin: 10px auto;
+}
+
+.card h2 {
+    letter-spacing: 2px;
+}
