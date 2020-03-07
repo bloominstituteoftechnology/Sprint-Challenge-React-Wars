@@ -9,7 +9,8 @@ import People from "./components/people";
 const GetNext = styled.button`
     margin: 15px;
     font-size: 1.6rem;
-    border: none;
+    border: 2px solid white;
+    border-radius: 6px;
     color: white;
     background-color: transparent;
 `

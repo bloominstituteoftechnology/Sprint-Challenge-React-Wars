@@ -14,12 +14,12 @@ const Weight = styled.p`
 
 `
 const Wrapper = styled.div`
-    background-color: #F4F4F4;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 14px;
     border: solid 5px white;
     width: 22%;
     font-family: 'Spartan', sans-serif;
-    color: black;
+    color: #414141;
     padding: 15px 0;
     margin-bottom: 30px;
 `
