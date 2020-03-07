@@ -26,25 +26,35 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a Javascript Library library developed by Facebook. It solveds the problem of the complexity of large applications that require many components. This is important when the data is changing all the time like posts on Reddit for example.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React requires you to think in terns of components. For example you have a header, body and footer component. inside each component, you can nest another one, resulting in hhieracrchies. YOu can look at a webpage and realize that navs, links, search bars, logos and cards are part of component structure.
 
 - [ ] Describe state.
 
+State is an object that represent the parts of the app that can be changed or change. For example, counters, or inputs like forms, etc.
+
 - [ ] Describe props.
 
+Props are properties inside a component and can be used for passing data from one component to another.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side Effects are anything that affects something outside the scope of the function being executed. Side effect is like jotting what you are thinking into paper.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [done] Create a forked copy of this project.
+- [done] Add TL as collaborator on Github.
+- [done] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [done] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [done] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
+- [done] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
+- [done] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, **committing progress & changes often.**
 - [ ] Push commits: `git push origin <firstName-lastName>`.
