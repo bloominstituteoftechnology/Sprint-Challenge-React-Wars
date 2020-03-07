@@ -7,8 +7,8 @@ function SwList() {
   const [characters, setCharacters] = useState([]);
   useEffect(() => {
     axios.get("https://swapi.co/api/people/").then(response => {
-      console.log(response);
       setCharacters(response.data.results);
+      console.log(response.data.results);
     });
   }, []);
 
