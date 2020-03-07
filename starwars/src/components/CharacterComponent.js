@@ -6,11 +6,7 @@ const CharacterStyle = styled.div`
     width: 30%;
     border-radius: 5px;
     margin: 1%;
-    border: 1px solid black;
     font-size: 1.2rem;
-
-    &:hover:
-    transform: scale(1.5); 
 
     h1 {
         background: white;
