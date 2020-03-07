@@ -6,3 +6,26 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.ui.secondary.starwarsmenu.menu {
+  background: black;
+}
+
+.ui.secondary.starwarsmenu.menu .item {
+  color: yellow;
+  font-size: 2rem;
+}
+
+.ui.card.cardcl {
+  margin: 3rem auto;
+}
+
+.pagination.cont{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.clicker {
+  margin-top: 3rem;
+  padding-right: 3rem;
+}
