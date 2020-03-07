@@ -7,6 +7,7 @@ const CharacterStyle = styled.div`
     border-radius: 5px;
     margin: 1%;
     border: 1px solid black;
+    font-size: 1.2rem;
 
     &:hover:
     transform: scale(1.5); 
