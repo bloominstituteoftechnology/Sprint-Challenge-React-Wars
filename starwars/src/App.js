@@ -26,6 +26,7 @@ const App = () => {
     margin: 0 auto;
   `;
 
+  // render() {}
   return (
     <div className="App">
       <h1 className="Header">React Wars - Ryan Mersmann</h1>
