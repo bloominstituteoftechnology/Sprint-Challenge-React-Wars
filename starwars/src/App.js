@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import styled from "styled-components";
 
-import PersonContainer from "./components/PersonComponent";
+import Character from "./components/CharacterComponent";
 
 const App = () => {
   const [people, setPeople] = useState([]);
@@ -17,9 +17,8 @@ const App = () => {
         console.log(error);
       });
   }, []);
-  console.log("outside", people);
 
-  const AppContainer = styled.div`
+  const CardsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -27,26 +26,25 @@ const App = () => {
     margin: 0 auto;
   `;
 
-
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <AppContainer>
+      <h1 className="Header">React Wars - Ryan Mersmann</h1>
+      <CardsContainer>
         {people.map(item => {
           return (
-            <PersonContainer
+            <Character
               name={item.name}
+              birth_year={item.birth_year}
               height={item.height}
               mass={item.mass}
-              hair_color={item.hair_color}
               skin_color={item.skin_color}
+              hair_color={item.hair_color}
               eye_color={item.eye_color}
-              birth_year={item.birth_year}
               gender={item.gender}
             />
           );
         })}
-      </AppContainer>
+      </CardsContainer>
     </div>
   );
 };
