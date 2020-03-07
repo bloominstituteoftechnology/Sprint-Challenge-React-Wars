@@ -8,7 +8,7 @@ function SwList() {
   useEffect(() => {
     axios.get("https://swapi.co/api/people/").then(response => {
       console.log(response);
-      //   setCharacters(response.data);
+      setCharacters(response.data.results);
     });
   }, []);
 
@@ -18,8 +18,8 @@ function SwList() {
         return (
           <SwCard
             name={character.name}
-            birthYear={character.birth_year}
-            eyeColor={character.eye_color}
+            birth_year={character.birth_year}
+            eye_color={character.eye_color}
           />
         );
       })}
