@@ -1,25 +1,27 @@
-import React, { useState, useEffect} from 'react';
-import axios from 'axios';
-
-const [character, setCharacter] = useState([]);
+import React from 'react';
+import CharacterProfile from "./components/CharacterProfile";
 
 const Characters = (props) => {
 
     return (
+        character.map(characters => {
 
-    useEffect(() => {
+            return (  
+                <CharacterProfile
+                    name={characters.name}
+                    height={characters.height}
+                    mass={characters.mass}
+                    hair_color={characters.hair_color}
+                    skin_color={characters.skin_color}
+                    eye_color={characters.eye_color}
+                    birth_year={characters.birth_year}
+                    gender={characters.gender}
+                    homeworld={characters.homeworld}
+                />    
+            )
+        }    
+    )
+}    
 
-        axios 
-          .get('https://swapi.co/api/people/')
-          .then(res => setCharacter(res.data.results))
-          .catch(err => console.log(err))
-      }, [])
 
-    )}
-
-
-    character.map(characters => {
-      characterName={characters.results}
-    })}
-
-    export default Characters;
+export default Characters;
