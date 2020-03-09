@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const SwSubtitle = styled.h2`
   color: black;
-  font-size: 40px;
+  font-size: 45px;
 `;
 
 const SwPara = styled.p`
@@ -12,13 +12,13 @@ const SwPara = styled.p`
 `;
 
 const CharContainer = styled.li`
-  border: 1px solid grey;
+  border: 1.2px solid grey;
 `;
 
 const SwCard = props => {
   return (
     <CharContainer key={props.id}>
-      <SwSubtitle>Name: {props.name}</SwSubtitle>
+      <SwSubtitle>{props.name}</SwSubtitle>
       <SwPara>Birthyear: {props.birth_year}</SwPara>
       <SwPara>Eyecolor: {props.eye_color}</SwPara>
     </CharContainer>
