@@ -1,14 +1,25 @@
-import React from 'react';
-import { checkPropTypes } from 'prop-types';
+import React, { useState, useEffect} from 'react';
+import axios from 'axios';
 
-const Characters = () => {
+const [character, setCharacter] = useState([]);
+
+const Characters = (props) => {
 
     return (
-        <div>
 
-        <p>Character: {props.character} </p>
+    useEffect(() => {
 
-        </div>
-    )
+        axios 
+          .get('https://swapi.co/api/people/')
+          .then(res => setCharacter(res.data.results))
+          .catch(err => console.log(err))
+      }, [])
 
-}
+    )}
+
+
+    character.map(characters => {
+      characterName={characters.results}
+    })}
+
+    export default Characters;
