@@ -7,7 +7,7 @@ export class AxiosService {
       .get("https://swapi.co/api/people/")
       .then(response => {
         console.log(response);
-        return response.data;
+        return response.data.results;
       })
       .catch(err => {
         console.log(err);

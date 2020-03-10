@@ -1,0 +1,19 @@
+.person-card {
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  color: crimson;
+  
+}
+
+.person-card-body {
+  background-color: darkblue;
+}
+
+.person-title {
+  font-size: xx-large;
+  color: aquamarine;
+}
+
+.person-text {
+  font-size: large;
+}

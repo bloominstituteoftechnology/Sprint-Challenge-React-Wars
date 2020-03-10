@@ -1,18 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import { AxiosService } from "./AxiosSevice";
+import { AxiosService } from "./AxiosService";
+import Person from './components/Person/Person';
 
 const App = () => {
-  const [swItem, setSwItem] = useState();
-  const [loading, setLoading] = useState();
+  const [people, setPeople] = useState([]);
+  const [loading, setLoading] = useState(false);
+  // const [fruit1, fruit2] = ['apples', 'bananas', 'oranges']
 
   useEffect(() => {
     setLoading(true);
-    AxiosService.getSwData().then(swItem => {
-      setSwItem(swItem);
+    AxiosService.getSwData().then(people => {
+      setPeople(people);
       setLoading(false);
     });
-  },[]);
+  }, []);
 
   if (loading) {
     return <div>...Loading...</div>;
@@ -27,7 +29,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {swItem}
+      {people.map((p) => (
+        <Person key={p.name} person={p} />
+      ))}
     </div>
   );
 }
