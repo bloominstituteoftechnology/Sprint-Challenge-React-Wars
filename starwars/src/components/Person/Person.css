@@ -1,17 +1,17 @@
 .person-card {
   max-width: 700px;
   margin: 0 auto 32px auto;
-  color: crimson;
+  color: #459C2C;
   
 }
 
 .person-card-body {
-  background-color: darkblue;
+  background-color: #CBB361;
 }
 
 .person-title {
   font-size: xx-large;
-  color: aquamarine;
+  color: #123D90;
 }
 
 .person-text {

@@ -6,8 +6,7 @@ import Person from './components/Person/Person';
 const App = () => {
   const [people, setPeople] = useState([]);
   const [loading, setLoading] = useState(false);
-  // const [fruit1, fruit2] = ['apples', 'bananas', 'oranges']
-
+  
   useEffect(() => {
     setLoading(true);
     AxiosService.getSwData().then(people => {
