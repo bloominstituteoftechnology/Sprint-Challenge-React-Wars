@@ -1,7 +1,22 @@
-import React from 'react';
-import CharacterProfile from "./components/CharacterProfile";
 
-const Characters = (props) => {
+import React, { useState, useEffect} from 'react';
+import axios from 'axios';
+
+import CharacterProfile from './CharacterProfile';
+
+const Characters = () => {
+
+    const [character, setCharacter] = useState([]);
+
+useEffect(() => {
+
+  axios 
+    .get('https://swapi.co/api/people/')
+    .then(res => setCharacter(res.data.results))
+    .catch(err => console.log(err))
+}, [])
+
+console.log("character data", character)
 
     return (
         character.map(characters => {
@@ -17,11 +32,12 @@ const Characters = (props) => {
                     birth_year={characters.birth_year}
                     gender={characters.gender}
                     homeworld={characters.homeworld}
-                />    
+                />  
+              
             )
         }    
     )
-}    
+)}   
 
 
 export default Characters;
