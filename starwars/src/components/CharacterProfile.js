@@ -1,20 +1,24 @@
 import React from 'react';
+import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 const CharacterProfile = (props) => {
-    return (
-        <div>
-            <li className="character-profile" key={props.name}></li>
-            <h2>Name: {props.name}</h2>
-            <p>Height: {props.height}</p>
-            <p>Mass: {props.mass}</p>
-            <p>Hair Color: {props.hair_color}</p>
-            <p>Skin Color: {props.skin_color}</p>
-            <p>Eye Color: {props.eye_color}</p>
-            <p>Birth Year: {props.birth_year}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Homeworld: {props.homeworld}</p>
-        </div>
-    )
+  return (
+    <Row>
+      <Col sm="6">
+        <Card body>
+          <CardTitle>Name: {props.name}</CardTitle>
+          <CardText>Height: {props.height}</CardText>
+          <CardText>Mass: {props.mass}</CardText>
+          <CardText>Hair Color: {props.hair_color}</CardText>
+          <CardText>Skin Color: {props.skin_color}</CardText>
+          <CardText>Eye Color: {props.eye_color}</CardText>
+          <CardText>Birth Year: {props.birth_year}</CardText>
+          <CardText>Gender: {props.gender}</CardText>
+          <CardText>Homeworld: {props.homeworld}</CardText>
+        </Card>
+      </Col>
+    </Row>
+  );
 };
 
 export default CharacterProfile;

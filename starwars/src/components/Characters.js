@@ -16,7 +16,7 @@ useEffect(() => {
     .catch(err => console.log(err))
 }, [])
 
-console.log("character data", character)
+console.log("character data", character);
 
     return (
         character.map(characters => {
