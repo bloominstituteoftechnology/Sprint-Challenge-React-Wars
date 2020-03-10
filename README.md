@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a way to organize major data constructs and present them in a way that doesn't interfere with the user's experience. When using axios, it downloads a huge library of information that you can access through React and manipulate using JS.
+
 - [ ] What does it mean to _think_ in react?
+
+I have learned that, in its simplest form, it's plugging in information into various areas. Plugging information into different component files, into components themselves, etc. It is thinking a lot like math, like using variables. Solving for "x". What data needs plugged into "x"?
 
 - [ ] Describe state.
 
+State is a way to update the state of a function. It's a way to plug new information into it.
+
 - [ ] Describe props.
 
+Props are ways for child components to access information from each other.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are data activity that can happen outside of a component. useEffect helps maintain the data to one area and prevents it from running over and over like for an axios call.
 
 ## Project Set Up
 
