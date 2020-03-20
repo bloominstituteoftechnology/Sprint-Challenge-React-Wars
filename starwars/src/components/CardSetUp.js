@@ -21,7 +21,7 @@ const CardSetUp = () => {
             .get("https://swapi.co/api/people")
             .then(response => { 
               console.log(response.data.results)//find the data where the characters are. Since this is an array, this is what we will be mapping over.
-              setTheChosenOne(response);
+              setTheChosenOne(response.data.results); //this gives you back the people and their data
             })
             .catch(error => console.log("Photo not found", error));
       }, []);
@@ -29,6 +29,13 @@ const CardSetUp = () => {
  
     return (
         null //a component has to return something or else it will give you an error.
+        // <div>
+        //     {data.map((el, index)=>{
+        //         return <Cards data={el} key{index}/>
+        //     })}
+        // </div>
+    
+   
     );
 };
 
