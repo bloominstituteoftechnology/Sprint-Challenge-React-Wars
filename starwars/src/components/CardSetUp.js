@@ -14,9 +14,17 @@ import CharCard from './CharCard' //import the child that will have the the prop
 const CardSetUp = () => {
  const [theChosenOne, setTheChosenOne] = useState ([]); //We aren't setting a state, so set it to an array since it is an array of information
     
- axios
-    .get("")
- 
+ //use useEffect to get the axios call, don't forget [] to stop from repeating.
+    useEffect(() => {
+        
+          axios
+            .get("https://swapi.co/api/people")
+            .then(response => { 
+              console.log(response.data.results)//find the data where the characters are. Since this is an array, this is what we will be mapping over.
+              setTheChosenOne(response);
+            })
+            .catch(error => console.log("Photo not found", error));
+      }, []);
  
  
     return (
