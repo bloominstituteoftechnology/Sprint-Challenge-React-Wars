@@ -27,16 +27,17 @@ const CardSetUp = () => {
       }, []);
  
  
-    return (
-        null //a component has to return something or else it will give you an error.
+        // null
         // <div>
-        //     {data.map((el, index)=>{
-        //         return <Cards data={el} key{index}/>
-        //     })}
+        // {data.map((el, index) => {
+        //     return <CharCard data={el} key={film}/>
+        // })}
         // </div>
+        return <CharCard 
+        nameKey={theChosenOne.name}
+        dateKey={theChosenOne.height} 
+        />
     
-   
-    );
 };
 
 export default CardSetUp;
