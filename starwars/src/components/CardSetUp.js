@@ -7,13 +7,21 @@ import axios from "axios"; //import axios since we will be using it for get , th
 
 import CharCard from './CharCard' //import the child that will have the the props, and styling
 
-import { Container, Row } from "reactstrap"; //we will be importing some styling
+// import { Container, Row } from "reactstrap"; //we will be importing some styling
 
 //Now we will be setting up the component(machine)
 
 const CardSetUp = () => {
-
+ const [theChosenOne, setTheChosenOne] = useState ([]); //We aren't setting a state, so set it to an array since it is an array of information
+    
+ axios
+    .get("")
+ 
+ 
+ 
     return (
-
+        null //a component has to return something or else it will give you an error.
     );
 };
+
+export default CardSetUp;

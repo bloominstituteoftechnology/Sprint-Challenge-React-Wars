@@ -15,9 +15,9 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       
-      <title /> {/*this is where you are rendering your components to the HTML on the page*/}
+      {/* <title /> this is where you are rendering your components to the HTML on the page */}
       
-      <CardTitle />
+      <CardTitle /> {/*THIS NAME IS THE NAME YOU IMPORTED IT WITH, WIHAT MATTER IS THAT YOU GAVE IT THE CORRECT DIRECTORY*/}
       {/* <CardSetUp /> */}
 
     </div>
