@@ -8,10 +8,9 @@ const CharCardDiv = styled.div`
     background-color:white;
     border: 1px solid black;
     border-radius: 10px;
+    padding-bottom: 10px;
 `;
 const CharacterCard = props =>{
-    console.log(props);
-    console.log(props.charData);
     return(
         <CharCardDiv>
             <h3>Name:{props.charData.name}</h3>
