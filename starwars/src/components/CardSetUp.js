@@ -20,24 +20,40 @@ const CardSetUp = () => {
           axios
             .get("https://swapi.co/api/people")
             .then(response => { 
-              console.log(response.data.results)//find the data where the characters are. Since this is an array, this is what we will be mapping over.
-              setTheChosenOne(response.data.results); //this gives you back the people and their data
+            //   console.log(response.data.results)//find the data where the characters are. Since this is an array, this is what we will be mapping over.
+              setTheChosenOne(response.data.results) //this gives you back the people and their data
             })
-            .catch(error => console.log("Photo not found", error));
+            .catch(error => console.log("Photo not found", error))
       }, []);
- 
- 
-        // null
-        // <div>
-        // {data.map((el, index) => {
-        //     return <CharCard data={el} key={film}/>
-        // })}
-        // </div>
-        return <CharCard 
-        nameKey={theChosenOne.name}
-        dateKey={theChosenOne.height} 
+
+ console.log(theChosenOne); //this holds the array you will be passing over
+// Any component that you need to
+return (
+    <>
+    {theChosenOne.map(item => {
+        // console.log(item)
+        return ( 
+        <CharCard 
+        key={item.url}
+        nameKey={item.name}
+        hairKey={item.hair_color}
+        key={item.url}
         />
-    
+        );
+    })}
+    </>
+);
+
 };
 
 export default CardSetUp;
+
+// {theChosenOne.map(theChosenOne => {
+//     return (
+//         <CharCard //in here we are basically making a reference point for the prop in the child
+//         nameKey={theChosenOne.name}
+//         hairKey={theChosenOne.hair_color}
+//         skinKey={theChosenOne.skin_color}
+//          />
+//     );
+// })}   
