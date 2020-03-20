@@ -11,6 +11,7 @@ const PersonCard = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 20px;
   padding: 20px;
   &:hover{
     box-shadow:3px 3px 5px 6px #cccccc;

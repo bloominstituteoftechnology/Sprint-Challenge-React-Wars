@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import StarWarsCard from "./Card";
 import axios from "axios";
 import styled from "styled-components";
+import { Button } from 'reactstrap';
 
 const CardContainer = styled.div`
     display:flex;
@@ -23,7 +24,6 @@ const StarWarsGetInfo = () => {
   //return <h1>hi</h1>
   return (
     <div>
-      <h6>Search:</h6>
       <CardContainer>
         {info.map(data => (
           <StarWarsCard
@@ -33,6 +33,8 @@ const StarWarsGetInfo = () => {
           />
         ))}
       </CardContainer>
+      <Button color="primary">previous</Button>{' '}
+      <Button color="secondary">next</Button>{' '}
     </div>
   );
 };
