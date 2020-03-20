@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, CardDeck } from 'reactstrap';
+import { Container, Col } from 'reactstrap';
 
 import Cards from './Card';
 
@@ -25,7 +25,7 @@ const CardGrid = () => {
   return (
     <Container>
 
-      <CardDeck sm='6' md='4' lg='3' >
+      <Col sm='12' md={{ size: 6, offset: 3}}>
         {characters.map(character => {
           return (
             <Cards
@@ -39,7 +39,7 @@ const CardGrid = () => {
             />
           );
         })}
-      </CardDeck>
+      </Col>
     </Container>
   );
 };
