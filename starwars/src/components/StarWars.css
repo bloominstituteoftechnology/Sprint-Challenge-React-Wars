@@ -1,0 +1,10 @@
+.card {
+    background: gray;
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.card-header {
+    background-color: blue;
+}
