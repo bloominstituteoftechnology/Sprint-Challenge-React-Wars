@@ -25,14 +25,25 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS is a library made by Facebook. It's a JavaScript library for building user interfaces. It's declarative, and Component-Based. It also has it's own DOM which is called ReactDOM in which we use to coommunicate with the main DOM to manipulate code.
 
 - [ ] What does it mean to _think_ in react?
+From https://reactjs.org/docs/thinking-in-react.html
+1. Break The UI Into A Component Hierarchy
+2. Build A Static Version in React
+3. Identify The Minimal (but complete) Representation Of UI State
+4. Identify Where Your State Should Live
+5. Add Inverse Data Flow
+And That's It ^
 
 - [ ] Describe state.
+ Primarily the data used in React. It's how we update data in  components.
 
 - [ ] Describe props.
+Props are just properties that we are able to obtain from components. We can't change the data but we can change the text, if that makes sense.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+Essentially obtaining external API, changing the DOM and such.
 
 ## Project Set Up
 
