@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import title from './components/Title'
-import cardGrid from './components/cardGrid' //You import your components, then render them below in the HTML.
+import CardTitle from './components/CardTitle'
+import CardSetUp from './components/CardSetUp' //You import your components, then render them below in the HTML.
 //YOU RENDER THE CHILDREN/parent TO THIS
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -17,8 +17,8 @@ const App = () => {
       
       <title /> {/*this is where you are rendering your components to the HTML on the page*/}
       
-      <title />
-      <cardGrid />
+      <CardTitle />
+      {/* <CardSetUp /> */}
 
     </div>
   );
