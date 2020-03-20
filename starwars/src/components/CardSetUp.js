@@ -37,7 +37,7 @@ return (
         key={item.url}
         nameKey={item.name}
         hairKey={item.hair_color}
-        key={item.url}
+        eyecolorKey={item.eye_color}
         />
         );
     })}
