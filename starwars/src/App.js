@@ -101,6 +101,7 @@ letter-spacing:3px;
       
       <strap.ButtonGroup>
         <strap.Button onClick={pageDecrease} color='success'> Previous Page</strap.Button>
+        <strap.Button onClick={()=>{setSearch([])}} color='warning'>Reset</strap.Button>
         <strap.Button onClick={pageIncrease} color='primary'>Next Page</strap.Button>
       </strap.ButtonGroup>
     </div>
