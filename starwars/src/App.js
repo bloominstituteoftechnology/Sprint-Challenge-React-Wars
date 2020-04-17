@@ -13,11 +13,15 @@ const App = () => {
   const [characters,setCharacters]= useState([]);
   const [pageCount, setPageCount] = useState(1)
   const [search,setSearch]= useState([])
+  if (pageCount === 0){
+    setPageCount(1)
+  }
+
 
 
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
 
-  useEffect(()=>{
+ useEffect(()=>{
     axios.get(`https://rickandmortyapi.com/api/character/?page=${pageCount}`)
     .then(res=>{
       setCharacters(res.data.results)
@@ -32,6 +36,7 @@ const App = () => {
 
   const changeHandler = (e)=>{
     setSearch(e.target.value)
+    e.target.value= ''
     
   }
   const searchClick = useEffect(()=>{
@@ -68,6 +73,8 @@ letter-spacing:3px;
             <strap.Col>
               <strap.Input id='search' onBlur={changeHandler} className='text-center'></strap.Input>
               <strap.Button onClick={searchClick} color='success'>Search Character</strap.Button>
+             
+              
             </strap.Col>
             
           </strap.Row>
@@ -80,6 +87,7 @@ letter-spacing:3px;
       
     <strap.ButtonGroup>
         <strap.Button onClick={pageDecrease}  color='success'> Previous Page</strap.Button>
+        <strap.Button onClick={()=>{setSearch([])}} color='warning'>Reset</strap.Button>
         <strap.Button onClick={pageIncrease} color='primary'>Next Page</strap.Button>
     </strap.ButtonGroup>
       
