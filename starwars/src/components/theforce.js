@@ -10,8 +10,7 @@ const Page = styled.div`
   Height: 90vh;
 `;
 
-export default function TheForce() {
-  const [pod, setPod] = useState([]);
+export default function TheForce({force, setPod}) {
   
   useEffect(() => {
     axios
@@ -28,8 +27,8 @@ export default function TheForce() {
   return (
    <Page>
      <Col  xs="6" md="4" xl="3">
-      {pod.map(people => {
-            return (<Cards key={people.id} name={people.name} gender={people.gender} height={people.height} mass={people.mass} />);
+      {force.map(people => {
+            return (<Cards key={people.id} name={people.name} gender={people.gender} height={people.height} mass={people.mass} eye_color={people.eye_color} birth_year={people.birth_year} />);
           })}
      </Col>  
    </Page>   
