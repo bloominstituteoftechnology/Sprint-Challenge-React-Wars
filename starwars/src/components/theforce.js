@@ -15,7 +15,7 @@ export default function TheForce() {
   
   useEffect(() => {
     axios
-      .get(`https://swapi.co/api/people/`)
+      .get(`https://swapi.py4e.com/api/people/`)
       .then(response => {
         console.log(response);
         setPod(response.data.results);
