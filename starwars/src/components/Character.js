@@ -20,7 +20,7 @@ const Name = styled.h2 `
 `
 
 export default function Character(props) {
-    console.log(props.props)
+   
     return (
         <strap.Col xl='3'>
             <strap.Card className='card'>
