@@ -5,3 +5,9 @@ body {
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
