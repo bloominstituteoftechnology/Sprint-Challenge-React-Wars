@@ -5,3 +5,25 @@ body {
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.card{
+  width: 400px;
+  background-color: black;
+  opacity: .7;
+  color: white;
+  height: auto;
+  margin: 15px;
+  border-radius: 5px;
+
+}
+
+.yellow{
+  color: gold;
+}
