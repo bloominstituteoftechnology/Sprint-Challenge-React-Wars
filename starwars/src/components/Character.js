@@ -28,6 +28,7 @@ const Characters = props => {
                 // key = {character.url} 
                 name ={character.name}
                 image ={character.image} 
+                episode = {character.episode}
                 origin ={character.origin.name} 
                 species ={character.species}
                 type = {character.type}

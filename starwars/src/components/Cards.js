@@ -5,6 +5,7 @@ const Cards = props => {
         <div>
             <h2>{props.name}</h2>
             <img src = {props.image} />
+            <p>{props.episode}</p>
             <p>{props.origin}</p>
             <p>{props.species}</p>
             <p>{props.type}</p>
