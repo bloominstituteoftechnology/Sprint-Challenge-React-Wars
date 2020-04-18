@@ -1,3 +1,8 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,24 +11,39 @@ body {
   background-size: cover;
 }
 
-.row{
+.xrow{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 
 }
 
-.card{
-  width: 400px;
+.xcard{
+  width: 475px;
   background-color: black;
   opacity: .7;
   color: white;
   height: auto;
   margin: 15px;
   border-radius: 5px;
+  padding-top: 15px;
 
 }
 
 .yellow{
   color: gold;
+}
+
+
+h1{
+  font-weight: strong;
+}
+
+h3{
+  font-size: 16px;
+
+}
+
+h4{
+  font-size: 16px;
 }
