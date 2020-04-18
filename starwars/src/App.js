@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import Character from '../src/components/Character';
+import styled from 'styled-components';
+
+const H = styled.h1`
+font-size: 4rem;
+  text-shadow: 3px 3px 3px red;
+  color:white;
+  font-family: 'Indie Flower', cursive;
+`;
 
 
 const App = () => {
@@ -25,7 +33,7 @@ const App = () => {
 
   return (
    <div className='App'>
-      <h1 className="Header">Characters</h1>
+      <H>Characters</H>
 
       <div className='character-container'>
 

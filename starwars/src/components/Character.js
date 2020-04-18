@@ -22,14 +22,26 @@ const CharacterImg = styled.img`
   flex-shrink: 2;
 `;
 
+const P = styled.p`
+color:white;
+text-shadow: 3px 3px 3px black;
+`;
+
+const H = styled.h2`
+color:white;
+text-shadow: 3px 3px 3px black;
+font-size:2rem;
+font-family: 'Indie Flower', cursive;
+`;
+
 const Character = props =>{
     return (
              <Card>
-             <h2>{props.name}</h2>
+             <H>{props.name}</H>
             <CharacterImg top width="10%" src={props.img} alt='Characters'/>
-            <p>{props.gender}</p>
-            <p>{props.status}</p>
-            <p>{props.species}</p>
+            <P>Gender: {props.gender}</P>
+            <P>Status: {props.status}</P>
+            <P>Species: {props.species}</P>
         </Card>
            
     )
