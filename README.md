@@ -28,35 +28,35 @@ Demonstrate your understanding of this Sprint's concepts by answering free-form 
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
+- [x] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
+- [x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] TL then will count the HW as done by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] TL then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use ONE of the following APIs:
+- [x] Use ONE of the following APIs:
   - [Star Wars API](https://swapi.py4e.com/)
   - [The Rick and Morty API](https://rickandmortyapi.com/)
   - [The RESTful Pokémon API](https://pokeapi.co/) (**harder**)
-- [ ] Use the documentation and Google to learn how to fetch characters from your API.
-- [ ] Obtain a list of characters. One or several requests might be needed, depending on the API.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the screen:
+- [x] Use the documentation and Google to learn how to fetch characters from your API.
+- [x] Obtain a list of characters. One or several requests might be needed, depending on the API.
+- [x] Set the list of characters into state.
+- [x] Render your characters to the screen:
   - Build a React component named 'Character' to render an individual character.
   - Map over the list in state, and for each character render a Character to the page.
   - You must display at least one element for each character in the data set.
@@ -64,21 +64,21 @@ Your finished project must include all of the following requirements:
 
 ### Required best practices
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ### Tips and Gotchas
 
-- [ ] Test your API and inspect the data in Chrome, _before_ writing the code for the request(s). See screenshots at the root of the project.
-- [ ] Try not to hammer your API while developing. Infinite loops in your code might trigger hundreds of requests!
-- [ ] The Pokemon API is a slightly harder challenge because a single network request might not be enough to get all the data you want.
-- [ ] Running `npm` commands in the wrong folder will not work. **Be aware of what folder you're in** when working in the command line.
-- [ ] The `start` process can sometimes choke after adding new dependencies and may need to be restarted.
+- [x] Test your API and inspect the data in Chrome, _before_ writing the code for the request(s). See screenshots at the root of the project.
+- [x] Try not to hammer your API while developing. Infinite loops in your code might trigger hundreds of requests!
+- [x] The Pokemon API is a slightly harder challenge because a single network request might not be enough to get all the data you want.
+- [x] Running `npm` commands in the wrong folder will not work. **Be aware of what folder you're in** when working in the command line.
+- [x] The `start` process can sometimes choke after adding new dependencies and may need to be restarted.
 
 ## Stretch Problems
 
