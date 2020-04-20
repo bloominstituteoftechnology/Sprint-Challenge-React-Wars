@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import InfoCard from "./Info-card"
+import { Container, Row } from "reactstrap"
 
 
 const Characters = () => {
@@ -14,11 +15,13 @@ const Characters = () => {
         .catch(err => {console.log("The data was not returned", err)})
     }, [])
     return (
-        <div className="charactersApi">
+        <Container className="charactersApi">
+            <Row>
             {soldier.map(soldier => {
-                return <InfoCard soldier={soldier} />
+                return <InfoCard key="index" soldier={soldier} />
             })}
-        </div>
+            </Row>
+        </Container>
     )
 
 }
