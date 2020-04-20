@@ -1,5 +1,10 @@
 import React from 'react';
 import './App.css';
+import randm from "./images/randm.jpg"
+import Character from "./components/Character.js";
+import { Silhouette, Title, Header, } from "./components/Styles.js"
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +16,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <Header>
+        <Title>RICK AND MORTY</Title> 
+        <Silhouette src={randm} alt="Rick and Morty" />
+      </Header>
+       
+      <Character />
     </div>
   );
 }
