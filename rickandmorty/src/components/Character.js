@@ -12,16 +12,17 @@ const Character = () => {
         axios
         .get(`https://rickandmortyapi.com/api/character/?page={page}`)
         .then(response => {
-            console.log(response.data.results)
             setCharacters(response.data.results)
+
         })
         .catch(error => console.log("Error!", error))
     }, []);
     return (
         <div className="card-grid">
-        {characters.map(character => (
-        <Character key={character.id} character={character} />
-      ))}
+
+            {characters.map(character =>(
+                <CharacterCard key={character.id} character={character} />
+            ))}
         </div>
     )
 }
