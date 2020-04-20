@@ -30,14 +30,15 @@ const Character = () => {
     return (
         <div className="holder">
         <div className="nav">
-
+        {info.prev !== '' &&
         <button onClick={()=>{
             setPage(info.prev)
-        }}>Previous</button>
+        }}>Previous</button>}
 <p>{getPageNumber(page)} of {info.pages}</p>
-        <button onClick={()=>{
+{info.next !== ''&&
+    <button onClick={()=>{
             setPage(info.next)
-        }}>Next</button>
+        }}>Next</button>}
 
     </div>
         <div className="card-grid">

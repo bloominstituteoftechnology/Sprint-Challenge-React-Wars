@@ -4,6 +4,7 @@ const CharacterCard = ( props ) =>{
     const imgStyle = {
         background: `url(${props.character.image }) no-repeat`
     }
+    if (!props.character.image) return <h3 className="blinking">Loading...</h3>;
     return (
         <div className="card-container-out">
             <div className="card-container">

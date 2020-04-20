@@ -11,19 +11,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-.card-grid{
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card-grid {
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(300px, auto);
+  grid-auto-rows: minmax(650px, auto);
   justify-items: center;
   padding: 25px;
 }
 
 /*Character Card CSS */
 .card-container-out {
-  height: 650px;
+
   background-color: #f0f8ff;
   border-radius: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -48,7 +52,7 @@ body {
   height: 225px;
   line-height: 250px;
 
-  color: red;
+  color: rgb(212, 24, 24);
   background-color: rgba(0, 0, 0, 0.5);
 }
 .dead h1{
@@ -76,9 +80,39 @@ body {
 }
 .txt-wrapper span {
   padding-left: 10px;
-  color: #963d29;
+  color: #b83417;
 }
 .txt-wrapper p {
   padding-right: 10px;
   color: #f0f8ff;
+}
+
+.blinking{
+  animation:blinkingText 1.2s infinite;
+  color: #f0f8ff;
+}
+@keyframes blinkingText{
+  0%{     color: #fff;    }
+  49%{    color: #fff; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #fff;    }
+}
+
+@media (max-width: 1450px){
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px){
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 740px){
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
