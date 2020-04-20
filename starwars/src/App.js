@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Character from './components/CharacterCard';
+import Character from './components/Character'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -19,5 +19,3 @@ const App = () => {
 }
 
 export default App;
-
-
