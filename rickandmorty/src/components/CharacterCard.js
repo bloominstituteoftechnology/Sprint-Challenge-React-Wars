@@ -28,10 +28,13 @@ const CharacterCard = ( props ) =>{
                             <span>Origin</span>
                             <p>{props.character.origin.name}</p>
                         </div>
+                        
+ {/*                       last known location
                         <div className="txt-wrapper">
                             <span>Last Location</span>
                             <p>{props.character.location.name}</p>
                         </div>
+    */}
                     </div>
                 </div>
             </div>
