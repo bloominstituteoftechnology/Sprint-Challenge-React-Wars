@@ -11,6 +11,18 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+button {
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 15px;
+}
+.page {
+  padding: 10px;
+  font-size: 2rem;
+  color: #bfe2e4;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
 .nav {
   display: flex;
   flex-direction: row;
