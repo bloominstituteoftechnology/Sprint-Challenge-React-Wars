@@ -2,7 +2,13 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import InfoCard from "./Info-card"
-import { Container, Row } from "reactstrap"
+import styled from "styled-components"
+
+const Container = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`
 
 
 const Characters = () => {
@@ -16,11 +22,9 @@ const Characters = () => {
     }, [])
     return (
         <Container className="charactersApi">
-            <Row>
             {soldier.map(soldier => {
                 return <InfoCard key="index" soldier={soldier} />
             })}
-            </Row>
         </Container>
     )
 
