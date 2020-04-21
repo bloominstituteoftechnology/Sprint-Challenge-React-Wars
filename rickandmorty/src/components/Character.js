@@ -34,7 +34,7 @@ const Character = () => {
         <button onClick={()=>{
             setPage(info.prev)
         }}>Previous</button>}
-<p>{getPageNumber(page)} of {info.pages}</p>
+<p className="page">{getPageNumber(page)} of {info.pages}</p>
 {info.next !== ''&&
     <button onClick={()=>{
             setPage(info.next)
