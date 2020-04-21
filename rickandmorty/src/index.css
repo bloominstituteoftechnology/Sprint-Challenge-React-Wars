@@ -48,18 +48,24 @@ body {
   height: 225px;
   opacity: 0;
 }
+
 .dead {
   height: 225px;
-  line-height: 250px;
-
+  line-height: 200px;
+  color: rgba(99, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  visibility: visible;
+}
+.dead:hover {
+  transition: .4s;
   color: rgb(212, 24, 24);
   background-color: rgba(0, 0, 0, 0.5);
 }
 .dead h1{
   transform: rotate(-25deg);
-  font: outline;
   font-size: 3rem;
 }
+
 .card-name {
   height: 75px;
   color: #f0f8ff;
