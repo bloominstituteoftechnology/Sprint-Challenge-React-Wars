@@ -1,19 +1,18 @@
 import React from 'react';
 
-const CharacterCard = ( props ) =>{
-    const ranDeg = () => {
-        return Math.floor(Math.random() * 60)
-    }
+const CarouselCard = ( props ) =>{
     const imgStyle = {
         background: `url(${props.character.image }) no-repeat`
     }
-    if (!props.character.image) return <h3 className="blinking">Loading...</h3>;
+    if (!props.character.image) return (
+        <div class="carousel-item"><h3 className="blinking">Loading...</h3></div>);
     return (
+        <div className="carousel-item">
         <div className="card-container-out">
             <div className="card-container">
                 <div className="card-image" style={imgStyle}>
                     <div className={( props.character.status === "Dead") ? "dead" : "not-dead"}>
-                        <h1 style={{  transform: `rotate(${ranDeg()-25}deg)`}}>DEAD</h1>
+                        <h1>DEAD</h1>
                     </div>
                     <div className="card-name">
                         <h2>{props.character.name}</h2>
@@ -43,6 +42,7 @@ const CharacterCard = ( props ) =>{
             </div>
 
         </div>
+        </div>
     )
 }
-export default CharacterCard;
+export default CarouselCard;
