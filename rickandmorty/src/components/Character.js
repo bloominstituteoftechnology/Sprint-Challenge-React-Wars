@@ -29,7 +29,22 @@ const Character = () => {
             .catch(error => console.log("Error!", error))
     }, [page]);
     return (
+        <div className="holder">
+        <div className="nav">
+        {info.prev !== '' &&
+        <button onClick={()=>{
+            setPage(info.prev)
+        }}>Previous</button>}
+<p className="page">{getPageNumber(page)} of {info.pages}</p>
+{info.next !== ''&&
+    <button onClick={()=>{
+            setPage(info.next)
+        }}>Next</button>}
 
+    </div>
+        <div className="card-grid">
+
+            {console.log(info.next)}
         <div className="holder">
                 <div className="nav">
                     {info.prev !== '' &&
@@ -57,3 +72,4 @@ const Character = () => {
 }
 
 export default Character;
+
