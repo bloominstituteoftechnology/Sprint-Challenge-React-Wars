@@ -31,7 +31,6 @@ const Character = () => {
     return (
 
         <div className="holder">
-
                 <div className="nav">
                     {info.prev !== '' &&
                         <button onClick={() => {
@@ -42,7 +41,6 @@ const Character = () => {
                         <button onClick={() => {
                             setPage(info.next)
                         }}>Next</button>}
-
                 </div>
 
             <div className="card-grid">
