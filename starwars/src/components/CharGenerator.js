@@ -7,7 +7,7 @@ const CharGenerator = () => { // make the results state
     const [swChars, setSWChars] = useState([]);
 
     useEffect(() => {
-        axios.get("https://swapi.co/api/people/")
+        axios.get("https://non-cors.herokuapp.com/https://swapi.co/api/people/")
         .then(response => {
             setSWChars(response.data.results);
         })
