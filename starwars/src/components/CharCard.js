@@ -37,8 +37,8 @@ const CharCard = (props) => {
     // console.log(imgPath);
 
     return(    
-        <StyledCard className="charCard">
-            <StyledImg className="image" src={require('../img/'+`${props.name}`+'.jpg')} alt=""></StyledImg>
+        <StyledCard key={[props.name]} className="charCard">
+            <StyledImg className="image" src={require(`../img/${props.name}.jpg`)} alt=""></StyledImg>
             <StyledName className="charName">{props.name}</StyledName>
             <StyledStat className="stat">Gender: {props.gender}</StyledStat>
             <StyledStat className="stat">Birth Year: {props.birth_year}</StyledStat>
