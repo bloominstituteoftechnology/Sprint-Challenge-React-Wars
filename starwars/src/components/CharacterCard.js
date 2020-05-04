@@ -4,10 +4,10 @@ import styled from "styled-components";
 //import CharacterList from "./CharacterList.js";
 
 const ContentWrapper = styled.div`
-  border: 2px solid #222;
+  border: 2px solid orange;
   width: 25%;
   border-radius: 20px;
-  background-color: #d2c9bb;
+  background-color: tan;
   margin-bottom: 30px;
 `;
 
