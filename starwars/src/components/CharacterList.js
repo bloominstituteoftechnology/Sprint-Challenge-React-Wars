@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import styled from "styled-components";
+import CharacterCard from "./CharacterCard.js";
 
-const ContentWrapper = styled.div`
-border: 2px solid blue;
-width: 25%;
-border-radius: 20px;
-background-color: peach;
-margin-bottom: 30px;
-`;
+const CharacterStyle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    `;
 
-const CharacterCard = props => {
+const CharacterList =() => {
+    const [starChar, setStarChar] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
-    return (
-        <ContentWrapper>
-            <h2>NAME: {props.char.name}</h2>
-            <h3>BIRTH YEAR: {props.char.birth_year}</h3>
-            <h3>EYE COLOR: {props.char.eye_color}</h3>
-            <h4>GENDER: {props.char.gender}</h4>
-        </ContentWrapper>
-    );
+
+    useEffect(() => {
+        setIsLoading(true);
+
+        axios
+            .get("https://swapi.py4e.com/api/people/")
+            .then(res => {
+                console.log(res.data);
+                setStarChar(res.data);
+                setIsLoading(false);
+            })
+            .catch(err => console.log(err));
+        }, []);
+
+        return (
+            <CharacterStyle>
+                {isLoading && <h3>data is loading...</h3>}
+                {starChar.map(char => (
+                    <CharacterCard char={char} key={char.name} />
+                ))}
+            </CharacterStyle>
+        );
 };
 
-export default CharacterCard;
+export default CharacterList;
