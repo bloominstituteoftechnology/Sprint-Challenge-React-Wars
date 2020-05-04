@@ -1,5 +1,12 @@
 import React from 'react';
 import './App.css';
+import Character from './Characters/Characters';
+import styled from 'styled-components'
+import PAG from './Pag';
+
+const BC = styled.li`
+color: dodgerblue;
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +18,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Rick and Morty Full Cast</h1>
+      <BC><Character/></BC>
+      <PAG/>
     </div>
   );
 }
