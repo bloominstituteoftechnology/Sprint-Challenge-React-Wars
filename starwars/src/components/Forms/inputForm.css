@@ -1,0 +1,33 @@
+label{
+    color: white;
+    font-family: "Raleway";
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.formDiv{
+    margin-bottom: 100px;
+}
+
+input{
+    margin-left: 10px;
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.searchButton{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: block;
+    margin: 15px auto;
+}
+
+.searchButton:hover{
+    cursor: pointer;
+}
+
