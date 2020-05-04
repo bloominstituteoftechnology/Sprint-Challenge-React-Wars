@@ -20,8 +20,8 @@ const CharacterList =() => {
         axios
             .get("https://swapi.py4e.com/api/people/")
             .then(res => {
-                console.log(res.data);
-                setStarChar(res.data);
+                console.log(res.data.result);
+                setStarChar(res.data.result);
                 setIsLoading(false);
             })
             .catch(err => console.log(err));
