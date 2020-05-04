@@ -34,7 +34,7 @@ const Character = () => {
 
   return (
     <div className="content">
-      <ul>
+      <span>
         <Content
           name={text.name}
           diameter={text.diameter}
@@ -44,7 +44,7 @@ const Character = () => {
           residents={text.residents}
           terrain={text.terrain}
         />
-      </ul>
+      </span>
     </div>
   );
 };
