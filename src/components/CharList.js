@@ -6,8 +6,8 @@ export default function CharList() {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://swapi.co/api/people")
-      .then(res => setData(res.data.results));
+      .get("https://swapi.py4e.com/api/people")
+      .then((res) => setData(res.data.results));
   }, []);
   console.log(data);
   const characterList = data.map((character, index) => {
