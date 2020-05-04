@@ -1,5 +1,12 @@
 import React from 'react';
 import './App.css';
+import CharacterList from "./components/CharacterList";
+import styled from "styled-components";
+
+const Header = styled.h1`
+font-size: 120px;
+margin-top: 10px;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,9 +18,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <Header>React Wars</Header>
+      <CharacterList />
     </div>
   );
-}
+};
 
 export default App;
