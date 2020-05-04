@@ -1,0 +1,10 @@
+#backArrow{
+    transition: all 1s ease-in-out;
+    color: white;
+}
+
+#backArrow:hover{
+    transition: all 1s ease-in-out;
+    color: cornflowerblue;
+    cursor: pointer;
+}
