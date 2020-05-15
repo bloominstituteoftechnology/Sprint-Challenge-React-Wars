@@ -1,6 +1,6 @@
-import React from "react";
-import { card } from 'reactstrap';
-import { Card, CardBody, CardTitle, CardText } from "reactstrap";
+import React from "react"
+import { card } from 'reactstrap'
+import { Card, CardBody, CardTitle, CardText } from "reactstrap"
 
 
 

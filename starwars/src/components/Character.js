@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "axios"
 import Card from "./CharacterCard"
 import CharacterCard from "./CharacterCard"
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 
 const CharCont = styled.div`
