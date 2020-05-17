@@ -33,6 +33,7 @@ const CharacterCard = (props) => {
             <CharInfo>Status: </CharInfo>{props.status}
             <CharInfo>Gender: </CharInfo>{props.gender}
             <CharInfo>Species: </CharInfo>{props.species}
+            <CharInfo>MugShot: </CharInfo><img src={props.image} alt= "char img"/>
         </CharDiv>
     );
 }
