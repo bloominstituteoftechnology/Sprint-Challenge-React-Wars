@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 const CharDiv = styled.div`
-    width: 20%;
+    width: 350px;
     border-radius: 25px;
     border-style: solid;
     border-color: blue; 
