@@ -26,8 +26,9 @@ const CharInfo = styled.h3`
 const CharacterCard = (props) => {
     //Props come from Character.js
     return (
-
+            
         <CharDiv>
+            {props.next}
             <CharName>- {props.name} -</CharName>
             <CharInfo>Homeworld: </CharInfo>{props.location.name}
             <CharInfo>Status: </CharInfo>{props.status}

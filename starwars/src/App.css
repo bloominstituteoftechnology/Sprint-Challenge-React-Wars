@@ -5,5 +5,14 @@
   color: Yellow;
   text-shadow: 5px 5px 5px black;
 }
+button {
+  width:20%;
+  margin-right:50px;
+  padding:50px;
+  font-size: 25px;
+  background-color:whitesmoke;
+  text-align: center;
+  font-weight:bold;
+}
 
 /* write your parent styles in here for your App.js */

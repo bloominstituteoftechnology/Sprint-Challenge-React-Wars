@@ -1,7 +1,9 @@
 body {
   font-family: sans-serif;
   background-image: url('./images/rm-bg.jpg');
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
 }
-
+img {
+  border:5px solid blue;
+  box-shadow: 6px 6px 6px black;
+}

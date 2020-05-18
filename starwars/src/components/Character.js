@@ -20,12 +20,12 @@ const Character = () =>{
 return (
     <div>
         {character.map(character => {
-            return  <CharacterCard 
-            location={character.location}
+            return  <CharacterCard
             name={character.name}
+            location={character.location}
             status={character.status}
-            species={character.species}
             gender={character.gender}
+            species={character.species}
             image={character.image}
             />
 })}
