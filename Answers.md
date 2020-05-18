@@ -1,7 +1,8 @@
 # Answers
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-React js is a library for building UI's, it solves the problem of apps having so many things to render and allows it to breakup an app into different components that dont cause the page to reload everytime.
+
+React js is a library for building UI's, it solves the problem of apps having so many things to render that slow the page down and allows it to breakup an app into different components that dont cause the page to reload everytime.
 
 1. Describe component state.
 
