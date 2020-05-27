@@ -8,6 +8,7 @@ const Character = () => {
     useEffect (() => {
         axios
         .get("https://rickandmortyapi.com/api/character/")
+        // .get("https://superheroapi.com/api/10223217725980235/id")
         .then(response => {
             console.log(response)
             setCharacter(response.data.results);
