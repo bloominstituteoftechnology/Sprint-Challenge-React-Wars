@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from './Character';
-
-
+import { Body } from './styles'
 
 export default()=>{
     const [ characters, setCharacters ] =useState([]); 
@@ -20,13 +19,13 @@ export default()=>{
     },[])
 
     return(
-        <div>
+        <Body>
 
             {characters.map(element => {
                 console.log(characters)
                 return <Character characters={element.name} height={element.height} birth_year={element.birth_year} eye_color={element.eye_color}/>
             })}
-        </div>
+        </Body>
 
     )
 }
