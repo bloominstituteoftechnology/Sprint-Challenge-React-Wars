@@ -16,10 +16,10 @@ const [data, setData] = useState([])
   useEffect(()=>{
     console.log("Character.invoke");
     axios
-    .get("https://swapi.py4e.com/api/people/1/")
+    .get("https://swapi.py4e.com/api/people/")
     .then(response =>{
       console.log("This is the response: ", response)
-      setData(response.data)
+      setData(response.data.results)
     })
     .catch(error =>{
       console.log("The data was not returned", error)
@@ -30,6 +30,7 @@ const [data, setData] = useState([])
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <Character characterArray = {data}/>
     </div>
   );
 }
