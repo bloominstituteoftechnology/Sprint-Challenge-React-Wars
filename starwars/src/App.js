@@ -6,17 +6,20 @@ import Header from './components/Header';
 import CardContainer from './components/CardContainer';
 
 function App() {
+	//Store 1) Returned Data and 2) address for request
 	const [data, setData] = useState('');
 	const [page, setPage] = useState(
 		'https://rickandmortyapi.com/api/character/'
 	);
 
+	//Make API Call and set Data to response
 	useEffect(() => {
 		axios.get(page).then((res) => {
 			setData(res.data);
 		});
 	}, [page]);
 
+	//Render
 	return (
 		<React.Fragment>
 			{!data && <LoadingPage />}

@@ -3,6 +3,7 @@ import { Spinner, Jumbotron } from 'reactstrap';
 
 const LoadingPage = () => {
 	return (
+		//Renders a Loading Page
 		<Jumbotron
 			fluid
 			style={{
