@@ -3,14 +3,15 @@ import React from 'react';
 
 
 
-export default ({characters}) => {
+export default (people) => {
+    console.log({people});
     return (
         <div>
-            <p>{characters}</p>
+            
+            <h1>{people.characters}</h1>
+            <p>{people.height}</p>
+            <p>{people.birth_year}</p>
+            <p>{people.eye_color}</p>
         </div>
-
-
     )
-
-
 }
