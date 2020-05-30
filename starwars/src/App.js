@@ -1,19 +1,39 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Container, Row, Col } from 'reactstrap';
+import LoadingPage from './components/LoadingPage';
+import Header from './components/Header';
+import CardContainer from './components/CardContainer';
 
-const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+function App() {
+	const [data, setData] = useState('');
+	const [page, setPage] = useState(
+		'https://rickandmortyapi.com/api/character/'
+	);
 
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+	useEffect(() => {
+		axios.get(page).then((res) => {
+			setData(res.data);
+		});
+	}, [page]);
 
-  return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
-    </div>
-  );
+	return (
+		<React.Fragment>
+			{!data && <LoadingPage />}
+			{data && (
+				<React.Fragment>
+					<Header data={data} setPage={setPage} />
+					<Container fluid>
+						<Row className='mt-3'>
+							<Col>
+								<CardContainer data={data} />
+							</Col>
+						</Row>
+					</Container>
+				</React.Fragment>
+			)}
+		</React.Fragment>
+	);
 }
 
 export default App;
