@@ -8,11 +8,13 @@ const App = () => {
   useEffect(() => {
     axios.get('https://swapi.py4e.com/api/people/')
       .then(res => {
-        console.log('from App', res)
-        setPerson()
-      }, [])
+        console.log('from App', res);
+        setPerson(res.data.results);
+      })
+  }, []);
+  person.map(Object => {
+    return <li key={person.id}>{Object}</li>;
   })
-
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
