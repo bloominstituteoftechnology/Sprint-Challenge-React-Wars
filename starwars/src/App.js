@@ -17,7 +17,10 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {person.map(Object => {
-        return <Character character={Object.name, Object.gender, Object.eye_color, Object.hair_color} />;
+        return <Character character={Object.name} gender={Object.gender}
+          eyes={Object.eye_color}
+          hair={Object.hair_color}
+        />;
       })}
     </div>
   );
