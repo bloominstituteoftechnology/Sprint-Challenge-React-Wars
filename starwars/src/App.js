@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Character from './components/Character';
 
 const App = () => {
   const [person, setPerson] = useState([]);
-
   useEffect(() => {
     axios.get('https://swapi.py4e.com/api/people/')
       .then(res => {
@@ -12,12 +12,13 @@ const App = () => {
         setPerson(res.data.results);
       })
   }, []);
-  person.map(Object => {
-    return <li key={person.id}>{Object}</li>;
-  })
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      {person.map(Object => {
+        return <Character character={Object.name, Object.gender, Object.eye_color, Object.hair_color} />;
+      })}
     </div>
   );
 }
