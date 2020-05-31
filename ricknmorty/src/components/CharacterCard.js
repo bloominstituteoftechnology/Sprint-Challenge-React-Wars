@@ -14,7 +14,7 @@ import {
 const CharacterCard = ({ char }) => {
 	//Render Individual Character Cards
 	return (
-		<Col xs='6' sm='4' lg='3' className='mb-3'>
+		<Col xs='12' sm='4' lg='3' className='mb-3'>
 			<Card className='text-center'>
 				<CardBody width='100%'>
 					<CardHeader>{char.name}</CardHeader>
