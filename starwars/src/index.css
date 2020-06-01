@@ -1,4 +1,6 @@
 body {
-  background-image: url('./images/sw-bg.jpg');
+  background-image: url('./images/rm-bg.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

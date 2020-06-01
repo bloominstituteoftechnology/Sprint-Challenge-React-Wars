@@ -15,13 +15,13 @@ const App = () => {
 .then(resp=> setPeople(resp.data.results))
 .catch(err=>console.log('error', err));
 },[]);
-
+console.log(people)
   return (
     <div className="App">
       <h1 className="display-3" className='text-center'>Characters</h1>
       <Row>
             {people.map((peopleInfo=>{
-            return <Character image={peopleInfo.image} name={peopleInfo.name} status={peopleInfo.status} species={peopleInfo.species} img={peopleInfo.status} key={peopleInfo.id} note={peopleInfo.type}/>
+            return <Character image={peopleInfo.image} name={peopleInfo.name} status={peopleInfo.status} species={peopleInfo.species} img={peopleInfo.status} key={peopleInfo.id} gender={peopleInfo.gender}/>
             }))}  
       </Row>
     </div>
