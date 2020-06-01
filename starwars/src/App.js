@@ -19,8 +19,9 @@ useEffect(() => {
     axios
     .get('https://swapi.py4e.com/api/vehicles')
     .then(res => {
-     // console.log(res.data.results)
-      //setData(res.data.results);      
+     console.log(res.data.results)
+    //setData(res.data.results);
+    // MAKING THE REQUEST
       const initialArray = res.data.results
       const filteredData = initialArray.filter((Character) => {
         return Character.name.toLowerCase().includes(searchTerm.toLocaleLowerCase())

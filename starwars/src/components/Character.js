@@ -1,26 +1,26 @@
 // Write your Character component here
 import React from 'react';
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import {Card, Button, CardHeader, CardFooter, CardBody,
+  CardTitle, CardText } from 'reactstrap';
 
 //REACT COMPONANT
 function Character(props){
   return (
-    <Row>
-      <Col sm="6">
-        <Card body>
-          {props.characterArray.map((Character) => {
-             return(
+    <Card>
+      {props.characterArray.map((Character) => {
+         return(
            <Card key = {Character.created}>
-           <CardTitle>{Character.name}</CardTitle>
+           <CardHeader>{Character.name}</CardHeader>
+           <CardTitle>{Character.model}</CardTitle>
+           <CardBody>
            <CardText>{Character.manufacturer}</CardText>
-           <Button>------</Button>
+           <Button>{Character.length}</Button>
+           </CardBody>
           </Card>
             )
-         })}
+       })}
           <Button >Clear</Button>
-        </Card>
-      </Col>
-    </Row>
+    </Card>
   );
 };
 
