@@ -14,4 +14,4 @@ props are simply arguments that are passed into components
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
-side effects are anything that affect something outside the scope of its function, and syncing effects are achieved by 
+side effects are anything that affect something outside the scope of its function, and syncing effects are achieved by using useEffect which can handle side effects when state changes
