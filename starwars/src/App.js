@@ -2,12 +2,21 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
 import Character from './components/Character'
+import styled from 'styled-components';
+
+const CharPageDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 const [data, setData] = useState([])
 const [searchTerm, setSearchTerm] = useState('');
+  // 
 const handleChange = e => {
   setSearchTerm(e.target.value)
   console.log(handleChange)
@@ -36,14 +45,14 @@ useEffect(() => {
   // https://swapi.py4e.com/api/ use for axios
   // https://swapi.py4e.com/api/vehicles/ use for axios
   return (
-    <div className="App">
+    <CharPageDiv className="App">
       <h1 className="Header">Characters</h1>
       <label>
         search for a vehicle here:
         <input type='text' name='search' value={searchTerm} onChange={handleChange}/>
       </label>
       <Character characterArray={data}/>
-    </div>
+    </CharPageDiv>
   );
 }
 
