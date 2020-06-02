@@ -2,6 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
+  background-image: url("./images/rm-bg.jpg");
   background-size: cover;
+}
+.Header {
+  font-size: 82px;
+  color: red !important;
+  margin: 40px 0 20px 0 !important;
+}
+
+.cardHolder {
+  min-width: 100%;
 }
