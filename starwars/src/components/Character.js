@@ -1,6 +1,7 @@
 // Write your Character component here
 
 import React from 'react'
+import Card from '../components/Styles/Card'
 
 export default function Character (props) {
 
@@ -10,13 +11,13 @@ export default function Character (props) {
 
     console.log(props)
     return (
-        <div>
-            <ul>{`Name: ${props.props.name}`}</ul>
-            <ul>{`Height: ${props.props.height}cm`}</ul>
-            <ul>{`Mass: ${props.props.mass}kg`}</ul>
-            <ul>{`Gender: ${props.props.gender}`}</ul>
-            <ul>{`Birth Year: ${props.props.birth_year}`}</ul>
+        <Card>
+            <p>{`Name: ${props.props.name}`}</p>
+            <p>{`Height: ${props.props.height}cm`}</p>
+            <p>{`Mass: ${props.props.mass}kg`}</p>
+            <p>{`Gender: ${props.props.gender}`}</p>
+            <p>{`Birth Year: ${props.props.birth_year}`}</p>
             {console.log('character sanity check')}
-        </div>
+        </Card>
     )
 }
