@@ -12,6 +12,6 @@ export default styled.div`
     color: #FC3D21;
 
     &:hover {
-        transform: scale(1.05)
+        transform: scale(1.02)
     }
 `;
