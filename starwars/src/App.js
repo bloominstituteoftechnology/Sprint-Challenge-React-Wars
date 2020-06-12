@@ -11,14 +11,17 @@ const App = () => {
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
+  
   useEffect(() => {
     const fetchData = () => {
-      axios
-        .get('https://swapi.dev/api/people/1/')
+      for(let charNum = 1; charNum <= 10; charNum++){
+        axios
+        .get(`https://swapi.dev/api/people/${charNum}/`)
         .then(response => {
           console.log(response.data);
           setData(response.data);
         })
+      }
     }
     fetchData();
   }, []);
@@ -31,3 +34,5 @@ const App = () => {
 }
 
 export default App;
+
+//Notes make an empty array push everything that im looping through in the charater api then use that as the main array and list the characters info from then on
