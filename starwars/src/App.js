@@ -17,6 +17,7 @@ const App = () => {
     axios.get(`https://swapi.dev/api/people/`)
      .then(res => {
       //console.log(res.data.results)
+      console.log(res.data)
       setAPIData(res.data.results)
       //console.log(apiData)
      })
@@ -34,7 +35,8 @@ const App = () => {
         {apiData.map(person => {
         return (
           <Character 
-            props = {person} />
+            props = {person}
+            key = {person.name} />
         )}
         )}
       </Container>

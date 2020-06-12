@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-const margin = '16px'
-const tablet = '(max-width: 800px)'
-
 const Container = styled.div`
   border: 1px solid rgb(210, 210, 210);
   width: 70%;
