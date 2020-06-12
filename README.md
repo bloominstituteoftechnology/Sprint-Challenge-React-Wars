@@ -56,8 +56,8 @@ Follow these steps for completing your project:
 Your finished project must include all of the following requirements:
 
 - [ ] Use ONE of the following APIs:
-  - [Star Wars API on swapi.dev](https://swapi.dev/) **(recommended)**
-  - [Fallback Star Wars API, if swapi.dev is down](https://swapi.py4e.com/)
+  - [Star Wars API on swapi.dev](https://swapi.dev/)
+  - [Fallback Star Wars API](https://swapi.py4e.com/) (in case swapi.dev is down)
   - [The Rick and Morty API](https://rickandmortyapi.com/)
   - [The RESTful Pokémon API](https://pokeapi.co/) **(harder)**
 - [ ] Use the documentation and Google to learn how to fetch characters from your API.
