@@ -1,8 +1,36 @@
 .App {
-  text-align: center;
+  padding-left: 20%;
 }
+
+.Header{
+  padding-left: 30%;
+}
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.CharContainer{
+  border: 2px solid green;
+  width: 75%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.CharContainer h1 {
+  color: black;
+  background-color: white;
+  border-radius: .5rem;
+  padding: .5rem;
+} 
+
+.CharContainer h2{
+  color: white;
+  background-color: #443e3e;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
