@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import Character from '../src/components/Character'
+import CardContainer from './components/Styles/CardContainer'
+import Header from './components/Styles/Header'
 
 const App = () => {
 
@@ -35,12 +37,18 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">sanity check</h1>
+      <Header>
+        <h1 className="Header">React Wars</h1>
+      </Header>
+     
 
-      {characters === '' ? '' : characters.map(info => {
-          return <Character key={info.name} props={info}></Character>
-        })
-      }
+      <CardContainer>
+        {characters === '' ? '' : characters.map(info => {
+                    return <Character key={info.name} props={info}></Character>
+                  })
+        }
+      </CardContainer>
+
       
     </div>
   );

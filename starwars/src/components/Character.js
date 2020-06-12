@@ -12,7 +12,7 @@ export default function Character (props) {
     console.log(props)
     return (
         <Card>
-            <p>{`Name: ${props.props.name}`}</p>
+            <h2>{props.props.name}</h2>
             <p>{`Height: ${props.props.height}cm`}</p>
             <p>{`Mass: ${props.props.mass}kg`}</p>
             <p>{`Gender: ${props.props.gender}`}</p>
