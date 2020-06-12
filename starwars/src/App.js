@@ -36,11 +36,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">sanity check</h1>
-  
-      {console.log('return statement:',characters[0])}
 
       {characters === '' ? '' : characters.map(info => {
-          return <Character props={info}></Character>
+          return <Character key={info.name} props={info}></Character>
         })
       }
       
