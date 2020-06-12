@@ -2,6 +2,8 @@ import React, {useState,useEffect}from 'react';
 import './App.css';
 import Characters from './components/Character'
 import axios from 'axios'
+import Container from './components/style-componet'
+import {Button} from 'reactstrap'
 
 
 const App = () => {
@@ -26,8 +28,10 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <Container className='container'>
       { characterSelected.map(charObj=>{
-        return <Characters key={charObj.name} character= {charObj}   ></Characters>    })}
+        return <Characters  key={charObj.name} character= {charObj}   ></Characters>    })}
+      </Container>
     </div>
   );
 

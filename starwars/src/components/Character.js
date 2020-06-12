@@ -1,6 +1,6 @@
 // Write your Character component here
 import React, { useState, useEffect } from "react"
-import {Button} from 'reactstrap'
+import {Button} from "reactstrap"
 import axios from 'axios'
 
 
@@ -24,25 +24,22 @@ function Character (props) {
   }
    
     return(
-        <div>
-        <div className='charater'>
-            {props.character.name} 
-        <button className="details" onClick={() => openInfo(props.character.id)}>{props.character.birth_year}</button>
-        </div> 
-       
-       <div className='charater-details'>
-
+        <div className='container'style={{width:'100%'}} >
+        <div  className='charater' style={{ display: 'flex', justifyContent:'space-evenly',alignItems:'center', justifyItems:'center'}}>
+           <h2> {props.character.name} </h2>
+        <button class="btn btn-outline-primary btn-lg" onClick={() => openInfo(props.character.id)}  >{props.character.birth_year}</button>
+      
         
         {
             details &&
             <>
-            <h2> {details.name}</h2>
-            <p>{details.name} is {details.age} and is {details.height} tall</p>
+            <h3> {props.character.name}</h3>
+            <p>{props.character.name}  is {props.character.height} tall</p>
             
             
             </>
         }
-        <button onClick={closeInfo}>Close</button>
+        <button class="btn btn-outline-warning btn-lg"  onClick={closeInfo}>Close</button>
         
         </div>   
         </div>
