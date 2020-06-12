@@ -67,7 +67,7 @@ Your finished project must include all of the following requirements:
   - Build a React component named 'Character' to render an individual character.
   - Map over the list in state, and for each character render a Character to the page.
   - You must display at least one element for each character in the data set.
-  - The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
+  - Style your app with either Reactstrap or styled-components - don't rely on browser default styles.
 
 ### Required best practices
 
