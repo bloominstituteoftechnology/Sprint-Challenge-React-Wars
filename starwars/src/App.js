@@ -5,9 +5,11 @@ import Character from '../src/components/Character'
 import CardContainer from './components/Styles/CardContainer'
 import Header from './components/Styles/Header'
 
+
 const App = () => {
 
   const [characters, setCharacters] = useState('')
+  const [searchText, setSearchText] = useState('Search Characters')
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -43,8 +45,9 @@ const App = () => {
      
 
       <CardContainer>
+        
         {characters === '' ? '' : characters.map(info => {
-                    return <Character key={info.name} props={info}></Character>
+                    return <Character key={info.name} props={info}/>
                   })
         }
       </CardContainer>
