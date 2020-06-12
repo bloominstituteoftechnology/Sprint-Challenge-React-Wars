@@ -20,11 +20,11 @@ Commit your code regularly and meaningfully. This helps both you --in case you e
 
 In this challenge, create a web page that presents a styled list of **characters obtained from an API**. Being able to render out data to a web page is a large part of what JavaScript developers do, this challenge assesses your ability to achieve such a task.
 
-In meeting the minimum viable product (MVP) specifications listed below, your project might look somewhat similar to the solution examples below:
+Here are some example solutions below:
 
-[Example](https://tk-assets.lambdaschool.com/b011a132-0916-4ed2-8955-14192de03a75_sample-screenshot.png)
+[Example of MVP](https://tk-assets.lambdaschool.com/b011a132-0916-4ed2-8955-14192de03a75_sample-screenshot.png)
 
-[Another example](https://tk-assets.lambdaschool.com/3b82c793-2352-4d4d-a81d-e55bf350f7bd_sample-screenshot2.png)
+[Example with Stretch Goals](https://tk-assets.lambdaschool.com/3b82c793-2352-4d4d-a81d-e55bf350f7bd_sample-screenshot2.png)
 
 ## Self-Study/Essay Questions
 
