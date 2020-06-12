@@ -39,6 +39,7 @@ const App = () => {
             key = {person.name} />
         )}
         )}
+        {/* {apiData.map(character => <Character character={character} />)} */}
       </Container>
     </div>
   );
