@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import './App.css';
+import Header from './Header'
 import Character from './Character';
+import Container from './Container'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -26,8 +28,16 @@ const App = () => {
   //console.log(apiData)
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <Character props = {apiData[0]} />
+      <Header>STAR WARS CHARACTERS</Header>
+      <Container>
+        {/* <Character props = {apiData[0]} /> */}
+        {apiData.map(person => {
+        return (
+          <Character 
+            props = {person} />
+        )}
+        )}
+      </Container>
     </div>
   );
 }
