@@ -1,19 +1,57 @@
-import React from 'react';
-import './App.css';
+import React, {useState,useEffect,useRef}from 'react';
+import './App.scss';
+import Characters from './components/Character'
+import axios from 'axios'
+import Container from './components/style-componet'
+import {Button} from 'reactstrap'
+import {TweenMax, TimelineLite, Power3} from 'gsap'
+
 
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+ 
+  let app = useRef(null);
 
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+  let people = useRef(null)
+  
+  useEffect(() =>{
+    
+    let infoButton = people.firstElementChild;
+    let peopleName= people.lastElementChild;
+    let tl= new TimelineLite()
 
+   TweenMax.to(app, 0, {css:{visibility:'visible'}})
+
+   tl.from(infoButton, 1.2, {y:1280, ease:Power3.easeIn})
+  })
+
+  const [characterSelected, setCharter]= useState([])
+ 
+ useEffect (()=>{
+  axios.get(`http://swapi.dev/api/people/`)
+  .then(res => {
+    setCharter(res.data.results)
+   
+    
+  })
+ 
+  .catch(err => {
+    debugger
+  }) 
+   
+ },[])
+
+ console.log(characterSelected)
+  
   return (
-    <div className="App">
+    <div className="App" ref= {element => app=element}>
       <h1 className="Header">Characters</h1>
+      <Container className='container'>
+      { characterSelected.map(charObj=>{
+        return <Characters  key={charObj.name} character= {charObj}   ></Characters>    })}
+      </Container>
     </div>
   );
+
 }
 
 export default App;
