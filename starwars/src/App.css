@@ -24,10 +24,10 @@
   color: black;
   background-color: white;
   border-radius: .5rem;
-  padding: .5rem;
+  
 } 
 
-.CharContainer h2{
+Button{
   color: white;
   background-color: #443e3e;
   border-radius: 1rem;
