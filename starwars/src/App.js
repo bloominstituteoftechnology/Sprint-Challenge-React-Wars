@@ -1,12 +1,29 @@
-import React, {useState,useEffect}from 'react';
-import './App.css';
+import React, {useState,useEffect,useRef}from 'react';
+import './App.scss';
 import Characters from './components/Character'
 import axios from 'axios'
 import Container from './components/style-componet'
 import {Button} from 'reactstrap'
+import {TweenMax, TimelineLite, Power3} from 'gsap'
 
 
 const App = () => {
+ 
+  let app = useRef(null);
+
+  let people = useRef(null)
+  
+  useEffect(() =>{
+    
+    let infoButton = people.firstElementChild;
+    let peopleName= people.lastElementChild;
+    let tl= new TimelineLite()
+
+   TweenMax.to(app, 0, {css:{visibility:'visible'}})
+
+   tl.from(infoButton, 1.2, {y:1280, ease:Power3.easeIn})
+  })
+
   const [characterSelected, setCharter]= useState([])
  
  useEffect (()=>{
@@ -26,7 +43,7 @@ const App = () => {
  console.log(characterSelected)
   
   return (
-    <div className="App">
+    <div className="App" ref= {element => app=element}>
       <h1 className="Header">Characters</h1>
       <Container className='container'>
       { characterSelected.map(charObj=>{
