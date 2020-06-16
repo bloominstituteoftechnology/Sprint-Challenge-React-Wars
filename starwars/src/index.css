@@ -2,12 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
+  background-image: url('https://images3.alphacoders.com/812/thumb-1920-812062.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+h2 {
+  color: white;
 }

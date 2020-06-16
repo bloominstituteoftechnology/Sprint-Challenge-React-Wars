@@ -2,7 +2,7 @@ import React, {useState } from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-    color: black;
+    color: white;
     width: 400px;
     max-height: auto;
     margin-left: auto;
@@ -11,7 +11,8 @@ const Card = styled.div`
 
 const Explanation = styled.p`
     font-size: 20px;
-    color: #26354B;
+    color: white;
+    
 `;
 
 const Title = styled.h2`
@@ -20,7 +21,7 @@ const Title = styled.h2`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-color:white;
 `;
 
 const CharacterImage = styled.img`
@@ -42,6 +43,7 @@ const Cards = props => {
                     <p>{props.origin}</p>
                     <p>{props.species}</p>
                     <p>{props.type}</p>
+                    {/* <p>{props.episode}</p> */}
                 </Explanation>
         </Card>
     );
