@@ -24,17 +24,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Pokemon Characters</title>
+    <title>Pokemon Cards</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
 
-<!-- UIkit JS -->
+UIkit JS
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div className="App">
+      <h1 class="uk-heading-medium uk-text-center uk-text-success">Pokemon Cards</h1>
+              <div className="uk-width-1-1 uk-margin-top uk-margin-bottom">
+                  <select onChange="filter()" class="uk-button uk-width-1-2 uk-align-center"> <!-- className wouldn't apply these styles -->
+                          <option selected disabled>Filter By Rarity</option>
+                          <!-- FOR LOOP THROUGH OPTIONS -->
+                  </select>
+              </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.

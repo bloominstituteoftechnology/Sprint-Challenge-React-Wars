@@ -2,6 +2,8 @@ import React, { useState,useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
 import PokemonCard from '../src/components/PokemonCard'
+import { Container, Row } from 'reactstrap'
+// import Loops from '../src/components/loops'
 
 const App = () => {
 
@@ -20,6 +22,8 @@ const App = () => {
       })
   }, [])
 
+
+
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
@@ -36,9 +40,8 @@ const App = () => {
 // }
 
 return ( // data is not defined here, so IMPOSSIBLE to return any retrieved data
-  <div className="App">
-    <h1 className="Header">Cards</h1>
-    <div className="uk-flex uk-flex-around uk-flex-wrap">
+    <Container fluid="sm">
+      <Row>
     {
               cards.map(card => {
                 return (
@@ -46,8 +49,8 @@ return ( // data is not defined here, so IMPOSSIBLE to return any retrieved data
                 )
               })
             }
-            </div>
-  </div>
+            </Row>
+    </Container>
 );
 
 }
