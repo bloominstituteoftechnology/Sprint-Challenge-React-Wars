@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+  background-size: cover;
+  
+}
+h2{
+  color: white;
+  font-family: sans-serif;
+  
+}
+button{
+  margin: 10px;
+}
+li{
+  color: orange;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.container{ 
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.left{
+  width: 45%
+}
+.details{
+  width: 45%;
+  display: none;
+ 
+}
+.characterName{
+  color: orange;
+  width: 100%;
+  padding: 1% 0 4% 0;
+}
+.biggerContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img:hover{
+  border: 5px solid purple;
+}
+.wrapper{
+  width:80%;
+  margin: auto;
+}
