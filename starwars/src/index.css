@@ -1,3 +1,4 @@
+
 body {
   font-family: sans-serif;
   background-image: url('./images/rm-bg.jpg');
@@ -6,4 +7,8 @@ body {
 img {
   border:5px solid blue;
   box-shadow: 6px 6px 6px black;
+}
+.cardwrap {
+  display:flex;
+  flex-wrap:wrap;
 }

@@ -18,7 +18,7 @@ const Character = () =>{
   });
 }, []);
 return (
-    <div>
+    <div class= "cardwrap">
         {character.map(character => {
             return  <CharacterCard
             name={character.name}
