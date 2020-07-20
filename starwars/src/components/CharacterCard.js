@@ -6,6 +6,8 @@ const Card = styled.div`
     background: #e2e2e1;
     color: #eca637;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
   
 `;
 
