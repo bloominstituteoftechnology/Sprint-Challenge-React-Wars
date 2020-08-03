@@ -34,7 +34,7 @@ const CardHolderDiv = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: #fff;
+  background-color: #eee;
   border: solid 1px gray;
   border-radius: 2%;
   width: 25%;
@@ -42,6 +42,12 @@ const Card = styled.div`
   padding: 2%;
   box-shadow: 5px 5px 20px gray;
   color: #555;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 15px 30px gray;
+    background-color: #fff;
+  }
 `;
 const MugImg = styled.img`
   border: gray solid 3px;
