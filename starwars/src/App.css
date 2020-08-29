@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  flex-wrap: wrap;
 }
 
 /* write your parent styles in here for your App.js */

@@ -11,15 +11,19 @@ const TheApp = styled.div`
   flex-wrap: wrap;
 
 `;
-
-
 const Title= styled.h1`
   color: #FFE81F;
   text-shadow: 2px 2px 3px #fff;
-  font-size: 4.5rem;
+  font-size: 12rem;
   background-color: #000000;
 
 `;
+
+const Allca = styled.div`
+display: flex;
+
+`;
+
 
 
 const App = () => {
@@ -33,7 +37,9 @@ const App = () => {
   return (
     <TheApp className="App">
       <Title >React Wars</Title>
-      <CharList/>
+      <Allca>
+        <CharList/>
+      </Allca>
     </TheApp>
   );
 }

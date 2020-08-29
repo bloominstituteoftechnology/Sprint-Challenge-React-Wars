@@ -4,19 +4,16 @@ import Character from './Character'
 import axios from 'axios'
 
 
-// const MainCont = styled.div`
-
-//     display: flex;
-//     justify-content: center;
-
-// `;
-
 const Contain =styled.div`
 
     background-color: lightgray:
     color: black;
     border-radius: 16px;
-
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-top: -100px;
 `;
 
 
