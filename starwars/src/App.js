@@ -32,7 +32,7 @@ class App extends Component {
           if (data.next) {
             let next = data.next;
             if (next.indexOf("https" === -1)) {
-              next.replace("http", "https");
+              next = next.replace("http", "https");
             }
             this.setState({ nextPage: next });
           } else {
@@ -41,7 +41,7 @@ class App extends Component {
           if (data.previous) {
             let prev = data.previous;
             if (prev.indexOf("https" === -1)) {
-              prev.replace("http", "https");
+              prev = prev.replace("http", "https");
             }
             this.setState({ prevPage: data.previous });
           } else {
