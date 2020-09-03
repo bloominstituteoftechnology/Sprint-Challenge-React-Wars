@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people');
+    this.getCharacters('https://swapi.dev/api/people');
   }
 
   getCharacters = URL => {
